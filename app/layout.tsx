@@ -24,11 +24,20 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://peptidesclav.com',
     siteName: 'PeptidesClav',
+    images: [
+      {
+        url: 'https://peptidesclav.com/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'PeptidesClav — Expert Peptide Protocols',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: '#1 Peptide Protocols for Healing, Fat Loss & Anti-Aging',
     description: 'Science-backed peptide guides and protocols for peak performance — healing, body composition, and longevity.',
+    images: ['https://peptidesclav.com/og-image.png'],
   },
   robots: {
     index: true,
