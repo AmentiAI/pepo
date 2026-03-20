@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node:*)",
+      "Bash(find /mnt/c/Users/Wilso/pepo/.next/static -name *.css)",
+      "Bash(find /mnt/c/Users/Wilso/pepo/.next -name *.css)",
+      "WebFetch(domain:apollopeptidesciences.com)",
+      "Bash(npx tsc:*)",
+      "Bash(xargs sed:*)"
+    ]
+  }
+}
