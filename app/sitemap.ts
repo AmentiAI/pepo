@@ -14,8 +14,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/healing`,                priority: 0.7, changeFrequency: 'monthly' },
     { url: `${BASE_URL}/guide`,                  priority: 0.6, changeFrequency: 'monthly' },
     { url: `${BASE_URL}/faq`,                    priority: 0.5, changeFrequency: 'yearly' },
-    { url: `${BASE_URL}/learn`,                  priority: 0.5, changeFrequency: 'monthly' },
     { url: `${BASE_URL}/contact`,                priority: 0.4, changeFrequency: 'yearly' },
+    { url: `${BASE_URL}/gut-health`,                        priority: 0.7, changeFrequency: 'monthly' as const },
+    { url: `${BASE_URL}/sleep`,                             priority: 0.7, changeFrequency: 'monthly' as const },
+    { url: `${BASE_URL}/hair-growth`,                       priority: 0.7, changeFrequency: 'monthly' as const },
+    { url: `${BASE_URL}/glp1-comparison`,                   priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: `${BASE_URL}/retatrutide`,                       priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: `${BASE_URL}/best-peptide-for-weight-loss`,      priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: `${BASE_URL}/best-peptide-for-muscle-growth`,    priority: 0.7, changeFrequency: 'monthly' as const },
+    { url: `${BASE_URL}/best-peptide-for-anti-aging`,       priority: 0.7, changeFrequency: 'monthly' as const },
+    { url: `${BASE_URL}/about`,                             priority: 0.5, changeFrequency: 'yearly' as const },
+    { url: `${BASE_URL}/glossary`,                          priority: 0.6, changeFrequency: 'monthly' as const },
+    { url: `${BASE_URL}/healing/rotator-cuff`,              priority: 0.6, changeFrequency: 'monthly' as const },
+    { url: `${BASE_URL}/healing/tendonitis`,                priority: 0.6, changeFrequency: 'monthly' as const },
+    { url: `${BASE_URL}/healing/acl`,                       priority: 0.6, changeFrequency: 'monthly' as const },
   ];
 
   const productPages: MetadataRoute.Sitemap = products.map((p) => ({

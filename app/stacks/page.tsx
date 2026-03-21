@@ -8,12 +8,17 @@ import RelatedReading from '@/components/RelatedReading'
 export const metadata: Metadata = {
   title: 'Best Peptide Stacks & Protocols for Healing, Fat Loss & Anti-Aging',
   description:
-    'Curated peptide stack protocols for healing, body composition, anti-aging, cognitive enhancement, and male performance. Science-backed combinations with dosing schedules.',
+    'Curated peptide stacks for healing, fat loss, anti-aging & body composition. Science-backed protocols with complete dosing schedules and sourcing guides.',
+  keywords:
+    'peptide stacks, peptide protocols, BPC-157 stack, GH stack, fat loss peptide stack, anti-aging stack, longevity peptide protocol',
+  alternates: { canonical: 'https://peptidesclav.com/stacks' },
   openGraph: {
-    title: 'Peptide Stacks & Protocols',
+    title: 'Best Peptide Stacks & Protocols for Healing, Fat Loss & Anti-Aging',
     description:
       'Curated peptide stack protocols for healing, body composition, anti-aging, and cognitive enhancement.',
     type: 'website',
+    url: 'https://peptidesclav.com/stacks',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Peptide Stacks & Protocols — Healing, Fat Loss & Anti-Aging' }],
   },
 }
 

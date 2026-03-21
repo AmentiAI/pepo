@@ -7,7 +7,12 @@
       "WebFetch(domain:apollopeptidesciences.com)",
       "Bash(npx tsc:*)",
       "Bash(xargs sed:*)",
-      "Bash(find /mnt/c/Users/Wilso/pepo -type f \\\\\\(-name *.json -o -name *.csv -o -name *.js \\\\\\) ! -path */.next/* ! -path */.git/* ! -path */node_modules/*)"
+      "Bash(find /mnt/c/Users/Wilso/pepo -type f \\\\\\(-name *.json -o -name *.csv -o -name *.js \\\\\\) ! -path */.next/* ! -path */.git/* ! -path */node_modules/*)",
+      "Bash(grep -A 10 \"openGraph:\" /mnt/c/Users/Wilso/pepo/app/*/page.tsx)",
+      "Bash(fi)",
+      "Bash(done)",
+      "Bash(grep -E \"^\\\\s*\\\\{$\" /mnt/c/Users/Wilso/pepo/lib/stacks.ts)",
+      "Bash(ls /mnt/c/Users/Wilso/pepo/components/RelatedReading*)"
     ]
   }
 }

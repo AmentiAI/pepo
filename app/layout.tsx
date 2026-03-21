@@ -12,9 +12,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://peptidesclav.com'),
   title: '#1 Peptide Protocols for Healing, Fat Loss & Anti-Aging',
   description:
-    'Expert peptide protocols for BPC-157, TB-500, Semaglutide, Tirzepatide, GHK-Cu, Epithalon & more. Science-backed guides for healing, muscle growth, fat loss, and anti-aging. Sourced from Apollo Peptides.',
+    'Expert peptide protocols for BPC-157, TB-500, Semaglutide & more. Science-backed guides for healing, fat loss, anti-aging, and muscle growth. Sourced from Apollo Peptides.',
   keywords:
     'peptides, BPC-157, TB-500, Ipamorelin, CJC-1295, Semaglutide, Tirzepatide, healing peptides, anti-aging peptides, GH peptides, fat loss peptides, Apollo Peptides, peptide protocols 2026',
   openGraph: {
@@ -65,9 +66,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               '@type': 'Organization',
               name: 'PeptidesClav',
               url: 'https://peptidesclav.com',
+              logo: 'https://peptidesclav.com/logo.png',
               description:
                 'Science-backed peptide protocols for healing, performance, and longevity.',
-              sameAs: [],
+              sameAs: ['https://peptidesclav.com'],
             }),
           }}
         />

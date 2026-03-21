@@ -7,51 +7,52 @@ import { getStackById } from '@/lib/stacks';
 import RelatedReading from '@/components/RelatedReading';
 
 export const metadata: Metadata = {
-  title: 'Healing & Recovery Peptides | BPC-157, TB-500 Protocols',
+  title: 'Peptides for Hair Growth | GHK-Cu & TB-500 Hair Loss Protocols',
   description:
-    'BPC-157 and TB-500 protocols for injury recovery — tendons, ligaments, muscle, and gut healing. Science-backed dosing guides and stacking protocols.',
-  keywords: 'BPC-157, TB-500, healing peptides, injury recovery, tendon repair, peptide protocols, BPC-157 dosing',
-  alternates: { canonical: 'https://peptidesclav.com/healing' },
+    'GHK-Cu and TB-500 peptide protocols for hair growth — stimulates follicles, increases density, and reduces hair loss. Evidence-based dosing guides.',
+  keywords: 'peptides for hair growth, GHK-Cu hair growth, TB-500 hair loss, copper peptide hair, hair loss peptides, hair follicle peptides, hair regrowth protocol',
+  alternates: { canonical: 'https://peptidesclav.com/hair-growth' },
   openGraph: {
-    title: 'Healing & Recovery Peptides | BPC-157, TB-500 Protocols',
+    title: 'Peptides for Hair Growth | GHK-Cu & TB-500 Hair Loss Protocols',
     description:
-      'BPC-157 and TB-500 — the gold-standard peptide combination for musculoskeletal injury recovery.',
+      'GHK-Cu and TB-500 peptide protocols for hair growth — stimulates follicles, increases density, and reduces hair loss.',
     type: 'website',
-    url: 'https://peptidesclav.com/healing',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Healing & Recovery Peptides — BPC-157 and TB-500' }],
+    url: 'https://peptidesclav.com/hair-growth',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Peptides for Hair Growth — GHK-Cu and TB-500 Protocols' }],
   },
 };
 
-const healingFaqs = [
+const hairFaqs = [
   {
-    q: 'How long until I feel BPC-157 working?',
-    a: 'Most users notice reduced pain and inflammation within 3–7 days of starting BPC-157 at 250–500mcg twice daily. Structural tissue repair continues over 4–12 weeks, with full resolution of most soft tissue injuries by weeks 8–12.',
+    q: 'How does GHK-Cu promote hair growth?',
+    a: 'GHK-Cu stimulates hair follicle cells directly by upregulating growth factors including VEGF (vascular endothelial growth factor) and KGF (keratinocyte growth factor). Critically, it reverses follicle miniaturization — the process by which androgenic hair loss shrinks follicles over time. Research shows GHK-Cu can increase follicle size by up to 2× and activates the anagen (growth) phase of the hair cycle.',
   },
   {
-    q: 'Should I inject near the injury site or subcutaneously elsewhere?',
-    a: 'For local injuries (tendons, ligaments, joints), injecting subcutaneously near the injury site concentrates the peptide locally and produces faster results. For gut or systemic conditions, anywhere subcutaneous works equally well. TB-500 should always be injected systemically (abdomen or thigh) as it works through the bloodstream.',
+    q: 'How should I apply GHK-Cu for hair growth?',
+    a: 'GHK-Cu can be administered subcutaneously in the scalp (small, shallow injections across affected areas using 31-gauge insulin syringes) or applied topically in a solution/serum formulation. Subcutaneous injection produces faster and more pronounced results due to direct delivery to dermal papilla cells. Most protocols use 50-100mcg per injection site, 2-3 sites per session, 3-4 days per week.',
   },
   {
-    q: 'Can I stack BPC-157 with TB-500 from day one?',
-    a: 'Yes — this is actually the recommended approach for most injuries. BPC-157 and TB-500 work through entirely different mechanisms and have no negative interactions. Running them together from the start produces synergistic results that far exceed either compound alone.',
+    q: 'Will peptides work for pattern baldness (androgenic alopecia)?',
+    a: 'GHK-Cu and TB-500 address the follicle health and blood supply aspects of androgenic alopecia — but they do not block DHT (dihydrotestosterone), the primary androgen driving the condition. For pattern baldness, peptides work best as part of a comprehensive approach. They are particularly effective at reversing early-to-mid-stage miniaturization and restoring density in areas with dormant (not dead) follicles.',
   },
   {
-    q: 'Is BPC-157 safe for long-term use?',
-    a: "BPC-157 is derived from a protein naturally found in human gastric juice. No significant toxicity has been observed at therapeutic doses in research models, and many users run it continuously for chronic conditions. The standard cycle is 8–12 weeks on with a 4-week break, though this is conservative — not a safety requirement.",
+    q: 'How long until I see results?',
+    a: 'GHK-Cu produces subtle improvements in hair thickness and scalp condition within 3-4 weeks. Visible changes in hair density and reduced shedding typically appear by weeks 8-12. Maximum results develop over 16-24 weeks of consistent use. TB-500 improves scalp blood flow more rapidly (2-4 weeks) which supports and accelerates GHK-Cu\'s follicle-level effects.',
   },
   {
-    q: 'Will these peptides work for chronic injuries, not just acute ones?',
-    a: 'Yes, and arguably this is where they shine. Chronic injuries often involve poor blood supply and incomplete healing cycles. BPC-157 actively stimulates angiogenesis (new blood vessel formation) which is the primary bottleneck in healing chronic tendinopathies, and TB-500 breaks down accumulated fibrosis (scar tissue) to restore proper tissue architecture.',
-  },
-  {
-    q: 'What dose should a beginner start with?',
-    a: 'Start with BPC-157 at 250mcg twice daily (morning and evening). If well-tolerated after a week, you can increase to 500mcg per injection. For TB-500, begin with 2.5mg twice per week (5mg/week total) during a maintenance phase, or 5mg twice per week (10mg/week) during a loading phase for acute injuries.',
+    q: 'Can women use hair growth peptides?',
+    a: 'Yes — GHK-Cu and TB-500 are equally effective in women and are preferred for female-pattern hair loss because they have no hormonal mechanisms (unlike finasteride). GHK-Cu is particularly relevant for women experiencing postpartum hair loss, stress-related shedding (telogen effluvium), and age-related thinning, addressing the root cause (follicle health and scalp circulation) rather than hormone manipulation.',
   },
 ];
 
-export default function HealingPage() {
-  const healingProducts = products.filter((p) => p.category === 'Healing & Recovery');
-  const healingStack = getStackById('ultimate-healing');
+export default function HairGrowthPage() {
+  const hairProducts = products.filter(
+    (p) =>
+      p.tags?.includes('Hair Growth') ||
+      p.slug === 'ghk-cu' ||
+      p.slug === 'tb-500',
+  );
+  const hairStack = getStackById('anti-aging-skin');
 
   return (
     <div className="min-h-screen" style={{ backgroundColor: 'var(--bg)' }}>
@@ -67,25 +68,25 @@ export default function HealingPage() {
             <div className="flex items-center gap-2 mb-5">
               <span className="badge">Category</span>
               <ChevronRight size={14} className="text-zinc-600" />
-              <span className="badge badge-cyan">Healing & Recovery</span>
+              <span className="badge badge-cyan">Hair Growth</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-              <span className="text-white">Healing &amp; </span>
-              <span className="gradient-text">Recovery</span>
-              <span className="text-white"> Peptides</span>
+              <span className="text-white">Peptides for </span>
+              <span className="gradient-text">Hair Growth</span>
             </h1>
             <p className="text-lg text-zinc-400 leading-relaxed mb-8 max-w-2xl">
-              BPC-157 and TB-500 are the most validated peptides for musculoskeletal injury recovery.
-              Together they cover every mechanism of the healing cascade — from local tissue repair and
-              angiogenesis to systemic inflammation reduction and flexibility restoration.
+              GHK-Cu and TB-500 are the most validated peptides for hair follicle stimulation and
+              scalp health. Together they address hair loss from two independent angles — direct
+              follicle activation and scalp blood flow restoration — producing results that neither
+              compound achieves alone.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/stacks/ultimate-healing" className="btn-primary">
-                View Healing Stack
+              <Link href="/stacks/anti-aging-skin" className="btn-primary">
+                View Anti-Aging Skin Stack
                 <ArrowRight size={16} />
               </Link>
-              <Link href="/products" className="btn-secondary">
-                All Products
+              <Link href="/products/ghk-cu" className="btn-secondary">
+                Shop GHK-Cu
               </Link>
             </div>
           </div>
@@ -93,10 +94,10 @@ export default function HealingPage() {
           {/* Stat strip */}
           <div className="mt-10 sm:mt-14 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {[
-              { icon: <Zap size={18} className="text-violet-400" />, value: '2×', label: 'Faster healing vs. untreated' },
-              { icon: <ShieldCheck size={18} className="text-cyan-400" />, value: '30+', label: 'Years of research' },
-              { icon: <Clock size={18} className="text-violet-400" />, value: '3–7', label: 'Days to first effects' },
-              { icon: <CheckCircle2 size={18} className="text-cyan-400" />, value: '100%', label: 'Naturally-derived basis' },
+              { icon: <ShieldCheck size={18} className="text-violet-400" />, value: '40%', label: 'Reported hair density increase' },
+              { icon: <Clock size={18} className="text-cyan-400" />, value: '8–12 wks', label: 'Visible results timeline' },
+              { icon: <Zap size={18} className="text-violet-400" />, value: '2×', label: 'Follicle enlargement (GHK-Cu)' },
+              { icon: <CheckCircle2 size={18} className="text-cyan-400" />, value: '2 compounds', label: 'Targeting separate mechanisms' },
             ].map((stat) => (
               <div key={stat.label} className="card p-4 flex items-start gap-3">
                 <div className="mt-0.5">{stat.icon}</div>
@@ -116,22 +117,22 @@ export default function HealingPage() {
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="mb-10">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
-            Healing &amp; Recovery Products
+            Hair Growth Products
           </h2>
           <p className="text-zinc-400 max-w-2xl">
-            Every peptide in this category has been selected for its evidence base in tissue repair,
-            inflammation reduction, and recovery acceleration.
+            Every peptide in this category has been selected for its evidence base in follicle
+            stimulation, scalp angiogenesis, and hair loss reversal.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {healingProducts.map((product) => (
+          {hairProducts.map((product) => (
             <ProductCard key={product.slug} product={product} showAffiliateButton />
           ))}
         </div>
       </section>
 
       {/* Featured stack */}
-      {healingStack && (
+      {hairStack && (
         <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="flex items-center gap-3 mb-3">
@@ -141,16 +142,16 @@ export default function HealingPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-start">
               <div>
                 <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                  {healingStack.name}
+                  {hairStack.name}
                 </h2>
                 <p className="text-zinc-400 leading-relaxed mb-6">
-                  {healingStack.shortDescription}
+                  {hairStack.shortDescription}
                 </p>
                 <div className="flex flex-wrap gap-3 mb-8">
                   {[
-                    { label: 'Duration', value: healingStack.duration },
-                    { label: 'Cost', value: healingStack.cost },
-                    { label: 'Difficulty', value: healingStack.difficulty },
+                    { label: 'Duration', value: hairStack.duration },
+                    { label: 'Cost', value: hairStack.cost },
+                    { label: 'Difficulty', value: hairStack.difficulty },
                   ].map((item) => (
                     <div
                       key={item.label}
@@ -162,7 +163,7 @@ export default function HealingPage() {
                     </div>
                   ))}
                 </div>
-                <Link href="/stacks/ultimate-healing" className="btn-primary">
+                <Link href="/stacks/anti-aging-skin" className="btn-primary">
                   Full Stack Protocol
                   <ArrowRight size={16} />
                 </Link>
@@ -172,7 +173,7 @@ export default function HealingPage() {
                 <h3 className="text-sm font-semibold text-zinc-500 uppercase tracking-wider">
                   Expected Results
                 </h3>
-                {healingStack.expectedResults.map((result, i) => (
+                {hairStack.expectedResults.map((result, i) => (
                   <div
                     key={i}
                     className="flex items-start gap-3 p-4 rounded-xl border"
@@ -188,39 +189,39 @@ export default function HealingPage() {
         </section>
       )}
 
-      {/* How healing peptides work */}
+      {/* How hair growth peptides work */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-white mb-4">How These Peptides Accelerate Healing</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">How These Peptides Restore Hair Growth</h2>
           <p className="text-zinc-400 max-w-2xl mx-auto">
-            BPC-157 and TB-500 target distinct but complementary aspects of the healing cascade,
-            making their combination greater than the sum of its parts.
+            GHK-Cu and TB-500 target distinct but complementary aspects of hair loss — follicle
+            activation at the cellular level and scalp blood flow restoration.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
           {[
             {
-              name: 'BPC-157',
-              subtitle: 'Local Repair Engine',
+              name: 'GHK-Cu',
+              subtitle: 'Follicle Activation Signal',
               color: 'violet',
               points: [
-                'Upregulates growth hormone receptors at injury site',
-                'Stimulates VEGF for new blood vessel formation (angiogenesis)',
-                'Promotes collagen synthesis and tendon-to-bone attachment',
-                'Inhibits inflammatory cytokines without immune suppression',
-                'Heals gut lining — uniquely effective for IBD and leaky gut',
+                'Directly stimulates hair follicle cells and increases follicle size',
+                'Upregulates genes responsible for hair growth including VEGF and KGF',
+                'Promotes angiogenesis in scalp dermis (critical for follicle nutrition)',
+                'Reverses miniaturization of follicles (the mechanism of androgenic hair loss)',
+                'Increases collagen and glycosaminoglycan synthesis around follicles',
               ],
             },
             {
               name: 'TB-500',
-              subtitle: 'Systemic Healing Signal',
+              subtitle: 'Scalp Blood Flow Restorer',
               color: 'cyan',
               points: [
-                'Binds to actin — drives cell migration and proliferation throughout the body',
-                'Reduces fibrosis and scar tissue formation after injury',
-                'Anti-inflammatory at the systemic level, not just locally',
-                'Promotes myogenesis (muscle fiber formation)',
-                'Restores flexibility and range of motion in damaged fascia',
+                'Actin-binding promotes cell migration and proliferation in dermal papilla cells',
+                'Stimulates angiogenesis throughout the scalp',
+                'Reduces fibrosis around miniaturized follicles',
+                'Systemically reduces the DHT-mediated inflammatory cascade that damages follicles',
+                'Promotes healing of scalp tissue and improved nutrient delivery',
               ],
             },
           ].map((item) => (
@@ -266,10 +267,10 @@ export default function HealingPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="flex items-center gap-3 mb-10">
             <HelpCircle size={22} className="text-violet-400" />
-            <h2 className="text-2xl font-bold text-white">Healing Peptide FAQ</h2>
+            <h2 className="text-2xl font-bold text-white">Hair Growth Peptide FAQ</h2>
           </div>
           <div className="space-y-4">
-            {healingFaqs.map((faq, i) => (
+            {hairFaqs.map((faq, i) => (
               <div
                 key={i}
                 className="rounded-xl border p-5"
@@ -285,23 +286,24 @@ export default function HealingPage() {
 
       {/* CTA */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 text-center">
-        <h2 className="text-3xl font-bold text-white mb-4">Ready to Start Your Recovery?</h2>
+        <h2 className="text-3xl font-bold text-white mb-4">Ready to Restore Your Hair?</h2>
         <p className="text-zinc-400 mb-8 max-w-xl mx-auto">
-          Browse the complete healing protocol, or explore other peptide categories for your goals.
+          Browse the complete anti-aging skin protocol, or go directly to GHK-Cu — the
+          gold standard for peptide-based hair follicle activation.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
-          <Link href="/stacks/ultimate-healing" className="btn-primary">
-            View Ultimate Healing Stack
+          <Link href="/stacks/anti-aging-skin" className="btn-primary">
+            View Anti-Aging Skin Stack
             <ArrowRight size={16} />
           </Link>
-          <Link href="/stacks" className="btn-secondary">
-            All Stacks
+          <Link href="/products/ghk-cu" className="btn-secondary">
+            Shop GHK-Cu
           </Link>
         </div>
       </section>
 
       <div className="glow-divider mx-6" />
-      <RelatedReading pageKey="/healing" />
+      <RelatedReading pageKey="/hair-growth" />
     </div>
   );
 }

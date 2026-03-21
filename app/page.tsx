@@ -12,7 +12,7 @@ import RelatedReading from '@/components/RelatedReading';
 export const metadata: Metadata = {
   title: 'BPC-157, Semaglutide & Top Peptide Protocols for Healing & Fat Loss',
   description:
-    'Expert peptide protocols for BPC-157, TB-500, Ipamorelin, CJC-1295, GHK-Cu, Epithalon & more. Evidence-based guides for healing, muscle growth, fat loss, anti-aging & cognitive enhancement. Sourced from Apollo Peptides.',
+    'The most complete peptide protocol library — BPC-157, Semaglutide, Tirzepatide, Ipamorelin, Epithalon & more. Expert dosing guides for healing, fat loss, and anti-aging.',
   keywords:
     'BPC-157, TB-500, Ipamorelin, CJC-1295, Semaglutide, Tirzepatide, GHK-Cu anti-aging, Epithalon telomere, peptide protocols, Apollo Peptides, best healing peptides 2026, fat loss peptides',
   openGraph: {

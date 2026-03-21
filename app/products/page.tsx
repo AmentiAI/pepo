@@ -8,12 +8,17 @@ import RelatedReading from '@/components/RelatedReading';
 export const metadata: Metadata = {
   title: 'Buy Peptides Online | BPC-157, Semaglutide, Tirzepatide & More',
   description:
-    'Browse our complete peptide catalog — BPC-157, TB-500, Ipamorelin, CJC-1295, Semaglutide, Tirzepatide, Epithalon, GHK-Cu & more. Full protocol guides sourced from Apollo Peptides.',
+    'Browse 20+ peptides with full protocol guides — BPC-157, Semaglutide, Tirzepatide, Epithalon, GHK-Cu & more. Evidence-based dosing. Sourced from Apollo Peptides.',
+  keywords:
+    'buy peptides, BPC-157, Semaglutide, Tirzepatide, Epithalon, GHK-Cu, Ipamorelin, peptide catalog, Apollo Peptides, peptide protocols 2026',
+  alternates: { canonical: 'https://peptidesclav.com/products' },
   openGraph: {
-    title: 'Peptide Catalog | BPC-157, Semaglutide, Tirzepatide & More',
+    title: 'Buy Peptides Online | BPC-157, Semaglutide, Tirzepatide & More',
     description:
       'Browse 20+ peptides with full protocol guides — healing, fat loss, anti-aging, and body composition. Sourced from Apollo Peptides.',
     type: 'website',
+    url: 'https://peptidesclav.com/products',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Peptide Catalog — BPC-157, Semaglutide, Tirzepatide & More' }],
   },
 };
 

@@ -221,4 +221,95 @@ export const internalLinks: Record<string, InternalLink[]> = {
     { anchor: 'GH Optimization Stack', href: '/stacks/gh-optimization' },
     { anchor: 'body composition peptide protocols', href: '/body-composition' },
   ],
+
+  '/gut-health': [
+    { anchor: 'BPC-157 tendon & tissue repair protocol', href: '/products/bpc-157' },
+    { anchor: 'Ultimate Healing Stack: BPC-157 + TB-500', href: '/stacks/ultimate-healing' },
+    { anchor: 'healing & recovery peptide guide', href: '/healing' },
+    { anchor: "beginner's guide to peptide protocols", href: '/guide' },
+  ],
+
+  '/sleep': [
+    { anchor: 'Ipamorelin / CJC-1295 GH optimization protocol', href: '/products/ipamorelin-cjc' },
+    { anchor: 'GH Optimization Stack for body recomposition', href: '/stacks/gh-optimization' },
+    { anchor: 'body composition peptide guide', href: '/body-composition' },
+    { anchor: 'Epithalon longevity & circadian protocol', href: '/products/epithalon' },
+  ],
+
+  '/hair-growth': [
+    { anchor: 'GHK-Cu skin regeneration & gene reset guide', href: '/products/ghk-cu' },
+    { anchor: 'TB-500 systemic healing & angiogenesis', href: '/products/tb-500' },
+    { anchor: 'Anti-Aging Skin Stack: GHK-Cu + SNAP-8', href: '/stacks/anti-aging-skin' },
+    { anchor: 'anti-aging & longevity peptide guide', href: '/anti-aging' },
+  ],
+
+  '/glp1-comparison': [
+    { anchor: 'Semaglutide GLP-1 fat loss protocol', href: '/products/semaglutide-10mg' },
+    { anchor: 'Tirzepatide dual GIP/GLP-1 protocol', href: '/products/tirzepatide-15mg' },
+    { anchor: 'Retatrutide triple agonist guide', href: '/products/retatrutide-10mg' },
+    { anchor: 'GLP-1 Fat Loss Accelerator Stack', href: '/stacks/glp1-fat-loss' },
+  ],
+
+  '/retatrutide': [
+    { anchor: 'Tirzepatide vs Retatrutide comparison', href: '/glp1-comparison' },
+    { anchor: 'Semaglutide GLP-1 protocol', href: '/products/semaglutide-10mg' },
+    { anchor: 'GLP-1 Fat Loss Accelerator Stack', href: '/stacks/glp1-fat-loss' },
+    { anchor: 'body composition peptide guide', href: '/body-composition' },
+  ],
+
+  '/best-peptide-for-weight-loss': [
+    { anchor: 'Semaglutide GLP-1 dosing protocol', href: '/products/semaglutide-10mg' },
+    { anchor: 'Tirzepatide dual agonist guide', href: '/products/tirzepatide-15mg' },
+    { anchor: 'GLP-1 vs GIP vs Glucagon comparison', href: '/glp1-comparison' },
+    { anchor: 'GLP-1 Fat Loss Accelerator Stack', href: '/stacks/glp1-fat-loss' },
+  ],
+
+  '/best-peptide-for-muscle-growth': [
+    { anchor: 'IGF-1 LR3 direct anabolic protocol', href: '/products/igf-1-lr3' },
+    { anchor: 'GH Optimization Stack', href: '/stacks/gh-optimization' },
+    { anchor: 'Performance Elite Stack', href: '/stacks/performance-elite' },
+    { anchor: 'body composition peptide guide', href: '/body-composition' },
+  ],
+
+  '/best-peptide-for-anti-aging': [
+    { anchor: 'Epithalon telomere extension protocol', href: '/products/epithalon' },
+    { anchor: 'GHK-Cu skin regeneration guide', href: '/products/ghk-cu' },
+    { anchor: 'Longevity Elite anti-aging stack', href: '/stacks/longevity-elite' },
+    { anchor: 'anti-aging peptide category', href: '/anti-aging' },
+  ],
+
+  '/about': [
+    { anchor: 'peptide protocol beginner guide', href: '/guide' },
+    { anchor: 'healing & recovery peptide protocols', href: '/healing' },
+    { anchor: 'all peptide products catalog', href: '/products' },
+    { anchor: 'frequently asked peptide questions', href: '/faq' },
+  ],
+
+  '/glossary': [
+    { anchor: 'BPC-157 complete protocol guide', href: '/products/bpc-157' },
+    { anchor: 'GLP-1 comparison: Semaglutide vs Tirzepatide', href: '/glp1-comparison' },
+    { anchor: 'peptide protocol beginner guide', href: '/guide' },
+    { anchor: 'expert peptide stacks', href: '/stacks' },
+  ],
+
+  '/healing/rotator-cuff': [
+    { anchor: 'BPC-157 complete dosing protocol', href: '/products/bpc-157' },
+    { anchor: 'TB-500 systemic healing guide', href: '/products/tb-500' },
+    { anchor: 'Ultimate Healing Stack', href: '/stacks/ultimate-healing' },
+    { anchor: 'all healing & recovery peptides', href: '/healing' },
+  ],
+
+  '/healing/tendonitis': [
+    { anchor: 'BPC-157 complete dosing protocol', href: '/products/bpc-157' },
+    { anchor: 'Ultimate Healing Stack: BPC-157 + TB-500', href: '/stacks/ultimate-healing' },
+    { anchor: 'rotator cuff recovery protocol', href: '/healing/rotator-cuff' },
+    { anchor: 'all healing & recovery peptides', href: '/healing' },
+  ],
+
+  '/healing/acl': [
+    { anchor: 'BPC-157 tendon & ligament repair', href: '/products/bpc-157' },
+    { anchor: 'TB-500 systemic healing guide', href: '/products/tb-500' },
+    { anchor: 'Ultimate Healing Stack protocol', href: '/stacks/ultimate-healing' },
+    { anchor: 'healing & recovery peptide category', href: '/healing' },
+  ],
 };

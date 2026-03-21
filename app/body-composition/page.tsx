@@ -9,14 +9,17 @@ import RelatedReading from '@/components/RelatedReading';
 export const metadata: Metadata = {
   title: 'Body Composition Peptides | GH, Fat Loss & Muscle Protocols',
   description:
-    'Peptides for body recomposition — GH secretagogues, fat loss fragments, and muscle peptides. Protocols for visceral fat reduction, lean muscle gain, and metabolic optimization.',
+    'GH peptides, fat loss fragments & muscle protocols for body recomposition. Ipamorelin, Tesamorelin, AOD-9604 & Semaglutide dosing guides with stacking protocols.',
   keywords:
-    'body composition peptides, fat loss peptides, muscle peptides, GH peptides, Tesamorelin, AOD-9604, Ipamorelin, IGF-1',
+    'body composition peptides, fat loss peptides, muscle peptides, GH peptides, Tesamorelin, AOD-9604, Ipamorelin, IGF-1, Semaglutide',
+  alternates: { canonical: 'https://peptidesclav.com/body-composition' },
   openGraph: {
-    title: 'Body Composition Peptides',
+    title: 'Body Composition Peptides | GH, Fat Loss & Muscle Protocols',
     description:
       'GH optimization, fat loss, and muscle peptide protocols for complete body recomposition.',
     type: 'website',
+    url: 'https://peptidesclav.com/body-composition',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Body Composition Peptides — GH, Fat Loss & Muscle' }],
   },
 };
 

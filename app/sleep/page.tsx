@@ -7,51 +7,53 @@ import { getStackById } from '@/lib/stacks';
 import RelatedReading from '@/components/RelatedReading';
 
 export const metadata: Metadata = {
-  title: 'Healing & Recovery Peptides | BPC-157, TB-500 Protocols',
+  title: 'Peptides for Sleep | Ipamorelin & CJC-1295 Deep Sleep Protocol',
   description:
-    'BPC-157 and TB-500 protocols for injury recovery — tendons, ligaments, muscle, and gut healing. Science-backed dosing guides and stacking protocols.',
-  keywords: 'BPC-157, TB-500, healing peptides, injury recovery, tendon repair, peptide protocols, BPC-157 dosing',
-  alternates: { canonical: 'https://peptidesclav.com/healing' },
+    'Ipamorelin and CJC-1295 dramatically improve deep sleep quality by enhancing GH pulsatility during sleep. Evidence-based dosing for sleep optimization and recovery.',
+  keywords: 'peptides for sleep, Ipamorelin sleep, CJC-1295 sleep benefits, deep sleep peptides, sleep quality peptides, GH peptides sleep, recovery peptides',
+  alternates: { canonical: 'https://peptidesclav.com/sleep' },
   openGraph: {
-    title: 'Healing & Recovery Peptides | BPC-157, TB-500 Protocols',
+    title: 'Peptides for Sleep | Ipamorelin & CJC-1295 Deep Sleep Protocol',
     description:
-      'BPC-157 and TB-500 — the gold-standard peptide combination for musculoskeletal injury recovery.',
+      'Ipamorelin and CJC-1295 dramatically improve deep sleep quality by enhancing GH pulsatility during sleep.',
     type: 'website',
-    url: 'https://peptidesclav.com/healing',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Healing & Recovery Peptides — BPC-157 and TB-500' }],
+    url: 'https://peptidesclav.com/sleep',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Peptides for Sleep — Ipamorelin and CJC-1295 Deep Sleep Protocol' }],
   },
 };
 
-const healingFaqs = [
+const sleepFaqs = [
   {
-    q: 'How long until I feel BPC-157 working?',
-    a: 'Most users notice reduced pain and inflammation within 3–7 days of starting BPC-157 at 250–500mcg twice daily. Structural tissue repair continues over 4–12 weeks, with full resolution of most soft tissue injuries by weeks 8–12.',
+    q: 'Why does Ipamorelin improve sleep?',
+    a: 'The pituitary releases 70-80% of daily growth hormone during deep sleep. Ipamorelin mimics ghrelin\'s action at the GH secretagogue receptor, triggering clean GH pulses without cortisol or prolactin elevation. This amplifies the natural nocturnal GH surge, which directly deepens slow-wave sleep architecture and produces significantly more restorative sleep cycles.',
   },
   {
-    q: 'Should I inject near the injury site or subcutaneously elsewhere?',
-    a: 'For local injuries (tendons, ligaments, joints), injecting subcutaneously near the injury site concentrates the peptide locally and produces faster results. For gut or systemic conditions, anywhere subcutaneous works equally well. TB-500 should always be injected systemically (abdomen or thigh) as it works through the bloodstream.',
+    q: 'When should I inject for maximum sleep benefit?',
+    a: 'Inject Ipamorelin/CJC-1295 30-45 minutes before sleep, in a fully fasted state (minimum 2 hours after last meal). Insulin suppresses GH release, so food timing is critical. This aligns the peptide\'s peak action with the first deep sleep phase, typically occurring 60-90 minutes after sleep onset.',
   },
   {
-    q: 'Can I stack BPC-157 with TB-500 from day one?',
-    a: 'Yes — this is actually the recommended approach for most injuries. BPC-157 and TB-500 work through entirely different mechanisms and have no negative interactions. Running them together from the start produces synergistic results that far exceed either compound alone.',
+    q: 'How quickly will I notice sleep improvements?',
+    a: 'Most users report noticeably deeper sleep and more vivid dreams within 1-2 weeks. By weeks 3-4, measurable improvements in sleep efficiency and morning recovery markers (reduced soreness, better focus) become apparent. Full sleep architecture normalization typically occurs by weeks 6-8.',
   },
   {
-    q: 'Is BPC-157 safe for long-term use?',
-    a: "BPC-157 is derived from a protein naturally found in human gastric juice. No significant toxicity has been observed at therapeutic doses in research models, and many users run it continuously for chronic conditions. The standard cycle is 8–12 weeks on with a 4-week break, though this is conservative — not a safety requirement.",
+    q: 'Can peptides help with sleep if I have insomnia?',
+    a: 'GH peptides address sleep quality rather than sleep initiation per se. For those who can fall asleep but don\'t feel rested, the improvement is dramatic. For those with difficulty falling asleep, Epithalon (pineal gland support) and NAD+ (circadian rhythm normalization) are better primary compounds, often combined with Ipamorelin for comprehensive sleep optimization.',
   },
   {
-    q: 'Will these peptides work for chronic injuries, not just acute ones?',
-    a: 'Yes, and arguably this is where they shine. Chronic injuries often involve poor blood supply and incomplete healing cycles. BPC-157 actively stimulates angiogenesis (new blood vessel formation) which is the primary bottleneck in healing chronic tendinopathies, and TB-500 breaks down accumulated fibrosis (scar tissue) to restore proper tissue architecture.',
-  },
-  {
-    q: 'What dose should a beginner start with?',
-    a: 'Start with BPC-157 at 250mcg twice daily (morning and evening). If well-tolerated after a week, you can increase to 500mcg per injection. For TB-500, begin with 2.5mg twice per week (5mg/week total) during a maintenance phase, or 5mg twice per week (10mg/week) during a loading phase for acute injuries.',
+    q: 'Do I need a full GH peptide stack for sleep benefits, or just Ipamorelin?',
+    a: 'Ipamorelin alone provides significant sleep benefits. Adding CJC-1295 extends the GH pulse duration from ~2 hours to 6+ hours, producing more continuous deep sleep enhancement throughout the night. The combination is more effective but either compound alone produces measurable sleep quality improvements.',
   },
 ];
 
-export default function HealingPage() {
-  const healingProducts = products.filter((p) => p.category === 'Healing & Recovery');
-  const healingStack = getStackById('ultimate-healing');
+export default function SleepPage() {
+  const sleepProducts = products.filter(
+    (p) =>
+      p.tags?.includes('GH Peptide') ||
+      p.slug === 'ipamorelin-cjc' ||
+      p.slug === 'nad-plus' ||
+      p.slug === 'epithalon',
+  );
+  const sleepStack = getStackById('gh-optimization');
 
   return (
     <div className="min-h-screen" style={{ backgroundColor: 'var(--bg)' }}>
@@ -67,25 +69,25 @@ export default function HealingPage() {
             <div className="flex items-center gap-2 mb-5">
               <span className="badge">Category</span>
               <ChevronRight size={14} className="text-zinc-600" />
-              <span className="badge badge-cyan">Healing & Recovery</span>
+              <span className="badge badge-cyan">Sleep</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-              <span className="text-white">Healing &amp; </span>
-              <span className="gradient-text">Recovery</span>
-              <span className="text-white"> Peptides</span>
+              <span className="text-white">Peptides for </span>
+              <span className="gradient-text">Sleep</span>
             </h1>
             <p className="text-lg text-zinc-400 leading-relaxed mb-8 max-w-2xl">
-              BPC-157 and TB-500 are the most validated peptides for musculoskeletal injury recovery.
-              Together they cover every mechanism of the healing cascade — from local tissue repair and
-              angiogenesis to systemic inflammation reduction and flexibility restoration.
+              Ipamorelin and CJC-1295 are the most effective peptides for deep sleep enhancement.
+              By amplifying the natural nocturnal growth hormone surge, they dramatically improve
+              Stage 3 slow-wave sleep — the phase responsible for true physical and cognitive
+              restoration.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/stacks/ultimate-healing" className="btn-primary">
-                View Healing Stack
+              <Link href="/stacks/gh-optimization" className="btn-primary">
+                View GH Optimization Stack
                 <ArrowRight size={16} />
               </Link>
-              <Link href="/products" className="btn-secondary">
-                All Products
+              <Link href="/products/ipamorelin-cjc" className="btn-secondary">
+                Shop Ipamorelin/CJC
               </Link>
             </div>
           </div>
@@ -93,10 +95,10 @@ export default function HealingPage() {
           {/* Stat strip */}
           <div className="mt-10 sm:mt-14 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {[
-              { icon: <Zap size={18} className="text-violet-400" />, value: '2×', label: 'Faster healing vs. untreated' },
-              { icon: <ShieldCheck size={18} className="text-cyan-400" />, value: '30+', label: 'Years of research' },
-              { icon: <Clock size={18} className="text-violet-400" />, value: '3–7', label: 'Days to first effects' },
-              { icon: <CheckCircle2 size={18} className="text-cyan-400" />, value: '100%', label: 'Naturally-derived basis' },
+              { icon: <Clock size={18} className="text-violet-400" />, value: '1–2 wks', label: 'Time to improved sleep quality' },
+              { icon: <Zap size={18} className="text-cyan-400" />, value: '3–5×', label: 'GH pulse increase during sleep' },
+              { icon: <ShieldCheck size={18} className="text-violet-400" />, value: '85%', label: 'Users report better recovery' },
+              { icon: <CheckCircle2 size={18} className="text-cyan-400" />, value: 'Stage 3', label: 'Deep sleep phase enhanced most' },
             ].map((stat) => (
               <div key={stat.label} className="card p-4 flex items-start gap-3">
                 <div className="mt-0.5">{stat.icon}</div>
@@ -116,22 +118,22 @@ export default function HealingPage() {
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="mb-10">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
-            Healing &amp; Recovery Products
+            Sleep Optimization Products
           </h2>
           <p className="text-zinc-400 max-w-2xl">
-            Every peptide in this category has been selected for its evidence base in tissue repair,
-            inflammation reduction, and recovery acceleration.
+            Every peptide in this category has been selected for its evidence base in sleep quality
+            enhancement, GH pulsatility, and circadian rhythm restoration.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {healingProducts.map((product) => (
+          {sleepProducts.map((product) => (
             <ProductCard key={product.slug} product={product} showAffiliateButton />
           ))}
         </div>
       </section>
 
       {/* Featured stack */}
-      {healingStack && (
+      {sleepStack && (
         <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="flex items-center gap-3 mb-3">
@@ -141,16 +143,16 @@ export default function HealingPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-start">
               <div>
                 <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                  {healingStack.name}
+                  {sleepStack.name}
                 </h2>
                 <p className="text-zinc-400 leading-relaxed mb-6">
-                  {healingStack.shortDescription}
+                  {sleepStack.shortDescription}
                 </p>
                 <div className="flex flex-wrap gap-3 mb-8">
                   {[
-                    { label: 'Duration', value: healingStack.duration },
-                    { label: 'Cost', value: healingStack.cost },
-                    { label: 'Difficulty', value: healingStack.difficulty },
+                    { label: 'Duration', value: sleepStack.duration },
+                    { label: 'Cost', value: sleepStack.cost },
+                    { label: 'Difficulty', value: sleepStack.difficulty },
                   ].map((item) => (
                     <div
                       key={item.label}
@@ -162,7 +164,7 @@ export default function HealingPage() {
                     </div>
                   ))}
                 </div>
-                <Link href="/stacks/ultimate-healing" className="btn-primary">
+                <Link href="/stacks/gh-optimization" className="btn-primary">
                   Full Stack Protocol
                   <ArrowRight size={16} />
                 </Link>
@@ -172,7 +174,7 @@ export default function HealingPage() {
                 <h3 className="text-sm font-semibold text-zinc-500 uppercase tracking-wider">
                   Expected Results
                 </h3>
-                {healingStack.expectedResults.map((result, i) => (
+                {sleepStack.expectedResults.map((result, i) => (
                   <div
                     key={i}
                     className="flex items-start gap-3 p-4 rounded-xl border"
@@ -188,39 +190,38 @@ export default function HealingPage() {
         </section>
       )}
 
-      {/* How healing peptides work */}
+      {/* How sleep peptides work */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-white mb-4">How These Peptides Accelerate Healing</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">How These Peptides Enhance Sleep</h2>
           <p className="text-zinc-400 max-w-2xl mx-auto">
-            BPC-157 and TB-500 target distinct but complementary aspects of the healing cascade,
-            making their combination greater than the sum of its parts.
+            Ipamorelin/CJC-1295 and NAD+ target distinct but complementary aspects of sleep
+            architecture — GH pulsatility and circadian rhythm restoration.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
           {[
             {
-              name: 'BPC-157',
-              subtitle: 'Local Repair Engine',
+              name: 'Ipamorelin/CJC-1295',
+              subtitle: 'GH Pulse Amplifier',
               color: 'violet',
               points: [
-                'Upregulates growth hormone receptors at injury site',
-                'Stimulates VEGF for new blood vessel formation (angiogenesis)',
-                'Promotes collagen synthesis and tendon-to-bone attachment',
-                'Inhibits inflammatory cytokines without immune suppression',
-                'Heals gut lining — uniquely effective for IBD and leaky gut',
+                'Stimulates pituitary GH release timed to natural sleep pulses',
+                'Dramatically enhances Stage 3 (deep/slow-wave) sleep architecture',
+                'Reduces cortisol interference with sleep cycles',
+                'Increases IGF-1 which drives muscle repair overnight',
+                'Pre-sleep injection timing maximizes the natural nocturnal GH surge',
               ],
             },
             {
-              name: 'TB-500',
-              subtitle: 'Systemic Healing Signal',
+              name: 'NAD+',
+              subtitle: 'Circadian Reset',
               color: 'cyan',
               points: [
-                'Binds to actin — drives cell migration and proliferation throughout the body',
-                'Reduces fibrosis and scar tissue formation after injury',
-                'Anti-inflammatory at the systemic level, not just locally',
-                'Promotes myogenesis (muscle fiber formation)',
-                'Restores flexibility and range of motion in damaged fascia',
+                'Restores NAD+/NADH ratio in hypothalamic clock neurons',
+                'Activates SIRT1 which regulates circadian gene expression',
+                'Reduces wakefulness-promoting oxidative stress',
+                'Improves sleep-wake transition signaling',
               ],
             },
           ].map((item) => (
@@ -266,10 +267,10 @@ export default function HealingPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="flex items-center gap-3 mb-10">
             <HelpCircle size={22} className="text-violet-400" />
-            <h2 className="text-2xl font-bold text-white">Healing Peptide FAQ</h2>
+            <h2 className="text-2xl font-bold text-white">Sleep Peptide FAQ</h2>
           </div>
           <div className="space-y-4">
-            {healingFaqs.map((faq, i) => (
+            {sleepFaqs.map((faq, i) => (
               <div
                 key={i}
                 className="rounded-xl border p-5"
@@ -285,23 +286,24 @@ export default function HealingPage() {
 
       {/* CTA */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 text-center">
-        <h2 className="text-3xl font-bold text-white mb-4">Ready to Start Your Recovery?</h2>
+        <h2 className="text-3xl font-bold text-white mb-4">Ready to Transform Your Sleep?</h2>
         <p className="text-zinc-400 mb-8 max-w-xl mx-auto">
-          Browse the complete healing protocol, or explore other peptide categories for your goals.
+          Browse the complete GH optimization protocol, or go directly to Ipamorelin/CJC-1295
+          — the gold standard for deep sleep enhancement.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
-          <Link href="/stacks/ultimate-healing" className="btn-primary">
-            View Ultimate Healing Stack
+          <Link href="/stacks/gh-optimization" className="btn-primary">
+            View GH Optimization Stack
             <ArrowRight size={16} />
           </Link>
-          <Link href="/stacks" className="btn-secondary">
-            All Stacks
+          <Link href="/products/ipamorelin-cjc" className="btn-secondary">
+            Shop Ipamorelin/CJC
           </Link>
         </div>
       </section>
 
       <div className="glow-divider mx-6" />
-      <RelatedReading pageKey="/healing" />
+      <RelatedReading pageKey="/sleep" />
     </div>
   );
 }

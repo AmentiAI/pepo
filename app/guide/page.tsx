@@ -16,14 +16,17 @@ import RelatedReading from '@/components/RelatedReading';
 export const metadata: Metadata = {
   title: "How to Use Peptides: Complete Beginner's Guide to Dosing & Injection",
   description:
-    "The complete beginner's guide to peptides. Learn what peptides are, how to inject subcutaneously, starting protocols, common mistakes, and how to get results fast.",
+    "Complete beginner's guide to peptides — what they are, how to inject subcutaneously, starting doses, protocols, and how to get results fast.",
   keywords:
-    'how to use peptides, peptide guide, how to inject peptides, peptide protocols, subcutaneous injection guide, beginner peptide protocol 2026',
+    'how to use peptides, peptide guide, how to inject peptides, peptide protocols, subcutaneous injection guide, beginner peptide protocol',
+  alternates: { canonical: 'https://peptidesclav.com/guide' },
   openGraph: {
     title: "How to Use Peptides: Complete Beginner's Guide",
     description:
-      'Everything you need to know to start using peptides effectively — from first principles to your first injection and choosing the right protocol.',
+      'Everything you need to know to start using peptides — from first principles to your first injection and the right protocol.',
     type: 'article',
+    url: 'https://peptidesclav.com/guide',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: "Peptide Beginner's Guide — Dosing & Injection" }],
   },
 };
 
@@ -66,9 +69,25 @@ const sections = [
   },
 ];
 
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: "How to Use Peptides: Complete Beginner's Guide to Dosing & Injection",
+  description: "Complete beginner's guide to peptides — what they are, how to inject subcutaneously, starting doses, protocols, and how to get results fast.",
+  url: 'https://peptidesclav.com/guide',
+  image: 'https://peptidesclav.com/og-image.png',
+  author: { '@type': 'Organization', name: 'PeptidesClav', url: 'https://peptidesclav.com' },
+  publisher: { '@type': 'Organization', name: 'PeptidesClav', logo: { '@type': 'ImageObject', url: 'https://peptidesclav.com/logo.png' } },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://peptidesclav.com/guide' },
+};
+
 export default function GuidePage() {
   return (
     <div className="min-h-screen" style={{ backgroundColor: 'var(--bg)' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       {/* Hero */}
       <section className="relative pt-14 pb-12 sm:pt-28 sm:pb-20 overflow-hidden grid-bg">
         <div className="absolute inset-0 pointer-events-none">

@@ -18,13 +18,18 @@ export async function generateMetadata({
   const { slug } = await params
   const stack = stacks.find((s) => s.id === slug)
   if (!stack) return { title: 'Stack Not Found' }
+  const canonical = `https://peptidesclav.com/stacks/${stack.id}`
   return {
     title: stack.seoTitle,
     description: stack.shortDescription,
+    keywords: `${stack.name}, peptide stack, peptide protocol, ${stack.tags.slice(0, 4).join(', ')}, Apollo Peptides`,
+    alternates: { canonical },
     openGraph: {
       title: stack.seoTitle,
       description: stack.shortDescription,
       type: 'website',
+      url: canonical,
+      images: [{ url: '/og-image.png', width: 1200, height: 630, alt: stack.name }],
     },
   }
 }
@@ -67,8 +72,19 @@ export default async function StackPage({
 
   const AFFILIATE_URL = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e'
 
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://peptidesclav.com' },
+      { '@type': 'ListItem', position: 2, name: 'Stacks', item: 'https://peptidesclav.com/stacks' },
+      { '@type': 'ListItem', position: 3, name: stack.name, item: `https://peptidesclav.com/stacks/${stack.id}` },
+    ],
+  }
+
   return (
     <div className="min-h-screen" style={{ background: '#08080f' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
 
       {/* Breadcrumb */}
       <div className="border-b" style={{ borderColor: '#1e1e35' }}>

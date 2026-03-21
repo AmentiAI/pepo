@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { Star, Check, ExternalLink, ArrowLeft, ShieldCheck, FlaskConical, Zap, TrendingUp, Leaf, Sparkles, Pill } from 'lucide-react'
 import { products } from '@/lib/products'
+import { weeklyTimelines } from '@/lib/weeklyTimelines'
 import ProductCard from '@/components/ProductCard'
 import RelatedReading from '@/components/RelatedReading'
 
@@ -18,14 +19,21 @@ export async function generateMetadata({
   const { slug } = await params
   const product = products.find((p) => p.slug === slug)
   if (!product) return { title: 'Product Not Found' }
+  const canonical = `https://peptidesclav.com/products/${product.slug}`
+  const ogImage = product.image.startsWith('http')
+    ? [{ url: product.image, width: 800, height: 800, alt: product.name }]
+    : [{ url: '/og-image.png', width: 1200, height: 630, alt: product.name }]
   return {
     title: product.seoTitle,
     description: product.shortDescription,
+    keywords: `${product.name}, ${product.category}, peptide protocol, ${product.tags.slice(0, 4).join(', ')}, Apollo Peptides`,
+    alternates: { canonical },
     openGraph: {
       title: product.seoTitle,
       description: product.shortDescription,
-      images: product.image.startsWith('http') ? [{ url: product.image }] : [],
+      images: ogImage,
       type: 'website',
+      url: canonical,
     },
   }
 }
@@ -261,12 +269,20 @@ export default async function ProductPage({
     },
   }
 
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://peptidesclav.com' },
+      { '@type': 'ListItem', position: 2, name: 'Products', item: 'https://peptidesclav.com/products' },
+      { '@type': 'ListItem', position: 3, name: product.name, item: `https://peptidesclav.com/products/${product.slug}` },
+    ],
+  }
+
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
 
       <div className="min-h-screen" style={{ background: '#08080f' }}>
 
@@ -616,6 +632,40 @@ export default async function ProductPage({
                   </div>
                 </div>
               </section>
+
+              {/* Week-by-Week Results Timeline */}
+              {weeklyTimelines[product.slug] && (
+                <section>
+                  <div className="flex items-center gap-3 mb-2">
+                    <div
+                      className="w-1 h-8 rounded-full"
+                      style={{ background: `linear-gradient(to bottom, ${theme.accent}, ${theme.accentLight})` }}
+                    />
+                    <h2 className="text-2xl font-bold text-white">Week-by-Week Results Timeline</h2>
+                  </div>
+                  <p className="text-xs uppercase tracking-widest mb-6 ml-4" style={{ color: theme.accentLight }}>
+                    What to expect · Phase by phase
+                  </p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    {weeklyTimelines[product.slug].map((entry, i) => (
+                      <div
+                        key={i}
+                        className="rounded-2xl border p-5 flex flex-col gap-3"
+                        style={{ background: '#0d0d1a', borderColor: '#1e1e35' }}
+                      >
+                        <span
+                          className="inline-block self-start px-2.5 py-1 rounded-full text-[11px] font-bold"
+                          style={{ background: theme.badge, color: theme.accentLight, border: `1px solid ${theme.badgeBorder}` }}
+                        >
+                          {entry.period}
+                        </span>
+                        <p className="text-sm font-bold text-white leading-snug">{entry.title}</p>
+                        <p className="text-xs leading-relaxed" style={{ color: '#a1a1aa' }}>{entry.description}</p>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              )}
 
             </div>
 
