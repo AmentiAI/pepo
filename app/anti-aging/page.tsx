@@ -51,7 +51,7 @@ export default function AntiAgingPage() {
   return (
     <div className="min-h-screen" style={{ backgroundColor: 'var(--bg)' }}>
       {/* Hero */}
-      <section className="relative pt-28 pb-20 overflow-hidden grid-bg">
+      <section className="relative pt-14 pb-12 sm:pt-28 sm:pb-20 overflow-hidden grid-bg">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-20 right-1/4 w-96 h-96 bg-cyan-500/8 rounded-full blur-3xl" />
           <div className="absolute bottom-0 left-1/3 w-80 h-80 bg-violet-600/10 rounded-full blur-3xl" />
@@ -117,7 +117,7 @@ export default function AntiAgingPage() {
       <div className="glow-divider" />
 
       {/* Products */}
-      <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6">
+      <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="mb-10">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
             Anti-Aging &amp; Longevity Products
@@ -135,7 +135,7 @@ export default function AntiAgingPage() {
       </section>
 
       {/* GHK-Cu info section */}
-      <section className="py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
+      <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -191,7 +191,7 @@ export default function AntiAgingPage() {
       </section>
 
       {/* Epithalon info section */}
-      <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6">
+      <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1 space-y-4">
             {[
@@ -254,7 +254,7 @@ export default function AntiAgingPage() {
 
       {/* Featured stack */}
       {longevityStack && (
-        <section className="py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
+        <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="flex items-center gap-3 mb-3">
               <span className="badge">Featured Stack</span>
@@ -297,7 +297,7 @@ export default function AntiAgingPage() {
       )}
 
       {/* FAQ */}
-      <section className="py-20">
+      <section className="py-10 sm:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="flex items-center gap-3 mb-10">
             <HelpCircle size={22} className="text-violet-400" />
@@ -320,7 +320,7 @@ export default function AntiAgingPage() {
 
       {/* CTA */}
       <section
-        className="py-20 text-center"
+        className="py-10 sm:py-20 text-center"
         style={{ backgroundColor: 'var(--bg-card)' }}
       >
         <div className="max-w-2xl mx-auto px-4 sm:px-6">

@@ -188,7 +188,7 @@ export default function HomePage() {
             style={{ bottom: '10%', right: '15%', width: 400, height: 400, background: 'radial-gradient(circle, #06b6d4 0%, transparent 70%)' }} />
         </div>
 
-        <div className="relative w-full max-w-6xl mx-auto px-6 py-28 text-center">
+        <div className="relative w-full max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-28 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-violet-500/30 bg-violet-500/10 mb-8">
             <span className="w-2 h-2 rounded-full bg-violet-400 animate-pulse" />
             <span className="text-sm text-violet-300 font-medium tracking-wide">
@@ -196,13 +196,13 @@ export default function HomePage() {
             </span>
           </div>
 
-          <h1 className="font-extrabold leading-tight tracking-tight mb-6" style={{ fontSize: 'clamp(2.5rem, 7vw, 4.5rem)' }}>
+          <h1 className="font-extrabold leading-tight tracking-tight mb-6" style={{ fontSize: 'clamp(1.75rem, 7vw, 4.5rem)' }}>
             <span className="text-white">The #1 Resource for</span>
             <br />
             <span className="gradient-text">Expert Peptide Protocols</span>
           </h1>
 
-          <p className="text-zinc-400 max-w-2xl mx-auto mb-4 leading-relaxed" style={{ fontSize: 'clamp(1rem, 2.5vw, 1.25rem)' }}>
+          <p className="text-zinc-400 max-w-2xl mx-auto mb-4 leading-relaxed" style={{ fontSize: 'clamp(0.95rem, 2.5vw, 1.25rem)' }}>
             The most complete peptide protocol library on the internet — covering{' '}
             <strong className="text-zinc-200">BPC-157</strong>,{' '}
             <strong className="text-zinc-200">Semaglutide</strong>,{' '}
@@ -225,7 +225,7 @@ export default function HomePage() {
           </div>
 
           {/* Stats row */}
-          <div className="flex flex-wrap justify-center gap-6 mt-16">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mt-10 sm:mt-16">
             {stats.map((s) => {
               const Icon = s.icon;
               return (
@@ -250,7 +250,7 @@ export default function HomePage() {
       </div>
 
       {/* ── GOALS ─────────────────────────────────────────────── */}
-      <section className="max-w-6xl mx-auto px-6 py-24">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-24">
         <div className="text-center mb-14">
           <p className="text-xs font-semibold tracking-widest text-violet-400 uppercase mb-3">Goal-Based Protocols</p>
           <h2 className="text-4xl font-bold text-white mb-4">What Are You Optimizing For?</h2>
@@ -299,8 +299,8 @@ export default function HomePage() {
       <div className="glow-divider mx-6" />
 
       {/* ── FEATURED PRODUCTS ─────────────────────────────────── */}
-      <section className="max-w-6xl mx-auto px-6 py-24">
-        <div className="flex items-end justify-between mb-12">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-24">
+        <div className="flex items-end justify-between mb-8 sm:mb-12">
           <div>
             <p className="text-xs font-semibold tracking-widest text-cyan-400 uppercase mb-3">Top-Rated Peptides</p>
             <h2 className="text-4xl font-bold text-white">Most Popular Peptides</h2>
@@ -329,7 +329,7 @@ export default function HomePage() {
       <div className="glow-divider mx-6" />
 
       {/* ── RESEARCH HIGHLIGHTS ───────────────────────────────── */}
-      <section className="py-24" style={{ background: 'var(--bg-card)' }}>
+      <section className="py-12 sm:py-24" style={{ background: 'var(--bg-card)' }}>
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
             <p className="text-xs font-semibold tracking-widest text-amber-400 uppercase mb-3">Peer-Reviewed Evidence</p>
@@ -364,7 +364,7 @@ export default function HomePage() {
       </section>
 
       {/* ── HOW IT WORKS ──────────────────────────────────────── */}
-      <section className="max-w-6xl mx-auto px-6 py-24">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-24">
         <div className="text-center mb-14">
           <p className="text-xs font-semibold tracking-widest text-violet-400 uppercase mb-3">Simple Process</p>
           <h2 className="text-4xl font-bold text-white mb-4">How PeptidesClav Works</h2>
@@ -392,7 +392,7 @@ export default function HomePage() {
       <div className="glow-divider mx-6" />
 
       {/* ── FEATURED STACKS ───────────────────────────────────── */}
-      <section className="py-24" style={{ background: 'var(--bg-card)' }}>
+      <section className="py-12 sm:py-24" style={{ background: 'var(--bg-card)' }}>
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-end justify-between mb-12">
             <div>
@@ -452,7 +452,7 @@ export default function HomePage() {
       </section>
 
       {/* ── APOLLO TRUST SECTION ──────────────────────────────── */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-xs font-semibold tracking-widest text-cyan-400 uppercase mb-3">Our Sourcing Partner</p>
@@ -510,7 +510,7 @@ export default function HomePage() {
       <div className="glow-divider mx-6" />
 
       {/* ── FAQ ───────────────────────────────────────────────── */}
-      <section className="max-w-4xl mx-auto px-6 py-24">
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-24">
         <div className="text-center mb-14">
           <p className="text-xs font-semibold tracking-widest text-cyan-400 uppercase mb-3">Common Questions</p>
           <h2 className="text-4xl font-bold text-white mb-4">Peptide FAQ</h2>
@@ -537,7 +537,7 @@ export default function HomePage() {
       </section>
 
       {/* ── BOTTOM CTA ────────────────────────────────────────── */}
-      <section className="max-w-6xl mx-auto px-6 pb-24">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 pb-12 sm:pb-24">
         <div
           className="rounded-2xl p-12 text-center relative overflow-hidden animate-pulse-glow"
           style={{

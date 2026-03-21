@@ -70,7 +70,7 @@ export default function GuidePage() {
   return (
     <div className="min-h-screen" style={{ backgroundColor: 'var(--bg)' }}>
       {/* Hero */}
-      <section className="relative pt-28 pb-20 overflow-hidden grid-bg">
+      <section className="relative pt-14 pb-12 sm:pt-28 sm:pb-20 overflow-hidden grid-bg">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-20 right-1/3 w-96 h-96 bg-violet-600/8 rounded-full blur-3xl" />
           <div className="absolute bottom-0 left-1/4 w-72 h-72 bg-cyan-500/6 rounded-full blur-3xl" />
@@ -129,7 +129,7 @@ export default function GuidePage() {
       <div className="glow-divider" />
 
       {/* Article content */}
-      <article className="max-w-3xl mx-auto px-4 sm:px-6 py-20 space-y-20">
+      <article className="max-w-3xl mx-auto px-4 sm:px-6 py-10 sm:py-20 space-y-12 sm:space-y-20">
 
         {/* Section 1: What are peptides */}
         <section id="what-are-peptides" className="scroll-mt-24">
@@ -556,7 +556,7 @@ export default function GuidePage() {
 
       {/* CTA footer */}
       <section
-        className="py-20 text-center"
+        className="py-10 sm:py-20 text-center"
         style={{ backgroundColor: 'var(--bg-card)' }}
       >
         <div className="max-w-2xl mx-auto px-4 sm:px-6">

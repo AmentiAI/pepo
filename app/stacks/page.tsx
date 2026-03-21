@@ -73,7 +73,7 @@ export default function StacksPage() {
       <div className="glow-divider" />
 
       {/* Stacks grid */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-14">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-14">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {stacks.map((stack) => {
             // Look up product images for this stack

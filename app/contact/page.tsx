@@ -17,7 +17,7 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen" style={{ backgroundColor: 'var(--bg)' }}>
       {/* Hero */}
-      <section className="relative pt-28 pb-20 overflow-hidden grid-bg">
+      <section className="relative pt-14 pb-12 sm:pt-28 sm:pb-20 overflow-hidden grid-bg">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-20 right-1/3 w-96 h-96 bg-violet-600/8 rounded-full blur-3xl" />
           <div className="absolute bottom-0 left-1/4 w-72 h-72 bg-cyan-500/6 rounded-full blur-3xl" />
@@ -40,7 +40,7 @@ export default function ContactPage() {
       <div className="glow-divider" />
 
       {/* Contact cards */}
-      <section className="py-20 max-w-4xl mx-auto px-4 sm:px-6">
+      <section className="py-10 sm:py-20 max-w-4xl mx-auto px-4 sm:px-6">
         <div className="grid sm:grid-cols-2 gap-6">
 
           {/* AI Chat */}

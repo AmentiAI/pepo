@@ -41,7 +41,7 @@ export default async function ProductsPage({
   return (
     <>
       {/* ── Hero header ──────────────────────────────────────── */}
-      <section className="relative overflow-hidden grid-bg pt-20 pb-16 border-b" style={{ borderColor: 'var(--border)' }}>
+      <section className="relative overflow-hidden grid-bg pt-12 pb-10 sm:pt-20 sm:pb-16 border-b" style={{ borderColor: 'var(--border)' }}>
         {/* Background glow */}
         <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
           <div
@@ -192,7 +192,7 @@ export default async function ProductsPage({
         {/* Bottom CTA */}
         {filtered.length > 0 && (
           <div
-            className="mt-16 rounded-2xl p-10 text-center"
+            className="mt-10 sm:mt-16 rounded-2xl p-6 sm:p-10 text-center"
             style={{
               background:
                 'linear-gradient(135deg, rgba(124,58,237,0.1) 0%, rgba(6,182,212,0.07) 100%)',

@@ -65,7 +65,7 @@ export default function BodyCompositionPage() {
   return (
     <div className="min-h-screen" style={{ backgroundColor: 'var(--bg)' }}>
       {/* Hero */}
-      <section className="relative pt-28 pb-20 overflow-hidden grid-bg">
+      <section className="relative pt-14 pb-12 sm:pt-28 sm:pb-20 overflow-hidden grid-bg">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-20 left-1/3 w-96 h-96 bg-violet-600/10 rounded-full blur-3xl" />
           <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-cyan-500/8 rounded-full blur-3xl" />
@@ -99,7 +99,7 @@ export default function BodyCompositionPage() {
           </div>
 
           {/* Stats */}
-          <div className="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div className="mt-10 sm:mt-14 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {[
               { icon: <TrendingUp size={18} className="text-violet-400" />, value: '3–5×', label: 'GH pulse increase vs. baseline' },
               { icon: <Flame size={18} className="text-cyan-400" />, value: '15–20%', label: 'Visceral fat reduction (Tesamorelin)' },
@@ -121,7 +121,7 @@ export default function BodyCompositionPage() {
       <div className="glow-divider" />
 
       {/* Products */}
-      <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6">
+      <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="mb-10">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
             Body Composition Peptides
@@ -139,7 +139,7 @@ export default function BodyCompositionPage() {
       </section>
 
       {/* How GH peptides work for body comp */}
-      <section className="py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
+      <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">
@@ -192,7 +192,7 @@ export default function BodyCompositionPage() {
       </section>
 
       {/* Featured stacks */}
-      <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6">
+      <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="mb-10">
           <h2 className="text-2xl font-bold text-white mb-2">Featured Body Composition Stacks</h2>
           <p className="text-zinc-400">
@@ -229,7 +229,7 @@ export default function BodyCompositionPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
+      <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="flex items-center gap-3 mb-10">
             <HelpCircle size={22} className="text-violet-400" />
@@ -251,7 +251,7 @@ export default function BodyCompositionPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 text-center max-w-2xl mx-auto px-4 sm:px-6">
+      <section className="py-10 sm:py-20 text-center max-w-2xl mx-auto px-4 sm:px-6">
         <h2 className="text-3xl font-bold text-white mb-4">
           Start Your Body Recomposition Protocol
         </h2>

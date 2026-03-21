@@ -53,7 +53,7 @@ export default function HealingPage() {
   return (
     <div className="min-h-screen" style={{ backgroundColor: 'var(--bg)' }}>
       {/* Hero */}
-      <section className="relative pt-28 pb-20 overflow-hidden grid-bg">
+      <section className="relative pt-14 pb-12 sm:pt-28 sm:pb-20 overflow-hidden grid-bg">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-20 left-1/4 w-96 h-96 bg-violet-600/10 rounded-full blur-3xl" />
           <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-cyan-500/8 rounded-full blur-3xl" />
@@ -88,7 +88,7 @@ export default function HealingPage() {
           </div>
 
           {/* Stat strip */}
-          <div className="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div className="mt-10 sm:mt-14 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {[
               { icon: <Zap size={18} className="text-violet-400" />, value: '2×', label: 'Faster healing vs. untreated' },
               { icon: <ShieldCheck size={18} className="text-cyan-400" />, value: '30+', label: 'Years of research' },
@@ -110,7 +110,7 @@ export default function HealingPage() {
       <div className="glow-divider" />
 
       {/* Products grid */}
-      <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6">
+      <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="mb-10">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
             Healing &amp; Recovery Products
@@ -129,7 +129,7 @@ export default function HealingPage() {
 
       {/* Featured stack */}
       {healingStack && (
-        <section className="py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
+        <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="flex items-center gap-3 mb-3">
               <span className="badge">Featured Stack</span>
@@ -186,7 +186,7 @@ export default function HealingPage() {
       )}
 
       {/* How healing peptides work */}
-      <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6">
+      <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-white mb-4">How These Peptides Accelerate Healing</h2>
           <p className="text-zinc-400 max-w-2xl mx-auto">
@@ -259,7 +259,7 @@ export default function HealingPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
+      <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="flex items-center gap-3 mb-10">
             <HelpCircle size={22} className="text-violet-400" />
@@ -281,7 +281,7 @@ export default function HealingPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 text-center">
+      <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 text-center">
         <h2 className="text-3xl font-bold text-white mb-4">Ready to Start Your Recovery?</h2>
         <p className="text-zinc-400 mb-8 max-w-xl mx-auto">
           Browse the complete healing protocol, or explore other peptide categories for your goals.

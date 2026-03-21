@@ -34,7 +34,7 @@ export default function ProductCard({ product, showAffiliateButton = false }: Pr
   return (
     <div className="card flex flex-col group overflow-hidden">
       {/* Product image */}
-      <Link href={`/products/${product.slug}`} className="block relative overflow-hidden" style={{ height: '260px', background: '#0a0a14' }}>
+      <Link href={`/products/${product.slug}`} className="block relative overflow-hidden h-48 sm:h-64" style={{ background: '#0a0a14' }}>
         {product.image.startsWith('http') ? (
           <img
             src={product.image}
