@@ -6,7 +6,8 @@
       "Bash(find /mnt/c/Users/Wilso/pepo/.next -name *.css)",
       "WebFetch(domain:apollopeptidesciences.com)",
       "Bash(npx tsc:*)",
-      "Bash(xargs sed:*)"
+      "Bash(xargs sed:*)",
+      "Bash(find /mnt/c/Users/Wilso/pepo -type f \\\\\\(-name *.json -o -name *.csv -o -name *.js \\\\\\) ! -path */.next/* ! -path */.git/* ! -path */node_modules/*)"
     ]
   }
 }

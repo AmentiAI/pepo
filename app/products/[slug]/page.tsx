@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import { Star, Check, ExternalLink, ArrowLeft, ShieldCheck, FlaskConical, Zap, TrendingUp, Leaf, Sparkles, Pill } from 'lucide-react'
 import { products } from '@/lib/products'
 import ProductCard from '@/components/ProductCard'
+import RelatedReading from '@/components/RelatedReading'
 
 export async function generateStaticParams() {
   return products.map((p) => ({ slug: p.slug }))
@@ -790,6 +791,9 @@ export default async function ProductPage({
         </div>
 
       </div>
+
+      <div className="glow-divider mx-6" />
+      <RelatedReading pageKey={`/products/${product.slug}`} />
     </>
   )
 }

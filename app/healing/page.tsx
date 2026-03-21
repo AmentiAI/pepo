@@ -4,6 +4,7 @@ import { Zap, ShieldCheck, Clock, ArrowRight, CheckCircle2, HelpCircle, ChevronR
 import ProductCard from '@/components/ProductCard';
 import { products } from '@/lib/products';
 import { getStackById } from '@/lib/stacks';
+import RelatedReading from '@/components/RelatedReading';
 
 export const metadata: Metadata = {
   title: 'Healing & Recovery Peptides | BPC-157, TB-500 Protocols',
@@ -295,6 +296,9 @@ export default function HealingPage() {
           </Link>
         </div>
       </section>
+
+      <div className="glow-divider mx-6" />
+      <RelatedReading pageKey="/healing" />
     </div>
   );
 }

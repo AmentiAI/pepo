@@ -4,6 +4,7 @@ import { ArrowRight, CheckCircle2, Dna, Sparkles, Clock, HelpCircle, ChevronRigh
 import ProductCard from '@/components/ProductCard';
 import { products } from '@/lib/products';
 import { getStackById } from '@/lib/stacks';
+import RelatedReading from '@/components/RelatedReading';
 
 export const metadata: Metadata = {
   title: 'Anti-Aging Peptides | Epithalon, GHK-Cu, Longevity Protocols',
@@ -341,6 +342,9 @@ export default function AntiAgingPage() {
           </div>
         </div>
       </section>
+
+      <div className="glow-divider mx-6" />
+      <RelatedReading pageKey="/anti-aging" />
     </div>
   );
 }

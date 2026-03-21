@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { products } from '@/lib/products';
 import ProductCard from '@/components/ProductCard';
+import RelatedReading from '@/components/RelatedReading';
 
 export const metadata: Metadata = {
   title: 'Buy Peptides Online | BPC-157, Semaglutide, Tirzepatide & More',
@@ -212,6 +213,9 @@ export default async function ProductsPage({
           </div>
         )}
       </section>
+
+      <div className="glow-divider mx-6" />
+      <RelatedReading pageKey="/products" />
     </>
   );
 }

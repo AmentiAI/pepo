@@ -11,6 +11,7 @@ import {
   ListChecks,
   ChevronRight,
 } from 'lucide-react';
+import RelatedReading from '@/components/RelatedReading';
 
 export const metadata: Metadata = {
   title: "How to Use Peptides: Complete Beginner's Guide to Dosing & Injection",
@@ -581,6 +582,9 @@ export default function GuidePage() {
           </div>
         </div>
       </section>
+
+      <div className="glow-divider mx-6" />
+      <RelatedReading pageKey="/guide" />
     </div>
   );
 }

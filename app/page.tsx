@@ -7,6 +7,7 @@ import {
 import { products } from '@/lib/products';
 import { stacks } from '@/lib/stacks';
 import ProductCard from '@/components/ProductCard';
+import RelatedReading from '@/components/RelatedReading';
 
 export const metadata: Metadata = {
   title: 'BPC-157, Semaglutide & Top Peptide Protocols for Healing & Fat Loss',
@@ -565,6 +566,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <div className="glow-divider mx-6" />
+      <RelatedReading pageKey="/" />
     </>
   );
 }

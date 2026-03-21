@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import { Check, ExternalLink, ArrowLeft, Clock, DollarSign, Target, ArrowRight } from 'lucide-react'
 import { stacks } from '@/lib/stacks'
 import { products } from '@/lib/products'
+import RelatedReading from '@/components/RelatedReading'
 
 export async function generateStaticParams() {
   return stacks.map((s) => ({ slug: s.id }))
@@ -416,6 +417,8 @@ export default async function StackPage({
           </div>
         </section>
 
+        <div className="glow-divider mx-6" />
+        <RelatedReading pageKey={`/stacks/${stack.id}`} />
       </div>
     </div>
   )

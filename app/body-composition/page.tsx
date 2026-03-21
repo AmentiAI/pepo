@@ -4,6 +4,7 @@ import { ArrowRight, CheckCircle2, TrendingUp, Flame, Activity, HelpCircle, Chev
 import ProductCard from '@/components/ProductCard';
 import { products } from '@/lib/products';
 import { getStackById } from '@/lib/stacks';
+import RelatedReading from '@/components/RelatedReading';
 
 export const metadata: Metadata = {
   title: 'Body Composition Peptides | GH, Fat Loss & Muscle Protocols',
@@ -268,6 +269,9 @@ export default function BodyCompositionPage() {
           </Link>
         </div>
       </section>
+
+      <div className="glow-divider mx-6" />
+      <RelatedReading pageKey="/body-composition" />
     </div>
   );
 }

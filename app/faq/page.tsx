@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import FAQAccordion, { totalFAQCount } from './FAQAccordion';
+import RelatedReading from '@/components/RelatedReading';
 
 export const metadata: Metadata = {
   title: 'Peptide FAQ: Safety, Dosing, Injection & Stacking Guide',
@@ -55,6 +56,9 @@ export default function FAQPage() {
 
       {/* Client accordion + CTA */}
       <FAQAccordion />
+
+      <div className="glow-divider mx-6" />
+      <RelatedReading pageKey="/faq" />
     </div>
   );
 }

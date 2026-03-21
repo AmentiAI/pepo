@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { stacks } from '@/lib/stacks'
 import { products } from '@/lib/products'
 import { ArrowRight, Clock, DollarSign, Target, Zap } from 'lucide-react'
+import RelatedReading from '@/components/RelatedReading'
 
 export const metadata: Metadata = {
   title: 'Best Peptide Stacks & Protocols for Healing, Fat Loss & Anti-Aging',
@@ -229,6 +230,8 @@ export default function StacksPage() {
         </div>
       </section>
 
+      <div className="glow-divider mx-6" />
+      <RelatedReading pageKey="/stacks" />
     </div>
   )
 }
