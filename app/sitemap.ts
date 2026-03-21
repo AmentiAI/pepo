@@ -28,6 +28,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/healing/rotator-cuff`,              priority: 0.6, changeFrequency: 'monthly' as const },
     { url: `${BASE_URL}/healing/tendonitis`,                priority: 0.6, changeFrequency: 'monthly' as const },
     { url: `${BASE_URL}/healing/acl`,                       priority: 0.6, changeFrequency: 'monthly' as const },
+    { url: `${BASE_URL}/peptides/mk-677`,                    priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: `${BASE_URL}/peptides/pt-141`,                    priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: `${BASE_URL}/comparisons/bpc-157-vs-tb-500`,      priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: `${BASE_URL}/how-to/reconstitute-peptides`,       priority: 0.7, changeFrequency: 'monthly' as const },
+    { url: `${BASE_URL}/goals/skin-healing-ghk-cu`,          priority: 0.7, changeFrequency: 'monthly' as const },
+    { url: `${BASE_URL}/how-to/subcutaneous-injection-guide`,priority: 0.7, changeFrequency: 'monthly' as const },
+    { url: `${BASE_URL}/healing/gut-health-bpc-157`,         priority: 0.7, changeFrequency: 'monthly' as const },
+    { url: `${BASE_URL}/goals/cognitive-enhancement`,        priority: 0.7, changeFrequency: 'monthly' as const },
+    { url: `${BASE_URL}/guides/womens-peptide-guide`,        priority: 0.7, changeFrequency: 'monthly' as const },
+    { url: `${BASE_URL}/how-to/peptide-storage-guide`,       priority: 0.6, changeFrequency: 'monthly' as const },
   ];
 
   const productPages: MetadataRoute.Sitemap = products.map((p) => ({

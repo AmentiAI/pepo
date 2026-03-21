@@ -312,4 +312,74 @@ export const internalLinks: Record<string, InternalLink[]> = {
     { anchor: 'Ultimate Healing Stack protocol', href: '/stacks/ultimate-healing' },
     { anchor: 'healing & recovery peptide category', href: '/healing' },
   ],
+
+  '/peptides/mk-677': [
+    { anchor: 'Ipamorelin/CJC-1295 vs MK-677 for GH release', href: '/products/ipamorelin-cjc' },
+    { anchor: 'GH Optimization Stack protocol', href: '/stacks/gh-optimization' },
+    { anchor: 'peptide beginner guide and protocols', href: '/guide' },
+    { anchor: 'body composition and muscle growth goals', href: '/body-composition' },
+  ],
+
+  '/peptides/pt-141': [
+    { anchor: 'complete peptide beginner guide', href: '/guide' },
+    { anchor: 'how to reconstitute and inject peptides', href: '/how-to/reconstitute-peptides' },
+    { anchor: 'women\'s peptide protocol guide', href: '/guides/womens-peptide-guide' },
+    { anchor: 'peptide FAQ: safety and dosing', href: '/faq' },
+  ],
+
+  '/comparisons/bpc-157-vs-tb-500': [
+    { anchor: 'BPC-157 tendon repair protocol and dosing', href: '/products/bpc-157' },
+    { anchor: 'TB-500 systemic recovery guide', href: '/products/tb-500' },
+    { anchor: 'Ultimate Healing Stack: BPC-157 + TB-500', href: '/stacks/ultimate-healing' },
+    { anchor: 'rotator cuff healing peptide protocol', href: '/healing/rotator-cuff' },
+  ],
+
+  '/how-to/reconstitute-peptides': [
+    { anchor: 'how to inject peptides subcutaneously', href: '/how-to/subcutaneous-injection-guide' },
+    { anchor: 'peptide storage and refrigeration guide', href: '/how-to/peptide-storage-guide' },
+    { anchor: 'bacteriostatic water for peptide reconstitution', href: '/products/bacteriostatic-water' },
+    { anchor: 'peptide beginner getting started guide', href: '/guide' },
+  ],
+
+  '/goals/skin-healing-ghk-cu': [
+    { anchor: 'GHK-Cu copper peptide product page', href: '/products/ghk-cu' },
+    { anchor: 'Anti-Aging Skin Stack protocol', href: '/stacks/anti-aging-skin' },
+    { anchor: 'Epithalon for longevity and anti-aging', href: '/products/epithalon' },
+    { anchor: 'best peptides for anti-aging guide', href: '/best-peptide-for-anti-aging' },
+  ],
+
+  '/how-to/subcutaneous-injection-guide': [
+    { anchor: 'how to reconstitute peptides with BAC water', href: '/how-to/reconstitute-peptides' },
+    { anchor: 'peptide storage and refrigeration guide', href: '/how-to/peptide-storage-guide' },
+    { anchor: 'complete peptide beginner guide', href: '/guide' },
+    { anchor: 'peptide FAQ: safety and dosing questions', href: '/faq' },
+  ],
+
+  '/healing/gut-health-bpc-157': [
+    { anchor: 'BPC-157 product page and dosing', href: '/products/bpc-157' },
+    { anchor: 'gut health peptides overview', href: '/gut-health' },
+    { anchor: 'BPC-157 vs TB-500 comparison guide', href: '/comparisons/bpc-157-vs-tb-500' },
+    { anchor: 'Ultimate Healing Stack protocol', href: '/stacks/ultimate-healing' },
+  ],
+
+  '/goals/cognitive-enhancement': [
+    { anchor: 'NAD+ for mitochondrial and brain health', href: '/products/nad-plus' },
+    { anchor: 'complete peptide guide for beginners', href: '/guide' },
+    { anchor: 'BPC-157 gut-brain axis healing', href: '/healing/gut-health-bpc-157' },
+    { anchor: 'peptide FAQ and safety questions', href: '/faq' },
+  ],
+
+  '/guides/womens-peptide-guide': [
+    { anchor: 'Ipamorelin/CJC-1295 for women\'s GH support', href: '/products/ipamorelin-cjc' },
+    { anchor: 'Anti-Aging Skin Stack for women', href: '/stacks/anti-aging-skin' },
+    { anchor: 'GHK-Cu for skin healing and collagen', href: '/goals/skin-healing-ghk-cu' },
+    { anchor: 'best peptides for anti-aging', href: '/best-peptide-for-anti-aging' },
+  ],
+
+  '/how-to/peptide-storage-guide': [
+    { anchor: 'how to reconstitute peptides step-by-step', href: '/how-to/reconstitute-peptides' },
+    { anchor: 'how to inject peptides subcutaneously', href: '/how-to/subcutaneous-injection-guide' },
+    { anchor: 'bacteriostatic water for peptide storage', href: '/products/bacteriostatic-water' },
+    { anchor: 'peptide beginner guide and protocols', href: '/guide' },
+  ],
 };
