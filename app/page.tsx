@@ -8,6 +8,7 @@ import { products } from '@/lib/products';
 import { stacks } from '@/lib/stacks';
 import ProductCard from '@/components/ProductCard';
 import RelatedReading from '@/components/RelatedReading';
+import ReconstitutionCalculator from '@/components/ReconstitutionCalculator';
 
 export const metadata: Metadata = {
   title: 'Peptides for Looksmaxxing, Healing & Fat Loss',
@@ -193,27 +194,26 @@ export default function HomePage() {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-violet-500/30 bg-violet-500/10 mb-8">
             <span className="w-2 h-2 rounded-full bg-violet-400 animate-pulse" />
             <span className="text-sm text-violet-300 font-medium tracking-wide">
-              Evidence-Based Peptide Protocols • Apollo Peptides Affiliate
+              Looksmaxxing • Healing • Fat Loss • Anti-Aging
             </span>
           </div>
 
           <h1 className="font-extrabold leading-tight tracking-tight mb-6" style={{ fontSize: 'clamp(1.75rem, 7vw, 4.5rem)' }}>
-            <span className="text-white">The #1 Resource for</span>
+            <span className="gradient-text">Peptides for Looksmaxxing</span>
             <br />
-            <span className="gradient-text">Expert Peptide Protocols</span>
+            <span className="text-white">Healing &amp; Fat Loss</span>
           </h1>
 
           <p className="text-zinc-400 max-w-2xl mx-auto mb-4 leading-relaxed" style={{ fontSize: 'clamp(0.95rem, 2.5vw, 1.25rem)' }}>
-            The most complete peptide protocol library on the internet — covering{' '}
-            <strong className="text-zinc-200">BPC-157</strong>,{' '}
-            <strong className="text-zinc-200">Semaglutide</strong>,{' '}
-            <strong className="text-zinc-200">Tirzepatide</strong>,{' '}
-            <strong className="text-zinc-200">Ipamorelin/CJC-1295</strong>,{' '}
-            <strong className="text-zinc-200">Epithalon</strong>, GHK-Cu &amp; 15 more.
-            Exact dosing. Real results. Zero guesswork.
+            The complete looksmaxxing peptide guide —{' '}
+            <strong className="text-zinc-200">GHK-Cu</strong> for skinmaxxing,{' '}
+            <strong className="text-zinc-200">Ipamorelin</strong> for bodymaxxing &amp; sleepmaxxing,{' '}
+            <strong className="text-zinc-200">BPC-157</strong> for gut-skin axis,{' '}
+            <strong className="text-zinc-200">GLP-1s</strong> for face leanness.
+            Tier-ranked protocols. Zero guesswork.
           </p>
           <p className="text-zinc-500 max-w-xl mx-auto mb-10 text-sm">
-            Expert protocols. Zero guesswork. Sourced from Apollo Peptides Sciences.
+            Evidence-based. PubMed-cited. Sourced from Apollo Peptides Sciences.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -295,6 +295,28 @@ export default function HomePage() {
             );
           })}
         </div>
+      </section>
+
+      <div className="glow-divider mx-6" />
+
+      {/* ── RECONSTITUTION CALCULATOR ─────────────────────────── */}
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-24">
+        <div className="text-center mb-10">
+          <p className="text-xs font-semibold tracking-widest text-cyan-400 uppercase mb-3">Free Tool</p>
+          <h2 className="text-4xl font-bold text-white mb-4">Reconstitution Calculator</h2>
+          <p className="text-zinc-400 max-w-xl mx-auto">
+            Enter your vial size and BAC water volume — get exact draw amounts instantly. No math required.
+          </p>
+        </div>
+        <div className="max-w-2xl mx-auto">
+          <ReconstitutionCalculator />
+        </div>
+        <p className="text-center mt-6 text-sm text-zinc-600">
+          Need help with injection technique?{' '}
+          <Link href="/how-to/subcutaneous-injection-guide" className="text-violet-400 hover:text-violet-300 underline underline-offset-2">
+            Step-by-step injection guide →
+          </Link>
+        </p>
       </section>
 
       <div className="glow-divider mx-6" />
