@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import { products } from '@/lib/products';
 import { stacks } from '@/lib/stacks';
+import { articles } from '@/lib/articles';
 
 const BASE_URL = 'https://peptidesclav.com';
 
@@ -39,6 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/goals/cognitive-enhancement`,        priority: 0.7, changeFrequency: 'monthly' as const },
     { url: `${BASE_URL}/guides/womens-peptide-guide`,        priority: 0.7, changeFrequency: 'monthly' as const },
     { url: `${BASE_URL}/how-to/peptide-storage-guide`,       priority: 0.6, changeFrequency: 'monthly' as const },
+    { url: `${BASE_URL}/blog`,                               priority: 0.8, changeFrequency: 'weekly' as const },
   ];
 
   const productPages: MetadataRoute.Sitemap = products.map((p) => ({
@@ -53,5 +55,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: 'monthly' as const,
   }));
 
-  return [...staticPages, ...productPages, ...stackPages];
+  const blogPages: MetadataRoute.Sitemap = articles.map((a) => ({
+    url: `${BASE_URL}/blog/${a.slug}`,
+    priority: 0.7,
+    changeFrequency: 'monthly' as const,
+  }));
+
+  return [...staticPages, ...productPages, ...stackPages, ...blogPages];
 }

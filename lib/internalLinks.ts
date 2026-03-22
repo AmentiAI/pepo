@@ -389,4 +389,11 @@ export const internalLinks: Record<string, InternalLink[]> = {
     { anchor: 'BPC-157 gut-skin axis & hairmaxxing', href: '/products/bpc-157' },
     { anchor: 'Anti-Aging Skin Stack for full skinmaxx', href: '/stacks/anti-aging-skin' },
   ],
+
+  '/blog': [
+    { anchor: 'looksmaxxing peptide tier list and protocols', href: '/looksmaxxing' },
+    { anchor: 'GLP-1 peptide comparison: Semaglutide vs Tirzepatide vs Retatrutide', href: '/glp1-comparison' },
+    { anchor: 'BPC-157 healing protocols and dosing', href: '/products/bpc-157' },
+    { anchor: 'complete beginner peptide guide', href: '/guide' },
+  ],
 };
