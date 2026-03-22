@@ -13,7 +13,8 @@
       "Bash(done)",
       "Bash(grep -E \"^\\\\s*\\\\{$\" /mnt/c/Users/Wilso/pepo/lib/stacks.ts)",
       "Bash(ls /mnt/c/Users/Wilso/pepo/components/RelatedReading*)",
-      "Bash(echo \"exit: $?\")"
+      "Bash(echo \"exit: $?\")",
+      "Bash(find /mnt/c/Users/Wilso/pepo -name \"*.tsx\" -exec wc -l {} +)"
     ]
   }
 }

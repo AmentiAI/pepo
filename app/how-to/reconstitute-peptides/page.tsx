@@ -14,6 +14,7 @@ import {
   FlaskConical,
 } from 'lucide-react';
 import RelatedReading from '@/components/RelatedReading';
+import ReconstitutionCalculator from '@/components/ReconstitutionCalculator';
 
 export const metadata: Metadata = {
   title: 'How to Reconstitute Peptides: Step-by-Step Guide + Dosing Calculator',
@@ -120,13 +121,6 @@ const steps = [
     border: 'border-cyan-500/30',
     bg: 'bg-cyan-500/10',
   },
-];
-
-const dosingTable = [
-  { vialSize: '5mg', bacWater: '1 mL', per01: '500 mcg', per005: '250 mcg' },
-  { vialSize: '5mg', bacWater: '2 mL', per01: '250 mcg', per005: '125 mcg' },
-  { vialSize: '2mg', bacWater: '1 mL', per01: '200 mcg', per005: '100 mcg' },
-  { vialSize: '10mg', bacWater: '2 mL', per01: '500 mcg', per005: '250 mcg' },
 ];
 
 const commonMistakes = [
@@ -347,50 +341,17 @@ export default function ReconstitutePeptidesPage() {
 
       <div className="glow-divider" />
 
-      {/* Dosing Math Table */}
+      {/* Dosing Calculator */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <span className="badge badge-cyan mb-4 inline-block">Dosing Calculator</span>
         <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
-          Concentration Reference Table
+          Reconstitution Calculator
         </h2>
         <p className="text-zinc-400 mb-8 max-w-2xl">
-          Use this table to find your concentration based on vial size and BAC water volume. All
-          measurements use a standard insulin syringe where 0.1 mL = 10 IU marks.
+          Enter your vial size, BAC water volume, and desired dose to get exact draw amounts for
+          your insulin syringe — no math required.
         </p>
-        <div className="card overflow-hidden border" style={{ borderColor: 'var(--border)' }}>
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm">
-              <thead>
-                <tr style={{ backgroundColor: 'var(--bg-card)', borderBottom: '1px solid var(--border)' }}>
-                  <th className="text-left p-4 text-zinc-400 font-semibold">Vial Size</th>
-                  <th className="text-left p-4 text-zinc-400 font-semibold">BAC Water Added</th>
-                  <th className="text-left p-4 text-violet-400 font-semibold">0.1 mL = ?</th>
-                  <th className="text-left p-4 text-cyan-400 font-semibold">0.05 mL = ?</th>
-                </tr>
-              </thead>
-              <tbody>
-                {dosingTable.map((row, i) => (
-                  <tr
-                    key={i}
-                    style={{
-                      backgroundColor: i % 2 === 0 ? 'var(--bg)' : 'var(--bg-card)',
-                      borderBottom: '1px solid var(--border)',
-                    }}
-                  >
-                    <td className="p-4 text-white font-semibold">{row.vialSize} vial</td>
-                    <td className="p-4 text-zinc-300">{row.bacWater} BAC water</td>
-                    <td className="p-4 text-violet-300 font-semibold">{row.per01}</td>
-                    <td className="p-4 text-cyan-300 font-semibold">{row.per005}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <p className="text-xs text-zinc-600 mt-3">
-          Formula: (Vial size in mcg ÷ BAC water volume in mL) × draw volume in mL = dose in mcg.
-          Example: 5,000 mcg ÷ 2 mL × 0.1 mL = 250 mcg per draw.
-        </p>
+        <ReconstitutionCalculator />
       </section>
 
       {/* Why BAC Water */}

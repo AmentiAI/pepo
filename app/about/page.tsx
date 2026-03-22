@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ShieldCheck, BookOpen, FlaskConical, AlertTriangle, ExternalLink, CheckCircle2 } from 'lucide-react';
 import RelatedReading from '@/components/RelatedReading';
+import CitationsSection from '@/components/CitationsSection';
 
 export const metadata: Metadata = {
   title: 'About PeptidesClav | Evidence-Based Peptide Protocol Research',
@@ -62,6 +63,41 @@ const apolloReasons = [
   'Lyophilized powder shipped with desiccant for stability in transit',
   'US-based customer support with peptide-knowledgeable staff',
   'Consistent re-order experience — same lot quality over repeated purchases',
+];
+
+const aboutCitations = [
+  {
+    number: 1,
+    authors: 'Sikiric P, et al.',
+    title: 'Stable Gastric Pentadecapeptide BPC 157 as Basis of a New Type of Therapy',
+    journal: 'Current Pharmaceutical Design, 24(18), 1990–2001',
+    year: 2018,
+    url: 'https://pubmed.ncbi.nlm.nih.gov/29773026/',
+  },
+  {
+    number: 2,
+    authors: 'Khavinson VKh, et al.',
+    title: 'Peptide regulation of aging: the key to longevity',
+    journal: 'Biogerontology, 21, 401–418',
+    year: 2020,
+    url: 'https://pubmed.ncbi.nlm.nih.gov/32270325/',
+  },
+  {
+    number: 3,
+    authors: 'Wilding JPH, et al.',
+    title: 'Once-Weekly Semaglutide in Adults with Overweight or Obesity',
+    journal: 'New England Journal of Medicine, 384(11), 989–1002',
+    year: 2021,
+    url: 'https://www.nejm.org/doi/10.1056/NEJMoa2032183',
+  },
+  {
+    number: 4,
+    authors: 'Pickart L, Margolina A.',
+    title: 'GHK Peptide as a Natural Modulator of Multiple Cellular Pathways in Skin Regeneration',
+    journal: 'BioMed Research International, 2018',
+    year: 2018,
+    url: 'https://pubmed.ncbi.nlm.nih.gov/29750133/',
+  },
 ];
 
 export default function AboutPage() {
@@ -259,6 +295,8 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
+
+        <CitationsSection citations={aboutCitations} />
 
         {/* ── Related Reading ── */}
         <section className="py-10 sm:py-16 px-4 border-t border-[var(--border)]">

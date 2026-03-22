@@ -28,6 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/healing/rotator-cuff`,              priority: 0.6, changeFrequency: 'monthly' as const },
     { url: `${BASE_URL}/healing/tendonitis`,                priority: 0.6, changeFrequency: 'monthly' as const },
     { url: `${BASE_URL}/healing/acl`,                       priority: 0.6, changeFrequency: 'monthly' as const },
+    { url: `${BASE_URL}/looksmaxxing`,                       priority: 0.9, changeFrequency: 'monthly' as const },
     { url: `${BASE_URL}/peptides/mk-677`,                    priority: 0.8, changeFrequency: 'monthly' as const },
     { url: `${BASE_URL}/peptides/pt-141`,                    priority: 0.8, changeFrequency: 'monthly' as const },
     { url: `${BASE_URL}/comparisons/bpc-157-vs-tb-500`,      priority: 0.8, changeFrequency: 'monthly' as const },

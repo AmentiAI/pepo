@@ -382,4 +382,11 @@ export const internalLinks: Record<string, InternalLink[]> = {
     { anchor: 'bacteriostatic water for peptide storage', href: '/products/bacteriostatic-water' },
     { anchor: 'peptide beginner guide and protocols', href: '/guide' },
   ],
+
+  '/looksmaxxing': [
+    { anchor: 'GHK-Cu copper peptide for skinmaxxing', href: '/products/ghk-cu' },
+    { anchor: 'Ipamorelin/CJC-1295 sleepmaxxing & bodymaxxing protocol', href: '/products/ipamorelin-cjc' },
+    { anchor: 'BPC-157 gut-skin axis & hairmaxxing', href: '/products/bpc-157' },
+    { anchor: 'Anti-Aging Skin Stack for full skinmaxx', href: '/stacks/anti-aging-skin' },
+  ],
 };

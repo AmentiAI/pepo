@@ -10,18 +10,19 @@ import ProductCard from '@/components/ProductCard';
 import RelatedReading from '@/components/RelatedReading';
 
 export const metadata: Metadata = {
-  title: 'BPC-157, Semaglutide & Top Peptide Protocols for Healing & Fat Loss',
+  title: 'Peptides for Looksmaxxing, Healing & Fat Loss',
   description:
-    'The most complete peptide protocol library — BPC-157, Semaglutide, Tirzepatide, Ipamorelin, Epithalon & more. Expert dosing guides for healing, fat loss, and anti-aging.',
+    'The complete looksmaxxing peptide guide — GHK-Cu for skinmaxxing, Ipamorelin for bodymaxxing, BPC-157 for gut-skin axis, and GLP-1s for face leanness. Tier-ranked protocols.',
   keywords:
-    'BPC-157, TB-500, Ipamorelin, CJC-1295, Semaglutide, Tirzepatide, GHK-Cu anti-aging, Epithalon telomere, peptide protocols, Apollo Peptides, best healing peptides 2026, fat loss peptides',
+    'looksmaxxing peptides, peptides for looksmaxxing, skinmaxxing peptides, GHK-Cu looksmaxxing, BPC-157, Semaglutide, Ipamorelin, Epithalon, peptide protocols, best peptides for looksmaxxing, hairmaxxing peptides, bodymaxxing peptides',
   openGraph: {
-    title: 'BPC-157, Semaglutide & Top Peptide Protocols',
+    title: 'Peptides for Looksmaxxing, Healing & Fat Loss',
     description:
-      'Evidence-based peptide guides for healing, muscle growth, fat loss, anti-aging & cognitive enhancement. Expert protocols — zero guesswork.',
+      'The complete looksmaxxing peptide guide — GHK-Cu for skinmaxxing, Ipamorelin for bodymaxxing, BPC-157 for gut-skin axis, and GLP-1s for face leanness.',
     type: 'website',
     url: 'https://peptidesclav.com',
     siteName: 'PeptidesClav',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Peptides for Looksmaxxing — PeptidesClav' }],
   },
 };
 
