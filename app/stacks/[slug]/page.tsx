@@ -18,7 +18,7 @@ export async function generateMetadata({
   const { slug } = await params
   const stack = stacks.find((s) => s.id === slug)
   if (!stack) return { title: 'Stack Not Found' }
-  const canonical = `https://peptidesclav.com/stacks/${stack.id}`
+  const canonical = `https://www.peptidesclav.com/stacks/${stack.id}`
   return {
     title: stack.seoTitle,
     description: stack.shortDescription,
@@ -76,9 +76,9 @@ export default async function StackPage({
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://peptidesclav.com' },
-      { '@type': 'ListItem', position: 2, name: 'Stacks', item: 'https://peptidesclav.com/stacks' },
-      { '@type': 'ListItem', position: 3, name: stack.name, item: `https://peptidesclav.com/stacks/${stack.id}` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.peptidesclav.com' },
+      { '@type': 'ListItem', position: 2, name: 'Stacks', item: 'https://www.peptidesclav.com/stacks' },
+      { '@type': 'ListItem', position: 3, name: stack.name, item: `https://www.peptidesclav.com/stacks/${stack.id}` },
     ],
   }
 

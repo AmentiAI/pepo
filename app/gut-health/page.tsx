@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   description:
     'BPC-157 protocols for gut healing — leaky gut, IBS, GERD, ulcers, and gut-brain axis restoration. Evidence-based dosing guides and stacking protocols.',
   keywords: 'peptides for gut health, BPC-157 gut healing, leaky gut peptides, IBS peptides, BPC-157 GERD, gut healing peptides, BPC-157 intestinal',
-  alternates: { canonical: 'https://peptidesclav.com/gut-health' },
+  alternates: { canonical: 'https://www.peptidesclav.com/gut-health' },
   openGraph: {
     title: 'Gut Health Peptides | BPC-157 for Leaky Gut, IBS & Gut Healing',
     description:
       'BPC-157 protocols for gut healing — leaky gut, IBS, GERD, ulcers, and gut-brain axis restoration.',
     type: 'website',
-    url: 'https://peptidesclav.com/gut-health',
+    url: 'https://www.peptidesclav.com/gut-health',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Gut Health Peptides — BPC-157 for Leaky Gut and IBS' }],
   },
 };

@@ -9,13 +9,13 @@ export const metadata: Metadata = {
     'Answers to common peptide questions — safety, dosing, injection, storage, stacking & sourcing. 15+ Q&As for beginners and advanced users.',
   keywords:
     'peptide FAQ, peptide questions, how to use peptides, peptide safety, peptide dosing, inject peptides, peptide storage, peptide stacking',
-  alternates: { canonical: 'https://peptidesclav.com/faq' },
+  alternates: { canonical: 'https://www.peptidesclav.com/faq' },
   openGraph: {
     title: 'Peptide FAQ: Safety, Dosing, Injection & Stacking Guide',
     description:
       'Comprehensive answers to peptide safety, dosing, injection, stacking, and sourcing questions.',
     type: 'website',
-    url: 'https://peptidesclav.com/faq',
+    url: 'https://www.peptidesclav.com/faq',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Peptide FAQ — Safety, Dosing & Injection Guide' }],
   },
 };

@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     'Compare the best peptides for weight loss — Semaglutide (14.9%), Tirzepatide (22.5%), and Retatrutide (24.2%). Clinical data, dosing, and which is right for you.',
   keywords:
     'best peptide for weight loss, semaglutide weight loss, tirzepatide weight loss, best GLP-1 for weight loss, peptides for fat loss, weight loss peptide 2026',
-  alternates: { canonical: 'https://peptidesclav.com/best-peptide-for-weight-loss' },
+  alternates: { canonical: 'https://www.peptidesclav.com/best-peptide-for-weight-loss' },
   openGraph: {
     title: 'Best Peptide for Weight Loss 2026 | Semaglutide, Tirzepatide, Retatrutide',
     description:
       'Compare the best peptides for weight loss — Semaglutide (14.9%), Tirzepatide (22.5%), and Retatrutide (24.2%). Clinical data, dosing, and which is right for you.',
     type: 'website',
-    url: 'https://peptidesclav.com/best-peptide-for-weight-loss',
+    url: 'https://www.peptidesclav.com/best-peptide-for-weight-loss',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Best Peptide for Weight Loss 2026' }],
   },
 };

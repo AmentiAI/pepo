@@ -3,7 +3,7 @@ import { products } from '@/lib/products';
 import { stacks } from '@/lib/stacks';
 import { articles } from '@/lib/articles';
 
-const BASE_URL = 'https://peptidesclav.com';
+const BASE_URL = 'https://www.peptidesclav.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [

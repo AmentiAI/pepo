@@ -18,13 +18,13 @@ export const metadata: Metadata = {
     'Peptide protocols for women — hormonal balance, perimenopause, weight loss, skin health, and anti-aging. Dosing adjustments and stacking guide for female physiology.',
   keywords:
     'peptides for women, best peptides for women, women\'s peptide protocol, female peptide stack, peptides for perimenopause, peptides for women over 40, women peptide guide',
-  alternates: { canonical: 'https://peptidesclav.com/guides/womens-peptide-guide' },
+  alternates: { canonical: 'https://www.peptidesclav.com/guides/womens-peptide-guide' },
   openGraph: {
     title: "Women's Peptide Guide: Protocols for Hormones, Anti-Aging & Weight Loss",
     description:
       'Peptide protocols for women — hormonal balance, perimenopause, weight loss, skin health, and anti-aging. Dosing adjustments and stacking guide for female physiology.',
     type: 'website',
-    url: 'https://peptidesclav.com/guides/womens-peptide-guide',
+    url: 'https://www.peptidesclav.com/guides/womens-peptide-guide',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: "Women's Peptide Guide" }],
   },
 };

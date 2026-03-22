@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description:
       'The complete looksmaxxing peptide guide — GHK-Cu for skinmaxxing, Ipamorelin for bodymaxxing, BPC-157 for gut-skin axis, and GLP-1s for face leanness.',
     type: 'website',
-    url: 'https://peptidesclav.com',
+    url: 'https://www.peptidesclav.com',
     siteName: 'PeptidesClav',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Peptides for Looksmaxxing — PeptidesClav' }],
   },

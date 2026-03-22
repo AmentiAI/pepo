@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   description:
     'Ipamorelin and CJC-1295 dramatically improve deep sleep quality by enhancing GH pulsatility during sleep. Evidence-based dosing for sleep optimization and recovery.',
   keywords: 'peptides for sleep, Ipamorelin sleep, CJC-1295 sleep benefits, deep sleep peptides, sleep quality peptides, GH peptides sleep, recovery peptides',
-  alternates: { canonical: 'https://peptidesclav.com/sleep' },
+  alternates: { canonical: 'https://www.peptidesclav.com/sleep' },
   openGraph: {
     title: 'Peptides for Sleep | Ipamorelin & CJC-1295 Deep Sleep Protocol',
     description:
       'Ipamorelin and CJC-1295 dramatically improve deep sleep quality by enhancing GH pulsatility during sleep.',
     type: 'website',
-    url: 'https://peptidesclav.com/sleep',
+    url: 'https://www.peptidesclav.com/sleep',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Peptides for Sleep — Ipamorelin and CJC-1295 Deep Sleep Protocol' }],
   },
 };

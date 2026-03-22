@@ -20,12 +20,12 @@ export const metadata: Metadata = {
     'BPC-157 vs TB-500 head-to-head — mechanisms, injury types, dosing protocols, and when to combine both. Based on research and clinical data.',
   keywords:
     'bpc-157 vs tb-500, tb-500 vs bpc-157, bpc-157 and tb-500 stack, healing peptides comparison, tb-500 vs bpc-157 for tendons, bpc-157 tendon repair',
-  alternates: { canonical: 'https://peptidesclav.com/comparisons/bpc-157-vs-tb-500' },
+  alternates: { canonical: 'https://www.peptidesclav.com/comparisons/bpc-157-vs-tb-500' },
   openGraph: {
     title: 'BPC-157 vs TB-500: Which Healing Peptide Should You Use?',
     description:
       'BPC-157 vs TB-500 head-to-head — mechanisms, injury types, dosing protocols, and when to combine both. Based on research and clinical data.',
-    url: 'https://peptidesclav.com/comparisons/bpc-157-vs-tb-500',
+    url: 'https://www.peptidesclav.com/comparisons/bpc-157-vs-tb-500',
     type: 'website',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'BPC-157 vs TB-500 Comparison' }],
   },

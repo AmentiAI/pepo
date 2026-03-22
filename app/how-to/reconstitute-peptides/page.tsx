@@ -22,12 +22,12 @@ export const metadata: Metadata = {
     'Step-by-step peptide reconstitution guide — how much bacteriostatic water to add, dosing math made simple, and storage instructions after mixing.',
   keywords:
     'how to reconstitute peptides, peptide reconstitution, bacteriostatic water peptides, how much bac water for peptides, peptide mixing guide, reconstitute bpc-157',
-  alternates: { canonical: 'https://peptidesclav.com/how-to/reconstitute-peptides' },
+  alternates: { canonical: 'https://www.peptidesclav.com/how-to/reconstitute-peptides' },
   openGraph: {
     title: 'How to Reconstitute Peptides: Step-by-Step Guide + Dosing Calculator',
     description:
       'Step-by-step peptide reconstitution guide — how much bacteriostatic water to add, dosing math made simple, and storage instructions after mixing.',
-    url: 'https://peptidesclav.com/how-to/reconstitute-peptides',
+    url: 'https://www.peptidesclav.com/how-to/reconstitute-peptides',
     type: 'website',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'How to Reconstitute Peptides Guide' }],
   },

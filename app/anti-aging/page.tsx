@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   description:
     'Epithalon for telomere extension, GHK-Cu for skin regeneration, NAD+ for mitochondrial health. Evidence-based longevity peptide protocols and stacking guides.',
   keywords: 'anti-aging peptides, Epithalon, GHK-Cu, longevity peptides, telomere extension, skin peptides, NAD+, Epithalon dosing',
-  alternates: { canonical: 'https://peptidesclav.com/anti-aging' },
+  alternates: { canonical: 'https://www.peptidesclav.com/anti-aging' },
   openGraph: {
     title: 'Anti-Aging Peptides | Epithalon, GHK-Cu, Longevity Protocols',
     description:
       'Epithalon, GHK-Cu, and longevity peptide protocols backed by decades of research.',
     type: 'website',
-    url: 'https://peptidesclav.com/anti-aging',
+    url: 'https://www.peptidesclav.com/anti-aging',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Anti-Aging Peptides — Epithalon, GHK-Cu, Longevity' }],
   },
 };

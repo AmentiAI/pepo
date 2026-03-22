@@ -18,13 +18,13 @@ export const metadata: Metadata = {
     'GHK-Cu (copper peptide) heals wounds, reverses wrinkles, and restores collagen — topically and via injection. Clinical evidence, dosing, and protocols.',
   keywords:
     'ghk-cu skin, copper peptide skin healing, ghk-cu for wrinkles, ghk-cu wound healing, ghk-cu topical vs injectable, copper peptide anti-aging, ghk-cu collagen',
-  alternates: { canonical: 'https://peptidesclav.com/goals/skin-healing-ghk-cu' },
+  alternates: { canonical: 'https://www.peptidesclav.com/goals/skin-healing-ghk-cu' },
   openGraph: {
     title: 'GHK-Cu for Skin: Wound Healing, Wrinkles & Collagen Repair',
     description:
       'GHK-Cu (copper peptide) heals wounds, reverses wrinkles, and restores collagen — topically and via injection. Clinical evidence, dosing, and protocols.',
     type: 'website',
-    url: 'https://peptidesclav.com/goals/skin-healing-ghk-cu',
+    url: 'https://www.peptidesclav.com/goals/skin-healing-ghk-cu',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'GHK-Cu for Skin — Wound Healing, Wrinkles & Collagen Repair' }],
   },
 };

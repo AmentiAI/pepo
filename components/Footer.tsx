@@ -15,7 +15,7 @@ const footerLinks = {
     { label: 'Peptide Stacks', href: '/stacks' },
     { label: 'Beginner Guide', href: '/guide' },
     { label: 'Dosing FAQ', href: '/faq' },
-    { label: 'Learn', href: '/learn' },
+    { label: 'Blog', href: '/blog' },
   ],
   Company: [
     { label: 'Contact', href: '/contact' },

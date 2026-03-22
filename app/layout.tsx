@@ -13,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://peptidesclav.com'),
+  metadataBase: new URL('https://www.peptidesclav.com'),
   title: '#1 Peptide Protocols for Healing, Fat Loss & Anti-Aging',
   description:
     'Expert peptide protocols for BPC-157, TB-500, Semaglutide & more. Science-backed guides for healing, fat loss, anti-aging, and muscle growth. Sourced from Apollo Peptides.',
@@ -24,11 +24,11 @@ export const metadata: Metadata = {
     description:
       'Expert peptide protocols for BPC-157, Semaglutide, Tirzepatide, GHK-Cu & more. Science-backed guides for healing, fat loss, muscle growth, and anti-aging.',
     type: 'website',
-    url: 'https://peptidesclav.com',
+    url: 'https://www.peptidesclav.com',
     siteName: 'PeptidesClav',
     images: [
       {
-        url: 'https://peptidesclav.com/og-image.png',
+        url: 'https://www.peptidesclav.com/og-image.png',
         width: 1200,
         height: 630,
         alt: 'PeptidesClav — Expert Peptide Protocols',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '#1 Peptide Protocols for Healing, Fat Loss & Anti-Aging',
     description: 'Science-backed peptide guides and protocols for peak performance — healing, body composition, and longevity.',
-    images: ['https://peptidesclav.com/og-image.png'],
+    images: ['https://www.peptidesclav.com/og-image.png'],
   },
   robots: {
     index: true,
@@ -66,11 +66,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               '@context': 'https://schema.org',
               '@type': 'Organization',
               name: 'PeptidesClav',
-              url: 'https://peptidesclav.com',
-              logo: 'https://peptidesclav.com/logo.png',
+              url: 'https://www.peptidesclav.com',
+              logo: 'https://www.peptidesclav.com/logo.png',
               description:
                 'Science-backed peptide protocols for healing, performance, and longevity.',
-              sameAs: ['https://peptidesclav.com'],
+              sameAs: ['https://www.peptidesclav.com'],
             }),
           }}
         />

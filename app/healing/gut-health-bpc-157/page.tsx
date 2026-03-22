@@ -21,13 +21,13 @@ export const metadata: Metadata = {
     'BPC-157 repairs gut lining, treats leaky gut, SIBO, and IBD — orally or by injection. Mechanism, dosing protocols, oral vs injectable comparison, and FAQs.',
   keywords:
     'bpc-157 gut health, bpc-157 leaky gut, bpc-157 SIBO, bpc-157 IBD, oral bpc-157 vs injectable, bpc-157 intestinal healing, bpc-157 IBS protocol',
-  alternates: { canonical: 'https://peptidesclav.com/healing/gut-health-bpc-157' },
+  alternates: { canonical: 'https://www.peptidesclav.com/healing/gut-health-bpc-157' },
   openGraph: {
     title: 'BPC-157 for Gut Health: SIBO, Leaky Gut & IBD Protocol',
     description:
       'BPC-157 repairs gut lining, treats leaky gut, SIBO, and IBD — orally or by injection. Mechanism, dosing protocols, oral vs injectable comparison, and FAQs.',
     type: 'website',
-    url: 'https://peptidesclav.com/healing/gut-health-bpc-157',
+    url: 'https://www.peptidesclav.com/healing/gut-health-bpc-157',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'BPC-157 for Gut Health Protocol' }],
   },
 };
@@ -38,11 +38,11 @@ const jsonLd = {
   name: 'BPC-157 for Gut Health: SIBO, Leaky Gut & IBD Protocol',
   description:
     'BPC-157 repairs gut lining, treats leaky gut, SIBO, and IBD — orally or by injection. Mechanism, dosing protocols, oral vs injectable comparison, and FAQs.',
-  url: 'https://peptidesclav.com/healing/gut-health-bpc-157',
+  url: 'https://www.peptidesclav.com/healing/gut-health-bpc-157',
   publisher: {
     '@type': 'Organization',
     name: 'PeptidesClav',
-    url: 'https://peptidesclav.com',
+    url: 'https://www.peptidesclav.com',
   },
   mainEntity: {
     '@type': 'MedicalWebPage',

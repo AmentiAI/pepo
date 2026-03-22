@@ -21,12 +21,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: article.title,
     description: article.description,
     keywords: article.tags.join(', '),
-    alternates: { canonical: `https://peptidesclav.com/blog/${article.slug}` },
+    alternates: { canonical: `https://www.peptidesclav.com/blog/${article.slug}` },
     openGraph: {
       title: article.title,
       description: article.description,
       type: 'article',
-      url: `https://peptidesclav.com/blog/${article.slug}`,
+      url: `https://www.peptidesclav.com/blog/${article.slug}`,
       images: [{ url: '/og-image.png', width: 1200, height: 630, alt: article.title }],
     },
   };

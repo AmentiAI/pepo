@@ -20,13 +20,13 @@ export const metadata: Metadata = {
     'Semax, Selank, and nootropic peptides for focus, memory, anxiety reduction, and neuroprotection. Mechanisms, dosing protocols, and comparison guide.',
   keywords:
     'peptides for cognitive enhancement, semax peptide, selank anxiety, nootropic peptides, semax vs selank, peptides for focus, peptides for memory, selank dosage',
-  alternates: { canonical: 'https://peptidesclav.com/goals/cognitive-enhancement' },
+  alternates: { canonical: 'https://www.peptidesclav.com/goals/cognitive-enhancement' },
   openGraph: {
     title: 'Peptides for Cognitive Enhancement: Semax, Selank & Nootropic Guide',
     description:
       'Semax, Selank, and nootropic peptides for focus, memory, anxiety reduction, and neuroprotection. Mechanisms, dosing protocols, and comparison guide.',
     type: 'website',
-    url: 'https://peptidesclav.com/goals/cognitive-enhancement',
+    url: 'https://www.peptidesclav.com/goals/cognitive-enhancement',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Peptides for Cognitive Enhancement Guide' }],
   },
 };
@@ -37,11 +37,11 @@ const jsonLd = {
   name: 'Peptides for Cognitive Enhancement: Semax, Selank & Nootropic Guide',
   description:
     'Semax, Selank, and nootropic peptides for focus, memory, anxiety reduction, and neuroprotection. Mechanisms, dosing protocols, and comparison guide.',
-  url: 'https://peptidesclav.com/goals/cognitive-enhancement',
+  url: 'https://www.peptidesclav.com/goals/cognitive-enhancement',
   publisher: {
     '@type': 'Organization',
     name: 'PeptidesClav',
-    url: 'https://peptidesclav.com',
+    url: 'https://www.peptidesclav.com',
   },
   mainEntity: {
     '@type': 'MedicalWebPage',

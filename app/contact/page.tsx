@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description:
     'Contact PeptidesClav for protocol questions, business inquiries, or partnerships. Use the AI chat for instant peptide protocol help — available 24/7.',
   keywords: 'contact peptidesclav, peptide protocol help, peptide questions, peptide business inquiry',
-  alternates: { canonical: 'https://peptidesclav.com/contact' },
+  alternates: { canonical: 'https://www.peptidesclav.com/contact' },
   openGraph: {
     title: 'Peptide Protocol Help & Business Inquiries | Contact',
     description: 'Get in touch with PeptidesClav for protocol questions and business inquiries.',
     type: 'website',
-    url: 'https://peptidesclav.com/contact',
+    url: 'https://www.peptidesclav.com/contact',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Contact PeptidesClav' }],
   },
 };

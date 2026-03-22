@@ -22,13 +22,13 @@ export const metadata: Metadata = {
     'The definitive looksmaxxing peptide guide — GHK-Cu for skinmaxxing, Ipamorelin for bodymaxxing, BPC-157 for gut-skin axis, and GLP-1s for face leanness. Tier-ranked protocols.',
   keywords:
     'looksmaxxing peptides, peptides for looksmaxxing, skinmaxxing peptides, hairmaxxing peptides, bodymaxxing peptides, GHK-Cu looksmaxxing, looksmaxxing guide, best peptides for looksmaxxing, how to looksmaxx with peptides, looksmaxxing tier list, softmaxx peptides, hardmaxx protocol',
-  alternates: { canonical: 'https://peptidesclav.com/looksmaxxing' },
+  alternates: { canonical: 'https://www.peptidesclav.com/looksmaxxing' },
   openGraph: {
     title: 'Peptides for Looksmaxxing: Complete Tier-Ranked Guide 2026',
     description:
       'The definitive looksmaxxing peptide guide — GHK-Cu for skinmaxxing, Ipamorelin for bodymaxxing, BPC-157 for gut-skin axis, and GLP-1s for face leanness.',
     type: 'website',
-    url: 'https://peptidesclav.com/looksmaxxing',
+    url: 'https://www.peptidesclav.com/looksmaxxing',
     images: [
       {
         url: '/og-image.png',
@@ -280,11 +280,11 @@ const jsonLd = {
       headline: 'Peptides for Looksmaxxing: Complete Tier-Ranked Guide 2026',
       description:
         'The definitive looksmaxxing peptide guide — GHK-Cu for skinmaxxing, Ipamorelin for bodymaxxing, BPC-157 for gut-skin axis, and GLP-1s for face leanness. Tier-ranked protocols.',
-      url: 'https://peptidesclav.com/looksmaxxing',
+      url: 'https://www.peptidesclav.com/looksmaxxing',
       publisher: {
         '@type': 'Organization',
         name: 'PeptidesClav',
-        url: 'https://peptidesclav.com',
+        url: 'https://www.peptidesclav.com',
       },
       datePublished: '2026-01-01',
       dateModified: '2026-03-21',

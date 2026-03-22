@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   description:
     'BPC-157 and TB-500 protocols for injury recovery — tendons, ligaments, muscle, and gut healing. Science-backed dosing guides and stacking protocols.',
   keywords: 'BPC-157, TB-500, healing peptides, injury recovery, tendon repair, peptide protocols, BPC-157 dosing',
-  alternates: { canonical: 'https://peptidesclav.com/healing' },
+  alternates: { canonical: 'https://www.peptidesclav.com/healing' },
   openGraph: {
     title: 'Healing & Recovery Peptides | BPC-157, TB-500 Protocols',
     description:
       'BPC-157 and TB-500 — the gold-standard peptide combination for musculoskeletal injury recovery.',
     type: 'website',
-    url: 'https://peptidesclav.com/healing',
+    url: 'https://www.peptidesclav.com/healing',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Healing & Recovery Peptides — BPC-157 and TB-500' }],
   },
 };

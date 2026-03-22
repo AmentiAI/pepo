@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   description:
     'GHK-Cu and TB-500 peptide protocols for hair growth — stimulates follicles, increases density, and reduces hair loss. Evidence-based dosing guides.',
   keywords: 'peptides for hair growth, GHK-Cu hair growth, TB-500 hair loss, copper peptide hair, hair loss peptides, hair follicle peptides, hair regrowth protocol',
-  alternates: { canonical: 'https://peptidesclav.com/hair-growth' },
+  alternates: { canonical: 'https://www.peptidesclav.com/hair-growth' },
   openGraph: {
     title: 'Peptides for Hair Growth | GHK-Cu & TB-500 Hair Loss Protocols',
     description:
       'GHK-Cu and TB-500 peptide protocols for hair growth — stimulates follicles, increases density, and reduces hair loss.',
     type: 'website',
-    url: 'https://peptidesclav.com/hair-growth',
+    url: 'https://www.peptidesclav.com/hair-growth',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Peptides for Hair Growth — GHK-Cu and TB-500 Protocols' }],
   },
 };

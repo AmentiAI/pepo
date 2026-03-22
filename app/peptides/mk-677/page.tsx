@@ -27,13 +27,13 @@ export const metadata: Metadata = {
     'MK-677 (Ibutamoren) stimulates GH release orally — no injections required. Dosing, benefits, side effects, and how it compares to injectable GH peptides.',
   keywords:
     'mk-677, ibutamoren, mk-677 peptide, ibutamoren dosage, mk-677 benefits, mk-677 vs ipamorelin, mk-677 side effects, growth hormone secretagogue',
-  alternates: { canonical: 'https://peptidesclav.com/peptides/mk-677' },
+  alternates: { canonical: 'https://www.peptidesclav.com/peptides/mk-677' },
   openGraph: {
     title: 'MK-677 (Ibutamoren): Growth Hormone Secretagogue Guide 2026',
     description:
       'MK-677 (Ibutamoren) stimulates GH release orally — no injections required. Dosing, benefits, side effects, and how it compares to injectable GH peptides.',
     type: 'website',
-    url: 'https://peptidesclav.com/peptides/mk-677',
+    url: 'https://www.peptidesclav.com/peptides/mk-677',
     images: [
       {
         url: '/og-image.png',
@@ -78,7 +78,7 @@ export default function MK677Page() {
     name: 'MK-677 (Ibutamoren): Growth Hormone Secretagogue Guide 2026',
     description:
       'MK-677 (Ibutamoren) stimulates GH release orally — no injections required. Dosing, benefits, side effects, and how it compares to injectable GH peptides.',
-    url: 'https://peptidesclav.com/peptides/mk-677',
+    url: 'https://www.peptidesclav.com/peptides/mk-677',
   };
 
   return (

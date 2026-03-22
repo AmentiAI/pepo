@@ -20,13 +20,13 @@ export const metadata: Metadata = {
     "Complete beginner's guide to peptides — what they are, how to inject subcutaneously, starting doses, protocols, and how to get results fast.",
   keywords:
     'how to use peptides, peptide guide, how to inject peptides, peptide protocols, subcutaneous injection guide, beginner peptide protocol',
-  alternates: { canonical: 'https://peptidesclav.com/guide' },
+  alternates: { canonical: 'https://www.peptidesclav.com/guide' },
   openGraph: {
     title: "How to Use Peptides: Complete Beginner's Guide",
     description:
       'Everything you need to know to start using peptides — from first principles to your first injection and the right protocol.',
     type: 'article',
-    url: 'https://peptidesclav.com/guide',
+    url: 'https://www.peptidesclav.com/guide',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: "Peptide Beginner's Guide — Dosing & Injection" }],
   },
 };
@@ -75,11 +75,11 @@ const articleSchema = {
   '@type': 'Article',
   headline: "How to Use Peptides: Complete Beginner's Guide to Dosing & Injection",
   description: "Complete beginner's guide to peptides — what they are, how to inject subcutaneously, starting doses, protocols, and how to get results fast.",
-  url: 'https://peptidesclav.com/guide',
-  image: 'https://peptidesclav.com/og-image.png',
-  author: { '@type': 'Organization', name: 'PeptidesClav', url: 'https://peptidesclav.com' },
-  publisher: { '@type': 'Organization', name: 'PeptidesClav', logo: { '@type': 'ImageObject', url: 'https://peptidesclav.com/logo.png' } },
-  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://peptidesclav.com/guide' },
+  url: 'https://www.peptidesclav.com/guide',
+  image: 'https://www.peptidesclav.com/og-image.png',
+  author: { '@type': 'Organization', name: 'PeptidesClav', url: 'https://www.peptidesclav.com' },
+  publisher: { '@type': 'Organization', name: 'PeptidesClav', logo: { '@type': 'ImageObject', url: 'https://www.peptidesclav.com/logo.png' } },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.peptidesclav.com/guide' },
 };
 
 const guideCitations = [
@@ -496,7 +496,7 @@ export default function GuidePage() {
                 dose: 'Semax: 400–600mcg | Selank: 250–400mcg (both intranasal)',
                 timing: 'Morning upon waking',
                 duration: '4 weeks on / 2 weeks off',
-                href: '/stacks/cognitive-peak',
+                href: '/stacks/performance-elite',
               },
               {
                 goal: 'Longevity',

@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     'Subcutaneous peptide injection guide — syringe selection, injection sites, angle, technique, and post-injection care. For beginners and first-time users.',
   keywords:
     'how to inject peptides, subcutaneous injection guide, peptide injection technique, insulin syringe for peptides, peptide injection sites, subq injection peptides',
-  alternates: { canonical: 'https://peptidesclav.com/how-to/subcutaneous-injection-guide' },
+  alternates: { canonical: 'https://www.peptidesclav.com/how-to/subcutaneous-injection-guide' },
   openGraph: {
     title: "How to Inject Peptides Subcutaneously: Beginner's Step-by-Step Guide",
     description:
       'Subcutaneous peptide injection guide — syringe selection, injection sites, angle, technique, and post-injection care. For beginners and first-time users.',
     type: 'website',
-    url: 'https://peptidesclav.com/how-to/subcutaneous-injection-guide',
+    url: 'https://www.peptidesclav.com/how-to/subcutaneous-injection-guide',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Subcutaneous Peptide Injection Guide' }],
   },
 };

@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   title: 'About PeptidesClav | Evidence-Based Peptide Protocol Research',
   description:
     'PeptidesClav is an independent research team publishing evidence-based peptide protocols. Learn our methodology, sourcing standards, and affiliate disclosure.',
-  alternates: { canonical: 'https://peptidesclav.com/about' },
+  alternates: { canonical: 'https://www.peptidesclav.com/about' },
   openGraph: {
     title: 'About PeptidesClav | Evidence-Based Peptide Protocol Research',
     description:
       'PeptidesClav is an independent research team publishing evidence-based peptide protocols. Learn our methodology, sourcing standards, and affiliate disclosure.',
     type: 'website',
-    url: 'https://peptidesclav.com/about',
+    url: 'https://www.peptidesclav.com/about',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'About PeptidesClav' }],
   },
 };
@@ -23,12 +23,12 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: 'PeptidesClav',
-  url: 'https://peptidesclav.com',
+  url: 'https://www.peptidesclav.com',
   description:
     'Evidence-based peptide protocol research covering BPC-157, TB-500, GLP-1 agonists, longevity peptides, and more.',
   potentialAction: {
     '@type': 'SearchAction',
-    target: 'https://peptidesclav.com/products?q={search_term_string}',
+    target: 'https://www.peptidesclav.com/products?q={search_term_string}',
     'query-input': 'required name=search_term_string',
   },
 };

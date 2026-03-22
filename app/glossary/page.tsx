@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   title: 'Peptide Glossary | Definitions for BPC-157, GLP-1, Secretagogue & More',
   description:
     'Complete peptide glossary — definitions for BPC-157, GLP-1, GLP-1 agonist, secretagogue, GHRH, telomerase, NAD+, and 40+ more peptide science terms.',
-  alternates: { canonical: 'https://peptidesclav.com/glossary' },
+  alternates: { canonical: 'https://www.peptidesclav.com/glossary' },
   openGraph: {
     title: 'Peptide Glossary | Definitions for BPC-157, GLP-1, Secretagogue & More',
     description:
       'Complete peptide glossary — definitions for BPC-157, GLP-1, GLP-1 agonist, secretagogue, GHRH, telomerase, NAD+, and 40+ more peptide science terms.',
     type: 'website',
-    url: 'https://peptidesclav.com/glossary',
+    url: 'https://www.peptidesclav.com/glossary',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Peptide Glossary — PeptidesClav' }],
   },
 };

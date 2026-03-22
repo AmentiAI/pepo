@@ -18,13 +18,13 @@ export const metadata: Metadata = {
     'Compare the best anti-aging peptides — Epithalon for telomere extension, GHK-Cu for skin rejuvenation, and NAD+ for mitochondrial health. Complete dosing guide.',
   keywords:
     'best peptide for anti-aging, Epithalon anti-aging, GHK-Cu anti-aging, anti-aging peptides 2026, longevity peptides, best peptide for longevity',
-  alternates: { canonical: 'https://peptidesclav.com/best-peptide-for-anti-aging' },
+  alternates: { canonical: 'https://www.peptidesclav.com/best-peptide-for-anti-aging' },
   openGraph: {
     title: 'Best Peptide for Anti-Aging 2026 | Epithalon, GHK-Cu, NAD+ Compared',
     description:
       'Compare the best anti-aging peptides — Epithalon for telomere extension, GHK-Cu for skin rejuvenation, and NAD+ for mitochondrial health. Complete dosing guide.',
     type: 'website',
-    url: 'https://peptidesclav.com/best-peptide-for-anti-aging',
+    url: 'https://www.peptidesclav.com/best-peptide-for-anti-aging',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Best Peptide for Anti-Aging 2026' }],
   },
 };

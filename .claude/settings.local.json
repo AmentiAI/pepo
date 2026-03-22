@@ -15,7 +15,11 @@
       "Bash(ls /mnt/c/Users/Wilso/pepo/components/RelatedReading*)",
       "Bash(echo \"exit: $?\")",
       "Bash(find /mnt/c/Users/Wilso/pepo -name \"*.tsx\" -exec wc -l {} +)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(sed -i \"s|getStackById\\(''fat-loss-accelerator''\\)|getStackById\\(''glp1-fat-loss''\\)|g\" /mnt/c/Users/Wilso/pepo/app/body-composition/page.tsx)",
+      "Bash(sed -i \"s|href=\"\"/stacks/fat-loss-accelerator\"\"|href=\"\"/stacks/glp1-fat-loss\"\"|g\" /mnt/c/Users/Wilso/pepo/app/body-composition/page.tsx)",
+      "Bash(sed -i \"s|href: ''/stacks/cognitive-peak''|href: ''/stacks/performance-elite''|g\" /mnt/c/Users/Wilso/pepo/app/guide/page.tsx)",
+      "Bash(sed -i \"s|{ label: ''Learn'', href: ''/learn'' }|{ label: ''Blog'', href: ''/blog'' }|g\" /mnt/c/Users/Wilso/pepo/components/Footer.tsx)"
     ]
   }
 }

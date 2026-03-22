@@ -12,13 +12,13 @@ export const metadata: Metadata = {
     'GH peptides, fat loss fragments & muscle protocols for body recomposition. Ipamorelin, Tesamorelin, AOD-9604 & Semaglutide dosing guides with stacking protocols.',
   keywords:
     'body composition peptides, fat loss peptides, muscle peptides, GH peptides, Tesamorelin, AOD-9604, Ipamorelin, IGF-1, Semaglutide',
-  alternates: { canonical: 'https://peptidesclav.com/body-composition' },
+  alternates: { canonical: 'https://www.peptidesclav.com/body-composition' },
   openGraph: {
     title: 'Body Composition Peptides | GH, Fat Loss & Muscle Protocols',
     description:
       'GH optimization, fat loss, and muscle peptide protocols for complete body recomposition.',
     type: 'website',
-    url: 'https://peptidesclav.com/body-composition',
+    url: 'https://www.peptidesclav.com/body-composition',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Body Composition Peptides — GH, Fat Loss & Muscle' }],
   },
 };
@@ -63,7 +63,7 @@ export default function BodyCompositionPage() {
   });
 
   const ghStack = getStackById('gh-optimization');
-  const fatLossStack = getStackById('fat-loss-accelerator');
+  const fatLossStack = getStackById('glp1-fat-loss');
 
   return (
     <div className="min-h-screen" style={{ backgroundColor: 'var(--bg)' }}>
@@ -95,7 +95,7 @@ export default function BodyCompositionPage() {
                 GH Optimization Stack
                 <ArrowRight size={16} />
               </Link>
-              <Link href="/stacks/fat-loss-accelerator" className="btn-secondary">
+              <Link href="/stacks/glp1-fat-loss" className="btn-secondary">
                 Fat Loss Stack
               </Link>
             </div>

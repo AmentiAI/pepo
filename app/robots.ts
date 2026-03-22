@@ -17,7 +17,7 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: 'facebot', allow: '/' },
       { userAgent: 'Twitterbot', allow: '/' },
     ],
-    sitemap: 'https://peptidesclav.com/sitemap.xml',
-    host: 'https://peptidesclav.com',
+    sitemap: 'https://www.peptidesclav.com/sitemap.xml',
+    host: 'https://www.peptidesclav.com',
   };
 }

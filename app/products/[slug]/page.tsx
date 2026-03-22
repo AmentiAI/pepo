@@ -19,7 +19,7 @@ export async function generateMetadata({
   const { slug } = await params
   const product = products.find((p) => p.slug === slug)
   if (!product) return { title: 'Product Not Found' }
-  const canonical = `https://peptidesclav.com/products/${product.slug}`
+  const canonical = `https://www.peptidesclav.com/products/${product.slug}`
   const ogImage = product.image.startsWith('http')
     ? [{ url: product.image, width: 800, height: 800, alt: product.name }]
     : [{ url: '/og-image.png', width: 1200, height: 630, alt: product.name }]
@@ -273,9 +273,9 @@ export default async function ProductPage({
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://peptidesclav.com' },
-      { '@type': 'ListItem', position: 2, name: 'Products', item: 'https://peptidesclav.com/products' },
-      { '@type': 'ListItem', position: 3, name: product.name, item: `https://peptidesclav.com/products/${product.slug}` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.peptidesclav.com' },
+      { '@type': 'ListItem', position: 2, name: 'Products', item: 'https://www.peptidesclav.com/products' },
+      { '@type': 'ListItem', position: 3, name: product.name, item: `https://www.peptidesclav.com/products/${product.slug}` },
     ],
   }
 

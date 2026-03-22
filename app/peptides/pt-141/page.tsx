@@ -22,13 +22,13 @@ export const metadata: Metadata = {
     'PT-141 (Bremelanotide) restores libido in men and women via melanocortin receptors — not hormones. Dosing, mechanism, side effects, and male vs female protocols.',
   keywords:
     'pt-141, bremelanotide, pt-141 peptide, pt-141 dosage, pt-141 for women, pt-141 side effects, peptide for libido, sexual health peptide',
-  alternates: { canonical: 'https://peptidesclav.com/peptides/pt-141' },
+  alternates: { canonical: 'https://www.peptidesclav.com/peptides/pt-141' },
   openGraph: {
     title: 'PT-141 (Bremelanotide): Peptide for Libido and Sexual Health',
     description:
       'PT-141 (Bremelanotide) restores libido in men and women via melanocortin receptors — not hormones. Dosing, mechanism, side effects, and male vs female protocols.',
     type: 'website',
-    url: 'https://peptidesclav.com/peptides/pt-141',
+    url: 'https://www.peptidesclav.com/peptides/pt-141',
     images: [
       {
         url: '/og-image.png',
@@ -66,7 +66,7 @@ export default function PT141Page() {
     name: 'PT-141 (Bremelanotide): Peptide for Libido and Sexual Health',
     description:
       'PT-141 (Bremelanotide) restores libido in men and women via melanocortin receptors — not hormones. Dosing, mechanism, side effects, and male vs female protocols.',
-    url: 'https://peptidesclav.com/peptides/pt-141',
+    url: 'https://www.peptidesclav.com/peptides/pt-141',
   };
 
   return (

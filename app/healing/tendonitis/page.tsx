@@ -18,13 +18,13 @@ export const metadata: Metadata = {
     'BPC-157 and TB-500 tendonitis protocol — patellar, Achilles, elbow, and wrist tendonitis. Evidence-based dosing with week-by-week recovery timeline.',
   keywords:
     'BPC-157 tendonitis, peptides for tendonitis, BPC-157 Achilles tendon, patellar tendonitis peptides, tendon healing peptides, TB-500 tendonitis',
-  alternates: { canonical: 'https://peptidesclav.com/healing/tendonitis' },
+  alternates: { canonical: 'https://www.peptidesclav.com/healing/tendonitis' },
   openGraph: {
     title: 'BPC-157 for Tendonitis | Peptide Protocol for Tendon Pain & Healing',
     description:
       'BPC-157 and TB-500 tendonitis protocol — patellar, Achilles, elbow, and wrist tendonitis. Evidence-based dosing with week-by-week recovery timeline.',
     type: 'website',
-    url: 'https://peptidesclav.com/healing/tendonitis',
+    url: 'https://www.peptidesclav.com/healing/tendonitis',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'BPC-157 Tendonitis Recovery Protocol' }],
   },
 };
