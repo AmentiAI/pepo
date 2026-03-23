@@ -12,14 +12,14 @@ import {
 import RelatedReading from '@/components/RelatedReading';
 
 export const metadata: Metadata = {
-  title: 'Retatrutide | Triple GLP-1/GIP/Glucagon Agonist — 24% Weight Loss',
+  title: 'Retatrutide: Triple GLP-1 Agonist — 24% Weight Loss',
   description:
     'Retatrutide is a triple GLP-1/GIP/Glucagon agonist achieving 24.2% weight loss in Phase 2 trials — the highest ever recorded. Complete dosing protocol and guide.',
   keywords:
     'retatrutide, retatrutide weight loss, retatrutide vs tirzepatide, triple agonist peptide, GLP-1 GIP glucagon agonist, retatrutide dosing, retatrutide protocol',
   alternates: { canonical: 'https://www.peptidesclav.com/retatrutide' },
   openGraph: {
-    title: 'Retatrutide | Triple GLP-1/GIP/Glucagon Agonist — 24% Weight Loss',
+    title: 'Retatrutide: Triple GLP-1 Agonist — 24% Weight Loss',
     description:
       'Retatrutide is a triple GLP-1/GIP/Glucagon agonist achieving 24.2% weight loss in Phase 2 trials — the highest ever recorded. Complete dosing protocol and guide.',
     type: 'website',

@@ -13,14 +13,14 @@ import {
 import RelatedReading from '@/components/RelatedReading';
 
 export const metadata: Metadata = {
-  title: 'Best Peptide for Muscle Growth 2026 | IGF-1 LR3, CJC-1295, Ipamorelin',
+  title: 'Best Peptide for Muscle Growth 2026 | IGF-1 vs Ipamorelin',
   description:
     'Compare the best peptides for muscle growth — IGF-1 LR3, CJC-1295/Ipamorelin, and BPC-157 for recovery. Clinical data, dosing, and which is right for your goals.',
   keywords:
     'best peptide for muscle growth, IGF-1 LR3 muscle, CJC-1295 muscle growth, peptides for hypertrophy, muscle building peptides, best anabolic peptide',
   alternates: { canonical: 'https://www.peptidesclav.com/best-peptide-for-muscle-growth' },
   openGraph: {
-    title: 'Best Peptide for Muscle Growth 2026 | IGF-1 LR3, CJC-1295, Ipamorelin',
+    title: 'Best Peptide for Muscle Growth 2026 | IGF-1 vs Ipamorelin',
     description:
       'Compare the best peptides for muscle growth — IGF-1 LR3, CJC-1295/Ipamorelin, and BPC-157 for recovery. Clinical data, dosing, and which is right for your goals.',
     type: 'website',

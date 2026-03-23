@@ -13,14 +13,14 @@ import {
 import RelatedReading from '@/components/RelatedReading';
 
 export const metadata: Metadata = {
-  title: 'Peptide Storage Guide: How to Refrigerate, Freeze & Protect Potency',
+  title: 'Peptide Storage Guide: Refrigerate, Freeze & Preserve',
   description:
     'Complete peptide storage guide — temperature requirements, shelf life for lyophilized vs reconstituted peptides, freeze-thaw rules, and signs of degradation.',
   keywords:
     'how to store peptides, peptide storage, peptide refrigeration, lyophilized peptide shelf life, reconstituted peptide stability, peptide freeze thaw, peptide degradation',
   alternates: { canonical: 'https://www.peptidesclav.com/how-to/peptide-storage-guide' },
   openGraph: {
-    title: 'Peptide Storage Guide: How to Refrigerate, Freeze & Protect Potency',
+    title: 'Peptide Storage Guide: Refrigerate, Freeze & Preserve',
     description:
       'Complete peptide storage guide — temperature requirements, shelf life for lyophilized vs reconstituted peptides, freeze-thaw rules, and signs of degradation.',
     type: 'website',

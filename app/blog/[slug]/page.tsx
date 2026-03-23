@@ -40,6 +40,34 @@ export default async function ArticlePage({ params }: Props) {
   const article = getArticleBySlug(slug);
   if (!article) notFound();
 
+  const blogSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: article.title,
+    description: article.description,
+    datePublished: article.date,
+    dateModified: article.date,
+    author: {
+      '@type': 'Organization',
+      name: 'PeptidesClav',
+      url: 'https://www.peptidesclav.com',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'PeptidesClav',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://www.peptidesclav.com/logo.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://www.peptidesclav.com/blog/${article.slug}`,
+    },
+    keywords: article.tags.join(', '),
+    articleSection: article.category,
+  };
+
   // Dynamically load the article content
   let ArticleContent: React.ComponentType;
   try {
@@ -51,6 +79,10 @@ export default async function ArticlePage({ params }: Props) {
 
   return (
     <div className="min-h-screen" style={{ backgroundColor: 'var(--bg)' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
+      />
       {/* Header */}
       <section className="relative pt-14 pb-12 sm:pt-24 sm:pb-16 overflow-hidden grid-bg">
         <div className="absolute inset-0 pointer-events-none">

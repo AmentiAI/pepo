@@ -7,13 +7,13 @@ import { getStackById } from '@/lib/stacks';
 import RelatedReading from '@/components/RelatedReading';
 
 export const metadata: Metadata = {
-  title: 'Peptides for Hair Growth | GHK-Cu & TB-500 Hair Loss Protocols',
+  title: 'Peptides for Hair Growth | GHK-Cu & TB-500 Protocols',
   description:
     'GHK-Cu and TB-500 peptide protocols for hair growth — stimulates follicles, increases density, and reduces hair loss. Evidence-based dosing guides.',
   keywords: 'peptides for hair growth, GHK-Cu hair growth, TB-500 hair loss, copper peptide hair, hair loss peptides, hair follicle peptides, hair regrowth protocol',
   alternates: { canonical: 'https://www.peptidesclav.com/hair-growth' },
   openGraph: {
-    title: 'Peptides for Hair Growth | GHK-Cu & TB-500 Hair Loss Protocols',
+    title: 'Peptides for Hair Growth | GHK-Cu & TB-500 Protocols',
     description:
       'GHK-Cu and TB-500 peptide protocols for hair growth — stimulates follicles, increases density, and reduces hair loss.',
     type: 'website',

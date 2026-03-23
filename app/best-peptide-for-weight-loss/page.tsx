@@ -12,14 +12,14 @@ import {
 import RelatedReading from '@/components/RelatedReading';
 
 export const metadata: Metadata = {
-  title: 'Best Peptide for Weight Loss 2026 | Semaglutide, Tirzepatide, Retatrutide',
+  title: 'Best Peptide for Weight Loss 2026 | GLP-1 Comparison',
   description:
     'Compare the best peptides for weight loss — Semaglutide (14.9%), Tirzepatide (22.5%), and Retatrutide (24.2%). Clinical data, dosing, and which is right for you.',
   keywords:
     'best peptide for weight loss, semaglutide weight loss, tirzepatide weight loss, best GLP-1 for weight loss, peptides for fat loss, weight loss peptide 2026',
   alternates: { canonical: 'https://www.peptidesclav.com/best-peptide-for-weight-loss' },
   openGraph: {
-    title: 'Best Peptide for Weight Loss 2026 | Semaglutide, Tirzepatide, Retatrutide',
+    title: 'Best Peptide for Weight Loss 2026 | GLP-1 Comparison',
     description:
       'Compare the best peptides for weight loss — Semaglutide (14.9%), Tirzepatide (22.5%), and Retatrutide (24.2%). Clinical data, dosing, and which is right for you.',
     type: 'website',

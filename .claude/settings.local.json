@@ -19,7 +19,11 @@
       "Bash(sed -i \"s|getStackById\\(''fat-loss-accelerator''\\)|getStackById\\(''glp1-fat-loss''\\)|g\" /mnt/c/Users/Wilso/pepo/app/body-composition/page.tsx)",
       "Bash(sed -i \"s|href=\"\"/stacks/fat-loss-accelerator\"\"|href=\"\"/stacks/glp1-fat-loss\"\"|g\" /mnt/c/Users/Wilso/pepo/app/body-composition/page.tsx)",
       "Bash(sed -i \"s|href: ''/stacks/cognitive-peak''|href: ''/stacks/performance-elite''|g\" /mnt/c/Users/Wilso/pepo/app/guide/page.tsx)",
-      "Bash(sed -i \"s|{ label: ''Learn'', href: ''/learn'' }|{ label: ''Blog'', href: ''/blog'' }|g\" /mnt/c/Users/Wilso/pepo/components/Footer.tsx)"
+      "Bash(sed -i \"s|{ label: ''Learn'', href: ''/learn'' }|{ label: ''Blog'', href: ''/blog'' }|g\" /mnt/c/Users/Wilso/pepo/components/Footer.tsx)",
+      "Bash(find /mnt/c/Users/Wilso/pepo -name *internalLink* -o -name *link*)",
+      "Bash(while read:*)",
+      "Bash(do grep:*)",
+      "Bash(grep:*)"
     ]
   }
 }

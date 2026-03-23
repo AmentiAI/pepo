@@ -15,14 +15,14 @@ import {
 import RelatedReading from '@/components/RelatedReading';
 
 export const metadata: Metadata = {
-  title: 'Peptides for Cognitive Enhancement: Semax, Selank & Nootropic Guide',
+  title: 'Semax & Selank: Peptides for Cognitive Enhancement',
   description:
     'Semax, Selank, and nootropic peptides for focus, memory, anxiety reduction, and neuroprotection. Mechanisms, dosing protocols, and comparison guide.',
   keywords:
     'peptides for cognitive enhancement, semax peptide, selank anxiety, nootropic peptides, semax vs selank, peptides for focus, peptides for memory, selank dosage',
   alternates: { canonical: 'https://www.peptidesclav.com/goals/cognitive-enhancement' },
   openGraph: {
-    title: 'Peptides for Cognitive Enhancement: Semax, Selank & Nootropic Guide',
+    title: 'Semax & Selank: Peptides for Cognitive Enhancement',
     description:
       'Semax, Selank, and nootropic peptides for focus, memory, anxiety reduction, and neuroprotection. Mechanisms, dosing protocols, and comparison guide.',
     type: 'website',

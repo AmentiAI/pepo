@@ -19,7 +19,7 @@ const footerLinks = {
   ],
   Company: [
     { label: 'Contact', href: '/contact' },
-    { label: 'Apollo Peptides', href: 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e', external: true },
+    { label: 'Apollo Peptides', href: '/go/shop', external: true },
   ],
 };
 

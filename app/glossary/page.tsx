@@ -3,12 +3,12 @@ import Link from 'next/link';
 import RelatedReading from '@/components/RelatedReading';
 
 export const metadata: Metadata = {
-  title: 'Peptide Glossary | Definitions for BPC-157, GLP-1, Secretagogue & More',
+  title: 'Peptide Glossary: BPC-157, GLP-1 & Secretagogue Definitions',
   description:
     'Complete peptide glossary — definitions for BPC-157, GLP-1, GLP-1 agonist, secretagogue, GHRH, telomerase, NAD+, and 40+ more peptide science terms.',
   alternates: { canonical: 'https://www.peptidesclav.com/glossary' },
   openGraph: {
-    title: 'Peptide Glossary | Definitions for BPC-157, GLP-1, Secretagogue & More',
+    title: 'Peptide Glossary: BPC-157, GLP-1 & Secretagogue Definitions',
     description:
       'Complete peptide glossary — definitions for BPC-157, GLP-1, GLP-1 agonist, secretagogue, GHRH, telomerase, NAD+, and 40+ more peptide science terms.',
     type: 'website',

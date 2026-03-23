@@ -13,14 +13,14 @@ import {
 import RelatedReading from '@/components/RelatedReading';
 
 export const metadata: Metadata = {
-  title: 'Best Peptide for Anti-Aging 2026 | Epithalon, GHK-Cu, NAD+ Compared',
+  title: 'Best Peptide for Anti-Aging 2026 | Epithalon vs GHK-Cu',
   description:
     'Compare the best anti-aging peptides — Epithalon for telomere extension, GHK-Cu for skin rejuvenation, and NAD+ for mitochondrial health. Complete dosing guide.',
   keywords:
     'best peptide for anti-aging, Epithalon anti-aging, GHK-Cu anti-aging, anti-aging peptides 2026, longevity peptides, best peptide for longevity',
   alternates: { canonical: 'https://www.peptidesclav.com/best-peptide-for-anti-aging' },
   openGraph: {
-    title: 'Best Peptide for Anti-Aging 2026 | Epithalon, GHK-Cu, NAD+ Compared',
+    title: 'Best Peptide for Anti-Aging 2026 | Epithalon vs GHK-Cu',
     description:
       'Compare the best anti-aging peptides — Epithalon for telomere extension, GHK-Cu for skin rejuvenation, and NAD+ for mitochondrial health. Complete dosing guide.',
     type: 'website',

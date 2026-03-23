@@ -70,7 +70,7 @@ export default async function StackPage({
     product: products.find((p) => p.slug === sp.slug) ?? null,
   }))
 
-  const AFFILIATE_URL = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e'
+  const AFFILIATE_URL = '/go/shop'
 
   const breadcrumbLd = {
     '@context': 'https://schema.org',
@@ -205,7 +205,7 @@ export default async function StackPage({
               <a
                 href={AFFILIATE_URL}
                 target="_blank"
-                rel="noopener noreferrer nofollow"
+                rel="noopener noreferrer"
                 className="btn-primary w-full justify-center"
               >
                 <ExternalLink size={14} />
@@ -423,7 +423,7 @@ export default async function StackPage({
               <a
                 href={AFFILIATE_URL}
                 target="_blank"
-                rel="noopener noreferrer nofollow"
+                rel="noopener noreferrer"
                 className="btn-primary text-base px-8 py-3"
               >
                 <ExternalLink size={16} />

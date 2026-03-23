@@ -7,13 +7,13 @@ import { getStackById } from '@/lib/stacks';
 import RelatedReading from '@/components/RelatedReading';
 
 export const metadata: Metadata = {
-  title: 'Gut Health Peptides | BPC-157 for Leaky Gut, IBS & Gut Healing',
+  title: 'BPC-157 for Gut Health | Leaky Gut, IBS & GERD',
   description:
     'BPC-157 protocols for gut healing — leaky gut, IBS, GERD, ulcers, and gut-brain axis restoration. Evidence-based dosing guides and stacking protocols.',
   keywords: 'peptides for gut health, BPC-157 gut healing, leaky gut peptides, IBS peptides, BPC-157 GERD, gut healing peptides, BPC-157 intestinal',
   alternates: { canonical: 'https://www.peptidesclav.com/gut-health' },
   openGraph: {
-    title: 'Gut Health Peptides | BPC-157 for Leaky Gut, IBS & Gut Healing',
+    title: 'BPC-157 for Gut Health | Leaky Gut, IBS & GERD',
     description:
       'BPC-157 protocols for gut healing — leaky gut, IBS, GERD, ulcers, and gut-brain axis restoration.',
     type: 'website',

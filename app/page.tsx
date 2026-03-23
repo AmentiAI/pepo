@@ -504,9 +504,9 @@ export default function HomePage() {
             </ul>
             <div className="mt-8">
               <a
-                href="https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e"
+                href="/go/shop"
                 target="_blank"
-                rel="noopener noreferrer nofollow"
+                rel="noopener noreferrer"
                 className="btn-primary text-sm px-6 py-3"
               >
                 Shop Apollo Peptides <ArrowRight size={15} />

@@ -104,9 +104,9 @@ export default function ProductCard({ product, showAffiliateButton = false }: Pr
             </Link>
             {showAffiliateButton && (
               <a
-                href={product.affiliateUrl}
+                href={`/go/${product.slug}`}
                 target="_blank"
-                rel="noopener noreferrer nofollow"
+                rel="noopener noreferrer"
                 className="btn-primary py-2 px-3 text-xs"
               >
                 Buy <ExternalLink size={12} />

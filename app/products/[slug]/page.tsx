@@ -362,7 +362,7 @@ export default async function ProductPage({
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                  <a href={product.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow"
+                  <a href={`/go/${product.slug}`} target="_blank" rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 py-3 px-8 rounded-xl font-bold text-white text-base transition-all hover:opacity-90"
                     style={{ background: `linear-gradient(135deg, ${theme.accent}, ${theme.accentLight})`, boxShadow: `0 4px 20px ${theme.glow}` }}>
                     <ExternalLink size={15} /> Buy from Apollo — ${product.price.toFixed(2)}
@@ -386,7 +386,7 @@ export default async function ProductPage({
                       </span>
                     )}
                   </div>
-                  <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-3 leading-tight">{product.name}</h1>
+                  <h2 className="text-4xl sm:text-5xl font-extrabold text-white mb-3 leading-tight">{product.name}</h2>
                   <p className="text-lg font-medium mb-5" style={{ color: theme.accentLight }}>{product.tagline}</p>
                   <div className="flex items-center gap-2 mb-5">
                     {Array.from({ length: 5 }).map((_, i) => (
@@ -416,7 +416,7 @@ export default async function ProductPage({
                       </div>
                     ))}
                   </div>
-                  <a href={product.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow"
+                  <a href={`/go/${product.slug}`} target="_blank" rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl font-bold text-sm text-white transition-all hover:opacity-90"
                     style={{ background: `linear-gradient(135deg, ${theme.accent}, ${theme.accentLight})` }}>
                     <ExternalLink size={14} /> Buy from Apollo — ${product.price.toFixed(2)}
@@ -441,7 +441,7 @@ export default async function ProductPage({
                       </span>
                     )}
                   </div>
-                  <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-3 leading-tight">{product.name}</h1>
+                  <h2 className="text-4xl sm:text-5xl font-extrabold text-white mb-3 leading-tight">{product.name}</h2>
                   <p className="text-lg font-medium mb-4" style={{ color: theme.accentLight }}>{product.tagline}</p>
 
                   {/* Category-specific stats */}
@@ -487,7 +487,7 @@ export default async function ProductPage({
                   <p className="text-4xl font-extrabold text-white mb-1">${product.price.toFixed(2)}</p>
                   <p className="text-xs mb-4" style={{ color: '#52525b' }}>HPLC tested · COA included</p>
                   <div className="h-px mb-4" style={{ background: `linear-gradient(90deg, transparent, ${theme.accent}, transparent)` }} />
-                  <a href={product.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow"
+                  <a href={`/go/${product.slug}`} target="_blank" rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl font-bold text-sm text-white mb-3 transition-all hover:opacity-90 hover:-translate-y-0.5"
                     style={{ background: `linear-gradient(135deg, ${theme.accent}, ${theme.accentLight})`, boxShadow: `0 4px 20px ${theme.glow}` }}>
                     <ExternalLink size={14} /> Buy from Apollo
@@ -694,9 +694,9 @@ export default async function ProductPage({
                 </div>
                 <p className="text-2xl font-extrabold text-white mb-3">${product.price.toFixed(2)}</p>
                 <a
-                  href={product.affiliateUrl}
+                  href={`/go/${product.slug}`}
                   target="_blank"
-                  rel="noopener noreferrer nofollow"
+                  rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl font-bold text-sm text-white mb-2 transition-all hover:opacity-90"
                   style={{ background: `linear-gradient(135deg, ${theme.accent}, ${theme.accentLight})` }}
                 >
@@ -823,9 +823,9 @@ export default async function ProductPage({
                   Source from Apollo Peptides Sciences — HPLC-tested, mass-spectrometry verified, with a Certificate of Analysis per batch.
                 </p>
                 <a
-                  href={product.affiliateUrl}
+                  href={`/go/${product.slug}`}
                   target="_blank"
-                  rel="noopener noreferrer nofollow"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 py-3 px-8 rounded-xl font-bold text-white text-base transition-all hover:opacity-90 hover:-translate-y-0.5"
                   style={{
                     background: `linear-gradient(135deg, ${theme.accent}, ${theme.accentLight})`,

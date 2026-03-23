@@ -6,14 +6,14 @@ import { ArrowRight, Clock, DollarSign, Target, Zap } from 'lucide-react'
 import RelatedReading from '@/components/RelatedReading'
 
 export const metadata: Metadata = {
-  title: 'Best Peptide Stacks & Protocols for Healing, Fat Loss & Anti-Aging',
+  title: 'Best Peptide Stacks for Healing, Fat Loss & Anti-Aging',
   description:
     'Curated peptide stacks for healing, fat loss, anti-aging & body composition. Science-backed protocols with complete dosing schedules and sourcing guides.',
   keywords:
     'peptide stacks, peptide protocols, BPC-157 stack, GH stack, fat loss peptide stack, anti-aging stack, longevity peptide protocol',
   alternates: { canonical: 'https://www.peptidesclav.com/stacks' },
   openGraph: {
-    title: 'Best Peptide Stacks & Protocols for Healing, Fat Loss & Anti-Aging',
+    title: 'Best Peptide Stacks for Healing, Fat Loss & Anti-Aging',
     description:
       'Curated peptide stack protocols for healing, body composition, anti-aging, and cognitive enhancement.',
     type: 'website',
@@ -224,9 +224,9 @@ export default function StacksPage() {
               purity, consistent dosing, trusted worldwide.
             </p>
             <a
-              href="https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e"
+              href="/go/shop"
               target="_blank"
-              rel="noopener noreferrer nofollow"
+              rel="noopener noreferrer"
               className="btn-primary text-base px-8 py-3"
             >
               Shop Apollo Peptides

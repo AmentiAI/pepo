@@ -13,14 +13,14 @@ import {
 import RelatedReading from '@/components/RelatedReading';
 
 export const metadata: Metadata = {
-  title: 'BPC-157 for ACL Recovery | Peptide Protocol for Knee Ligament Healing',
+  title: 'BPC-157 for ACL Recovery | Knee Ligament Healing',
   description:
     'BPC-157 and TB-500 ACL recovery protocol — pre and post-surgery peptide support for faster ligament healing, reduced swelling, and restored knee stability.',
   keywords:
     'BPC-157 ACL, peptides for ACL recovery, ACL healing peptides, TB-500 ACL, knee ligament peptides, ACL surgery peptides, ACL recovery protocol',
   alternates: { canonical: 'https://www.peptidesclav.com/healing/acl' },
   openGraph: {
-    title: 'BPC-157 for ACL Recovery | Peptide Protocol for Knee Ligament Healing',
+    title: 'BPC-157 for ACL Recovery | Knee Ligament Healing',
     description:
       'BPC-157 and TB-500 ACL recovery protocol — pre and post-surgery peptide support for faster ligament healing, reduced swelling, and restored knee stability.',
     type: 'website',

@@ -13,14 +13,14 @@ import {
 import RelatedReading from '@/components/RelatedReading';
 
 export const metadata: Metadata = {
-  title: 'BPC-157 for Tendonitis | Peptide Protocol for Tendon Pain & Healing',
+  title: 'BPC-157 for Tendonitis | Tendon Pain & Healing Protocol',
   description:
     'BPC-157 and TB-500 tendonitis protocol — patellar, Achilles, elbow, and wrist tendonitis. Evidence-based dosing with week-by-week recovery timeline.',
   keywords:
     'BPC-157 tendonitis, peptides for tendonitis, BPC-157 Achilles tendon, patellar tendonitis peptides, tendon healing peptides, TB-500 tendonitis',
   alternates: { canonical: 'https://www.peptidesclav.com/healing/tendonitis' },
   openGraph: {
-    title: 'BPC-157 for Tendonitis | Peptide Protocol for Tendon Pain & Healing',
+    title: 'BPC-157 for Tendonitis | Tendon Pain & Healing Protocol',
     description:
       'BPC-157 and TB-500 tendonitis protocol — patellar, Achilles, elbow, and wrist tendonitis. Evidence-based dosing with week-by-week recovery timeline.',
     type: 'website',

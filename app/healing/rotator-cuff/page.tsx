@@ -13,14 +13,14 @@ import {
 import RelatedReading from '@/components/RelatedReading';
 
 export const metadata: Metadata = {
-  title: 'BPC-157 for Rotator Cuff | Peptide Protocol for Shoulder Recovery',
+  title: 'BPC-157 for Rotator Cuff | Shoulder Recovery Protocol',
   description:
     'BPC-157 and TB-500 rotator cuff recovery protocol. Evidence-based dosing, injection sites, and week-by-week timeline for tendon and labrum healing.',
   keywords:
     'BPC-157 rotator cuff, peptides for rotator cuff, BPC-157 shoulder, rotator cuff healing peptides, TB-500 shoulder recovery',
   alternates: { canonical: 'https://www.peptidesclav.com/healing/rotator-cuff' },
   openGraph: {
-    title: 'BPC-157 for Rotator Cuff | Peptide Protocol for Shoulder Recovery',
+    title: 'BPC-157 for Rotator Cuff | Shoulder Recovery Protocol',
     description:
       'BPC-157 and TB-500 rotator cuff recovery protocol. Evidence-based dosing, injection sites, and week-by-week timeline for tendon and labrum healing.',
     type: 'website',

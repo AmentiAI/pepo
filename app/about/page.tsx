@@ -5,12 +5,12 @@ import RelatedReading from '@/components/RelatedReading';
 import CitationsSection from '@/components/CitationsSection';
 
 export const metadata: Metadata = {
-  title: 'About PeptidesClav | Evidence-Based Peptide Protocol Research',
+  title: 'About PeptidesClav | Evidence-Based Peptide Research',
   description:
     'PeptidesClav is an independent research team publishing evidence-based peptide protocols. Learn our methodology, sourcing standards, and affiliate disclosure.',
   alternates: { canonical: 'https://www.peptidesclav.com/about' },
   openGraph: {
-    title: 'About PeptidesClav | Evidence-Based Peptide Protocol Research',
+    title: 'About PeptidesClav | Evidence-Based Peptide Research',
     description:
       'PeptidesClav is an independent research team publishing evidence-based peptide protocols. Learn our methodology, sourcing standards, and affiliate disclosure.',
     type: 'website',

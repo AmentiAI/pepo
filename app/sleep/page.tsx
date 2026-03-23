@@ -7,13 +7,13 @@ import { getStackById } from '@/lib/stacks';
 import RelatedReading from '@/components/RelatedReading';
 
 export const metadata: Metadata = {
-  title: 'Peptides for Sleep | Ipamorelin & CJC-1295 Deep Sleep Protocol',
+  title: 'Peptides for Sleep | Ipamorelin & CJC-1295 Protocol',
   description:
     'Ipamorelin and CJC-1295 dramatically improve deep sleep quality by enhancing GH pulsatility during sleep. Evidence-based dosing for sleep optimization and recovery.',
   keywords: 'peptides for sleep, Ipamorelin sleep, CJC-1295 sleep benefits, deep sleep peptides, sleep quality peptides, GH peptides sleep, recovery peptides',
   alternates: { canonical: 'https://www.peptidesclav.com/sleep' },
   openGraph: {
-    title: 'Peptides for Sleep | Ipamorelin & CJC-1295 Deep Sleep Protocol',
+    title: 'Peptides for Sleep | Ipamorelin & CJC-1295 Protocol',
     description:
       'Ipamorelin and CJC-1295 dramatically improve deep sleep quality by enhancing GH pulsatility during sleep.',
     type: 'website',

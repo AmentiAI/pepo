@@ -74,6 +74,26 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             }),
           }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'WebSite',
+              name: 'PeptidesClav',
+              url: 'https://www.peptidesclav.com',
+              description: 'Evidence-based peptide protocols for looksmaxxing, healing, fat loss, and anti-aging.',
+              potentialAction: {
+                '@type': 'SearchAction',
+                target: {
+                  '@type': 'EntryPoint',
+                  urlTemplate: 'https://www.peptidesclav.com/products?search={search_term_string}',
+                },
+                'query-input': 'required name=search_term_string',
+              },
+            }),
+          }}
+        />
       </head>
       <body className="min-h-full flex flex-col">
         <Script

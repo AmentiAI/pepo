@@ -13,14 +13,14 @@ import {
 import RelatedReading from '@/components/RelatedReading';
 
 export const metadata: Metadata = {
-  title: 'Semaglutide vs Tirzepatide vs Retatrutide | GLP-1 Comparison 2026',
+  title: 'Semaglutide vs Tirzepatide vs Retatrutide 2026',
   description:
     'Compare Semaglutide, Tirzepatide, and Retatrutide for weight loss — clinical data, mechanisms, dosing protocols, and which GLP-1 peptide is right for your goals.',
   keywords:
     'semaglutide vs tirzepatide, tirzepatide vs retatrutide, best GLP-1 peptide, GLP-1 comparison, semaglutide vs tirzepatide weight loss, retatrutide vs semaglutide',
   alternates: { canonical: 'https://www.peptidesclav.com/glp1-comparison' },
   openGraph: {
-    title: 'Semaglutide vs Tirzepatide vs Retatrutide | GLP-1 Comparison 2026',
+    title: 'Semaglutide vs Tirzepatide vs Retatrutide 2026',
     description:
       'Compare Semaglutide, Tirzepatide, and Retatrutide for weight loss — clinical data, mechanisms, dosing protocols, and which GLP-1 peptide is right for your goals.',
     type: 'website',

@@ -17,14 +17,14 @@ import RelatedReading from '@/components/RelatedReading';
 import ReconstitutionCalculator from '@/components/ReconstitutionCalculator';
 
 export const metadata: Metadata = {
-  title: 'How to Reconstitute Peptides: Step-by-Step Guide + Dosing Calculator',
+  title: 'How to Reconstitute Peptides: Step-by-Step Guide',
   description:
     'Step-by-step peptide reconstitution guide — how much bacteriostatic water to add, dosing math made simple, and storage instructions after mixing.',
   keywords:
     'how to reconstitute peptides, peptide reconstitution, bacteriostatic water peptides, how much bac water for peptides, peptide mixing guide, reconstitute bpc-157',
   alternates: { canonical: 'https://www.peptidesclav.com/how-to/reconstitute-peptides' },
   openGraph: {
-    title: 'How to Reconstitute Peptides: Step-by-Step Guide + Dosing Calculator',
+    title: 'How to Reconstitute Peptides: Step-by-Step Guide',
     description:
       'Step-by-step peptide reconstitution guide — how much bacteriostatic water to add, dosing math made simple, and storage instructions after mixing.',
     url: 'https://www.peptidesclav.com/how-to/reconstitute-peptides',
