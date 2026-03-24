@@ -69,7 +69,7 @@ const faqSchema = {
       name: 'Where should I buy peptides?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'PeptidesClav exclusively recommends Apollo Peptides Sciences — a US-based supplier with HPLC testing, mass spectrometry analysis, and certificates of analysis for every batch.',
+        text: 'PeptidesClav exclusively recommends a US-based supplier with HPLC testing, mass spectrometry analysis, and certificates of analysis for every batch.',
       },
     },
   ],

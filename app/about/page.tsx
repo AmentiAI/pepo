@@ -7,12 +7,12 @@ import CitationsSection from '@/components/CitationsSection';
 export const metadata: Metadata = {
   title: 'About PeptidesClav | Evidence-Based Peptide Research',
   description:
-    'PeptidesClav is an independent research team publishing evidence-based peptide protocols. Learn our methodology, sourcing standards, and affiliate disclosure.',
+    'PeptidesClav is an independent research publication producing evidence-based peptide protocols. Learn our methodology, research standards, and editorial independence.',
   alternates: { canonical: 'https://www.peptidesclav.com/about' },
   openGraph: {
     title: 'About PeptidesClav | Evidence-Based Peptide Research',
     description:
-      'PeptidesClav is an independent research team publishing evidence-based peptide protocols. Learn our methodology, sourcing standards, and affiliate disclosure.',
+      'PeptidesClav is an independent research publication producing evidence-based peptide protocols. Learn our methodology, research standards, and editorial independence.',
     type: 'website',
     url: 'https://www.peptidesclav.com/about',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'About PeptidesClav' }],
@@ -56,7 +56,7 @@ const methodologyPoints = [
   },
 ];
 
-const apolloReasons = [
+const supplierReasons = [
   'Third-party HPLC (High-Performance Liquid Chromatography) purity testing on every batch',
   'Mass spectrometry verification confirming molecular identity of each peptide',
   'Certificate of Analysis (COA) available for every product — no request needed',
@@ -197,23 +197,23 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* ── Why Apollo Peptides ── */}
-        <section className="py-10 sm:py-20 px-4 border-t border-[var(--border)]" id="why-apollo">
+        {/* ── Why Our Supplier ── */}
+        <section className="py-10 sm:py-20 px-4 border-t border-[var(--border)]" id="why-supplier">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-6">
               <span className="badge">Sourcing</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold mb-3">
               Why We Recommend{' '}
-              <span className="gradient-text">Apollo Peptides</span>
+              <span className="gradient-text">Our Supplier</span>
             </h2>
             <p className="text-gray-400 mb-8 max-w-2xl">
               We evaluated multiple vendors against a checklist of non-negotiable quality criteria before
-              linking to any product. Apollo Peptides cleared every bar — here&apos;s the specific evidence.
+              linking to any product. Our recommended supplier cleared every bar — here&apos;s the specific evidence.
             </p>
             <div className="card p-6 sm:p-8">
               <ul className="space-y-3">
-                {apolloReasons.map((reason) => (
+                {supplierReasons.map((reason) => (
                   <li key={reason} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-cyan-400 shrink-0 mt-0.5" />
                     <span className="text-gray-300 text-sm leading-relaxed">{reason}</span>
@@ -232,33 +232,32 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* ── Affiliate Disclosure ── */}
-        <section className="py-10 sm:py-20 px-4 border-t border-[var(--border)]" id="affiliate">
+        {/* ── Transparency ── */}
+        <section className="py-10 sm:py-20 px-4 border-t border-[var(--border)]" id="transparency">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-6">
               <ExternalLink className="w-4 h-4 text-yellow-400" />
               <span className="badge">Transparency</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold mb-6">
-              Affiliate <span className="gradient-text">Disclosure</span>
+              How We Stay <span className="gradient-text">Independent</span>
             </h2>
             <div className="card p-6 sm:p-8 space-y-4 text-gray-300 leading-relaxed prose-dark border-yellow-900/40">
               <p>
-                PeptidesClav participates in affiliate programs. When you click a product link on this site
-                and make a purchase, we may earn a commission at no additional cost to you. This is how we
-                fund the time spent reading studies, writing guides, and maintaining the site.
+                PeptidesClav is an independent research publication. Every protocol, dosing guide, and
+                compound analysis on this site is produced from primary literature — PubMed studies,
+                clinical trial data, and pharmacological research. No vendor pays for coverage or placement.
               </p>
               <p>
-                Our affiliate relationship <strong className="text-white">does not</strong> influence which
-                compounds we cover, what we write about their efficacy, or which vendors we recommend.
-                Apollo Peptides was evaluated against objective quality criteria before any commercial
-                relationship existed — and we would remove our recommendation immediately if those quality
-                standards slipped.
+                Where we link to products, we have evaluated vendors against non-negotiable quality criteria:
+                third-party HPLC purity testing, mass spectrometry identity confirmation, and per-batch
+                Certificates of Analysis. A vendor that fails these criteria does not appear on this site,
+                regardless of any commercial relationship.
               </p>
               <p>
-                In compliance with FTC guidelines, affiliate links are present throughout the site. If you
-                prefer to research vendors independently and purchase without using our links, that is
-                entirely fine — the information on the site is free and always will be.
+                The research and guides on PeptidesClav are free and always will be. Our editorial
+                positions are formed independently of any commercial relationship — if quality standards
+                change, our recommendations change with them.
               </p>
             </div>
           </div>

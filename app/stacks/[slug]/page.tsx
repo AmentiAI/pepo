@@ -22,7 +22,7 @@ export async function generateMetadata({
   return {
     title: stack.seoTitle,
     description: stack.shortDescription,
-    keywords: `${stack.name}, peptide stack, peptide protocol, ${stack.tags.slice(0, 4).join(', ')}, Apollo Peptides`,
+    keywords: `${stack.name}, peptide stack, peptide protocol, ${stack.tags.slice(0, 4).join(', ')}`,
     alternates: { canonical },
     openGraph: {
       title: stack.seoTitle,
@@ -212,7 +212,7 @@ export default async function StackPage({
                 Shop These Peptides
               </a>
               <p className="text-center text-xs mt-3" style={{ color: '#52525b' }}>
-                Via Apollo Peptide Sciences (affiliate)
+                Pharmaceutical-grade purity
               </p>
             </div>
           </div>
@@ -417,7 +417,7 @@ export default async function StackPage({
                 Shop These Peptides
               </h2>
               <p className="text-sm max-w-md mx-auto mb-8" style={{ color: '#a1a1b5' }}>
-                Source every peptide in the {stack.name} from Apollo Peptide Sciences —
+                Source every peptide in the {stack.name} from our recommended supplier —
                 research-grade purity, consistent dosing, trusted worldwide.
               </p>
               <a
@@ -427,7 +427,7 @@ export default async function StackPage({
                 className="btn-primary text-base px-8 py-3"
               >
                 <ExternalLink size={16} />
-                Shop at Apollo Peptides
+                Order Stack
               </a>
             </div>
           </div>

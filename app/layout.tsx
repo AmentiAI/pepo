@@ -16,9 +16,9 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.peptidesclav.com'),
   title: '#1 Peptide Protocols for Healing, Fat Loss & Anti-Aging',
   description:
-    'Expert peptide protocols for BPC-157, TB-500, Semaglutide & more. Science-backed guides for healing, fat loss, anti-aging, and muscle growth. Sourced from Apollo Peptides.',
+    'Expert peptide protocols for BPC-157, TB-500, Semaglutide & more. Science-backed guides for healing, fat loss, anti-aging, and muscle growth.',
   keywords:
-    'peptides, BPC-157, TB-500, Ipamorelin, CJC-1295, Semaglutide, Tirzepatide, healing peptides, anti-aging peptides, GH peptides, fat loss peptides, Apollo Peptides, peptide protocols 2026',
+    'peptides, BPC-157, TB-500, Ipamorelin, CJC-1295, Semaglutide, Tirzepatide, healing peptides, anti-aging peptides, GH peptides, fat loss peptides, peptide protocols 2026',
   openGraph: {
     title: '#1 Peptide Protocols for Healing, Fat Loss & Anti-Aging',
     description:

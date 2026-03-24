@@ -261,7 +261,7 @@ export default function PeptidesForBeginners2026() {
       </ul>
 
       <p>
-        Apollo Peptide Sciences meets all of these criteria and is the recommended sourcing option for beginners
+        Our recommended supplier meets all of these criteria and is the suggested sourcing option for beginners
         building their first protocol.
       </p>
 

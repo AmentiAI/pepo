@@ -92,7 +92,7 @@ export default function ContactPage() {
               Business &amp; Partnership Inquiries
             </h2>
             <p className="text-zinc-400 text-sm leading-relaxed mb-6">
-              For business inquiries, affiliate partnerships, content collaborations, or any
+              For business inquiries, partnership collaborations, content collaborations, or any
               other commercial communications, email us directly at:
             </p>
             <a

@@ -8,14 +8,14 @@ import RelatedReading from '@/components/RelatedReading';
 export const metadata: Metadata = {
   title: 'Buy Peptides Online | BPC-157, Semaglutide & More',
   description:
-    'Browse 20+ peptides with full protocol guides — BPC-157, Semaglutide, Tirzepatide, Epithalon, GHK-Cu & more. Evidence-based dosing. Sourced from Apollo Peptides.',
+    'Browse 20+ peptides with full protocol guides — BPC-157, Semaglutide, Tirzepatide, Epithalon, GHK-Cu & more. Evidence-based dosing.',
   keywords:
-    'buy peptides, BPC-157, Semaglutide, Tirzepatide, Epithalon, GHK-Cu, Ipamorelin, peptide catalog, Apollo Peptides, peptide protocols 2026',
+    'buy peptides, BPC-157, Semaglutide, Tirzepatide, Epithalon, GHK-Cu, Ipamorelin, peptide catalog, peptide protocols 2026',
   alternates: { canonical: 'https://www.peptidesclav.com/products' },
   openGraph: {
     title: 'Buy Peptides Online | BPC-157, Semaglutide & More',
     description:
-      'Browse 20+ peptides with full protocol guides — healing, fat loss, anti-aging, and body composition. Sourced from Apollo Peptides.',
+      'Browse 20+ peptides with full protocol guides — healing, fat loss, anti-aging, and body composition.',
     type: 'website',
     url: 'https://www.peptidesclav.com/products',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Peptide Catalog — BPC-157, Semaglutide, Tirzepatide & More' }],
@@ -68,7 +68,7 @@ export default async function ProductsPage({
           </h1>
           <p className="text-xl text-zinc-400 max-w-2xl mx-auto mb-6 leading-relaxed">
             Full protocol guides for every major peptide — dosing, timing,
-            synergies, and expected results. Sourced from Apollo Peptides Sciences.
+            synergies, and expected results.
           </p>
 
           {/* Breadcrumb */}

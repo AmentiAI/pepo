@@ -23,7 +23,7 @@ const slides = [
     headline: 'Accelerate Healing — Tendon, Gut & Muscle',
     sub: 'The gold-standard tissue repair peptide. 2× faster healing from injuries that have lingered for months.',
     cta: { label: 'Full Protocol Guide', href: '/products/bpc-157' },
-    ctaSecondary: { label: 'Shop Now', href: 'https://apollopeptidesciences.com/product/bpc157-10mg/?rfsn=9016964.3f1b1e' },
+    ctaSecondary: { label: 'Get BPC-157', href: '/go/bpc-157' },
     accentColor: '#7c3aed',
   },
   {
@@ -34,7 +34,7 @@ const slides = [
     headline: '14.9% Average Body Weight Reduction',
     sub: 'The most clinically validated fat loss peptide — STEP-1 trial proven over 68 weeks.',
     cta: { label: 'Full Protocol Guide', href: '/products/semaglutide-10mg' },
-    ctaSecondary: { label: 'Shop Now', href: 'https://apollopeptidesciences.com/product/semaglutide-10mg/?rfsn=9016964.3f1b1e' },
+    ctaSecondary: { label: 'Get Semaglutide', href: '/go/semaglutide-10mg' },
     accentColor: '#06b6d4',
   },
   {
@@ -45,7 +45,7 @@ const slides = [
     headline: '3–5× Natural Growth Hormone Pulse',
     sub: 'Restore the GH profile of a healthy 25-year-old — lean mass, fat loss, deeper sleep.',
     cta: { label: 'Full Protocol Guide', href: '/products/ipamorelin-cjc' },
-    ctaSecondary: { label: 'Shop Now', href: 'https://apollopeptidesciences.com/product/ipamorelin-cjc-1295/?rfsn=9016964.3f1b1e' },
+    ctaSecondary: { label: 'Get CJC-1295', href: '/go/ipamorelin-cjc' },
     accentColor: '#0891b2',
   },
   {
@@ -56,7 +56,7 @@ const slides = [
     headline: '27–36% Mortality Reduction in 15-Year Studies',
     sub: 'Activates telomerase, extends telomere length, and resets the aging clock at the cellular level.',
     cta: { label: 'Full Protocol Guide', href: '/products/epithalon' },
-    ctaSecondary: { label: 'Shop Now', href: 'https://apollopeptidesciences.com/product/epithalon/?rfsn=9016964.3f1b1e' },
+    ctaSecondary: { label: 'Get Epithalon', href: '/go/epithalon' },
     accentColor: '#f59e0b',
   },
   {
@@ -67,7 +67,7 @@ const slides = [
     headline: 'Up to 22.5% Weight Loss — Highest Ever Recorded',
     sub: 'Dual agonist targeting both GIP and GLP-1 receptors for unprecedented fat loss results.',
     cta: { label: 'Full Protocol Guide', href: '/products/tirzepatide-15mg' },
-    ctaSecondary: { label: 'Shop Now', href: 'https://apollopeptidesciences.com/product/tirzepatide-15mg/?rfsn=9016964.3f1b1e' },
+    ctaSecondary: { label: 'Get Tirzepatide', href: '/go/tirzepatide-15mg' },
     accentColor: '#06b6d4',
   },
 ];
@@ -179,14 +179,12 @@ export default function HeroBannerCarousel() {
                 <Link href={slide.cta.href} className="btn-primary text-base px-7 py-3.5">
                   {slide.cta.label} <ArrowRight size={17} />
                 </Link>
-                <a
+                <Link
                   href={(slide as { ctaSecondary: { href: string; label: string } }).ctaSecondary.href}
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
                   className="btn-secondary text-base px-7 py-3.5"
                 >
                   {slide.ctaSecondary.label}
-                </a>
+                </Link>
               </div>
             </div>
           </div>

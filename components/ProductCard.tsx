@@ -95,7 +95,7 @@ export default function ProductCard({ product, showAffiliateButton = false }: Pr
         {/* Price + actions */}
         <div className="flex items-center justify-between gap-2 mt-auto">
           <div>
-            <p className="text-xs text-zinc-600">From Apollo</p>
+            <p className="text-xs text-zinc-600">HPLC Verified</p>
             <p className="font-bold text-white">${product.price.toFixed(2)}</p>
           </div>
           <div className="flex gap-2">

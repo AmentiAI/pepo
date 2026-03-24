@@ -220,7 +220,7 @@ export default function StacksPage() {
               Ready to stack?
             </h2>
             <p className="text-sm max-w-md mx-auto mb-8" style={{ color: '#a1a1b5' }}>
-              Source all peptides in these stacks from Apollo Peptides Sciences — verified
+              Research-grade peptides, HPLC-tested and verified
               purity, consistent dosing, trusted worldwide.
             </p>
             <a
@@ -229,7 +229,7 @@ export default function StacksPage() {
               rel="noopener noreferrer"
               className="btn-primary text-base px-8 py-3"
             >
-              Shop Apollo Peptides
+              Shop Peptides
             </a>
           </div>
         </div>

@@ -81,7 +81,7 @@ const goals = [
 const stats = [
   { value: '18+', label: 'Peptide Deep-Dives', icon: FlaskConical },
   { value: '6', label: 'Expert Protocol Stacks', icon: Activity },
-  { value: '5★', label: 'Apollo Peptides Quality', icon: Award },
+  { value: '5★', label: 'HPLC Verified Peptides', icon: Award },
   { value: '3rd Party', label: 'Tested & Verified', icon: CheckCircle },
 ];
 
@@ -104,7 +104,7 @@ const steps = [
     number: '03',
     title: 'Source & Execute',
     description:
-      'We partner with Apollo Peptides Sciences — the highest-quality US-based peptide supplier with third-party purity testing and certificates of analysis for every batch. Start your protocol with confidence.',
+      'We only reference compounds with third-party HPLC purity testing and certificates of analysis for every batch. Your protocol deserves research-grade quality.',
     color: '#a78bfa',
   },
 ];
@@ -171,7 +171,7 @@ const faqs = [
   },
   {
     q: 'Where should I buy peptides?',
-    a: 'We exclusively recommend Apollo Peptides Sciences — a US-based supplier with HPLC testing, mass spectrometry analysis, and certificates of analysis for every batch. Apollo consistently ranks as the top supplier for purity, consistency, and responsible sourcing. All products on PeptidesClav link directly to Apollo via our affiliate partnership.',
+    a: 'We exclusively recommend a US-based supplier with HPLC testing, mass spectrometry analysis, and certificates of analysis for every batch — consistently ranking as the top supplier for purity, consistency, and responsible sourcing.',
   },
 ];
 
@@ -213,7 +213,7 @@ export default function HomePage() {
             Tier-ranked protocols. Zero guesswork.
           </p>
           <p className="text-zinc-500 max-w-xl mx-auto mb-10 text-sm">
-            Evidence-based. PubMed-cited. Sourced from Apollo Peptides Sciences.
+            Evidence-based. PubMed-cited. Research-grade quality.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -474,18 +474,18 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── APOLLO TRUST SECTION ──────────────────────────────── */}
+      {/* ── TRUSTED SUPPLIER SECTION ──────────────────────────────── */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-xs font-semibold tracking-widest text-cyan-400 uppercase mb-3">Our Sourcing Partner</p>
+            <p className="text-xs font-semibold tracking-widest text-cyan-400 uppercase mb-3">Our Sourcing Standard</p>
             <h2 className="text-3xl font-bold text-white mb-5">
               Why We Only Recommend<br />
-              <span className="gradient-text">Apollo Peptides Sciences</span>
+              <span className="gradient-text">One Trusted Supplier</span>
             </h2>
             <p className="text-zinc-400 leading-relaxed mb-6">
               Peptide quality varies enormously between suppliers. Underdosed, contaminated, or improperly stored peptides
-              produce zero results — or worse. Apollo Peptides Sciences is the only supplier we trust and recommend
+              produce zero results — or worse. We only recommend suppliers that meet our non-negotiable quality criteria
               because of their uncompromising commitment to purity.
             </p>
             <ul className="space-y-3">
@@ -509,7 +509,7 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 className="btn-primary text-sm px-6 py-3"
               >
-                Shop Apollo Peptides <ArrowRight size={15} />
+                Shop Research Peptides <ArrowRight size={15} />
               </a>
             </div>
           </div>
@@ -576,7 +576,7 @@ export default function HomePage() {
               Ready to Start Your Peptide Protocol?
             </h2>
             <p className="text-zinc-300 text-lg max-w-xl mx-auto mb-8">
-              Browse 21 complete peptide guides. Find your stack. Source from Apollo Peptides — the gold standard in pharmaceutical-grade purity.
+              Browse complete peptide guides. Find your stack. Pharmaceutical-grade purity, HPLC-tested and verified.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/products" className="btn-primary text-base px-8 py-3.5">

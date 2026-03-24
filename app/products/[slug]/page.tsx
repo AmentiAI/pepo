@@ -26,7 +26,7 @@ export async function generateMetadata({
   return {
     title: product.seoTitle,
     description: product.shortDescription,
-    keywords: `${product.name}, ${product.category}, peptide protocol, ${product.tags.slice(0, 4).join(', ')}, Apollo Peptides`,
+    keywords: `${product.name}, ${product.category}, peptide protocol, ${product.tags.slice(0, 4).join(', ')}`,
     alternates: { canonical },
     openGraph: {
       title: product.seoTitle,
@@ -180,7 +180,7 @@ const defaultTheme: CategoryTheme = {
   heroStats: [
     { value: 'High', label: 'Purity verified' },
     { value: 'COA', label: 'Batch certified' },
-    { value: 'Apollo', label: 'US supplier' },
+    { value: 'US', label: 'US supplier' },
   ],
 }
 
@@ -259,7 +259,7 @@ export default async function ProductPage({
       price: product.price.toFixed(2),
       priceCurrency: 'USD',
       availability: 'https://schema.org/InStock',
-      url: product.affiliateUrl,
+      url: product.shopUrl,
     },
     aggregateRating: {
       '@type': 'AggregateRating',
@@ -365,7 +365,7 @@ export default async function ProductPage({
                   <a href={`/go/${product.slug}`} target="_blank" rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 py-3 px-8 rounded-xl font-bold text-white text-base transition-all hover:opacity-90"
                     style={{ background: `linear-gradient(135deg, ${theme.accent}, ${theme.accentLight})`, boxShadow: `0 4px 20px ${theme.glow}` }}>
-                    <ExternalLink size={15} /> Buy from Apollo — ${product.price.toFixed(2)}
+                    <ExternalLink size={15} /> Get {product.name} — ${product.price.toFixed(2)}
                   </a>
                 </div>
               </div>
@@ -419,7 +419,7 @@ export default async function ProductPage({
                   <a href={`/go/${product.slug}`} target="_blank" rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl font-bold text-sm text-white transition-all hover:opacity-90"
                     style={{ background: `linear-gradient(135deg, ${theme.accent}, ${theme.accentLight})` }}>
-                    <ExternalLink size={14} /> Buy from Apollo — ${product.price.toFixed(2)}
+                    <ExternalLink size={14} /> Get {product.name} — ${product.price.toFixed(2)}
                   </a>
                 </div>
               </div>
@@ -470,7 +470,7 @@ export default async function ProductPage({
                 <div className="rounded-2xl overflow-hidden flex items-center justify-center"
                   style={{ background: '#0a0a14', border: `1px solid ${theme.badgeBorder}`, minHeight: '260px', boxShadow: `0 0 40px ${theme.glow}` }}>
                   {product.image.startsWith('http') ? (
-                    <img src={product.image} alt={`${product.name} from Apollo Peptides`}
+                    <img src={product.image} alt={product.name}
                       className="w-full h-full object-contain p-6" style={{ maxHeight: '260px' }} />
                   ) : (
                     <div className="flex flex-col items-center gap-3 p-8 opacity-50">
@@ -483,16 +483,15 @@ export default async function ProductPage({
                 {/* Col 3: price & CTA */}
                 <div className="rounded-2xl p-6 flex-shrink-0"
                   style={{ background: '#0f0f1a', border: `1px solid ${theme.badgeBorder}`, boxShadow: `0 8px 40px ${theme.glow}` }}>
-                  <p className="text-xs mb-1" style={{ color: '#71717a' }}>Apollo Peptides Sciences</p>
+                  <p className="text-xs mb-1" style={{ color: '#71717a' }}>Research Grade · HPLC Tested</p>
                   <p className="text-4xl font-extrabold text-white mb-1">${product.price.toFixed(2)}</p>
                   <p className="text-xs mb-4" style={{ color: '#52525b' }}>HPLC tested · COA included</p>
                   <div className="h-px mb-4" style={{ background: `linear-gradient(90deg, transparent, ${theme.accent}, transparent)` }} />
                   <a href={`/go/${product.slug}`} target="_blank" rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl font-bold text-sm text-white mb-3 transition-all hover:opacity-90 hover:-translate-y-0.5"
                     style={{ background: `linear-gradient(135deg, ${theme.accent}, ${theme.accentLight})`, boxShadow: `0 4px 20px ${theme.glow}` }}>
-                    <ExternalLink size={14} /> Buy from Apollo
+                    <ExternalLink size={14} /> Order Now
                   </a>
-                  <p className="text-center text-[10px]" style={{ color: '#52525b' }}>Opens apollopeptidesciences.com (affiliate link)</p>
                   <div className="mt-4 space-y-2">
                     {['3rd-party HPLC tested', 'Certificate of Analysis', 'US-based supplier'].map((item) => (
                       <div key={item} className="flex items-center gap-2 text-xs" style={{ color: '#71717a' }}>
@@ -689,7 +688,7 @@ export default async function ProductPage({
                   )}
                   <div>
                     <p className="text-sm font-bold text-white">{product.name}</p>
-                    <p className="text-xs" style={{ color: '#71717a' }}>Apollo Peptides Sciences</p>
+                    <p className="text-xs" style={{ color: '#71717a' }}>HPLC Tested · COA Verified</p>
                   </div>
                 </div>
                 <p className="text-2xl font-extrabold text-white mb-3">${product.price.toFixed(2)}</p>
@@ -700,9 +699,9 @@ export default async function ProductPage({
                   className="flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl font-bold text-sm text-white mb-2 transition-all hover:opacity-90"
                   style={{ background: `linear-gradient(135deg, ${theme.accent}, ${theme.accentLight})` }}
                 >
-                  <ExternalLink size={13} /> Buy from Apollo
+                  <ExternalLink size={13} /> Order Now
                 </a>
-                <p className="text-center text-[10px]" style={{ color: '#52525b' }}>Affiliate link · supports PeptidesClav</p>
+                <p className="text-center text-[10px]" style={{ color: '#52525b' }}>HPLC tested · COA verified</p>
               </div>
 
               {/* Category info box */}
@@ -742,7 +741,7 @@ export default async function ProductPage({
                     { label: 'HPLC Testing', note: 'Purity verified per batch' },
                     { label: 'Mass Spectrometry', note: 'Molecular identity confirmed' },
                     { label: 'Certificate of Analysis', note: 'Publicly available' },
-                    { label: 'US-Based Supplier', note: 'Apollo Peptides Sciences' },
+                    { label: 'US-Based Supplier', note: 'HPLC + Mass Spec Verified' },
                   ].map((item) => (
                     <div key={item.label} className="flex items-start gap-2">
                       <Check size={11} className="text-emerald-400 mt-1 shrink-0" />
@@ -820,7 +819,7 @@ export default async function ProductPage({
                   Begin your {product.name} protocol
                 </h2>
                 <p className="text-sm max-w-md mb-6" style={{ color: '#a1a1b5' }}>
-                  Source from Apollo Peptides Sciences — HPLC-tested, mass-spectrometry verified, with a Certificate of Analysis per batch.
+                  HPLC-tested and mass-spectrometry verified, with a Certificate of Analysis for every batch.
                 </p>
                 <a
                   href={`/go/${product.slug}`}
@@ -833,7 +832,7 @@ export default async function ProductPage({
                   }}
                 >
                   <ExternalLink size={16} />
-                  Shop {product.name} at Apollo
+                  Get {product.name}
                 </a>
               </div>
             </div>

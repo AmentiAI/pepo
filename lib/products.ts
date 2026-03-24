@@ -11,7 +11,7 @@ export interface Product {
   category: string;
   tags: string[];
   image: string;
-  affiliateUrl: string;
+  shopUrl: string;
   shortDescription: string;
   fullDescription: string;
   benefits: string[];
@@ -24,12 +24,11 @@ export interface Product {
   popularityRank: number;
 }
 
-const AFFILIATE = '?rfsn=9016964.3f1b1e';
 const BASE = 'https://apollopeptidesciences.com/product';
 const IMG = 'https://apollopeptidesciences.com/wp-content/uploads';
 
-function apollo(path: string) {
-  return `${BASE}/${path}/${AFFILIATE}`;
+function shopLink(path: string) {
+  return `${BASE}/${path}`;
 }
 
 export const products: Product[] = [
@@ -42,7 +41,7 @@ export const products: Product[] = [
     category: 'Healing & Recovery',
     tags: ['Healing', 'Gut Health', 'Tendon', 'Anti-Inflammatory', 'Injury'],
     image: `${IMG}/2025/09/bpc157_10mg.webp`,
-    affiliateUrl: apollo('bpc157-10mg'),
+    shopUrl: shopLink('bpc157-10mg'),
     shortDescription:
       'BPC-157 is a 15-amino-acid synthetic peptide derived from gastric juice proteins. Clinically shown to accelerate tendon, ligament, muscle, and gut tissue repair.',
     seoTitle: 'BPC-157 | #1 Healing Peptide for Tendon, Gut & Muscle Recovery',
@@ -108,7 +107,7 @@ The combination of BPC-157 with TB-500 is often called the "healing stack" — b
     category: 'Healing & Recovery',
     tags: ['Healing', 'Systemic', 'Flexibility', 'Inflammation', 'Recovery'],
     image: `${IMG}/2025/09/TB500_10mg.webp`,
-    affiliateUrl: apollo('tb500-10mg'),
+    shopUrl: shopLink('tb500-10mg'),
     shortDescription:
       'TB-500 is a synthetic version of Thymosin Beta-4, a protein found in virtually every cell. It promotes systemic healing, reduces inflammation, and restores range of motion.',
     seoTitle: 'TB-500 | Systemic Tissue Repair Peptide for Athletes & Injury Recovery',
@@ -175,7 +174,7 @@ This combination is considered the gold standard for musculoskeletal injury reco
     category: 'Growth Hormone',
     tags: ['GH Peptide', 'Muscle', 'Fat Loss', 'Recovery', 'Anti-Aging'],
     image: `${IMG}/2025/01/cjc1295_5-5mg.webp`,
-    affiliateUrl: apollo('cjc1295-ipamorelin'),
+    shopUrl: shopLink('cjc1295-ipamorelin'),
     shortDescription:
       'Ipamorelin + CJC-1295 is the most popular GH secretagogue combination. Ipamorelin triggers GH pulses while CJC-1295 amplifies and extends them for superior muscle growth and fat loss.',
     seoTitle: 'CJC-1295 / Ipamorelin | Best GH Peptide Stack for Muscle & Fat Loss',
@@ -242,7 +241,7 @@ The key insight: GH is released in pulses, and the largest pulse occurs during t
     category: 'Growth Hormone',
     tags: ['Anabolic', 'Muscle', 'Hypertrophy', 'Recovery', 'GH Axis'],
     image: `${IMG}/2025/09/igf-1lr3-1mg.webp`,
-    affiliateUrl: apollo('igf-1lr3'),
+    shopUrl: shopLink('igf-1lr3'),
     shortDescription:
       'IGF-1 LR3 is a modified form of Insulin-like Growth Factor-1 with 13× longer half-life. It directly signals muscle cell proliferation and hypertrophy — the downstream anabolic effector of GH.',
     seoTitle: 'IGF-1 LR3 | Direct Anabolic Peptide for Maximum Muscle Growth',
@@ -302,7 +301,7 @@ Due to receptor desensitization, IGF-1 LR3 must be cycled in short 4–6 week bu
     category: 'Anti-Aging & Skin',
     tags: ['Anti-Aging', 'Skin', 'Collagen', 'Hair Growth', 'Gene Expression'],
     image: `${IMG}/2025/01/ghk-cu_50mg.webp`,
-    affiliateUrl: apollo('ghk-cu'),
+    shopUrl: shopLink('ghk-cu'),
     shortDescription:
       'GHK-Cu is a naturally occurring copper-binding tripeptide that resets gene expression patterns, stimulates collagen synthesis, and reverses signs of skin aging.',
     seoTitle: 'GHK-Cu | #1 Anti-Aging Copper Peptide for Skin, Collagen & Hair',
@@ -368,7 +367,7 @@ GHK-Cu stimulates hair follicle stem cells and enlarges hair follicle size, maki
     category: 'Anti-Aging & Longevity',
     tags: ['Longevity', 'Telomere', 'Anti-Aging', 'Epigenetic', 'Mortality'],
     image: `${IMG}/2025/09/epithalon_50mg.webp`,
-    affiliateUrl: apollo('epithalon-50mg'),
+    shopUrl: shopLink('epithalon-50mg'),
     shortDescription:
       'Epithalon is a tetrapeptide that activates telomerase, extends telomere length, and has shown 27–36% reduction in all-cause mortality in 15-year human follow-up studies.',
     seoTitle: 'Epithalon | Telomerase Activator for Longevity & Anti-Aging',
@@ -435,7 +434,7 @@ Additional human studies documented improvements in:
     category: 'Anti-Aging & Longevity',
     tags: ['NAD+', 'Energy', 'Mitochondria', 'Anti-Aging', 'Longevity', 'Sirtuin'],
     image: `${IMG}/2025/09/nad_500mg.webp`,
-    affiliateUrl: apollo('nad'),
+    shopUrl: shopLink('nad'),
     shortDescription:
       'NAD+ (nicotinamide adenine dinucleotide) is the master cellular energy cofactor that declines 50% by age 50. Restoring NAD+ levels activates sirtuins, improves mitochondrial function, and slows cellular aging.',
     seoTitle: 'NAD+ 500mg | Cellular Anti-Aging & Energy Restoration',
@@ -505,7 +504,7 @@ Human clinical trials with NAD+ precursors and direct NAD+ supplementation have 
     category: 'Anti-Aging & Skin',
     tags: ['Anti-Wrinkle', 'Skin', 'Cosmetic', 'Expression Lines', 'SNAP-25'],
     image: `${IMG}/2025/01/snap-8_10mg.webp`,
-    affiliateUrl: apollo('snap-8'),
+    shopUrl: shopLink('snap-8'),
     shortDescription:
       'SNAP-8 is an octapeptide analog of SNAP-25 that competitively inhibits the SNARE complex, reducing muscle contraction in facial muscles to soften expression lines and wrinkles.',
     seoTitle: 'SNAP-8 | Anti-Wrinkle Peptide for Expression Lines',
@@ -570,7 +569,7 @@ SNAP-8 works through a fundamentally different mechanism than GHK-Cu (muscle rel
     category: 'Anti-Aging & Skin',
     tags: ['Anti-Wrinkle', 'Skin', 'Cosmetic', 'Expression Lines', 'Value Pack'],
     image: `${IMG}/2025/01/snap-8_10mg_2pack.webp`,
-    affiliateUrl: apollo('snap-8-2-pack'),
+    shopUrl: shopLink('snap-8-2-pack'),
     shortDescription:
       'Two vials of SNAP-8 at a discounted bundle price. Ideal for extended protocols, professional use, or sharing the stack with a partner.',
     seoTitle: 'SNAP-8 2-Pack | Anti-Wrinkle Peptide Bundle',
@@ -623,7 +622,7 @@ See SNAP-8 single vial product page for complete mechanism of action, clinical d
     category: 'Body Composition',
     tags: ['Weight Loss', 'GLP-1', 'Metabolic', 'Appetite', 'Semaglutide'],
     image: `${IMG}/2024/10/semaglutide_5mg.webp`,
-    affiliateUrl: apollo('glp-1s-5mg'),
+    shopUrl: shopLink('glp-1s-5mg'),
     shortDescription:
       'Semaglutide is a GLP-1 receptor agonist that reduces appetite, slows gastric emptying, and drives clinically significant weight loss of 10–15% body weight in 68-week trials.',
     seoTitle: 'Semaglutide 5mg | GLP-1 Peptide for Clinically Proven Weight Loss',
@@ -650,7 +649,7 @@ The STEP clinical trials with semaglutide are among the most impactful in metabo
 
 **Quality Assurance**
 
-Apollo Peptides Sciences GLP-1 S is pharmaceutical-grade semaglutide with HPLC purity verification and a Certificate of Analysis available for every batch.`,
+This is pharmaceutical-grade semaglutide with HPLC purity verification and a Certificate of Analysis available for every batch.`,
     benefits: [
       '10–15% average body weight reduction in 68-week clinical trials',
       'Reduces appetite via hypothalamic GLP-1 receptor activation',
@@ -691,7 +690,7 @@ Apollo Peptides Sciences GLP-1 S is pharmaceutical-grade semaglutide with HPLC p
     category: 'Body Composition',
     tags: ['Weight Loss', 'GLP-1', 'Metabolic', 'Appetite', 'Semaglutide'],
     image: `${IMG}/2024/10/semaglutide_10mg-1.webp`,
-    affiliateUrl: apollo('glp-1s-10mg'),
+    shopUrl: shopLink('glp-1s-10mg'),
     shortDescription:
       'Semaglutide 10mg — the most popular vial size for sustained GLP-1 dosing protocols. Provides 4–8 weeks of supply depending on dose escalation stage.',
     seoTitle: 'Semaglutide 10mg | Best Value GLP-1 Weight Loss Protocol',
@@ -720,7 +719,7 @@ For complete mechanism of action, clinical evidence, and protocol details, see t
       '10–15% body weight reduction potential in full 68-week protocol',
       'Reduces cardiovascular risk markers in metabolic syndrome protocols',
       'Flexible supply: serves starter or maintenance doses depending on protocol stage',
-      'HPLC-verified purity — Apollo COA available per batch',
+      'HPLC-verified purity — COA available per batch',
     ],
     protocol: `Same protocol as Semaglutide 5mg. The 10mg vial is the preferred size for:
 - Researchers entering the 1.0mg+ weekly maintenance phase
@@ -733,7 +732,7 @@ For complete mechanism of action, clinical evidence, and protocol details, see t
     highlights: [
       { title: 'Best Value Vial', body: 'Most popular size — provides 4–10 weeks at typical maintenance doses without frequent reordering.' },
       { title: '68-Week Data', body: 'Backed by the STEP trial program — the largest weight loss peptide clinical dataset ever assembled.' },
-      { title: 'HPLC Verified', body: 'Apollo Peptides Sciences provides certificate of analysis with every batch — guaranteed purity.' },
+      { title: 'HPLC Verified', body: 'Certificate of analysis provided with every batch — guaranteed purity.' },
     ],
   },
 
@@ -745,7 +744,7 @@ For complete mechanism of action, clinical evidence, and protocol details, see t
     category: 'Body Composition',
     tags: ['Weight Loss', 'GLP-1', 'Metabolic', 'Long Protocol', 'Semaglutide'],
     image: `${IMG}/2024/06/semaglutide_15mg.webp`,
-    affiliateUrl: apollo('glp-1s-15mg'),
+    shopUrl: shopLink('glp-1s-15mg'),
     shortDescription:
       'Semaglutide 15mg — the largest single vial for extended GLP-1 weight loss protocols. Covers 6–12 weeks of supply at maintenance doses and is the most cost-efficient per-mg option.',
     seoTitle: 'Semaglutide 15mg | High-Dose GLP-1 for Maximum Fat Loss Results',
@@ -783,7 +782,7 @@ For complete mechanism, clinical trial data, and protocol details, see the Semag
     highlights: [
       { title: 'Best Per-Mg Value', body: 'Most cost-efficient semaglutide option — ideal for those planning extended 16–24 week protocols.' },
       { title: 'Extended Coverage', body: '6–15 weeks at typical doses — eliminating frequent reorders during critical protocol phases.' },
-      { title: 'Same Quality', body: 'Identical pharmaceutical-grade purity as smaller vials — Apollo COA per batch.' },
+      { title: 'Same Quality', body: 'Identical pharmaceutical-grade purity as smaller vials — COA per batch.' },
     ],
   },
 
@@ -795,7 +794,7 @@ For complete mechanism, clinical trial data, and protocol details, see the Semag
     category: 'Body Composition',
     tags: ['Weight Loss', 'Amylin', 'GLP-1', 'Combination', 'Metabolic'],
     image: `${IMG}/2025/09/cagri_sema_5_5mg-1.webp`,
-    affiliateUrl: apollo('glp-1cglp-1s-5mg'),
+    shopUrl: shopLink('glp-1cglp-1s-5mg'),
     shortDescription:
       'Cagrilintide (amylin analog) combined with Semaglutide (GLP-1 agonist) targets weight loss through two independent peptide pathways — additive effects vs. GLP-1 alone.',
     seoTitle: 'Cagrilintide + Semaglutide | Dual-Action Amylin & GLP-1 Fat Loss Stack',
@@ -853,7 +852,7 @@ The combination also showed improvements in:
     category: 'Body Composition',
     tags: ['Weight Loss', 'GIP', 'GLP-1', 'Tirzepatide', 'Body Composition'],
     image: `${IMG}/2024/04/tirzepatide_15mg-1.webp`,
-    affiliateUrl: apollo('glp-2t-15m'),
+    shopUrl: shopLink('glp-2t-15m'),
     shortDescription:
       'Tirzepatide is a dual GIP/GLP-1 receptor agonist that achieved 20.9% average weight loss in Phase 3 trials — the greatest weight reduction of any peptide in clinical history.',
     seoTitle: 'Tirzepatide 15mg | Dual GIP/GLP-1 Peptide — Up to 22.5% Weight Loss',
@@ -916,7 +915,7 @@ The SURMOUNT-1 Phase 3 trial is the landmark dataset:
     category: 'Body Composition',
     tags: ['Weight Loss', 'GIP', 'GLP-1', 'Tirzepatide', 'Extended Protocol'],
     image: `${IMG}/2024/06/tirzepatide_30mg.webp`,
-    affiliateUrl: apollo('glp-2t-30mg'),
+    shopUrl: shopLink('glp-2t-30mg'),
     shortDescription:
       'Tirzepatide 30mg — two months of supply at 15mg/week maintenance dose. Best single-vial value for extended tirzepatide protocols.',
     seoTitle: 'Tirzepatide 30mg | High-Dose GIP/GLP-1 Weight Loss Protocol',
@@ -961,7 +960,7 @@ Recommended for those transitioning into the 7.5–10mg/week maintenance phase a
     category: 'Body Composition',
     tags: ['Weight Loss', 'GIP', 'GLP-1', 'Tirzepatide', 'Multi-Pack', 'Best Value'],
     image: `${IMG}/2024/06/tirzepatide_15mg_multi.webp`,
-    affiliateUrl: apollo('glp-2t-15mg-4-pack'),
+    shopUrl: shopLink('glp-2t-15mg-4-pack'),
     shortDescription:
       'Four vials of Tirzepatide 15mg (60mg total) at the best per-vial price. Covers a complete 12–16 week protocol from dose escalation through maintenance.',
     seoTitle: 'Tirzepatide 4-Pack | Best Value Multi-Vial Bundle',
@@ -983,7 +982,7 @@ At 5mg/week maintenance, the 4-pack covers 12 weeks.
 
 **Price Advantage**
 
-At $569.99 for 60mg = $9.50/mg — the best per-mg price of any single tirzepatide option from Apollo.
+At $569.99 for 60mg = $9.50/mg — the best per-mg price of any single tirzepatide option.
 
 For complete mechanism, clinical data, and escalation protocol, see the Tirzepatide 15mg product page.`,
     benefits: [
@@ -1000,7 +999,7 @@ For complete mechanism, clinical data, and escalation protocol, see the Tirzepat
     synergies: ['tirzepatide-30mg'],
     highlights: [
       { title: '60mg Total', body: 'Four 15mg vials — the optimal bundle for 8–12 week sustained maintenance protocols.' },
-      { title: 'Best Per-Mg Price', body: '~$9.50/mg — the lowest tirzepatide cost per mg in the Apollo catalog.' },
+      { title: 'Best Per-Mg Price', body: '~$9.50/mg — the lowest tirzepatide cost per mg available.' },
       { title: 'Protocol Coverage', body: 'Covers complete dose-escalation through maintenance without reordering.' },
     ],
   },
@@ -1013,7 +1012,7 @@ For complete mechanism, clinical data, and escalation protocol, see the Tirzepat
     category: 'Body Composition',
     tags: ['Weight Loss', 'GIP', 'GLP-1', 'Tirzepatide', 'Research Program'],
     image: `${IMG}/2024/06/tirzepatide_20mg_multi.webp`,
-    affiliateUrl: apollo('glp-2t-20mg-5-pack'),
+    shopUrl: shopLink('glp-2t-20mg-5-pack'),
     shortDescription:
       'Five vials of Tirzepatide 20mg (100mg total) — the largest supply bundle for high-dose extended protocols. Best economics for full 24-week protocol coverage.',
     seoTitle: 'Tirzepatide 20mg 5-Pack | Best Price Per Vial Fat Loss Bundle',
@@ -1063,14 +1062,14 @@ For complete mechanism and protocol details, see Tirzepatide 15mg.`,
     category: 'Body Composition',
     tags: ['Weight Loss', 'GIP', 'GLP-1', 'Tirzepatide', 'Institutional', 'Bulk'],
     image: `${IMG}/2024/06/tirzepatide_15mg_multi.webp`,
-    affiliateUrl: apollo('glp-2t-15mg-10-pack'),
+    shopUrl: shopLink('glp-2t-15mg-10-pack'),
     shortDescription:
       'Ten vials of Tirzepatide 15mg (150mg total) — institutional-scale supply for large extended protocols, multi-subject studies, or long-duration protocols.',
     seoTitle: 'Tirzepatide 15mg 10-Pack | Maximum Savings Bulk Supply',
     deepDiveTitle: 'Tirzepatide 15mg 10-Pack: Institutional Research Supply',
     researchRating: 5,
     popularityRank: 18,
-    fullDescription: `The Tirzepatide 10-Pack is the institutional-tier offering from Apollo Peptides Sciences — 10 vials of Tirzepatide 15mg (150mg total), suitable for multi-subject extended protocols, institutional laboratory use, or long-duration replications of the SURMOUNT clinical trial protocol.
+    fullDescription: `The Tirzepatide 10-Pack is an institutional-tier option — 10 vials of Tirzepatide 15mg (150mg total), suitable for multi-subject extended protocols, institutional laboratory use, or long-duration replications of the SURMOUNT clinical trial protocol.
 
 **Supply at Scale**
 
@@ -1084,7 +1083,7 @@ For complete mechanism and protocol details, see Tirzepatide 15mg.`,
 
 The SURMOUNT-1 trial ran for 72 weeks. Replicating this in a protocol context at 10mg/week per subject requires approximately 720mg of tirzepatide — or roughly 5 × 10-packs. The 10-pack is the appropriate unit purchase for institutional-scale protocols.
 
-All vials carry Apollo's HPLC and mass spectrometry certification of analysis.`,
+All vials carry HPLC and mass spectrometry certification of analysis.`,
     benefits: [
       '150mg total — institutional-scale supply for multi-subject or long-duration protocols',
       'Covers 20–30 weeks for single-subject protocols at typical doses',
@@ -1099,7 +1098,7 @@ All vials carry Apollo's HPLC and mass spectrometry certification of analysis.`,
     synergies: [],
     highlights: [
       { title: '150mg Total', body: 'Institutional-scale supply — 10 × 15mg vials for multi-subject or long-duration extended protocols.' },
-      { title: 'COA Per Batch', body: 'Each batch carries HPLC and mass spectrometry certificate of analysis from Apollo Peptides Sciences.' },
+      { title: 'COA Per Batch', body: 'Each batch carries HPLC and mass spectrometry certificate of analysis.' },
       { title: 'Full Protocol Coverage', body: '20–30 weeks of supply at typical maintenance doses without reordering.' },
     ],
   },
@@ -1113,7 +1112,7 @@ All vials carry Apollo's HPLC and mass spectrometry certification of analysis.`,
     category: 'Body Composition',
     tags: ['Weight Loss', 'Triple Agonist', 'GLP-3', 'Retatrutide', 'Metabolic'],
     image: `${IMG}/2024/04/retatrutide_10mg-1.webp`,
-    affiliateUrl: apollo('glp-3r-10mg'),
+    shopUrl: shopLink('glp-3r-10mg'),
     shortDescription:
       'Retatrutide is a triple GIP/GLP-1/Glucagon receptor agonist that showed 24.2% average weight loss in Phase 2 trials — potentially the most powerful anti-obesity peptide ever studied.',
     seoTitle: 'Retatrutide 10mg | GLP-1/GIP/GCG Triple Agonist for Superior Weight Loss',
@@ -1171,7 +1170,7 @@ Retatrutide (LY3437943) is currently in Phase 3 trials. The Phase 2 data has mad
     category: 'Body Composition',
     tags: ['Weight Loss', 'Triple Agonist', 'GLP-3', 'Retatrutide', 'Extended'],
     image: `${IMG}/2024/06/retatrutide_15mg.webp`,
-    affiliateUrl: apollo('glp-3r-15mg'),
+    shopUrl: shopLink('glp-3r-15mg'),
     shortDescription:
       'Retatrutide 15mg — larger supply vial for extended triple GIP/GLP-1/Glucagon protocols. Best per-mg economics for retatrutide protocols beyond the starter phase.',
     seoTitle: 'Retatrutide 15mg | High-Dose Triple Agonist Fat Loss Protocol',
@@ -1213,7 +1212,7 @@ For complete mechanism, clinical data, and escalation protocols, see the Retatru
     category: 'Supplies',
     tags: ['Reconstitution', 'Bacteriostatic', 'Peptide Prep', 'Essential', 'BAC Water'],
     image: `${IMG}/2024/06/reconsitution_solution_10ml.webp`,
-    affiliateUrl: apollo('bacteriostatic-water-reconstitution-solution-10ml'),
+    shopUrl: shopLink('bacteriostatic-water-reconstitution-solution-10ml'),
     shortDescription:
       'Bacteriostatic Water (BAC Water) is the standard reconstitution solution for lyophilized peptides. The 0.9% benzyl alcohol preservative prevents bacterial growth for safe multi-use storage.',
     seoTitle: 'Bacteriostatic Water 10ml | Peptide Reconstitution Solution',

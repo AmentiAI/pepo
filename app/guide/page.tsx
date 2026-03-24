@@ -578,7 +578,7 @@ export default function GuidePage() {
             {[
               {
                 title: 'Source quality matters above everything',
-                body: 'The purity of your peptide determines both efficacy and safety. Only purchase from reputable suppliers with third-party HPLC and mass spectrometry certificates of analysis. We recommend Apollo Peptide Sciences — they publish full CoAs for every product.',
+                body: 'The purity of your peptide determines both efficacy and safety. Only purchase from reputable suppliers with third-party HPLC and mass spectrometry certificates of analysis — look for full CoAs published for every product.',
               },
               {
                 title: 'Start low and assess tolerance',

@@ -19,7 +19,7 @@ const footerLinks = {
   ],
   Company: [
     { label: 'Contact', href: '/contact' },
-    { label: 'Apollo Peptides', href: '/go/shop', external: true },
+    { label: 'About', href: '/about' },
   ],
 };
 
@@ -34,7 +34,7 @@ export default function Footer() {
               <Image src="/logo.png" alt="PeptidesClav" width={52} height={52} className="rounded-xl object-contain" />
             </Link>
             <p className="text-sm text-zinc-500 leading-relaxed max-w-xs">
-              Evidence-based peptide protocols for healing, performance, body composition, and longevity. All products sourced from Apollo Peptides Sciences.
+              Evidence-based peptide protocols for healing, performance, body composition, and longevity. Science-backed guides, PubMed-cited research.
             </p>
           </div>
 
@@ -77,7 +77,7 @@ export default function Footer() {
             © {new Date().getFullYear()} PeptidesClav. All rights reserved.
           </p>
           <p className="text-xs text-zinc-700">
-            Affiliate disclosure: Links to Apollo Peptides contain affiliate tracking.
+            For research and educational purposes only. Not medical advice.
           </p>
         </div>
 

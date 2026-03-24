@@ -94,11 +94,11 @@ const faqGroups = [
     faqs: [
       {
         q: 'How do I know if my peptides are high quality?',
-        a: "Look for suppliers that publish third-party Certificates of Analysis (CoA) from independent labs — specifically HPLC (purity) and mass spectrometry (identity confirmation) reports. These prove what is actually in the vial. We source exclusively from Apollo Peptide Sciences, which publishes full CoAs for every product batch. Avoid any supplier that cannot provide these.",
+        a: "Look for suppliers that publish full CoAs for every product batch — HPLC purity reports and mass spectrometry identity confirmation together. These prove what is actually in the vial. Avoid any supplier that cannot provide these.",
       },
       {
         q: 'Why do peptide prices vary so much between suppliers?',
-        a: "Price variation in the peptide market correlates closely with purity and quality control. Cheap peptides often have low purity (<95%), incorrect concentrations, or worse — contamination. Premium suppliers like Apollo Peptide Sciences maintain 98%+ purity with independent verification. When you're injecting a compound, cutting corners on quality is not worth the savings.",
+        a: "Price variation in the peptide market correlates closely with purity and quality control. Cheap peptides often have low purity (<95%), incorrect concentrations, or worse — contamination. Premium suppliers maintain 98%+ purity with independent verification. When you're injecting a compound, cutting corners on quality is not worth the savings.",
       },
     ],
   },
