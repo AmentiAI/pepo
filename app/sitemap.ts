@@ -41,6 +41,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/guides/womens-peptide-guide`,        priority: 0.7, changeFrequency: 'monthly' as const },
     { url: `${BASE_URL}/how-to/peptide-storage-guide`,       priority: 0.6, changeFrequency: 'monthly' as const },
     { url: `${BASE_URL}/blog`,                               priority: 0.8, changeFrequency: 'weekly' as const },
+    { url: `${BASE_URL}/stacks/venus-protocol`,              priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: `${BASE_URL}/stacks/wolverine-healing`,           priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: `${BASE_URL}/stacks/clavicular-ascension`,        priority: 0.9, changeFrequency: 'monthly' as const },
   ];
 
   const productPages: MetadataRoute.Sitemap = products.map((p) => ({

@@ -264,6 +264,223 @@ Epithalon Burst (10–20 days, run 1–2× per year):
   },
 
   {
+    id: 'venus-protocol',
+    name: 'Venus Protocol',
+    tagline: 'The women\'s looksmaxxing stack — skin, gut, hormones, and body composition.',
+    goal: 'Women\'s Anti-Aging & Aesthetics',
+    difficulty: 'Intermediate',
+    duration: '12–16 weeks',
+    cost: '$150–$190/month',
+    tags: ['Women', 'Anti-Aging', 'Skin', 'Gut Health', 'Looksmaxxing', 'Glow-Up'],
+    seoTitle: 'Venus Protocol | Women\'s Peptide Looksmaxxing Stack',
+    shortDescription:
+      'The definitive women\'s peptide protocol for full-spectrum looksmaxxing — GHK-Cu for collagen and skin glow, SNAP-8 for expression lines, BPC-157 for gut-skin axis optimization, NAD+ for metabolic rejuvenation, and Epithalon for hormonal rebalancing.',
+    products: [
+      {
+        slug: 'ghk-cu',
+        dose: '1–2mg daily',
+        timing: 'Morning subcutaneous + topical AM/PM to face, neck, décolletage',
+        notes: 'The core skin peptide — apply topically after reconstituting in a serum base',
+      },
+      {
+        slug: 'snap-8',
+        dose: '5–10% concentration',
+        timing: 'Topical AM and PM to forehead, crow\'s feet, and lip lines',
+        notes: 'The peptide alternative to Botox — relaxes expression line formation without paralysis',
+      },
+      {
+        slug: 'bpc-157',
+        dose: '250mcg twice daily',
+        timing: 'AM + PM subcutaneous',
+        notes: 'Gut-skin axis — optimal gut health is the foundation of clear, glowing skin',
+      },
+      {
+        slug: 'nad-plus',
+        dose: '100–200mg',
+        timing: 'Morning subcutaneous, 3× per week',
+        notes: 'Cellular energy and mitochondrial restoration — drives the metabolic engine beneath all other results',
+      },
+      {
+        slug: 'epithalon',
+        dose: '5mg daily',
+        timing: 'Evening subcutaneous during burst protocol',
+        notes: '10–20 day burst twice per year — hormonal rhythm normalization, melatonin regulation, and cellular longevity',
+      },
+    ],
+    overview: `The Venus Protocol is engineered around the physiological differences that make women's looksmaxxing distinct from men's — skin structure, hormonal cycles, the gut-skin axis, and the metabolic patterns that shift with age.
+
+GHK-Cu is the centerpiece: a copper-binding peptide that resets over 4,000 aging-associated genes in skin fibroblasts, rebuilds collagen types I and III, and produces visible skin density and glow improvements that no topical alone can replicate. Paired with SNAP-8's neuromuscular approach to expression line reduction, the combined skin effect is the closest evidence-based alternative to in-office aesthetic procedures.
+
+BPC-157 addresses the gut-skin axis that dermatologists increasingly recognize as foundational — chronic low-grade gut inflammation produces systemic inflammatory signals that manifest directly as skin dullness, redness, and accelerated aging. NAD+ restores the cellular energy production that powers all tissue repair and remodeling. Epithalon burst cycles provide the deep hormonal reset: normalizing melatonin patterns, optimizing sleep architecture, and addressing the telomere shortening that underpins biological aging at the chromosomal level.`,
+    schedule: `Daily (Continuous):
+• Morning: GHK-Cu 1–2mg subcutaneous injection
+• Morning: BPC-157 250mcg subcutaneous
+• Morning: GHK-Cu topical serum to face, neck, décolletage
+• Evening: SNAP-8 serum to expression line areas
+• Evening: GHK-Cu topical serum (second application)
+• Evening: BPC-157 250mcg subcutaneous
+
+3× Per Week (Continuous):
+• Morning: NAD+ 100–200mg subcutaneous
+
+Epithalon Burst (10–20 days, run 2× per year — spring and autumn):
+• Evening: Epithalon 5mg subcutaneous`,
+    expectedResults: [
+      'Improved skin texture, hydration, and pore minimization within 2–3 weeks (GHK-Cu topical)',
+      'Visible reduction in expression line depth within 4 weeks (SNAP-8)',
+      'Gut health improvements — reduced bloating, improved digestion within 1–2 weeks (BPC-157)',
+      'Enhanced energy, mental clarity, and skin luminosity within 2–3 weeks (NAD+)',
+      'Hormonal rhythm normalization, deeper sleep, and comprehensive anti-aging within 2 weeks of Epithalon burst',
+    ],
+  },
+
+  {
+    id: 'wolverine-healing',
+    name: 'Wolverine Stack',
+    tagline: 'Superhuman tissue regeneration — the viral healing protocol for serious athletes.',
+    goal: 'Injury Recovery & Training Longevity',
+    difficulty: 'Beginner',
+    duration: '8–12 weeks',
+    cost: '$130–$165/month',
+    tags: ['Healing', 'Recovery', 'Tendon', 'Looksmaxxing', 'Athletic', 'Wolverine'],
+    seoTitle: 'Wolverine Stack | BPC-157 + TB-500 + GHK-Cu Healing Protocol',
+    shortDescription:
+      'The viral healing protocol named for Wolverine\'s regenerative factor — BPC-157 for local tissue repair, TB-500 for systemic healing and flexibility, GHK-Cu for scar remodeling and skin repair, and NAD+ for cellular-level recovery acceleration.',
+    products: [
+      {
+        slug: 'bpc-157',
+        dose: '250–500mcg',
+        timing: 'Twice daily — AM + PM, near injury site or subcutaneous',
+        notes: 'Load at 500mcg for first 2 weeks, maintain at 250mcg — inject near injury for local effect',
+      },
+      {
+        slug: 'tb-500',
+        dose: '5mg/week (split 2×)',
+        timing: 'Monday + Thursday subcutaneous injection',
+        notes: 'Systemic injections (abdomen/thigh) — TB-500 distributes systemically via bloodstream',
+      },
+      {
+        slug: 'ghk-cu',
+        dose: '1–2mg daily',
+        timing: 'Morning subcutaneous + topical to scar tissue',
+        notes: 'Remodels scar tissue, improves skin over healed injuries, reduces post-injury skin changes',
+      },
+      {
+        slug: 'nad-plus',
+        dose: '100–200mg',
+        timing: 'Morning subcutaneous, 3× per week',
+        notes: 'Accelerates cellular repair energy production — the mitochondrial fuel for faster healing',
+      },
+    ],
+    overview: `The Wolverine Stack earned its name in biohacking and looksmaxxing communities for a reason — this combination produces tissue repair speeds that genuinely seem to exceed normal biological limits, particularly for connective tissue injuries that conventional medicine manages rather than resolves.
+
+BPC-157 and TB-500 are the core synergistic pair, each addressing complementary aspects of the healing cascade: BPC-157 drives local angiogenesis, fibroblast activation, and collagen deposition at the injury site; TB-500 works systemically through actin regulation to reduce whole-body inflammation, prevent fibrotic scarring, and restore tissue flexibility. The combination produces healing speeds consistently reported as 3–5× faster than either compound alone.
+
+GHK-Cu extends the protocol beyond structural repair into aesthetic recovery — remodeling scar tissue, improving skin quality over healed areas, and activating the gene expression patterns associated with youthful wound healing. NAD+ provides the mitochondrial energy substrate that powers all cellular repair machinery. The result is a protocol that doesn't just heal injuries but leaves the repaired tissue better than it was before — a key distinction in looksmaxxing where training capacity and physique quality are tightly linked.`,
+    schedule: `Week 1–2 (Loading Phase):
+• AM: BPC-157 500mcg subcutaneous (near injury site)
+• PM: BPC-157 500mcg subcutaneous
+• Monday: TB-500 5mg subcutaneous (abdomen)
+• Thursday: TB-500 5mg subcutaneous (abdomen)
+• AM: GHK-Cu 1–2mg subcutaneous
+• AM/PM: GHK-Cu topical to scar/injury area
+• 3× per week: NAD+ 100–200mg subcutaneous
+
+Week 3–12 (Maintenance Phase):
+• AM: BPC-157 250mcg subcutaneous
+• PM: BPC-157 250mcg subcutaneous
+• Weekly: TB-500 5mg (single injection or 2.5mg × 2)
+• Continue GHK-Cu and NAD+ as above`,
+    expectedResults: [
+      'Noticeable pain reduction and decreased inflammation within 5–7 days',
+      'Significantly improved range of motion and tissue flexibility by week 3–4',
+      'Visible reduction in scar tissue formation and improved skin over injury by week 6 (GHK-Cu)',
+      'Near-complete or complete tissue repair for most soft tissue injuries by week 10–12',
+    ],
+  },
+
+  {
+    id: 'clavicular-ascension',
+    name: 'Clavicular Ascension Stack',
+    tagline: 'The extreme male looksmaxxing protocol — fat loss, GH, anabolics, skin, and longevity.',
+    goal: 'Full Male Looksmaxxing & Body Transformation',
+    difficulty: 'Advanced',
+    duration: '20–24 weeks',
+    cost: '$250–$320/month',
+    tags: ['Looksmaxxing', 'Advanced', 'Ascension', 'Fat Loss', 'Muscle', 'Anti-Aging', 'GH'],
+    seoTitle: 'Clavicular Ascension Stack | Extreme Male Looksmaxxing Peptide Protocol',
+    shortDescription:
+      'The most comprehensive male looksmaxxing protocol — Retatrutide for extreme fat loss and face leanness, CJC/Ipamorelin for GH axis optimization, IGF-1 LR3 for direct anabolic signaling, GHK-Cu for skin and hair, BPC-157 for recovery, and NAD+ for cellular optimization.',
+    products: [
+      {
+        slug: 'retatrutide-10mg',
+        dose: '2–8mg once weekly (escalate over 8 weeks)',
+        timing: 'Same day each week — any time',
+        notes: 'The fat loss engine — GLP-1 + GIP + glucagon triple agonism produces the most aggressive fat loss available; start at 2mg/week and escalate every 2 weeks',
+      },
+      {
+        slug: 'ipamorelin-cjc',
+        dose: '200mcg each',
+        timing: 'Pre-sleep fasted (2+ hrs after last meal)',
+        notes: 'GH axis foundation — drives GH pulse amplitude 3–5× baseline for fat loss, muscle, and skin',
+      },
+      {
+        slug: 'igf-1-lr3',
+        dose: '40–60mcg',
+        timing: 'Post-workout within 30 minutes',
+        notes: 'Cycle 4–6 weeks on / 4 weeks off — direct anabolic stimulus for muscle hypertrophy',
+      },
+      {
+        slug: 'ghk-cu',
+        dose: '1–2mg daily',
+        timing: 'Morning subcutaneous + topical to face and scalp',
+        notes: 'Skin tightening during aggressive fat loss is critical — GHK-Cu prevents sagging and improves hair quality',
+      },
+      {
+        slug: 'bpc-157',
+        dose: '250mcg twice daily',
+        timing: 'AM + PM subcutaneous',
+        notes: 'Recovery backbone and GI protection — essential when combining multiple compounds and training hard',
+      },
+      {
+        slug: 'nad-plus',
+        dose: '100–300mg',
+        timing: 'Morning subcutaneous, 3× per week',
+        notes: 'Cellular fuel for the entire stack — NAD+ depletion is the bottleneck when running multiple anabolic pathways simultaneously',
+      },
+    ],
+    overview: `The Clavicular Ascension Stack is the most comprehensive male looksmaxxing protocol in the peptide space — a 6-compound protocol designed for those who want to address every aesthetic pillar simultaneously: face leanness, muscle fullness, skin quality, hair, and cellular optimization.
+
+The protocol is built around three distinct phases that work in synergy. Phase 1 is aggressive fat loss and face leanness through Retatrutide — the triple agonist (GLP-1 + GIP + glucagon) that produces more dramatic fat loss than semaglutide or tirzepatide, particularly visceral and subcutaneous fat that directly determines facial bone structure visibility and vascularity. Phase 2 is GH axis optimization through CJC-1295/Ipamorelin — providing the anabolic counterbalance to prevent muscle loss during fat loss, and producing the GH-dependent improvements in skin, recovery, and body composition that separate this from simple GLP-1 use. Phase 3 is direct anabolic signaling through IGF-1 LR3 cycling — stacked specifically to exploit the primed anabolic environment created by elevated GH.
+
+GHK-Cu is non-negotiable during any protocol that involves aggressive fat loss — rapid weight reduction without collagen support results in skin laxity that undermines the aesthetic result. GHK-Cu maintains skin architecture as fat is lost, while also acting on scalp health. BPC-157 runs as the recovery backbone, managing gut health under GLP-1 and protecting connective tissue under heavy training. NAD+ prevents the cellular energy depletion that limits recovery when multiple pathways are simultaneously active.`,
+    schedule: `Daily (Continuous):
+• AM: BPC-157 250mcg subcutaneous
+• AM: GHK-Cu 1–2mg subcutaneous
+• AM: GHK-Cu topical to face and scalp
+• Pre-sleep (fasted): CJC-1295 200mcg + Ipamorelin 200mcg
+• PM: BPC-157 250mcg subcutaneous
+
+3× Per Week (Continuous):
+• AM: NAD+ 100–300mg subcutaneous
+
+Once Weekly (Continuous):
+• Retatrutide: start 2mg week 1–2, increase to 4mg weeks 3–4, 6mg weeks 5–6, 8mg weeks 7+ per tolerance
+
+Post-Workout (4–6 week cycles, alternating):
+• IGF-1 LR3: 40–60mcg within 30 min of training
+• Run 4–6 weeks active → 4 weeks off IGF-1 LR3`,
+    expectedResults: [
+      'Significant appetite suppression and early fat loss within 2–3 weeks of Retatrutide',
+      'Visible face leanness, improved jawline/cheekbone definition within 6–10 weeks',
+      'Improved skin tightness and quality as fat is lost — no sagging (GHK-Cu)',
+      'Muscle preservation or gain despite aggressive caloric restriction (GH + IGF-1 LR3)',
+      'Enhanced anabolic response during IGF-1 LR3 phases — strength and muscle fullness',
+      'Comprehensive aesthetic transformation across fat loss, skin, and body composition within 20–24 weeks',
+    ],
+  },
+
+  {
     id: 'performance-elite',
     name: 'Performance Elite Stack',
     tagline: 'Complete body recomposition — GH, anabolics, and recovery in one protocol.',
