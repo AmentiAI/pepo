@@ -26,9 +26,10 @@ export interface Product {
 
 const BASE = 'https://apollopeptidesciences.com/product';
 const IMG = 'https://apollopeptidesciences.com/wp-content/uploads';
+const AFF = '?rfsn=9016964.3f1b1e';
 
 function shopLink(path: string) {
-  return `${BASE}/${path}`;
+  return `${BASE}/${path}${AFF}`;
 }
 
 export const products: Product[] = [
