@@ -90,7 +90,7 @@ export default async function ProductsPage({
 
       {/* ── Category filter bar ───────────────────────────────── */}
       <section
-        className="sticky top-0 z-20 border-b py-4"
+        className="sticky top-20 sm:top-24 z-20 border-b py-3"
         style={{
           background: 'rgba(8,8,15,0.95)',
           backdropFilter: 'blur(12px)',
@@ -98,7 +98,10 @@ export default async function ProductsPage({
         }}
       >
         <div className="max-w-6xl mx-auto px-6">
-          <div className="flex items-center gap-2 flex-wrap">
+          <div
+            className="flex items-center gap-2 overflow-x-auto"
+            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+          >
             <span className="text-xs text-zinc-600 font-medium mr-1 shrink-0">Filter:</span>
             {categories.map((cat) => {
               const isActive = cat.value === null ? !category : category === cat.value;
@@ -111,7 +114,7 @@ export default async function ProductsPage({
                 <Link
                   key={cat.label}
                   href={href}
-                  className="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-medium transition-all duration-150 border"
+                  className="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-medium transition-all duration-150 border shrink-0"
                   style={
                     isActive
                       ? {

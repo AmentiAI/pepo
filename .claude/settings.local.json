@@ -23,7 +23,8 @@
       "Bash(find /mnt/c/Users/Wilso/pepo -name *internalLink* -o -name *link*)",
       "Bash(while read:*)",
       "Bash(do grep:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "WebFetch(domain:www.peptidesmuscle.com)"
     ]
   }
 }

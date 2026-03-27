@@ -16,20 +16,37 @@ export default function RelatedReading({ pageKey }: RelatedReadingProps) {
         Related Reading
       </p>
       <ul className="grid sm:grid-cols-2 gap-3">
-        {links.map((link) => (
-          <li key={link.href}>
-            <Link
-              href={link.href}
-              className="flex items-center gap-2 text-sm text-zinc-400 hover:text-violet-400 transition-colors group"
-            >
-              <ArrowRight
-                size={13}
-                className="shrink-0 text-violet-600 group-hover:text-violet-400 transition-colors"
-              />
-              {link.anchor}
-            </Link>
-          </li>
-        ))}
+        {links.map((link) => {
+          const isExternal = link.href.startsWith('http');
+          const className =
+            'flex items-center gap-2 text-sm text-zinc-400 hover:text-violet-400 transition-colors group';
+          const icon = (
+            <ArrowRight
+              size={13}
+              className="shrink-0 text-violet-600 group-hover:text-violet-400 transition-colors"
+            />
+          );
+          return (
+            <li key={link.href}>
+              {isExternal ? (
+                <a
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={className}
+                >
+                  {icon}
+                  {link.anchor}
+                </a>
+              ) : (
+                <Link href={link.href} className={className}>
+                  {icon}
+                  {link.anchor}
+                </Link>
+              )}
+            </li>
+          );
+        })}
       </ul>
     </section>
   );

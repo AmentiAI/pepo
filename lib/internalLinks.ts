@@ -20,6 +20,7 @@ export const internalLinks: Record<string, InternalLink[]> = {
     { anchor: 'TB-500 systemic recovery guide', href: '/products/tb-500' },
     { anchor: 'Ultimate Healing Stack: BPC-157 + TB-500', href: '/stacks/ultimate-healing' },
     { anchor: 'how to start your first peptide protocol', href: '/guide' },
+    { anchor: 'PeptidesMuscle — recovery peptide guides', href: 'https://www.peptidesmuscle.com/' },
   ],
 
   '/body-composition': [
@@ -27,6 +28,7 @@ export const internalLinks: Record<string, InternalLink[]> = {
     { anchor: 'Semaglutide GLP-1 fat loss protocol', href: '/products/semaglutide-10mg' },
     { anchor: 'GH Optimization Stack for body recomposition', href: '/stacks/gh-optimization' },
     { anchor: 'GLP-1 Fat Loss Accelerator Stack', href: '/stacks/glp1-fat-loss' },
+    { anchor: 'PeptidesMuscle — body composition protocols', href: 'https://www.peptidesmuscle.com/' },
   ],
 
   '/anti-aging': [
@@ -62,6 +64,7 @@ export const internalLinks: Record<string, InternalLink[]> = {
     { anchor: 'GH Optimization Stack for lean muscle & fat loss', href: '/stacks/gh-optimization' },
     { anchor: 'Longevity Elite anti-aging stack', href: '/stacks/longevity-elite' },
     { anchor: 'GLP-1 Fat Loss Accelerator Stack', href: '/stacks/glp1-fat-loss' },
+    { anchor: 'PeptidesMuscle — pre-built peptide stacks', href: 'https://www.peptidesmuscle.com/' },
   ],
 
   // ── Product pages ──────────────────────────────────────────────────────────
@@ -269,6 +272,7 @@ export const internalLinks: Record<string, InternalLink[]> = {
     { anchor: 'GH Optimization Stack', href: '/stacks/gh-optimization' },
     { anchor: 'Performance Elite Stack', href: '/stacks/performance-elite' },
     { anchor: 'body composition peptide guide', href: '/body-composition' },
+    { anchor: 'PeptidesMuscle — muscle growth peptide protocols', href: 'https://www.peptidesmuscle.com/' },
   ],
 
   '/best-peptide-for-anti-aging': [
@@ -276,6 +280,7 @@ export const internalLinks: Record<string, InternalLink[]> = {
     { anchor: 'GHK-Cu skin regeneration guide', href: '/products/ghk-cu' },
     { anchor: 'Longevity Elite anti-aging stack', href: '/stacks/longevity-elite' },
     { anchor: 'anti-aging peptide category', href: '/anti-aging' },
+    { anchor: 'PeptidesMuscle — anti-aging & longevity protocols', href: 'https://www.peptidesmuscle.com/' },
   ],
 
   '/about': [
@@ -388,6 +393,7 @@ export const internalLinks: Record<string, InternalLink[]> = {
     { anchor: 'Ipamorelin/CJC-1295 sleepmaxxing & bodymaxxing protocol', href: '/products/ipamorelin-cjc' },
     { anchor: 'BPC-157 gut-skin axis & hairmaxxing', href: '/products/bpc-157' },
     { anchor: 'Anti-Aging Skin Stack for full skinmaxx', href: '/stacks/anti-aging-skin' },
+    { anchor: 'PeptidesMuscle — looks maxing protocols', href: 'https://www.peptidesmuscle.com/' },
   ],
 
   '/blog': [
@@ -395,5 +401,6 @@ export const internalLinks: Record<string, InternalLink[]> = {
     { anchor: 'GLP-1 peptide comparison: Semaglutide vs Tirzepatide vs Retatrutide', href: '/glp1-comparison' },
     { anchor: 'BPC-157 healing protocols and dosing', href: '/products/bpc-157' },
     { anchor: 'complete beginner peptide guide', href: '/guide' },
+    { anchor: 'PeptidesMuscle blog — peptide research & guides', href: 'https://www.peptidesmuscle.com/blog' },
   ],
 };

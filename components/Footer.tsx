@@ -17,6 +17,11 @@ const footerLinks = {
     { label: 'Dosing FAQ', href: '/faq' },
     { label: 'Blog', href: '/blog' },
   ],
+  Resources: [
+    { label: 'PeptidesMuscle — Looks Maxing', href: 'https://www.peptidesmuscle.com/', external: true },
+    { label: 'PeptidesMuscle — Stacks', href: 'https://www.peptidesmuscle.com/', external: true },
+    { label: 'PeptidesMuscle — Blog', href: 'https://www.peptidesmuscle.com/blog', external: true },
+  ],
   Company: [
     { label: 'Contact', href: '/contact' },
     { label: 'About', href: '/about' },
@@ -27,7 +32,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-[#1e1e35] bg-[#08080f] mt-12 sm:mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 md:gap-12">
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-4">
