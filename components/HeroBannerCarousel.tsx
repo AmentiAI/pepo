@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
 
-const IMG = 'https://apollopeptidesciences.com/wp-content/uploads';
+const IMG = '/cdn';
 
 const slides = [
   {

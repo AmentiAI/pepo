@@ -20,9 +20,10 @@ export async function generateMetadata({
   const product = products.find((p) => p.slug === slug)
   if (!product) return { title: 'Product Not Found' }
   const canonical = `https://www.peptidesclav.com/products/${product.slug}`
-  const ogImage = product.image.startsWith('http')
-    ? [{ url: product.image, width: 800, height: 800, alt: product.name }]
-    : [{ url: '/og-image.png', width: 1200, height: 630, alt: product.name }]
+  const absoluteImage = product.image !== ''
+    ? product.image
+    : `https://www.peptidesclav.com${product.image}`
+  const ogImage = [{ url: absoluteImage, width: 800, height: 800, alt: product.name }]
   return {
     title: { absolute: product.seoTitle },
     description: product.shortDescription,
@@ -259,7 +260,7 @@ export default async function ProductPage({
     '@type': 'Product',
     name: product.name,
     description: product.shortDescription,
-    image: product.image.startsWith('http') ? product.image : undefined,
+    image: product.image ? (product.image !== '' ? product.image : `https://www.peptidesclav.com${product.image}`) : undefined,
     brand: { '@type': 'Brand', name: 'PeptidesClav' },
     offers: {
       '@type': 'Offer',
@@ -342,7 +343,7 @@ export default async function ProductPage({
                   )}
                 </div>
 
-                {product.image.startsWith('http') && (
+                {product.image !== '' && (
                   <div className="mx-auto mb-6 rounded-2xl overflow-hidden flex items-center justify-center"
                     style={{ width: 200, height: 260, background: '#0a0a14', border: `1px solid ${theme.badgeBorder}`, boxShadow: `0 0 60px ${theme.glow}`, margin: '0 auto 1.5rem' }}>
                     <img src={product.image} alt={product.name} className="w-full h-full object-contain p-4" />
@@ -408,7 +409,7 @@ export default async function ProductPage({
                 </div>
 
                 <div className="space-y-4">
-                  {product.image.startsWith('http') && (
+                  {product.image !== '' && (
                     <div className="rounded-2xl overflow-hidden flex items-center justify-center"
                       style={{ background: '#0a0a14', border: `1px solid ${theme.badgeBorder}`, minHeight: '240px', boxShadow: `0 0 40px ${theme.glow}` }}>
                       <img src={product.image} alt={product.name} className="w-full h-full object-contain p-6" style={{ maxHeight: '240px' }} />
@@ -477,7 +478,7 @@ export default async function ProductPage({
                 {/* Col 2: product image */}
                 <div className="rounded-2xl overflow-hidden flex items-center justify-center"
                   style={{ background: '#0a0a14', border: `1px solid ${theme.badgeBorder}`, minHeight: '260px', boxShadow: `0 0 40px ${theme.glow}` }}>
-                  {product.image.startsWith('http') ? (
+                  {product.image !== '' ? (
                     <img src={product.image} alt={product.name}
                       className="w-full h-full object-contain p-6" style={{ maxHeight: '260px' }} />
                   ) : (
@@ -685,7 +686,7 @@ export default async function ProductPage({
                 style={{ background: '#0d0d1a', borderColor: theme.badgeBorder }}
               >
                 <div className="flex items-center gap-3 mb-4">
-                  {product.image.startsWith('http') && (
+                  {product.image !== '' && (
                     <img
                       src={product.image}
                       alt={product.name}
@@ -810,7 +811,7 @@ export default async function ProductPage({
               aria-hidden="true"
             />
             <div className="relative flex flex-col sm:flex-row items-center gap-8">
-              {product.image.startsWith('http') && (
+              {product.image !== '' && (
                 <img
                   src={product.image}
                   alt={product.name}

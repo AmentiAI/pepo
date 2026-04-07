@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 
-const IMG = 'https://apollopeptidesciences.com/wp-content/uploads';
+const IMG = '/cdn';
 
 const slides = [
   { type: 'logo' as const },

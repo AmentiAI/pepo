@@ -172,10 +172,10 @@ export default async function StackPage({
               }}
             >
               {/* Product image collage */}
-              {stackProductsResolved.some(({ product }) => product?.image.startsWith('http')) && (
+              {stackProductsResolved.some(({ product }) => product?.image !== '') && (
                 <div className="flex items-center justify-center gap-0 mb-5">
                   {stackProductsResolved
-                    .filter(({ product }) => product?.image.startsWith('http'))
+                    .filter(({ product }) => product?.image !== '')
                     .slice(0, 3)
                     .map(({ product }, i) => (
                       <div
@@ -267,7 +267,7 @@ export default async function StackPage({
                   <div className="flex flex-col sm:flex-row sm:items-start gap-5">
 
                     {/* Product image */}
-                    {product?.image.startsWith('http') && (
+                    {product && product.image !== '' && (
                       <Link
                         href={`/products/${product.slug}`}
                         className="shrink-0 rounded-xl overflow-hidden flex items-center justify-center"

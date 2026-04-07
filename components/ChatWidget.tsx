@@ -153,7 +153,7 @@ export default function ChatWidget() {
                           className="w-14 h-14 rounded-lg overflow-hidden shrink-0 flex items-center justify-center"
                           style={{ background: '#0d0d1f' }}
                         >
-                          {product.image.startsWith('http') ? (
+                          {product.image !== '' ? (
                             <img
                               src={product.image}
                               alt={product.name}

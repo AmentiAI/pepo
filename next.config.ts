@@ -5,13 +5,17 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'apollopeptidesciences.com',
-      },
-      {
-        protocol: 'https',
         hostname: 'cdn.shopify.com',
       },
     ],
+  },
+  async rewrites() {
+    return [
+      {
+        source: '/cdn/:path*',
+        destination: 'https://apollopeptidesciences.com/wp-content/uploads/:path*',
+      },
+    ];
   },
 };
 

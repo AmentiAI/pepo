@@ -84,7 +84,7 @@ export default function StacksPage() {
             // Look up product images for this stack
             const stackProductImages = stack.products
               .map((sp) => products.find((p) => p.slug === sp.slug))
-              .filter((p): p is NonNullable<typeof p> => !!p && p.image.startsWith('http'))
+              .filter((p): p is NonNullable<typeof p> => !!p && p.image !== '')
               .slice(0, 3)
 
             return (
