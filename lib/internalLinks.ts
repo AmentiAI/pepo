@@ -332,6 +332,38 @@ export const internalLinks: Record<string, InternalLink[]> = {
     { anchor: 'peptide FAQ: safety and dosing', href: '/faq' },
   ],
 
+  '/peptides/tb-500': [
+    { anchor: 'BPC-157 vs TB-500: full mechanism comparison', href: '/comparisons/bpc-157-vs-tb-500' },
+    { anchor: 'BPC-157 tendon repair & dosing protocol', href: '/products/bpc-157' },
+    { anchor: 'Ultimate Healing Stack: BPC-157 + TB-500', href: '/stacks/ultimate-healing' },
+    { anchor: 'healing & recovery peptide protocols', href: '/healing' },
+    { anchor: 'rotator cuff healing with peptides', href: '/healing/rotator-cuff' },
+  ],
+
+  '/peptides/ghk-cu': [
+    { anchor: 'GHK-Cu product page and dosing', href: '/products/ghk-cu' },
+    { anchor: 'Epithalon telomere extension protocol', href: '/products/epithalon' },
+    { anchor: 'Longevity Elite Stack: Epithalon + GHK-Cu + NAD+', href: '/stacks/longevity-elite' },
+    { anchor: 'best peptides for anti-aging 2026', href: '/best-peptide-for-anti-aging' },
+    { anchor: 'looksmaxxing peptide protocol', href: '/looksmaxxing' },
+  ],
+
+  '/peptides/ipamorelin-cjc': [
+    { anchor: 'MK-677 vs injectable GH peptides guide', href: '/peptides/mk-677' },
+    { anchor: 'Ipamorelin / CJC-1295 product page', href: '/products/ipamorelin-cjc' },
+    { anchor: 'GH Optimization Stack protocol', href: '/stacks/gh-optimization' },
+    { anchor: 'body composition & fat loss peptide guide', href: '/body-composition' },
+    { anchor: 'best peptides for muscle growth', href: '/best-peptide-for-muscle-growth' },
+  ],
+
+  '/comparisons/semaglutide-vs-tirzepatide': [
+    { anchor: 'Semaglutide 10mg product page', href: '/products/semaglutide-10mg' },
+    { anchor: 'Tirzepatide 15mg product page', href: '/products/tirzepatide-15mg' },
+    { anchor: 'Retatrutide full protocol guide', href: '/retatrutide' },
+    { anchor: 'GLP-1 fat loss peptide comparison hub', href: '/glp1-comparison' },
+    { anchor: 'best peptides for weight loss 2026', href: '/best-peptide-for-weight-loss' },
+  ],
+
   '/comparisons/bpc-157-vs-tb-500': [
     { anchor: 'BPC-157 tendon repair protocol and dosing', href: '/products/bpc-157' },
     { anchor: 'TB-500 systemic recovery guide', href: '/products/tb-500' },
