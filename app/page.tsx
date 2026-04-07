@@ -176,7 +176,7 @@ const faqs = [
 ];
 
 export default function HomePage() {
-  const featuredProducts = [...products].sort((a, b) => a.popularityRank - b.popularityRank).slice(0, 6);
+  const featuredProducts = [...products].sort((a, b) => a.popularityRank - b.popularityRank).slice(0, 8);
   const featuredStacks   = stacks.slice(0, 3);
 
   return (
@@ -299,6 +299,39 @@ export default function HomePage() {
 
       <div className="glow-divider mx-6" />
 
+      {/* ── FEATURED PRODUCTS ─────────────────────────────────── */}
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-24">
+        <div className="flex items-end justify-between mb-8 sm:mb-12">
+          <div>
+            <p className="text-xs font-semibold tracking-widest text-cyan-400 uppercase mb-3">Top-Rated Peptides</p>
+            <h2 className="text-4xl font-bold text-white">Most Popular Peptides</h2>
+            <p className="text-zinc-400 mt-2 max-w-lg">
+              The most-used peptides in the community — ranked by clinical evidence and user popularity.
+            </p>
+          </div>
+          <Link href="/products" className="btn-secondary py-2.5 px-5 text-sm hidden sm:inline-flex">
+            All Peptides <ArrowRight size={15} />
+          </Link>
+        </div>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {featuredProducts.map((product) => (
+            <ProductCard key={product.slug} product={product} showAffiliateButton={true} />
+          ))}
+        </div>
+
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
+          <Link href="/products" className="btn-primary text-sm px-8 py-3">
+            Browse All Peptides <ArrowRight size={15} />
+          </Link>
+          <Link href="/stacks" className="btn-secondary text-sm px-8 py-3">
+            View Protocol Stacks <ArrowRight size={15} />
+          </Link>
+        </div>
+      </section>
+
+      <div className="glow-divider mx-6" />
+
       {/* ── RECONSTITUTION CALCULATOR ─────────────────────────── */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-24">
         <div className="text-center mb-10">
@@ -317,36 +350,6 @@ export default function HomePage() {
             Step-by-step injection guide →
           </Link>
         </p>
-      </section>
-
-      <div className="glow-divider mx-6" />
-
-      {/* ── FEATURED PRODUCTS ─────────────────────────────────── */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-24">
-        <div className="flex items-end justify-between mb-8 sm:mb-12">
-          <div>
-            <p className="text-xs font-semibold tracking-widest text-cyan-400 uppercase mb-3">Top-Rated Peptides</p>
-            <h2 className="text-4xl font-bold text-white">Most Popular Peptides</h2>
-            <p className="text-zinc-400 mt-2 max-w-lg">
-              The most-used peptides in the community — ranked by clinical evidence and user popularity.
-            </p>
-          </div>
-          <Link href="/products" className="btn-secondary py-2.5 px-5 text-sm hidden sm:inline-flex">
-            All 18 Peptides <ArrowRight size={15} />
-          </Link>
-        </div>
-
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {featuredProducts.map((product) => (
-            <ProductCard key={product.slug} product={product} showAffiliateButton={true} />
-          ))}
-        </div>
-
-        <div className="text-center mt-8 sm:hidden">
-          <Link href="/products" className="btn-secondary">
-            View All 18 Peptides <ArrowRight size={16} />
-          </Link>
-        </div>
       </section>
 
       <div className="glow-divider mx-6" />

@@ -40,7 +40,7 @@ export default function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
           ? 'bg-[#08080f]/97 backdrop-blur-md border-b border-[#1e1e35] shadow-lg shadow-black/40'
-          : 'bg-transparent'
+          : 'bg-[#08080f]/85 backdrop-blur-sm border-b border-[#1e1e35]/50'
       }`}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-20 sm:h-24">
