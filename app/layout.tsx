@@ -14,11 +14,17 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.peptidesclav.com'),
-  title: '#1 Peptide Protocols for Healing, Fat Loss & Anti-Aging',
+  title: {
+    default: '#1 Peptide Protocols for Healing, Fat Loss & Anti-Aging | PeptidesClav',
+    template: '%s | PeptidesClav',
+  },
   description:
     'Expert peptide protocols for BPC-157, TB-500, Semaglutide & more. Science-backed guides for healing, fat loss, anti-aging, and muscle growth.',
-  keywords:
-    'peptides, BPC-157, TB-500, Ipamorelin, CJC-1295, Semaglutide, Tirzepatide, healing peptides, anti-aging peptides, GH peptides, fat loss peptides, peptide protocols 2026',
+  keywords: [
+    'peptidesclav', 'peptide protocols 2026', 'BPC-157 protocol', 'peptide healing stack',
+    'semaglutide peptide guide', 'GHK-Cu anti-aging', 'CJC-1295 ipamorelin', 'TB-500 recovery',
+    'looksmaxxing peptides', 'retatrutide protocol',
+  ],
   openGraph: {
     title: '#1 Peptide Protocols for Healing, Fat Loss & Anti-Aging',
     description:

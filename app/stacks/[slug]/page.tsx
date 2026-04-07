@@ -6,7 +6,7 @@ import { stacks } from '@/lib/stacks'
 import { products } from '@/lib/products'
 import RelatedReading from '@/components/RelatedReading'
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   return stacks.map((s) => ({ slug: s.id }))
 }
 
@@ -20,7 +20,7 @@ export async function generateMetadata({
   if (!stack) return { title: 'Stack Not Found' }
   const canonical = `https://www.peptidesclav.com/stacks/${stack.id}`
   return {
-    title: stack.seoTitle,
+    title: { absolute: stack.seoTitle },
     description: stack.shortDescription,
     keywords: `${stack.name}, peptide stack, peptide protocol, ${stack.tags.slice(0, 4).join(', ')}`,
     alternates: { canonical },
@@ -29,7 +29,13 @@ export async function generateMetadata({
       description: stack.shortDescription,
       type: 'website',
       url: canonical,
+      siteName: 'PeptidesClav',
       images: [{ url: '/og-image.png', width: 1200, height: 630, alt: stack.name }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: stack.seoTitle,
+      description: stack.shortDescription.slice(0, 155),
     },
   }
 }

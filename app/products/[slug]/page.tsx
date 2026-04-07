@@ -7,7 +7,7 @@ import { weeklyTimelines } from '@/lib/weeklyTimelines'
 import ProductCard from '@/components/ProductCard'
 import RelatedReading from '@/components/RelatedReading'
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   return products.map((p) => ({ slug: p.slug }))
 }
 
@@ -24,7 +24,7 @@ export async function generateMetadata({
     ? [{ url: product.image, width: 800, height: 800, alt: product.name }]
     : [{ url: '/og-image.png', width: 1200, height: 630, alt: product.name }]
   return {
-    title: product.seoTitle,
+    title: { absolute: product.seoTitle },
     description: product.shortDescription,
     keywords: `${product.name}, ${product.category}, peptide protocol, ${product.tags.slice(0, 4).join(', ')}`,
     alternates: { canonical },
@@ -34,6 +34,12 @@ export async function generateMetadata({
       images: ogImage,
       type: 'website',
       url: canonical,
+      siteName: 'PeptidesClav',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: product.seoTitle,
+      description: product.shortDescription.slice(0, 155),
     },
   }
 }
@@ -254,12 +260,14 @@ export default async function ProductPage({
     name: product.name,
     description: product.shortDescription,
     image: product.image.startsWith('http') ? product.image : undefined,
+    brand: { '@type': 'Brand', name: 'PeptidesClav' },
     offers: {
       '@type': 'Offer',
       price: product.price.toFixed(2),
       priceCurrency: 'USD',
       availability: 'https://schema.org/InStock',
-      url: product.shopUrl,
+      url: `https://www.peptidesclav.com/products/${product.slug}`,
+      seller: { '@type': 'Organization', name: 'PeptidesClav' },
     },
     aggregateRating: {
       '@type': 'AggregateRating',

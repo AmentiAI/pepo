@@ -24,7 +24,8 @@
       "Bash(while read:*)",
       "Bash(do grep:*)",
       "Bash(grep:*)",
-      "WebFetch(domain:www.peptidesmuscle.com)"
+      "WebFetch(domain:www.peptidesmuscle.com)",
+      "Bash(ls:*)"
     ]
   }
 }

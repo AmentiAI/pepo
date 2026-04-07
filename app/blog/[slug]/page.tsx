@@ -9,7 +9,7 @@ interface Props {
   params: Promise<{ slug: string }>;
 }
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   return articles.map((a) => ({ slug: a.slug }));
 }
 
@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const article = getArticleBySlug(slug);
   if (!article) return {};
   return {
-    title: article.title,
+    title: { absolute: article.title },
     description: article.description,
     keywords: article.tags.join(', '),
     alternates: { canonical: `https://www.peptidesclav.com/blog/${article.slug}` },
@@ -27,7 +27,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: article.description,
       type: 'article',
       url: `https://www.peptidesclav.com/blog/${article.slug}`,
+      siteName: 'PeptidesClav',
       images: [{ url: '/og-image.png', width: 1200, height: 630, alt: article.title }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: article.title,
+      description: article.description.slice(0, 155),
     },
   };
 }
