@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import {
   ArrowRight, ChevronRight, CheckCircle, Shield, Zap, Brain,
-  FlaskConical, Activity, Star, TrendingUp, Clock, Users, Award,
+  FlaskConical, Activity, Star, TrendingUp, Clock, Users, Award, ExternalLink,
 } from 'lucide-react';
 import { products } from '@/lib/products';
 import { stacks } from '@/lib/stacks';
@@ -176,8 +176,20 @@ const faqs = [
 ];
 
 export default function HomePage() {
-  const featuredProducts = [...products].sort((a, b) => a.popularityRank - b.popularityRank).slice(0, 8);
+  const sortedProducts   = [...products].sort((a, b) => a.popularityRank - b.popularityRank);
+  const heroProducts     = sortedProducts.slice(0, 4);
+  const featuredProducts = sortedProducts.slice(0, 8);
   const featuredStacks   = stacks.slice(0, 3);
+
+  const shortCategory: Record<string, string> = {
+    'Healing & Recovery':     'Healing',
+    'Growth Hormone':         'GH+',
+    'Anti-Aging & Skin':      'Skin',
+    'Anti-Aging & Longevity': 'Longevity',
+    'Body Composition':       'Fat Loss',
+    'Cognitive Enhancement':  'Cognitive',
+    'Sexual Health':          'Performance',
+  };
 
   return (
     <>
@@ -185,58 +197,122 @@ export default function HomePage() {
       <section className="relative overflow-hidden grid-bg" style={{ minHeight: '92vh', display: 'flex', alignItems: 'center' }}>
         <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
           <div className="absolute rounded-full opacity-20 blur-3xl"
-            style={{ top: '-10%', left: '20%', width: 600, height: 600, background: 'radial-gradient(circle, #7c3aed 0%, transparent 70%)' }} />
+            style={{ top: '-10%', left: '10%', width: 600, height: 600, background: 'radial-gradient(circle, #7c3aed 0%, transparent 70%)' }} />
           <div className="absolute rounded-full opacity-15 blur-3xl"
-            style={{ bottom: '10%', right: '15%', width: 400, height: 400, background: 'radial-gradient(circle, #06b6d4 0%, transparent 70%)' }} />
+            style={{ bottom: '10%', right: '5%', width: 400, height: 400, background: 'radial-gradient(circle, #06b6d4 0%, transparent 70%)' }} />
         </div>
 
-        <div className="relative w-full max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-28 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-violet-500/30 bg-violet-500/10 mb-8">
-            <span className="w-2 h-2 rounded-full bg-violet-400 animate-pulse" />
-            <span className="text-sm text-violet-300 font-medium tracking-wide">
-              Looksmaxxing • Healing • Fat Loss • Anti-Aging
-            </span>
-          </div>
+        <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 py-20 sm:py-28">
+          <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
 
-          <h1 className="font-extrabold leading-tight tracking-tight mb-6" style={{ fontSize: 'clamp(1.75rem, 7vw, 4.5rem)' }}>
-            <span className="gradient-text">Peptides for Looksmaxxing</span>
-            <br />
-            <span className="text-white">Healing &amp; Fat Loss</span>
-          </h1>
+            {/* Left: Title + Description + CTAs */}
+            <div className="flex-1 text-center lg:text-left">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-violet-500/30 bg-violet-500/10 mb-7">
+                <span className="w-2 h-2 rounded-full bg-violet-400 animate-pulse" />
+                <span className="text-sm text-violet-300 font-medium tracking-wide">
+                  Looksmaxxing • Healing • Fat Loss • Anti-Aging
+                </span>
+              </div>
 
-          <p className="text-zinc-400 max-w-2xl mx-auto mb-4 leading-relaxed" style={{ fontSize: 'clamp(0.95rem, 2.5vw, 1.25rem)' }}>
-            The complete looksmaxxing peptide guide —{' '}
-            <strong className="text-zinc-200">GHK-Cu</strong> for skinmaxxing,{' '}
-            <strong className="text-zinc-200">Ipamorelin</strong> for bodymaxxing &amp; sleepmaxxing,{' '}
-            <strong className="text-zinc-200">BPC-157</strong> for gut-skin axis,{' '}
-            <strong className="text-zinc-200">GLP-1s</strong> for face leanness.
-            Tier-ranked protocols. Zero guesswork.
-          </p>
-          <p className="text-zinc-500 max-w-xl mx-auto mb-10 text-sm">
-            Evidence-based. PubMed-cited. Research-grade quality.
-          </p>
+              <h1 className="font-extrabold leading-tight tracking-tight mb-6" style={{ fontSize: 'clamp(2rem, 6vw, 4rem)' }}>
+                <span className="gradient-text">Peptides for Looksmaxxing</span>
+                <br />
+                <span className="text-white">Healing &amp; Fat Loss</span>
+              </h1>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link href="/products" className="btn-primary text-base px-8 py-3.5">
-              Browse All Peptides <ArrowRight size={18} />
-            </Link>
-            <Link href="/stacks" className="btn-secondary text-base px-8 py-3.5">
-              View Protocol Stacks <ChevronRight size={18} />
-            </Link>
-          </div>
+              <p className="text-zinc-400 mb-4 leading-relaxed" style={{ fontSize: 'clamp(0.95rem, 2vw, 1.15rem)' }}>
+                The complete peptide guide —{' '}
+                <strong className="text-zinc-200">GHK-Cu</strong> for skinmaxxing,{' '}
+                <strong className="text-zinc-200">Ipamorelin</strong> for bodymaxxing,{' '}
+                <strong className="text-zinc-200">BPC-157</strong> for gut-skin axis,{' '}
+                <strong className="text-zinc-200">GLP-1s</strong> for face leanness.
+                Tier-ranked protocols. Zero guesswork.
+              </p>
+              <p className="text-zinc-500 mb-8 text-sm">
+                Evidence-based. PubMed-cited. Research-grade quality.
+              </p>
 
-          {/* Stats row */}
-          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mt-10 sm:mt-16">
-            {stats.map((s) => {
-              const Icon = s.icon;
-              return (
-                <div key={s.label} className="flex items-center gap-2 text-sm text-zinc-500">
-                  <Icon size={15} className="text-violet-400" />
-                  <span className="text-zinc-300 font-semibold">{s.value}</span>
-                  <span>{s.label}</span>
-                </div>
-              );
-            })}
+              <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+                <Link href="/products" className="btn-primary text-base px-8 py-3.5">
+                  Browse All Peptides <ArrowRight size={18} />
+                </Link>
+                <Link href="/stacks" className="btn-secondary text-base px-8 py-3.5">
+                  View Stacks <ChevronRight size={18} />
+                </Link>
+                <a href="/go/shop" target="_blank" rel="noopener noreferrer" className="btn-secondary text-base px-6 py-3.5">
+                  Shop Now <ExternalLink size={15} />
+                </a>
+              </div>
+
+              {/* Stats row */}
+              <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 mt-8">
+                {stats.map((s) => {
+                  const Icon = s.icon;
+                  return (
+                    <div key={s.label} className="flex items-center gap-2 text-sm text-zinc-500">
+                      <Icon size={15} className="text-violet-400" />
+                      <span className="text-zinc-300 font-semibold">{s.value}</span>
+                      <span>{s.label}</span>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Right: 4 Top Product Cards */}
+            <div className="w-full lg:w-[44%] shrink-0">
+              <p className="text-xs font-semibold tracking-widest text-violet-400 uppercase mb-4 text-center lg:text-left">
+                Top Peptides — HPLC Verified
+              </p>
+              <div className="grid grid-cols-2 gap-3">
+                {heroProducts.map((p) => (
+                  <div
+                    key={p.slug}
+                    className="card p-4 flex flex-col gap-2 group hover:border-violet-500/40 transition-colors"
+                  >
+                    <div className="flex items-center justify-between mb-0.5">
+                      <span
+                        className="text-[9px] font-bold px-1.5 py-0.5 rounded"
+                        style={{ background: 'rgba(124,58,237,0.15)', color: '#a78bfa', border: '1px solid rgba(124,58,237,0.2)' }}
+                      >
+                        #{p.popularityRank} Popular
+                      </span>
+                      <span className="badge text-[9px]">{shortCategory[p.category] ?? p.category}</span>
+                    </div>
+                    <h3 className="font-bold text-white text-sm leading-tight">{p.name}</h3>
+                    <p className="text-zinc-500 text-[11px] leading-relaxed line-clamp-2 flex-1">{p.tagline}</p>
+                    <div
+                      className="flex items-center justify-between pt-2 mt-auto border-t"
+                      style={{ borderColor: 'var(--border)' }}
+                    >
+                      <span className="font-bold text-white text-sm">${p.price.toFixed(2)}</span>
+                      <div className="flex gap-1.5">
+                        <Link
+                          href={`/products/${p.slug}`}
+                          className="btn-secondary py-1 px-2 text-[10px]"
+                        >
+                          Guide
+                        </Link>
+                        <a
+                          href={`/go/${p.slug}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn-primary py-1 px-2 text-[10px]"
+                        >
+                          Buy
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div className="mt-4 text-center lg:text-left">
+                <Link href="/products" className="btn-secondary text-xs px-5 py-2">
+                  View All 22+ Peptides <ArrowRight size={13} />
+                </Link>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>

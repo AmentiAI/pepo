@@ -25,7 +25,9 @@
       "Bash(do grep:*)",
       "Bash(grep:*)",
       "WebFetch(domain:www.peptidesmuscle.com)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(npx next:*)",
+      "Bash(wait)"
     ]
   }
 }

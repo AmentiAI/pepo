@@ -13,8 +13,12 @@ const navLinks = [
     href: '#',
     children: [
       { label: 'Healing & Recovery', href: '/healing' },
+      { label: 'Growth Hormone', href: '/growth-hormone' },
       { label: 'Body Composition', href: '/body-composition' },
       { label: 'Anti-Aging', href: '/anti-aging' },
+      { label: 'Weight Loss', href: '/best-peptide-for-weight-loss' },
+      { label: 'Cognitive Enhancement', href: '/goals/cognitive-enhancement' },
+      { label: 'Looksmaxxing', href: '/looksmaxxing' },
     ],
   },
   { label: 'Guide', href: '/guide' },
