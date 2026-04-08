@@ -24,6 +24,18 @@ export const metadata: Metadata = {
 
 const antiFaqs = [
   {
+    q: 'What is the difference between GHK-Cu subcutaneous injection and topical application?',
+    a: 'Subcutaneous injection delivers GHK-Cu systemically — it circulates in the bloodstream, reaching every tissue and triggering the full gene expression reset across the body. This is the best route for systemic anti-aging effects. Topical application delivers GHK-Cu locally to skin and scalp — concentrations penetrate the dermis and produce local collagen, elastin, and hair follicle effects. Most practitioners use both simultaneously: daily subcutaneous injection for systemic benefits and topical serum for targeted skin and scalp improvements.',
+  },
+  {
+    q: 'How does NAD+ work differently from Epithalon and GHK-Cu?',
+    a: 'Epithalon works at the chromosomal level (telomere biology), GHK-Cu works at the gene expression level (transcriptomics), and NAD+ works at the metabolic/energetic level (mitochondrial function, sirtuin activation, DNA repair). They are mechanistically complementary — addressing aging from entirely different molecular angles. The Longevity Elite Stack combines all three because no single compound covers the full aging picture. NAD+ in particular becomes more critical after age 40 as levels drop below 50% of youthful concentrations.',
+  },
+  {
+    q: 'Can I use anti-aging peptides alongside testosterone replacement therapy (TRT)?',
+    a: 'Yes — this is a common combination in longevity-focused medicine. GHK-Cu and Epithalon have no known interactions with TRT. NAD+ may actually enhance testosterone sensitivity and mitochondrial steroidogenesis. GH peptides are also compatible and complementary with TRT, as GH and testosterone address different aspects of the hormonal aging picture. Many users run Epithalon cycles independently of their TRT protocol without any scheduling conflicts.',
+  },
+  {
     q: 'How does Epithalon extend telomere length?',
     a: "Epithalon activates the enzyme telomerase in somatic cells. Telomerase is responsible for rebuilding the telomere caps on chromosomes that shorten with each cell division. In human fibroblast studies, Epithalon produced a 33% increase in telomere length — the only peptide with this level of direct telomere biology data.",
   },
@@ -298,6 +310,152 @@ export default function AntiAgingPage() {
           </div>
         </section>
       )}
+
+      {/* ── HALLMARKS OF AGING ──────────────────────────── */}
+      <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12">
+          <p className="text-xs font-semibold tracking-widest text-violet-400 uppercase mb-3">The Science</p>
+          <h2 className="text-3xl font-bold text-white mb-4">Hallmarks of Aging — Addressed by Peptides</h2>
+          <p className="text-zinc-400 max-w-2xl mx-auto">
+            The hallmarks of aging framework (López-Otín et al., Cell 2013) identifies 9 primary causes of biological aging.
+            Anti-aging peptides address multiple hallmarks simultaneously — no supplement category comes close in breadth of mechanism.
+          </p>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {[
+            {
+              hallmark: 'Telomere Shortening',
+              peptide: 'Epithalon',
+              mechanism: 'Activates telomerase enzyme, extending telomere caps by ~33% in human cell studies. Directly addresses the chromosomal clock of aging.',
+              color: 'text-violet-400',
+            },
+            {
+              hallmark: 'Epigenetic Alterations',
+              peptide: 'GHK-Cu',
+              mechanism: 'Resets age-related gene dysregulation in over 4,000 genes, reversing epigenetic changes that accumulate with age in skin fibroblasts.',
+              color: 'text-cyan-400',
+            },
+            {
+              hallmark: 'Mitochondrial Dysfunction',
+              peptide: 'NAD+',
+              mechanism: 'Restores NAD+ to youthful levels, reactivating sirtuin enzymes and PARP DNA repair. Directly improves mitochondrial electron transport and ATP production.',
+              color: 'text-violet-400',
+            },
+            {
+              hallmark: 'Cellular Senescence',
+              peptide: 'Epithalon + NAD+',
+              mechanism: 'Telomere extension delays replicative senescence. NAD+ activates SIRT1 which regulates senescent cell clearance. Together they reduce the senescent cell burden.',
+              color: 'text-cyan-400',
+            },
+            {
+              hallmark: 'Stem Cell Exhaustion',
+              peptide: 'GHK-Cu + TB-500',
+              mechanism: 'GHK-Cu activates stem cell gene expression programs. TB-500 stimulates hair follicle stem cells and satellite cells in muscle tissue. Both counter age-related stem cell pool depletion.',
+              color: 'text-violet-400',
+            },
+            {
+              hallmark: 'Altered Intercellular Communication',
+              peptide: 'GHK-Cu + Epithalon',
+              mechanism: 'GHK-Cu normalizes inflammatory signaling by downregulating genes associated with chronic inflammation. Epithalon restores pineal gland signaling and normalizes neuroendocrine communication.',
+              color: 'text-cyan-400',
+            },
+          ].map((item) => (
+            <div key={item.hallmark} className="card p-5">
+              <p className={`text-xs font-bold uppercase tracking-wider mb-2 ${item.color}`}>{item.peptide}</p>
+              <h3 className="font-bold text-white text-sm mb-2">{item.hallmark}</h3>
+              <p className="text-xs text-zinc-400 leading-relaxed">{item.mechanism}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── YEAR-ROUND PROTOCOL DESIGN ──────────────────── */}
+      <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid lg:grid-cols-2 gap-12">
+            <div>
+              <p className="text-xs font-semibold tracking-widest text-cyan-400 uppercase mb-3">Protocol Design</p>
+              <h2 className="text-3xl font-bold text-white mb-5">Building a Year-Round Anti-Aging Protocol</h2>
+              <p className="text-zinc-400 leading-relaxed mb-4">
+                The most effective longevity protocols use multiple peptides on different schedules — combining continuous use
+                compounds with periodic burst cycles. This approach covers more aging mechanisms, avoids receptor desensitization,
+                and provides the sustained biological signal needed for meaningful cellular rejuvenation.
+              </p>
+              <p className="text-zinc-400 leading-relaxed mb-6">
+                GHK-Cu and NAD+ are well-suited to continuous daily use — no receptor downregulation has been documented, and their
+                benefits are cumulative over months of consistent use. Epithalon, by contrast, is used in 10–20 day burst protocols
+                1–2 times per year — mirroring the original Khavinson research protocols that produced the 27–36% mortality reduction data.
+              </p>
+              <div className="space-y-3">
+                {[
+                  { timing: 'Daily', compound: 'GHK-Cu', note: '1–2mg subcutaneous + topical serum for skin/scalp' },
+                  { timing: 'Daily', compound: 'NAD+ 500mg', note: '100–500mg subcutaneous, 2–3× per week or daily' },
+                  { timing: 'Pre-sleep', compound: 'CJC-1295 / Ipamorelin', note: '200mcg each, 5 days on / 2 days off' },
+                  { timing: '1–2× per year', compound: 'Epithalon', note: '10–20 consecutive days at 5–10mg/day' },
+                ].map((row) => (
+                  <div key={row.compound} className="card p-4 flex gap-4 items-center">
+                    <div
+                      className="shrink-0 text-[10px] font-bold px-2 py-1 rounded text-center w-20"
+                      style={{ background: 'rgba(124,58,237,0.15)', color: '#a78bfa', border: '1px solid rgba(124,58,237,0.2)' }}
+                    >
+                      {row.timing}
+                    </div>
+                    <div>
+                      <p className="text-white font-semibold text-sm">{row.compound}</p>
+                      <p className="text-zinc-500 text-xs mt-0.5">{row.note}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div>
+              <p className="text-xs font-semibold tracking-widest text-violet-400 uppercase mb-3">Expected Timeline</p>
+              <h3 className="text-xl font-bold text-white mb-6">When Will You See Results?</h3>
+              <div className="space-y-4">
+                {[
+                  {
+                    period: 'Weeks 1–4',
+                    outcomes: ['Improved sleep quality (GHK-Cu + NAD+ effect on melatonin and cellular energy)', 'Subtle improvements in skin hydration and texture', 'Increased energy levels and mental clarity from NAD+ restoration'],
+                    color: '#a78bfa',
+                  },
+                  {
+                    period: 'Weeks 4–12',
+                    outcomes: ['Measurable reduction in fine lines and improved elasticity (GHK-Cu collagen effect)', 'Improved hair thickness and follicle density', 'Reduced chronic inflammation markers', 'Better sleep architecture and overnight recovery'],
+                    color: '#06b6d4',
+                  },
+                  {
+                    period: 'Months 3–6',
+                    outcomes: ['Sustained skin quality improvements accumulating', 'If running Epithalon: telomerase activation and immune function improvement', 'Measurable mitochondrial function improvement with NAD+', 'Progressive cellular rejuvenation at the gene expression level'],
+                    color: '#a78bfa',
+                  },
+                  {
+                    period: '6+ Months',
+                    outcomes: ['Long-term structural collagen rebuilding complete', 'Epigenetic benefits of sustained GHK-Cu use becoming measurable', 'Second Epithalon cycle reinforces telomere biology gains', 'Comprehensive anti-aging protocol providing systemic biological age reduction'],
+                    color: '#06b6d4',
+                  },
+                ].map((phase) => (
+                  <div key={phase.period} className="card p-4">
+                    <p
+                      className="text-xs font-bold mb-2"
+                      style={{ color: phase.color }}
+                    >
+                      {phase.period}
+                    </p>
+                    <ul className="space-y-1">
+                      {phase.outcomes.map((o) => (
+                        <li key={o} className="flex items-start gap-2 text-xs text-zinc-400">
+                          <CheckCircle2 size={10} className="shrink-0 mt-0.5" style={{ color: phase.color }} />
+                          {o}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* FAQ */}
       <section className="py-10 sm:py-20">

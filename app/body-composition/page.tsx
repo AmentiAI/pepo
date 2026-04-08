@@ -25,6 +25,18 @@ export const metadata: Metadata = {
 
 const bodyFaqs = [
   {
+    q: 'What is the best peptide for losing belly fat specifically?',
+    a: 'For visceral (abdominal) fat specifically, Tesamorelin has the strongest clinical evidence — it demonstrated 15–20% reduction in visceral adipose tissue in FDA-approved trials for HIV-associated lipodystrophy, and the mechanism applies equally to metabolic syndrome patients. Semaglutide and Tirzepatide also show preferential visceral fat reduction due to their metabolic mechanism. For subcutaneous fat, AOD-9604 (a fragment of HGH) targets adipocyte lipolysis directly. A combination of GH peptides + GLP-1s covers both compartments simultaneously.',
+  },
+  {
+    q: 'How do I stack GH peptides with GLP-1s for maximum results?',
+    a: 'The GLP-1 Accelerated Fat Loss stack is the gold standard for this combination. GLP-1s (Semaglutide or Tirzepatide) suppress appetite and drive caloric deficit. GH peptides (Ipamorelin/CJC-1295) preserve and build lean muscle during the caloric deficit — counteracting the muscle wasting that occurs with GLP-1-only protocols. Run CJC-1295/Ipamorelin before sleep nightly while using your weekly GLP-1 injection. BPC-157 is added to the stack to protect against gut side effects from GLP-1s.',
+  },
+  {
+    q: 'Can women use body composition peptides safely?',
+    a: 'Yes — the Venus Protocol stack is specifically designed for women. Ipamorelin/CJC-1295 at standard doses is safe and equally effective in women as in men. GLP-1 peptides show comparable weight loss data in female-majority trials. GHK-Cu adds skin quality benefits particularly relevant for women during fat loss phases. The key consideration for women is that GH peptides may interact with hormonal contraceptives in ways that are not yet fully characterized — consult with a healthcare provider before beginning a protocol.',
+  },
+  {
     q: 'How do GH peptides help with fat loss?',
     a: 'GH has a direct lipolytic effect on adipocytes — it breaks down stored fat, particularly visceral fat. GH secretagogues like Ipamorelin/CJC-1295 and Tesamorelin stimulate the pituitary to release your own GH in a pulsatile, natural pattern. This elevates IGF-1, accelerates fat oxidation, and preserves lean muscle mass simultaneously.',
   },
@@ -228,6 +240,146 @@ export default function BodyCompositionPage() {
               </div>
             ) : null
           )}
+        </div>
+      </section>
+
+      {/* ── GH DECLINE DEEP DIVE ────────────────────────── */}
+      <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div>
+            <p className="text-xs font-semibold tracking-widest text-cyan-400 uppercase mb-3">Root Cause</p>
+            <h2 className="text-3xl font-bold text-white mb-5">The GH Decline Problem</h2>
+            <p className="text-zinc-400 leading-relaxed mb-4">
+              After age 30, growth hormone declines at approximately 14–15% per decade. By age 60, most adults have GH levels
+              that are 60–70% lower than their peak. This progressive GH deficiency is not merely a cosmetic concern — it is
+              a central driver of the body composition changes that people associate with "normal aging": accumulating visceral fat,
+              losing lean muscle mass, declining bone density, and deteriorating skin quality.
+            </p>
+            <p className="text-zinc-400 leading-relaxed mb-4">
+              The conventional medical response — synthetic growth hormone injections — is expensive, suppresses the body's own
+              GH axis through negative feedback, and carries risks of insulin resistance and acromegaly with chronic use.
+              GH secretagogues (peptides that stimulate the pituitary to produce more of its own GH) solve these problems by
+              working with, not against, the body's endocrine architecture.
+            </p>
+            <p className="text-zinc-400 leading-relaxed mb-6">
+              Unlike exogenous HGH, CJC-1295 and Ipamorelin amplify natural pulsatile GH secretion without suppressing the
+              hypothalamic-pituitary-GH axis. The body continues regulating its own GH production — the peptides simply
+              amplify the magnitude of natural pulses. This means no post-cycle therapy is required, no axis suppression,
+              and no risk of downregulation with responsible cycling.
+            </p>
+          </div>
+          <div className="space-y-4">
+            <h3 className="text-sm font-semibold text-zinc-500 uppercase tracking-wider mb-2">GH Decline by Decade</h3>
+            {[
+              { age: 'Age 20s', level: '100%', desc: 'Peak GH levels. Body composition is naturally maintained with minimal effort.', pct: 100 },
+              { age: 'Age 30s', level: '~85%', desc: 'First signs of body composition change. Muscle maintenance requires more effort.', pct: 85 },
+              { age: 'Age 40s', level: '~70%', desc: 'Significant decline. Visceral fat begins accumulating despite unchanged diet.', pct: 70 },
+              { age: 'Age 50s', level: '~55%', desc: 'Pronounced GH deficiency. Body recomposition requires intervention.', pct: 55 },
+              { age: 'Age 60+', level: '~35%', desc: 'Severely reduced GH pulse amplitude. Metabolic syndrome risk increases substantially.', pct: 35 },
+            ].map((row) => (
+              <div key={row.age} className="card p-4">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-white font-semibold text-sm">{row.age}</span>
+                  <span className="gradient-text font-black">{row.level}</span>
+                </div>
+                <div className="h-1.5 rounded-full mb-2" style={{ background: 'var(--border)' }}>
+                  <div
+                    className="h-full rounded-full"
+                    style={{ width: `${row.pct}%`, background: 'linear-gradient(90deg, #7c3aed, #06b6d4)' }}
+                  />
+                </div>
+                <p className="text-xs text-zinc-500">{row.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── PEPTIDES VS TRADITIONAL APPROACHES ─────────── */}
+      <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12">
+            <p className="text-xs font-semibold tracking-widest text-violet-400 uppercase mb-3">Comparison</p>
+            <h2 className="text-3xl font-bold text-white mb-4">Peptides vs. Traditional Body Composition Approaches</h2>
+            <p className="text-zinc-400 max-w-2xl mx-auto">
+              Understanding how peptides compare to other interventions helps set realistic expectations and protocol design.
+            </p>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b" style={{ borderColor: 'var(--border)' }}>
+                  <th className="text-left py-3 pr-6 text-zinc-500 font-medium">Approach</th>
+                  <th className="text-left py-3 pr-6 text-zinc-500 font-medium">Fat Loss</th>
+                  <th className="text-left py-3 pr-6 text-zinc-500 font-medium">Lean Mass</th>
+                  <th className="text-left py-3 pr-6 text-zinc-500 font-medium">Side Effects</th>
+                  <th className="text-left py-3 text-zinc-500 font-medium">Axis Suppression</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y" style={{ borderColor: 'var(--border)' }}>
+                {[
+                  { name: 'GH Peptides (Ipamorelin/CJC)', fat: 'Moderate–High', lean: 'Moderate', effects: 'Minimal', axis: 'None' },
+                  { name: 'Exogenous HGH', fat: 'High', lean: 'High', effects: 'Insulin resistance, edema', axis: 'Yes — significant' },
+                  { name: 'Anabolic Steroids', fat: 'Low', lean: 'Very High', effects: 'Cardiovascular, hormonal', axis: 'Severe' },
+                  { name: 'GLP-1 Peptides (Sema/Tirze)', fat: 'Very High', lean: 'Negative (muscle loss)', effects: 'GI nausea, vomiting', axis: 'None' },
+                  { name: 'Diet + Training (Baseline)', fat: 'Moderate', lean: 'Moderate', effects: 'None', axis: 'None' },
+                  { name: 'GH Peptides + GLP-1s', fat: 'Very High', lean: 'Preserved/Gained', effects: 'Minimal', axis: 'None' },
+                ].map((row) => (
+                  <tr key={row.name}>
+                    <td className="py-3 pr-6 text-zinc-200 font-medium">{row.name}</td>
+                    <td className="py-3 pr-6 text-zinc-400">{row.fat}</td>
+                    <td className="py-3 pr-6 text-zinc-400">{row.lean}</td>
+                    <td className="py-3 pr-6 text-zinc-400">{row.effects}</td>
+                    <td className="py-3 text-zinc-400">{row.axis}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-zinc-600 mt-4">*Based on available clinical and preclinical data. Individual results vary.</p>
+        </div>
+      </section>
+
+      {/* ── LIFESTYLE OPTIMIZATION ──────────────────────── */}
+      <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12">
+          <p className="text-xs font-semibold tracking-widest text-cyan-400 uppercase mb-3">Maximize Results</p>
+          <h2 className="text-3xl font-bold text-white mb-4">How to Stack Your Protocol for Maximum Results</h2>
+          <p className="text-zinc-400 max-w-xl mx-auto">
+            Peptides amplify the results of good lifestyle habits. These strategies significantly compound peptide efficacy.
+          </p>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {[
+            {
+              title: 'Fasted Injections',
+              desc: 'Inject GH peptides 2+ hours after your last meal. Elevated insulin blunts GH release by up to 70%. Late-evening injection before sleep in a fasted state maximizes the GH pulse amplitude and synchronizes with natural overnight GH secretion.',
+              color: 'from-violet-700 to-violet-500',
+            },
+            {
+              title: 'Resistance Training',
+              desc: 'Weight training creates the muscle-specific stimulus that IGF-1 acts on. Studies show resistance training and GH peptides produce synergistic effects on lean mass — far exceeding either intervention alone. Train 3–5× weekly while using GH peptides for optimal body recomposition.',
+              color: 'from-cyan-700 to-cyan-500',
+            },
+            {
+              title: 'Protein Intake',
+              desc: 'GH peptides drive muscle protein synthesis. Without adequate amino acid supply (1.6–2.2g/kg bodyweight daily), the anabolic signal has no substrate to work with. Prioritize leucine-rich proteins (whey, red meat, eggs) to maximize the peptide-driven anabolic window.',
+              color: 'from-violet-700 to-violet-500',
+            },
+            {
+              title: 'Sleep Quality',
+              desc: 'The largest natural GH pulse occurs during slow-wave (deep) sleep. GH peptides already improve sleep architecture, but optimizing sleep hygiene (cool room, consistent bedtime, no screens before bed, magnesium) dramatically amplifies this effect. Target 8+ hours of quality sleep while on protocol.',
+              color: 'from-cyan-700 to-cyan-500',
+            },
+          ].map((tip) => (
+            <div key={tip.title} className="card p-5">
+              <div className={`w-8 h-8 rounded-lg bg-gradient-to-br ${tip.color} flex items-center justify-center mb-4`}>
+                <TrendingUp size={16} className="text-white" />
+              </div>
+              <h3 className="font-bold text-white text-sm mb-2">{tip.title}</h3>
+              <p className="text-xs text-zinc-400 leading-relaxed">{tip.desc}</p>
+            </div>
+          ))}
         </div>
       </section>
 

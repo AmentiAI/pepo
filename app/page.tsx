@@ -191,6 +191,16 @@ export default function HomePage() {
     'Sexual Health':          'Performance',
   };
 
+  const categoryGradient: Record<string, string> = {
+    'Healing & Recovery':       'from-violet-700 via-purple-600 to-violet-500',
+    'Anti-Aging & Skin':        'from-rose-700 via-pink-600 to-fuchsia-500',
+    'Anti-Aging & Longevity':   'from-amber-600 via-orange-500 to-yellow-400',
+    'Body Composition':         'from-cyan-700 via-sky-600 to-cyan-500',
+    'Cognitive Enhancement':    'from-indigo-700 via-blue-600 to-indigo-500',
+    'Sexual Health':            'from-red-700 via-rose-600 to-red-500',
+    'Growth Hormone':           'from-teal-700 via-emerald-600 to-teal-500',
+  };
+
   return (
     <>
       {/* ── HERO ──────────────────────────────────────────────── */}
@@ -268,39 +278,59 @@ export default function HomePage() {
                 {heroProducts.map((p) => (
                   <div
                     key={p.slug}
-                    className="card p-4 flex flex-col gap-2 group hover:border-violet-500/40 transition-colors"
+                    className="card flex flex-col group hover:border-violet-500/40 transition-colors overflow-hidden"
                   >
-                    <div className="flex items-center justify-between mb-0.5">
-                      <span
-                        className="text-[9px] font-bold px-1.5 py-0.5 rounded"
-                        style={{ background: 'rgba(124,58,237,0.15)', color: '#a78bfa', border: '1px solid rgba(124,58,237,0.2)' }}
-                      >
-                        #{p.popularityRank} Popular
-                      </span>
-                      <span className="badge text-[9px]">{shortCategory[p.category] ?? p.category}</span>
-                    </div>
-                    <h3 className="font-bold text-white text-sm leading-tight">{p.name}</h3>
-                    <p className="text-zinc-500 text-[11px] leading-relaxed line-clamp-2 flex-1">{p.tagline}</p>
-                    <div
-                      className="flex items-center justify-between pt-2 mt-auto border-t"
-                      style={{ borderColor: 'var(--border)' }}
+                    {/* Product image */}
+                    <Link
+                      href={`/products/${p.slug}`}
+                      className="block relative h-28 overflow-hidden shrink-0"
+                      style={{ background: '#0a0a14' }}
                     >
-                      <span className="font-bold text-white text-sm">${p.price.toFixed(2)}</span>
-                      <div className="flex gap-1.5">
-                        <Link
-                          href={`/products/${p.slug}`}
-                          className="btn-secondary py-1 px-2 text-[10px]"
-                        >
-                          Guide
-                        </Link>
-                        <a
-                          href={`/go/${p.slug}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="btn-primary py-1 px-2 text-[10px]"
-                        >
-                          Buy
-                        </a>
+                      {p.image ? (
+                        <img
+                          src={p.image}
+                          alt={p.name}
+                          className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                          loading="lazy"
+                        />
+                      ) : (
+                        <div className={`absolute inset-0 bg-gradient-to-br ${categoryGradient[p.category] ?? 'from-violet-700 to-violet-500'} opacity-90 flex items-center justify-center`}>
+                          <span className="text-white font-black text-sm text-center px-2 leading-tight drop-shadow">{p.name}</span>
+                        </div>
+                      )}
+                      <div
+                        className="absolute top-2 left-2 text-[9px] font-bold px-1.5 py-0.5 rounded"
+                        style={{ background: 'rgba(0,0,0,0.65)', color: '#fde68a', backdropFilter: 'blur(4px)' }}
+                      >
+                        #{p.popularityRank}
+                      </div>
+                    </Link>
+
+                    {/* Card content */}
+                    <div className="p-3 flex flex-col gap-1.5 flex-1">
+                      <div className="flex items-center justify-between">
+                        <span className="badge text-[9px]">{shortCategory[p.category] ?? p.category}</span>
+                      </div>
+                      <h3 className="font-bold text-white text-xs leading-tight">{p.name}</h3>
+                      <p className="text-zinc-500 text-[10px] leading-relaxed line-clamp-2 flex-1">{p.tagline}</p>
+                      <div
+                        className="flex items-center justify-between pt-2 mt-auto border-t"
+                        style={{ borderColor: 'var(--border)' }}
+                      >
+                        <span className="font-bold text-white text-xs">${p.price.toFixed(2)}</span>
+                        <div className="flex gap-1.5">
+                          <Link href={`/products/${p.slug}`} className="btn-secondary py-1 px-2 text-[9px]">
+                            Guide
+                          </Link>
+                          <a
+                            href={`/go/${p.slug}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn-primary py-1 px-2 text-[9px]"
+                          >
+                            Buy
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>

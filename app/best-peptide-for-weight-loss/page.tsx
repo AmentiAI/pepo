@@ -8,7 +8,10 @@ import {
   Star,
   TrendingDown,
   Zap,
+  ExternalLink,
 } from 'lucide-react';
+import ProductCard from '@/components/ProductCard';
+import { products } from '@/lib/products';
 import RelatedReading from '@/components/RelatedReading';
 
 export const metadata: Metadata = {
@@ -93,6 +96,22 @@ const peptides = [
 
 const faqs = [
   {
+    q: 'What is the best way to manage nausea from GLP-1 peptides?',
+    a: 'GLP-1-induced nausea is dose-dependent and almost always manageable with proper titration. The most effective strategy is to increase doses very slowly — staying at each dose level for 4–6 weeks before advancing, even if you feel fine. Avoid greasy or high-fat meals, eat smaller portions, and stay well hydrated. Ginger tea and small protein-first meals significantly reduce GI side effects. The vast majority of users find nausea resolves within 2–4 weeks of any new dose level as the body adapts.',
+  },
+  {
+    q: 'How do I prevent muscle loss while on GLP-1 peptides?',
+    a: 'Muscle preservation is critical on GLP-1 protocols — studies show that without intervention, 25–40% of weight lost can be lean mass. The mitigation strategy is threefold: (1) Maintain resistance training 3–4× per week throughout the protocol, (2) Consume 1.6–2.2g of protein per kg of bodyweight daily — this requires conscious effort given the appetite suppression from GLP-1s, and (3) Consider adding Ipamorelin/CJC-1295 to preserve and enhance GH-driven muscle protein synthesis. This is exactly the rationale behind the GLP-1 Accelerated Fat Loss stack.',
+  },
+  {
+    q: 'Will I regain weight after stopping GLP-1 peptides?',
+    a: 'Weight regain after discontinuation is well-documented — most studies show recovery of approximately 50–70% of lost weight within 12 months of stopping. This is not a peptide failure; it reflects that GLP-1 receptors regulate a set point that reverts without continuous agonism. The practical response is to plan for a long-term (12–24 month minimum) protocol, use the appetite reset period to entrench better eating habits, and if stopping, transition to a very gradual dose reduction rather than abrupt discontinuation. Maintaining strength training and dietary discipline post-protocol is critical for sustaining results.',
+  },
+  {
+    q: 'Can I combine Tirzepatide with a GH peptide protocol?',
+    a: 'Yes — combining Tirzepatide with CJC-1295/Ipamorelin is the most powerful evidence-based body recomposition protocol available. The GLP-1+GIP mechanism drives aggressive fat loss and appetite suppression, while GH peptides preserve and build lean muscle during the caloric deficit. BPC-157 is often added to mitigate GI side effects from Tirzepatide. This is the basis of the GLP-1 Accelerated Fat Loss stack, which is specifically designed for this combination.',
+  },
+  {
     q: 'How much weight can I lose with GLP-1 peptides?',
     a: 'Clinical trial averages: Semaglutide 14.9% body weight, Tirzepatide 22.5%, Retatrutide 24.2%. Individual results range widely. A 200 lb person on Tirzepatide can expect to lose 35–50 lbs over 72 weeks with diet modification. Results plateau without caloric deficit — these peptides work by suppressing appetite, not burning fat directly.',
   },
@@ -111,6 +130,16 @@ const faqs = [
 ];
 
 export default function BestPeptideWeightLossPage() {
+  const weightLossProducts = products.filter((p) =>
+    p.category === 'Body Composition' || p.tags.includes('Weight Loss') || p.tags.includes('GLP-1')
+  );
+  const seen = new Set<string>();
+  const uniqueWeightLossProducts = weightLossProducts.filter((p) => {
+    if (seen.has(p.slug)) return false;
+    seen.add(p.slug);
+    return true;
+  });
+
   return (
     <div className="min-h-screen" style={{ backgroundColor: 'var(--bg)' }}>
       {/* Hero */}
@@ -331,6 +360,140 @@ export default function BestPeptideWeightLossPage() {
               </ul>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* ── PRODUCTS GRID ───────────────────────────────── */}
+      <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="flex items-end justify-between mb-10">
+          <div>
+            <p className="text-xs font-semibold tracking-widest text-cyan-400 uppercase mb-3">Shop Weight Loss Peptides</p>
+            <h2 className="text-2xl sm:text-3xl font-bold text-white">All GLP-1 & Fat Loss Peptides</h2>
+            <p className="text-zinc-400 mt-2 max-w-lg">
+              HPLC-verified compounds with certificates of analysis per batch. The full GLP-1 range — Semaglutide, Tirzepatide, Retatrutide, and Cagrilintide combinations.
+            </p>
+          </div>
+          <a
+            href="/go/shop"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary py-2.5 px-5 text-sm hidden sm:inline-flex"
+          >
+            Shop All <ExternalLink size={14} />
+          </a>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {uniqueWeightLossProducts.map((product) => (
+            <ProductCard key={product.slug} product={product} showAffiliateButton={true} />
+          ))}
+        </div>
+      </section>
+
+      {/* ── HOW GLP-1 PEPTIDES WORK ─────────────────────── */}
+      <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12">
+            <p className="text-xs font-semibold tracking-widest text-violet-400 uppercase mb-3">Mechanism of Action</p>
+            <h2 className="text-3xl font-bold text-white mb-4">How GLP-1 Peptides Produce Weight Loss</h2>
+            <p className="text-zinc-400 max-w-2xl mx-auto">
+              GLP-1 receptor agonists work through multiple simultaneous mechanisms — not just appetite suppression. Understanding these pathways explains both the efficacy and the side effect profile.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
+            {[
+              {
+                title: 'Hypothalamic Appetite Suppression',
+                desc: 'GLP-1 receptors in the arcuate nucleus of the hypothalamus are the primary appetite regulation center. GLP-1 agonism here reduces neuropeptide Y (NPY) and agouti-related peptide (AgRP) — the hunger-promoting hormones — while increasing POMC and CART signals. The result is a profound, sustained reduction in subjective hunger that enables caloric deficits that would be psychologically unsustainable on willpower alone.',
+                color: 'text-cyan-400',
+              },
+              {
+                title: 'Gastric Emptying Delay',
+                desc: 'GLP-1 receptors in the gut slow the rate at which food moves from the stomach to the small intestine. This extends the physical sensation of fullness after eating — a single meal feels satisfying for 3–5 hours rather than 1–2 hours. This mechanism contributes to the dramatic reduction in meal size and frequency that drives the caloric deficit on GLP-1 protocols.',
+                color: 'text-violet-400',
+              },
+              {
+                title: 'Glucose-Dependent Insulin Stimulation',
+                desc: 'GLP-1 receptors on pancreatic beta cells stimulate insulin secretion — but only when blood glucose is elevated. This glucose-dependency makes GLP-1 agonists metabolically safe: they do not cause hypoglycemia at normal blood sugar levels. This insulin stimulation also reduces post-meal blood sugar spikes and improves insulin sensitivity over time.',
+                color: 'text-cyan-400',
+              },
+              {
+                title: 'Adipose Tissue Lipolysis',
+                desc: 'GLP-1 receptors expressed in adipose tissue directly stimulate fat breakdown (lipolysis). Tirzepatide\'s added GIP mechanism provides additional adipocyte signaling, explaining its superior fat loss compared to GLP-1-only compounds. Visceral adipose tissue (abdominal fat) appears to be particularly responsive — multiple trials have documented preferential reduction in visceral fat.',
+                color: 'text-violet-400',
+              },
+              {
+                title: 'Central Reward Pathway Modulation',
+                desc: 'GLP-1 receptors in the brain\'s reward centers (nucleus accumbens, ventral tegmental area) reduce the hedonic value of food — food tastes and feels less compulsive and rewarding. Many users report that food "noise" — the constant preoccupation with food that affects many people — essentially disappears on GLP-1 therapy. This is distinct from simply feeling less hungry; it\'s a neurological reduction in food-seeking behavior.',
+                color: 'text-cyan-400',
+              },
+              {
+                title: 'Cardiovascular & Metabolic Benefits',
+                desc: 'Beyond weight loss, GLP-1 agonists demonstrate direct cardioprotective effects. The LEADER trial (Semaglutide) showed significant reduction in MACE (major adverse cardiovascular events). Tirzepatide trials demonstrate improvements in blood pressure, lipid profiles, and liver fat. Weight loss peptides in this class are increasingly being recognized as cardiovascular drugs — not just weight loss aids.',
+                color: 'text-violet-400',
+              },
+            ].map((item) => (
+              <div key={item.title} className="card p-5">
+                <h3 className={`font-bold text-sm mb-2 ${item.color}`}>{item.title}</h3>
+                <p className="text-xs text-zinc-400 leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Side effect management */}
+          <div className="grid lg:grid-cols-2 gap-10">
+            <div>
+              <h3 className="text-2xl font-bold text-white mb-4">Managing GLP-1 Side Effects</h3>
+              <p className="text-zinc-400 leading-relaxed mb-5">
+                The primary side effects of GLP-1 peptides are gastrointestinal — nausea, vomiting, and diarrhea — and are
+                directly related to the gastric emptying delay mechanism. They are dose-dependent and almost universally manageable
+                with appropriate titration. Most users find side effects resolve within 2–4 weeks at any given dose.
+              </p>
+              <ul className="space-y-3">
+                {[
+                  'Titrate slowly: stay at each dose for 4–6 weeks before advancing, even if well-tolerated',
+                  'Eat smaller, more frequent meals — large high-fat meals significantly worsen nausea',
+                  'Protein first: start each meal with protein to improve satiety and reduce GI burden',
+                  'Hydration: GLP-1-induced reduced intake can lead to dehydration — actively track fluid intake',
+                  'BPC-157: adding BPC-157 to the protocol provides direct gut lining protection and mucosal repair',
+                  'Timing: inject the evening or morning — experiment to find which timing reduces peak nausea for you',
+                ].map((tip) => (
+                  <li key={tip} className="flex items-start gap-3 text-sm text-zinc-400">
+                    <CheckCircle2 size={15} className="text-cyan-400 mt-0.5 shrink-0" />
+                    {tip}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-white mb-4">Lean Mass Preservation Protocol</h3>
+              <p className="text-zinc-400 leading-relaxed mb-5">
+                The single biggest risk of GLP-1 protocols is significant lean muscle loss alongside fat loss. Studies show
+                25–40% of weight lost can be lean tissue without deliberate countermeasures. This compromises metabolic rate,
+                reduces long-term weight maintenance, and produces suboptimal body composition outcomes.
+              </p>
+              <div className="space-y-3">
+                {[
+                  { step: '1', title: 'Resistance Training', desc: 'Lift weights 3–4× per week. Mechanical load is the primary signal for muscle protein synthesis and prevents atrophy during caloric deficit.' },
+                  { step: '2', title: 'Protein Target', desc: '1.6–2.2g protein per kg bodyweight daily. With GLP-1-suppressed appetite, this requires active planning — protein shakes help reach target.' },
+                  { step: '3', title: 'Add GH Peptides', desc: 'CJC-1295 + Ipamorelin before sleep preserves lean mass via GH-mediated IGF-1 elevation. This is the core of the GLP-1 Accelerated Fat Loss stack.' },
+                  { step: '4', title: 'Creatine Monohydrate', desc: '3–5g daily. Evidence-backed for lean mass preservation during caloric restriction. Low cost and zero side effects.' },
+                ].map((item) => (
+                  <div key={item.step} className="card p-4 flex gap-4">
+                    <div
+                      className="w-8 h-8 rounded-full flex items-center justify-center text-sm font-black shrink-0"
+                      style={{ background: 'rgba(124,58,237,0.15)', color: '#a78bfa', border: '1px solid rgba(124,58,237,0.25)' }}
+                    >
+                      {item.step}
+                    </div>
+                    <div>
+                      <p className="font-bold text-white text-sm">{item.title}</p>
+                      <p className="text-zinc-500 text-xs mt-0.5 leading-relaxed">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

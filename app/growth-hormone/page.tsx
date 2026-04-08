@@ -25,6 +25,18 @@ export const metadata: Metadata = {
 
 const ghFaqs = [
   {
+    q: 'What role does sleep play in GH peptide results?',
+    a: 'Sleep is the single most important variable in GH peptide efficacy. Over 70% of daily GH secretion occurs during slow-wave (deep) sleep — and the pre-sleep injection window is specifically designed to align the peptide-triggered GH pulse with this natural secretion event. Users who inject before sleep in a fully fasted state consistently report more dramatic improvements in both sleep quality and body composition outcomes than those who inject at other times. Poor sleep directly caps the maximum benefit achievable from GH peptides.',
+  },
+  {
+    q: 'Is MK-677 (Ibutamoren) better than CJC-1295 / Ipamorelin?',
+    a: 'MK-677 is an oral ghrelin mimetic — it raises GH and IGF-1 but also substantially elevates hunger (ghrelin effect) and can cause water retention and prolactin elevation. CJC-1295/Ipamorelin is cleaner: selective, injectable, and without the hunger and prolactin side effects of MK-677. For pure GH optimization without unwanted side effects, the CJC/Ipamorelin combination is superior despite requiring injections. MK-677 is appropriate for those who specifically want appetite stimulation alongside GH benefits (such as underweight individuals or hard-gainers).',
+  },
+  {
+    q: 'Can GH peptides cause insulin resistance?',
+    a: 'Physiologically, GH and insulin have opposing metabolic effects — GH is anti-insulin in the sense that it promotes lipolysis and reduces glucose uptake in peripheral tissues. Exogenous HGH at supraphysiological doses causes insulin resistance. GH secretagogues, which produce GH elevations within natural physiological ranges (3–5× baseline, not 10–20× as with exogenous HGH), do not typically cause clinically significant insulin resistance in healthy individuals. Monitoring fasting glucose at regular intervals during long protocols is prudent practice.',
+  },
+  {
     q: 'What is the difference between CJC-1295 and Ipamorelin?',
     a: 'CJC-1295 is a GHRH analog — it binds to GHRH receptors in the pituitary to amplify and extend GH pulses. Ipamorelin is a GHRP (growth hormone releasing peptide) that selectively triggers GH release without elevating cortisol or prolactin. Used together, they hit two independent pathways simultaneously: one primes the pituitary (CJC-1295) while the other triggers the pulse (Ipamorelin). The result is GH elevations 3–5× higher than either compound alone.',
   },
@@ -255,6 +267,139 @@ export default function GrowthHormonePage() {
                   </span>
                 </div>
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── GH/IGF-1 AXIS EXPLAINED ─────────────────────── */}
+      <section className="py-12 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12">
+          <p className="text-xs font-semibold tracking-widest text-cyan-400 uppercase mb-3">The Science</p>
+          <h2 className="text-3xl font-bold text-white mb-4">The GH/IGF-1 Axis — How It Works</h2>
+          <p className="text-zinc-400 max-w-2xl mx-auto">
+            Understanding the growth hormone axis helps explain why peptides produce superior outcomes to either lifestyle optimization
+            or exogenous HGH alone. The axis has four key intervention points.
+          </p>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-12">
+          {[
+            {
+              step: '01',
+              title: 'Hypothalamic GHRH',
+              desc: 'The hypothalamus releases Growth Hormone Releasing Hormone (GHRH), which signals the pituitary to produce GH. CJC-1295 mimics GHRH — amplifying this initial signal.',
+              color: '#a78bfa',
+            },
+            {
+              step: '02',
+              title: 'Pituitary GH Release',
+              desc: 'The pituitary gland releases GH in pulses. Ipamorelin acts as a GHRP (growth hormone releasing peptide) — directly triggering GH pulses from the pituitary without cortisol or prolactin elevation.',
+              color: '#06b6d4',
+            },
+            {
+              step: '03',
+              title: 'Liver IGF-1 Production',
+              desc: 'GH circulates to the liver and peripheral tissues, stimulating IGF-1 production. IGF-1 is the primary downstream anabolic effector — driving muscle protein synthesis, fat oxidation, and connective tissue repair.',
+              color: '#a78bfa',
+            },
+            {
+              step: '04',
+              title: 'Tissue-Level Effects',
+              desc: 'IGF-1 LR3 bypasses steps 1–3 entirely, providing direct anabolic signaling at the tissue level. Used in 4–6 week cycles for maximum anabolic density during focused muscle-building phases.',
+              color: '#06b6d4',
+            },
+          ].map((step) => (
+            <div key={step.step} className="card p-5">
+              <div
+                className="w-10 h-10 rounded-xl flex items-center justify-center text-lg font-black mb-4"
+                style={{ background: `${step.color}15`, color: step.color, border: `1px solid ${step.color}25` }}
+              >
+                {step.step}
+              </div>
+              <h3 className="font-bold text-white text-sm mb-2">{step.title}</h3>
+              <p className="text-xs text-zinc-400 leading-relaxed">{step.desc}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-12">
+          <div>
+            <h3 className="text-2xl font-bold text-white mb-4">Why This Matters for Body Composition</h3>
+            <p className="text-zinc-400 leading-relaxed mb-4">
+              Growth hormone declines at approximately 14% per decade after age 30. By age 50, most adults have GH levels that are
+              50–60% below their youthful peak. This decline is not merely cosmetic — it is biochemically responsible for the
+              progressive body composition deterioration that many attribute to "normal aging": visceral fat accumulation, lean muscle
+              loss, declining bone density, and reduced collagen production.
+            </p>
+            <p className="text-zinc-400 leading-relaxed mb-4">
+              Exogenous HGH addresses this decline but creates new problems: negative feedback suppresses the pituitary, doses must
+              be precisely managed to avoid acromegaly risk, and IGF-1 is elevated continuously rather than pulsatilely. The
+              physiological GH pulse pattern — multiple pulses per day with the largest occurring during deep sleep — is what
+              produces optimal body composition outcomes. Exogenous HGH replaces rather than restores this pulsatile pattern.
+            </p>
+            <p className="text-zinc-400 leading-relaxed">
+              CJC-1295 and Ipamorelin work by restoring and amplifying the natural pulse pattern. They do not suppress the
+              hypothalamic-pituitary axis. After injection, GH rises, peaks, and returns to baseline — exactly as it would
+              in a healthy 25-year-old, just at a higher amplitude. This is why GH peptides produce excellent body composition
+              outcomes without the side effects of exogenous HGH.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-2xl font-bold text-white mb-4">Cycling Strategy for Advanced Users</h3>
+            <div className="space-y-4">
+              {[
+                {
+                  phase: 'Foundation (Months 1–3)',
+                  desc: 'Run CJC-1295 / Ipamorelin 200mcg each nightly before sleep, 5 days on / 2 days off. This establishes the baseline GH amplification and allows the body to adapt to elevated IGF-1. Most users see sleep improvement within 1–2 weeks and body composition shifts by week 6–8.',
+                  color: '#a78bfa',
+                },
+                {
+                  phase: 'Intensification (Months 4–6)',
+                  desc: 'Add a second morning injection of CJC-1295 / Ipamorelin (optional, for accelerated recomposition). Consider adding IGF-1 LR3 for a 4–6 week pulse during this phase at 40–60mcg post-workout. IGF-1 LR3 directly targets muscle tissue for hyperplasia — creating new muscle fiber architecture.',
+                  color: '#06b6d4',
+                },
+                {
+                  phase: 'Maintenance (Month 7+)',
+                  desc: 'Drop to 5 days on / 2 days off at slightly reduced dose (150mcg each). Maintain benefits while preserving receptor sensitivity for future cycles. Run Epithalon burst cycle during a break from GH peptides for comprehensive anti-aging coverage.',
+                  color: '#a78bfa',
+                },
+              ].map((phase) => (
+                <div key={phase.phase} className="card p-5">
+                  <p className="font-bold text-sm mb-2" style={{ color: phase.color }}>{phase.phase}</p>
+                  <p className="text-xs text-zinc-400 leading-relaxed">{phase.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── RESULTS BY WEEK ─────────────────────────────── */}
+      <section className="py-12 sm:py-20" style={{ background: 'var(--bg-card)' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-10">
+            <p className="text-xs font-semibold tracking-widest text-violet-400 uppercase mb-3">Timeline</p>
+            <h2 className="text-3xl font-bold text-white mb-4">What to Expect — Week by Week</h2>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { weeks: 'Weeks 1–2', title: 'Sleep & Recovery', outcomes: ['Deeper, more restful sleep', 'Vivid dreams (common, benign)', 'Faster recovery between training sessions', 'Slight reduction in morning soreness'] },
+              { weeks: 'Weeks 3–6', title: 'Metabolic Shift', outcomes: ['Subtle improvement in vascularity', 'Reduced water retention (paradoxically)', 'Increased training motivation', 'Early signs of body composition change'] },
+              { weeks: 'Weeks 7–12', title: 'Body Recomposition', outcomes: ['Visible reduction in belly fat', 'Lean mass beginning to increase', 'Improved skin quality and collagen density', 'Measurable waist reduction in most users'] },
+              { weeks: 'Months 4–6', title: 'Full Protocol Results', outcomes: ['Significant body composition transformation', 'Hair and nail growth acceleration', 'Improved joint comfort', 'Measurable IGF-1 elevation on bloodwork'] },
+            ].map((phase) => (
+              <div key={phase.weeks} className="card p-5">
+                <div className="badge badge-cyan mb-3 text-xs">{phase.weeks}</div>
+                <h3 className="font-bold text-white text-sm mb-3">{phase.title}</h3>
+                <ul className="space-y-2">
+                  {phase.outcomes.map((o) => (
+                    <li key={o} className="flex items-start gap-2 text-xs text-zinc-400">
+                      <CheckCircle2 size={11} className="text-cyan-400 mt-0.5 shrink-0" />
+                      {o}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
           </div>
         </div>
