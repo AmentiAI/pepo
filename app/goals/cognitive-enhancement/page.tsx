@@ -459,7 +459,8 @@ export default function CognitiveEnhancementPage() {
           performance and can be combined for comprehensive coverage.
         </p>
 
-        <div className="card overflow-hidden" style={{ background: 'var(--bg-card)' }}>
+        <div className="overflow-x-auto rounded-2xl">
+        <div className="card overflow-hidden min-w-[480px]" style={{ background: 'var(--bg-card)' }}>
           {/* Header */}
           <div className="grid grid-cols-3 border-b" style={{ borderColor: 'var(--border)' }}>
             <div className="p-4 text-xs font-semibold text-zinc-500 uppercase tracking-wider">Aspect</div>
@@ -492,6 +493,7 @@ export default function CognitiveEnhancementPage() {
               </div>
             </div>
           ))}
+        </div>
         </div>
 
         <div className="mt-6 grid sm:grid-cols-2 gap-4">

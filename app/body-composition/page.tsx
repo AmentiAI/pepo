@@ -305,8 +305,8 @@ export default function BodyCompositionPage() {
               Understanding how peptides compare to other interventions helps set realistic expectations and protocol design.
             </p>
           </div>
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm">
+          <div className="overflow-x-auto -mx-4 sm:mx-0 px-4 sm:px-0">
+            <table className="w-full text-sm min-w-[560px]">
               <thead>
                 <tr className="border-b" style={{ borderColor: 'var(--border)' }}>
                   <th className="text-left py-3 pr-6 text-zinc-500 font-medium">Approach</th>

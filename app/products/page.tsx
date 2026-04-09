@@ -59,14 +59,14 @@ export default async function ProductsPage({
           />
         </div>
 
-        <div className="relative max-w-6xl mx-auto px-6 text-center">
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-xs font-semibold tracking-widest text-violet-400 uppercase mb-4">
             Complete Peptide Catalog
           </p>
-          <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-white mb-5">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white mb-5">
             All <span className="gradient-text">Peptides</span>
           </h1>
-          <p className="text-xl text-zinc-400 max-w-2xl mx-auto mb-6 leading-relaxed">
+          <p className="text-base sm:text-xl text-zinc-400 max-w-2xl mx-auto mb-6 leading-relaxed">
             Full protocol guides for every major peptide — dosing, timing,
             synergies, and expected results.
           </p>
@@ -97,7 +97,7 @@ export default async function ProductsPage({
           borderColor: 'var(--border)',
         }}
       >
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div
             className="flex items-center gap-2 overflow-x-auto"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
@@ -140,7 +140,7 @@ export default async function ProductsPage({
       </section>
 
       {/* ── Product grid ─────────────────────────────────────── */}
-      <section className="max-w-6xl mx-auto px-6 py-12">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
         {/* Result count + active filter indicator */}
         <div className="flex items-center justify-between mb-8">
           <div>

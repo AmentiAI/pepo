@@ -319,16 +319,19 @@ export default function HomePage() {
                       >
                         <span className="font-bold text-white text-xs">${p.price.toFixed(2)}</span>
                         <div className="flex gap-1.5">
-                          <Link href={`/products/${p.slug}`} className="btn-secondary py-1 px-2 text-[9px]">
+                          <Link
+                            href={`/products/${p.slug}`}
+                            className="text-[9px] font-medium text-zinc-400 hover:text-white transition-colors px-1.5 py-0.5 rounded hover:bg-white/5"
+                          >
                             Guide
                           </Link>
                           <a
                             href={`/go/${p.slug}`}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="btn-primary py-1 px-2 text-[9px]"
+                            className="text-[9px] font-semibold text-violet-400 hover:text-violet-300 transition-colors px-1.5 py-0.5 rounded hover:bg-violet-500/10"
                           >
-                            Buy
+                            Buy →
                           </a>
                         </div>
                       </div>
