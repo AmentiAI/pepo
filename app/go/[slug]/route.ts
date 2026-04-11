@@ -1,20 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { products } from '@/lib/products';
 
-const SHOP_HOME = 'https://phiogen.is/?ref=PEPS';
+const AFFILIATE_URL = 'https://phiogen.is/?ref=PEPS';
 
 export async function GET(
   _request: NextRequest,
   { params }: { params: Promise<{ slug: string }> },
 ) {
-  const { slug } = await params;
-
-  if (slug === 'shop') {
-    return NextResponse.redirect(SHOP_HOME, { status: 302 });
-  }
-
-  const product = products.find((p) => p.slug === slug);
-  const destination = product?.shopUrl ?? SHOP_HOME;
-
-  return NextResponse.redirect(destination, { status: 302 });
+  await params; // slug is unused — all clicks go through the affiliate landing page
+  return NextResponse.redirect(AFFILIATE_URL, { status: 302 });
 }
