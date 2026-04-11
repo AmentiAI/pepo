@@ -34,12 +34,12 @@ export default function ProductCard({ product, showAffiliateButton = false }: Pr
   return (
     <div className="card flex flex-col group overflow-hidden">
       {/* Product image */}
-      <Link href={`/products/${product.slug}`} className="block relative overflow-hidden h-48 sm:h-64 bg-gray-50">
+      <Link href={`/products/${product.slug}`} className="block relative overflow-hidden h-64 sm:h-72 bg-gray-50">
         {product.image !== '' ? (
           <img
             src={product.image}
             alt={product.name}
-            className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+            className="absolute inset-0 w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
           />
         ) : (

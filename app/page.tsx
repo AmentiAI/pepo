@@ -270,26 +270,26 @@ export default function HomePage() {
             </div>
 
             {/* Right: 4 Top Product Cards */}
-            <div className="w-full lg:w-[44%] shrink-0">
+            <div className="w-full lg:w-[48%] shrink-0">
               <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-4 text-center lg:text-left">
                 Top Peptides — HPLC Verified
               </p>
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-2 gap-4">
                 {heroProducts.map((p) => (
                   <div
                     key={p.slug}
                     className="card flex flex-col group hover:border-yellow-400 transition-colors overflow-hidden"
                   >
-                    {/* Product image */}
+                    {/* Product image — click goes to protocol page */}
                     <Link
                       href={`/products/${p.slug}`}
-                      className="block relative h-28 overflow-hidden shrink-0 bg-gray-50"
+                      className="block relative h-48 sm:h-52 overflow-hidden shrink-0 bg-gray-50"
                     >
                       {p.image ? (
                         <img
                           src={p.image}
                           alt={p.name}
-                          className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                          className="absolute inset-0 w-full h-full object-contain p-3 group-hover:scale-105 transition-transform duration-300"
                           loading="lazy"
                         />
                       ) : (
@@ -307,20 +307,18 @@ export default function HomePage() {
 
                     {/* Card content */}
                     <div className="p-3 flex flex-col gap-1.5 flex-1">
-                      <div className="flex items-center justify-between">
-                        <span className="badge text-[9px]">{shortCategory[p.category] ?? p.category}</span>
-                      </div>
-                      <h3 className="font-bold text-gray-900 text-xs leading-tight">{p.name}</h3>
-                      <p className="text-gray-500 text-[10px] leading-relaxed line-clamp-2 flex-1">{p.tagline}</p>
+                      <span className="badge text-[9px] self-start">{shortCategory[p.category] ?? p.category}</span>
+                      <h3 className="font-bold text-gray-900 text-sm leading-tight">{p.name}</h3>
+                      <p className="text-gray-500 text-xs leading-relaxed line-clamp-2 flex-1">{p.tagline}</p>
                       <div
                         className="flex items-center justify-between pt-2 mt-auto border-t"
                         style={{ borderColor: 'var(--border)' }}
                       >
-                        <span className="font-bold text-gray-900 text-xs">${p.price.toFixed(2)}</span>
+                        <span className="font-bold text-gray-900 text-sm">${p.price.toFixed(2)}</span>
                         <div className="flex gap-1.5">
                           <Link
                             href={`/products/${p.slug}`}
-                            className="text-[9px] font-medium text-gray-500 hover:text-gray-900 transition-colors px-1.5 py-0.5 rounded hover:bg-gray-100"
+                            className="text-xs font-medium text-gray-500 hover:text-gray-900 transition-colors px-2 py-1 rounded hover:bg-gray-100"
                           >
                             Guide
                           </Link>
@@ -328,7 +326,7 @@ export default function HomePage() {
                             href={`/go/${p.slug}`}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-[9px] font-semibold text-yellow-600 hover:text-yellow-700 transition-colors px-1.5 py-0.5 rounded hover:bg-yellow-50"
+                            className="text-xs font-semibold text-yellow-600 hover:text-yellow-700 transition-colors px-2 py-1 rounded hover:bg-yellow-50"
                           >
                             Buy →
                           </a>
