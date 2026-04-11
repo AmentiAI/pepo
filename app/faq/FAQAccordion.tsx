@@ -129,8 +129,8 @@ export default function FAQAccordion() {
           {faqGroups.map((group) => (
             <div key={group.group}>
               <div className="flex items-center gap-3 mb-5">
-                <HelpCircle size={18} className="text-violet-400" />
-                <h2 className="text-lg font-bold text-white">{group.group}</h2>
+                <HelpCircle size={18} className="text-yellow-600" />
+                <h2 className="text-lg font-bold text-gray-900">{group.group}</h2>
                 <span className="badge text-[10px]">{group.faqs.length}</span>
               </div>
 
@@ -144,7 +144,7 @@ export default function FAQAccordion() {
                       className="rounded-xl border overflow-hidden transition-colors"
                       style={{
                         background: 'var(--bg-card)',
-                        borderColor: isOpen ? 'rgba(124,58,237,0.4)' : 'var(--border)',
+                        borderColor: isOpen ? 'rgba(234,179,8,0.4)' : 'var(--border)',
                       }}
                     >
                       <button
@@ -152,13 +152,13 @@ export default function FAQAccordion() {
                         className="w-full flex items-center justify-between gap-4 p-5 text-left"
                         aria-expanded={isOpen}
                       >
-                        <span className="font-semibold text-white text-sm leading-snug pr-2">
+                        <span className="font-semibold text-gray-900 text-sm leading-snug pr-2">
                           {faq.q}
                         </span>
                         <ChevronDown
                           size={18}
-                          className={`shrink-0 text-zinc-500 transition-transform duration-200 ${
-                            isOpen ? 'rotate-180 text-violet-400' : ''
+                          className={`shrink-0 text-gray-500 transition-transform duration-200 ${
+                            isOpen ? 'rotate-180 text-yellow-600' : ''
                           }`}
                         />
                       </button>
@@ -168,7 +168,7 @@ export default function FAQAccordion() {
                             className="pt-4 border-t"
                             style={{ borderColor: 'var(--border)' }}
                           >
-                            <p className="text-sm text-zinc-400 leading-relaxed">{faq.a}</p>
+                            <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
                           </div>
                         </div>
                       )}
@@ -190,9 +190,9 @@ export default function FAQAccordion() {
               className="p-6 rounded-2xl border"
               style={{ background: 'var(--bg)', borderColor: 'var(--border)' }}
             >
-              <MessageSquare size={22} className="text-violet-400 mb-4" />
-              <h3 className="font-bold text-white mb-2">Still have questions?</h3>
-              <p className="text-sm text-zinc-400 mb-4 leading-relaxed">
+              <MessageSquare size={22} className="text-yellow-600 mb-4" />
+              <h3 className="font-bold text-gray-900 mb-2">Still have questions?</h3>
+              <p className="text-sm text-gray-500 mb-4 leading-relaxed">
                 Use the AI chat assistant (bottom right) for instant answers about protocols,
                 dosing, and stacking. It is trained on our complete product library.
               </p>
@@ -205,9 +205,9 @@ export default function FAQAccordion() {
               className="p-6 rounded-2xl border"
               style={{ background: 'var(--bg)', borderColor: 'var(--border)' }}
             >
-              <HelpCircle size={22} className="text-cyan-400 mb-4" />
-              <h3 className="font-bold text-white mb-2">New to peptides?</h3>
-              <p className="text-sm text-zinc-400 mb-4 leading-relaxed">
+              <HelpCircle size={22} className="text-yellow-600 mb-4" />
+              <h3 className="font-bold text-gray-900 mb-2">New to peptides?</h3>
+              <p className="text-sm text-gray-500 mb-4 leading-relaxed">
                 Read the complete beginner guide — everything from what peptides are to
                 your first injection and choosing the right starting protocol.
               </p>

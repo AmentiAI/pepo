@@ -51,37 +51,37 @@ export default async function ProductsPage({
         <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
           <div
             className="absolute top-[-20%] left-[30%] w-[500px] h-[500px] rounded-full opacity-10 blur-3xl"
-            style={{ background: 'radial-gradient(circle, #7c3aed 0%, transparent 70%)' }}
+            style={{ background: 'radial-gradient(circle, #eab308 0%, transparent 70%)' }}
           />
           <div
             className="absolute bottom-0 right-[10%] w-[300px] h-[300px] rounded-full opacity-10 blur-3xl"
-            style={{ background: 'radial-gradient(circle, #06b6d4 0%, transparent 70%)' }}
+            style={{ background: 'radial-gradient(circle, #f59e0b 0%, transparent 70%)' }}
           />
         </div>
 
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-xs font-semibold tracking-widest text-violet-400 uppercase mb-4">
+          <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-4">
             Complete Peptide Catalog
           </p>
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white mb-5">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 mb-5">
             All <span className="gradient-text">Peptides</span>
           </h1>
-          <p className="text-base sm:text-xl text-zinc-400 max-w-2xl mx-auto mb-6 leading-relaxed">
+          <p className="text-base sm:text-xl text-gray-500 max-w-2xl mx-auto mb-6 leading-relaxed">
             Full protocol guides for every major peptide — dosing, timing,
             synergies, and expected results.
           </p>
 
           {/* Breadcrumb */}
-          <div className="flex items-center justify-center gap-2 text-sm text-zinc-600">
-            <Link href="/" className="hover:text-violet-400 transition-colors">
+          <div className="flex items-center justify-center gap-2 text-sm text-gray-400">
+            <Link href="/" className="hover:text-yellow-600 transition-colors">
               Home
             </Link>
             <span>/</span>
-            <span className="text-zinc-400">Products</span>
+            <span className="text-gray-500">Products</span>
             {category && (
               <>
                 <span>/</span>
-                <span className="text-zinc-400">{category}</span>
+                <span className="text-gray-500">{category}</span>
               </>
             )}
           </div>
@@ -92,7 +92,7 @@ export default async function ProductsPage({
       <section
         className="sticky top-20 sm:top-24 z-20 border-b py-3"
         style={{
-          background: 'rgba(8,8,15,0.95)',
+          background: 'rgba(255,255,255,0.97)',
           backdropFilter: 'blur(12px)',
           borderColor: 'var(--border)',
         }}
@@ -102,7 +102,7 @@ export default async function ProductsPage({
             className="flex items-center gap-2 overflow-x-auto"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
-            <span className="text-xs text-zinc-600 font-medium mr-1 shrink-0">Filter:</span>
+            <span className="text-xs text-gray-500 font-medium mr-1 shrink-0">Filter:</span>
             {categories.map((cat) => {
               const isActive = cat.value === null ? !category : category === cat.value;
               const href =
@@ -118,15 +118,14 @@ export default async function ProductsPage({
                   style={
                     isActive
                       ? {
-                          background:
-                            'linear-gradient(135deg, #7c3aed, #0891b2)',
-                          color: '#fff',
+                          background: '#eab308',
+                          color: '#0a0a0a',
                           borderColor: 'transparent',
-                          boxShadow: '0 2px 12px rgba(124,58,237,0.35)',
+                          boxShadow: '0 2px 12px rgba(234,179,8,0.35)',
                         }
                       : {
                           background: 'transparent',
-                          color: '#a1a1b5',
+                          color: '#6b7280',
                           borderColor: 'var(--border-bright)',
                         }
                   }
@@ -144,9 +143,9 @@ export default async function ProductsPage({
         {/* Result count + active filter indicator */}
         <div className="flex items-center justify-between mb-8">
           <div>
-            <p className="text-zinc-300 font-semibold text-lg">
+            <p className="text-gray-800 font-semibold text-lg">
               {filtered.length}{' '}
-              <span className="text-zinc-500 font-normal">
+              <span className="text-gray-500 font-normal">
                 {filtered.length === 1 ? 'peptide' : 'peptides'}
                 {category ? ` in ${category}` : ' total'}
               </span>
@@ -156,7 +155,7 @@ export default async function ProductsPage({
           {category && (
             <Link
               href="/products"
-              className="text-sm text-zinc-500 hover:text-violet-400 transition-colors flex items-center gap-1"
+              className="text-sm text-gray-400 hover:text-yellow-600 transition-colors flex items-center gap-1"
             >
               Clear filter ×
             </Link>
@@ -185,8 +184,8 @@ export default async function ProductsPage({
             >
               🔬
             </div>
-            <h2 className="text-2xl font-bold text-white mb-3">No peptides found</h2>
-            <p className="text-zinc-500 mb-6 max-w-sm mx-auto">
+            <h2 className="text-2xl font-bold text-gray-900 mb-3">No peptides found</h2>
+            <p className="text-gray-500 mb-6 max-w-sm mx-auto">
               No peptides match the selected category. Try a different filter or browse
               the full catalog.
             </p>
@@ -203,14 +202,14 @@ export default async function ProductsPage({
             className="mt-10 sm:mt-16 rounded-2xl p-6 sm:p-10 text-center"
             style={{
               background:
-                'linear-gradient(135deg, rgba(124,58,237,0.1) 0%, rgba(6,182,212,0.07) 100%)',
-              border: '1px solid rgba(124,58,237,0.2)',
+                'linear-gradient(135deg, rgba(234,179,8,0.08) 0%, rgba(245,158,11,0.06) 100%)',
+              border: '1px solid rgba(234,179,8,0.2)',
             }}
           >
-            <h3 className="text-2xl font-bold text-white mb-3">
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">
               Not sure where to start?
             </h3>
-            <p className="text-zinc-400 mb-6 max-w-lg mx-auto">
+            <p className="text-gray-500 mb-6 max-w-lg mx-auto">
               Our expert stacks combine multiple peptides for synergistic effects.
               Browse pre-built protocols for healing, body composition, longevity, and more.
             </p>

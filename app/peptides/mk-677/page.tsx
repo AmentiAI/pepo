@@ -91,7 +91,7 @@ export default function MK677Page() {
       {/* Hero */}
       <section className="relative pt-14 pb-12 sm:pt-28 sm:pb-20 overflow-hidden grid-bg">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-20 left-1/4 w-96 h-96 bg-violet-600/10 rounded-full blur-3xl" />
+          <div className="absolute top-20 left-1/4 w-96 h-96 bg-gray-900/10 rounded-full blur-3xl" />
           <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-cyan-500/8 rounded-full blur-3xl" />
         </div>
 
@@ -99,14 +99,14 @@ export default function MK677Page() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-2 mb-5">
               <span className="badge">Peptides</span>
-              <ChevronRight size={14} className="text-zinc-600" />
+              <ChevronRight size={14} className="text-gray-400" />
               <span className="badge badge-cyan">GH Secretagogue</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
               <span className="gradient-text">MK-677</span>
-              <span className="text-white"> (Ibutamoren)</span>
+              <span className="text-gray-900"> (Ibutamoren)</span>
             </h1>
-            <p className="text-lg text-zinc-400 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
               MK-677 is a ghrelin receptor agonist that stimulates the pituitary gland to release
               growth hormone — orally, with a 24-hour half-life, and no injections required.
               It&apos;s the only GH secretagogue that works as a daily capsule, making it the
@@ -127,22 +127,22 @@ export default function MK677Page() {
           <div className="mt-10 sm:mt-14 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {[
               {
-                icon: <Zap size={18} className="text-violet-400" />,
+                icon: <Zap size={18} className="text-yellow-600" />,
                 value: '7–10%',
                 label: 'IGF-1 increase (typical)',
               },
               {
-                icon: <Clock size={18} className="text-cyan-400" />,
+                icon: <Clock size={18} className="text-yellow-600" />,
                 value: '24h',
                 label: 'GH elevation duration',
               },
               {
-                icon: <ShieldCheck size={18} className="text-violet-400" />,
+                icon: <ShieldCheck size={18} className="text-yellow-600" />,
                 value: 'Oral',
                 label: 'No injections required',
               },
               {
-                icon: <CheckCircle2 size={18} className="text-cyan-400" />,
+                icon: <CheckCircle2 size={18} className="text-yellow-600" />,
                 value: '6–12 wks',
                 label: 'Typical cycle length',
               },
@@ -150,8 +150,8 @@ export default function MK677Page() {
               <div key={stat.label} className="card p-4 flex items-start gap-3">
                 <div className="mt-0.5">{stat.icon}</div>
                 <div>
-                  <p className="text-xl font-bold text-white">{stat.value}</p>
-                  <p className="text-xs text-zinc-500 mt-0.5">{stat.label}</p>
+                  <p className="text-xl font-bold text-gray-900">{stat.value}</p>
+                  <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -166,23 +166,23 @@ export default function MK677Page() {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="badge badge-cyan mb-4 inline-block">Mechanism of Action</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-5">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-5">
               What Is MK-677?
             </h2>
-            <p className="text-zinc-400 leading-relaxed mb-5">
+            <p className="text-gray-500 leading-relaxed mb-5">
               MK-677 (also known as Ibutamoren or Nutrobal) is a non-peptide ghrelin receptor
               agonist. It binds to the growth hormone secretagogue receptor (GHSR-1a) — the same
               receptor activated by the hunger hormone ghrelin — and signals the pituitary gland
               to release growth hormone in large, sustained pulses.
             </p>
-            <p className="text-zinc-400 leading-relaxed mb-5">
+            <p className="text-gray-500 leading-relaxed mb-5">
               Unlike synthetic GH injections, MK-677 works through your body&apos;s own feedback
               systems, meaning it stimulates endogenous GH production rather than replacing it.
               This preserves the natural pulsatile rhythm of GH secretion and avoids many of the
               risks associated with exogenous GH.
             </p>
-            <p className="text-zinc-400 leading-relaxed">
-              <strong className="text-zinc-200">Important distinction:</strong> MK-677 is
+            <p className="text-gray-500 leading-relaxed">
+              <strong className="text-gray-800">Important distinction:</strong> MK-677 is
               technically a small molecule, not a peptide. However, it is grouped alongside
               peptides like Ipamorelin and CJC-1295 because it accomplishes the same physiological
               goal — GH elevation — and is used interchangeably in GH optimization protocols.
@@ -222,8 +222,8 @@ export default function MK677Page() {
                   }`}
                 />
                 <div>
-                  <p className="text-sm font-semibold text-white mb-1">{item.title}</p>
-                  <p className="text-sm text-zinc-500 leading-relaxed">{item.desc}</p>
+                  <p className="text-sm font-semibold text-gray-900 mb-1">{item.title}</p>
+                  <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -236,10 +236,10 @@ export default function MK677Page() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <span className="badge mb-4 inline-block">Head-to-Head</span>
-            <h2 className="text-3xl font-bold text-white mb-4">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
               MK-677 vs Injectable GH Peptides
             </h2>
-            <p className="text-zinc-400 max-w-2xl mx-auto">
+            <p className="text-gray-500 max-w-2xl mx-auto">
               Choosing between MK-677 and injectable peptides like Ipamorelin/CJC-1295 depends
               on your goals, lifestyle, and experience level.
             </p>
@@ -249,11 +249,11 @@ export default function MK677Page() {
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b" style={{ borderColor: 'var(--border)' }}>
-                  <th className="text-left py-3 px-4 text-zinc-500 font-medium w-1/3">Factor</th>
-                  <th className="text-left py-3 px-4 text-violet-400 font-semibold">
+                  <th className="text-left py-3 px-4 text-gray-500 font-medium w-1/3">Factor</th>
+                  <th className="text-left py-3 px-4 text-yellow-600 font-semibold">
                     MK-677 (Ibutamoren)
                   </th>
-                  <th className="text-left py-3 px-4 text-cyan-400 font-semibold">
+                  <th className="text-left py-3 px-4 text-yellow-600 font-semibold">
                     Ipamorelin / CJC-1295
                   </th>
                 </tr>
@@ -302,9 +302,9 @@ export default function MK677Page() {
                   },
                 ].map((row) => (
                   <tr key={row.factor} className="hover:bg-white/2 transition-colors">
-                    <td className="py-3 px-4 text-zinc-400 font-medium">{row.factor}</td>
-                    <td className="py-3 px-4 text-zinc-300">{row.mk}</td>
-                    <td className="py-3 px-4 text-zinc-300">{row.inj}</td>
+                    <td className="py-3 px-4 text-gray-500 font-medium">{row.factor}</td>
+                    <td className="py-3 px-4 text-gray-700">{row.mk}</td>
+                    <td className="py-3 px-4 text-gray-700">{row.inj}</td>
                   </tr>
                 ))}
               </tbody>
@@ -317,8 +317,8 @@ export default function MK677Page() {
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
           <span className="badge badge-cyan mb-4 inline-block">Evidence-Backed Benefits</span>
-          <h2 className="text-3xl font-bold text-white mb-4">What MK-677 Does for Your Body</h2>
-          <p className="text-zinc-400 max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">What MK-677 Does for Your Body</h2>
+          <p className="text-gray-500 max-w-2xl mx-auto">
             By elevating GH and IGF-1, MK-677 triggers a cascade of regenerative and anabolic
             effects across multiple body systems.
           </p>
@@ -326,37 +326,37 @@ export default function MK677Page() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {[
             {
-              icon: <Moon size={20} className="text-violet-400" />,
-              iconBg: 'bg-violet-600/15 border-violet-600/25',
+              icon: <Moon size={20} className="text-yellow-600" />,
+              iconBg: 'bg-gray-900/15 border-violet-600/25',
               title: 'Deep Sleep & Recovery',
               desc: 'GH is predominantly released during slow-wave sleep. MK-677 amplifies this nocturnal surge, increasing time in deep sleep stages. Users consistently report more vivid dreams, faster recovery between training sessions, and waking feeling significantly more rested.',
             },
             {
-              icon: <Dumbbell size={20} className="text-cyan-400" />,
+              icon: <Dumbbell size={20} className="text-yellow-600" />,
               iconBg: 'bg-cyan-500/15 border-cyan-500/25',
               title: 'Lean Muscle Support',
               desc: 'Elevated IGF-1 drives nitrogen retention and muscle protein synthesis. Clinical studies show meaningful increases in lean mass over 8–12 week cycles, particularly when combined with resistance training. Gains are generally lean rather than fluid-driven.',
             },
             {
-              icon: <Flame size={20} className="text-violet-400" />,
-              iconBg: 'bg-violet-600/15 border-violet-600/25',
+              icon: <Flame size={20} className="text-yellow-600" />,
+              iconBg: 'bg-gray-900/15 border-violet-600/25',
               title: 'Modest Fat Loss',
               desc: 'Elevated GH increases lipolysis (fat breakdown) and shifts the body toward using fat as a fuel source. However, the significant increase in appetite from ghrelin receptor activation can offset this benefit if caloric intake is not managed carefully.',
             },
             {
-              icon: <Sparkles size={20} className="text-cyan-400" />,
+              icon: <Sparkles size={20} className="text-yellow-600" />,
               iconBg: 'bg-cyan-500/15 border-cyan-500/25',
               title: 'Skin & Hair Quality',
               desc: 'GH and IGF-1 stimulate collagen synthesis, improve skin elasticity, and support hair follicle activity. Many users notice improvements in skin texture and thickness within 6–8 weeks, which is among the earliest visible benefits.',
             },
             {
-              icon: <Bone size={20} className="text-violet-400" />,
-              iconBg: 'bg-violet-600/15 border-violet-600/25',
+              icon: <Bone size={20} className="text-yellow-600" />,
+              iconBg: 'bg-gray-900/15 border-violet-600/25',
               title: 'Bone Density',
               desc: 'IGF-1 promotes osteoblast activity and bone mineralization. Research in elderly populations shows MK-677 can increase bone mineral density over 12+ months, making it particularly relevant for those concerned with age-related bone loss.',
             },
             {
-              icon: <Zap size={20} className="text-cyan-400" />,
+              icon: <Zap size={20} className="text-yellow-600" />,
               iconBg: 'bg-cyan-500/15 border-cyan-500/25',
               title: 'Injury Repair',
               desc: 'GH and IGF-1 accelerate collagen turnover in tendons and ligaments. Users recovering from soft-tissue injuries often stack MK-677 with BPC-157 for a comprehensive repair protocol that addresses both structural healing and GH-driven regeneration.',
@@ -368,8 +368,8 @@ export default function MK677Page() {
               >
                 {item.icon}
               </div>
-              <h3 className="font-bold text-white mb-2">{item.title}</h3>
-              <p className="text-sm text-zinc-500 leading-relaxed">{item.desc}</p>
+              <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
+              <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -381,10 +381,10 @@ export default function MK677Page() {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
               <span className="badge mb-4 inline-block">Dosing Protocol</span>
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-5">
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-5">
                 How to Use MK-677
               </h2>
-              <p className="text-zinc-400 leading-relaxed mb-6">
+              <p className="text-gray-500 leading-relaxed mb-6">
                 MK-677 is one of the simplest GH compounds to use — one oral dose per day, no
                 needles, no reconstitution. The key variables are dose, timing, and cycle length.
               </p>
@@ -423,15 +423,15 @@ export default function MK677Page() {
                     <div
                       className={`px-3 py-1 rounded-lg text-xs font-semibold shrink-0 ${
                         item.color === 'violet'
-                          ? 'bg-violet-600/20 text-violet-300'
+                          ? 'bg-gray-900/20 text-yellow-500'
                           : 'bg-cyan-500/20 text-cyan-300'
                       }`}
                     >
                       {item.label}
                     </div>
                     <div>
-                      <p className="text-white font-semibold text-sm">{item.value}</p>
-                      <p className="text-xs text-zinc-500 mt-0.5">{item.note}</p>
+                      <p className="text-gray-900 font-semibold text-sm">{item.value}</p>
+                      <p className="text-xs text-gray-500 mt-0.5">{item.note}</p>
                     </div>
                   </div>
                 ))}
@@ -443,10 +443,10 @@ export default function MK677Page() {
                 style={{ background: 'var(--bg)', borderColor: 'var(--border-bright)' }}
               >
                 <div className="flex items-center gap-2 mb-3">
-                  <AlertTriangle size={16} className="text-amber-400" />
-                  <p className="text-sm font-semibold text-amber-400">Hunger Warning</p>
+                  <AlertTriangle size={16} className="text-yellow-600" />
+                  <p className="text-sm font-semibold text-yellow-600">Hunger Warning</p>
                 </div>
-                <p className="text-sm text-zinc-400 leading-relaxed">
+                <p className="text-sm text-gray-500 leading-relaxed">
                   MK-677 activates ghrelin receptors — the same receptors that drive hunger. Expect
                   a significant increase in appetite, particularly in the first 2–4 weeks. This is
                   expected and normal. To manage: dose at bedtime so hunger peaks overnight, eat
@@ -457,7 +457,7 @@ export default function MK677Page() {
                 className="rounded-xl border p-6"
                 style={{ background: 'var(--bg)', borderColor: 'var(--border)' }}
               >
-                <h3 className="font-semibold text-white mb-4">What to Monitor</h3>
+                <h3 className="font-semibold text-gray-900 mb-4">What to Monitor</h3>
                 <ul className="space-y-3">
                   {[
                     'Fasting blood glucose — MK-677 can transiently raise insulin resistance',
@@ -466,8 +466,8 @@ export default function MK677Page() {
                     'Sleep quality — this is often your best feedback signal',
                     'Body weight trend (lean vs fluid gains)',
                   ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-2.5 text-sm text-zinc-400">
-                      <CheckCircle2 size={14} className="text-violet-400 mt-0.5 shrink-0" />
+                    <li key={i} className="flex items-start gap-2.5 text-sm text-gray-500">
+                      <CheckCircle2 size={14} className="text-yellow-600 mt-0.5 shrink-0" />
                       {item}
                     </li>
                   ))}
@@ -482,10 +482,10 @@ export default function MK677Page() {
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
           <span className="badge mb-4 inline-block">Side Effects & Risks</span>
-          <h2 className="text-3xl font-bold text-white mb-4">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Known Side Effects of MK-677
           </h2>
-          <p className="text-zinc-400 max-w-2xl mx-auto">
+          <p className="text-gray-500 max-w-2xl mx-auto">
             MK-677 has a well-characterized side effect profile. Most are manageable and
             dose-dependent — lower doses significantly reduce their frequency and severity.
           </p>
@@ -519,18 +519,18 @@ export default function MK677Page() {
           ].map((item) => (
             <div key={item.title} className="card p-5">
               <div className="flex items-center justify-between mb-3">
-                <h3 className="font-semibold text-white text-sm">{item.title}</h3>
+                <h3 className="font-semibold text-gray-900 text-sm">{item.title}</h3>
                 <span
                   className={`text-xs px-2 py-0.5 rounded-full font-medium ${
                     item.severityColor === 'red'
                       ? 'bg-red-500/15 text-red-400'
-                      : 'bg-amber-500/15 text-amber-400'
+                      : 'bg-amber-500/15 text-yellow-600'
                   }`}
                 >
                   {item.severity}
                 </span>
               </div>
-              <p className="text-xs text-zinc-500 leading-relaxed">{item.desc}</p>
+              <p className="text-xs text-gray-500 leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -540,11 +540,11 @@ export default function MK677Page() {
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
-            <Scale size={28} className="text-violet-400 mx-auto mb-4" />
-            <h2 className="text-3xl font-bold text-white mb-4">
+            <Scale size={28} className="text-yellow-600 mx-auto mb-4" />
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
               MK-677 vs Injectables: Which Is Right for You?
             </h2>
-            <p className="text-zinc-400 max-w-xl mx-auto">
+            <p className="text-gray-500 max-w-xl mx-auto">
               Both paths raise GH. Your lifestyle, goals, and risk tolerance determine which fits better.
             </p>
           </div>
@@ -576,18 +576,18 @@ export default function MK677Page() {
               <div key={item.title} className="card p-6">
                 <h3
                   className={`font-bold mb-5 ${
-                    item.color === 'violet' ? 'text-violet-300' : 'text-cyan-300'
+                    item.color === 'violet' ? 'text-yellow-500' : 'text-cyan-300'
                   }`}
                 >
                   {item.title}
                 </h3>
                 <ul className="space-y-3">
                   {item.points.map((point, i) => (
-                    <li key={i} className="flex items-start gap-2.5 text-sm text-zinc-400">
+                    <li key={i} className="flex items-start gap-2.5 text-sm text-gray-500">
                       <CheckCircle2
                         size={14}
                         className={`mt-0.5 shrink-0 ${
-                          item.color === 'violet' ? 'text-violet-400' : 'text-cyan-400'
+                          item.color === 'violet' ? 'text-yellow-600' : 'text-yellow-600'
                         }`}
                       />
                       {point}
@@ -607,7 +607,7 @@ export default function MK677Page() {
             <span className="badge">Related Products</span>
             <span className="badge badge-cyan">Top Picks</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
             Injectable GH Peptides & Stacks
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
@@ -619,9 +619,9 @@ export default function MK677Page() {
               style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
             >
               <div>
-                <p className="text-xs text-zinc-500 uppercase tracking-wider mb-1">Featured Stack</p>
-                <h3 className="text-xl font-bold text-white mb-2">{ghStack.name}</h3>
-                <p className="text-sm text-zinc-400 max-w-lg">{ghStack.shortDescription}</p>
+                <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Featured Stack</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">{ghStack.name}</h3>
+                <p className="text-sm text-gray-500 max-w-lg">{ghStack.shortDescription}</p>
               </div>
               <Link href="/stacks/gh-optimization" className="btn-primary shrink-0">
                 View Full Protocol
@@ -636,8 +636,8 @@ export default function MK677Page() {
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="flex items-center gap-3 mb-10">
-            <HelpCircle size={22} className="text-violet-400" />
-            <h2 className="text-2xl font-bold text-white">MK-677 FAQ</h2>
+            <HelpCircle size={22} className="text-yellow-600" />
+            <h2 className="text-2xl font-bold text-gray-900">MK-677 FAQ</h2>
           </div>
           <div className="space-y-4">
             {mk677Faqs.map((faq, i) => (
@@ -646,8 +646,8 @@ export default function MK677Page() {
                 className="rounded-xl border p-5"
                 style={{ background: 'var(--bg)', borderColor: 'var(--border)' }}
               >
-                <p className="font-semibold text-white mb-2">{faq.q}</p>
-                <p className="text-sm text-zinc-400 leading-relaxed">{faq.a}</p>
+                <p className="font-semibold text-gray-900 mb-2">{faq.q}</p>
+                <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -656,10 +656,10 @@ export default function MK677Page() {
 
       {/* Final CTA */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 text-center">
-        <h2 className="text-3xl font-bold text-white mb-4">
+        <h2 className="text-3xl font-bold text-gray-900 mb-4">
           Ready to Start Your GH Optimization Protocol?
         </h2>
-        <p className="text-zinc-400 mb-8 max-w-xl mx-auto">
+        <p className="text-gray-500 mb-8 max-w-xl mx-auto">
           Whether you choose MK-677 or injectable peptides, the GH Optimization Stack gives you
           the full protocol — dosing schedules, timing guidance, and the right compounds for
           your goals.

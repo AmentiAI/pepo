@@ -60,7 +60,7 @@ export default function SleepPage() {
       {/* Hero */}
       <section className="relative pt-14 pb-12 sm:pt-28 sm:pb-20 overflow-hidden grid-bg">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-20 left-1/4 w-96 h-96 bg-violet-600/10 rounded-full blur-3xl" />
+          <div className="absolute top-20 left-1/4 w-96 h-96 bg-gray-900/10 rounded-full blur-3xl" />
           <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-cyan-500/8 rounded-full blur-3xl" />
         </div>
 
@@ -68,14 +68,14 @@ export default function SleepPage() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-2 mb-5">
               <span className="badge">Category</span>
-              <ChevronRight size={14} className="text-zinc-600" />
+              <ChevronRight size={14} className="text-gray-400" />
               <span className="badge badge-cyan">Sleep</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-              <span className="text-white">Peptides for </span>
+              <span className="text-gray-900">Peptides for </span>
               <span className="gradient-text">Sleep</span>
             </h1>
-            <p className="text-lg text-zinc-400 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
               Ipamorelin and CJC-1295 are the most effective peptides for deep sleep enhancement.
               By amplifying the natural nocturnal growth hormone surge, they dramatically improve
               Stage 3 slow-wave sleep — the phase responsible for true physical and cognitive
@@ -95,16 +95,16 @@ export default function SleepPage() {
           {/* Stat strip */}
           <div className="mt-10 sm:mt-14 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {[
-              { icon: <Clock size={18} className="text-violet-400" />, value: '1–2 wks', label: 'Time to improved sleep quality' },
-              { icon: <Zap size={18} className="text-cyan-400" />, value: '3–5×', label: 'GH pulse increase during sleep' },
-              { icon: <ShieldCheck size={18} className="text-violet-400" />, value: '85%', label: 'Users report better recovery' },
-              { icon: <CheckCircle2 size={18} className="text-cyan-400" />, value: 'Stage 3', label: 'Deep sleep phase enhanced most' },
+              { icon: <Clock size={18} className="text-yellow-600" />, value: '1–2 wks', label: 'Time to improved sleep quality' },
+              { icon: <Zap size={18} className="text-yellow-600" />, value: '3–5×', label: 'GH pulse increase during sleep' },
+              { icon: <ShieldCheck size={18} className="text-yellow-600" />, value: '85%', label: 'Users report better recovery' },
+              { icon: <CheckCircle2 size={18} className="text-yellow-600" />, value: 'Stage 3', label: 'Deep sleep phase enhanced most' },
             ].map((stat) => (
               <div key={stat.label} className="card p-4 flex items-start gap-3">
                 <div className="mt-0.5">{stat.icon}</div>
                 <div>
-                  <p className="text-xl font-bold text-white">{stat.value}</p>
-                  <p className="text-xs text-zinc-500 mt-0.5">{stat.label}</p>
+                  <p className="text-xl font-bold text-gray-900">{stat.value}</p>
+                  <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -117,10 +117,10 @@ export default function SleepPage() {
       {/* Products grid */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="mb-10">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
             Sleep Optimization Products
           </h2>
-          <p className="text-zinc-400 max-w-2xl">
+          <p className="text-gray-500 max-w-2xl">
             Every peptide in this category has been selected for its evidence base in sleep quality
             enhancement, GH pulsatility, and circadian rhythm restoration.
           </p>
@@ -142,10 +142,10 @@ export default function SleepPage() {
             </div>
             <div className="grid lg:grid-cols-2 gap-12 items-start">
               <div>
-                <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+                <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
                   {sleepStack.name}
                 </h2>
-                <p className="text-zinc-400 leading-relaxed mb-6">
+                <p className="text-gray-500 leading-relaxed mb-6">
                   {sleepStack.shortDescription}
                 </p>
                 <div className="flex flex-wrap gap-3 mb-8">
@@ -159,8 +159,8 @@ export default function SleepPage() {
                       className="px-4 py-2.5 rounded-xl border"
                       style={{ background: 'var(--bg)', borderColor: 'var(--border)' }}
                     >
-                      <p className="text-[11px] text-zinc-500 uppercase tracking-wider">{item.label}</p>
-                      <p className="text-sm font-semibold text-white mt-0.5">{item.value}</p>
+                      <p className="text-[11px] text-gray-500 uppercase tracking-wider">{item.label}</p>
+                      <p className="text-sm font-semibold text-gray-900 mt-0.5">{item.value}</p>
                     </div>
                   ))}
                 </div>
@@ -171,7 +171,7 @@ export default function SleepPage() {
               </div>
 
               <div className="space-y-4">
-                <h3 className="text-sm font-semibold text-zinc-500 uppercase tracking-wider">
+                <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider">
                   Expected Results
                 </h3>
                 {sleepStack.expectedResults.map((result, i) => (
@@ -180,8 +180,8 @@ export default function SleepPage() {
                     className="flex items-start gap-3 p-4 rounded-xl border"
                     style={{ background: 'var(--bg)', borderColor: 'var(--border)' }}
                   >
-                    <CheckCircle2 size={16} className="text-violet-400 mt-0.5 shrink-0" />
-                    <p className="text-sm text-zinc-300">{result}</p>
+                    <CheckCircle2 size={16} className="text-yellow-600 mt-0.5 shrink-0" />
+                    <p className="text-sm text-gray-700">{result}</p>
                   </div>
                 ))}
               </div>
@@ -193,8 +193,8 @@ export default function SleepPage() {
       {/* How sleep peptides work */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-white mb-4">How These Peptides Enhance Sleep</h2>
-          <p className="text-zinc-400 max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">How These Peptides Enhance Sleep</h2>
+          <p className="text-gray-500 max-w-2xl mx-auto">
             Ipamorelin/CJC-1295 and NAD+ target distinct but complementary aspects of sleep
             architecture — GH pulsatility and circadian rhythm restoration.
           </p>
@@ -230,27 +230,27 @@ export default function SleepPage() {
                 <div
                   className={`w-10 h-10 rounded-xl flex items-center justify-center ${
                     item.color === 'violet'
-                      ? 'bg-violet-600/15 border border-violet-600/25'
+                      ? 'bg-gray-900/15 border border-violet-600/25'
                       : 'bg-cyan-500/15 border border-cyan-500/25'
                   }`}
                 >
                   <Zap
                     size={18}
-                    className={item.color === 'violet' ? 'text-violet-400' : 'text-cyan-400'}
+                    className={item.color === 'violet' ? 'text-yellow-600' : 'text-yellow-600'}
                   />
                 </div>
                 <div>
-                  <h3 className="font-bold text-white">{item.name}</h3>
-                  <p className="text-xs text-zinc-500">{item.subtitle}</p>
+                  <h3 className="font-bold text-gray-900">{item.name}</h3>
+                  <p className="text-xs text-gray-500">{item.subtitle}</p>
                 </div>
               </div>
               <ul className="space-y-3">
                 {item.points.map((point, i) => (
-                  <li key={i} className="flex items-start gap-2.5 text-sm text-zinc-400">
+                  <li key={i} className="flex items-start gap-2.5 text-sm text-gray-500">
                     <CheckCircle2
                       size={14}
                       className={`mt-0.5 shrink-0 ${
-                        item.color === 'violet' ? 'text-violet-400' : 'text-cyan-400'
+                        item.color === 'violet' ? 'text-yellow-600' : 'text-yellow-600'
                       }`}
                     />
                     {point}
@@ -266,8 +266,8 @@ export default function SleepPage() {
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="flex items-center gap-3 mb-10">
-            <HelpCircle size={22} className="text-violet-400" />
-            <h2 className="text-2xl font-bold text-white">Sleep Peptide FAQ</h2>
+            <HelpCircle size={22} className="text-yellow-600" />
+            <h2 className="text-2xl font-bold text-gray-900">Sleep Peptide FAQ</h2>
           </div>
           <div className="space-y-4">
             {sleepFaqs.map((faq, i) => (
@@ -276,8 +276,8 @@ export default function SleepPage() {
                 className="rounded-xl border p-5"
                 style={{ background: 'var(--bg)', borderColor: 'var(--border)' }}
               >
-                <p className="font-semibold text-white mb-2">{faq.q}</p>
-                <p className="text-sm text-zinc-400 leading-relaxed">{faq.a}</p>
+                <p className="font-semibold text-gray-900 mb-2">{faq.q}</p>
+                <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -286,8 +286,8 @@ export default function SleepPage() {
 
       {/* CTA */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 text-center">
-        <h2 className="text-3xl font-bold text-white mb-4">Ready to Transform Your Sleep?</h2>
-        <p className="text-zinc-400 mb-8 max-w-xl mx-auto">
+        <h2 className="text-3xl font-bold text-gray-900 mb-4">Ready to Transform Your Sleep?</h2>
+        <p className="text-gray-500 mb-8 max-w-xl mx-auto">
           Browse the complete GH optimization protocol, or go directly to Ipamorelin/CJC-1295
           — the gold standard for deep sleep enhancement.
         </p>

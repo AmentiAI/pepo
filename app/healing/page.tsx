@@ -70,7 +70,7 @@ export default function HealingPage() {
       {/* Hero */}
       <section className="relative pt-14 pb-12 sm:pt-28 sm:pb-20 overflow-hidden grid-bg">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-20 left-1/4 w-96 h-96 bg-violet-600/10 rounded-full blur-3xl" />
+          <div className="absolute top-20 left-1/4 w-96 h-96 bg-gray-900/10 rounded-full blur-3xl" />
           <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-cyan-500/8 rounded-full blur-3xl" />
         </div>
 
@@ -78,15 +78,15 @@ export default function HealingPage() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-2 mb-5">
               <span className="badge">Category</span>
-              <ChevronRight size={14} className="text-zinc-600" />
+              <ChevronRight size={14} className="text-gray-400" />
               <span className="badge badge-cyan">Healing & Recovery</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-              <span className="text-white">Healing &amp; </span>
+              <span className="text-gray-900">Healing &amp; </span>
               <span className="gradient-text">Recovery</span>
-              <span className="text-white"> Peptides</span>
+              <span className="text-gray-900"> Peptides</span>
             </h1>
-            <p className="text-lg text-zinc-400 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
               BPC-157 and TB-500 are the most validated peptides for musculoskeletal injury recovery.
               Together they cover every mechanism of the healing cascade — from local tissue repair and
               angiogenesis to systemic inflammation reduction and flexibility restoration.
@@ -105,16 +105,16 @@ export default function HealingPage() {
           {/* Stat strip */}
           <div className="mt-10 sm:mt-14 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {[
-              { icon: <Zap size={18} className="text-violet-400" />, value: '2×', label: 'Faster healing vs. untreated' },
-              { icon: <ShieldCheck size={18} className="text-cyan-400" />, value: '30+', label: 'Years of research' },
-              { icon: <Clock size={18} className="text-violet-400" />, value: '3–7', label: 'Days to first effects' },
-              { icon: <CheckCircle2 size={18} className="text-cyan-400" />, value: '100%', label: 'Naturally-derived basis' },
+              { icon: <Zap size={18} className="text-yellow-600" />, value: '2×', label: 'Faster healing vs. untreated' },
+              { icon: <ShieldCheck size={18} className="text-yellow-600" />, value: '30+', label: 'Years of research' },
+              { icon: <Clock size={18} className="text-yellow-600" />, value: '3–7', label: 'Days to first effects' },
+              { icon: <CheckCircle2 size={18} className="text-yellow-600" />, value: '100%', label: 'Naturally-derived basis' },
             ].map((stat) => (
               <div key={stat.label} className="card p-4 flex items-start gap-3">
                 <div className="mt-0.5">{stat.icon}</div>
                 <div>
-                  <p className="text-xl font-bold text-white">{stat.value}</p>
-                  <p className="text-xs text-zinc-500 mt-0.5">{stat.label}</p>
+                  <p className="text-xl font-bold text-gray-900">{stat.value}</p>
+                  <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -127,10 +127,10 @@ export default function HealingPage() {
       {/* Products grid */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="mb-10">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
             Healing &amp; Recovery Products
           </h2>
-          <p className="text-zinc-400 max-w-2xl">
+          <p className="text-gray-500 max-w-2xl">
             Every peptide in this category has been selected for its evidence base in tissue repair,
             inflammation reduction, and recovery acceleration.
           </p>
@@ -152,10 +152,10 @@ export default function HealingPage() {
             </div>
             <div className="grid lg:grid-cols-2 gap-12 items-start">
               <div>
-                <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+                <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
                   {healingStack.name}
                 </h2>
-                <p className="text-zinc-400 leading-relaxed mb-6">
+                <p className="text-gray-500 leading-relaxed mb-6">
                   {healingStack.shortDescription}
                 </p>
                 <div className="flex flex-wrap gap-3 mb-8">
@@ -169,8 +169,8 @@ export default function HealingPage() {
                       className="px-4 py-2.5 rounded-xl border"
                       style={{ background: 'var(--bg)', borderColor: 'var(--border)' }}
                     >
-                      <p className="text-[11px] text-zinc-500 uppercase tracking-wider">{item.label}</p>
-                      <p className="text-sm font-semibold text-white mt-0.5">{item.value}</p>
+                      <p className="text-[11px] text-gray-500 uppercase tracking-wider">{item.label}</p>
+                      <p className="text-sm font-semibold text-gray-900 mt-0.5">{item.value}</p>
                     </div>
                   ))}
                 </div>
@@ -181,7 +181,7 @@ export default function HealingPage() {
               </div>
 
               <div className="space-y-4">
-                <h3 className="text-sm font-semibold text-zinc-500 uppercase tracking-wider">
+                <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider">
                   Expected Results
                 </h3>
                 {healingStack.expectedResults.map((result, i) => (
@@ -190,8 +190,8 @@ export default function HealingPage() {
                     className="flex items-start gap-3 p-4 rounded-xl border"
                     style={{ background: 'var(--bg)', borderColor: 'var(--border)' }}
                   >
-                    <CheckCircle2 size={16} className="text-violet-400 mt-0.5 shrink-0" />
-                    <p className="text-sm text-zinc-300">{result}</p>
+                    <CheckCircle2 size={16} className="text-yellow-600 mt-0.5 shrink-0" />
+                    <p className="text-sm text-gray-700">{result}</p>
                   </div>
                 ))}
               </div>
@@ -203,8 +203,8 @@ export default function HealingPage() {
       {/* How healing peptides work */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-white mb-4">How These Peptides Accelerate Healing</h2>
-          <p className="text-zinc-400 max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">How These Peptides Accelerate Healing</h2>
+          <p className="text-gray-500 max-w-2xl mx-auto">
             BPC-157 and TB-500 target distinct but complementary aspects of the healing cascade,
             making their combination greater than the sum of its parts.
           </p>
@@ -241,27 +241,27 @@ export default function HealingPage() {
                 <div
                   className={`w-10 h-10 rounded-xl flex items-center justify-center ${
                     item.color === 'violet'
-                      ? 'bg-violet-600/15 border border-violet-600/25'
+                      ? 'bg-gray-900/15 border border-violet-600/25'
                       : 'bg-cyan-500/15 border border-cyan-500/25'
                   }`}
                 >
                   <Zap
                     size={18}
-                    className={item.color === 'violet' ? 'text-violet-400' : 'text-cyan-400'}
+                    className={item.color === 'violet' ? 'text-yellow-600' : 'text-yellow-600'}
                   />
                 </div>
                 <div>
-                  <h3 className="font-bold text-white">{item.name}</h3>
-                  <p className="text-xs text-zinc-500">{item.subtitle}</p>
+                  <h3 className="font-bold text-gray-900">{item.name}</h3>
+                  <p className="text-xs text-gray-500">{item.subtitle}</p>
                 </div>
               </div>
               <ul className="space-y-3">
                 {item.points.map((point, i) => (
-                  <li key={i} className="flex items-start gap-2.5 text-sm text-zinc-400">
+                  <li key={i} className="flex items-start gap-2.5 text-sm text-gray-500">
                     <CheckCircle2
                       size={14}
                       className={`mt-0.5 shrink-0 ${
-                        item.color === 'violet' ? 'text-violet-400' : 'text-cyan-400'
+                        item.color === 'violet' ? 'text-yellow-600' : 'text-yellow-600'
                       }`}
                     />
                     {point}
@@ -277,9 +277,9 @@ export default function HealingPage() {
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
-            <p className="text-xs font-semibold tracking-widest text-violet-400 uppercase mb-3">Applications</p>
-            <h2 className="text-3xl font-bold text-white mb-4">What Conditions Do Healing Peptides Treat?</h2>
-            <p className="text-zinc-400 max-w-2xl mx-auto">
+            <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Applications</p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">What Conditions Do Healing Peptides Treat?</h2>
+            <p className="text-gray-500 max-w-2xl mx-auto">
               BPC-157 and TB-500 have the broadest documented therapeutic scope of any peptide class.
               Below are the most commonly targeted conditions — each with specific evidence in the peer-reviewed literature.
             </p>
@@ -288,32 +288,32 @@ export default function HealingPage() {
             {[
               {
                 category: 'Tendon Injuries',
-                color: 'text-violet-400',
+                color: 'text-yellow-600',
                 items: ['Achilles tendinopathy and tears', 'Patellar tendon injuries', 'Rotator cuff partial and full tears', 'Tennis elbow (lateral epicondylitis)', 'Biceps tendon injuries', 'Plantar fasciitis'],
               },
               {
                 category: 'Ligament & Joint',
-                color: 'text-cyan-400',
+                color: 'text-yellow-600',
                 items: ['ACL, MCL, PCL sprains and tears', 'Ankle ligament injuries', 'Knee osteoarthritis and cartilage damage', 'Hip labral tears', 'Shoulder instability', 'Post-surgical joint recovery'],
               },
               {
                 category: 'Muscle Injuries',
-                color: 'text-violet-400',
+                color: 'text-yellow-600',
                 items: ['Muscle tears (grade I–III strains)', 'Chronic overuse injuries', 'Hamstring and quadriceps pulls', 'Calf strains', 'Sports hernias', 'Post-training DOMS acceleration'],
               },
               {
                 category: 'Gut & GI Conditions',
-                color: 'text-cyan-400',
+                color: 'text-yellow-600',
                 items: ['Inflammatory bowel disease (IBD/Crohn\'s)', 'Leaky gut syndrome and intestinal permeability', 'NSAID-induced gut damage', 'Gastric ulcers and GERD', 'Post-antibiotic gut dysbiosis', 'Irritable bowel syndrome (IBS)'],
               },
               {
                 category: 'Neurological & Systemic',
-                color: 'text-violet-400',
+                color: 'text-yellow-600',
                 items: ['Traumatic brain injury recovery support', 'Peripheral neuropathy', 'Spinal cord injury support', 'Post-concussion syndrome', 'Nerve damage from surgery or injury', 'Dopaminergic system restoration'],
               },
               {
                 category: 'Bone & Connective Tissue',
-                color: 'text-cyan-400',
+                color: 'text-yellow-600',
                 items: ['Stress fractures and bone healing', 'Osteoporosis-related fracture recovery', 'Fibromyalgia and widespread connective tissue pain', 'Scar tissue breakdown (post-surgical)', 'Cartilage repair support', 'Disc injury recovery'],
               },
             ].map((group) => (
@@ -321,8 +321,8 @@ export default function HealingPage() {
                 <h3 className={`font-bold text-sm mb-3 ${group.color}`}>{group.category}</h3>
                 <ul className="space-y-1.5">
                   {group.items.map((item) => (
-                    <li key={item} className="flex items-start gap-2 text-xs text-zinc-400">
-                      <CheckCircle2 size={11} className="text-violet-400 mt-0.5 shrink-0" />
+                    <li key={item} className="flex items-start gap-2 text-xs text-gray-500">
+                      <CheckCircle2 size={11} className="text-yellow-600 mt-0.5 shrink-0" />
                       {item}
                     </li>
                   ))}
@@ -336,9 +336,9 @@ export default function HealingPage() {
       {/* ── WEEK-BY-WEEK TIMELINE ───────────────────────── */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
-          <p className="text-xs font-semibold tracking-widest text-cyan-400 uppercase mb-3">What to Expect</p>
-          <h2 className="text-3xl font-bold text-white mb-4">Week-by-Week Healing Timeline</h2>
-          <p className="text-zinc-400 max-w-xl mx-auto">
+          <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">What to Expect</p>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Week-by-Week Healing Timeline</h2>
+          <p className="text-gray-500 max-w-xl mx-auto">
             Healing with BPC-157 and TB-500 follows a predictable progression. Here is what most users experience on the Ultimate Healing Stack at standard doses.
           </p>
         </div>
@@ -377,8 +377,8 @@ export default function HealingPage() {
                 {phase.week}
               </div>
               <div>
-                <h3 className="font-bold text-white mb-2">{phase.title}</h3>
-                <p className="text-sm text-zinc-400 leading-relaxed">{phase.body}</p>
+                <h3 className="font-bold text-gray-900 mb-2">{phase.title}</h3>
+                <p className="text-sm text-gray-500 leading-relaxed">{phase.body}</p>
               </div>
             </div>
           ))}
@@ -395,19 +395,19 @@ export default function HealingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
-              <p className="text-xs font-semibold tracking-widest text-violet-400 uppercase mb-3">Science</p>
-              <h2 className="text-3xl font-bold text-white mb-5">Why Peptides Outperform Conventional Injury Treatment</h2>
-              <p className="text-zinc-400 leading-relaxed mb-4">
+              <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Science</p>
+              <h2 className="text-3xl font-bold text-gray-900 mb-5">Why Peptides Outperform Conventional Injury Treatment</h2>
+              <p className="text-gray-500 leading-relaxed mb-4">
                 Standard-of-care injury treatment — rest, ice, NSAIDs, physiotherapy — addresses symptoms rather than mechanisms.
                 NSAIDs reduce pain and inflammation, but prostaglandins inhibited by NSAIDs are also required for tissue repair.
                 Multiple studies have shown NSAID use during acute injury phases delays healing and reduces the final structural quality of repaired tissue.
               </p>
-              <p className="text-zinc-400 leading-relaxed mb-4">
+              <p className="text-gray-500 leading-relaxed mb-4">
                 BPC-157 and TB-500 address the actual bottlenecks of tissue repair: inadequate vascularity, incomplete collagen
                 remodeling, excessive fibrosis, and chronic inflammatory signaling. They do not merely block pain signals —
                 they accelerate the biological processes that produce genuine structural recovery.
               </p>
-              <p className="text-zinc-400 leading-relaxed mb-6">
+              <p className="text-gray-500 leading-relaxed mb-6">
                 Perhaps most importantly, these peptides are derived from proteins that naturally exist in the human body.
                 BPC-157 is a fragment of a gastric protein produced endogenously. TB-500 is a synthetic version of Thymosin Beta-4,
                 a 43-amino-acid peptide present in every human cell. Their side effect profiles reflect this natural origin —
@@ -443,8 +443,8 @@ export default function HealingPage() {
                 },
               ].map((item) => (
                 <div key={item.title} className="card p-5">
-                  <h4 className="font-bold text-white text-sm mb-2">{item.title}</h4>
-                  <p className="text-xs text-zinc-400 leading-relaxed">{item.body}</p>
+                  <h4 className="font-bold text-gray-900 text-sm mb-2">{item.title}</h4>
+                  <p className="text-xs text-gray-500 leading-relaxed">{item.body}</p>
                 </div>
               ))}
             </div>
@@ -456,8 +456,8 @@ export default function HealingPage() {
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="flex items-center gap-3 mb-10">
-            <HelpCircle size={22} className="text-violet-400" />
-            <h2 className="text-2xl font-bold text-white">Healing Peptide FAQ</h2>
+            <HelpCircle size={22} className="text-yellow-600" />
+            <h2 className="text-2xl font-bold text-gray-900">Healing Peptide FAQ</h2>
           </div>
           <div className="space-y-4">
             {healingFaqs.map((faq, i) => (
@@ -466,8 +466,8 @@ export default function HealingPage() {
                 className="rounded-xl border p-5"
                 style={{ background: 'var(--bg)', borderColor: 'var(--border)' }}
               >
-                <p className="font-semibold text-white mb-2">{faq.q}</p>
-                <p className="text-sm text-zinc-400 leading-relaxed">{faq.a}</p>
+                <p className="font-semibold text-gray-900 mb-2">{faq.q}</p>
+                <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -476,8 +476,8 @@ export default function HealingPage() {
 
       {/* CTA */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 text-center">
-        <h2 className="text-3xl font-bold text-white mb-4">Ready to Start Your Recovery?</h2>
-        <p className="text-zinc-400 mb-8 max-w-xl mx-auto">
+        <h2 className="text-3xl font-bold text-gray-900 mb-4">Ready to Start Your Recovery?</h2>
+        <p className="text-gray-500 mb-8 max-w-xl mx-auto">
           Browse the complete healing protocol, or explore other peptide categories for your goals.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">

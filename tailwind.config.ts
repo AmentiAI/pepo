@@ -10,18 +10,18 @@ const config: Config = {
     extend: {
       colors: {
         bg: {
-          DEFAULT: '#08080f',
-          card: '#0f0f1a',
-          elevated: '#141428',
+          DEFAULT: '#ffffff',
+          card: '#fafafa',
+          elevated: '#f5f5f5',
         },
         accent: {
-          purple: '#7c3aed',
-          cyan: '#06b6d4',
-          teal: '#0d9488',
+          yellow: '#eab308',
+          gold: '#f59e0b',
+          dark: '#0a0a0a',
         },
         border: {
-          DEFAULT: '#1e1e35',
-          bright: '#2d2d50',
+          DEFAULT: '#e5e7eb',
+          bright: '#d1d5db',
         },
       },
       fontFamily: {
@@ -31,8 +31,8 @@ const config: Config = {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'hero-glow': 'radial-gradient(ellipse 80% 60% at 50% -20%, rgba(124,58,237,0.3), transparent)',
-        'card-glow': 'linear-gradient(135deg, rgba(124,58,237,0.05), rgba(6,182,212,0.05))',
+        'hero-glow': 'radial-gradient(ellipse 80% 60% at 50% -20%, rgba(234,179,8,0.15), transparent)',
+        'card-glow': 'linear-gradient(135deg, rgba(234,179,8,0.04), rgba(245,158,11,0.04))',
       },
       animation: {
         'fade-up': 'fadeUp 0.6s ease forwards',
@@ -60,8 +60,8 @@ const config: Config = {
           '100%': { transform: 'translateX(0%)' },
         },
         glow: {
-          '0%': { boxShadow: '0 0 20px rgba(124,58,237,0.3)' },
-          '100%': { boxShadow: '0 0 40px rgba(6,182,212,0.4)' },
+          '0%': { boxShadow: '0 0 20px rgba(234,179,8,0.25)' },
+          '100%': { boxShadow: '0 0 40px rgba(245,158,11,0.35)' },
         },
       },
     },

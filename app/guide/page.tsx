@@ -34,37 +34,37 @@ export const metadata: Metadata = {
 const sections = [
   {
     id: 'what-are-peptides',
-    icon: <FlaskConical size={20} className="text-violet-400" />,
+    icon: <FlaskConical size={20} className="text-yellow-600" />,
     title: 'What Are Peptides?',
     color: 'violet',
   },
   {
     id: 'why-peptides',
-    icon: <BookOpen size={20} className="text-cyan-400" />,
+    icon: <BookOpen size={20} className="text-yellow-600" />,
     title: 'Why Use Peptides?',
     color: 'cyan',
   },
   {
     id: 'how-to-inject',
-    icon: <Syringe size={20} className="text-violet-400" />,
+    icon: <Syringe size={20} className="text-yellow-600" />,
     title: 'How to Inject (Subcutaneous)',
     color: 'violet',
   },
   {
     id: 'common-mistakes',
-    icon: <AlertTriangle size={20} className="text-cyan-400" />,
+    icon: <AlertTriangle size={20} className="text-yellow-600" />,
     title: 'Common Mistakes to Avoid',
     color: 'cyan',
   },
   {
     id: 'starting-protocols',
-    icon: <ListChecks size={20} className="text-violet-400" />,
+    icon: <ListChecks size={20} className="text-yellow-600" />,
     title: 'Starting Protocols for Beginners',
     color: 'violet',
   },
   {
     id: 'safety',
-    icon: <ShieldAlert size={20} className="text-cyan-400" />,
+    icon: <ShieldAlert size={20} className="text-yellow-600" />,
     title: 'Safety Considerations',
     color: 'cyan',
   },
@@ -135,22 +135,22 @@ export default function GuidePage() {
       {/* Hero */}
       <section className="relative pt-14 pb-12 sm:pt-28 sm:pb-20 overflow-hidden grid-bg">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-20 right-1/3 w-96 h-96 bg-violet-600/8 rounded-full blur-3xl" />
+          <div className="absolute top-20 right-1/3 w-96 h-96 bg-gray-900/8 rounded-full blur-3xl" />
           <div className="absolute bottom-0 left-1/4 w-72 h-72 bg-cyan-500/6 rounded-full blur-3xl" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
           <div className="max-w-3xl">
             <div className="flex items-center gap-2 mb-5">
               <span className="badge">Education</span>
-              <ChevronRight size={14} className="text-zinc-600" />
+              <ChevronRight size={14} className="text-gray-400" />
               <span className="badge badge-cyan">Beginner's Guide</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-              <span className="text-white">The Beginner's Guide</span>
+              <span className="text-gray-900">The Beginner's Guide</span>
               <br />
               <span className="gradient-text">to Peptides</span>
             </h1>
-            <p className="text-lg text-zinc-400 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
               Everything you need to know before running your first peptide protocol — from the
               science of what peptides actually are, to your first subcutaneous injection, to
               choosing the right starting stack for your goals.
@@ -168,7 +168,7 @@ export default function GuidePage() {
 
           {/* Table of contents */}
           <div className="mt-14 max-w-2xl">
-            <p className="text-xs font-semibold text-zinc-500 uppercase tracking-wider mb-4">
+            <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-4">
               In This Guide
             </p>
             <div className="grid sm:grid-cols-2 gap-2">
@@ -176,12 +176,12 @@ export default function GuidePage() {
                 <a
                   key={s.id}
                   href={`#${s.id}`}
-                  className="flex items-center gap-3 p-3 rounded-xl border transition-colors hover:border-violet-600/40 hover:bg-violet-600/5"
+                  className="flex items-center gap-3 p-3 rounded-xl border transition-colors hover:border-violet-600/40 hover:bg-gray-900/5"
                   style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
                 >
-                  <span className="text-zinc-600 text-xs font-mono w-5">{String(i + 1).padStart(2, '0')}</span>
+                  <span className="text-gray-400 text-xs font-mono w-5">{String(i + 1).padStart(2, '0')}</span>
                   {s.icon}
-                  <span className="text-sm text-zinc-300 font-medium">{s.title}</span>
+                  <span className="text-sm text-gray-700 font-medium">{s.title}</span>
                 </a>
               ))}
             </div>
@@ -197,20 +197,20 @@ export default function GuidePage() {
         {/* Section 1: What are peptides */}
         <section id="what-are-peptides" className="scroll-mt-24">
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 rounded-xl bg-violet-600/15 border border-violet-600/25 flex items-center justify-center">
-              <FlaskConical size={18} className="text-violet-400" />
+            <div className="w-10 h-10 rounded-xl bg-gray-900/15 border border-violet-600/25 flex items-center justify-center">
+              <FlaskConical size={18} className="text-yellow-600" />
             </div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">What Are Peptides?</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">What Are Peptides?</h2>
           </div>
 
-          <p className="text-zinc-400 leading-relaxed mb-5">
+          <p className="text-gray-500 leading-relaxed mb-5">
             Peptides are short chains of amino acids — the same building blocks that make up
             proteins. While proteins are typically hundreds to thousands of amino acids long,
             peptides range from just 2 to about 50 amino acids. This smaller size is critical:
             it allows peptides to interact directly with specific receptors and signaling pathways
             in your cells in ways that larger proteins cannot.
           </p>
-          <p className="text-zinc-400 leading-relaxed mb-5">
+          <p className="text-gray-500 leading-relaxed mb-5">
             Your body already produces thousands of peptides naturally. Hormones like insulin and
             oxytocin are peptides. Digestive enzymes use peptide signals. Growth hormone releasing
             hormone (GHRH) — which tells your pituitary to release GH — is a peptide. Research
@@ -221,15 +221,15 @@ export default function GuidePage() {
             className="p-5 rounded-xl border-l-4 border-violet-600 mb-5"
             style={{ background: 'var(--bg-card)', borderTop: '1px solid var(--border)', borderRight: '1px solid var(--border)', borderBottom: '1px solid var(--border)' }}
           >
-            <p className="text-sm text-zinc-300 leading-relaxed">
-              <strong className="text-white">Key insight:</strong> Peptides are not steroids,
+            <p className="text-sm text-gray-700 leading-relaxed">
+              <strong className="text-gray-900">Key insight:</strong> Peptides are not steroids,
               hormones, or drugs in the conventional sense. Many work by stimulating your body's
               own production of beneficial compounds (like GH) rather than introducing exogenous
               substances. This is why their side effect profiles are dramatically more favorable
               than pharmacological alternatives.
             </p>
           </div>
-          <p className="text-zinc-400 leading-relaxed">
+          <p className="text-gray-500 leading-relaxed">
             Most peptides cannot be taken orally because stomach acid and digestive enzymes
             break down the amino acid chains before they can reach the bloodstream. This is why
             subcutaneous injection is the standard administration route — it delivers the peptide
@@ -244,12 +244,12 @@ export default function GuidePage() {
         <section id="why-peptides" className="scroll-mt-24">
           <div className="flex items-center gap-3 mb-6">
             <div className="w-10 h-10 rounded-xl bg-cyan-500/15 border border-cyan-500/25 flex items-center justify-center">
-              <BookOpen size={18} className="text-cyan-400" />
+              <BookOpen size={18} className="text-yellow-600" />
             </div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">Why Use Peptides?</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Why Use Peptides?</h2>
           </div>
 
-          <p className="text-zinc-400 leading-relaxed mb-5">
+          <p className="text-gray-500 leading-relaxed mb-5">
             Peptides occupy a unique space: they are backed by peer-reviewed science
             (many with human clinical trial data), they target specific physiological mechanisms
             with precision, and their side effect profiles are dramatically better than pharmacological
@@ -280,13 +280,13 @@ export default function GuidePage() {
                 className="p-4 rounded-xl border"
                 style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
               >
-                <h4 className="font-semibold text-white text-sm mb-2">{card.title}</h4>
-                <p className="text-xs text-zinc-500 leading-relaxed">{card.body}</p>
+                <h4 className="font-semibold text-gray-900 text-sm mb-2">{card.title}</h4>
+                <p className="text-xs text-gray-500 leading-relaxed">{card.body}</p>
               </div>
             ))}
           </div>
 
-          <p className="text-zinc-400 leading-relaxed">
+          <p className="text-gray-500 leading-relaxed">
             The peptide category has expanded rapidly in the past decade as the scientific
             literature has grown. Many compounds originally studied decades ago are now widely
             validated in Western journals. The evidence base is robust — the key is knowing which
@@ -299,15 +299,15 @@ export default function GuidePage() {
         {/* Section 3: How to inject */}
         <section id="how-to-inject" className="scroll-mt-24">
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 rounded-xl bg-violet-600/15 border border-violet-600/25 flex items-center justify-center">
-              <Syringe size={18} className="text-violet-400" />
+            <div className="w-10 h-10 rounded-xl bg-gray-900/15 border border-violet-600/25 flex items-center justify-center">
+              <Syringe size={18} className="text-yellow-600" />
             </div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
               How to Inject Subcutaneously
             </h2>
           </div>
 
-          <p className="text-zinc-400 leading-relaxed mb-6">
+          <p className="text-gray-500 leading-relaxed mb-6">
             Subcutaneous (SubQ) injection is far simpler than most beginners expect. You're
             injecting into the fat layer just beneath the skin — not into muscle (intramuscular)
             or a vein (intravenous). The needle is tiny (27–31 gauge, 0.5" length is standard),
@@ -315,7 +315,7 @@ export default function GuidePage() {
           </p>
 
           <div className="mb-6">
-            <h3 className="text-lg font-semibold text-white mb-4">What You'll Need</h3>
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">What You'll Need</h3>
             <div className="grid sm:grid-cols-2 gap-3">
               {[
                 { item: 'Insulin syringe', detail: '27–31 gauge, 0.5" or 1cc. Available at pharmacies without prescription.' },
@@ -328,17 +328,17 @@ export default function GuidePage() {
                   className="flex gap-3 p-3 rounded-xl border"
                   style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
                 >
-                  <CheckCircle2 size={14} className="text-violet-400 mt-0.5 shrink-0" />
+                  <CheckCircle2 size={14} className="text-yellow-600 mt-0.5 shrink-0" />
                   <div>
-                    <p className="text-sm font-semibold text-white">{item.item}</p>
-                    <p className="text-xs text-zinc-500 mt-0.5">{item.detail}</p>
+                    <p className="text-sm font-semibold text-gray-900">{item.item}</p>
+                    <p className="text-xs text-gray-500 mt-0.5">{item.detail}</p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          <h3 className="text-lg font-semibold text-white mb-4">Step-by-Step Injection Protocol</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mb-4">Step-by-Step Injection Protocol</h3>
           <div className="space-y-3 mb-6">
             {[
               {
@@ -381,8 +381,8 @@ export default function GuidePage() {
                   {step.step}
                 </span>
                 <div>
-                  <p className="font-semibold text-white text-sm mb-1">{step.title}</p>
-                  <p className="text-xs text-zinc-400 leading-relaxed">{step.body}</p>
+                  <p className="font-semibold text-gray-900 text-sm mb-1">{step.title}</p>
+                  <p className="text-xs text-gray-500 leading-relaxed">{step.body}</p>
                 </div>
               </div>
             ))}
@@ -395,9 +395,9 @@ export default function GuidePage() {
         <section id="common-mistakes" className="scroll-mt-24">
           <div className="flex items-center gap-3 mb-6">
             <div className="w-10 h-10 rounded-xl bg-cyan-500/15 border border-cyan-500/25 flex items-center justify-center">
-              <AlertTriangle size={18} className="text-cyan-400" />
+              <AlertTriangle size={18} className="text-yellow-600" />
             </div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">Common Mistakes to Avoid</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Common Mistakes to Avoid</h2>
           </div>
 
           <div className="space-y-4">
@@ -437,10 +437,10 @@ export default function GuidePage() {
                   borderBottom: '1px solid var(--border)',
                 }}
               >
-                <AlertTriangle size={16} className="text-amber-400 mt-0.5 shrink-0" />
+                <AlertTriangle size={16} className="text-yellow-600 mt-0.5 shrink-0" />
                 <div>
-                  <p className="font-semibold text-white text-sm mb-1">{item.mistake}</p>
-                  <p className="text-xs text-zinc-400 leading-relaxed">{item.detail}</p>
+                  <p className="font-semibold text-gray-900 text-sm mb-1">{item.mistake}</p>
+                  <p className="text-xs text-gray-500 leading-relaxed">{item.detail}</p>
                 </div>
               </div>
             ))}
@@ -452,15 +452,15 @@ export default function GuidePage() {
         {/* Section 5: Starting protocols */}
         <section id="starting-protocols" className="scroll-mt-24">
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 rounded-xl bg-violet-600/15 border border-violet-600/25 flex items-center justify-center">
-              <ListChecks size={18} className="text-violet-400" />
+            <div className="w-10 h-10 rounded-xl bg-gray-900/15 border border-violet-600/25 flex items-center justify-center">
+              <ListChecks size={18} className="text-yellow-600" />
             </div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
               Starting Protocols for Beginners
             </h2>
           </div>
 
-          <p className="text-zinc-400 leading-relaxed mb-8">
+          <p className="text-gray-500 leading-relaxed mb-8">
             Choose your starting protocol based on your primary goal. These are the simplest,
             most evidence-backed starting points — each single-peptide or two-peptide protocols
             that beginners have the most success with.
@@ -522,7 +522,7 @@ export default function GuidePage() {
                     {protocol.badge}
                   </span>
                 </div>
-                <h4 className="font-bold text-white mb-3">{protocol.peptides}</h4>
+                <h4 className="font-bold text-gray-900 mb-3">{protocol.peptides}</h4>
                 <div className="grid sm:grid-cols-3 gap-3 mb-4">
                   {[
                     { label: 'Dose', value: protocol.dose },
@@ -530,8 +530,8 @@ export default function GuidePage() {
                     { label: 'Duration', value: protocol.duration },
                   ].map((d) => (
                     <div key={d.label}>
-                      <p className="text-[10px] text-zinc-600 uppercase tracking-wider mb-1">{d.label}</p>
-                      <p className="text-xs text-zinc-300">{d.value}</p>
+                      <p className="text-[10px] text-gray-400 uppercase tracking-wider mb-1">{d.label}</p>
+                      <p className="text-xs text-gray-700">{d.value}</p>
                     </div>
                   ))}
                 </div>
@@ -550,9 +550,9 @@ export default function GuidePage() {
         <section id="safety" className="scroll-mt-24">
           <div className="flex items-center gap-3 mb-6">
             <div className="w-10 h-10 rounded-xl bg-cyan-500/15 border border-cyan-500/25 flex items-center justify-center">
-              <ShieldAlert size={18} className="text-cyan-400" />
+              <ShieldAlert size={18} className="text-yellow-600" />
             </div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">Safety Considerations</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Safety Considerations</h2>
           </div>
 
           <div
@@ -565,9 +565,9 @@ export default function GuidePage() {
             }}
           >
             <div className="flex gap-3">
-              <AlertTriangle size={18} className="text-amber-400 shrink-0 mt-0.5" />
-              <p className="text-sm text-zinc-300 leading-relaxed">
-                <strong className="text-white">Important:</strong> Start with conservative doses,
+              <AlertTriangle size={18} className="text-yellow-600 shrink-0 mt-0.5" />
+              <p className="text-sm text-gray-700 leading-relaxed">
+                <strong className="text-gray-900">Important:</strong> Start with conservative doses,
                 purchase only from suppliers with third-party certificates of analysis, and
                 introduce one new compound at a time so you can accurately assess your individual response.
               </p>
@@ -606,10 +606,10 @@ export default function GuidePage() {
                 className="flex gap-4 p-4 rounded-xl border"
                 style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
               >
-                <CheckCircle2 size={16} className="text-cyan-400 mt-0.5 shrink-0" />
+                <CheckCircle2 size={16} className="text-yellow-600 mt-0.5 shrink-0" />
                 <div>
-                  <p className="font-semibold text-white text-sm mb-1">{item.title}</p>
-                  <p className="text-xs text-zinc-400 leading-relaxed">{item.body}</p>
+                  <p className="font-semibold text-gray-900 text-sm mb-1">{item.title}</p>
+                  <p className="text-xs text-gray-500 leading-relaxed">{item.body}</p>
                 </div>
               </div>
             ))}
@@ -624,10 +624,10 @@ export default function GuidePage() {
       >
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
           <div className="glow-divider mb-10" />
-          <h2 className="text-3xl font-bold text-white mb-4">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Ready to Start Your First Protocol?
           </h2>
-          <p className="text-zinc-400 mb-8">
+          <p className="text-gray-500 mb-8">
             Browse our curated stacks for your specific goal, or explore the full product catalog
             with detailed protocol guides for every peptide.
           </p>

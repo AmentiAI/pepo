@@ -83,8 +83,8 @@ const injectionSites = [
     name: 'Abdomen',
     tag: 'Preferred',
     tagColor: 'badge-cyan',
-    color: 'text-violet-400',
-    bg: 'bg-violet-500/10',
+    color: 'text-yellow-600',
+    bg: 'bg-yellow-50',
     border: 'border-violet-500/20',
     details: [
       '2 inches away from the navel in any direction',
@@ -98,7 +98,7 @@ const injectionSites = [
     name: 'Outer Thigh',
     tag: 'Alternative',
     tagColor: '',
-    color: 'text-cyan-400',
+    color: 'text-yellow-600',
     bg: 'bg-cyan-500/10',
     border: 'border-cyan-500/20',
     details: [
@@ -112,8 +112,8 @@ const injectionSites = [
     name: 'Love Handles / Flanks',
     tag: 'Lean Individuals',
     tagColor: '',
-    color: 'text-violet-400',
-    bg: 'bg-violet-500/10',
+    color: 'text-yellow-600',
+    bg: 'bg-yellow-50',
     border: 'border-violet-500/20',
     details: [
       'Posterior-lateral waist area',
@@ -126,7 +126,7 @@ const injectionSites = [
     name: 'Site Rotation',
     tag: 'Always Required',
     tagColor: '',
-    color: 'text-cyan-400',
+    color: 'text-yellow-600',
     bg: 'bg-cyan-500/10',
     border: 'border-cyan-500/20',
     details: [
@@ -197,26 +197,26 @@ export default function SubcutaneousInjectionGuidePage() {
       {/* Hero */}
       <section className="relative pt-14 pb-12 sm:pt-28 sm:pb-20 overflow-hidden grid-bg">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-20 left-1/4 w-96 h-96 bg-violet-600/10 rounded-full blur-3xl" />
+          <div className="absolute top-20 left-1/4 w-96 h-96 bg-gray-900/10 rounded-full blur-3xl" />
           <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-cyan-500/8 rounded-full blur-3xl" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 mb-5 flex-wrap">
-            <Link href="/" className="badge hover:text-white transition-colors">Home</Link>
-            <ChevronRight size={14} className="text-zinc-600" />
-            <Link href="/how-to/reconstitute-peptides" className="badge hover:text-white transition-colors">How-To</Link>
-            <ChevronRight size={14} className="text-zinc-600" />
+            <Link href="/" className="badge hover:text-gray-900 transition-colors">Home</Link>
+            <ChevronRight size={14} className="text-gray-400" />
+            <Link href="/how-to/reconstitute-peptides" className="badge hover:text-gray-900 transition-colors">How-To</Link>
+            <ChevronRight size={14} className="text-gray-400" />
             <span className="badge badge-cyan">Injection Guide</span>
           </div>
 
           <div className="max-w-3xl">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-              <span className="text-white">How to </span>
+              <span className="text-gray-900">How to </span>
               <span className="gradient-text">Inject Peptides</span>
             </h1>
-            <p className="text-lg text-zinc-400 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
               Subcutaneous peptide injection sounds intimidating — it is not. With a 31-gauge
               insulin syringe and the correct technique, most users describe the experience as
               barely noticeable. This guide covers everything: site selection, drawing your dose,
@@ -236,16 +236,16 @@ export default function SubcutaneousInjectionGuidePage() {
           {/* Stat strip */}
           <div className="mt-10 sm:mt-14 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {[
-              { icon: <Syringe size={18} className="text-violet-400" />, value: '29–31g', label: 'Recommended needle gauge' },
-              { icon: <ShieldCheck size={18} className="text-cyan-400" />, value: '45°', label: 'Optimal injection angle' },
-              { icon: <CheckCircle2 size={18} className="text-violet-400" />, value: '<30 sec', label: 'Time per injection' },
-              { icon: <ShieldCheck size={18} className="text-cyan-400" />, value: 'Essentially painless', label: 'With correct technique' },
+              { icon: <Syringe size={18} className="text-yellow-600" />, value: '29–31g', label: 'Recommended needle gauge' },
+              { icon: <ShieldCheck size={18} className="text-yellow-600" />, value: '45°', label: 'Optimal injection angle' },
+              { icon: <CheckCircle2 size={18} className="text-yellow-600" />, value: '<30 sec', label: 'Time per injection' },
+              { icon: <ShieldCheck size={18} className="text-yellow-600" />, value: 'Essentially painless', label: 'With correct technique' },
             ].map((stat) => (
               <div key={stat.label} className="card p-4 flex items-start gap-3">
                 <div className="mt-0.5">{stat.icon}</div>
                 <div>
-                  <p className="text-xl font-bold text-white">{stat.value}</p>
-                  <p className="text-xs text-zinc-500 mt-0.5">{stat.label}</p>
+                  <p className="text-xl font-bold text-gray-900">{stat.value}</p>
+                  <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -260,10 +260,10 @@ export default function SubcutaneousInjectionGuidePage() {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="badge badge-cyan mb-4 inline-block">Why SubQ?</span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
               Why Subcutaneous, Not Intramuscular?
             </h2>
-            <div className="space-y-4 text-zinc-400 leading-relaxed">
+            <div className="space-y-4 text-gray-500 leading-relaxed">
               <p>
                 Peptides are biologically active at very small doses, and their therapeutic effect
                 depends on sustained plasma levels rather than a sharp spike. Subcutaneous
@@ -289,7 +289,7 @@ export default function SubcutaneousInjectionGuidePage() {
           {/* Supply checklist */}
           <div>
             <span className="badge mb-4 inline-block">What You Need</span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
               Supply Checklist
             </h2>
             <div className="space-y-3">
@@ -325,21 +325,21 @@ export default function SubcutaneousInjectionGuidePage() {
                   className="flex items-start gap-3 p-4 rounded-xl border"
                   style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
                 >
-                  <CheckCircle2 size={16} className="text-violet-400 mt-0.5 shrink-0" />
+                  <CheckCircle2 size={16} className="text-yellow-600 mt-0.5 shrink-0" />
                   <div>
-                    <p className="text-sm font-semibold text-white">{s.item}</p>
-                    <p className="text-xs text-zinc-500 mt-0.5">{s.note}</p>
+                    <p className="text-sm font-semibold text-gray-900">{s.item}</p>
+                    <p className="text-xs text-gray-500 mt-0.5">{s.note}</p>
                   </div>
                 </div>
               ))}
             </div>
             <div
-              className="mt-4 p-4 rounded-xl border text-sm text-zinc-400"
+              className="mt-4 p-4 rounded-xl border text-sm text-gray-500"
               style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
             >
-              <strong className="text-white">Not yet reconstituted?</strong> You need to add
+              <strong className="text-gray-900">Not yet reconstituted?</strong> You need to add
               bacteriostatic water to your lyophilised (powder) peptide before injecting.{' '}
-              <Link href="/how-to/reconstitute-peptides" className="text-violet-400 hover:text-violet-300 transition-colors">
+              <Link href="/how-to/reconstitute-peptides" className="text-yellow-600 hover:text-yellow-500 transition-colors">
                 Read the reconstitution guide first →
               </Link>
             </div>
@@ -351,10 +351,10 @@ export default function SubcutaneousInjectionGuidePage() {
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <span className="badge mb-4 inline-block">Site Selection</span>
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
             Injection Sites
           </h2>
-          <p className="text-zinc-400 mb-10 max-w-2xl">
+          <p className="text-gray-500 mb-10 max-w-2xl">
             Choose sites with adequate subcutaneous fat. Rotate systematically — never inject the
             same spot twice consecutively.
           </p>
@@ -369,7 +369,7 @@ export default function SubcutaneousInjectionGuidePage() {
                   <Syringe size={18} className={site.color} />
                 </div>
                 <div className="flex items-center gap-2 mb-3 flex-wrap">
-                  <h3 className="font-bold text-white text-sm">{site.name}</h3>
+                  <h3 className="font-bold text-gray-900 text-sm">{site.name}</h3>
                   {site.tagColor ? (
                     <span className={`badge ${site.tagColor} text-[10px]`}>{site.tag}</span>
                   ) : (
@@ -378,7 +378,7 @@ export default function SubcutaneousInjectionGuidePage() {
                 </div>
                 <ul className="space-y-2 flex-1">
                   {site.details.map((d) => (
-                    <li key={d} className="flex items-start gap-2 text-xs text-zinc-400">
+                    <li key={d} className="flex items-start gap-2 text-xs text-gray-500">
                       <CheckCircle2 size={12} className={`${site.color} mt-0.5 shrink-0`} />
                       {d}
                     </li>
@@ -395,10 +395,10 @@ export default function SubcutaneousInjectionGuidePage() {
       {/* Step-by-step */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <span className="badge badge-cyan mb-4 inline-block">Step-by-Step</span>
-        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           Injection Technique — Step by Step
         </h2>
-        <p className="text-zinc-400 mb-10 max-w-2xl">
+        <p className="text-gray-500 mb-10 max-w-2xl">
           Follow these steps in order every time. It takes under 30 seconds once you have done it
           a few times.
         </p>
@@ -427,8 +427,8 @@ export default function SubcutaneousInjectionGuidePage() {
                     borderColor: i % 2 === 0 ? 'rgb(124 58 237 / 0.2)' : 'rgb(6 182 212 / 0.2)',
                   }}
                 >
-                  <h3 className="font-bold text-white mb-2">{s.title}</h3>
-                  <p className="text-sm text-zinc-400 leading-relaxed">{s.body}</p>
+                  <h3 className="font-bold text-gray-900 mb-2">{s.title}</h3>
+                  <p className="text-sm text-gray-500 leading-relaxed">{s.body}</p>
                 </div>
               </div>
             ))}
@@ -440,10 +440,10 @@ export default function SubcutaneousInjectionGuidePage() {
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <span className="badge mb-4 inline-block">Troubleshooting</span>
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
             Common Beginner Mistakes
           </h2>
-          <p className="text-zinc-400 mb-10 max-w-2xl">
+          <p className="text-gray-500 mb-10 max-w-2xl">
             Every issue beginners encounter has a straightforward fix. These six cover 95% of
             problems.
           </p>
@@ -456,11 +456,11 @@ export default function SubcutaneousInjectionGuidePage() {
               >
                 <div className="flex items-start gap-3 mb-3">
                   <XCircle size={16} className="text-red-400 mt-0.5 shrink-0" />
-                  <h3 className="font-bold text-white text-sm">{m.mistake}</h3>
+                  <h3 className="font-bold text-gray-900 text-sm">{m.mistake}</h3>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 size={16} className="text-violet-400 mt-0.5 shrink-0" />
-                  <p className="text-sm text-zinc-400 leading-relaxed">{m.fix}</p>
+                  <CheckCircle2 size={16} className="text-yellow-600 mt-0.5 shrink-0" />
+                  <p className="text-sm text-gray-500 leading-relaxed">{m.fix}</p>
                 </div>
               </div>
             ))}
@@ -476,12 +476,12 @@ export default function SubcutaneousInjectionGuidePage() {
           {/* What to expect */}
           <div>
             <span className="badge badge-cyan mb-4 inline-block">Normal vs. Concerning</span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
               What to Expect After Injection
             </h2>
             <div className="space-y-4">
               <div>
-                <p className="text-sm font-semibold text-zinc-400 uppercase tracking-wider mb-3">
+                <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">
                   Normal — no action needed
                 </p>
                 <div className="space-y-2">
@@ -491,8 +491,8 @@ export default function SubcutaneousInjectionGuidePage() {
                     'Mild redness at the site — resolves within an hour',
                     'Tiny drop of blood — apply gentle pressure',
                   ].map((item) => (
-                    <div key={item} className="flex items-start gap-2.5 text-sm text-zinc-400">
-                      <CheckCircle2 size={14} className="text-violet-400 mt-0.5 shrink-0" />
+                    <div key={item} className="flex items-start gap-2.5 text-sm text-gray-500">
+                      <CheckCircle2 size={14} className="text-yellow-600 mt-0.5 shrink-0" />
                       {item}
                     </div>
                   ))}
@@ -514,7 +514,7 @@ export default function SubcutaneousInjectionGuidePage() {
                     'Pus or discharge from injection site',
                     'Red streaks radiating from the injection site',
                   ].map((item) => (
-                    <div key={item} className="flex items-start gap-2.5 text-sm text-zinc-400">
+                    <div key={item} className="flex items-start gap-2.5 text-sm text-gray-500">
                       <XCircle size={13} className="text-red-400 mt-0.5 shrink-0" />
                       {item}
                     </div>
@@ -527,10 +527,10 @@ export default function SubcutaneousInjectionGuidePage() {
           {/* Dose drawing table */}
           <div>
             <span className="badge mb-4 inline-block">Quick Reference</span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
               Dose Drawing Reference
             </h2>
-            <p className="text-zinc-400 mb-5 text-sm leading-relaxed">
+            <p className="text-gray-500 mb-5 text-sm leading-relaxed">
               Insulin syringes are labelled in units (U). Use this table to convert your dose
               volume (mL) to the unit marking on the barrel. Assumes a standard 1 mL syringe
               marked to 100 units.
@@ -542,13 +542,13 @@ export default function SubcutaneousInjectionGuidePage() {
               <table className="w-full text-sm">
                 <thead>
                   <tr style={{ backgroundColor: 'var(--bg-card)' }}>
-                    <th className="text-left px-4 py-3 text-zinc-500 font-semibold text-xs uppercase tracking-wider">
+                    <th className="text-left px-4 py-3 text-gray-500 font-semibold text-xs uppercase tracking-wider">
                       Syringe Units
                     </th>
-                    <th className="text-left px-4 py-3 text-zinc-500 font-semibold text-xs uppercase tracking-wider">
+                    <th className="text-left px-4 py-3 text-gray-500 font-semibold text-xs uppercase tracking-wider">
                       Volume (mL)
                     </th>
-                    <th className="text-left px-4 py-3 text-zinc-500 font-semibold text-xs uppercase tracking-wider hidden sm:table-cell">
+                    <th className="text-left px-4 py-3 text-gray-500 font-semibold text-xs uppercase tracking-wider hidden sm:table-cell">
                       Example Use
                     </th>
                   </tr>
@@ -562,15 +562,15 @@ export default function SubcutaneousInjectionGuidePage() {
                         borderTop: '1px solid var(--border)',
                       }}
                     >
-                      <td className="px-4 py-3 font-bold text-white">{row.units}</td>
-                      <td className="px-4 py-3 text-violet-400 font-semibold">{row.ml}</td>
-                      <td className="px-4 py-3 text-zinc-500 hidden sm:table-cell">{row.example}</td>
+                      <td className="px-4 py-3 font-bold text-gray-900">{row.units}</td>
+                      <td className="px-4 py-3 text-yellow-600 font-semibold">{row.ml}</td>
+                      <td className="px-4 py-3 text-gray-500 hidden sm:table-cell">{row.example}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
-            <p className="text-xs text-zinc-600 mt-3">
+            <p className="text-xs text-gray-400 mt-3">
               Actual dose in mcg/mg depends on reconstitution volume. See each product page or the
               reconstitution guide for peptide-specific dosing.
             </p>
@@ -584,11 +584,11 @@ export default function SubcutaneousInjectionGuidePage() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-5">
               <div className="w-10 h-10 rounded-xl bg-violet-500/15 border border-violet-500/25 flex items-center justify-center">
-                <Trash2 size={18} className="text-violet-400" />
+                <Trash2 size={18} className="text-yellow-600" />
               </div>
-              <h2 className="text-2xl sm:text-3xl font-bold text-white">Needle Disposal</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Needle Disposal</h2>
             </div>
-            <p className="text-zinc-400 leading-relaxed mb-6">
+            <p className="text-gray-500 leading-relaxed mb-6">
               Used needles must go into a designated sharps container — never into regular household
               trash or recycling. A punctured bin liner can cause accidental needle-stick injuries to
               waste handlers. This is a legal requirement in most jurisdictions.
@@ -609,8 +609,8 @@ export default function SubcutaneousInjectionGuidePage() {
                   className="card p-5 border"
                   style={{ borderColor: 'var(--border)', background: 'var(--bg)' }}
                 >
-                  <h3 className="font-semibold text-white mb-2 text-sm">{item.title}</h3>
-                  <p className="text-sm text-zinc-400 leading-relaxed">{item.body}</p>
+                  <h3 className="font-semibold text-gray-900 mb-2 text-sm">{item.title}</h3>
+                  <p className="text-sm text-gray-500 leading-relaxed">{item.body}</p>
                 </div>
               ))}
             </div>
@@ -624,8 +624,8 @@ export default function SubcutaneousInjectionGuidePage() {
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-8">
-            <HelpCircle size={22} className="text-violet-400" />
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">Frequently Asked Questions</h2>
+            <HelpCircle size={22} className="text-yellow-600" />
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Frequently Asked Questions</h2>
           </div>
           <div className="space-y-4">
             {faqs.map((faq, i) => (
@@ -634,8 +634,8 @@ export default function SubcutaneousInjectionGuidePage() {
                 className="card p-6 border"
                 style={{ borderColor: 'var(--border)', background: 'var(--bg-card)' }}
               >
-                <h3 className="font-bold text-white mb-3">{faq.q}</h3>
-                <p className="text-sm text-zinc-400 leading-relaxed">{faq.a}</p>
+                <h3 className="font-bold text-gray-900 mb-3">{faq.q}</h3>
+                <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -645,10 +645,10 @@ export default function SubcutaneousInjectionGuidePage() {
       {/* CTA */}
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
             Ready to Start Your Protocol?
           </h2>
-          <p className="text-zinc-400 mb-8 max-w-xl mx-auto">
+          <p className="text-gray-500 mb-8 max-w-xl mx-auto">
             Before your first injection, make sure your peptide is properly reconstituted. Read the
             prerequisite guide, or go directly to the bacteriostatic water product page for
             everything you need.

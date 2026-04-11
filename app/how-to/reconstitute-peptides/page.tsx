@@ -37,32 +37,32 @@ const supplies = [
   {
     item: 'Lyophilized peptide vial',
     detail: 'Freeze-dried powder — handle gently, keep away from heat',
-    icon: <FlaskConical size={18} className="text-violet-400" />,
-    bg: 'bg-violet-500/10',
+    icon: <FlaskConical size={18} className="text-yellow-600" />,
+    bg: 'bg-yellow-50',
   },
   {
     item: 'Bacteriostatic water (BAC water)',
     detail: 'NOT sterile water — BAC water contains benzyl alcohol preservative',
-    icon: <Package size={18} className="text-cyan-400" />,
+    icon: <Package size={18} className="text-yellow-600" />,
     bg: 'bg-cyan-500/10',
   },
   {
     item: '1mL or 3mL syringe with needle',
     detail: '29–31 gauge insulin syringes recommended for injection',
-    icon: <Syringe size={18} className="text-violet-400" />,
-    bg: 'bg-violet-500/10',
+    icon: <Syringe size={18} className="text-yellow-600" />,
+    bg: 'bg-yellow-50',
   },
   {
     item: 'Alcohol swabs',
     detail: 'For sterilizing vial tops before every insertion',
-    icon: <Shield size={18} className="text-cyan-400" />,
+    icon: <Shield size={18} className="text-yellow-600" />,
     bg: 'bg-cyan-500/10',
   },
   {
     item: 'Clean surface',
     detail: 'Work on a clean flat surface — paper towel or clean cloth',
-    icon: <CheckCircle2 size={18} className="text-violet-400" />,
-    bg: 'bg-violet-500/10',
+    icon: <CheckCircle2 size={18} className="text-yellow-600" />,
+    bg: 'bg-yellow-50',
   },
 ];
 
@@ -72,16 +72,16 @@ const steps = [
     title: 'Wash hands and swab vial tops',
     detail:
       'Wash hands thoroughly with soap. Use a fresh alcohol swab to wipe the rubber stopper on both the peptide vial and the BAC water vial. Let the alcohol dry for 10–15 seconds before inserting any needle. This is the single most important contamination-prevention step.',
-    color: 'text-violet-400',
-    border: 'border-violet-500/30',
-    bg: 'bg-violet-500/10',
+    color: 'text-yellow-600',
+    border: 'border-yellow-400/40',
+    bg: 'bg-yellow-50',
   },
   {
     number: 2,
     title: 'Draw BAC water into syringe',
     detail:
       'Pull back the syringe plunger to draw air equal to your target BAC water volume (standard: 1–2 mL for a 5mg peptide vial). Insert needle into BAC water vial, push air in, then draw out your target volume. Most users start with 2 mL for 5mg vials — this gives 250 mcg per 0.1 mL, which is the most convenient concentration for standard dosing.',
-    color: 'text-cyan-400',
+    color: 'text-yellow-600',
     border: 'border-cyan-500/30',
     bg: 'bg-cyan-500/10',
   },
@@ -90,16 +90,16 @@ const steps = [
     title: 'Inject BAC water slowly into peptide vial',
     detail:
       'Insert the needle through the rubber stopper of the peptide vial. Aim the stream of water at the glass wall of the vial — NOT directly onto the powder. Injecting onto the powder can create air pockets and mechanical stress that denatures (damages) the peptide structure. Release slowly over 5–10 seconds.',
-    color: 'text-violet-400',
-    border: 'border-violet-500/30',
-    bg: 'bg-violet-500/10',
+    color: 'text-yellow-600',
+    border: 'border-yellow-400/40',
+    bg: 'bg-yellow-50',
   },
   {
     number: 4,
     title: 'Gently swirl — never shake',
     detail:
       'Remove the syringe. Hold the vial between your fingers and gently swirl in a circular motion. The powder should dissolve into a clear solution within 30–60 seconds for most peptides. Never shake — vigorous agitation creates air bubbles and can break peptide bonds, degrading the product. If the solution appears cloudy after 2 minutes of gentle swirling, see the FAQ section below.',
-    color: 'text-cyan-400',
+    color: 'text-yellow-600',
     border: 'border-cyan-500/30',
     bg: 'bg-cyan-500/10',
   },
@@ -108,16 +108,16 @@ const steps = [
     title: 'Label the vial with reconstitution date',
     detail:
       'Write the date on the vial immediately. Reconstituted peptides stored at 2–8°C are stable for 28 days — you need the date to know when to discard. Use a piece of tape and a permanent marker if the vial label has no space. Never guess the date.',
-    color: 'text-violet-400',
-    border: 'border-violet-500/30',
-    bg: 'bg-violet-500/10',
+    color: 'text-yellow-600',
+    border: 'border-yellow-400/40',
+    bg: 'bg-yellow-50',
   },
   {
     number: 6,
     title: 'Refrigerate immediately at 2–8°C',
     detail:
       'Place the reconstituted vial in your refrigerator. Keep away from the freezer compartment edge where temperature fluctuates. Do not store at room temperature. For long-term storage (beyond 28 days), freeze at −20°C but minimize freeze-thaw cycles — each cycle degrades potency slightly.',
-    color: 'text-cyan-400',
+    color: 'text-yellow-600',
     border: 'border-cyan-500/30',
     bg: 'bg-cyan-500/10',
   },
@@ -162,7 +162,7 @@ const storageGuide = [
     temp: 'Room temperature',
     duration: '12–24 months (sealed)',
     note: 'Keep sealed and away from light and moisture',
-    icon: <Package size={18} className="text-zinc-400" />,
+    icon: <Package size={18} className="text-gray-500" />,
     bg: 'bg-zinc-500/10',
     border: 'border-zinc-600/30',
   },
@@ -171,7 +171,7 @@ const storageGuide = [
     temp: '2–8°C',
     duration: '28 days',
     note: 'Standard use storage — label with date',
-    icon: <Thermometer size={18} className="text-cyan-400" />,
+    icon: <Thermometer size={18} className="text-yellow-600" />,
     bg: 'bg-cyan-500/10',
     border: 'border-cyan-500/30',
   },
@@ -180,9 +180,9 @@ const storageGuide = [
     temp: '−20°C',
     duration: 'Up to 3 months',
     note: 'Minimize freeze-thaw cycles — each cycle reduces potency',
-    icon: <Thermometer size={18} className="text-violet-400" />,
-    bg: 'bg-violet-500/10',
-    border: 'border-violet-500/30',
+    icon: <Thermometer size={18} className="text-yellow-600" />,
+    bg: 'bg-yellow-50',
+    border: 'border-yellow-400/40',
   },
 ];
 
@@ -211,26 +211,26 @@ export default function ReconstitutePeptidesPage() {
       {/* Hero */}
       <section className="relative pt-14 pb-12 sm:pt-28 sm:pb-20 overflow-hidden grid-bg">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-20 left-1/4 w-96 h-96 bg-violet-600/10 rounded-full blur-3xl" />
+          <div className="absolute top-20 left-1/4 w-96 h-96 bg-gray-900/10 rounded-full blur-3xl" />
           <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-cyan-500/8 rounded-full blur-3xl" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 mb-5 flex-wrap">
-            <Link href="/" className="badge hover:text-white transition-colors">Home</Link>
-            <ChevronRight size={14} className="text-zinc-600" />
+            <Link href="/" className="badge hover:text-gray-900 transition-colors">Home</Link>
+            <ChevronRight size={14} className="text-gray-400" />
             <span className="badge badge-cyan">How-To</span>
-            <ChevronRight size={14} className="text-zinc-600" />
+            <ChevronRight size={14} className="text-gray-400" />
             <span className="badge">Reconstitute Peptides</span>
           </div>
 
           <div className="max-w-3xl">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-              <span className="text-white">How to </span>
+              <span className="text-gray-900">How to </span>
               <span className="gradient-text">Reconstitute Peptides</span>
             </h1>
-            <p className="text-lg text-zinc-400 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
               Peptides arrive as lyophilized (freeze-dried) powder and must be reconstituted with
               bacteriostatic water before use. Done correctly, it takes under 2 minutes. Done
               wrong, you waste the vial. This guide covers every step with dosing math included.
@@ -249,16 +249,16 @@ export default function ReconstitutePeptidesPage() {
           {/* Stat strip */}
           <div className="mt-10 sm:mt-14 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {[
-              { icon: <FlaskConical size={18} className="text-violet-400" />, value: '2 mL', label: 'Standard BAC water volume' },
-              { icon: <Syringe size={18} className="text-cyan-400" />, value: '0.1 mL', label: 'Standard draw per dose' },
-              { icon: <Clock size={18} className="text-violet-400" />, value: '28 days', label: 'Reconstituted stability' },
-              { icon: <Thermometer size={18} className="text-cyan-400" />, value: '−20°C', label: 'Long-term storage' },
+              { icon: <FlaskConical size={18} className="text-yellow-600" />, value: '2 mL', label: 'Standard BAC water volume' },
+              { icon: <Syringe size={18} className="text-yellow-600" />, value: '0.1 mL', label: 'Standard draw per dose' },
+              { icon: <Clock size={18} className="text-yellow-600" />, value: '28 days', label: 'Reconstituted stability' },
+              { icon: <Thermometer size={18} className="text-yellow-600" />, value: '−20°C', label: 'Long-term storage' },
             ].map((stat) => (
               <div key={stat.label} className="card p-4 flex items-start gap-3">
                 <div className="mt-0.5">{stat.icon}</div>
                 <div>
-                  <p className="text-xl font-bold text-white">{stat.value}</p>
-                  <p className="text-xs text-zinc-500 mt-0.5">{stat.label}</p>
+                  <p className="text-xl font-bold text-gray-900">{stat.value}</p>
+                  <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -271,10 +271,10 @@ export default function ReconstitutePeptidesPage() {
       {/* What You Need */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <span className="badge badge-cyan mb-4 inline-block">Supplies</span>
-        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           What You Need
         </h2>
-        <p className="text-zinc-400 mb-10 max-w-2xl">
+        <p className="text-gray-500 mb-10 max-w-2xl">
           Gather everything before you start. Working with all supplies at hand prevents
           contamination from unnecessary movement during the process.
         </p>
@@ -289,8 +289,8 @@ export default function ReconstitutePeptidesPage() {
                 {s.icon}
               </div>
               <div>
-                <p className="font-semibold text-white text-sm mb-1">{s.item}</p>
-                <p className="text-xs text-zinc-500 leading-relaxed">{s.detail}</p>
+                <p className="font-semibold text-gray-900 text-sm mb-1">{s.item}</p>
+                <p className="text-xs text-gray-500 leading-relaxed">{s.detail}</p>
               </div>
             </div>
           ))}
@@ -301,10 +301,10 @@ export default function ReconstitutePeptidesPage() {
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <span className="badge mb-4 inline-block">Step-by-Step</span>
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
             Reconstitution Process
           </h2>
-          <p className="text-zinc-400 mb-10 max-w-2xl">
+          <p className="text-gray-500 mb-10 max-w-2xl">
             Follow these steps in order. Do not skip the swabbing step — it is the most commonly
             skipped and the most critical for preventing contamination.
           </p>
@@ -320,7 +320,7 @@ export default function ReconstitutePeptidesPage() {
                     className="w-10 h-10 rounded-full border-2 flex items-center justify-center shrink-0 z-10"
                     style={{ background: 'var(--bg-card)', borderColor: 'var(--border-bright)' }}
                   >
-                    <span className="text-xs font-bold text-white">{step.number}</span>
+                    <span className="text-xs font-bold text-gray-900">{step.number}</span>
                   </div>
                   <div
                     className={`card flex-1 p-5 border ${step.border}`}
@@ -330,7 +330,7 @@ export default function ReconstitutePeptidesPage() {
                       <div className={`w-2 h-2 rounded-full ${step.bg}`} />
                       <h3 className={`font-bold text-sm ${step.color}`}>{step.title}</h3>
                     </div>
-                    <p className="text-sm text-zinc-400 leading-relaxed">{step.detail}</p>
+                    <p className="text-sm text-gray-500 leading-relaxed">{step.detail}</p>
                   </div>
                 </div>
               ))}
@@ -344,10 +344,10 @@ export default function ReconstitutePeptidesPage() {
       {/* Dosing Calculator */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <span className="badge badge-cyan mb-4 inline-block">Dosing Calculator</span>
-        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           Reconstitution Calculator
         </h2>
-        <p className="text-zinc-400 mb-8 max-w-2xl">
+        <p className="text-gray-500 mb-8 max-w-2xl">
           Enter your vial size, BAC water volume, and desired dose to get exact draw amounts for
           your insulin syringe — no math required.
         </p>
@@ -358,7 +358,7 @@ export default function ReconstitutePeptidesPage() {
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <span className="badge mb-4 inline-block">Critical Difference</span>
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
             Why BAC Water — Not Sterile Water
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
@@ -368,28 +368,28 @@ export default function ReconstitutePeptidesPage() {
             >
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-cyan-500/15 flex items-center justify-center">
-                  <CheckCircle2 size={20} className="text-cyan-400" />
+                  <CheckCircle2 size={20} className="text-yellow-600" />
                 </div>
                 <div>
-                  <p className="font-bold text-white">Bacteriostatic Water</p>
-                  <p className="text-xs text-cyan-400">Recommended</p>
+                  <p className="font-bold text-gray-900">Bacteriostatic Water</p>
+                  <p className="text-xs text-yellow-600">Recommended</p>
                 </div>
               </div>
-              <ul className="space-y-3 text-sm text-zinc-400">
+              <ul className="space-y-3 text-sm text-gray-500">
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 size={14} className="text-cyan-400 mt-0.5 shrink-0" />
+                  <CheckCircle2 size={14} className="text-yellow-600 mt-0.5 shrink-0" />
                   Contains 0.9% benzyl alcohol — prevents bacterial growth
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 size={14} className="text-cyan-400 mt-0.5 shrink-0" />
+                  <CheckCircle2 size={14} className="text-yellow-600 mt-0.5 shrink-0" />
                   Safe for multi-dose vials over 28 days
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 size={14} className="text-cyan-400 mt-0.5 shrink-0" />
+                  <CheckCircle2 size={14} className="text-yellow-600 mt-0.5 shrink-0" />
                   Standard in clinical and research settings for peptide reconstitution
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 size={14} className="text-cyan-400 mt-0.5 shrink-0" />
+                  <CheckCircle2 size={14} className="text-yellow-600 mt-0.5 shrink-0" />
                   Benzyl alcohol is inert at these concentrations and does not affect peptide integrity
                 </li>
               </ul>
@@ -403,11 +403,11 @@ export default function ReconstitutePeptidesPage() {
                   <AlertTriangle size={20} className="text-red-400" />
                 </div>
                 <div>
-                  <p className="font-bold text-white">Sterile Water</p>
+                  <p className="font-bold text-gray-900">Sterile Water</p>
                   <p className="text-xs text-red-400">Single-use only</p>
                 </div>
               </div>
-              <ul className="space-y-3 text-sm text-zinc-400">
+              <ul className="space-y-3 text-sm text-gray-500">
                 <li className="flex items-start gap-2">
                   <AlertTriangle size={14} className="text-red-400 mt-0.5 shrink-0" />
                   No preservative — bacterial growth can begin within hours
@@ -435,10 +435,10 @@ export default function ReconstitutePeptidesPage() {
       {/* Common Mistakes */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <span className="badge badge-cyan mb-4 inline-block">Avoid These</span>
-        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           Common Reconstitution Mistakes
         </h2>
-        <p className="text-zinc-400 mb-10 max-w-2xl">
+        <p className="text-gray-500 mb-10 max-w-2xl">
           These are the mistakes that waste expensive peptide vials or create safety risks. Review
           them before your first reconstitution.
         </p>
@@ -452,15 +452,15 @@ export default function ReconstitutePeptidesPage() {
               <div>
                 <div className="flex items-center gap-2 mb-1">
                   <AlertTriangle size={14} className="text-red-400 shrink-0" />
-                  <p className="font-bold text-white text-sm">{m.mistake}</p>
+                  <p className="font-bold text-gray-900 text-sm">{m.mistake}</p>
                 </div>
               </div>
               <div>
-                <p className="text-xs text-zinc-500 leading-relaxed">{m.consequence}</p>
+                <p className="text-xs text-gray-500 leading-relaxed">{m.consequence}</p>
               </div>
               <div>
-                <p className="text-xs text-zinc-400 leading-relaxed">
-                  <span className="text-cyan-400 font-semibold">Fix: </span>{m.fix}
+                <p className="text-xs text-gray-500 leading-relaxed">
+                  <span className="text-yellow-600 font-semibold">Fix: </span>{m.fix}
                 </p>
               </div>
             </div>
@@ -472,7 +472,7 @@ export default function ReconstitutePeptidesPage() {
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <span className="badge mb-4 inline-block">Storage</span>
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
             Storage Guide After Reconstitution
           </h2>
           <div className="grid md:grid-cols-3 gap-5 mb-8">
@@ -485,10 +485,10 @@ export default function ReconstitutePeptidesPage() {
                 <div className={`w-10 h-10 rounded-xl ${s.bg} flex items-center justify-center mb-4`}>
                   {s.icon}
                 </div>
-                <p className="text-xs text-zinc-500 uppercase tracking-wider mb-1">{s.condition}</p>
-                <p className="text-2xl font-extrabold text-white mb-1">{s.duration}</p>
-                <p className="text-sm text-zinc-500 mb-3">{s.temp}</p>
-                <p className="text-xs text-zinc-600 leading-relaxed">{s.note}</p>
+                <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">{s.condition}</p>
+                <p className="text-2xl font-extrabold text-gray-900 mb-1">{s.duration}</p>
+                <p className="text-sm text-gray-500 mb-3">{s.temp}</p>
+                <p className="text-xs text-gray-400 leading-relaxed">{s.note}</p>
               </div>
             ))}
           </div>
@@ -496,10 +496,10 @@ export default function ReconstitutePeptidesPage() {
             className="card p-5 border border-violet-500/20 flex items-start gap-3"
             style={{ background: 'var(--bg)' }}
           >
-            <Shield size={18} className="text-violet-400 shrink-0 mt-0.5" />
+            <Shield size={18} className="text-yellow-600 shrink-0 mt-0.5" />
             <div>
-              <p className="font-semibold text-white text-sm mb-1">Freeze-thaw cycles</p>
-              <p className="text-sm text-zinc-400 leading-relaxed">
+              <p className="font-semibold text-gray-900 text-sm mb-1">Freeze-thaw cycles</p>
+              <p className="text-sm text-gray-500 leading-relaxed">
                 If freezing reconstituted peptides, avoid repeated freeze-thaw cycles. Each cycle of
                 freezing and thawing can cause minor peptide bond stress. Best practice: divide your
                 reconstituted vial into smaller aliquots (using sterile vials) before freezing, then
@@ -515,10 +515,10 @@ export default function ReconstitutePeptidesPage() {
       {/* Syringe Guide */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <span className="badge badge-cyan mb-4 inline-block">Syringes</span>
-        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           Syringe and Needle Guide
         </h2>
-        <p className="text-zinc-400 mb-8 max-w-2xl">
+        <p className="text-gray-500 mb-8 max-w-2xl">
           The right syringe makes reconstitution and injection accurate and comfortable. Using the
           wrong gauge increases pain and imprecision.
         </p>
@@ -528,42 +528,42 @@ export default function ReconstitutePeptidesPage() {
               label: 'Reconstitution syringe',
               value: '3 mL syringe',
               detail: 'Use for drawing BAC water — easier to control slow injection into peptide vial',
-              color: 'text-violet-400',
-              bg: 'bg-violet-500/10',
+              color: 'text-yellow-600',
+              bg: 'bg-yellow-50',
             },
             {
               label: 'Injection syringe',
               value: '29–31 gauge, 1 mL',
               detail: 'Insulin syringes — 29G for slightly faster draws, 31G for minimum injection pain',
-              color: 'text-cyan-400',
+              color: 'text-yellow-600',
               bg: 'bg-cyan-500/10',
             },
             {
               label: 'Recommended length',
               value: '0.5 inch (12.7 mm)',
               detail: 'Standard subcutaneous depth — sufficient for all common peptide injection sites',
-              color: 'text-violet-400',
-              bg: 'bg-violet-500/10',
+              color: 'text-yellow-600',
+              bg: 'bg-yellow-50',
             },
             {
               label: 'Syringe scale markings',
               value: 'IU markings (100 per mL)',
               detail: '10 IU = 0.1 mL — use this to measure doses in the dosing table above',
-              color: 'text-cyan-400',
+              color: 'text-yellow-600',
               bg: 'bg-cyan-500/10',
             },
             {
               label: 'Single-use rule',
               value: 'One syringe per injection',
               detail: 'Never reuse syringes — needles dull after first use, increasing pain and infection risk',
-              color: 'text-violet-400',
-              bg: 'bg-violet-500/10',
+              color: 'text-yellow-600',
+              bg: 'bg-yellow-50',
             },
             {
               label: 'Where to source',
               value: 'Same supplier as peptides',
               detail: 'Purchase from the same supplier for guaranteed compatibility and sterility standards',
-              color: 'text-cyan-400',
+              color: 'text-yellow-600',
               bg: 'bg-cyan-500/10',
             },
           ].map((item) => (
@@ -575,9 +575,9 @@ export default function ReconstitutePeptidesPage() {
               <div className={`w-8 h-8 rounded-lg ${item.bg} flex items-center justify-center mb-3`}>
                 <Syringe size={15} className={item.color} />
               </div>
-              <p className="text-xs text-zinc-500 mb-1">{item.label}</p>
+              <p className="text-xs text-gray-500 mb-1">{item.label}</p>
               <p className={`font-bold text-sm mb-2 ${item.color}`}>{item.value}</p>
-              <p className="text-xs text-zinc-500 leading-relaxed">{item.detail}</p>
+              <p className="text-xs text-gray-500 leading-relaxed">{item.detail}</p>
             </div>
           ))}
         </div>
@@ -587,8 +587,8 @@ export default function ReconstitutePeptidesPage() {
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="flex items-center gap-3 mb-8">
-            <HelpCircle size={20} className="text-violet-400" />
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">Frequently Asked Questions</h2>
+            <HelpCircle size={20} className="text-yellow-600" />
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Frequently Asked Questions</h2>
           </div>
           <div className="space-y-4">
             {faqs.map((faq, i) => (
@@ -597,8 +597,8 @@ export default function ReconstitutePeptidesPage() {
                 className="card p-6 border"
                 style={{ borderColor: 'var(--border)', background: 'var(--bg)' }}
               >
-                <h3 className="font-bold text-white mb-3">{faq.q}</h3>
-                <p className="text-sm text-zinc-400 leading-relaxed">{faq.a}</p>
+                <h3 className="font-bold text-gray-900 mb-3">{faq.q}</h3>
+                <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -608,10 +608,10 @@ export default function ReconstitutePeptidesPage() {
       {/* CTA */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-10">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
             Ready to Mix Your Peptides?
           </h2>
-          <p className="text-zinc-400 max-w-xl mx-auto">
+          <p className="text-gray-500 max-w-xl mx-auto">
             Get pharmaceutical-grade bacteriostatic water for safe, reliable reconstitution — or
             read the injection guide for the next step after mixing.
           </p>

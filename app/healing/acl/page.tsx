@@ -36,7 +36,7 @@ const timeline = [
     title: 'Tissue Priming',
     description:
       'Begin BPC-157 500mcg twice daily in the two weeks before surgery. Pre-operative peptide loading primes the local tissue environment, upregulates growth factor receptors, and may reduce post-surgical swelling. Some surgeons report cleaner operative fields in patients who pre-loaded BPC-157.',
-    color: 'text-zinc-400',
+    color: 'text-gray-500',
     border: 'border-zinc-600/30',
     bg: 'bg-zinc-500/10',
   },
@@ -46,9 +46,9 @@ const timeline = [
     title: 'Swelling Reduction & Initial Healing',
     description:
       'BPC-157 500mcg twice daily near the knee + TB-500 10mg/week loading dose. The loading phase of TB-500 accelerates systemic anti-inflammatory effects and initiates ligament fibroblast recruitment. Post-surgical swelling and pain typically decrease 30–50% faster versus no peptide use.',
-    color: 'text-violet-400',
-    border: 'border-violet-500/30',
-    bg: 'bg-violet-500/10',
+    color: 'text-yellow-600',
+    border: 'border-yellow-400/40',
+    bg: 'bg-yellow-50',
   },
   {
     phase: 'Post-Op',
@@ -56,7 +56,7 @@ const timeline = [
     title: 'Ligament Remodeling',
     description:
       'Shift TB-500 to 5mg/week maintenance. BPC-157 continues driving collagen synthesis and angiogenesis. The graft (patellar tendon or hamstring) begins remodeling into ligament tissue — a process called "ligamentization" that BPC-157 directly accelerates. Range of motion and early strength training resumes.',
-    color: 'text-cyan-400',
+    color: 'text-yellow-600',
     border: 'border-cyan-500/30',
     bg: 'bg-cyan-500/10',
   },
@@ -66,9 +66,9 @@ const timeline = [
     title: 'Strength Rebuilding',
     description:
       'Peptide protocol can be tapered or continued at maintenance dose. Quadriceps and hamstring symmetry returns. Agility, proprioception, and sport-specific training resume. Graft maturation continues for up to 12–18 months but the functional recovery phase is largely complete.',
-    color: 'text-violet-400',
-    border: 'border-violet-500/30',
-    bg: 'bg-violet-500/10',
+    color: 'text-yellow-600',
+    border: 'border-yellow-400/40',
+    bg: 'bg-yellow-50',
   },
 ];
 
@@ -97,26 +97,26 @@ export default function ACLPage() {
       {/* Hero */}
       <section className="relative pt-14 pb-12 sm:pt-28 sm:pb-20 overflow-hidden grid-bg">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-20 left-1/4 w-96 h-96 bg-violet-600/10 rounded-full blur-3xl" />
+          <div className="absolute top-20 left-1/4 w-96 h-96 bg-gray-900/10 rounded-full blur-3xl" />
           <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-cyan-500/8 rounded-full blur-3xl" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 mb-5 flex-wrap">
-            <Link href="/" className="badge hover:text-white transition-colors">Home</Link>
-            <ChevronRight size={14} className="text-zinc-600" />
-            <Link href="/healing" className="badge hover:text-white transition-colors">Healing</Link>
-            <ChevronRight size={14} className="text-zinc-600" />
+            <Link href="/" className="badge hover:text-gray-900 transition-colors">Home</Link>
+            <ChevronRight size={14} className="text-gray-400" />
+            <Link href="/healing" className="badge hover:text-gray-900 transition-colors">Healing</Link>
+            <ChevronRight size={14} className="text-gray-400" />
             <span className="badge badge-cyan">ACL Recovery</span>
           </div>
 
           <div className="max-w-3xl">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-              <span className="text-white">BPC-157 for </span>
+              <span className="text-gray-900">BPC-157 for </span>
               <span className="gradient-text">ACL Recovery</span>
             </h1>
-            <p className="text-lg text-zinc-400 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
               ACL reconstruction is one of the most demanding recovery timelines in sports medicine.
               BPC-157 and TB-500 address the core biological bottlenecks — graft ligamentization,
               post-surgical inflammation, and bone-tunnel integration — to accelerate every phase.
@@ -135,16 +135,16 @@ export default function ACLPage() {
           {/* Stat strip */}
           <div className="mt-10 sm:mt-14 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {[
-              { icon: <Zap size={18} className="text-violet-400" />, value: '24 wk', label: 'Full recovery timeline' },
-              { icon: <Clock size={18} className="text-cyan-400" />, value: '2 wk', label: 'Pre-op tissue priming' },
-              { icon: <Syringe size={18} className="text-violet-400" />, value: '500mcg', label: 'BPC-157 per dose' },
-              { icon: <Shield size={18} className="text-cyan-400" />, value: '10mg', label: 'TB-500 loading dose/wk' },
+              { icon: <Zap size={18} className="text-yellow-600" />, value: '24 wk', label: 'Full recovery timeline' },
+              { icon: <Clock size={18} className="text-yellow-600" />, value: '2 wk', label: 'Pre-op tissue priming' },
+              { icon: <Syringe size={18} className="text-yellow-600" />, value: '500mcg', label: 'BPC-157 per dose' },
+              { icon: <Shield size={18} className="text-yellow-600" />, value: '10mg', label: 'TB-500 loading dose/wk' },
             ].map((stat) => (
               <div key={stat.label} className="card p-4 flex items-start gap-3">
                 <div className="mt-0.5">{stat.icon}</div>
                 <div>
-                  <p className="text-xl font-bold text-white">{stat.value}</p>
-                  <p className="text-xs text-zinc-500 mt-0.5">{stat.label}</p>
+                  <p className="text-xl font-bold text-gray-900">{stat.value}</p>
+                  <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -157,10 +157,10 @@ export default function ACLPage() {
       {/* Protocol Overview — Pre & Post */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <span className="badge badge-cyan mb-4 inline-block">Protocol Overview</span>
-        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           Pre- &amp; Post-Surgery Protocol
         </h2>
-        <p className="text-zinc-400 mb-10 max-w-2xl">
+        <p className="text-gray-500 mb-10 max-w-2xl">
           The ACL protocol is divided into two phases: pre-operative tissue priming and
           post-operative recovery. Both phases are critical for optimal outcomes.
         </p>
@@ -173,55 +173,55 @@ export default function ACLPage() {
           >
             <div className="flex items-center gap-2 mb-4">
               <span className="badge">Pre-Surgery</span>
-              <span className="text-xs text-zinc-500">Week −2 to 0</span>
+              <span className="text-xs text-gray-500">Week −2 to 0</span>
             </div>
-            <h3 className="font-bold text-white mb-4">Tissue Priming Phase</h3>
+            <h3 className="font-bold text-gray-900 mb-4">Tissue Priming Phase</h3>
             <div className="space-y-3">
               <div className="flex justify-between text-sm">
-                <span className="text-zinc-500">BPC-157 dose</span>
-                <span className="text-white font-semibold">500 mcg × 2 daily</span>
+                <span className="text-gray-500">BPC-157 dose</span>
+                <span className="text-gray-900 font-semibold">500 mcg × 2 daily</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-zinc-500">TB-500</span>
-                <span className="text-white font-semibold">Optional / 5mg/week</span>
+                <span className="text-gray-500">TB-500</span>
+                <span className="text-gray-900 font-semibold">Optional / 5mg/week</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-zinc-500">Duration</span>
-                <span className="text-white font-semibold">2 weeks before surgery</span>
+                <span className="text-gray-500">Duration</span>
+                <span className="text-gray-900 font-semibold">2 weeks before surgery</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-zinc-500">Goal</span>
-                <span className="text-white font-semibold">Upregulate healing receptors</span>
+                <span className="text-gray-500">Goal</span>
+                <span className="text-gray-900 font-semibold">Upregulate healing receptors</span>
               </div>
             </div>
           </div>
 
           {/* Post-op Loading */}
           <div
-            className="card p-6 border border-violet-500/30"
+            className="card p-6 border border-yellow-400/40"
             style={{ background: 'var(--bg-card)' }}
           >
             <div className="flex items-center gap-2 mb-4">
               <span className="badge badge-cyan">Post-Surgery</span>
-              <span className="text-xs text-zinc-500">Week 1–4</span>
+              <span className="text-xs text-gray-500">Week 1–4</span>
             </div>
-            <h3 className="font-bold text-white mb-4">Loading Phase</h3>
+            <h3 className="font-bold text-gray-900 mb-4">Loading Phase</h3>
             <div className="space-y-3">
               <div className="flex justify-between text-sm">
-                <span className="text-zinc-500">BPC-157</span>
-                <span className="text-white font-semibold">500 mcg × 2 daily</span>
+                <span className="text-gray-500">BPC-157</span>
+                <span className="text-gray-900 font-semibold">500 mcg × 2 daily</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-zinc-500">TB-500</span>
-                <span className="text-white font-semibold">10 mg/week loading</span>
+                <span className="text-gray-500">TB-500</span>
+                <span className="text-gray-900 font-semibold">10 mg/week loading</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-zinc-500">Inject near</span>
-                <span className="text-white font-semibold">Knee (BPC) / Abdomen (TB)</span>
+                <span className="text-gray-500">Inject near</span>
+                <span className="text-gray-900 font-semibold">Knee (BPC) / Abdomen (TB)</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-zinc-500">Start</span>
-                <span className="text-white font-semibold">48–72 hrs post-op</span>
+                <span className="text-gray-500">Start</span>
+                <span className="text-gray-900 font-semibold">48–72 hrs post-op</span>
               </div>
             </div>
           </div>
@@ -233,21 +233,21 @@ export default function ACLPage() {
           >
             <div className="flex items-center gap-2 mb-4">
               <span className="badge badge-cyan">Post-Surgery</span>
-              <span className="text-xs text-zinc-500">Week 5–12+</span>
+              <span className="text-xs text-gray-500">Week 5–12+</span>
             </div>
-            <h3 className="font-bold text-white mb-4">Maintenance &amp; Remodeling Phase</h3>
+            <h3 className="font-bold text-gray-900 mb-4">Maintenance &amp; Remodeling Phase</h3>
             <div className="grid sm:grid-cols-3 gap-4">
               <div className="flex justify-between sm:flex-col gap-1 text-sm">
-                <span className="text-zinc-500">BPC-157</span>
-                <span className="text-white font-semibold">500 mcg × 2 daily (continue)</span>
+                <span className="text-gray-500">BPC-157</span>
+                <span className="text-gray-900 font-semibold">500 mcg × 2 daily (continue)</span>
               </div>
               <div className="flex justify-between sm:flex-col gap-1 text-sm">
-                <span className="text-zinc-500">TB-500 (maintenance)</span>
-                <span className="text-white font-semibold">5 mg/week</span>
+                <span className="text-gray-500">TB-500 (maintenance)</span>
+                <span className="text-gray-900 font-semibold">5 mg/week</span>
               </div>
               <div className="flex justify-between sm:flex-col gap-1 text-sm">
-                <span className="text-zinc-500">Total duration</span>
-                <span className="text-white font-semibold">12–16 weeks post-op</span>
+                <span className="text-gray-500">Total duration</span>
+                <span className="text-gray-900 font-semibold">12–16 weeks post-op</span>
               </div>
             </div>
           </div>
@@ -258,7 +258,7 @@ export default function ACLPage() {
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <span className="badge mb-4 inline-block">Mechanism</span>
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
             How Peptides Accelerate ACL Healing
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -266,37 +266,37 @@ export default function ACLPage() {
               {
                 title: 'Graft Ligamentization',
                 desc: "BPC-157 accelerates the remodeling of tendon graft tissue into ligament — the most time-sensitive phase of ACL recovery. By upregulating fibroblast signaling, it shortens the ligamentization window significantly.",
-                accent: 'text-violet-400',
-                bg: 'bg-violet-500/10',
+                accent: 'text-yellow-600',
+                bg: 'bg-yellow-50',
               },
               {
                 title: 'Bone-Tunnel Integration',
                 desc: 'The graft-to-bone tunnel interface is a critical healing point. BPC-157 promotes periosteal growth and collagen organization at the tunnel aperture, improving fixation strength during the vulnerable early weeks.',
-                accent: 'text-cyan-400',
+                accent: 'text-yellow-600',
                 bg: 'bg-cyan-500/10',
               },
               {
                 title: 'Swelling & Hemarthrosis',
                 desc: 'Post-surgical knee effusion delays rehabilitation. BPC-157 modulates the inflammatory mediators responsible for excessive fluid accumulation, reducing swelling faster and allowing earlier quad activation.',
-                accent: 'text-violet-400',
-                bg: 'bg-violet-500/10',
+                accent: 'text-yellow-600',
+                bg: 'bg-yellow-50',
               },
               {
                 title: 'Fibrosis Prevention (TB-500)',
                 desc: 'Post-surgical adhesions can limit long-term range of motion. TB-500 prevents excessive fibrosis formation during the healing phase, preserving joint mobility and preventing "cyclops lesion" formation.',
-                accent: 'text-cyan-400',
+                accent: 'text-yellow-600',
                 bg: 'bg-cyan-500/10',
               },
               {
                 title: 'Angiogenesis at the Graft',
                 desc: 'The transplanted graft undergoes avascular necrosis early post-surgery before revascularization occurs. BPC-157 accelerates new vessel ingrowth into the graft, shortening the vulnerable avascular window.',
-                accent: 'text-violet-400',
-                bg: 'bg-violet-500/10',
+                accent: 'text-yellow-600',
+                bg: 'bg-yellow-50',
               },
               {
                 title: 'Quad Atrophy Mitigation',
                 desc: 'BPC-157 has demonstrated direct effects on muscle fiber preservation and satellite cell activation. Combined with early quad-setting exercises, it helps preserve the quadriceps mass that is lost rapidly after ACL surgery.',
-                accent: 'text-cyan-400',
+                accent: 'text-yellow-600',
                 bg: 'bg-cyan-500/10',
               },
             ].map((item) => (
@@ -308,8 +308,8 @@ export default function ACLPage() {
                 <div className={`w-8 h-8 rounded-lg ${item.bg} flex items-center justify-center mb-3`}>
                   <CheckCircle2 size={16} className={item.accent} />
                 </div>
-                <h3 className="font-bold text-white text-sm mb-2">{item.title}</h3>
-                <p className="text-xs text-zinc-500 leading-relaxed">{item.desc}</p>
+                <h3 className="font-bold text-gray-900 text-sm mb-2">{item.title}</h3>
+                <p className="text-xs text-gray-500 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -321,10 +321,10 @@ export default function ACLPage() {
       {/* Timeline */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <span className="badge badge-cyan mb-4 inline-block">Recovery Timeline</span>
-        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           ACL Recovery Timeline with Peptides
         </h2>
-        <p className="text-zinc-400 mb-10 max-w-2xl">
+        <p className="text-gray-500 mb-10 max-w-2xl">
           Standard ACL recovery is 9–12 months. With optimized peptide support and rehabilitation,
           many athletes achieve return-to-sport criteria in 6–8 months.
         </p>
@@ -340,7 +340,7 @@ export default function ACLPage() {
                   className="w-10 h-10 rounded-full border-2 flex items-center justify-center shrink-0 z-10"
                   style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
                 >
-                  <span className="text-xs font-bold text-zinc-400">{i + 1}</span>
+                  <span className="text-xs font-bold text-gray-500">{i + 1}</span>
                 </div>
                 <div
                   className={`card flex-1 p-5 border ${item.border}`}
@@ -352,8 +352,8 @@ export default function ACLPage() {
                     </span>
                     <span className="badge text-[10px]">{item.phase}</span>
                   </div>
-                  <h3 className="font-bold text-white mb-2">{item.title}</h3>
-                  <p className="text-sm text-zinc-400 leading-relaxed">{item.description}</p>
+                  <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
+                  <p className="text-sm text-gray-500 leading-relaxed">{item.description}</p>
                 </div>
               </div>
             ))}
@@ -365,8 +365,8 @@ export default function ACLPage() {
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="flex items-center gap-3 mb-8">
-            <HelpCircle size={20} className="text-violet-400" />
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">Frequently Asked Questions</h2>
+            <HelpCircle size={20} className="text-yellow-600" />
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Frequently Asked Questions</h2>
           </div>
           <div className="space-y-4">
             {faqs.map((faq, i) => (
@@ -375,8 +375,8 @@ export default function ACLPage() {
                 className="card p-6 border"
                 style={{ borderColor: 'var(--border)', background: 'var(--bg)' }}
               >
-                <h3 className="font-bold text-white mb-3">{faq.q}</h3>
-                <p className="text-sm text-zinc-400 leading-relaxed">{faq.a}</p>
+                <h3 className="font-bold text-gray-900 mb-3">{faq.q}</h3>
+                <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -388,10 +388,10 @@ export default function ACLPage() {
       {/* CTA */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-10">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
             Start Your ACL Recovery Protocol
           </h2>
-          <p className="text-zinc-400 max-w-xl mx-auto">
+          <p className="text-gray-500 max-w-xl mx-auto">
             The Ultimate Healing Stack includes BPC-157 and TB-500 with complete ACL protocol
             guidance for both pre- and post-surgical phases.
           </p>
@@ -406,7 +406,7 @@ export default function ACLPage() {
           </Link>
         </div>
         <div className="mt-8 text-center">
-          <Link href="/healing" className="text-sm text-zinc-500 hover:text-zinc-300 transition-colors">
+          <Link href="/healing" className="text-sm text-gray-500 hover:text-gray-700 transition-colors">
             ← Back to All Healing Protocols
           </Link>
         </div>

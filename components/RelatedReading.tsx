@@ -12,18 +12,18 @@ export default function RelatedReading({ pageKey }: RelatedReadingProps) {
 
   return (
     <section className="max-w-4xl mx-auto px-4 sm:px-6 py-14">
-      <p className="text-xs font-semibold tracking-widest text-violet-400 uppercase mb-5">
+      <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-5">
         Related Reading
       </p>
       <ul className="grid sm:grid-cols-2 gap-3">
         {links.map((link) => {
           const isExternal = link.href.startsWith('http');
           const className =
-            'flex items-center gap-2 text-sm text-zinc-400 hover:text-violet-400 transition-colors group';
+            'flex items-center gap-2 text-sm text-gray-500 hover:text-yellow-600 transition-colors group';
           const icon = (
             <ArrowRight
               size={13}
-              className="shrink-0 text-violet-600 group-hover:text-violet-400 transition-colors"
+              className="shrink-0 text-violet-600 group-hover:text-yellow-600 transition-colors"
             />
           );
           return (

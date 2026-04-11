@@ -50,7 +50,7 @@ const peptides = [
       'Shorter acting than GHRH peptides',
     ],
     best: 'Maximum direct muscle growth and hyperplasia',
-    color: 'text-cyan-400',
+    color: 'text-yellow-600',
     border: 'border-cyan-500/40',
     glow: 'ring-1 ring-cyan-500/20',
   },
@@ -74,7 +74,7 @@ const peptides = [
       'Requires 2–3 injections daily for optimal effect',
     ],
     best: 'Whole-body recomposition, sleep improvement, long-term GH optimization',
-    color: 'text-violet-400',
+    color: 'text-yellow-600',
     border: 'border-violet-500/40',
     glow: '',
   },
@@ -97,7 +97,7 @@ const peptides = [
       'Best combined with IGF-1 LR3 or GH stack for growth goals',
     ],
     best: 'Athletes who keep getting injured and cannot maintain training consistency',
-    color: 'text-zinc-400',
+    color: 'text-gray-500',
     border: 'border-zinc-600/40',
     glow: '',
   },
@@ -121,7 +121,7 @@ const peptides = [
       'Not needed for beginners',
     ],
     best: 'Advanced athletes wanting maximum performance and physique results',
-    color: 'text-cyan-400',
+    color: 'text-yellow-600',
     border: 'border-cyan-500/30',
     glow: '',
   },
@@ -152,14 +152,14 @@ export default function BestPeptideMuscleGrowthPage() {
       {/* Hero */}
       <section className="relative pt-14 pb-12 sm:pt-28 sm:pb-20 overflow-hidden grid-bg">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-20 left-1/4 w-96 h-96 bg-violet-600/10 rounded-full blur-3xl" />
+          <div className="absolute top-20 left-1/4 w-96 h-96 bg-gray-900/10 rounded-full blur-3xl" />
           <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-cyan-500/8 rounded-full blur-3xl" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex items-center gap-2 mb-5 flex-wrap">
-            <Link href="/" className="badge hover:text-white transition-colors">Home</Link>
-            <ChevronRight size={14} className="text-zinc-600" />
+            <Link href="/" className="badge hover:text-gray-900 transition-colors">Home</Link>
+            <ChevronRight size={14} className="text-gray-400" />
             <span className="badge badge-cyan">Best Peptide for Muscle Growth</span>
           </div>
 
@@ -169,10 +169,10 @@ export default function BestPeptideMuscleGrowthPage() {
               <span className="badge badge-cyan">Updated March 2026</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-              <span className="text-white">Best Peptide for </span>
+              <span className="text-gray-900">Best Peptide for </span>
               <span className="gradient-text">Muscle Growth</span>
             </h1>
-            <p className="text-lg text-zinc-400 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
               Peptides for muscle growth work through distinct pathways — from direct IGF-1 receptor
               activation to GH axis optimization and recovery support. The right choice depends on
               your training stage, goals, and recovery capacity.
@@ -191,16 +191,16 @@ export default function BestPeptideMuscleGrowthPage() {
           {/* Stats */}
           <div className="mt-10 sm:mt-14 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {[
-              { icon: <TrendingUp size={18} className="text-cyan-400" />, value: '3+', label: 'Distinct anabolic pathways' },
-              { icon: <Zap size={18} className="text-violet-400" />, value: '1–2wk', label: 'IGF-1 LR3 onset' },
-              { icon: <Star size={18} className="text-cyan-400" />, value: 'IGF-1', label: 'Fastest muscle builder' },
-              { icon: <Shield size={18} className="text-violet-400" />, value: 'BPC-157', label: 'Recovery foundation' },
+              { icon: <TrendingUp size={18} className="text-yellow-600" />, value: '3+', label: 'Distinct anabolic pathways' },
+              { icon: <Zap size={18} className="text-yellow-600" />, value: '1–2wk', label: 'IGF-1 LR3 onset' },
+              { icon: <Star size={18} className="text-yellow-600" />, value: 'IGF-1', label: 'Fastest muscle builder' },
+              { icon: <Shield size={18} className="text-yellow-600" />, value: 'BPC-157', label: 'Recovery foundation' },
             ].map((stat) => (
               <div key={stat.label} className="card p-4 flex items-start gap-3">
                 <div className="mt-0.5">{stat.icon}</div>
                 <div>
-                  <p className="text-xl font-bold text-white">{stat.value}</p>
-                  <p className="text-xs text-zinc-500 mt-0.5">{stat.label}</p>
+                  <p className="text-xl font-bold text-gray-900">{stat.value}</p>
+                  <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -213,7 +213,7 @@ export default function BestPeptideMuscleGrowthPage() {
       {/* Quick Answer */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <span className="badge badge-cyan mb-4 inline-block">Quick Answer</span>
-        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
           It Depends on Your Goal
         </h2>
         <div className="grid md:grid-cols-2 gap-5">
@@ -222,20 +222,20 @@ export default function BestPeptideMuscleGrowthPage() {
             style={{ background: 'var(--bg-card)' }}
           >
             <span className="badge badge-cyan mb-3 inline-block">Direct Muscle Growth</span>
-            <h3 className="text-xl font-bold text-white mb-2">IGF-1 LR3</h3>
-            <p className="text-sm text-zinc-400 leading-relaxed">
+            <h3 className="text-xl font-bold text-gray-900 mb-2">IGF-1 LR3</h3>
+            <p className="text-sm text-gray-500 leading-relaxed">
               For maximum direct anabolic effect, IGF-1 LR3 is unmatched. It activates IGF-1
               receptors directly on muscle cells, driving both hypertrophy (cell growth) and
               hyperplasia (new fiber formation) — the only peptide proven to do both.
             </p>
           </div>
           <div
-            className="card p-6 border border-violet-500/30 ring-1 ring-violet-500/10"
+            className="card p-6 border border-yellow-400/40 ring-1 ring-violet-500/10"
             style={{ background: 'var(--bg-card)' }}
           >
             <span className="badge mb-3 inline-block">Whole-Body Recomposition</span>
-            <h3 className="text-xl font-bold text-white mb-2">CJC-1295 + Ipamorelin</h3>
-            <p className="text-sm text-zinc-400 leading-relaxed">
+            <h3 className="text-xl font-bold text-gray-900 mb-2">CJC-1295 + Ipamorelin</h3>
+            <p className="text-sm text-gray-500 leading-relaxed">
               For sustainable recomposition — gaining lean mass while reducing body fat, improving
               sleep, and supporting long-term recovery — the GH stack (CJC-1295 + Ipamorelin)
               optimizes the entire GH axis with an excellent safety profile.
@@ -248,7 +248,7 @@ export default function BestPeptideMuscleGrowthPage() {
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <span className="badge mb-4 inline-block">Full Comparison</span>
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
             Muscle Growth Peptides Compared
           </h2>
           <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-5">
@@ -259,35 +259,35 @@ export default function BestPeptideMuscleGrowthPage() {
                 style={{ background: 'var(--bg)' }}
               >
                 <div className="flex items-start justify-between gap-2 mb-2">
-                  <h3 className="font-bold text-white">{p.name}</h3>
+                  <h3 className="font-bold text-gray-900">{p.name}</h3>
                   <span className={`${p.badgeClass} shrink-0`}>{p.badge}</span>
                 </div>
                 <p className={`text-sm font-semibold ${p.color} mb-1`}>{p.headline}</p>
-                <p className="text-xs text-zinc-500 mb-4">{p.mechanism}</p>
+                <p className="text-xs text-gray-500 mb-4">{p.mechanism}</p>
 
                 <div className="space-y-1.5 text-xs mb-4">
                   <div>
-                    <span className="text-zinc-500">Dosing: </span>
-                    <span className="text-zinc-300">{p.dosing}</span>
+                    <span className="text-gray-500">Dosing: </span>
+                    <span className="text-gray-700">{p.dosing}</span>
                   </div>
                   <div>
-                    <span className="text-zinc-500">Cycle: </span>
-                    <span className="text-zinc-300">{p.cycle}</span>
+                    <span className="text-gray-500">Cycle: </span>
+                    <span className="text-gray-700">{p.cycle}</span>
                   </div>
                 </div>
 
                 <div className="space-y-1.5 mb-4">
                   {p.pros.map((pro) => (
                     <div key={pro} className="flex items-start gap-1.5">
-                      <CheckCircle2 size={12} className="text-cyan-400 mt-0.5 shrink-0" />
-                      <p className="text-xs text-zinc-400">{pro}</p>
+                      <CheckCircle2 size={12} className="text-yellow-600 mt-0.5 shrink-0" />
+                      <p className="text-xs text-gray-500">{pro}</p>
                     </div>
                   ))}
                 </div>
 
                 <div className="mt-auto pt-3 border-t" style={{ borderColor: 'var(--border)' }}>
-                  <p className="text-[10px] text-zinc-500 uppercase tracking-wider mb-1">Best for</p>
-                  <p className="text-xs text-zinc-300">{p.best}</p>
+                  <p className="text-[10px] text-gray-500 uppercase tracking-wider mb-1">Best for</p>
+                  <p className="text-xs text-gray-700">{p.best}</p>
                 </div>
               </div>
             ))}
@@ -300,7 +300,7 @@ export default function BestPeptideMuscleGrowthPage() {
       {/* Decision Guide */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <span className="badge badge-cyan mb-4 inline-block">Decision Guide</span>
-        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
           Which Muscle Peptide Is Right for You?
         </h2>
         <div className="grid sm:grid-cols-3 gap-5">
@@ -328,8 +328,8 @@ export default function BestPeptideMuscleGrowthPage() {
                 'Improved sleep and recovery quality',
                 'Best for sustained 3–6 month protocols',
               ],
-              color: 'text-violet-300',
-              border: 'border-violet-500/30',
+              color: 'text-yellow-500',
+              border: 'border-yellow-400/40',
             },
             {
               condition: 'I train hard but keep getting injured',
@@ -341,7 +341,7 @@ export default function BestPeptideMuscleGrowthPage() {
                 'Run 8–12 weeks then layer in GH stack',
                 'Your recovery capacity is the limiting factor',
               ],
-              color: 'text-zinc-300',
+              color: 'text-gray-700',
               border: 'border-zinc-600/40',
             },
           ].map((item) => (
@@ -350,19 +350,19 @@ export default function BestPeptideMuscleGrowthPage() {
               className={`card p-6 border ${item.border} flex flex-col`}
               style={{ background: 'var(--bg-card)' }}
             >
-              <p className="text-xs text-zinc-500 mb-2">{item.condition}</p>
+              <p className="text-xs text-gray-500 mb-2">{item.condition}</p>
               <h3 className={`font-bold text-lg mb-4 ${item.color}`}>{item.recommendation}</h3>
               <ul className="space-y-2.5 flex-1">
                 {item.points.map((pt) => (
                   <li key={pt} className="flex items-start gap-2">
                     <ArrowRight size={13} className="text-violet-500 mt-0.5 shrink-0" />
-                    <p className="text-xs text-zinc-400">{pt}</p>
+                    <p className="text-xs text-gray-500">{pt}</p>
                   </li>
                 ))}
               </ul>
               <Link
                 href={item.href}
-                className="mt-5 text-xs font-semibold text-violet-400 hover:text-violet-300 transition-colors flex items-center gap-1"
+                className="mt-5 text-xs font-semibold text-yellow-600 hover:text-yellow-500 transition-colors flex items-center gap-1"
               >
                 View Product <ArrowRight size={12} />
               </Link>
@@ -375,8 +375,8 @@ export default function BestPeptideMuscleGrowthPage() {
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="flex items-center gap-3 mb-8">
-            <HelpCircle size={20} className="text-violet-400" />
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">Frequently Asked Questions</h2>
+            <HelpCircle size={20} className="text-yellow-600" />
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Frequently Asked Questions</h2>
           </div>
           <div className="space-y-4">
             {faqs.map((faq, i) => (
@@ -385,8 +385,8 @@ export default function BestPeptideMuscleGrowthPage() {
                 className="card p-6 border"
                 style={{ borderColor: 'var(--border)', background: 'var(--bg)' }}
               >
-                <h3 className="font-bold text-white mb-3">{faq.q}</h3>
-                <p className="text-sm text-zinc-400 leading-relaxed">{faq.a}</p>
+                <h3 className="font-bold text-gray-900 mb-3">{faq.q}</h3>
+                <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -397,10 +397,10 @@ export default function BestPeptideMuscleGrowthPage() {
 
       {/* CTA */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 text-center">
-        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
           Ready to Build Your Protocol?
         </h2>
-        <p className="text-zinc-400 max-w-xl mx-auto mb-8">
+        <p className="text-gray-500 max-w-xl mx-auto mb-8">
           Explore the Performance Elite Stack for the complete muscle growth system, or start
           with individual compounds.
         </p>
@@ -414,13 +414,13 @@ export default function BestPeptideMuscleGrowthPage() {
           </Link>
         </div>
         <div className="mt-6 flex flex-wrap justify-center gap-6 text-sm">
-          <Link href="/products/igf-1-lr3" className="text-zinc-500 hover:text-zinc-300 transition-colors">
+          <Link href="/products/igf-1-lr3" className="text-gray-500 hover:text-gray-700 transition-colors">
             IGF-1 LR3
           </Link>
-          <Link href="/products/ipamorelin-cjc" className="text-zinc-500 hover:text-zinc-300 transition-colors">
+          <Link href="/products/ipamorelin-cjc" className="text-gray-500 hover:text-gray-700 transition-colors">
             Ipamorelin / CJC-1295
           </Link>
-          <Link href="/products/bpc-157" className="text-zinc-500 hover:text-zinc-300 transition-colors">
+          <Link href="/products/bpc-157" className="text-gray-500 hover:text-gray-700 transition-colors">
             BPC-157
           </Link>
         </div>

@@ -63,10 +63,10 @@ type CategoryTheme = {
 
 const categoryThemes: Record<string, CategoryTheme> = {
   'Healing & Recovery': {
-    glow: 'rgba(124,58,237,0.18)',
-    badge: 'rgba(124,58,237,0.12)',
+    glow: 'rgba(234,179,8,0.18)',
+    badge: 'rgba(234,179,8,0.12)',
     badgeText: '#c4b5fd',
-    badgeBorder: 'rgba(124,58,237,0.3)',
+    badgeBorder: 'rgba(234,179,8,0.3)',
     accent: '#7c3aed',
     accentLight: '#a78bfa',
     icon: ShieldCheck,
@@ -81,10 +81,10 @@ const categoryThemes: Record<string, CategoryTheme> = {
     ],
   },
   'Growth Hormone': {
-    glow: 'rgba(6,182,212,0.18)',
-    badge: 'rgba(6,182,212,0.1)',
+    glow: 'rgba(245,158,11,0.18)',
+    badge: 'rgba(245,158,11,0.1)',
     badgeText: '#67e8f9',
-    badgeBorder: 'rgba(6,182,212,0.3)',
+    badgeBorder: 'rgba(245,158,11,0.3)',
     accent: '#0891b2',
     accentLight: '#22d3ee',
     icon: TrendingUp,
@@ -173,10 +173,10 @@ const categoryThemes: Record<string, CategoryTheme> = {
 }
 
 const defaultTheme: CategoryTheme = {
-  glow: 'rgba(124,58,237,0.18)',
-  badge: 'rgba(124,58,237,0.12)',
+  glow: 'rgba(234,179,8,0.18)',
+  badge: 'rgba(234,179,8,0.12)',
   badgeText: '#c4b5fd',
-  badgeBorder: 'rgba(124,58,237,0.3)',
+  badgeBorder: 'rgba(234,179,8,0.3)',
   accent: '#7c3aed',
   accentLight: '#a78bfa',
   icon: Pill,
@@ -293,15 +293,15 @@ export default async function ProductPage({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
 
-      <div className="min-h-screen" style={{ background: '#08080f' }}>
+      <div className="min-h-screen" style={{ background: '#ffffff' }}>
 
         {/* Breadcrumb */}
         <div className="border-b" style={{ borderColor: '#1e1e35' }}>
           <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3">
             <nav className="flex items-center gap-2 text-sm" style={{ color: '#71717a' }}>
-              <Link href="/" className="hover:text-violet-400 transition-colors">Home</Link>
+              <Link href="/" className="hover:text-yellow-600 transition-colors">Home</Link>
               <span>/</span>
-              <Link href="/products" className="hover:text-violet-400 transition-colors">Products</Link>
+              <Link href="/products" className="hover:text-yellow-600 transition-colors">Products</Link>
               <span>/</span>
               <span style={{ color: '#a1a1b5' }}>{product.name}</span>
             </nav>
@@ -345,12 +345,12 @@ export default async function ProductPage({
 
                 {product.image !== '' && (
                   <div className="mx-auto mb-6 rounded-2xl overflow-hidden flex items-center justify-center"
-                    style={{ width: 200, height: 260, background: '#0a0a14', border: `1px solid ${theme.badgeBorder}`, boxShadow: `0 0 60px ${theme.glow}`, margin: '0 auto 1.5rem' }}>
+                    style={{ width: 200, height: 260, background: '#ffffff', border: `1px solid ${theme.badgeBorder}`, boxShadow: `0 0 60px ${theme.glow}`, margin: '0 auto 1.5rem' }}>
                     <img src={product.image} alt={product.name} className="w-full h-full object-contain p-4" />
                   </div>
                 )}
 
-                <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-3 leading-tight">{product.name}</h1>
+                <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-3 leading-tight">{product.name}</h1>
                 <p className="text-xl font-semibold mb-6" style={{ color: theme.accentLight }}>{product.tagline}</p>
 
                 {/* Clinical stats bar */}
@@ -372,7 +372,7 @@ export default async function ProductPage({
 
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <a href={`/go/${product.slug}`} target="_blank" rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 py-3 px-8 rounded-xl font-bold text-white text-base transition-all hover:opacity-90"
+                    className="inline-flex items-center justify-center gap-2 py-3 px-8 rounded-xl font-bold text-gray-900 text-base transition-all hover:opacity-90"
                     style={{ background: `linear-gradient(135deg, ${theme.accent}, ${theme.accentLight})`, boxShadow: `0 4px 20px ${theme.glow}` }}>
                     <ExternalLink size={15} /> Get {product.name} — ${product.price.toFixed(2)}
                   </a>
@@ -395,7 +395,7 @@ export default async function ProductPage({
                       </span>
                     )}
                   </div>
-                  <h2 className="text-4xl sm:text-5xl font-extrabold text-white mb-3 leading-tight">{product.name}</h2>
+                  <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-3 leading-tight">{product.name}</h2>
                   <p className="text-lg font-medium mb-5" style={{ color: theme.accentLight }}>{product.tagline}</p>
                   <div className="flex items-center gap-2 mb-5">
                     {Array.from({ length: 5 }).map((_, i) => (
@@ -411,7 +411,7 @@ export default async function ProductPage({
                 <div className="space-y-4">
                   {product.image !== '' && (
                     <div className="rounded-2xl overflow-hidden flex items-center justify-center"
-                      style={{ background: '#0a0a14', border: `1px solid ${theme.badgeBorder}`, minHeight: '240px', boxShadow: `0 0 40px ${theme.glow}` }}>
+                      style={{ background: '#ffffff', border: `1px solid ${theme.badgeBorder}`, minHeight: '240px', boxShadow: `0 0 40px ${theme.glow}` }}>
                       <img src={product.image} alt={product.name} className="w-full h-full object-contain p-6" style={{ maxHeight: '240px' }} />
                     </div>
                   )}
@@ -426,7 +426,7 @@ export default async function ProductPage({
                     ))}
                   </div>
                   <a href={`/go/${product.slug}`} target="_blank" rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl font-bold text-sm text-white transition-all hover:opacity-90"
+                    className="flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl font-bold text-sm text-gray-900 transition-all hover:opacity-90"
                     style={{ background: `linear-gradient(135deg, ${theme.accent}, ${theme.accentLight})` }}>
                     <ExternalLink size={14} /> Get {product.name} — ${product.price.toFixed(2)}
                   </a>
@@ -450,7 +450,7 @@ export default async function ProductPage({
                       </span>
                     )}
                   </div>
-                  <h2 className="text-4xl sm:text-5xl font-extrabold text-white mb-3 leading-tight">{product.name}</h2>
+                  <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-3 leading-tight">{product.name}</h2>
                   <p className="text-lg font-medium mb-4" style={{ color: theme.accentLight }}>{product.tagline}</p>
 
                   {/* Category-specific stats */}
@@ -477,7 +477,7 @@ export default async function ProductPage({
 
                 {/* Col 2: product image */}
                 <div className="rounded-2xl overflow-hidden flex items-center justify-center"
-                  style={{ background: '#0a0a14', border: `1px solid ${theme.badgeBorder}`, minHeight: '260px', boxShadow: `0 0 40px ${theme.glow}` }}>
+                  style={{ background: '#ffffff', border: `1px solid ${theme.badgeBorder}`, minHeight: '260px', boxShadow: `0 0 40px ${theme.glow}` }}>
                   {product.image !== '' ? (
                     <img src={product.image} alt={product.name}
                       className="w-full h-full object-contain p-6" style={{ maxHeight: '260px' }} />
@@ -491,13 +491,13 @@ export default async function ProductPage({
 
                 {/* Col 3: price & CTA */}
                 <div className="rounded-2xl p-6 flex-shrink-0"
-                  style={{ background: '#0f0f1a', border: `1px solid ${theme.badgeBorder}`, boxShadow: `0 8px 40px ${theme.glow}` }}>
+                  style={{ background: '#ffffff', border: `1px solid ${theme.badgeBorder}`, boxShadow: `0 8px 40px ${theme.glow}` }}>
                   <p className="text-xs mb-1" style={{ color: '#71717a' }}>Research Grade · HPLC Tested</p>
-                  <p className="text-4xl font-extrabold text-white mb-1">${product.price.toFixed(2)}</p>
+                  <p className="text-4xl font-extrabold text-gray-900 mb-1">${product.price.toFixed(2)}</p>
                   <p className="text-xs mb-4" style={{ color: '#52525b' }}>HPLC tested · COA included</p>
                   <div className="h-px mb-4" style={{ background: `linear-gradient(90deg, transparent, ${theme.accent}, transparent)` }} />
                   <a href={`/go/${product.slug}`} target="_blank" rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl font-bold text-sm text-white mb-3 transition-all hover:opacity-90 hover:-translate-y-0.5"
+                    className="flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl font-bold text-sm text-gray-900 mb-3 transition-all hover:opacity-90 hover:-translate-y-0.5"
                     style={{ background: `linear-gradient(135deg, ${theme.accent}, ${theme.accentLight})`, boxShadow: `0 4px 20px ${theme.glow}` }}>
                     <ExternalLink size={14} /> Order Now
                   </a>
@@ -516,7 +516,7 @@ export default async function ProductPage({
         </section>
 
         {/* ── HIGHLIGHTS BAR ─────────────────────────────────── */}
-        <div style={{ background: '#0d0d1a', borderTop: '1px solid #1e1e35', borderBottom: '1px solid #1e1e35' }}>
+        <div style={{ background: '#ffffff', borderTop: '1px solid #1e1e35', borderBottom: '1px solid #1e1e35' }}>
           <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6">
             <div className="grid sm:grid-cols-3 gap-6">
               {product.highlights.map((h, i) => (
@@ -555,7 +555,7 @@ export default async function ProductPage({
                     className="w-1 h-8 rounded-full"
                     style={{ background: `linear-gradient(to bottom, ${theme.accent}, ${theme.accentLight})` }}
                   />
-                  <h2 className="text-2xl font-bold text-white">{product.deepDiveTitle}</h2>
+                  <h2 className="text-2xl font-bold text-gray-900">{product.deepDiveTitle}</h2>
                 </div>
                 <p className="text-xs uppercase tracking-widest mb-6 ml-4" style={{ color: theme.accentLight }}>
                   Mechanism · Evidence · Application
@@ -563,7 +563,7 @@ export default async function ProductPage({
 
                 <div
                   className="rounded-2xl border p-6 sm:p-8"
-                  style={{ background: '#0d0d1a', borderColor: '#1e1e35' }}
+                  style={{ background: '#ffffff', borderColor: '#1e1e35' }}
                 >
                   {renderDescription(product.fullDescription, theme.accentLight)}
                 </div>
@@ -571,7 +571,7 @@ export default async function ProductPage({
 
               {/* Benefits */}
               <section>
-                <h2 className="text-xl font-bold text-white mb-6">
+                <h2 className="text-xl font-bold text-gray-900 mb-6">
                   {theme.benefitsHeading}
                 </h2>
                 <div className="grid sm:grid-cols-2 gap-3">
@@ -579,7 +579,7 @@ export default async function ProductPage({
                     <div
                       key={i}
                       className="flex items-start gap-3 rounded-xl p-4 border transition-colors"
-                      style={{ background: '#0d0d1a', borderColor: '#1e1e35' }}
+                      style={{ background: '#ffffff', borderColor: '#1e1e35' }}
                     >
                       <div
                         className="mt-0.5 shrink-0 w-5 h-5 rounded-full flex items-center justify-center"
@@ -595,7 +595,7 @@ export default async function ProductPage({
 
               {/* Protocol */}
               <section>
-                <h2 className="text-xl font-bold text-white mb-6">
+                <h2 className="text-xl font-bold text-gray-900 mb-6">
                   {theme.protocolHeading}
                 </h2>
                 <div
@@ -614,7 +614,7 @@ export default async function ProductPage({
                       {product.name} Protocol Guide
                     </p>
                   </div>
-                  <div className="p-6" style={{ background: '#0d0d1a' }}>
+                  <div className="p-6" style={{ background: '#ffffff' }}>
                     {product.protocol.split('\n').map((line, i) => {
                       if (line.startsWith('**') && line.endsWith('**')) {
                         return (
@@ -649,7 +649,7 @@ export default async function ProductPage({
                       className="w-1 h-8 rounded-full"
                       style={{ background: `linear-gradient(to bottom, ${theme.accent}, ${theme.accentLight})` }}
                     />
-                    <h2 className="text-2xl font-bold text-white">Week-by-Week Results Timeline</h2>
+                    <h2 className="text-2xl font-bold text-gray-900">Week-by-Week Results Timeline</h2>
                   </div>
                   <p className="text-xs uppercase tracking-widest mb-6 ml-4" style={{ color: theme.accentLight }}>
                     What to expect · Phase by phase
@@ -659,7 +659,7 @@ export default async function ProductPage({
                       <div
                         key={i}
                         className="rounded-2xl border p-5 flex flex-col gap-3"
-                        style={{ background: '#0d0d1a', borderColor: '#1e1e35' }}
+                        style={{ background: '#ffffff', borderColor: '#1e1e35' }}
                       >
                         <span
                           className="inline-block self-start px-2.5 py-1 rounded-full text-[11px] font-bold"
@@ -667,7 +667,7 @@ export default async function ProductPage({
                         >
                           {entry.period}
                         </span>
-                        <p className="text-sm font-bold text-white leading-snug">{entry.title}</p>
+                        <p className="text-sm font-bold text-gray-900 leading-snug">{entry.title}</p>
                         <p className="text-xs leading-relaxed" style={{ color: '#a1a1aa' }}>{entry.description}</p>
                       </div>
                     ))}
@@ -683,7 +683,7 @@ export default async function ProductPage({
               {/* Sticky CTA repeat */}
               <div
                 className="rounded-2xl p-5 border"
-                style={{ background: '#0d0d1a', borderColor: theme.badgeBorder }}
+                style={{ background: '#ffffff', borderColor: theme.badgeBorder }}
               >
                 <div className="flex items-center gap-3 mb-4">
                   {product.image !== '' && (
@@ -691,21 +691,21 @@ export default async function ProductPage({
                       src={product.image}
                       alt={product.name}
                       className="w-16 h-16 object-contain rounded-xl"
-                      style={{ background: '#0a0a14', padding: '4px' }}
+                      style={{ background: '#ffffff', padding: '4px' }}
                       loading="lazy"
                     />
                   )}
                   <div>
-                    <p className="text-sm font-bold text-white">{product.name}</p>
+                    <p className="text-sm font-bold text-gray-900">{product.name}</p>
                     <p className="text-xs" style={{ color: '#71717a' }}>HPLC Tested · COA Verified</p>
                   </div>
                 </div>
-                <p className="text-2xl font-extrabold text-white mb-3">${product.price.toFixed(2)}</p>
+                <p className="text-2xl font-extrabold text-gray-900 mb-3">${product.price.toFixed(2)}</p>
                 <a
                   href={`/go/${product.slug}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl font-bold text-sm text-white mb-2 transition-all hover:opacity-90"
+                  className="flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl font-bold text-sm text-gray-900 mb-2 transition-all hover:opacity-90"
                   style={{ background: `linear-gradient(135deg, ${theme.accent}, ${theme.accentLight})` }}
                 >
                   <ExternalLink size={13} /> Order Now
@@ -716,7 +716,7 @@ export default async function ProductPage({
               {/* Category info box */}
               <div
                 className="rounded-2xl p-5 border"
-                style={{ background: '#0d0d1a', borderColor: '#1e1e35' }}
+                style={{ background: '#ffffff', borderColor: '#1e1e35' }}
               >
                 <div className="flex items-center gap-2 mb-3">
                   <CategoryIcon size={14} style={{ color: theme.accentLight }} />
@@ -737,7 +737,7 @@ export default async function ProductPage({
               {/* Purity & Safety */}
               <div
                 className="rounded-2xl p-5 border"
-                style={{ background: '#0d0d1a', borderColor: '#1e1e35' }}
+                style={{ background: '#ffffff', borderColor: '#1e1e35' }}
               >
                 <div className="flex items-center gap-2 mb-4">
                   <ShieldCheck size={14} className="text-emerald-400" />
@@ -755,7 +755,7 @@ export default async function ProductPage({
                     <div key={item.label} className="flex items-start gap-2">
                       <Check size={11} className="text-emerald-400 mt-1 shrink-0" />
                       <div>
-                        <p className="text-xs font-semibold text-white">{item.label}</p>
+                        <p className="text-xs font-semibold text-gray-900">{item.label}</p>
                         <p className="text-[10px]" style={{ color: '#52525b' }}>{item.note}</p>
                       </div>
                     </div>
@@ -770,14 +770,14 @@ export default async function ProductPage({
 
         {/* ── RELATED PRODUCTS ──────────────────────────────── */}
         {relatedProducts.length > 0 && (
-          <div style={{ background: '#0a0a14', borderTop: '1px solid #1e1e35' }}>
+          <div style={{ background: '#ffffff', borderTop: '1px solid #1e1e35' }}>
             <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14">
               <div className="flex items-center justify-between mb-8">
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: theme.accentLight }}>
                     Synergistic Combinations
                   </p>
-                  <h2 className="text-2xl font-bold text-white">
+                  <h2 className="text-2xl font-bold text-gray-900">
                     Stack {product.name} With
                   </h2>
                 </div>
@@ -799,7 +799,7 @@ export default async function ProductPage({
           <div
             className="rounded-2xl border p-8 sm:p-12 relative overflow-hidden"
             style={{
-              background: '#0d0d1a',
+              background: '#ffffff',
               borderColor: theme.badgeBorder,
             }}
           >
@@ -824,7 +824,7 @@ export default async function ProductPage({
                 <p className="text-xs font-semibold uppercase tracking-widest mb-2" style={{ color: theme.accentLight }}>
                   Ready to Start?
                 </p>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-white mb-3">
+                <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">
                   Begin your {product.name} protocol
                 </h2>
                 <p className="text-sm max-w-md mb-6" style={{ color: '#a1a1b5' }}>
@@ -834,7 +834,7 @@ export default async function ProductPage({
                   href={`/go/${product.slug}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 py-3 px-8 rounded-xl font-bold text-white text-base transition-all hover:opacity-90 hover:-translate-y-0.5"
+                  className="inline-flex items-center gap-2 py-3 px-8 rounded-xl font-bold text-gray-900 text-base transition-all hover:opacity-90 hover:-translate-y-0.5"
                   style={{
                     background: `linear-gradient(135deg, ${theme.accent}, ${theme.accentLight})`,
                     boxShadow: `0 6px 30px ${theme.glow}`,

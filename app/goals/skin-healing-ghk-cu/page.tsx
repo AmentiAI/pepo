@@ -31,15 +31,15 @@ export const metadata: Metadata = {
 
 const mechanismCards = [
   {
-    icon: <Layers size={18} className="text-violet-400" />,
-    bg: 'bg-violet-500/10',
+    icon: <Layers size={18} className="text-yellow-600" />,
+    bg: 'bg-yellow-50',
     border: 'border-violet-500/20',
     title: 'Collagen & Elastin Synthesis',
     body:
       'GHK-Cu directly upregulates genes encoding collagen type I, type III, and elastin. This is not surface-level moisturisation — it is gene-level signalling that drives the structural proteins responsible for skin firmness and elasticity.',
   },
   {
-    icon: <Sparkles size={18} className="text-cyan-400" />,
+    icon: <Sparkles size={18} className="text-yellow-600" />,
     bg: 'bg-cyan-500/10',
     border: 'border-cyan-500/20',
     title: 'Gene Expression Reset',
@@ -47,15 +47,15 @@ const mechanismCards = [
       'One of GHK-Cu\'s most remarkable properties: it modulates the expression of over 4,000 human genes, shifting the profile toward that of younger tissue. Genes associated with inflammation and cancer progression are down-regulated; those involved in repair are up-regulated.',
   },
   {
-    icon: <Zap size={18} className="text-violet-400" />,
-    bg: 'bg-violet-500/10',
+    icon: <Zap size={18} className="text-yellow-600" />,
+    bg: 'bg-yellow-50',
     border: 'border-violet-500/20',
     title: 'Wound Healing & Angiogenesis',
     body:
       'GHK-Cu promotes keratinocyte proliferation, fibroblast migration, and new blood vessel formation (angiogenesis). These are the core steps in every wound healing cascade — making it effective for post-surgical recovery, burns, and chronic wounds.',
   },
   {
-    icon: <FlaskConical size={18} className="text-cyan-400" />,
+    icon: <FlaskConical size={18} className="text-yellow-600" />,
     bg: 'bg-cyan-500/10',
     border: 'border-cyan-500/20',
     title: 'Antioxidant Activation',
@@ -63,8 +63,8 @@ const mechanismCards = [
       'The copper ion in GHK-Cu activates superoxide dismutase enzymes (SOD1 and SOD3) — the body\'s primary defence against reactive oxygen species. This reduces oxidative damage to skin cells and mitochondria.',
   },
   {
-    icon: <CheckCircle2 size={18} className="text-violet-400" />,
-    bg: 'bg-violet-500/10',
+    icon: <CheckCircle2 size={18} className="text-yellow-600" />,
+    bg: 'bg-yellow-50',
     border: 'border-violet-500/20',
     title: 'Anti-Inflammatory',
     body:
@@ -110,26 +110,26 @@ export default function SkinHealingGhkCuPage() {
       {/* Hero */}
       <section className="relative pt-14 pb-12 sm:pt-28 sm:pb-20 overflow-hidden grid-bg">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-20 left-1/4 w-96 h-96 bg-violet-600/10 rounded-full blur-3xl" />
+          <div className="absolute top-20 left-1/4 w-96 h-96 bg-gray-900/10 rounded-full blur-3xl" />
           <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-cyan-500/8 rounded-full blur-3xl" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 mb-5 flex-wrap">
-            <Link href="/" className="badge hover:text-white transition-colors">Home</Link>
-            <ChevronRight size={14} className="text-zinc-600" />
-            <Link href="/anti-aging" className="badge hover:text-white transition-colors">Anti-Aging</Link>
-            <ChevronRight size={14} className="text-zinc-600" />
+            <Link href="/" className="badge hover:text-gray-900 transition-colors">Home</Link>
+            <ChevronRight size={14} className="text-gray-400" />
+            <Link href="/anti-aging" className="badge hover:text-gray-900 transition-colors">Anti-Aging</Link>
+            <ChevronRight size={14} className="text-gray-400" />
             <span className="badge badge-cyan">GHK-Cu for Skin</span>
           </div>
 
           <div className="max-w-3xl">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
               <span className="gradient-text">GHK-Cu</span>
-              <span className="text-white"> for Skin</span>
+              <span className="text-gray-900"> for Skin</span>
             </h1>
-            <p className="text-lg text-zinc-400 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
               GHK-Cu (copper peptide) is the most comprehensively studied skin repair molecule in
               existence — with over 4,000 published studies. It does not mask ageing. It reverses the
               gene expression patterns that cause it, restoring collagen, healing wounds, and
@@ -149,16 +149,16 @@ export default function SkinHealingGhkCuPage() {
           {/* Stat strip */}
           <div className="mt-10 sm:mt-14 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {[
-              { icon: <FlaskConical size={18} className="text-violet-400" />, value: '4,000+', label: 'Published studies on GHK-Cu' },
-              { icon: <Zap size={18} className="text-cyan-400" />, value: '70%', label: 'Upregulation of collagen synthesis' },
-              { icon: <Layers size={18} className="text-violet-400" />, value: 'Topical + Injectable', label: 'Two delivery routes' },
-              { icon: <Sparkles size={18} className="text-cyan-400" />, value: '1970s', label: 'Discovery by Loren Pickart, PhD' },
+              { icon: <FlaskConical size={18} className="text-yellow-600" />, value: '4,000+', label: 'Published studies on GHK-Cu' },
+              { icon: <Zap size={18} className="text-yellow-600" />, value: '70%', label: 'Upregulation of collagen synthesis' },
+              { icon: <Layers size={18} className="text-yellow-600" />, value: 'Topical + Injectable', label: 'Two delivery routes' },
+              { icon: <Sparkles size={18} className="text-yellow-600" />, value: '1970s', label: 'Discovery by Loren Pickart, PhD' },
             ].map((stat) => (
               <div key={stat.label} className="card p-4 flex items-start gap-3">
                 <div className="mt-0.5">{stat.icon}</div>
                 <div>
-                  <p className="text-xl font-bold text-white">{stat.value}</p>
-                  <p className="text-xs text-zinc-500 mt-0.5">{stat.label}</p>
+                  <p className="text-xl font-bold text-gray-900">{stat.value}</p>
+                  <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -173,8 +173,8 @@ export default function SkinHealingGhkCuPage() {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="badge badge-cyan mb-4 inline-block">The Science</span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">What is GHK-Cu?</h2>
-            <div className="space-y-4 text-zinc-400 leading-relaxed">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">What is GHK-Cu?</h2>
+            <div className="space-y-4 text-gray-500 leading-relaxed">
               <p>
                 GHK-Cu is a naturally occurring tripeptide — glycine-histidine-lysine — bound to a
                 copper ion. It was first isolated from human plasma in the 1970s by biochemist Loren
@@ -203,7 +203,7 @@ export default function SkinHealingGhkCuPage() {
               className="card p-6 border"
               style={{ borderColor: 'var(--border-bright)', background: 'var(--bg-card)' }}
             >
-              <h3 className="font-bold text-white mb-4 text-sm uppercase tracking-wider">
+              <h3 className="font-bold text-gray-900 mb-4 text-sm uppercase tracking-wider">
                 GHK-Cu Plasma Levels by Age
               </h3>
               <div className="space-y-3">
@@ -214,8 +214,8 @@ export default function SkinHealingGhkCuPage() {
                 ].map((row) => (
                   <div key={row.age}>
                     <div className="flex justify-between text-sm mb-1">
-                      <span className="text-zinc-400">{row.age}</span>
-                      <span className="text-white font-semibold">{row.level}</span>
+                      <span className="text-gray-500">{row.age}</span>
+                      <span className="text-gray-900 font-semibold">{row.level}</span>
                     </div>
                     <div
                       className="h-2 rounded-full"
@@ -235,8 +235,8 @@ export default function SkinHealingGhkCuPage() {
               className="card p-5 border"
               style={{ borderColor: 'var(--border)', background: 'var(--bg-card)' }}
             >
-              <p className="text-sm text-zinc-400 leading-relaxed">
-                <span className="text-white font-semibold">Structure:</span> Gly-His-Lys bound to
+              <p className="text-sm text-gray-500 leading-relaxed">
+                <span className="text-gray-900 font-semibold">Structure:</span> Gly-His-Lys bound to
                 Cu²⁺. The tripeptide is small enough to penetrate skin barriers topically, and is
                 rapidly bioavailable subcutaneously. It is not a synthetic molecule — it is identical
                 to the form naturally produced by the human body.
@@ -250,10 +250,10 @@ export default function SkinHealingGhkCuPage() {
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <span className="badge mb-4 inline-block">Mechanisms</span>
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
             What GHK-Cu Does to Your Skin
           </h2>
-          <p className="text-zinc-400 mb-10 max-w-2xl">
+          <p className="text-gray-500 mb-10 max-w-2xl">
             GHK-Cu acts on five distinct mechanisms simultaneously — each one contributing to skin
             repair, rejuvenation, and resilience.
           </p>
@@ -267,8 +267,8 @@ export default function SkinHealingGhkCuPage() {
                 <div className={`w-10 h-10 rounded-xl ${card.bg} border ${card.border} flex items-center justify-center mb-4`}>
                   {card.icon}
                 </div>
-                <h3 className="font-bold text-white mb-2 text-sm">{card.title}</h3>
-                <p className="text-sm text-zinc-400 leading-relaxed">{card.body}</p>
+                <h3 className="font-bold text-gray-900 mb-2 text-sm">{card.title}</h3>
+                <p className="text-sm text-gray-500 leading-relaxed">{card.body}</p>
               </div>
             ))}
           </div>
@@ -280,10 +280,10 @@ export default function SkinHealingGhkCuPage() {
       {/* Topical vs Injectable */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <span className="badge badge-cyan mb-4 inline-block">Delivery Methods</span>
-        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           Topical vs. Injectable GHK-Cu
         </h2>
-        <p className="text-zinc-400 mb-10 max-w-2xl">
+        <p className="text-gray-500 mb-10 max-w-2xl">
           GHK-Cu is effective via both routes — and they can be used simultaneously for maximum
           effect. The choice depends on your goals and experience level.
         </p>
@@ -292,9 +292,9 @@ export default function SkinHealingGhkCuPage() {
           <div className="card p-6 border" style={{ borderColor: 'var(--border)', background: 'var(--bg-card)' }}>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-9 h-9 rounded-xl bg-violet-500/15 border border-violet-500/25 flex items-center justify-center">
-                <Sparkles size={16} className="text-violet-400" />
+                <Sparkles size={16} className="text-yellow-600" />
               </div>
-              <h3 className="font-bold text-white">Topical</h3>
+              <h3 className="font-bold text-gray-900">Topical</h3>
             </div>
             <ul className="space-y-2.5">
               {[
@@ -305,8 +305,8 @@ export default function SkinHealingGhkCuPage() {
                 'Lower systemic bioavailability',
                 'Available at consumer scale (0.1–2% serums)',
               ].map((pt) => (
-                <li key={pt} className="flex items-start gap-2 text-sm text-zinc-400">
-                  <CheckCircle2 size={13} className="text-violet-400 mt-0.5 shrink-0" />
+                <li key={pt} className="flex items-start gap-2 text-sm text-gray-500">
+                  <CheckCircle2 size={13} className="text-yellow-600 mt-0.5 shrink-0" />
                   {pt}
                 </li>
               ))}
@@ -317,9 +317,9 @@ export default function SkinHealingGhkCuPage() {
           <div className="card p-6 border" style={{ borderColor: 'var(--border-bright)', background: 'var(--bg-card)' }}>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-9 h-9 rounded-xl bg-cyan-500/15 border border-cyan-500/25 flex items-center justify-center">
-                <Zap size={16} className="text-cyan-400" />
+                <Zap size={16} className="text-yellow-600" />
               </div>
-              <h3 className="font-bold text-white">Injectable (SubQ)</h3>
+              <h3 className="font-bold text-gray-900">Injectable (SubQ)</h3>
               <span className="badge badge-cyan text-[10px]">More Potent</span>
             </div>
             <ul className="space-y-2.5">
@@ -331,8 +331,8 @@ export default function SkinHealingGhkCuPage() {
                 'Research-grade concentrations',
                 'Requires reconstitution and syringe',
               ].map((pt) => (
-                <li key={pt} className="flex items-start gap-2 text-sm text-zinc-400">
-                  <CheckCircle2 size={13} className="text-cyan-400 mt-0.5 shrink-0" />
+                <li key={pt} className="flex items-start gap-2 text-sm text-gray-500">
+                  <CheckCircle2 size={13} className="text-yellow-600 mt-0.5 shrink-0" />
                   {pt}
                 </li>
               ))}
@@ -342,17 +342,17 @@ export default function SkinHealingGhkCuPage() {
           {/* Both */}
           <div className="card p-6 border" style={{ borderColor: 'var(--border)', background: 'var(--bg-card)' }}>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-9 h-9 rounded-xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center">
-                <Layers size={16} className="text-violet-400" />
+              <div className="w-9 h-9 rounded-xl bg-yellow-50 border border-violet-500/20 flex items-center justify-center">
+                <Layers size={16} className="text-yellow-600" />
               </div>
-              <h3 className="font-bold text-white">Combined</h3>
+              <h3 className="font-bold text-gray-900">Combined</h3>
             </div>
-            <p className="text-sm text-zinc-400 leading-relaxed mb-4">
+            <p className="text-sm text-gray-500 leading-relaxed mb-4">
               Topical and injectable GHK-Cu can be used simultaneously. The topical addresses surface
               and local skin quality; the injectable drives systemic gene expression and deeper dermal
               remodelling. There are no known negative interactions between the two routes.
             </p>
-            <p className="text-sm text-zinc-500">
+            <p className="text-sm text-gray-500">
               Many users run injectable cycles (8 weeks on) while maintaining daily topical use
               year-round.
             </p>
@@ -364,17 +364,17 @@ export default function SkinHealingGhkCuPage() {
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <span className="badge mb-4 inline-block">Protocols</span>
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8">GHK-Cu Dosing Protocols</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">GHK-Cu Dosing Protocols</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {/* Topical protocol */}
             <div className="card p-6 border" style={{ borderColor: 'var(--border)', background: 'var(--bg)' }}>
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-10 h-10 rounded-xl bg-violet-500/15 flex items-center justify-center">
-                  <Sparkles size={20} className="text-violet-400" />
+                  <Sparkles size={20} className="text-yellow-600" />
                 </div>
                 <div>
-                  <p className="font-bold text-white">Topical Protocol</p>
-                  <p className="text-xs text-zinc-500">Serum or cream, daily</p>
+                  <p className="font-bold text-gray-900">Topical Protocol</p>
+                  <p className="text-xs text-gray-500">Serum or cream, daily</p>
                 </div>
               </div>
               <div className="space-y-3">
@@ -386,13 +386,13 @@ export default function SkinHealingGhkCuPage() {
                   { label: 'Duration', value: 'Year-round' },
                 ].map((row) => (
                   <div key={row.label} className="flex justify-between text-sm">
-                    <span className="text-zinc-500">{row.label}</span>
-                    <span className="text-white font-semibold">{row.value}</span>
+                    <span className="text-gray-500">{row.label}</span>
+                    <span className="text-gray-900 font-semibold">{row.value}</span>
                   </div>
                 ))}
               </div>
               <div
-                className="mt-5 p-4 rounded-xl text-sm text-zinc-400 leading-relaxed"
+                className="mt-5 p-4 rounded-xl text-sm text-gray-500 leading-relaxed"
                 style={{ background: 'var(--bg-card)', border: '1px solid var(--border)' }}
               >
                 Consumer-grade copper peptide serums (The Ordinary, NIOD) use concentrations around
@@ -405,11 +405,11 @@ export default function SkinHealingGhkCuPage() {
             <div className="card p-6 border" style={{ borderColor: 'var(--border)', background: 'var(--bg)' }}>
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-10 h-10 rounded-xl bg-cyan-500/15 flex items-center justify-center">
-                  <Zap size={20} className="text-cyan-400" />
+                  <Zap size={20} className="text-yellow-600" />
                 </div>
                 <div>
-                  <p className="font-bold text-white">Injectable Protocol</p>
-                  <p className="text-xs text-zinc-500">Subcutaneous, cycled</p>
+                  <p className="font-bold text-gray-900">Injectable Protocol</p>
+                  <p className="text-xs text-gray-500">Subcutaneous, cycled</p>
                 </div>
               </div>
               <div className="space-y-3">
@@ -421,13 +421,13 @@ export default function SkinHealingGhkCuPage() {
                   { label: 'Off period', value: '4 weeks off' },
                 ].map((row) => (
                   <div key={row.label} className="flex justify-between text-sm">
-                    <span className="text-zinc-500">{row.label}</span>
-                    <span className="text-white font-semibold">{row.value}</span>
+                    <span className="text-gray-500">{row.label}</span>
+                    <span className="text-gray-900 font-semibold">{row.value}</span>
                   </div>
                 ))}
               </div>
               <div
-                className="mt-5 p-4 rounded-xl text-sm text-zinc-400 leading-relaxed"
+                className="mt-5 p-4 rounded-xl text-sm text-gray-500 leading-relaxed"
                 style={{ background: 'var(--bg-card)', border: '1px solid var(--border)' }}
               >
                 Reconstitute with bacteriostatic water. Use a 29–31g insulin syringe. Rotate
@@ -445,18 +445,18 @@ export default function SkinHealingGhkCuPage() {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="badge badge-cyan mb-4 inline-block">Applications</span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
               Skin Conditions GHK-Cu Addresses
             </h2>
-            <p className="text-zinc-400 mb-6 leading-relaxed">
+            <p className="text-gray-500 mb-6 leading-relaxed">
               GHK-Cu's multi-mechanism action means it benefits a wide range of skin conditions —
               from cosmetic concerns to clinically significant wound repair.
             </p>
             <ul className="space-y-3">
               {conditions.map((c) => (
                 <li key={c} className="flex items-start gap-3">
-                  <CheckCircle2 size={16} className="text-violet-400 mt-0.5 shrink-0" />
-                  <span className="text-zinc-300 text-sm">{c}</span>
+                  <CheckCircle2 size={16} className="text-yellow-600 mt-0.5 shrink-0" />
+                  <span className="text-gray-700 text-sm">{c}</span>
                 </li>
               ))}
             </ul>
@@ -465,10 +465,10 @@ export default function SkinHealingGhkCuPage() {
           {/* GHK-Cu vs Retinol */}
           <div>
             <span className="badge mb-4 inline-block">Comparison</span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
               GHK-Cu vs. Retinol
             </h2>
-            <p className="text-zinc-400 mb-6 leading-relaxed">
+            <p className="text-gray-500 mb-6 leading-relaxed">
               Retinol is the most popular anti-aging ingredient on the market. GHK-Cu works
               differently — and the two can complement each other.
             </p>
@@ -500,15 +500,15 @@ export default function SkinHealingGhkCuPage() {
                   className="card p-4 border text-sm"
                   style={{ borderColor: 'var(--border)', background: 'var(--bg-card)' }}
                 >
-                  <p className="text-zinc-500 text-xs mb-2 font-medium uppercase tracking-wider">{row.label}</p>
+                  <p className="text-gray-500 text-xs mb-2 font-medium uppercase tracking-wider">{row.label}</p>
                   <div className="grid grid-cols-2 gap-3">
                     <div>
-                      <span className="text-violet-400 text-xs font-semibold block mb-0.5">GHK-Cu</span>
-                      <span className="text-zinc-300">{row.ghk}</span>
+                      <span className="text-yellow-600 text-xs font-semibold block mb-0.5">GHK-Cu</span>
+                      <span className="text-gray-700">{row.ghk}</span>
                     </div>
                     <div>
-                      <span className="text-cyan-400 text-xs font-semibold block mb-0.5">Retinol</span>
-                      <span className="text-zinc-300">{row.retinol}</span>
+                      <span className="text-yellow-600 text-xs font-semibold block mb-0.5">Retinol</span>
+                      <span className="text-gray-700">{row.retinol}</span>
                     </div>
                   </div>
                 </div>
@@ -522,8 +522,8 @@ export default function SkinHealingGhkCuPage() {
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <span className="badge mb-4 inline-block">Stacking</span>
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">GHK-Cu Stacking Protocols</h2>
-          <p className="text-zinc-400 mb-10 max-w-2xl">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">GHK-Cu Stacking Protocols</h2>
+          <p className="text-gray-500 mb-10 max-w-2xl">
             GHK-Cu pairs well with several other peptides depending on your primary goal.
           </p>
           <div className="grid md:grid-cols-3 gap-5">
@@ -533,8 +533,8 @@ export default function SkinHealingGhkCuPage() {
                 goal: 'Telomere & Longevity',
                 description:
                   'The definitive longevity stack. GHK-Cu resets gene expression toward younger tissue biology; Epithalon activates telomerase to rebuild telomere length. Together they address the two deepest levers of biological aging at the cellular level.',
-                color: 'text-violet-400',
-                bg: 'bg-violet-500/10',
+                color: 'text-yellow-600',
+                bg: 'bg-yellow-50',
                 href: '/stacks/longevity-elite',
               },
               {
@@ -542,7 +542,7 @@ export default function SkinHealingGhkCuPage() {
                 goal: 'Accelerated Wound Healing',
                 description:
                   'BPC-157 drives angiogenesis and growth factor signalling at wound sites; GHK-Cu provides the collagen synthesis and gene expression reset to complete structural repair. For post-surgical recovery, burns, or chronic skin damage, this combination is best in class.',
-                color: 'text-cyan-400',
+                color: 'text-yellow-600',
                 bg: 'bg-cyan-500/10',
                 href: '/stacks/ultimate-healing',
               },
@@ -551,8 +551,8 @@ export default function SkinHealingGhkCuPage() {
                 goal: 'Skin + GH Anti-Aging',
                 description:
                   'GH decline is a primary driver of skin thinning and collagen loss with age. Ipamorelin/CJC restores youthful GH pulses; GHK-Cu provides direct skin-level collagen and elastin upregulation. This is the anti-aging skin stack for those wanting the most comprehensive approach.',
-                color: 'text-violet-400',
-                bg: 'bg-violet-500/10',
+                color: 'text-yellow-600',
+                bg: 'bg-yellow-50',
                 href: '/stacks/anti-aging-skin',
               },
             ].map((s) => (
@@ -565,9 +565,9 @@ export default function SkinHealingGhkCuPage() {
                   <Layers size={16} className={s.color} />
                 </div>
                 <span className={`text-xs font-bold uppercase tracking-wider ${s.color} mb-1`}>{s.goal}</span>
-                <h3 className="font-bold text-white mb-3 text-sm">{s.stack}</h3>
-                <p className="text-sm text-zinc-400 leading-relaxed flex-1">{s.description}</p>
-                <Link href={s.href} className="mt-4 text-sm text-violet-400 hover:text-violet-300 transition-colors flex items-center gap-1">
+                <h3 className="font-bold text-gray-900 mb-3 text-sm">{s.stack}</h3>
+                <p className="text-sm text-gray-500 leading-relaxed flex-1">{s.description}</p>
+                <Link href={s.href} className="mt-4 text-sm text-yellow-600 hover:text-yellow-500 transition-colors flex items-center gap-1">
                   View Stack <ArrowRight size={13} />
                 </Link>
               </div>
@@ -582,8 +582,8 @@ export default function SkinHealingGhkCuPage() {
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-8">
-            <HelpCircle size={22} className="text-violet-400" />
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">Frequently Asked Questions</h2>
+            <HelpCircle size={22} className="text-yellow-600" />
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Frequently Asked Questions</h2>
           </div>
           <div className="space-y-4">
             {faqs.map((faq, i) => (
@@ -592,8 +592,8 @@ export default function SkinHealingGhkCuPage() {
                 className="card p-6 border"
                 style={{ borderColor: 'var(--border)', background: 'var(--bg-card)' }}
               >
-                <h3 className="font-bold text-white mb-3">{faq.q}</h3>
-                <p className="text-sm text-zinc-400 leading-relaxed">{faq.a}</p>
+                <h3 className="font-bold text-gray-900 mb-3">{faq.q}</h3>
+                <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -603,10 +603,10 @@ export default function SkinHealingGhkCuPage() {
       {/* CTA */}
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
             Ready to Start Your GHK-Cu Protocol?
           </h2>
-          <p className="text-zinc-400 mb-8 max-w-xl mx-auto">
+          <p className="text-gray-500 mb-8 max-w-xl mx-auto">
             Browse the GHK-Cu product page for reconstitution and dosing specifics, or explore the
             complete Anti-Aging Skin Stack for a comprehensive multi-peptide protocol.
           </p>

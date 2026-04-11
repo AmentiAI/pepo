@@ -91,21 +91,21 @@ const steps = [
     title: 'Choose Your Goal',
     description:
       'Browse protocols by goal: healing & injury recovery, growth hormone optimization, fat loss, anti-aging & longevity, cognitive enhancement, or sexual performance. Every goal has a curated, evidence-based protocol.',
-    color: '#a78bfa',
+    color: '#eab308',
   },
   {
     number: '02',
     title: 'Read the Deep-Dive Guide',
     description:
       'Each peptide page includes mechanism of action, clinical study summaries, exact dosing protocols, injection timing, cycle lengths, synergistic combinations, and week-by-week result timelines.',
-    color: '#06b6d4',
+    color: '#f59e0b',
   },
   {
     number: '03',
     title: 'Source & Execute',
     description:
       'We only reference compounds with third-party HPLC purity testing and certificates of analysis for every batch. Your protocol deserves research-grade quality.',
-    color: '#a78bfa',
+    color: '#eab308',
   },
 ];
 
@@ -207,9 +207,9 @@ export default function HomePage() {
       <section className="relative overflow-hidden grid-bg" style={{ minHeight: '92vh', display: 'flex', alignItems: 'center' }}>
         <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
           <div className="absolute rounded-full opacity-20 blur-3xl"
-            style={{ top: '-10%', left: '10%', width: 600, height: 600, background: 'radial-gradient(circle, #7c3aed 0%, transparent 70%)' }} />
-          <div className="absolute rounded-full opacity-15 blur-3xl"
-            style={{ bottom: '10%', right: '5%', width: 400, height: 400, background: 'radial-gradient(circle, #06b6d4 0%, transparent 70%)' }} />
+            style={{ top: '-10%', left: '10%', width: 600, height: 600, background: 'radial-gradient(circle, #eab308 0%, transparent 70%)' }} />
+          <div className="absolute rounded-full opacity-10 blur-3xl"
+            style={{ bottom: '10%', right: '5%', width: 400, height: 400, background: 'radial-gradient(circle, #f59e0b 0%, transparent 70%)' }} />
         </div>
 
         <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 py-20 sm:py-28">
@@ -217,9 +217,9 @@ export default function HomePage() {
 
             {/* Left: Title + Description + CTAs */}
             <div className="flex-1 text-center lg:text-left">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-violet-500/30 bg-violet-500/10 mb-7">
-                <span className="w-2 h-2 rounded-full bg-violet-400 animate-pulse" />
-                <span className="text-sm text-violet-300 font-medium tracking-wide">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-yellow-400/40 bg-yellow-50 mb-7">
+                <span className="w-2 h-2 rounded-full bg-yellow-500 animate-pulse" />
+                <span className="text-sm text-yellow-700 font-medium tracking-wide">
                   Looksmaxxing • Healing • Fat Loss • Anti-Aging
                 </span>
               </div>
@@ -227,18 +227,18 @@ export default function HomePage() {
               <h1 className="font-extrabold leading-tight tracking-tight mb-6" style={{ fontSize: 'clamp(2rem, 6vw, 4rem)' }}>
                 <span className="gradient-text">Peptides for Looksmaxxing</span>
                 <br />
-                <span className="text-white">Healing &amp; Fat Loss</span>
+                <span className="text-gray-900">Healing &amp; Fat Loss</span>
               </h1>
 
-              <p className="text-zinc-400 mb-4 leading-relaxed" style={{ fontSize: 'clamp(0.95rem, 2vw, 1.15rem)' }}>
+              <p className="text-gray-500 mb-4 leading-relaxed" style={{ fontSize: 'clamp(0.95rem, 2vw, 1.15rem)' }}>
                 The complete peptide guide —{' '}
-                <strong className="text-zinc-200">GHK-Cu</strong> for skinmaxxing,{' '}
-                <strong className="text-zinc-200">Ipamorelin</strong> for bodymaxxing,{' '}
-                <strong className="text-zinc-200">BPC-157</strong> for gut-skin axis,{' '}
-                <strong className="text-zinc-200">GLP-1s</strong> for face leanness.
+                <strong className="text-gray-800">GHK-Cu</strong> for skinmaxxing,{' '}
+                <strong className="text-gray-800">Ipamorelin</strong> for bodymaxxing,{' '}
+                <strong className="text-gray-800">BPC-157</strong> for gut-skin axis,{' '}
+                <strong className="text-gray-800">GLP-1s</strong> for face leanness.
                 Tier-ranked protocols. Zero guesswork.
               </p>
-              <p className="text-zinc-500 mb-8 text-sm">
+              <p className="text-gray-400 mb-8 text-sm">
                 Evidence-based. PubMed-cited. Research-grade quality.
               </p>
 
@@ -259,9 +259,9 @@ export default function HomePage() {
                 {stats.map((s) => {
                   const Icon = s.icon;
                   return (
-                    <div key={s.label} className="flex items-center gap-2 text-sm text-zinc-500">
-                      <Icon size={15} className="text-violet-400" />
-                      <span className="text-zinc-300 font-semibold">{s.value}</span>
+                    <div key={s.label} className="flex items-center gap-2 text-sm text-gray-500">
+                      <Icon size={15} className="text-yellow-500" />
+                      <span className="text-gray-800 font-semibold">{s.value}</span>
                       <span>{s.label}</span>
                     </div>
                   );
@@ -271,20 +271,19 @@ export default function HomePage() {
 
             {/* Right: 4 Top Product Cards */}
             <div className="w-full lg:w-[44%] shrink-0">
-              <p className="text-xs font-semibold tracking-widest text-violet-400 uppercase mb-4 text-center lg:text-left">
+              <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-4 text-center lg:text-left">
                 Top Peptides — HPLC Verified
               </p>
               <div className="grid grid-cols-2 gap-3">
                 {heroProducts.map((p) => (
                   <div
                     key={p.slug}
-                    className="card flex flex-col group hover:border-violet-500/40 transition-colors overflow-hidden"
+                    className="card flex flex-col group hover:border-yellow-400 transition-colors overflow-hidden"
                   >
                     {/* Product image */}
                     <Link
                       href={`/products/${p.slug}`}
-                      className="block relative h-28 overflow-hidden shrink-0"
-                      style={{ background: '#0a0a14' }}
+                      className="block relative h-28 overflow-hidden shrink-0 bg-gray-50"
                     >
                       {p.image ? (
                         <img
@@ -294,13 +293,13 @@ export default function HomePage() {
                           loading="lazy"
                         />
                       ) : (
-                        <div className={`absolute inset-0 bg-gradient-to-br ${categoryGradient[p.category] ?? 'from-violet-700 to-violet-500'} opacity-90 flex items-center justify-center`}>
-                          <span className="text-white font-black text-sm text-center px-2 leading-tight drop-shadow">{p.name}</span>
+                        <div className="absolute inset-0 bg-gradient-to-br from-yellow-100 to-amber-100 flex items-center justify-center">
+                          <span className="text-gray-700 font-black text-sm text-center px-2 leading-tight">{p.name}</span>
                         </div>
                       )}
                       <div
                         className="absolute top-2 left-2 text-[9px] font-bold px-1.5 py-0.5 rounded"
-                        style={{ background: 'rgba(0,0,0,0.65)', color: '#fde68a', backdropFilter: 'blur(4px)' }}
+                        style={{ background: 'rgba(234,179,8,0.85)', color: '#0a0a0a', backdropFilter: 'blur(4px)' }}
                       >
                         #{p.popularityRank}
                       </div>
@@ -311,17 +310,17 @@ export default function HomePage() {
                       <div className="flex items-center justify-between">
                         <span className="badge text-[9px]">{shortCategory[p.category] ?? p.category}</span>
                       </div>
-                      <h3 className="font-bold text-white text-xs leading-tight">{p.name}</h3>
-                      <p className="text-zinc-500 text-[10px] leading-relaxed line-clamp-2 flex-1">{p.tagline}</p>
+                      <h3 className="font-bold text-gray-900 text-xs leading-tight">{p.name}</h3>
+                      <p className="text-gray-500 text-[10px] leading-relaxed line-clamp-2 flex-1">{p.tagline}</p>
                       <div
                         className="flex items-center justify-between pt-2 mt-auto border-t"
                         style={{ borderColor: 'var(--border)' }}
                       >
-                        <span className="font-bold text-white text-xs">${p.price.toFixed(2)}</span>
+                        <span className="font-bold text-gray-900 text-xs">${p.price.toFixed(2)}</span>
                         <div className="flex gap-1.5">
                           <Link
                             href={`/products/${p.slug}`}
-                            className="text-[9px] font-medium text-zinc-400 hover:text-white transition-colors px-1.5 py-0.5 rounded hover:bg-white/5"
+                            className="text-[9px] font-medium text-gray-500 hover:text-gray-900 transition-colors px-1.5 py-0.5 rounded hover:bg-gray-100"
                           >
                             Guide
                           </Link>
@@ -329,7 +328,7 @@ export default function HomePage() {
                             href={`/go/${p.slug}`}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-[9px] font-semibold text-violet-400 hover:text-violet-300 transition-colors px-1.5 py-0.5 rounded hover:bg-violet-500/10"
+                            className="text-[9px] font-semibold text-yellow-600 hover:text-yellow-700 transition-colors px-1.5 py-0.5 rounded hover:bg-yellow-50"
                           >
                             Buy →
                           </a>
@@ -362,9 +361,9 @@ export default function HomePage() {
       {/* ── GOALS ─────────────────────────────────────────────── */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-24">
         <div className="text-center mb-14">
-          <p className="text-xs font-semibold tracking-widest text-violet-400 uppercase mb-3">Goal-Based Protocols</p>
-          <h2 className="text-4xl font-bold text-white mb-4">What Are You Optimizing For?</h2>
-          <p className="text-zinc-400 max-w-2xl mx-auto text-lg">
+          <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Goal-Based Protocols</p>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">What Are You Optimizing For?</h2>
+          <p className="text-gray-500 max-w-2xl mx-auto text-lg">
             Every peptide protocol is engineered around a specific physiological goal.
             Select your target and we&rsquo;ll match you to the right peptides and stacks.
           </p>
@@ -379,25 +378,25 @@ export default function HomePage() {
                 href={goal.href}
                 className={`card p-7 flex flex-col group cursor-pointer border ${goal.border} transition-all duration-200`}
               >
-                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${goal.color} flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-200`}>
-                  <Icon size={22} className="text-white" />
+                <div className="w-12 h-12 rounded-xl bg-yellow-100 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-200">
+                  <Icon size={22} className="text-yellow-600" />
                 </div>
-                <span className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: '#7c3aed' }}>
+                <span className="text-xs font-bold uppercase tracking-widest mb-2 text-yellow-600">
                   {goal.label}
                 </span>
-                <h3 className="text-lg font-bold text-white mb-3">{goal.title}</h3>
-                <p className="text-zinc-400 leading-relaxed text-sm flex-1">{goal.description}</p>
+                <h3 className="text-lg font-bold text-gray-900 mb-3">{goal.title}</h3>
+                <p className="text-gray-500 leading-relaxed text-sm flex-1">{goal.description}</p>
 
                 <div className="flex gap-4 mt-5 mb-4">
                   {goal.stats.map((st) => (
                     <div key={st.label}>
                       <p className="text-xl font-black gradient-text">{st.value}</p>
-                      <p className="text-xs text-zinc-600">{st.label}</p>
+                      <p className="text-xs text-gray-400">{st.label}</p>
                     </div>
                   ))}
                 </div>
 
-                <div className="flex items-center gap-1 text-violet-400 text-sm font-medium group-hover:gap-2 transition-all duration-150">
+                <div className="flex items-center gap-1 text-yellow-600 text-sm font-medium group-hover:gap-2 transition-all duration-150">
                   Explore protocols <ArrowRight size={14} />
                 </div>
               </Link>
@@ -412,9 +411,9 @@ export default function HomePage() {
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-24">
         <div className="flex items-end justify-between mb-8 sm:mb-12">
           <div>
-            <p className="text-xs font-semibold tracking-widest text-cyan-400 uppercase mb-3">Top-Rated Peptides</p>
-            <h2 className="text-4xl font-bold text-white">Most Popular Peptides</h2>
-            <p className="text-zinc-400 mt-2 max-w-lg">
+            <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Top-Rated Peptides</p>
+            <h2 className="text-4xl font-bold text-gray-900">Most Popular Peptides</h2>
+            <p className="text-gray-500 mt-2 max-w-lg">
               The most-used peptides in the community — ranked by clinical evidence and user popularity.
             </p>
           </div>
@@ -444,18 +443,18 @@ export default function HomePage() {
       {/* ── RECONSTITUTION CALCULATOR ─────────────────────────── */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-24">
         <div className="text-center mb-10">
-          <p className="text-xs font-semibold tracking-widest text-cyan-400 uppercase mb-3">Free Tool</p>
-          <h2 className="text-4xl font-bold text-white mb-4">Reconstitution Calculator</h2>
-          <p className="text-zinc-400 max-w-xl mx-auto">
+          <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Free Tool</p>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Reconstitution Calculator</h2>
+          <p className="text-gray-500 max-w-xl mx-auto">
             Enter your vial size and BAC water volume — get exact draw amounts instantly. No math required.
           </p>
         </div>
         <div className="max-w-2xl mx-auto">
           <ReconstitutionCalculator />
         </div>
-        <p className="text-center mt-6 text-sm text-zinc-600">
+        <p className="text-center mt-6 text-sm text-gray-500">
           Need help with injection technique?{' '}
-          <Link href="/how-to/subcutaneous-injection-guide" className="text-violet-400 hover:text-violet-300 underline underline-offset-2">
+          <Link href="/how-to/subcutaneous-injection-guide" className="text-yellow-600 hover:text-yellow-700 underline underline-offset-2">
             Step-by-step injection guide →
           </Link>
         </p>
@@ -467,9 +466,9 @@ export default function HomePage() {
       <section className="py-12 sm:py-24" style={{ background: 'var(--bg-card)' }}>
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-14">
-            <p className="text-xs font-semibold tracking-widest text-amber-400 uppercase mb-3">Peer-Reviewed Evidence</p>
-            <h2 className="text-4xl font-bold text-white mb-4">What the Evidence Shows</h2>
-            <p className="text-zinc-400 max-w-xl mx-auto text-lg">
+            <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Peer-Reviewed Evidence</p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">What the Evidence Shows</h2>
+            <p className="text-gray-500 max-w-xl mx-auto text-lg">
               Every protocol on PeptidesClav is grounded in published preclinical and clinical research.
               No broscience. No guesswork. Only evidence.
             </p>
@@ -483,13 +482,13 @@ export default function HomePage() {
                 className="card p-5 group flex flex-col gap-3"
               >
                 <div className="flex items-center justify-between">
-                  <span className="font-black text-white text-base group-hover:text-violet-400 transition-colors">
+                  <span className="font-black text-gray-900 text-base group-hover:text-yellow-600 transition-colors">
                     {h.peptide}
                   </span>
-                  <span className="badge-cyan badge text-[9px]">{h.category}</span>
+                  <span className="badge text-[9px]">{h.category}</span>
                 </div>
-                <p className="text-sm text-zinc-400 leading-relaxed flex-1">{h.claim}</p>
-                <div className="flex items-center gap-1 text-violet-400 text-xs font-medium mt-auto">
+                <p className="text-sm text-gray-500 leading-relaxed flex-1">{h.claim}</p>
+                <div className="flex items-center gap-1 text-yellow-600 text-xs font-medium mt-auto">
                   Full protocol <ArrowRight size={11} />
                 </div>
               </Link>
@@ -501,9 +500,9 @@ export default function HomePage() {
       {/* ── HOW IT WORKS ──────────────────────────────────────── */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-24">
         <div className="text-center mb-14">
-          <p className="text-xs font-semibold tracking-widest text-violet-400 uppercase mb-3">Simple Process</p>
-          <h2 className="text-4xl font-bold text-white mb-4">How PeptidesClav Works</h2>
-          <p className="text-zinc-400 max-w-xl mx-auto text-lg">
+          <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Simple Process</p>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">How PeptidesClav Works</h2>
+          <p className="text-gray-500 max-w-xl mx-auto text-lg">
             From goal to protocol in three steps. Whether you&rsquo;re a first-time user or a seasoned biohacker.
           </p>
         </div>
@@ -517,8 +516,8 @@ export default function HomePage() {
               >
                 {step.number}
               </div>
-              <h3 className="text-lg font-bold text-white mb-3">{step.title}</h3>
-              <p className="text-zinc-400 text-sm leading-relaxed max-w-xs mx-auto">{step.description}</p>
+              <h3 className="text-lg font-bold text-gray-900 mb-3">{step.title}</h3>
+              <p className="text-gray-500 text-sm leading-relaxed max-w-xs mx-auto">{step.description}</p>
             </div>
           ))}
         </div>
@@ -531,9 +530,9 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-end justify-between mb-12">
             <div>
-              <p className="text-xs font-semibold tracking-widest text-fuchsia-400 uppercase mb-3">Multi-Peptide Combinations</p>
-              <h2 className="text-4xl font-bold text-white">Expert Peptide Stacks</h2>
-              <p className="text-zinc-400 mt-2 max-w-lg">
+              <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Multi-Peptide Combinations</p>
+              <h2 className="text-4xl font-bold text-gray-900">Expert Peptide Stacks</h2>
+              <p className="text-gray-500 mt-2 max-w-lg">
                 Pre-built protocols that combine synergistic peptides for maximum effect. Each stack includes complete dosing schedules, expected results, and sourcing links.
               </p>
             </div>
@@ -545,11 +544,11 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-6">
             {featuredStacks.map((stack) => (
               <Link key={stack.id} href={`/stacks/${stack.id}`} className="card p-6 flex flex-col group">
-                <div className="h-1 rounded-full bg-gradient-to-r from-violet-500 to-cyan-500 mb-5 opacity-60 group-hover:opacity-100 transition-opacity" />
+                <div className="h-1 rounded-full bg-gradient-to-r from-yellow-400 to-amber-400 mb-5 opacity-60 group-hover:opacity-100 transition-opacity" />
                 <div className="flex items-start justify-between gap-3 mb-4">
                   <div>
-                    <h3 className="font-bold text-white text-lg leading-tight">{stack.name}</h3>
-                    <p className="text-xs text-zinc-500 mt-1">{stack.goal}</p>
+                    <h3 className="font-bold text-gray-900 text-lg leading-tight">{stack.name}</h3>
+                    <p className="text-xs text-gray-500 mt-1">{stack.goal}</p>
                   </div>
                   <span
                     className="badge shrink-0 text-xs"
@@ -561,7 +560,7 @@ export default function HomePage() {
                     {stack.difficulty}
                   </span>
                 </div>
-                <p className="text-sm text-zinc-400 leading-relaxed mb-4 flex-1 line-clamp-3">{stack.shortDescription}</p>
+                <p className="text-sm text-gray-500 leading-relaxed mb-4 flex-1 line-clamp-3">{stack.shortDescription}</p>
                 <div className="flex flex-wrap gap-1.5 mb-4">
                   {stack.tags.slice(0, 3).map((tag) => (
                     <span key={tag} className="tag-chip">{tag}</span>
@@ -569,14 +568,14 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center justify-between text-sm border-t pt-4 mt-auto" style={{ borderColor: 'var(--border)' }}>
                   <div>
-                    <p className="text-zinc-600 text-xs">Duration</p>
-                    <p className="text-zinc-300 font-medium text-xs mt-0.5">{stack.duration}</p>
+                    <p className="text-gray-400 text-xs">Duration</p>
+                    <p className="text-gray-700 font-medium text-xs mt-0.5">{stack.duration}</p>
                   </div>
                   <div className="text-right">
-                    <p className="text-zinc-600 text-xs">Est. Cost</p>
-                    <p className="text-zinc-300 font-medium text-xs mt-0.5">{stack.cost}</p>
+                    <p className="text-gray-400 text-xs">Est. Cost</p>
+                    <p className="text-gray-700 font-medium text-xs mt-0.5">{stack.cost}</p>
                   </div>
-                  <div className="flex items-center gap-1 text-violet-400 text-xs font-medium group-hover:gap-2 transition-all">
+                  <div className="flex items-center gap-1 text-yellow-600 text-xs font-medium group-hover:gap-2 transition-all">
                     View Protocol <ArrowRight size={12} />
                   </div>
                 </div>
@@ -590,12 +589,12 @@ export default function HomePage() {
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-xs font-semibold tracking-widest text-cyan-400 uppercase mb-3">Our Sourcing Standard</p>
-            <h2 className="text-3xl font-bold text-white mb-5">
+            <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Our Sourcing Standard</p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-5">
               Why We Only Recommend<br />
               <span className="gradient-text">One Trusted Supplier</span>
             </h2>
-            <p className="text-zinc-400 leading-relaxed mb-6">
+            <p className="text-gray-500 leading-relaxed mb-6">
               Peptide quality varies enormously between suppliers. Underdosed, contaminated, or improperly stored peptides
               produce zero results — or worse. We only recommend suppliers that meet our non-negotiable quality criteria
               because of their uncompromising commitment to purity.
@@ -608,8 +607,8 @@ export default function HomePage() {
                 'US-based supplier with responsible sourcing and quality control',
                 'Lyophilized peptides with proper cold-chain shipping',
               ].map((point) => (
-                <li key={point} className="flex items-start gap-3 text-sm text-zinc-400">
-                  <CheckCircle size={16} className="text-violet-400 mt-0.5 shrink-0" />
+                <li key={point} className="flex items-start gap-3 text-sm text-gray-500">
+                  <CheckCircle size={16} className="text-yellow-500 mt-0.5 shrink-0" />
                   {point}
                 </li>
               ))}
@@ -634,8 +633,8 @@ export default function HomePage() {
             ].map((item) => (
               <div key={item.label} className="card p-5 text-center">
                 <p className="text-3xl font-black gradient-text mb-1">{item.value}</p>
-                <p className="text-white font-semibold text-sm mb-1">{item.label}</p>
-                <p className="text-xs text-zinc-600">{item.desc}</p>
+                <p className="text-gray-900 font-semibold text-sm mb-1">{item.label}</p>
+                <p className="text-xs text-gray-500">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -647,25 +646,25 @@ export default function HomePage() {
       {/* ── FAQ ───────────────────────────────────────────────── */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-24">
         <div className="text-center mb-14">
-          <p className="text-xs font-semibold tracking-widest text-cyan-400 uppercase mb-3">Common Questions</p>
-          <h2 className="text-4xl font-bold text-white mb-4">Peptide FAQ</h2>
-          <p className="text-zinc-400 text-lg max-w-xl mx-auto">
+          <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Common Questions</p>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Peptide FAQ</h2>
+          <p className="text-gray-500 text-lg max-w-xl mx-auto">
             Everything you need to know before starting your first peptide protocol.
           </p>
         </div>
         <div className="space-y-4">
           {faqs.map((faq, i) => (
             <div key={i} className="card p-6">
-              <h3 className="font-semibold text-white mb-3 flex items-start gap-3">
+              <h3 className="font-semibold text-gray-900 mb-3 flex items-start gap-3">
                 <span
                   className="shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold mt-0.5"
-                  style={{ background: 'rgba(124,58,237,0.15)', color: '#a78bfa', border: '1px solid rgba(124,58,237,0.3)' }}
+                  style={{ background: 'rgba(234,179,8,0.15)', color: '#b45309', border: '1px solid rgba(234,179,8,0.35)' }}
                 >
                   Q
                 </span>
                 {faq.q}
               </h3>
-              <p className="text-zinc-400 text-sm leading-relaxed pl-9">{faq.a}</p>
+              <p className="text-gray-500 text-sm leading-relaxed pl-9">{faq.a}</p>
             </div>
           ))}
         </div>
@@ -676,18 +675,18 @@ export default function HomePage() {
         <div
           className="rounded-2xl p-12 text-center relative overflow-hidden animate-pulse-glow"
           style={{
-            background: 'linear-gradient(135deg, rgba(124,58,237,0.15) 0%, rgba(6,182,212,0.1) 100%)',
-            border: '1px solid rgba(124,58,237,0.3)',
+            background: 'linear-gradient(135deg, rgba(234,179,8,0.1) 0%, rgba(245,158,11,0.08) 100%)',
+            border: '1px solid rgba(234,179,8,0.3)',
           }}
         >
           <div className="absolute inset-0 pointer-events-none opacity-40" aria-hidden="true"
-            style={{ backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(124,58,237,0.15) 0%, transparent 60%), radial-gradient(circle at 80% 50%, rgba(6,182,212,0.12) 0%, transparent 60%)' }} />
+            style={{ backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(234,179,8,0.15) 0%, transparent 60%), radial-gradient(circle at 80% 50%, rgba(245,158,11,0.12) 0%, transparent 60%)' }} />
           <div className="relative">
-            <p className="text-xs font-semibold uppercase tracking-widest text-violet-400 mb-3">Get Started Today</p>
-            <h2 className="text-4xl font-extrabold text-white mb-4">
+            <p className="text-xs font-semibold uppercase tracking-widest text-yellow-600 mb-3">Get Started Today</p>
+            <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
               Ready to Start Your Peptide Protocol?
             </h2>
-            <p className="text-zinc-300 text-lg max-w-xl mx-auto mb-8">
+            <p className="text-gray-600 text-lg max-w-xl mx-auto mb-8">
               Browse complete peptide guides. Find your stack. Pharmaceutical-grade purity, HPLC-tested and verified.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

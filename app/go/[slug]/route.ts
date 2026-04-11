@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { products } from '@/lib/products';
 
-const SHOP_HOME = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e';
+const SHOP_HOME = 'https://phiogen.is/?ref=PEPS';
 
 export async function GET(
   _request: NextRequest,

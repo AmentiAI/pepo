@@ -92,23 +92,23 @@ export default async function ArticlePage({ params }: Props) {
       {/* Header */}
       <section className="relative pt-14 pb-12 sm:pt-24 sm:pb-16 overflow-hidden grid-bg">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-20 left-1/4 w-96 h-96 bg-violet-600/8 rounded-full blur-3xl" />
+          <div className="absolute top-20 left-1/4 w-96 h-96 bg-gray-900/8 rounded-full blur-3xl" />
         </div>
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6">
-          <Link href="/blog" className="inline-flex items-center gap-2 text-sm text-zinc-500 hover:text-violet-400 transition-colors mb-8">
+          <Link href="/blog" className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-yellow-600 transition-colors mb-8">
             <ArrowLeft size={15} /> Back to Blog
           </Link>
           <div className="flex items-center gap-3 mb-5">
             <span className="badge badge-cyan">{article.category}</span>
-            <span className="flex items-center gap-1.5 text-xs text-zinc-500">
+            <span className="flex items-center gap-1.5 text-xs text-gray-500">
               <Clock size={12} /> {article.readTime}
             </span>
-            <span className="text-xs text-zinc-600">{article.date}</span>
+            <span className="text-xs text-gray-400">{article.date}</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight text-white mb-6">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight text-gray-900 mb-6">
             {article.title}
           </h1>
-          <p className="text-lg text-zinc-400 leading-relaxed max-w-3xl">{article.description}</p>
+          <p className="text-lg text-gray-500 leading-relaxed max-w-3xl">{article.description}</p>
           <div className="flex flex-wrap gap-2 mt-6">
             {article.tags.map((tag) => (
               <span key={tag} className="tag-chip text-xs">{tag}</span>

@@ -35,7 +35,7 @@ const protocols = [
     title: 'Weight Loss & Body Composition',
     badge: 'GLP-1 + GH Peptides',
     badgeClass: 'badge badge-cyan',
-    color: 'text-cyan-400',
+    color: 'text-yellow-600',
     border: 'border-cyan-500/30',
     bg: 'bg-cyan-500/10',
     items: [
@@ -49,9 +49,9 @@ const protocols = [
     title: 'Anti-Aging & Longevity (40+ Women)',
     badge: 'Epithalon + GHK-Cu + NAD+',
     badgeClass: 'badge',
-    color: 'text-violet-400',
-    border: 'border-violet-500/30',
-    bg: 'bg-violet-500/10',
+    color: 'text-yellow-600',
+    border: 'border-yellow-400/40',
+    bg: 'bg-yellow-50',
     items: [
       { role: 'Foundation', detail: 'Epithalon 5–10mg per cycle (telomere support, anti-cancer activity in research)' },
       { role: 'Skin', detail: 'GHK-Cu 1–2mg 2×/week (collagen restoration, gene expression reset)' },
@@ -64,9 +64,9 @@ const protocols = [
     title: 'Perimenopause Support',
     badge: 'GH Axis + PT-141 + BPC-157',
     badgeClass: 'badge',
-    color: 'text-violet-400',
-    border: 'border-violet-500/30',
-    bg: 'bg-violet-500/10',
+    color: 'text-yellow-600',
+    border: 'border-yellow-400/40',
+    bg: 'bg-yellow-50',
     items: [
       { role: 'GH Support', detail: 'Ipamorelin/CJC-1295: addresses the GH axis decline that accelerates with age and menopause' },
       { role: 'Libido', detail: 'PT-141 (Bremelanotide): FDA-approved for HSDD in premenopausal women (Vyleesi 1.75mg SQ)' },
@@ -79,7 +79,7 @@ const protocols = [
     title: 'Skin & Hair Health',
     badge: 'GHK-Cu + SNAP-8 + BPC-157',
     badgeClass: 'badge',
-    color: 'text-cyan-400',
+    color: 'text-yellow-600',
     border: 'border-cyan-500/30',
     bg: 'bg-cyan-500/10',
     items: [
@@ -94,7 +94,7 @@ const protocols = [
     title: 'Healing & Recovery',
     badge: 'BPC-157 + TB-500 + IGF-1',
     badgeClass: 'badge',
-    color: 'text-zinc-400',
+    color: 'text-gray-500',
     border: 'border-zinc-600/30',
     bg: 'bg-zinc-500/10',
     items: [
@@ -143,17 +143,17 @@ export default function WomensPeptideGuidePage() {
       {/* Hero */}
       <section className="relative pt-14 pb-12 sm:pt-28 sm:pb-20 overflow-hidden grid-bg">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-20 left-1/4 w-96 h-96 bg-violet-600/10 rounded-full blur-3xl" />
+          <div className="absolute top-20 left-1/4 w-96 h-96 bg-gray-900/10 rounded-full blur-3xl" />
           <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-cyan-500/8 rounded-full blur-3xl" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 mb-5 flex-wrap">
-            <Link href="/" className="badge hover:text-white transition-colors">Home</Link>
-            <ChevronRight size={14} className="text-zinc-600" />
-            <Link href="/guide" className="badge hover:text-white transition-colors">Guides</Link>
-            <ChevronRight size={14} className="text-zinc-600" />
+            <Link href="/" className="badge hover:text-gray-900 transition-colors">Home</Link>
+            <ChevronRight size={14} className="text-gray-400" />
+            <Link href="/guide" className="badge hover:text-gray-900 transition-colors">Guides</Link>
+            <ChevronRight size={14} className="text-gray-400" />
             <span className="badge badge-cyan">Women's Peptide Guide</span>
           </div>
 
@@ -164,9 +164,9 @@ export default function WomensPeptideGuidePage() {
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
               <span className="gradient-text">Women's</span>
-              <span className="text-white"> Peptide Guide</span>
+              <span className="text-gray-900"> Peptide Guide</span>
             </h1>
-            <p className="text-lg text-zinc-400 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
               Female physiology requires adjusted protocols — lower GH-axis doses, hormone-cycle
               timing awareness, and goal-specific stacks. This guide covers five goal categories
               with complete dosing, timing, and safety information for women.
@@ -185,16 +185,16 @@ export default function WomensPeptideGuidePage() {
           {/* Stat strip */}
           <div className="mt-10 sm:mt-14 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {[
-              { icon: <Star size={18} className="text-violet-400" />, value: '5', label: 'Goal categories: Weight, anti-aging, hormones, skin, healing' },
-              { icon: <Zap size={18} className="text-cyan-400" />, value: '70–80%', label: 'Lower doses: Women typically use 70–80% of male doses' },
-              { icon: <Sparkles size={18} className="text-violet-400" />, value: 'Cycle', label: 'Cycle aware: Protocol adjustments for menstrual cycle phases' },
-              { icon: <Shield size={18} className="text-cyan-400" />, value: 'Research', label: 'Research-backed: Multiple clinical trials include female subjects' },
+              { icon: <Star size={18} className="text-yellow-600" />, value: '5', label: 'Goal categories: Weight, anti-aging, hormones, skin, healing' },
+              { icon: <Zap size={18} className="text-yellow-600" />, value: '70–80%', label: 'Lower doses: Women typically use 70–80% of male doses' },
+              { icon: <Sparkles size={18} className="text-yellow-600" />, value: 'Cycle', label: 'Cycle aware: Protocol adjustments for menstrual cycle phases' },
+              { icon: <Shield size={18} className="text-yellow-600" />, value: 'Research', label: 'Research-backed: Multiple clinical trials include female subjects' },
             ].map((stat) => (
               <div key={stat.label} className="card p-4 flex items-start gap-3">
                 <div className="mt-0.5">{stat.icon}</div>
                 <div>
-                  <p className="text-xl font-bold text-white">{stat.value}</p>
-                  <p className="text-xs text-zinc-500 mt-0.5">{stat.label}</p>
+                  <p className="text-xl font-bold text-gray-900">{stat.value}</p>
+                  <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -207,10 +207,10 @@ export default function WomensPeptideGuidePage() {
       {/* Why Women's Protocols Differ */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <span className="badge badge-cyan mb-4 inline-block">Why It's Different</span>
-        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           Why Women's Protocols Differ from Men's
         </h2>
-        <p className="text-zinc-400 mb-10 max-w-2xl">
+        <p className="text-gray-500 mb-10 max-w-2xl">
           Female physiology introduces five key variables that affect peptide dosing, timing, and
           selection. Understanding these is the foundation of an effective women's protocol.
         </p>
@@ -219,37 +219,37 @@ export default function WomensPeptideGuidePage() {
             {
               title: 'Lower Body Weight',
               desc: 'Women have lower average body weight, which translates directly to lower absolute peptide doses — particularly for GH-axis peptides like Ipamorelin and IGF-1 LR3.',
-              accent: 'text-violet-400',
-              bg: 'bg-violet-500/10',
+              accent: 'text-yellow-600',
+              bg: 'bg-yellow-50',
             },
             {
               title: 'Higher Body Fat Percentage',
               desc: 'Women naturally carry more body fat, which alters GH secretion patterns. GH pulse amplitude is lower in women with higher adiposity, making GH-stimulating peptides especially valuable.',
-              accent: 'text-cyan-400',
+              accent: 'text-yellow-600',
               bg: 'bg-cyan-500/10',
             },
             {
               title: 'Hormonal Fluctuations',
               desc: 'The menstrual cycle creates estrogen and progesterone fluctuations that affect GH sensitivity. Some women report better GH peptide response in the follicular phase (days 1–14), though research evidence is limited.',
-              accent: 'text-violet-400',
-              bg: 'bg-violet-500/10',
+              accent: 'text-yellow-600',
+              bg: 'bg-yellow-50',
             },
             {
               title: 'Estrogen Interactions',
               desc: 'Estrogen has complex interactions with GH-axis peptides — it increases GH pulse frequency but reduces hepatic IGF-1 production. Women generally need lower IGF-1 LR3 doses due to inherently higher IGF-1 sensitivity.',
-              accent: 'text-cyan-400',
+              accent: 'text-yellow-600',
               bg: 'bg-cyan-500/10',
             },
             {
               title: 'GLP-1 Peptides: Equal Dosing',
               desc: 'For GLP-1 peptides (Semaglutide, Tirzepatide), women use the same clinical doses as men — major trials enrolled both sexes at identical doses with equivalent efficacy outcomes.',
-              accent: 'text-violet-400',
-              bg: 'bg-violet-500/10',
+              accent: 'text-yellow-600',
+              bg: 'bg-yellow-50',
             },
             {
               title: 'PT-141: Designed for Women',
               desc: 'Bremelanotide (PT-141/Vyleesi) is specifically FDA-approved for premenopausal women with HSDD — it\'s the only peptide with an approved women-specific indication.',
-              accent: 'text-cyan-400',
+              accent: 'text-yellow-600',
               bg: 'bg-cyan-500/10',
             },
           ].map((item) => (
@@ -261,8 +261,8 @@ export default function WomensPeptideGuidePage() {
               <div className={`w-8 h-8 rounded-lg ${item.bg} flex items-center justify-center mb-3`}>
                 <CheckCircle2 size={16} className={item.accent} />
               </div>
-              <h3 className="font-bold text-white text-sm mb-2">{item.title}</h3>
-              <p className="text-xs text-zinc-500 leading-relaxed">{item.desc}</p>
+              <h3 className="font-bold text-gray-900 text-sm mb-2">{item.title}</h3>
+              <p className="text-xs text-gray-500 leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -272,10 +272,10 @@ export default function WomensPeptideGuidePage() {
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <span className="badge mb-4 inline-block">Goal-Based Protocols</span>
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
             Five Goal-Based Protocols for Women
           </h2>
-          <p className="text-zinc-400 mb-10 max-w-2xl">
+          <p className="text-gray-500 mb-10 max-w-2xl">
             Select the protocol that matches your primary goal. Most women eventually combine
             elements from two or more protocols as they gain experience.
           </p>
@@ -295,7 +295,7 @@ export default function WomensPeptideGuidePage() {
                   </div>
                   <div>
                     <div className="flex items-center gap-2 flex-wrap mb-1">
-                      <h3 className="font-bold text-white">{protocol.title}</h3>
+                      <h3 className="font-bold text-gray-900">{protocol.title}</h3>
                       <span className={protocol.badgeClass}>{protocol.badge}</span>
                     </div>
                   </div>
@@ -310,7 +310,7 @@ export default function WomensPeptideGuidePage() {
                       <p className={`text-[10px] font-bold uppercase tracking-wider mb-1 ${protocol.color}`}>
                         {item.role}
                       </p>
-                      <p className="text-xs text-zinc-400 leading-relaxed">{item.detail}</p>
+                      <p className="text-xs text-gray-500 leading-relaxed">{item.detail}</p>
                     </div>
                   ))}
                 </div>
@@ -325,10 +325,10 @@ export default function WomensPeptideGuidePage() {
       {/* Dosing Adjustments Table */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <span className="badge badge-cyan mb-4 inline-block">Dosing Reference</span>
-        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           Women's Dosing Adjustments vs Men's
         </h2>
-        <p className="text-zinc-400 mb-8 max-w-2xl">
+        <p className="text-gray-500 mb-8 max-w-2xl">
           GH-axis peptides are dosed lower in women; GLP-1 peptides use the same clinical doses.
         </p>
         <div className="card border overflow-hidden" style={{ borderColor: 'var(--border)' }}>
@@ -336,10 +336,10 @@ export default function WomensPeptideGuidePage() {
             <table className="w-full text-sm">
               <thead>
                 <tr style={{ backgroundColor: 'var(--bg-card)', borderBottom: '1px solid var(--border)' }}>
-                  <th className="text-left px-5 py-3 text-xs font-bold text-zinc-400 uppercase tracking-wider">Peptide</th>
-                  <th className="text-left px-5 py-3 text-xs font-bold text-violet-400 uppercase tracking-wider">Women's Dose</th>
-                  <th className="text-left px-5 py-3 text-xs font-bold text-zinc-500 uppercase tracking-wider">Men's Dose</th>
-                  <th className="text-left px-5 py-3 text-xs font-bold text-zinc-400 uppercase tracking-wider hidden sm:table-cell">Rationale</th>
+                  <th className="text-left px-5 py-3 text-xs font-bold text-gray-500 uppercase tracking-wider">Peptide</th>
+                  <th className="text-left px-5 py-3 text-xs font-bold text-yellow-600 uppercase tracking-wider">Women's Dose</th>
+                  <th className="text-left px-5 py-3 text-xs font-bold text-gray-500 uppercase tracking-wider">Men's Dose</th>
+                  <th className="text-left px-5 py-3 text-xs font-bold text-gray-500 uppercase tracking-wider hidden sm:table-cell">Rationale</th>
                 </tr>
               </thead>
               <tbody>
@@ -351,10 +351,10 @@ export default function WomensPeptideGuidePage() {
                       borderBottom: '1px solid var(--border)',
                     }}
                   >
-                    <td className="px-5 py-3 font-semibold text-white text-xs">{row.peptide}</td>
-                    <td className="px-5 py-3 text-violet-400 font-semibold text-xs">{row.women}</td>
-                    <td className="px-5 py-3 text-zinc-500 text-xs">{row.men}</td>
-                    <td className="px-5 py-3 text-zinc-500 text-xs hidden sm:table-cell">{row.note}</td>
+                    <td className="px-5 py-3 font-semibold text-gray-900 text-xs">{row.peptide}</td>
+                    <td className="px-5 py-3 text-yellow-600 font-semibold text-xs">{row.women}</td>
+                    <td className="px-5 py-3 text-gray-500 text-xs">{row.men}</td>
+                    <td className="px-5 py-3 text-gray-500 text-xs hidden sm:table-cell">{row.note}</td>
                   </tr>
                 ))}
               </tbody>
@@ -367,28 +367,28 @@ export default function WomensPeptideGuidePage() {
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <span className="badge mb-4 inline-block">Cycle Timing</span>
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
             Menstrual Cycle Timing
           </h2>
-          <p className="text-zinc-400 mb-8 max-w-2xl">
+          <p className="text-gray-500 mb-8 max-w-2xl">
             Some women report better GH peptide response in the follicular phase (days 1–14). No
             strong clinical research confirms this, but user reports are consistent enough to note.
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
-              { peptide: 'GH Peptides (Ipamorelin, CJC)', timing: 'Neutral', desc: 'Use consistently — no phase-specific advantage confirmed in research.', color: 'text-zinc-400', border: 'border-zinc-600/30' },
-              { peptide: 'GLP-1 Peptides', timing: 'Neutral', desc: 'Same weekly dose regardless of cycle phase — GLP-1 receptor sensitivity is not cycle-dependent.', color: 'text-zinc-400', border: 'border-zinc-600/30' },
-              { peptide: 'BPC-157', timing: 'Use Consistently', desc: 'BPC-157 works through tissue-level mechanisms, not hormonal axes — use daily without cycle adjustment.', color: 'text-cyan-400', border: 'border-cyan-500/30' },
-              { peptide: 'PT-141', timing: 'Any Time', desc: 'Can be used at any point in the cycle as needed. FDA approval was not cycle-phase specific.', color: 'text-violet-400', border: 'border-violet-500/30' },
+              { peptide: 'GH Peptides (Ipamorelin, CJC)', timing: 'Neutral', desc: 'Use consistently — no phase-specific advantage confirmed in research.', color: 'text-gray-500', border: 'border-zinc-600/30' },
+              { peptide: 'GLP-1 Peptides', timing: 'Neutral', desc: 'Same weekly dose regardless of cycle phase — GLP-1 receptor sensitivity is not cycle-dependent.', color: 'text-gray-500', border: 'border-zinc-600/30' },
+              { peptide: 'BPC-157', timing: 'Use Consistently', desc: 'BPC-157 works through tissue-level mechanisms, not hormonal axes — use daily without cycle adjustment.', color: 'text-yellow-600', border: 'border-cyan-500/30' },
+              { peptide: 'PT-141', timing: 'Any Time', desc: 'Can be used at any point in the cycle as needed. FDA approval was not cycle-phase specific.', color: 'text-yellow-600', border: 'border-yellow-400/40' },
             ].map((item) => (
               <div
                 key={item.peptide}
                 className={`card p-5 border ${item.border}`}
                 style={{ background: 'var(--bg)' }}
               >
-                <h3 className="text-xs font-bold text-zinc-400 mb-1">{item.peptide}</h3>
+                <h3 className="text-xs font-bold text-gray-500 mb-1">{item.peptide}</h3>
                 <p className={`text-sm font-bold mb-2 ${item.color}`}>{item.timing}</p>
-                <p className="text-xs text-zinc-500 leading-relaxed">{item.desc}</p>
+                <p className="text-xs text-gray-500 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -400,10 +400,10 @@ export default function WomensPeptideGuidePage() {
       {/* Safety */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <span className="badge badge-cyan mb-4 inline-block">Safety</span>
-        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           Safety Considerations for Women
         </h2>
-        <p className="text-zinc-400 mb-8 max-w-2xl">
+        <p className="text-gray-500 mb-8 max-w-2xl">
           Key safety notes specific to female physiology and life stage.
         </p>
         <div className="grid sm:grid-cols-2 gap-5">
@@ -411,11 +411,11 @@ export default function WomensPeptideGuidePage() {
             className="card p-6 border border-red-500/20"
             style={{ background: 'var(--bg-card)' }}
           >
-            <h3 className="font-bold text-white mb-3 flex items-center gap-2">
+            <h3 className="font-bold text-gray-900 mb-3 flex items-center gap-2">
               <Shield size={16} className="text-red-400" />
               Pregnancy &amp; Breastfeeding
             </h3>
-            <p className="text-sm text-zinc-400 leading-relaxed">
+            <p className="text-sm text-gray-500 leading-relaxed">
               No peptides have been specifically shown to be harmful in pregnancy or breastfeeding,
               but they are contraindicated as a precaution due to absence of safety data in these
               populations. Always discontinue all peptides when pregnant or breastfeeding. GLP-1
@@ -427,11 +427,11 @@ export default function WomensPeptideGuidePage() {
             className="card p-6 border border-cyan-500/20"
             style={{ background: 'var(--bg-card)' }}
           >
-            <h3 className="font-bold text-white mb-3 flex items-center gap-2">
-              <CheckCircle2 size={16} className="text-cyan-400" />
+            <h3 className="font-bold text-gray-900 mb-3 flex items-center gap-2">
+              <CheckCircle2 size={16} className="text-yellow-600" />
               Getting Started: Beginner Recommendation
             </h3>
-            <p className="text-sm text-zinc-400 leading-relaxed">
+            <p className="text-sm text-gray-500 leading-relaxed">
               Beginners should start with Ipamorelin alone (without CJC-1295) at 100mcg before bed.
               This is the lowest-risk, highest-benefit entry point for most women — pulsatile GH
               release with no cortisol spike, well-studied safety profile, and noticeable benefits
@@ -446,8 +446,8 @@ export default function WomensPeptideGuidePage() {
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="flex items-center gap-3 mb-8">
-            <HelpCircle size={20} className="text-violet-400" />
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">Frequently Asked Questions</h2>
+            <HelpCircle size={20} className="text-yellow-600" />
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Frequently Asked Questions</h2>
           </div>
           <div className="space-y-4">
             {faqs.map((faq, i) => (
@@ -456,8 +456,8 @@ export default function WomensPeptideGuidePage() {
                 className="card p-6 border"
                 style={{ borderColor: 'var(--border)', background: 'var(--bg)' }}
               >
-                <h3 className="font-bold text-white mb-3">{faq.q}</h3>
-                <p className="text-sm text-zinc-400 leading-relaxed">{faq.a}</p>
+                <h3 className="font-bold text-gray-900 mb-3">{faq.q}</h3>
+                <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -468,10 +468,10 @@ export default function WomensPeptideGuidePage() {
 
       {/* CTA */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 text-center">
-        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
           Start Your Women's Peptide Protocol
         </h2>
-        <p className="text-zinc-400 max-w-xl mx-auto mb-8">
+        <p className="text-gray-500 max-w-xl mx-auto mb-8">
           The Anti-Aging Skin Stack is the most popular starting point for women — combining
           GHK-Cu, SNAP-8, and Ipamorelin for visible skin, hair, and body composition results.
         </p>

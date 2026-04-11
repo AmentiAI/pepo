@@ -150,7 +150,7 @@ export default function AboutPage() {
                 where the evidence is thin.
               </p>
               <p>
-                We are <strong className="text-white">not</strong> a medical practice and nothing on this
+                We are <strong className="text-gray-900">not</strong> a medical practice and nothing on this
                 site constitutes medical advice. Our role is to surface and explain the science — your
                 physician&apos;s role is to help you apply it safely to your individual circumstances.
               </p>
@@ -176,11 +176,11 @@ export default function AboutPage() {
                 <div key={heading} className="card p-6 flex gap-4">
                   <div className="shrink-0 mt-0.5">
                     <div className="w-10 h-10 rounded-lg bg-[var(--bg)] border border-[var(--border)] flex items-center justify-center">
-                      <Icon className="w-5 h-5 text-cyan-400" />
+                      <Icon className="w-5 h-5 text-yellow-600" />
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-white mb-1">{heading}</h3>
+                    <h3 className="font-semibold text-gray-900 mb-1">{heading}</h3>
                     <p className="text-sm text-gray-400 leading-relaxed">{body}</p>
                   </div>
                 </div>
@@ -188,7 +188,7 @@ export default function AboutPage() {
             </div>
             <div className="card p-6 mt-6 text-gray-300 leading-relaxed prose-dark">
               <p className="text-sm">
-                <strong className="text-white">A note on study quality:</strong> We distinguish between
+                <strong className="text-gray-900">A note on study quality:</strong> We distinguish between
                 in-vitro (cell culture), in-vivo (animal), and human trial data throughout our guides.
                 Animal data informs hypotheses — it does not confirm human outcomes. Where the evidence
                 hierarchy matters we call it out explicitly rather than burying the caveat in fine print.
@@ -215,7 +215,7 @@ export default function AboutPage() {
               <ul className="space-y-3">
                 {supplierReasons.map((reason) => (
                   <li key={reason} className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-cyan-400 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-yellow-600 shrink-0 mt-0.5" />
                     <span className="text-gray-300 text-sm leading-relaxed">{reason}</span>
                   </li>
                 ))}
@@ -275,7 +275,7 @@ export default function AboutPage() {
             </h2>
             <div className="card p-6 sm:p-8 space-y-4 text-gray-300 leading-relaxed prose-dark">
               <p>
-                The content published on PeptidesClav is for <strong className="text-white">informational
+                The content published on PeptidesClav is for <strong className="text-gray-900">informational
                 and educational purposes only</strong>. It does not constitute medical advice, diagnosis, or
                 treatment. Always consult a qualified healthcare provider before starting any peptide
                 protocol, especially if you have existing health conditions, take prescription medications,

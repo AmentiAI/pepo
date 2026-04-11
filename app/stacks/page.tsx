@@ -45,7 +45,7 @@ function DifficultyBadge({ difficulty }: { difficulty: 'Beginner' | 'Intermediat
 
 export default function StacksPage() {
   return (
-    <div className="min-h-screen" style={{ background: '#08080f' }}>
+    <div className="min-h-screen" style={{ background: '#ffffff' }}>
 
       {/* Hero */}
       <section className="relative overflow-hidden">
@@ -54,7 +54,7 @@ export default function StacksPage() {
           className="absolute inset-0"
           style={{
             background:
-              'radial-gradient(ellipse 70% 55% at 50% 0%, rgba(124,58,237,0.14) 0%, transparent 70%)',
+              'radial-gradient(ellipse 70% 55% at 50% 0%, rgba(234,179,8,0.14) 0%, transparent 70%)',
           }}
           aria-hidden="true"
         />
@@ -63,7 +63,7 @@ export default function StacksPage() {
             <Zap size={11} />
             <span>6 Expert-Curated Protocols</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-4 leading-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-4 leading-tight">
             Peptide Stacks &{' '}
             <span className="gradient-text">Protocols</span>
           </h1>
@@ -93,13 +93,13 @@ export default function StacksPage() {
                 <Link
                   href={`/stacks/${stack.id}`}
                   className="block relative overflow-hidden"
-                  style={{ height: '180px', background: '#0a0a14' }}
+                  style={{ height: '180px', background: '#ffffff' }}
                 >
                   {/* Gradient bg */}
                   <div
                     className="absolute inset-0"
                     style={{
-                      background: 'linear-gradient(135deg, rgba(124,58,237,0.15) 0%, rgba(6,182,212,0.1) 100%)',
+                      background: 'linear-gradient(135deg, rgba(234,179,8,0.15) 0%, rgba(245,158,11,0.1) 100%)',
                     }}
                   />
 
@@ -132,9 +132,9 @@ export default function StacksPage() {
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div
                         className="w-16 h-16 rounded-2xl flex items-center justify-center"
-                        style={{ background: 'rgba(124,58,237,0.2)', border: '1px solid rgba(124,58,237,0.3)' }}
+                        style={{ background: 'rgba(234,179,8,0.2)', border: '1px solid rgba(234,179,8,0.3)' }}
                       >
-                        <Zap size={28} className="text-violet-400" />
+                        <Zap size={28} className="text-yellow-600" />
                       </div>
                     </div>
                   )}
@@ -153,7 +153,7 @@ export default function StacksPage() {
 
                 <div className="p-6 flex flex-col flex-1">
                   {/* Name & tagline */}
-                  <h2 className="text-lg font-bold text-white mb-2 leading-snug">
+                  <h2 className="text-lg font-bold text-gray-900 mb-2 leading-snug">
                     {stack.name}
                   </h2>
                   <p className="text-sm leading-relaxed mb-4 flex-1" style={{ color: '#71717a' }}>
@@ -163,15 +163,15 @@ export default function StacksPage() {
                   {/* Meta info */}
                   <div className="space-y-2 mb-4">
                     <div className="flex items-center gap-2 text-sm" style={{ color: '#a1a1b5' }}>
-                      <Target size={13} className="text-violet-400 flex-shrink-0" />
+                      <Target size={13} className="text-yellow-600 flex-shrink-0" />
                       <span>{stack.goal}</span>
                     </div>
                     <div className="flex items-center gap-2 text-sm" style={{ color: '#a1a1b5' }}>
-                      <Clock size={13} className="text-cyan-400 flex-shrink-0" />
+                      <Clock size={13} className="text-yellow-600 flex-shrink-0" />
                       <span>{stack.duration}</span>
                     </div>
                     <div className="flex items-center gap-2 text-sm" style={{ color: '#a1a1b5' }}>
-                      <DollarSign size={13} className="text-violet-400 flex-shrink-0" />
+                      <DollarSign size={13} className="text-yellow-600 flex-shrink-0" />
                       <span>{stack.cost}</span>
                     </div>
                   </div>
@@ -202,21 +202,21 @@ export default function StacksPage() {
       <section className="max-w-6xl mx-auto px-4 sm:px-6 pb-16">
         <div
           className="rounded-2xl border p-8 sm:p-12 text-center relative overflow-hidden"
-          style={{ background: '#0f0f1a', borderColor: '#2d2d50' }}
+          style={{ background: '#ffffff', borderColor: '#2d2d50' }}
         >
           <div
             className="absolute inset-0"
             style={{
               background:
-                'radial-gradient(ellipse 60% 60% at 50% 100%, rgba(6,182,212,0.08) 0%, transparent 70%)',
+                'radial-gradient(ellipse 60% 60% at 50% 100%, rgba(245,158,11,0.08) 0%, transparent 70%)',
             }}
             aria-hidden="true"
           />
           <div className="relative">
-            <p className="text-xs font-semibold uppercase tracking-widest text-cyan-400 mb-3">
+            <p className="text-xs font-semibold uppercase tracking-widest text-yellow-600 mb-3">
               Shop the Protocols
             </p>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-white mb-3">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">
               Ready to stack?
             </h2>
             <p className="text-sm max-w-md mx-auto mb-8" style={{ color: '#a1a1b5' }}>

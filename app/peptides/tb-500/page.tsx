@@ -101,9 +101,9 @@ export default function TB500Page() {
       <div className="border-b" style={{ borderColor: '#1e1e35' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3">
           <nav className="flex items-center gap-2 text-sm" style={{ color: '#71717a' }}>
-            <Link href="/" className="hover:text-violet-400 transition-colors">Home</Link>
+            <Link href="/" className="hover:text-yellow-600 transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/healing" className="hover:text-violet-400 transition-colors">Healing</Link>
+            <Link href="/healing" className="hover:text-yellow-600 transition-colors">Healing</Link>
             <span>/</span>
             <span style={{ color: '#a1a1b5' }}>TB-500</span>
           </nav>
@@ -113,7 +113,7 @@ export default function TB500Page() {
       {/* Hero */}
       <section className="relative pt-14 pb-12 sm:pt-28 sm:pb-20 overflow-hidden grid-bg">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-20 left-1/4 w-96 h-96 bg-violet-600/10 rounded-full blur-3xl" />
+          <div className="absolute top-20 left-1/4 w-96 h-96 bg-gray-900/10 rounded-full blur-3xl" />
           <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-cyan-500/8 rounded-full blur-3xl" />
         </div>
 
@@ -121,15 +121,15 @@ export default function TB500Page() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-2 mb-5">
               <span className="badge">Peptides</span>
-              <ChevronRight size={14} className="text-zinc-600" />
+              <ChevronRight size={14} className="text-gray-400" />
               <span className="badge badge-violet">Healing & Recovery</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
               <span className="gradient-text">TB-500</span>
-              <span className="text-white"> (Thymosin Beta-4)</span>
+              <span className="text-gray-900"> (Thymosin Beta-4)</span>
             </h1>
-            <p className="text-zinc-400 text-sm font-medium mb-3">Chemical name: Thymosin Beta-4 fragment (Tβ4)</p>
-            <p className="text-lg text-zinc-400 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-gray-500 text-sm font-medium mb-3">Chemical name: Thymosin Beta-4 fragment (Tβ4)</p>
+            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
               TB-500 is the most potent systemic healing peptide available. Unlike localized compounds,
               it travels through the bloodstream and initiates repair cascades in every tissue simultaneously —
               reducing fibrosis, restoring flexibility, and accelerating recovery from chronic and acute injuries alike.
@@ -146,16 +146,16 @@ export default function TB500Page() {
 
           <div className="mt-10 sm:mt-14 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {[
-              { icon: <Activity size={18} className="text-violet-400" />, value: 'Systemic', label: 'Full-body distribution' },
-              { icon: <Clock size={18} className="text-cyan-400" />, value: '8–12 wks', label: 'Standard protocol' },
-              { icon: <ShieldCheck size={18} className="text-violet-400" />, value: '5mg/wk', label: 'Maintenance dose' },
-              { icon: <CheckCircle2 size={18} className="text-cyan-400" />, value: 'Anti-fibrotic', label: 'Scar tissue reduction' },
+              { icon: <Activity size={18} className="text-yellow-600" />, value: 'Systemic', label: 'Full-body distribution' },
+              { icon: <Clock size={18} className="text-yellow-600" />, value: '8–12 wks', label: 'Standard protocol' },
+              { icon: <ShieldCheck size={18} className="text-yellow-600" />, value: '5mg/wk', label: 'Maintenance dose' },
+              { icon: <CheckCircle2 size={18} className="text-yellow-600" />, value: 'Anti-fibrotic', label: 'Scar tissue reduction' },
             ].map((stat) => (
               <div key={stat.label} className="card p-4 flex items-start gap-3">
                 <div className="mt-0.5">{stat.icon}</div>
                 <div>
-                  <p className="text-xl font-bold text-white">{stat.value}</p>
-                  <p className="text-xs text-zinc-500 mt-0.5">{stat.label}</p>
+                  <p className="text-xl font-bold text-gray-900">{stat.value}</p>
+                  <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -170,21 +170,21 @@ export default function TB500Page() {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="badge badge-violet mb-4 inline-block">Mechanism of Action</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-5">What Is TB-500?</h2>
-            <p className="text-zinc-400 leading-relaxed mb-5">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-5">What Is TB-500?</h2>
+            <p className="text-gray-500 leading-relaxed mb-5">
               TB-500 is a synthetic 17-amino-acid peptide fragment derived from Thymosin Beta-4 — a naturally
               occurring 43-amino-acid protein present in virtually every human cell at baseline. It is one of
               the most abundant intracellular peptides in mammals, playing a central role in actin cytoskeleton
               regulation, cell motility, and tissue homeostasis.
             </p>
-            <p className="text-zinc-400 leading-relaxed mb-5">
+            <p className="text-gray-500 leading-relaxed mb-5">
               The TB-500 fragment contains the actin-binding domain of the full Tβ4 protein — specifically
               the LKKTETQ sequence responsible for G-actin sequestration. This is the region that drives
               cell migration, proliferation, and the upstream signaling that triggers systemic healing cascades.
               By isolating this domain, TB-500 delivers the core therapeutic mechanism at significantly
               lower effective doses than the full parent protein.
             </p>
-            <p className="text-zinc-400 leading-relaxed mb-5">
+            <p className="text-gray-500 leading-relaxed mb-5">
               Unlike most healing peptides that exert primarily local effects at the injection site, TB-500
               distributes systemically through the bloodstream. This is its defining clinical advantage:
               a single subcutaneous injection initiates repair signaling throughout every tissue in the body
@@ -195,10 +195,10 @@ export default function TB500Page() {
           <div className="space-y-4">
             <div className="card p-5 border-l-2" style={{ borderLeftColor: '#7c3aed' }}>
               <div className="flex items-center gap-2 mb-2">
-                <Activity size={16} className="text-violet-400" />
-                <h3 className="text-white font-semibold">Actin Sequestration</h3>
+                <Activity size={16} className="text-yellow-600" />
+                <h3 className="text-gray-900 font-semibold">Actin Sequestration</h3>
               </div>
-              <p className="text-zinc-400 text-sm leading-relaxed">
+              <p className="text-gray-500 text-sm leading-relaxed">
                 TB-500 binds G-actin with high affinity, increasing the pool of unpolymerized actin available
                 for cell migration. This directly accelerates the movement of repair cells (fibroblasts,
                 myoblasts) to damaged tissue — the rate-limiting step in tissue repair.
@@ -206,10 +206,10 @@ export default function TB500Page() {
             </div>
             <div className="card p-5 border-l-2" style={{ borderLeftColor: '#0891b2' }}>
               <div className="flex items-center gap-2 mb-2">
-                <Flame size={16} className="text-cyan-400" />
-                <h3 className="text-white font-semibold">Anti-Inflammatory Cytokine Modulation</h3>
+                <Flame size={16} className="text-yellow-600" />
+                <h3 className="text-gray-900 font-semibold">Anti-Inflammatory Cytokine Modulation</h3>
               </div>
-              <p className="text-zinc-400 text-sm leading-relaxed">
+              <p className="text-gray-500 text-sm leading-relaxed">
                 TB-500 downregulates pro-inflammatory cytokines (TNF-α, IL-1β, IL-6) while upregulating
                 anti-inflammatory mediators. This creates an environment conducive to tissue repair rather
                 than chronic inflammation — the state many overuse injuries are stuck in.
@@ -217,10 +217,10 @@ export default function TB500Page() {
             </div>
             <div className="card p-5 border-l-2" style={{ borderLeftColor: '#7c3aed' }}>
               <div className="flex items-center gap-2 mb-2">
-                <TrendingUp size={16} className="text-violet-400" />
-                <h3 className="text-white font-semibold">Angiogenesis & Myogenesis</h3>
+                <TrendingUp size={16} className="text-yellow-600" />
+                <h3 className="text-gray-900 font-semibold">Angiogenesis & Myogenesis</h3>
               </div>
-              <p className="text-zinc-400 text-sm leading-relaxed">
+              <p className="text-gray-500 text-sm leading-relaxed">
                 TB-500 promotes the formation of new blood vessels (angiogenesis) to restore vascularity
                 in damaged tissue, and stimulates myogenesis (new muscle fiber formation) — addressing
                 both the structural and vascular components of injury recovery.
@@ -228,10 +228,10 @@ export default function TB500Page() {
             </div>
             <div className="card p-5 border-l-2" style={{ borderLeftColor: '#0891b2' }}>
               <div className="flex items-center gap-2 mb-2">
-                <ShieldCheck size={16} className="text-cyan-400" />
-                <h3 className="text-white font-semibold">Anti-Fibrotic Action</h3>
+                <ShieldCheck size={16} className="text-yellow-600" />
+                <h3 className="text-gray-900 font-semibold">Anti-Fibrotic Action</h3>
               </div>
-              <p className="text-zinc-400 text-sm leading-relaxed">
+              <p className="text-gray-500 text-sm leading-relaxed">
                 TB-500 reduces the deposition of fibrous scar tissue during healing — one of its most
                 clinically significant effects. Fibrosis restricts range of motion and creates weak
                 tissue architecture. TB-500 promotes organized collagen deposition over disorganized scar.
@@ -247,8 +247,8 @@ export default function TB500Page() {
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <span className="badge badge-cyan mb-4 inline-block">Research Evidence</span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">What the Research Shows</h2>
-          <p className="text-zinc-400 leading-relaxed mb-8">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">What the Research Shows</h2>
+          <p className="text-gray-500 leading-relaxed mb-8">
             TB-500 / Thymosin Beta-4 is one of the most researched healing peptides in the literature,
             with peer-reviewed studies spanning cardiac repair, musculoskeletal recovery, corneal healing,
             neuroprotection, and hair follicle biology. Key findings include:
@@ -282,10 +282,10 @@ export default function TB500Page() {
               },
             ].map((item) => (
               <div key={item.title} className="card p-5 flex gap-4">
-                <CheckCircle2 size={20} className="text-violet-400 shrink-0 mt-0.5" />
+                <CheckCircle2 size={20} className="text-yellow-600 shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-white font-semibold mb-1">{item.title}</p>
-                  <p className="text-zinc-400 text-sm leading-relaxed">{item.body}</p>
+                  <p className="text-gray-900 font-semibold mb-1">{item.title}</p>
+                  <p className="text-gray-500 text-sm leading-relaxed">{item.body}</p>
                 </div>
               </div>
             ))}
@@ -300,43 +300,43 @@ export default function TB500Page() {
         <div className="grid lg:grid-cols-2 gap-12">
           <div>
             <span className="badge badge-violet mb-4 inline-block">Dosing Protocol</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-5">TB-500 Protocol Guide</h2>
-            <p className="text-zinc-400 leading-relaxed mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-5">TB-500 Protocol Guide</h2>
+            <p className="text-gray-500 leading-relaxed mb-6">
               TB-500 is almost universally run as a two-phase protocol: a loading phase to rapidly
               saturate systemic receptors, followed by a lower maintenance dose through the healing period.
               The loading phase is optional but consistently produces faster early results for acute injuries.
             </p>
 
             <div className="space-y-4 mb-8">
-              <div className="rounded-xl p-5" style={{ background: 'rgba(124,58,237,0.08)', border: '1px solid rgba(124,58,237,0.2)' }}>
-                <h3 className="text-violet-300 font-bold mb-3">Loading Phase (Weeks 1–2)</h3>
-                <ul className="space-y-2 text-sm text-zinc-400">
-                  <li className="flex gap-2"><span className="text-violet-400 font-bold">Dose:</span> 7.5–10mg total per week</li>
-                  <li className="flex gap-2"><span className="text-violet-400 font-bold">Split:</span> 2–3 injections per week</li>
-                  <li className="flex gap-2"><span className="text-violet-400 font-bold">Route:</span> Subcutaneous (abdomen or thigh)</li>
-                  <li className="flex gap-2"><span className="text-violet-400 font-bold">Purpose:</span> Saturate actin-binding reservoirs, rapid systemic distribution</li>
+              <div className="rounded-xl p-5" style={{ background: 'rgba(234,179,8,0.08)', border: '1px solid rgba(234,179,8,0.2)' }}>
+                <h3 className="text-yellow-500 font-bold mb-3">Loading Phase (Weeks 1–2)</h3>
+                <ul className="space-y-2 text-sm text-gray-500">
+                  <li className="flex gap-2"><span className="text-yellow-600 font-bold">Dose:</span> 7.5–10mg total per week</li>
+                  <li className="flex gap-2"><span className="text-yellow-600 font-bold">Split:</span> 2–3 injections per week</li>
+                  <li className="flex gap-2"><span className="text-yellow-600 font-bold">Route:</span> Subcutaneous (abdomen or thigh)</li>
+                  <li className="flex gap-2"><span className="text-yellow-600 font-bold">Purpose:</span> Saturate actin-binding reservoirs, rapid systemic distribution</li>
                 </ul>
               </div>
 
               <div className="rounded-xl p-5" style={{ background: 'rgba(8,145,178,0.08)', border: '1px solid rgba(8,145,178,0.2)' }}>
                 <h3 className="text-cyan-300 font-bold mb-3">Maintenance Phase (Weeks 3–12)</h3>
-                <ul className="space-y-2 text-sm text-zinc-400">
-                  <li className="flex gap-2"><span className="text-cyan-400 font-bold">Dose:</span> 5–7.5mg total per week</li>
-                  <li className="flex gap-2"><span className="text-cyan-400 font-bold">Split:</span> 2× per week (e.g., Monday/Thursday)</li>
-                  <li className="flex gap-2"><span className="text-cyan-400 font-bold">Duration:</span> Continue for full healing period</li>
-                  <li className="flex gap-2"><span className="text-cyan-400 font-bold">Cycle:</span> 12 weeks on / 4 weeks off</li>
+                <ul className="space-y-2 text-sm text-gray-500">
+                  <li className="flex gap-2"><span className="text-yellow-600 font-bold">Dose:</span> 5–7.5mg total per week</li>
+                  <li className="flex gap-2"><span className="text-yellow-600 font-bold">Split:</span> 2× per week (e.g., Monday/Thursday)</li>
+                  <li className="flex gap-2"><span className="text-yellow-600 font-bold">Duration:</span> Continue for full healing period</li>
+                  <li className="flex gap-2"><span className="text-yellow-600 font-bold">Cycle:</span> 12 weeks on / 4 weeks off</li>
                 </ul>
               </div>
             </div>
 
-            <p className="text-zinc-400 text-sm leading-relaxed mb-4">
-              <strong className="text-white">Injection location:</strong> Always subcutaneous — abdomen, thigh, or upper arm.
+            <p className="text-gray-500 text-sm leading-relaxed mb-4">
+              <strong className="text-gray-900">Injection location:</strong> Always subcutaneous — abdomen, thigh, or upper arm.
               TB-500 works systemically, so proximity to the injury site is irrelevant. Rotate sites to avoid
               subcutaneous tissue irritation.
             </p>
-            <p className="text-zinc-400 text-sm leading-relaxed">
-              <strong className="text-white">Reconstitution:</strong> Mix with{' '}
-              <Link href="/products/bacteriostatic-water" className="text-violet-400 hover:underline">bacteriostatic water</Link>
+            <p className="text-gray-500 text-sm leading-relaxed">
+              <strong className="text-gray-900">Reconstitution:</strong> Mix with{' '}
+              <Link href="/products/bacteriostatic-water" className="text-yellow-600 hover:underline">bacteriostatic water</Link>
               {' '}for multi-use stability. Each vial is lyophilized (freeze-dried) for maximum shelf life before reconstitution.
             </p>
           </div>
@@ -344,22 +344,22 @@ export default function TB500Page() {
           {/* Injury guide */}
           <div>
             <span className="badge badge-cyan mb-4 inline-block">Injury-Specific Guide</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-5">When to Use TB-500</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-5">When to Use TB-500</h2>
             <div className="space-y-3">
               {[
                 {
                   injury: 'Muscle tears (Grade I–II)',
                   recommendation: 'TB-500 primary — systemic muscle repair',
                   detail: 'TB-500\'s myogenic properties make it ideal for partial muscle tears. Load at 10mg/wk for 2 weeks, then maintain.',
-                  color: 'text-violet-400',
-                  bg: 'rgba(124,58,237,0.08)',
-                  border: 'rgba(124,58,237,0.2)',
+                  color: 'text-yellow-600',
+                  bg: 'rgba(234,179,8,0.08)',
+                  border: 'rgba(234,179,8,0.2)',
                 },
                 {
                   injury: 'Chronic tendinopathy',
                   recommendation: 'TB-500 + BPC-157 stack',
                   detail: 'Chronic tendons need both local vascularization (BPC-157) and systemic fibrosis clearance (TB-500).',
-                  color: 'text-cyan-400',
+                  color: 'text-yellow-600',
                   bg: 'rgba(8,145,178,0.08)',
                   border: 'rgba(8,145,178,0.2)',
                 },
@@ -367,15 +367,15 @@ export default function TB500Page() {
                   injury: 'Post-surgical recovery',
                   recommendation: 'TB-500 + BPC-157 combined',
                   detail: 'Surgery creates systemic inflammation alongside local damage. Use both peptides from day 1 post-op.',
-                  color: 'text-violet-400',
-                  bg: 'rgba(124,58,237,0.08)',
-                  border: 'rgba(124,58,237,0.2)',
+                  color: 'text-yellow-600',
+                  bg: 'rgba(234,179,8,0.08)',
+                  border: 'rgba(234,179,8,0.2)',
                 },
                 {
                   injury: 'Overuse / repetitive strain',
                   recommendation: 'TB-500 primary — maintenance dose',
                   detail: 'Anti-fibrotic and anti-inflammatory properties address the accumulated damage of chronic overuse patterns.',
-                  color: 'text-cyan-400',
+                  color: 'text-yellow-600',
                   bg: 'rgba(8,145,178,0.08)',
                   border: 'rgba(8,145,178,0.2)',
                 },
@@ -383,17 +383,17 @@ export default function TB500Page() {
                   injury: 'Systemic inflammation / general recovery',
                   recommendation: 'TB-500 at 5mg/wk preventive dose',
                   detail: 'Athletes with high training loads use TB-500 in ongoing 8-week cycles to maintain systemic recovery capacity.',
-                  color: 'text-violet-400',
-                  bg: 'rgba(124,58,237,0.08)',
-                  border: 'rgba(124,58,237,0.2)',
+                  color: 'text-yellow-600',
+                  bg: 'rgba(234,179,8,0.08)',
+                  border: 'rgba(234,179,8,0.2)',
                 },
               ].map((item) => (
                 <div key={item.injury} className="rounded-xl p-4" style={{ background: item.bg, border: `1px solid ${item.border}` }}>
                   <div className="flex justify-between items-start mb-1">
-                    <p className="text-white font-semibold text-sm">{item.injury}</p>
+                    <p className="text-gray-900 font-semibold text-sm">{item.injury}</p>
                     <span className={`text-xs font-bold ${item.color}`}>{item.recommendation}</span>
                   </div>
-                  <p className="text-zinc-400 text-xs leading-relaxed">{item.detail}</p>
+                  <p className="text-gray-500 text-xs leading-relaxed">{item.detail}</p>
                 </div>
               ))}
             </div>
@@ -407,9 +407,9 @@ export default function TB500Page() {
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="max-w-3xl mx-auto text-center mb-10">
           <span className="badge badge-violet mb-4 inline-block">The Gold Standard Stack</span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">TB-500 + BPC-157: Why This Stack Dominates</h2>
-          <p className="text-zinc-400 leading-relaxed">
-            TB-500 and <Link href="/products/bpc-157" className="text-violet-400 hover:underline">BPC-157</Link> are
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">TB-500 + BPC-157: Why This Stack Dominates</h2>
+          <p className="text-gray-500 leading-relaxed">
+            TB-500 and <Link href="/products/bpc-157" className="text-yellow-600 hover:underline">BPC-157</Link> are
             the two most studied healing peptides, and they complement each other through entirely non-overlapping
             mechanisms. Running them together produces synergistic results that exceed either compound alone.
           </p>
@@ -419,9 +419,9 @@ export default function TB500Page() {
           <table className="w-full text-sm">
             <thead>
               <tr style={{ borderBottom: '1px solid #2a2a3e' }}>
-                <th className="text-left py-3 px-4 text-zinc-500 font-medium">Property</th>
-                <th className="text-left py-3 px-4 text-violet-400 font-semibold">TB-500</th>
-                <th className="text-left py-3 px-4 text-cyan-400 font-semibold">BPC-157</th>
+                <th className="text-left py-3 px-4 text-gray-500 font-medium">Property</th>
+                <th className="text-left py-3 px-4 text-yellow-600 font-semibold">TB-500</th>
+                <th className="text-left py-3 px-4 text-yellow-600 font-semibold">BPC-157</th>
               </tr>
             </thead>
             <tbody>
@@ -436,9 +436,9 @@ export default function TB500Page() {
                 ['Injection frequency', '2–3× per week', 'Twice daily'],
               ].map(([label, tb, bpc]) => (
                 <tr key={label} style={{ borderBottom: '1px solid #1e1e35' }}>
-                  <td className="py-3 px-4 text-zinc-400 font-medium">{label}</td>
-                  <td className="py-3 px-4 text-zinc-300">{tb}</td>
-                  <td className="py-3 px-4 text-zinc-300">{bpc}</td>
+                  <td className="py-3 px-4 text-gray-500 font-medium">{label}</td>
+                  <td className="py-3 px-4 text-gray-700">{tb}</td>
+                  <td className="py-3 px-4 text-gray-700">{bpc}</td>
                 </tr>
               ))}
             </tbody>
@@ -447,23 +447,23 @@ export default function TB500Page() {
 
         <div className="grid sm:grid-cols-3 gap-4 mb-10">
           <Link href="/comparisons/bpc-157-vs-tb-500" className="card p-5 hover:border-violet-500/40 transition-colors block">
-            <p className="text-violet-400 font-semibold mb-2">Full Comparison Guide</p>
-            <p className="text-zinc-400 text-sm">BPC-157 vs TB-500 head-to-head — which injury types need which peptide, and when to combine.</p>
-            <div className="flex items-center gap-1 mt-3 text-violet-400 text-xs font-medium">
+            <p className="text-yellow-600 font-semibold mb-2">Full Comparison Guide</p>
+            <p className="text-gray-500 text-sm">BPC-157 vs TB-500 head-to-head — which injury types need which peptide, and when to combine.</p>
+            <div className="flex items-center gap-1 mt-3 text-yellow-600 text-xs font-medium">
               Read guide <ArrowRight size={12} />
             </div>
           </Link>
           <Link href="/healing" className="card p-5 hover:border-cyan-500/40 transition-colors block">
-            <p className="text-cyan-400 font-semibold mb-2">Healing & Recovery Hub</p>
-            <p className="text-zinc-400 text-sm">Full healing peptide protocols for tendons, ligaments, muscle, and gut — with dosing tables.</p>
-            <div className="flex items-center gap-1 mt-3 text-cyan-400 text-xs font-medium">
+            <p className="text-yellow-600 font-semibold mb-2">Healing & Recovery Hub</p>
+            <p className="text-gray-500 text-sm">Full healing peptide protocols for tendons, ligaments, muscle, and gut — with dosing tables.</p>
+            <div className="flex items-center gap-1 mt-3 text-yellow-600 text-xs font-medium">
               View protocols <ArrowRight size={12} />
             </div>
           </Link>
           <Link href="/stacks/ultimate-healing" className="card p-5 hover:border-violet-500/40 transition-colors block">
-            <p className="text-violet-400 font-semibold mb-2">Ultimate Healing Stack</p>
-            <p className="text-zinc-400 text-sm">Pre-built BPC-157 + TB-500 protocol with week-by-week dosing guide and injury timelines.</p>
-            <div className="flex items-center gap-1 mt-3 text-violet-400 text-xs font-medium">
+            <p className="text-yellow-600 font-semibold mb-2">Ultimate Healing Stack</p>
+            <p className="text-gray-500 text-sm">Pre-built BPC-157 + TB-500 protocol with week-by-week dosing guide and injury timelines.</p>
+            <div className="flex items-center gap-1 mt-3 text-yellow-600 text-xs font-medium">
               View stack <ArrowRight size={12} />
             </div>
           </Link>
@@ -474,18 +474,18 @@ export default function TB500Page() {
 
       {/* Products */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
-        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">Shop TB-500 & Healing Stack</h2>
-        <p className="text-zinc-400 text-sm mb-8">HPLC-verified, COA available per batch.</p>
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Shop TB-500 & Healing Stack</h2>
+        <p className="text-gray-500 text-sm mb-8">HPLC-verified, COA available per batch.</p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[tb500Product, bpc157Product].filter(Boolean).map((p) => (
             <ProductCard key={p!.slug} product={p!} showAffiliateButton />
           ))}
           {wolverineStack && (
-            <Link href={`/stacks/wolverine-healing`} className="card p-6 hover:border-violet-500/30 transition-colors flex flex-col">
+            <Link href={`/stacks/wolverine-healing`} className="card p-6 hover:border-yellow-400/40 transition-colors flex flex-col">
               <div className="badge badge-violet mb-3 self-start">Healing Stack</div>
-              <h3 className="text-white font-bold text-lg mb-2">{wolverineStack.name}</h3>
-              <p className="text-zinc-400 text-sm leading-relaxed flex-1">{wolverineStack.shortDescription}</p>
-              <div className="flex items-center gap-1 mt-4 text-violet-400 text-sm font-medium">
+              <h3 className="text-gray-900 font-bold text-lg mb-2">{wolverineStack.name}</h3>
+              <p className="text-gray-500 text-sm leading-relaxed flex-1">{wolverineStack.shortDescription}</p>
+              <div className="flex items-center gap-1 mt-4 text-yellow-600 text-sm font-medium">
                 View stack <ArrowRight size={14} />
               </div>
             </Link>
@@ -498,15 +498,15 @@ export default function TB500Page() {
       {/* FAQ */}
       <section className="py-10 sm:py-20 max-w-3xl mx-auto px-4 sm:px-6">
         <span className="badge badge-violet mb-4 inline-block">FAQ</span>
-        <h2 className="text-3xl font-bold text-white mb-8">TB-500 Questions Answered</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-8">TB-500 Questions Answered</h2>
         <div className="space-y-4">
           {tb500Faqs.map((faq) => (
             <div key={faq.q} className="card p-5">
               <div className="flex items-start gap-3">
-                <HelpCircle size={18} className="text-violet-400 shrink-0 mt-0.5" />
+                <HelpCircle size={18} className="text-yellow-600 shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="text-white font-semibold mb-2">{faq.q}</h3>
-                  <p className="text-zinc-400 text-sm leading-relaxed">{faq.a}</p>
+                  <h3 className="text-gray-900 font-semibold mb-2">{faq.q}</h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">{faq.a}</p>
                 </div>
               </div>
             </div>

@@ -84,13 +84,13 @@ export default function ChatWidget() {
       {/* Toggle button — logo avatar */}
       <button
         onClick={() => setOpen(!open)}
-        className="fixed bottom-5 right-5 z-50 w-16 h-16 rounded-full overflow-hidden shadow-xl hover:scale-105 transition-transform border-2 border-violet-500/40"
-        style={{ background: '#0f0f1a' }}
+        className="fixed bottom-5 right-5 z-50 w-16 h-16 rounded-full overflow-hidden shadow-xl hover:scale-105 transition-transform border-2 border-yellow-400/60"
+        style={{ background: '#ffffff' }}
         aria-label="Open peptide advisor chat"
       >
         {open ? (
-          <span className="flex items-center justify-center w-full h-full bg-[#0f0f1a]">
-            <X size={24} className="text-white" />
+          <span className="flex items-center justify-center w-full h-full bg-white">
+            <X size={24} className="text-gray-800" />
           </span>
         ) : (
           <Image src="/logo.png" alt="Peak AI" width={64} height={64} className="w-full h-full object-cover" />
@@ -100,7 +100,7 @@ export default function ChatWidget() {
       {/* Chat panel */}
       {open && (
         <div
-          className="fixed z-50 flex flex-col overflow-hidden rounded-2xl border border-[#2d2d50] shadow-2xl shadow-black/60 bg-[#0f0f1a]"
+          className="fixed z-50 flex flex-col overflow-hidden rounded-2xl border border-gray-200 shadow-2xl shadow-black/15 bg-white"
           style={{
             bottom: '5.5rem',
             right: '1.25rem',
@@ -109,30 +109,30 @@ export default function ChatWidget() {
           }}
         >
           {/* Header */}
-          <div className="flex items-center gap-3 px-4 py-3 border-b border-[#1e1e35] bg-gradient-to-r from-violet-600/10 to-cyan-500/10 shrink-0">
-            <div className="w-10 h-10 rounded-full overflow-hidden border border-violet-500/30 shrink-0">
+          <div className="flex items-center gap-3 px-4 py-3 border-b border-gray-200 bg-gradient-to-r from-yellow-50 to-amber-50 shrink-0">
+            <div className="w-10 h-10 rounded-full overflow-hidden border border-yellow-300/50 shrink-0">
               <Image src="/logo.png" alt="Peak" width={40} height={40} className="w-full h-full object-cover" />
             </div>
             <div className="min-w-0">
-              <p className="text-sm font-semibold text-white leading-tight">Peak AI Advisor</p>
-              <p className="text-xs text-zinc-500 truncate">PeptidesClav protocol specialist</p>
+              <p className="text-sm font-semibold text-gray-900 leading-tight">Peak AI Advisor</p>
+              <p className="text-xs text-gray-500 truncate">PeptidesClav protocol specialist</p>
             </div>
             <div className="ml-auto flex items-center gap-1.5 shrink-0">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span className="text-xs text-emerald-500">Online</span>
+              <span className="text-xs text-emerald-600">Online</span>
             </div>
           </div>
 
           {/* Messages */}
-          <div className="flex-1 overflow-y-auto p-4 space-y-4" style={{ minHeight: 0 }}>
+          <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-gray-50" style={{ minHeight: 0 }}>
             {messages.map((msg, i) => (
               <div key={i} className={`flex flex-col ${msg.role === 'user' ? 'items-end' : 'items-start'}`}>
                 {/* Bubble */}
                 <div
                   className={`max-w-[90%] rounded-xl px-3.5 py-2.5 text-sm leading-relaxed ${
                     msg.role === 'user'
-                      ? 'bg-violet-600 text-white rounded-br-sm'
-                      : 'bg-[#141428] text-zinc-300 border border-[#1e1e35] rounded-bl-sm'
+                      ? 'bg-gray-900 text-white rounded-br-sm'
+                      : 'bg-white text-gray-700 border border-gray-200 rounded-bl-sm shadow-sm'
                   }`}
                 >
                   {msg.content}
@@ -146,12 +146,11 @@ export default function ChatWidget() {
                         key={product.slug}
                         href={`/products/${product.slug}`}
                         onClick={() => setOpen(false)}
-                        className="flex items-center gap-3 p-2.5 rounded-xl border border-[#2d2d50] bg-[#0a0a14] hover:border-violet-500/40 transition-colors group"
+                        className="flex items-center gap-3 p-2.5 rounded-xl border border-gray-200 bg-white hover:border-yellow-400 transition-colors group shadow-sm"
                       >
                         {/* Product image */}
                         <div
-                          className="w-14 h-14 rounded-lg overflow-hidden shrink-0 flex items-center justify-center"
-                          style={{ background: '#0d0d1f' }}
+                          className="w-14 h-14 rounded-lg overflow-hidden shrink-0 flex items-center justify-center bg-gray-50"
                         >
                           {product.image !== '' ? (
                             <img
@@ -161,7 +160,7 @@ export default function ChatWidget() {
                               loading="lazy"
                             />
                           ) : (
-                            <div className="w-full h-full bg-gradient-to-br from-violet-600/20 to-cyan-500/20 flex items-center justify-center text-xl">
+                            <div className="w-full h-full bg-yellow-50 flex items-center justify-center text-xl">
                               🧬
                             </div>
                           )}
@@ -169,15 +168,15 @@ export default function ChatWidget() {
 
                         {/* Info */}
                         <div className="flex-1 min-w-0">
-                          <p className="text-xs font-bold text-white truncate group-hover:text-violet-300 transition-colors">
+                          <p className="text-xs font-bold text-gray-900 truncate group-hover:text-yellow-700 transition-colors">
                             {product.name}
                           </p>
-                          <p className="text-[10px] text-zinc-500 truncate mt-0.5">{product.category}</p>
-                          <p className="text-xs font-semibold text-violet-400 mt-1">${product.price}</p>
+                          <p className="text-[10px] text-gray-500 truncate mt-0.5">{product.category}</p>
+                          <p className="text-xs font-semibold text-amber-600 mt-1">${product.price}</p>
                         </div>
 
                         {/* Arrow */}
-                        <ExternalLink size={12} className="text-zinc-600 group-hover:text-violet-400 transition-colors shrink-0" />
+                        <ExternalLink size={12} className="text-gray-400 group-hover:text-yellow-600 transition-colors shrink-0" />
                       </Link>
                     ))}
                   </div>
@@ -187,8 +186,8 @@ export default function ChatWidget() {
 
             {loading && (
               <div className="flex justify-start">
-                <div className="bg-[#141428] border border-[#1e1e35] rounded-xl rounded-bl-sm px-3.5 py-2.5">
-                  <Loader2 size={14} className="text-violet-400 animate-spin" />
+                <div className="bg-white border border-gray-200 rounded-xl rounded-bl-sm px-3.5 py-2.5 shadow-sm">
+                  <Loader2 size={14} className="text-yellow-500 animate-spin" />
                 </div>
               </div>
             )}
@@ -197,7 +196,7 @@ export default function ChatWidget() {
 
           {/* Suggested prompts */}
           {messages.length === 1 && (
-            <div className="px-4 pb-3 flex flex-wrap gap-1.5 shrink-0">
+            <div className="px-4 pb-3 flex flex-wrap gap-1.5 shrink-0 bg-gray-50">
               {[
                 'Best healing peptides?',
                 'Peptides for fat loss?',
@@ -207,7 +206,7 @@ export default function ChatWidget() {
                 <button
                   key={q}
                   onClick={() => setInput(q)}
-                  className="text-xs px-2.5 py-1.5 rounded-lg bg-violet-500/10 border border-violet-500/20 text-violet-400 hover:bg-violet-500/20 transition-colors"
+                  className="text-xs px-2.5 py-1.5 rounded-lg bg-yellow-50 border border-yellow-200 text-yellow-700 hover:bg-yellow-100 transition-colors"
                 >
                   {q}
                 </button>
@@ -216,18 +215,18 @@ export default function ChatWidget() {
           )}
 
           {/* Input */}
-          <div className="px-3 pb-3 pt-2 border-t border-[#1e1e35] flex gap-2 shrink-0">
+          <div className="px-3 pb-3 pt-2 border-t border-gray-200 flex gap-2 shrink-0 bg-white">
             <input
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKey}
               placeholder="Ask about peptides, dosing, stacks..."
-              className="flex-1 bg-[#141428] border border-[#1e1e35] rounded-xl px-3.5 py-2.5 text-sm text-white placeholder:text-zinc-600 outline-none focus:border-violet-500 transition-colors min-w-0"
+              className="flex-1 bg-gray-50 border border-gray-200 rounded-xl px-3.5 py-2.5 text-sm text-gray-900 placeholder:text-gray-400 outline-none focus:border-yellow-400 transition-colors min-w-0"
             />
             <button
               onClick={send}
               disabled={!input.trim() || loading}
-              className="w-10 h-10 rounded-xl bg-gradient-to-br from-violet-600 to-cyan-500 flex items-center justify-center disabled:opacity-40 hover:opacity-90 transition-opacity shrink-0"
+              className="w-10 h-10 rounded-xl bg-gray-900 flex items-center justify-center disabled:opacity-40 hover:bg-gray-800 transition-colors shrink-0"
             >
               <Send size={15} className="text-white" />
             </button>

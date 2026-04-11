@@ -12,8 +12,8 @@ const nextConfig: NextConfig = {
   async rewrites() {
     return [
       {
-        source: '/cdn/:path*',
-        destination: 'https://apollopeptidesciences.com/wp-content/uploads/:path*',
+        source: '/phio/:path*',
+        destination: 'https://phiogen.is/images/products/:path*',
       },
     ];
   },

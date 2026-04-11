@@ -89,16 +89,16 @@ export default async function StackPage({
   }
 
   return (
-    <div className="min-h-screen" style={{ background: '#08080f' }}>
+    <div className="min-h-screen" style={{ background: '#ffffff' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
 
       {/* Breadcrumb */}
       <div className="border-b" style={{ borderColor: '#1e1e35' }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3">
           <nav className="flex items-center gap-2 text-sm" style={{ color: '#71717a' }}>
-            <Link href="/" className="hover:text-violet-400 transition-colors">Home</Link>
+            <Link href="/" className="hover:text-yellow-600 transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/stacks" className="hover:text-violet-400 transition-colors">Stacks</Link>
+            <Link href="/stacks" className="hover:text-yellow-600 transition-colors">Stacks</Link>
             <span>/</span>
             <span style={{ color: '#a1a1b5' }}>{stack.name}</span>
           </nav>
@@ -112,7 +112,7 @@ export default async function StackPage({
           className="absolute inset-0"
           style={{
             background:
-              'radial-gradient(ellipse 65% 55% at 50% 0%, rgba(124,58,237,0.13) 0%, transparent 70%)',
+              'radial-gradient(ellipse 65% 55% at 50% 0%, rgba(234,179,8,0.13) 0%, transparent 70%)',
           }}
           aria-hidden="true"
         />
@@ -135,7 +135,7 @@ export default async function StackPage({
                 ))}
               </div>
 
-              <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-3 leading-tight">
+              <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-3 leading-tight">
                 {stack.name}
               </h1>
               <p className="text-lg mb-6" style={{ color: '#a1a1b5' }}>
@@ -145,18 +145,18 @@ export default async function StackPage({
               {/* Meta row */}
               <div className="flex flex-wrap gap-6">
                 <div className="flex items-center gap-2 text-sm" style={{ color: '#a1a1b5' }}>
-                  <Target size={14} className="text-violet-400" />
-                  <span className="font-medium text-white">Goal:</span>
+                  <Target size={14} className="text-yellow-600" />
+                  <span className="font-medium text-gray-900">Goal:</span>
                   <span>{stack.goal}</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm" style={{ color: '#a1a1b5' }}>
-                  <Clock size={14} className="text-cyan-400" />
-                  <span className="font-medium text-white">Duration:</span>
+                  <Clock size={14} className="text-yellow-600" />
+                  <span className="font-medium text-gray-900">Duration:</span>
                   <span>{stack.duration}</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm" style={{ color: '#a1a1b5' }}>
-                  <DollarSign size={14} className="text-violet-400" />
-                  <span className="font-medium text-white">Cost:</span>
+                  <DollarSign size={14} className="text-yellow-600" />
+                  <span className="font-medium text-gray-900">Cost:</span>
                   <span>{stack.cost}</span>
                 </div>
               </div>
@@ -166,9 +166,9 @@ export default async function StackPage({
             <div
               className="lg:w-72 rounded-2xl p-6 border flex-shrink-0"
               style={{
-                background: '#0f0f1a',
+                background: '#ffffff',
                 borderColor: '#2d2d50',
-                boxShadow: '0 8px 40px rgba(124,58,237,0.12)',
+                boxShadow: '0 8px 40px rgba(234,179,8,0.12)',
               }}
             >
               {/* Product image collage */}
@@ -184,7 +184,7 @@ export default async function StackPage({
                         style={{
                           width: 80,
                           height: 100,
-                          background: '#0a0a14',
+                          background: '#ffffff',
                           border: '1px solid #1e1e35',
                           marginLeft: i > 0 ? -20 : 0,
                           zIndex: i,
@@ -201,7 +201,7 @@ export default async function StackPage({
                 </div>
               )}
 
-              <p className="text-sm font-semibold text-white mb-1">
+              <p className="text-sm font-semibold text-gray-900 mb-1">
                 {stack.products.length} peptide{stack.products.length !== 1 ? 's' : ''} in this stack
               </p>
               <p className="text-xs mb-4" style={{ color: '#71717a' }}>
@@ -231,10 +231,10 @@ export default async function StackPage({
 
         {/* Overview */}
         <section>
-          <h2 className="text-xl font-bold text-white mb-6">Stack Overview</h2>
+          <h2 className="text-xl font-bold text-gray-900 mb-6">Stack Overview</h2>
           <div
             className="rounded-2xl border p-6 sm:p-8"
-            style={{ background: '#0f0f1a', borderColor: '#1e1e35' }}
+            style={{ background: '#ffffff', borderColor: '#1e1e35' }}
           >
             {stack.overview.split('\n\n').map((para, idx) => (
               <p
@@ -250,7 +250,7 @@ export default async function StackPage({
 
         {/* Products in this stack */}
         <section>
-          <h2 className="text-xl font-bold text-white mb-6">
+          <h2 className="text-xl font-bold text-gray-900 mb-6">
             Peptides in This Stack
           </h2>
           <div className="space-y-4">
@@ -258,7 +258,7 @@ export default async function StackPage({
               <div
                 key={stackProduct.slug}
                 className="rounded-2xl border overflow-hidden"
-                style={{ background: '#0f0f1a', borderColor: '#1e1e35' }}
+                style={{ background: '#ffffff', borderColor: '#1e1e35' }}
               >
                 {/* Card top accent */}
                 <div className="h-1 bg-gradient-to-r from-violet-600 to-cyan-500 opacity-60" />
@@ -271,7 +271,7 @@ export default async function StackPage({
                       <Link
                         href={`/products/${product.slug}`}
                         className="shrink-0 rounded-xl overflow-hidden flex items-center justify-center"
-                        style={{ width: 120, height: 150, background: '#0a0a14', border: '1px solid #1e1e35' }}
+                        style={{ width: 120, height: 150, background: '#ffffff', border: '1px solid #1e1e35' }}
                       >
                         <img
                           src={product.image}
@@ -288,7 +288,7 @@ export default async function StackPage({
                           <span className="badge text-[10px]">{product.category}</span>
                         )}
                       </div>
-                      <h3 className="text-lg font-bold text-white mb-1">
+                      <h3 className="text-lg font-bold text-gray-900 mb-1">
                         {product ? product.name : stackProduct.slug.toUpperCase()}
                       </h3>
                       {product && (
@@ -301,17 +301,17 @@ export default async function StackPage({
                       <div className="grid sm:grid-cols-3 gap-3">
                         <div
                           className="rounded-xl p-3 border"
-                          style={{ background: 'rgba(124,58,237,0.06)', borderColor: '#2d2d50' }}
+                          style={{ background: 'rgba(234,179,8,0.06)', borderColor: '#2d2d50' }}
                         >
-                          <p className="text-[10px] font-semibold uppercase tracking-wider text-violet-400 mb-1">Dose</p>
-                          <p className="text-sm font-semibold text-white">{stackProduct.dose}</p>
+                          <p className="text-[10px] font-semibold uppercase tracking-wider text-yellow-600 mb-1">Dose</p>
+                          <p className="text-sm font-semibold text-gray-900">{stackProduct.dose}</p>
                         </div>
                         <div
                           className="rounded-xl p-3 border"
-                          style={{ background: 'rgba(6,182,212,0.06)', borderColor: '#2d2d50' }}
+                          style={{ background: 'rgba(245,158,11,0.06)', borderColor: '#2d2d50' }}
                         >
-                          <p className="text-[10px] font-semibold uppercase tracking-wider text-cyan-400 mb-1">Timing</p>
-                          <p className="text-sm font-semibold text-white">{stackProduct.timing}</p>
+                          <p className="text-[10px] font-semibold uppercase tracking-wider text-yellow-600 mb-1">Timing</p>
+                          <p className="text-sm font-semibold text-gray-900">{stackProduct.timing}</p>
                         </div>
                         {stackProduct.notes && (
                           <div
@@ -345,20 +345,20 @@ export default async function StackPage({
 
         {/* Schedule */}
         <section>
-          <h2 className="text-xl font-bold text-white mb-6">Daily Schedule</h2>
+          <h2 className="text-xl font-bold text-gray-900 mb-6">Daily Schedule</h2>
           <div
             className="rounded-2xl border overflow-hidden"
             style={{ borderColor: '#2d2d50' }}
           >
             <div
               className="px-6 py-3 border-b"
-              style={{ background: 'rgba(124,58,237,0.08)', borderColor: '#2d2d50' }}
+              style={{ background: 'rgba(234,179,8,0.08)', borderColor: '#2d2d50' }}
             >
-              <p className="text-xs font-semibold uppercase tracking-wider text-violet-400">
+              <p className="text-xs font-semibold uppercase tracking-wider text-yellow-600">
                 Protocol Schedule
               </p>
             </div>
-            <div className="p-6" style={{ background: '#0f0f1a' }}>
+            <div className="p-6" style={{ background: '#ffffff' }}>
               <pre
                 className="whitespace-pre-wrap text-sm leading-relaxed font-mono"
                 style={{ color: '#a1a1b5' }}
@@ -371,26 +371,26 @@ export default async function StackPage({
 
         {/* Expected Results */}
         <section>
-          <h2 className="text-xl font-bold text-white mb-6">Expected Results</h2>
+          <h2 className="text-xl font-bold text-gray-900 mb-6">Expected Results</h2>
           <div className="space-y-3">
             {stack.expectedResults.map((result, idx) => (
               <div
                 key={idx}
                 className="flex items-start gap-4 rounded-xl p-4 border"
-                style={{ background: '#0f0f1a', borderColor: '#1e1e35' }}
+                style={{ background: '#ffffff', borderColor: '#1e1e35' }}
               >
                 <div
                   className="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold"
-                  style={{ background: 'rgba(124,58,237,0.15)', color: '#a78bfa' }}
+                  style={{ background: 'rgba(234,179,8,0.15)', color: '#a78bfa' }}
                 >
                   {idx + 1}
                 </div>
                 <div className="flex-1 flex items-start gap-3">
                   <div
                     className="mt-0.5 flex-shrink-0 rounded-full p-1"
-                    style={{ background: 'rgba(124,58,237,0.15)' }}
+                    style={{ background: 'rgba(234,179,8,0.15)' }}
                   >
-                    <Check size={11} className="text-violet-400" />
+                    <Check size={11} className="text-yellow-600" />
                   </div>
                   <p className="text-sm leading-relaxed" style={{ color: '#a1a1b5' }}>
                     {result}
@@ -405,21 +405,21 @@ export default async function StackPage({
         <section>
           <div
             className="rounded-2xl border p-8 sm:p-12 text-center relative overflow-hidden"
-            style={{ background: '#0f0f1a', borderColor: '#2d2d50' }}
+            style={{ background: '#ffffff', borderColor: '#2d2d50' }}
           >
             <div
               className="absolute inset-0"
               style={{
                 background:
-                  'radial-gradient(ellipse 70% 60% at 50% 100%, rgba(124,58,237,0.1) 0%, transparent 70%)',
+                  'radial-gradient(ellipse 70% 60% at 50% 100%, rgba(234,179,8,0.1) 0%, transparent 70%)',
               }}
               aria-hidden="true"
             />
             <div className="relative">
-              <p className="text-xs font-semibold uppercase tracking-widest text-violet-400 mb-3">
+              <p className="text-xs font-semibold uppercase tracking-widest text-yellow-600 mb-3">
                 Start Your Protocol
               </p>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-white mb-3">
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">
                 Shop These Peptides
               </h2>
               <p className="text-sm max-w-md mx-auto mb-8" style={{ color: '#a1a1b5' }}>

@@ -51,7 +51,7 @@ const peptides = [
       'Requires infrequent but precise dosing windows',
     ],
     best: 'Cellular longevity and lifespan extension as the primary goal',
-    color: 'text-cyan-400',
+    color: 'text-yellow-600',
     border: 'border-cyan-500/40',
     glow: 'ring-1 ring-cyan-500/20',
   },
@@ -76,7 +76,7 @@ const peptides = [
       'Copper accumulation risk at very high doses (rare)',
     ],
     best: 'Visible aesthetic results: skin, hair, and collagen regeneration',
-    color: 'text-violet-400',
+    color: 'text-yellow-600',
     border: 'border-violet-500/40',
     glow: '',
   },
@@ -101,7 +101,7 @@ const peptides = [
       'Human aging trial data still maturing',
     ],
     best: 'Energy, metabolic health, and mitochondrial function restoration',
-    color: 'text-zinc-300',
+    color: 'text-gray-700',
     border: 'border-zinc-600/40',
     glow: '',
   },
@@ -126,7 +126,7 @@ const peptides = [
       'Not the most targeted anti-aging approach alone',
     ],
     best: 'Body composition, sleep, and vitality as part of anti-aging protocol',
-    color: 'text-zinc-400',
+    color: 'text-gray-500',
     border: 'border-zinc-600/40',
     glow: '',
   },
@@ -157,14 +157,14 @@ export default function BestPeptideAntiAgingPage() {
       {/* Hero */}
       <section className="relative pt-14 pb-12 sm:pt-28 sm:pb-20 overflow-hidden grid-bg">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-20 left-1/4 w-96 h-96 bg-violet-600/10 rounded-full blur-3xl" />
+          <div className="absolute top-20 left-1/4 w-96 h-96 bg-gray-900/10 rounded-full blur-3xl" />
           <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-cyan-500/8 rounded-full blur-3xl" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex items-center gap-2 mb-5 flex-wrap">
-            <Link href="/" className="badge hover:text-white transition-colors">Home</Link>
-            <ChevronRight size={14} className="text-zinc-600" />
+            <Link href="/" className="badge hover:text-gray-900 transition-colors">Home</Link>
+            <ChevronRight size={14} className="text-gray-400" />
             <span className="badge badge-cyan">Best Peptide for Anti-Aging</span>
           </div>
 
@@ -174,10 +174,10 @@ export default function BestPeptideAntiAgingPage() {
               <span className="badge badge-cyan">Updated March 2026</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-              <span className="text-white">Best Peptide for </span>
+              <span className="text-gray-900">Best Peptide for </span>
               <span className="gradient-text">Anti-Aging</span>
             </h1>
-            <p className="text-lg text-zinc-400 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
               Anti-aging peptides target aging at the source — telomere shortening, mitochondrial
               decline, gene expression drift, and GH axis attenuation. This guide compares the top
               four compounds with clinical evidence, dosing, and a decision framework.
@@ -196,16 +196,16 @@ export default function BestPeptideAntiAgingPage() {
           {/* Stats */}
           <div className="mt-10 sm:mt-14 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {[
-              { icon: <Sparkles size={18} className="text-cyan-400" />, value: '36%', label: 'Mortality reduction (Epithalon)' },
-              { icon: <Zap size={18} className="text-violet-400" />, value: '4', label: 'Pathways targeted' },
-              { icon: <Star size={18} className="text-cyan-400" />, value: '15yr', label: "Epithalon's human data span" },
-              { icon: <Shield size={18} className="text-violet-400" />, value: '4,000+', label: 'GHK-Cu studies' },
+              { icon: <Sparkles size={18} className="text-yellow-600" />, value: '36%', label: 'Mortality reduction (Epithalon)' },
+              { icon: <Zap size={18} className="text-yellow-600" />, value: '4', label: 'Pathways targeted' },
+              { icon: <Star size={18} className="text-yellow-600" />, value: '15yr', label: "Epithalon's human data span" },
+              { icon: <Shield size={18} className="text-yellow-600" />, value: '4,000+', label: 'GHK-Cu studies' },
             ].map((stat) => (
               <div key={stat.label} className="card p-4 flex items-start gap-3">
                 <div className="mt-0.5">{stat.icon}</div>
                 <div>
-                  <p className="text-xl font-bold text-white">{stat.value}</p>
-                  <p className="text-xs text-zinc-500 mt-0.5">{stat.label}</p>
+                  <p className="text-xl font-bold text-gray-900">{stat.value}</p>
+                  <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -218,7 +218,7 @@ export default function BestPeptideAntiAgingPage() {
       {/* Quick Answer — Winner Card */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <span className="badge badge-cyan mb-4 inline-block">Quick Answer</span>
-        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
           Gold Standard: Longevity Elite Stack
         </h2>
         <div
@@ -228,18 +228,18 @@ export default function BestPeptideAntiAgingPage() {
           <div className="flex flex-wrap items-start justify-between gap-4 mb-6">
             <div>
               <div className="flex items-center gap-3 mb-2">
-                <h3 className="text-2xl font-bold text-white">Longevity Elite Stack</h3>
+                <h3 className="text-2xl font-bold text-gray-900">Longevity Elite Stack</h3>
                 <span className="badge badge-cyan">Comprehensive</span>
               </div>
-              <p className="text-zinc-400 text-sm max-w-xl">
+              <p className="text-gray-500 text-sm max-w-xl">
                 The combination of all three core anti-aging peptides (Epithalon + GHK-Cu + NAD+)
                 with GH axis support is the gold standard. Each compound targets a distinct aging
                 pathway — together they offer the most comprehensive longevity protocol available.
               </p>
             </div>
             <div className="text-right">
-              <p className="text-sm font-semibold text-cyan-400 mb-1">4 Mechanisms</p>
-              <p className="text-xs text-zinc-500">Telomere + Gene + Mitochondria + GH</p>
+              <p className="text-sm font-semibold text-yellow-600 mb-1">4 Mechanisms</p>
+              <p className="text-xs text-gray-500">Telomere + Gene + Mitochondria + GH</p>
             </div>
           </div>
           <div className="grid sm:grid-cols-4 gap-3">
@@ -254,8 +254,8 @@ export default function BestPeptideAntiAgingPage() {
                 className="px-4 py-3 rounded-xl border"
                 style={{ background: 'var(--bg)', borderColor: 'var(--border)' }}
               >
-                <p className="text-[11px] text-zinc-500 uppercase tracking-wider">{item.label}</p>
-                <p className="text-xs font-semibold text-white mt-0.5">{item.value}</p>
+                <p className="text-[11px] text-gray-500 uppercase tracking-wider">{item.label}</p>
+                <p className="text-xs font-semibold text-gray-900 mt-0.5">{item.value}</p>
               </div>
             ))}
           </div>
@@ -266,11 +266,11 @@ export default function BestPeptideAntiAgingPage() {
           className="card p-5 border border-cyan-500/20"
           style={{ background: 'var(--bg-card)' }}
         >
-          <p className="text-xs text-zinc-500 mb-1">For a single compound, our pick is:</p>
+          <p className="text-xs text-gray-500 mb-1">For a single compound, our pick is:</p>
           <div className="flex items-center gap-3">
-            <Star size={16} className="text-cyan-400 shrink-0" />
-            <p className="text-sm text-zinc-300">
-              <span className="text-white font-bold">Epithalon</span> — the most unique mechanism
+            <Star size={16} className="text-yellow-600 shrink-0" />
+            <p className="text-sm text-gray-700">
+              <span className="text-gray-900 font-bold">Epithalon</span> — the most unique mechanism
               in anti-aging medicine. No other compound activates telomerase in humans with 15 years
               of follow-up mortality data.
             </p>
@@ -282,7 +282,7 @@ export default function BestPeptideAntiAgingPage() {
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <span className="badge mb-4 inline-block">Full Comparison</span>
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
             Anti-Aging Peptides Compared
           </h2>
           <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-5">
@@ -293,32 +293,32 @@ export default function BestPeptideAntiAgingPage() {
                 style={{ background: 'var(--bg)' }}
               >
                 <div className="flex items-start justify-between gap-2 mb-2">
-                  <h3 className="font-bold text-white">{p.name}</h3>
+                  <h3 className="font-bold text-gray-900">{p.name}</h3>
                   <span className={`${p.badgeClass} shrink-0`}>{p.badge}</span>
                 </div>
                 <p className={`text-sm font-semibold ${p.color} mb-1`}>{p.headline}</p>
-                <p className="text-xs text-zinc-500 mb-1">{p.mechanism}</p>
-                <p className="text-[10px] text-violet-400 mb-4">{p.evidence}</p>
+                <p className="text-xs text-gray-500 mb-1">{p.mechanism}</p>
+                <p className="text-[10px] text-yellow-600 mb-4">{p.evidence}</p>
 
                 <div className="space-y-1 text-xs mb-4">
                   <div>
-                    <span className="text-zinc-500">Dosing: </span>
-                    <span className="text-zinc-300">{p.dosing}</span>
+                    <span className="text-gray-500">Dosing: </span>
+                    <span className="text-gray-700">{p.dosing}</span>
                   </div>
                 </div>
 
                 <div className="space-y-1.5 mb-4">
                   {p.pros.map((pro) => (
                     <div key={pro} className="flex items-start gap-1.5">
-                      <CheckCircle2 size={12} className="text-cyan-400 mt-0.5 shrink-0" />
-                      <p className="text-xs text-zinc-400">{pro}</p>
+                      <CheckCircle2 size={12} className="text-yellow-600 mt-0.5 shrink-0" />
+                      <p className="text-xs text-gray-500">{pro}</p>
                     </div>
                   ))}
                 </div>
 
                 <div className="mt-auto pt-3 border-t" style={{ borderColor: 'var(--border)' }}>
-                  <p className="text-[10px] text-zinc-500 uppercase tracking-wider mb-1">Best for</p>
-                  <p className="text-xs text-zinc-300">{p.best}</p>
+                  <p className="text-[10px] text-gray-500 uppercase tracking-wider mb-1">Best for</p>
+                  <p className="text-xs text-gray-700">{p.best}</p>
                 </div>
               </div>
             ))}
@@ -331,7 +331,7 @@ export default function BestPeptideAntiAgingPage() {
       {/* Decision Guide */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <span className="badge badge-cyan mb-4 inline-block">Decision Guide</span>
-        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
           Which Anti-Aging Peptide Is Right for You?
         </h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -359,8 +359,8 @@ export default function BestPeptideAntiAgingPage() {
                 'Gene expression reset (4,000+ studies)',
                 'Results visible within 4–8 weeks',
               ],
-              color: 'text-violet-300',
-              border: 'border-violet-500/30',
+              color: 'text-yellow-500',
+              border: 'border-yellow-400/40',
             },
             {
               condition: 'I want energy & metabolic restoration',
@@ -372,7 +372,7 @@ export default function BestPeptideAntiAgingPage() {
                 'Energy improvement within 2–4 weeks',
                 'Pairs with all other compounds',
               ],
-              color: 'text-zinc-300',
+              color: 'text-gray-700',
               border: 'border-zinc-600/40',
             },
             {
@@ -394,19 +394,19 @@ export default function BestPeptideAntiAgingPage() {
               className={`card p-6 border ${item.border} flex flex-col`}
               style={{ background: 'var(--bg-card)' }}
             >
-              <p className="text-xs text-zinc-500 mb-2">{item.condition}</p>
+              <p className="text-xs text-gray-500 mb-2">{item.condition}</p>
               <h3 className={`font-bold text-sm mb-4 ${item.color}`}>{item.recommendation}</h3>
               <ul className="space-y-2 flex-1">
                 {item.points.map((pt) => (
                   <li key={pt} className="flex items-start gap-2">
                     <ArrowRight size={12} className="text-violet-500 mt-0.5 shrink-0" />
-                    <p className="text-xs text-zinc-400">{pt}</p>
+                    <p className="text-xs text-gray-500">{pt}</p>
                   </li>
                 ))}
               </ul>
               <Link
                 href={item.href}
-                className="mt-5 text-xs font-semibold text-violet-400 hover:text-violet-300 transition-colors flex items-center gap-1"
+                className="mt-5 text-xs font-semibold text-yellow-600 hover:text-yellow-500 transition-colors flex items-center gap-1"
               >
                 Learn More <ArrowRight size={12} />
               </Link>
@@ -419,8 +419,8 @@ export default function BestPeptideAntiAgingPage() {
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="flex items-center gap-3 mb-8">
-            <HelpCircle size={20} className="text-violet-400" />
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">Frequently Asked Questions</h2>
+            <HelpCircle size={20} className="text-yellow-600" />
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Frequently Asked Questions</h2>
           </div>
           <div className="space-y-4">
             {faqs.map((faq, i) => (
@@ -429,8 +429,8 @@ export default function BestPeptideAntiAgingPage() {
                 className="card p-6 border"
                 style={{ borderColor: 'var(--border)', background: 'var(--bg)' }}
               >
-                <h3 className="font-bold text-white mb-3">{faq.q}</h3>
-                <p className="text-sm text-zinc-400 leading-relaxed">{faq.a}</p>
+                <h3 className="font-bold text-gray-900 mb-3">{faq.q}</h3>
+                <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -441,10 +441,10 @@ export default function BestPeptideAntiAgingPage() {
 
       {/* CTA */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 text-center">
-        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
           Start Your Longevity Protocol
         </h2>
-        <p className="text-zinc-400 max-w-xl mx-auto mb-8">
+        <p className="text-gray-500 max-w-xl mx-auto mb-8">
           The Longevity Elite Stack combines all four anti-aging mechanisms — the most complete
           protocol available for cellular health and longevity.
         </p>
@@ -458,13 +458,13 @@ export default function BestPeptideAntiAgingPage() {
           </Link>
         </div>
         <div className="mt-6 flex flex-wrap justify-center gap-6 text-sm">
-          <Link href="/products/ghk-cu" className="text-zinc-500 hover:text-zinc-300 transition-colors">
+          <Link href="/products/ghk-cu" className="text-gray-500 hover:text-gray-700 transition-colors">
             GHK-Cu
           </Link>
-          <Link href="/products/nad-plus" className="text-zinc-500 hover:text-zinc-300 transition-colors">
+          <Link href="/products/nad-plus" className="text-gray-500 hover:text-gray-700 transition-colors">
             NAD+
           </Link>
-          <Link href="/products/epithalon" className="text-zinc-500 hover:text-zinc-300 transition-colors">
+          <Link href="/products/epithalon" className="text-gray-500 hover:text-gray-700 transition-colors">
             Epithalon
           </Link>
         </div>

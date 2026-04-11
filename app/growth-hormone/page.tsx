@@ -95,20 +95,20 @@ export default function GrowthHormonePage() {
       <section className="relative pt-14 pb-12 sm:pt-28 sm:pb-20 overflow-hidden grid-bg">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-20 right-1/4 w-96 h-96 bg-cyan-500/8 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 left-1/3 w-80 h-80 bg-violet-600/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 left-1/3 w-80 h-80 bg-gray-900/10 rounded-full blur-3xl" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
           <div className="max-w-3xl">
             <div className="flex items-center gap-2 mb-5">
               <span className="badge">Category</span>
-              <ChevronRight size={14} className="text-zinc-600" />
+              <ChevronRight size={14} className="text-gray-400" />
               <span className="badge badge-cyan">Growth Hormone</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-              <span className="text-white">Growth Hormone </span>
+              <span className="text-gray-900">Growth Hormone </span>
               <span className="gradient-text">Peptides</span>
             </h1>
-            <p className="text-lg text-zinc-400 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
               CJC-1295 / Ipamorelin and IGF-1 LR3 are the most scientifically validated peptides for GH
               optimization. They amplify natural GH pulses 3–5× — driving lean muscle growth, visceral fat
               loss, and deep sleep improvement without suppressing your own GH axis.
@@ -134,7 +134,7 @@ export default function GrowthHormonePage() {
               ].map((s) => (
                 <div key={s.label}>
                   <p className="text-2xl font-black gradient-text">{s.value}</p>
-                  <p className="text-xs text-zinc-600 mt-0.5">{s.label}</p>
+                  <p className="text-xs text-gray-400 mt-0.5">{s.label}</p>
                 </div>
               ))}
             </div>
@@ -145,9 +145,9 @@ export default function GrowthHormonePage() {
       {/* ── BENEFITS ─────────────────────────────────────── */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
         <div className="text-center mb-12">
-          <p className="text-xs font-semibold tracking-widest text-cyan-400 uppercase mb-3">Why GH Peptides</p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">What GH Optimization Delivers</h2>
-          <p className="text-zinc-400 max-w-xl mx-auto">
+          <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Why GH Peptides</p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">What GH Optimization Delivers</h2>
+          <p className="text-gray-500 max-w-xl mx-auto">
             Growth hormone peptides address three of the most sought-after physiological improvements simultaneously.
           </p>
         </div>
@@ -157,10 +157,10 @@ export default function GrowthHormonePage() {
             return (
               <div key={b.title} className="card p-6">
                 <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${b.color} flex items-center justify-center mb-5`}>
-                  <Icon size={22} className="text-white" />
+                  <Icon size={22} className="text-gray-900" />
                 </div>
-                <h3 className="font-bold text-white text-lg mb-3">{b.title}</h3>
-                <p className="text-zinc-400 text-sm leading-relaxed">{b.description}</p>
+                <h3 className="font-bold text-gray-900 text-lg mb-3">{b.title}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">{b.description}</p>
               </div>
             );
           })}
@@ -172,9 +172,9 @@ export default function GrowthHormonePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex items-end justify-between mb-10">
             <div>
-              <p className="text-xs font-semibold tracking-widest text-cyan-400 uppercase mb-3">GH Peptide Catalog</p>
-              <h2 className="text-3xl sm:text-4xl font-bold text-white">Growth Hormone Peptides</h2>
-              <p className="text-zinc-400 mt-2 max-w-lg">
+              <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">GH Peptide Catalog</p>
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Growth Hormone Peptides</h2>
+              <p className="text-gray-500 mt-2 max-w-lg">
                 Every GH peptide available — from the gold-standard Ipamorelin/CJC combo to advanced IGF-1 LR3 for direct anabolic signaling.
               </p>
             </div>
@@ -204,9 +204,9 @@ export default function GrowthHormonePage() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="text-xs font-semibold tracking-widest text-violet-400 uppercase mb-3">The Protocol</p>
-            <h2 className="text-3xl font-bold text-white mb-5">How to Run GH Peptides</h2>
-            <p className="text-zinc-400 leading-relaxed mb-6">
+            <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">The Protocol</p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-5">How to Run GH Peptides</h2>
+            <p className="text-gray-500 leading-relaxed mb-6">
               Timing is everything with GH peptides. The largest natural GH pulse occurs 60–90 minutes after sleep onset.
               Injecting CJC-1295 / Ipamorelin 30 minutes before sleep in a fasted state synchronizes the peptide-triggered
               pulse with this window — producing an additive rather than competing effect.
@@ -220,8 +220,8 @@ export default function GrowthHormonePage() {
                 'Optional second injection: Pre-workout for enhanced GH-mediated recovery',
                 'No carbohydrates 30 min post-injection — insulin blunts GH release',
               ].map((point) => (
-                <li key={point} className="flex items-start gap-3 text-sm text-zinc-400">
-                  <CheckCircle2 size={16} className="text-cyan-400 mt-0.5 shrink-0" />
+                <li key={point} className="flex items-start gap-3 text-sm text-gray-500">
+                  <CheckCircle2 size={16} className="text-yellow-600 mt-0.5 shrink-0" />
                   {point}
                 </li>
               ))}
@@ -238,7 +238,7 @@ export default function GrowthHormonePage() {
 
           {/* Stacks */}
           <div className="space-y-5">
-            <p className="text-xs font-semibold tracking-widest text-fuchsia-400 uppercase mb-1">Recommended Stacks</p>
+            <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-1">Recommended Stacks</p>
             {[ghStack, performanceStack].filter(Boolean).map((stack) => stack && (
               <Link
                 key={stack.id}
@@ -247,7 +247,7 @@ export default function GrowthHormonePage() {
               >
                 <div className="h-1 rounded-full bg-gradient-to-r from-cyan-500 to-violet-500 mb-4 opacity-60 group-hover:opacity-100 transition-opacity" />
                 <div className="flex items-start justify-between gap-3 mb-3">
-                  <h3 className="font-bold text-white text-base leading-tight">{stack.name}</h3>
+                  <h3 className="font-bold text-gray-900 text-base leading-tight">{stack.name}</h3>
                   <span
                     className="badge shrink-0 text-xs"
                     style={{
@@ -258,11 +258,11 @@ export default function GrowthHormonePage() {
                     {stack.difficulty}
                   </span>
                 </div>
-                <p className="text-sm text-zinc-400 leading-relaxed mb-4 line-clamp-2">{stack.shortDescription}</p>
+                <p className="text-sm text-gray-500 leading-relaxed mb-4 line-clamp-2">{stack.shortDescription}</p>
                 <div className="flex items-center justify-between text-xs border-t pt-3" style={{ borderColor: 'var(--border)' }}>
-                  <span className="text-zinc-500">Duration: <span className="text-zinc-300">{stack.duration}</span></span>
-                  <span className="text-zinc-500">Cost: <span className="text-zinc-300">{stack.cost}</span></span>
-                  <span className="flex items-center gap-1 text-violet-400 font-medium group-hover:gap-2 transition-all">
+                  <span className="text-gray-500">Duration: <span className="text-gray-700">{stack.duration}</span></span>
+                  <span className="text-gray-500">Cost: <span className="text-gray-700">{stack.cost}</span></span>
+                  <span className="flex items-center gap-1 text-yellow-600 font-medium group-hover:gap-2 transition-all">
                     View Protocol <ArrowRight size={11} />
                   </span>
                 </div>
@@ -275,9 +275,9 @@ export default function GrowthHormonePage() {
       {/* ── GH/IGF-1 AXIS EXPLAINED ─────────────────────── */}
       <section className="py-12 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
-          <p className="text-xs font-semibold tracking-widest text-cyan-400 uppercase mb-3">The Science</p>
-          <h2 className="text-3xl font-bold text-white mb-4">The GH/IGF-1 Axis — How It Works</h2>
-          <p className="text-zinc-400 max-w-2xl mx-auto">
+          <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">The Science</p>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">The GH/IGF-1 Axis — How It Works</h2>
+          <p className="text-gray-500 max-w-2xl mx-auto">
             Understanding the growth hormone axis helps explain why peptides produce superior outcomes to either lifestyle optimization
             or exogenous HGH alone. The axis has four key intervention points.
           </p>
@@ -316,28 +316,28 @@ export default function GrowthHormonePage() {
               >
                 {step.step}
               </div>
-              <h3 className="font-bold text-white text-sm mb-2">{step.title}</h3>
-              <p className="text-xs text-zinc-400 leading-relaxed">{step.desc}</p>
+              <h3 className="font-bold text-gray-900 text-sm mb-2">{step.title}</h3>
+              <p className="text-xs text-gray-500 leading-relaxed">{step.desc}</p>
             </div>
           ))}
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           <div>
-            <h3 className="text-2xl font-bold text-white mb-4">Why This Matters for Body Composition</h3>
-            <p className="text-zinc-400 leading-relaxed mb-4">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Why This Matters for Body Composition</h3>
+            <p className="text-gray-500 leading-relaxed mb-4">
               Growth hormone declines at approximately 14% per decade after age 30. By age 50, most adults have GH levels that are
               50–60% below their youthful peak. This decline is not merely cosmetic — it is biochemically responsible for the
               progressive body composition deterioration that many attribute to "normal aging": visceral fat accumulation, lean muscle
               loss, declining bone density, and reduced collagen production.
             </p>
-            <p className="text-zinc-400 leading-relaxed mb-4">
+            <p className="text-gray-500 leading-relaxed mb-4">
               Exogenous HGH addresses this decline but creates new problems: negative feedback suppresses the pituitary, doses must
               be precisely managed to avoid acromegaly risk, and IGF-1 is elevated continuously rather than pulsatilely. The
               physiological GH pulse pattern — multiple pulses per day with the largest occurring during deep sleep — is what
               produces optimal body composition outcomes. Exogenous HGH replaces rather than restores this pulsatile pattern.
             </p>
-            <p className="text-zinc-400 leading-relaxed">
+            <p className="text-gray-500 leading-relaxed">
               CJC-1295 and Ipamorelin work by restoring and amplifying the natural pulse pattern. They do not suppress the
               hypothalamic-pituitary axis. After injection, GH rises, peaks, and returns to baseline — exactly as it would
               in a healthy 25-year-old, just at a higher amplitude. This is why GH peptides produce excellent body composition
@@ -345,7 +345,7 @@ export default function GrowthHormonePage() {
             </p>
           </div>
           <div>
-            <h3 className="text-2xl font-bold text-white mb-4">Cycling Strategy for Advanced Users</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Cycling Strategy for Advanced Users</h3>
             <div className="space-y-4">
               {[
                 {
@@ -366,7 +366,7 @@ export default function GrowthHormonePage() {
               ].map((phase) => (
                 <div key={phase.phase} className="card p-5">
                   <p className="font-bold text-sm mb-2" style={{ color: phase.color }}>{phase.phase}</p>
-                  <p className="text-xs text-zinc-400 leading-relaxed">{phase.desc}</p>
+                  <p className="text-xs text-gray-500 leading-relaxed">{phase.desc}</p>
                 </div>
               ))}
             </div>
@@ -378,8 +378,8 @@ export default function GrowthHormonePage() {
       <section className="py-12 sm:py-20" style={{ background: 'var(--bg-card)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
-            <p className="text-xs font-semibold tracking-widest text-violet-400 uppercase mb-3">Timeline</p>
-            <h2 className="text-3xl font-bold text-white mb-4">What to Expect — Week by Week</h2>
+            <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Timeline</p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">What to Expect — Week by Week</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
@@ -390,11 +390,11 @@ export default function GrowthHormonePage() {
             ].map((phase) => (
               <div key={phase.weeks} className="card p-5">
                 <div className="badge badge-cyan mb-3 text-xs">{phase.weeks}</div>
-                <h3 className="font-bold text-white text-sm mb-3">{phase.title}</h3>
+                <h3 className="font-bold text-gray-900 text-sm mb-3">{phase.title}</h3>
                 <ul className="space-y-2">
                   {phase.outcomes.map((o) => (
-                    <li key={o} className="flex items-start gap-2 text-xs text-zinc-400">
-                      <CheckCircle2 size={11} className="text-cyan-400 mt-0.5 shrink-0" />
+                    <li key={o} className="flex items-start gap-2 text-xs text-gray-500">
+                      <CheckCircle2 size={11} className="text-yellow-600 mt-0.5 shrink-0" />
                       {o}
                     </li>
                   ))}
@@ -409,25 +409,25 @@ export default function GrowthHormonePage() {
       <section className="py-12 sm:py-20" style={{ background: 'var(--bg-card)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
-            <p className="text-xs font-semibold tracking-widest text-cyan-400 uppercase mb-3">Common Questions</p>
-            <h2 className="text-3xl font-bold text-white mb-4">GH Peptide FAQ</h2>
-            <p className="text-zinc-400 max-w-xl mx-auto">
+            <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Common Questions</p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">GH Peptide FAQ</h2>
+            <p className="text-gray-500 max-w-xl mx-auto">
               Everything you need to know before starting a growth hormone peptide protocol.
             </p>
           </div>
           <div className="space-y-4">
             {ghFaqs.map((faq, i) => (
               <div key={i} className="card p-6">
-                <h3 className="font-semibold text-white mb-3 flex items-start gap-3">
+                <h3 className="font-semibold text-gray-900 mb-3 flex items-start gap-3">
                   <span
                     className="shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold mt-0.5"
-                    style={{ background: 'rgba(6,182,212,0.15)', color: '#22d3ee', border: '1px solid rgba(6,182,212,0.3)' }}
+                    style={{ background: 'rgba(245,158,11,0.15)', color: '#22d3ee', border: '1px solid rgba(245,158,11,0.3)' }}
                   >
                     Q
                   </span>
                   {faq.q}
                 </h3>
-                <p className="text-zinc-400 text-sm leading-relaxed pl-9">{faq.a}</p>
+                <p className="text-gray-500 text-sm leading-relaxed pl-9">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -439,15 +439,15 @@ export default function GrowthHormonePage() {
         <div
           className="rounded-2xl p-10 sm:p-14 text-center relative overflow-hidden"
           style={{
-            background: 'linear-gradient(135deg, rgba(6,182,212,0.12) 0%, rgba(124,58,237,0.12) 100%)',
-            border: '1px solid rgba(6,182,212,0.25)',
+            background: 'linear-gradient(135deg, rgba(245,158,11,0.12) 0%, rgba(234,179,8,0.12) 100%)',
+            border: '1px solid rgba(245,158,11,0.25)',
           }}
         >
-          <p className="text-xs font-semibold uppercase tracking-widest text-cyan-400 mb-3">Start Your GH Protocol</p>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
+          <p className="text-xs font-semibold uppercase tracking-widest text-yellow-600 mb-3">Start Your GH Protocol</p>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">
             Ready to Optimize Your Growth Hormone?
           </h2>
-          <p className="text-zinc-300 text-lg max-w-xl mx-auto mb-8">
+          <p className="text-gray-700 text-lg max-w-xl mx-auto mb-8">
             HPLC-verified CJC-1295, Ipamorelin, and IGF-1 LR3 — with COA per batch and science-backed protocols.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

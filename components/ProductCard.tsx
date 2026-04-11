@@ -8,13 +8,13 @@ interface ProductCardProps {
 }
 
 const categoryGradient: Record<string, string> = {
-  'Healing & Recovery':       'from-violet-700 via-purple-600 to-violet-500',
-  'Anti-Aging & Skin':        'from-rose-700 via-pink-600 to-fuchsia-500',
-  'Anti-Aging & Longevity':   'from-amber-600 via-orange-500 to-yellow-400',
-  'Body Composition':         'from-cyan-700 via-sky-600 to-cyan-500',
-  'Cognitive Enhancement':    'from-indigo-700 via-blue-600 to-indigo-500',
-  'Sexual Health':            'from-red-700 via-rose-600 to-red-500',
-  'Growth Hormone':           'from-teal-700 via-emerald-600 to-teal-500',
+  'Healing & Recovery':       'from-yellow-100 via-amber-100 to-yellow-50',
+  'Anti-Aging & Skin':        'from-rose-100 via-pink-50 to-amber-50',
+  'Anti-Aging & Longevity':   'from-amber-100 via-yellow-100 to-amber-50',
+  'Body Composition':         'from-sky-100 via-blue-50 to-cyan-50',
+  'Cognitive Enhancement':    'from-indigo-100 via-blue-100 to-indigo-50',
+  'Sexual Health':            'from-red-100 via-rose-100 to-red-50',
+  'Growth Hormone':           'from-emerald-100 via-teal-100 to-green-50',
 };
 
 const categorySymbol: Record<string, string> = {
@@ -28,13 +28,13 @@ const categorySymbol: Record<string, string> = {
 };
 
 export default function ProductCard({ product, showAffiliateButton = false }: ProductCardProps) {
-  const gradient = categoryGradient[product.category] ?? 'from-violet-700 via-purple-600 to-violet-500';
+  const gradient = categoryGradient[product.category] ?? 'from-yellow-100 via-amber-100 to-yellow-50';
   const symbol   = categorySymbol[product.category] ?? 'PEP';
 
   return (
     <div className="card flex flex-col group overflow-hidden">
       {/* Product image */}
-      <Link href={`/products/${product.slug}`} className="block relative overflow-hidden h-48 sm:h-64" style={{ background: '#0a0a14' }}>
+      <Link href={`/products/${product.slug}`} className="block relative overflow-hidden h-48 sm:h-64 bg-gray-50">
         {product.image !== '' ? (
           <img
             src={product.image}
@@ -44,20 +44,20 @@ export default function ProductCard({ product, showAffiliateButton = false }: Pr
           />
         ) : (
           <>
-            <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-90 group-hover:opacity-100 transition-opacity duration-300`} />
+            <div className={`absolute inset-0 bg-gradient-to-br ${gradient} group-hover:opacity-100 transition-opacity duration-300`} />
             <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 p-4">
-              <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ background: 'rgba(255,255,255,0.18)', backdropFilter: 'blur(6px)' }}>
-                <FlaskConical size={22} className="text-white" />
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-white/60 backdrop-blur-sm">
+                <FlaskConical size={22} className="text-gray-600" />
               </div>
-              <p className="text-white font-black text-xl tracking-tight drop-shadow-md text-center leading-tight">{product.name}</p>
-              <p className="text-white/70 text-[10px] font-bold uppercase tracking-widest">{symbol}</p>
+              <p className="text-gray-800 font-black text-xl tracking-tight text-center leading-tight">{product.name}</p>
+              <p className="text-gray-500 text-[10px] font-bold uppercase tracking-widest">{symbol}</p>
             </div>
           </>
         )}
         {product.popularityRank <= 5 && (
           <div
             className="absolute top-3 right-3 px-2 py-0.5 rounded-full text-[9px] font-bold uppercase tracking-wider"
-            style={{ background: 'rgba(0,0,0,0.65)', color: '#fde68a', backdropFilter: 'blur(4px)' }}
+            style={{ background: 'rgba(234,179,8,0.9)', color: '#0a0a0a', backdropFilter: 'blur(4px)' }}
           >
             #{product.popularityRank} Popular
           </div>
@@ -73,15 +73,15 @@ export default function ProductCard({ product, showAffiliateButton = false }: Pr
               <Star
                 key={i}
                 size={10}
-                className={i < product.researchRating ? 'text-violet-400 fill-violet-400' : 'text-zinc-700'}
+                className={i < product.researchRating ? 'text-yellow-500 fill-yellow-500' : 'text-gray-200'}
               />
             ))}
-            <span className="text-[10px] text-zinc-600 ml-1">Evidence</span>
+            <span className="text-[10px] text-gray-400 ml-1">Evidence</span>
           </div>
         </div>
 
         {/* Description */}
-        <p className="text-sm text-zinc-500 leading-relaxed mb-3 flex-1 line-clamp-3">
+        <p className="text-sm text-gray-500 leading-relaxed mb-3 flex-1 line-clamp-3">
           {product.shortDescription}
         </p>
 
@@ -95,8 +95,8 @@ export default function ProductCard({ product, showAffiliateButton = false }: Pr
         {/* Price + actions */}
         <div className="flex items-center justify-between gap-2 mt-auto">
           <div>
-            <p className="text-xs text-zinc-600">HPLC Verified</p>
-            <p className="font-bold text-white">${product.price.toFixed(2)}</p>
+            <p className="text-xs text-gray-400">HPLC Verified</p>
+            <p className="font-bold text-gray-900">${product.price.toFixed(2)}</p>
           </div>
           <div className="flex gap-2">
             <Link href={`/products/${product.slug}`} className="btn-secondary py-2 px-3 text-xs">

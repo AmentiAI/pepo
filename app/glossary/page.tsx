@@ -418,7 +418,7 @@ export default function GlossaryPage() {
               <div className="flex-1 h-px bg-[var(--border)]" />
               <a
                 href="#"
-                className="text-xs text-gray-500 hover:text-cyan-400 transition-colors shrink-0"
+                className="text-xs text-gray-500 hover:text-yellow-600 transition-colors shrink-0"
               >
                 ↑ top
               </a>
@@ -432,11 +432,11 @@ export default function GlossaryPage() {
                   className="card p-5 flex flex-col gap-2"
                 >
                   <div className="flex items-start justify-between gap-2">
-                    <h3 className="font-bold text-white text-base leading-snug">{term}</h3>
+                    <h3 className="font-bold text-gray-900 text-base leading-snug">{term}</h3>
                     {link && (
                       <Link
                         href={link.href}
-                        className="shrink-0 text-xs text-cyan-400 hover:text-cyan-300 border border-cyan-900/60 hover:border-cyan-500/60 rounded px-2 py-0.5 transition-colors whitespace-nowrap"
+                        className="shrink-0 text-xs text-yellow-600 hover:text-cyan-300 border border-cyan-900/60 hover:border-cyan-500/60 rounded px-2 py-0.5 transition-colors whitespace-nowrap"
                       >
                         {link.label} →
                       </Link>

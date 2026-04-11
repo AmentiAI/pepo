@@ -36,15 +36,15 @@ const quickAnswerCards = [
     label: 'Best for Localized Injuries',
     winner: 'BPC-157',
     reason: 'Gut, tendon, nerve, targeted tissue repair',
-    accent: 'text-violet-400',
-    bg: 'bg-violet-500/10',
-    border: 'border-violet-500/30',
+    accent: 'text-yellow-600',
+    bg: 'bg-yellow-50',
+    border: 'border-yellow-400/40',
   },
   {
     label: 'Best for Systemic Recovery',
     winner: 'TB-500',
     reason: 'Whole-body inflammation, flexibility, stamina',
-    accent: 'text-cyan-400',
+    accent: 'text-yellow-600',
     bg: 'bg-cyan-500/10',
     border: 'border-cyan-500/30',
   },
@@ -52,9 +52,9 @@ const quickAnswerCards = [
     label: 'Best Overall',
     winner: 'Stack Both',
     reason: 'Synergistic — local + systemic healing simultaneously',
-    accent: 'text-violet-400',
-    bg: 'bg-violet-500/10',
-    border: 'border-violet-500/30',
+    accent: 'text-yellow-600',
+    bg: 'bg-yellow-50',
+    border: 'border-yellow-400/40',
   },
 ];
 
@@ -76,56 +76,56 @@ const injuryGuide = [
     primary: 'BPC-157',
     support: 'TB-500 for systemic inflammation',
     recommendation: 'BPC-157 primary + TB-500',
-    accentPrimary: 'text-violet-400',
-    accentSupport: 'text-cyan-400',
+    accentPrimary: 'text-yellow-600',
+    accentSupport: 'text-yellow-600',
   },
   {
     injury: 'Gut / digestive issues',
     primary: 'BPC-157 only',
     support: 'Oral preferred — no TB-500 needed',
     recommendation: 'BPC-157 only',
-    accentPrimary: 'text-violet-400',
-    accentSupport: 'text-zinc-500',
+    accentPrimary: 'text-yellow-600',
+    accentSupport: 'text-gray-500',
   },
   {
     injury: 'Muscle tear',
     primary: 'TB-500',
     support: 'BPC-157 for nerve and connective tissue',
     recommendation: 'TB-500 primary + BPC-157',
-    accentPrimary: 'text-cyan-400',
-    accentSupport: 'text-violet-400',
+    accentPrimary: 'text-yellow-600',
+    accentSupport: 'text-yellow-600',
   },
   {
     injury: 'Nerve damage',
     primary: 'BPC-157 primary',
     support: 'Strongest nerve-specific evidence',
     recommendation: 'BPC-157 primary',
-    accentPrimary: 'text-violet-400',
-    accentSupport: 'text-zinc-500',
+    accentPrimary: 'text-yellow-600',
+    accentSupport: 'text-gray-500',
   },
   {
     injury: 'General inflammation / whole-body recovery',
     primary: 'TB-500 primary',
     support: 'Systemic action addresses whole-body burden',
     recommendation: 'TB-500 primary',
-    accentPrimary: 'text-cyan-400',
-    accentSupport: 'text-zinc-500',
+    accentPrimary: 'text-yellow-600',
+    accentSupport: 'text-gray-500',
   },
   {
     injury: 'Post-surgery',
     primary: 'Stack both',
     support: 'Maximum healing signal from day 1',
     recommendation: 'Stack both',
-    accentPrimary: 'text-violet-400',
-    accentSupport: 'text-cyan-400',
+    accentPrimary: 'text-yellow-600',
+    accentSupport: 'text-yellow-600',
   },
   {
     injury: 'ACL / major joint',
     primary: 'Stack both',
     support: 'Prioritize BPC-157 injection at injury site',
     recommendation: 'Stack both — BPC-157 local',
-    accentPrimary: 'text-violet-400',
-    accentSupport: 'text-cyan-400',
+    accentPrimary: 'text-yellow-600',
+    accentSupport: 'text-yellow-600',
   },
 ];
 
@@ -155,9 +155,9 @@ const sideEffects = [
       'No hormonal interference or suppression reported',
       'No known toxicity in research models at therapeutic doses',
     ],
-    color: 'text-violet-400',
-    bg: 'bg-violet-500/10',
-    border: 'border-violet-500/30',
+    color: 'text-yellow-600',
+    bg: 'bg-yellow-50',
+    border: 'border-yellow-400/40',
   },
   {
     peptide: 'TB-500',
@@ -168,7 +168,7 @@ const sideEffects = [
       'Theoretical concern: growth factor for latent tumors (not demonstrated at therapeutic doses)',
       'No significant hormonal or organ-level toxicity reported',
     ],
-    color: 'text-cyan-400',
+    color: 'text-yellow-600',
     bg: 'bg-cyan-500/10',
     border: 'border-cyan-500/30',
   },
@@ -203,27 +203,27 @@ export default function BPC157vsTB500Page() {
       {/* Hero */}
       <section className="relative pt-14 pb-12 sm:pt-28 sm:pb-20 overflow-hidden grid-bg">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-20 left-1/4 w-96 h-96 bg-violet-600/10 rounded-full blur-3xl" />
+          <div className="absolute top-20 left-1/4 w-96 h-96 bg-gray-900/10 rounded-full blur-3xl" />
           <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-cyan-500/8 rounded-full blur-3xl" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 mb-5 flex-wrap">
-            <Link href="/" className="badge hover:text-white transition-colors">Home</Link>
-            <ChevronRight size={14} className="text-zinc-600" />
+            <Link href="/" className="badge hover:text-gray-900 transition-colors">Home</Link>
+            <ChevronRight size={14} className="text-gray-400" />
             <span className="badge badge-cyan">Comparisons</span>
-            <ChevronRight size={14} className="text-zinc-600" />
+            <ChevronRight size={14} className="text-gray-400" />
             <span className="badge">BPC-157 vs TB-500</span>
           </div>
 
           <div className="max-w-3xl">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
               <span className="gradient-text">BPC-157</span>
-              <span className="text-white"> vs </span>
+              <span className="text-gray-900"> vs </span>
               <span className="gradient-text">TB-500</span>
             </h1>
-            <p className="text-lg text-zinc-400 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
               Both are gold-standard healing peptides — but they work through entirely different
               mechanisms. This guide breaks down exactly which to use for your injury type, how they
               compare head-to-head, and why stacking them produces synergistic results.
@@ -242,16 +242,16 @@ export default function BPC157vsTB500Page() {
           {/* Stat strip */}
           <div className="mt-10 sm:mt-14 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {[
-              { icon: <Zap size={18} className="text-violet-400" />, value: 'Local vs Systemic', label: 'Key mechanism difference' },
-              { icon: <GitMerge size={18} className="text-cyan-400" />, value: '2×', label: 'Speed advantage of stacking both' },
-              { icon: <Syringe size={18} className="text-violet-400" />, value: '250mcg', label: 'BPC-157 standard dose' },
-              { icon: <Shield size={18} className="text-cyan-400" />, value: '5mg', label: 'TB-500 standard dose' },
+              { icon: <Zap size={18} className="text-yellow-600" />, value: 'Local vs Systemic', label: 'Key mechanism difference' },
+              { icon: <GitMerge size={18} className="text-yellow-600" />, value: '2×', label: 'Speed advantage of stacking both' },
+              { icon: <Syringe size={18} className="text-yellow-600" />, value: '250mcg', label: 'BPC-157 standard dose' },
+              { icon: <Shield size={18} className="text-yellow-600" />, value: '5mg', label: 'TB-500 standard dose' },
             ].map((stat) => (
               <div key={stat.label} className="card p-4 flex items-start gap-3">
                 <div className="mt-0.5">{stat.icon}</div>
                 <div>
-                  <p className="text-xl font-bold text-white">{stat.value}</p>
-                  <p className="text-xs text-zinc-500 mt-0.5">{stat.label}</p>
+                  <p className="text-xl font-bold text-gray-900">{stat.value}</p>
+                  <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -264,10 +264,10 @@ export default function BPC157vsTB500Page() {
       {/* Quick Answer Summary */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <span className="badge badge-cyan mb-4 inline-block">Quick Answer</span>
-        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           Which Should You Use?
         </h2>
-        <p className="text-zinc-400 mb-10 max-w-2xl">
+        <p className="text-gray-500 mb-10 max-w-2xl">
           The answer depends on your injury type and goals. Here is the short version before we
           go deep into the mechanisms.
         </p>
@@ -281,9 +281,9 @@ export default function BPC157vsTB500Page() {
               <div className={`w-10 h-10 rounded-xl ${card.bg} flex items-center justify-center mb-4`}>
                 <CheckCircle2 size={20} className={card.accent} />
               </div>
-              <p className="text-xs text-zinc-500 uppercase tracking-wider mb-1">{card.label}</p>
+              <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">{card.label}</p>
               <p className={`text-2xl font-extrabold mb-3 ${card.accent}`}>{card.winner}</p>
-              <p className="text-sm text-zinc-400 leading-relaxed">{card.reason}</p>
+              <p className="text-sm text-gray-500 leading-relaxed">{card.reason}</p>
             </div>
           ))}
         </div>
@@ -293,28 +293,28 @@ export default function BPC157vsTB500Page() {
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <span className="badge mb-4 inline-block">Mechanisms</span>
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
             How Each Peptide Works
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             {/* BPC-157 */}
             <div
-              className="card p-6 border border-violet-500/30"
+              className="card p-6 border border-yellow-400/40"
               style={{ background: 'var(--bg)' }}
             >
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-10 h-10 rounded-xl bg-violet-500/15 flex items-center justify-center">
-                  <Syringe size={20} className="text-violet-400" />
+                  <Syringe size={20} className="text-yellow-600" />
                 </div>
                 <div>
-                  <p className="font-bold text-white">BPC-157</p>
-                  <p className="text-xs text-zinc-500">Body Protection Compound</p>
+                  <p className="font-bold text-gray-900">BPC-157</p>
+                  <p className="text-xs text-gray-500">Body Protection Compound</p>
                 </div>
               </div>
               <ul className="space-y-3">
                 {bpc157Mechanism.map((point) => (
-                  <li key={point} className="flex items-start gap-3 text-sm text-zinc-400">
-                    <CheckCircle2 size={14} className="text-violet-400 mt-0.5 shrink-0" />
+                  <li key={point} className="flex items-start gap-3 text-sm text-gray-500">
+                    <CheckCircle2 size={14} className="text-yellow-600 mt-0.5 shrink-0" />
                     {point}
                   </li>
                 ))}
@@ -327,17 +327,17 @@ export default function BPC157vsTB500Page() {
             >
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-10 h-10 rounded-xl bg-cyan-500/15 flex items-center justify-center">
-                  <Shield size={20} className="text-cyan-400" />
+                  <Shield size={20} className="text-yellow-600" />
                 </div>
                 <div>
-                  <p className="font-bold text-white">TB-500</p>
-                  <p className="text-xs text-zinc-500">Thymosin Beta-4 Fragment</p>
+                  <p className="font-bold text-gray-900">TB-500</p>
+                  <p className="text-xs text-gray-500">Thymosin Beta-4 Fragment</p>
                 </div>
               </div>
               <ul className="space-y-3">
                 {tb500Mechanism.map((point) => (
-                  <li key={point} className="flex items-start gap-3 text-sm text-zinc-400">
-                    <CheckCircle2 size={14} className="text-cyan-400 mt-0.5 shrink-0" />
+                  <li key={point} className="flex items-start gap-3 text-sm text-gray-500">
+                    <CheckCircle2 size={14} className="text-yellow-600 mt-0.5 shrink-0" />
                     {point}
                   </li>
                 ))}
@@ -352,7 +352,7 @@ export default function BPC157vsTB500Page() {
       {/* Head-to-Head Table */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <span className="badge badge-cyan mb-4 inline-block">Head-to-Head</span>
-        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
           BPC-157 vs TB-500 Comparison Table
         </h2>
         <div className="card overflow-hidden border" style={{ borderColor: 'var(--border)' }}>
@@ -360,9 +360,9 @@ export default function BPC157vsTB500Page() {
             <table className="w-full text-sm">
               <thead>
                 <tr style={{ backgroundColor: 'var(--bg-card)', borderBottom: '1px solid var(--border)' }}>
-                  <th className="text-left p-4 text-zinc-400 font-semibold w-1/3">Category</th>
-                  <th className="text-left p-4 text-violet-400 font-semibold">BPC-157</th>
-                  <th className="text-left p-4 text-cyan-400 font-semibold">TB-500</th>
+                  <th className="text-left p-4 text-gray-500 font-semibold w-1/3">Category</th>
+                  <th className="text-left p-4 text-yellow-600 font-semibold">BPC-157</th>
+                  <th className="text-left p-4 text-yellow-600 font-semibold">TB-500</th>
                 </tr>
               </thead>
               <tbody>
@@ -374,9 +374,9 @@ export default function BPC157vsTB500Page() {
                       borderBottom: '1px solid var(--border)',
                     }}
                   >
-                    <td className="p-4 text-zinc-500 font-medium">{row.label}</td>
-                    <td className="p-4 text-zinc-300">{row.bpc}</td>
-                    <td className="p-4 text-zinc-300">{row.tb}</td>
+                    <td className="p-4 text-gray-500 font-medium">{row.label}</td>
+                    <td className="p-4 text-gray-700">{row.bpc}</td>
+                    <td className="p-4 text-gray-700">{row.tb}</td>
                   </tr>
                 ))}
               </tbody>
@@ -389,10 +389,10 @@ export default function BPC157vsTB500Page() {
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <span className="badge mb-4 inline-block">Decision Guide</span>
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
             Which to Use for Your Injury
           </h2>
-          <p className="text-zinc-400 mb-10 max-w-2xl">
+          <p className="text-gray-500 mb-10 max-w-2xl">
             Match your injury type to the right protocol. When in doubt, stacking both is always a
             valid choice — there are no known negative interactions.
           </p>
@@ -404,7 +404,7 @@ export default function BPC157vsTB500Page() {
                 style={{ borderColor: 'var(--border)', background: 'var(--bg)' }}
               >
                 <div className="sm:w-1/3">
-                  <p className="font-semibold text-white text-sm">{item.injury}</p>
+                  <p className="font-semibold text-gray-900 text-sm">{item.injury}</p>
                 </div>
                 <div className="sm:w-1/3">
                   <span className={`text-sm font-bold ${item.accentPrimary}`}>{item.primary}</span>
@@ -423,38 +423,38 @@ export default function BPC157vsTB500Page() {
       {/* Stacking Protocol */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <span className="badge badge-cyan mb-4 inline-block">Stack Protocol</span>
-        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           BPC-157 + TB-500 Stack Protocol
         </h2>
-        <p className="text-zinc-400 mb-10 max-w-2xl">
+        <p className="text-gray-500 mb-10 max-w-2xl">
           Running both simultaneously produces synergistic results: BPC-157 handles the local tissue
           repair while TB-500 systemically reduces the inflammatory environment that slows healing.
         </p>
         <div className="grid md:grid-cols-2 gap-6 mb-10">
           <div
-            className="card p-6 border border-violet-500/30"
+            className="card p-6 border border-yellow-400/40"
             style={{ background: 'var(--bg-card)' }}
           >
             <div className="flex items-center gap-2 mb-4">
               <span className="badge">BPC-157</span>
-              <span className="text-xs text-zinc-500">Local healing</span>
+              <span className="text-xs text-gray-500">Local healing</span>
             </div>
             <div className="space-y-3">
               <div className="flex justify-between text-sm">
-                <span className="text-zinc-500">Dose</span>
-                <span className="text-white font-semibold">250–500 mcg</span>
+                <span className="text-gray-500">Dose</span>
+                <span className="text-gray-900 font-semibold">250–500 mcg</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-zinc-500">Frequency</span>
-                <span className="text-white font-semibold">Twice daily</span>
+                <span className="text-gray-500">Frequency</span>
+                <span className="text-gray-900 font-semibold">Twice daily</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-zinc-500">Injection</span>
-                <span className="text-white font-semibold">Near injury site (subcutaneous)</span>
+                <span className="text-gray-500">Injection</span>
+                <span className="text-gray-900 font-semibold">Near injury site (subcutaneous)</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-zinc-500">Cycle</span>
-                <span className="text-white font-semibold">8 weeks on, 4 weeks off</span>
+                <span className="text-gray-500">Cycle</span>
+                <span className="text-gray-900 font-semibold">8 weeks on, 4 weeks off</span>
               </div>
             </div>
           </div>
@@ -464,24 +464,24 @@ export default function BPC157vsTB500Page() {
           >
             <div className="flex items-center gap-2 mb-4">
               <span className="badge badge-cyan">TB-500</span>
-              <span className="text-xs text-zinc-500">Systemic support</span>
+              <span className="text-xs text-gray-500">Systemic support</span>
             </div>
             <div className="space-y-3">
               <div className="flex justify-between text-sm">
-                <span className="text-zinc-500">Dose</span>
-                <span className="text-white font-semibold">5 mg per injection</span>
+                <span className="text-gray-500">Dose</span>
+                <span className="text-gray-900 font-semibold">5 mg per injection</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-zinc-500">Frequency</span>
-                <span className="text-white font-semibold">Twice per week</span>
+                <span className="text-gray-500">Frequency</span>
+                <span className="text-gray-900 font-semibold">Twice per week</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-zinc-500">Injection</span>
-                <span className="text-white font-semibold">Abdomen or thigh (systemic)</span>
+                <span className="text-gray-500">Injection</span>
+                <span className="text-gray-900 font-semibold">Abdomen or thigh (systemic)</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-zinc-500">Cycle</span>
-                <span className="text-white font-semibold">6–8 week loading phases</span>
+                <span className="text-gray-500">Cycle</span>
+                <span className="text-gray-900 font-semibold">6–8 week loading phases</span>
               </div>
             </div>
           </div>
@@ -491,10 +491,10 @@ export default function BPC157vsTB500Page() {
           style={{ background: 'var(--bg-card)' }}
         >
           <div className="flex items-start gap-3">
-            <GitMerge size={20} className="text-violet-400 shrink-0 mt-0.5" />
+            <GitMerge size={20} className="text-yellow-600 shrink-0 mt-0.5" />
             <div>
-              <p className="font-bold text-white mb-2">Why They Are Synergistic</p>
-              <p className="text-sm text-zinc-400 leading-relaxed">
+              <p className="font-bold text-gray-900 mb-2">Why They Are Synergistic</p>
+              <p className="text-sm text-gray-500 leading-relaxed">
                 BPC-157 operates locally — it concentrates at the injection site, upregulating GH
                 receptors and promoting angiogenesis precisely where the tissue is damaged. TB-500
                 circulates systemically, suppressing the whole-body inflammatory signaling cascade
@@ -512,7 +512,7 @@ export default function BPC157vsTB500Page() {
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <span className="badge mb-4 inline-block">Safety Profile</span>
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
             Side Effects &amp; Safety
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
@@ -526,10 +526,10 @@ export default function BPC157vsTB500Page() {
                   <AlertTriangle size={18} className={item.color} />
                   <p className={`font-bold ${item.color}`}>{item.peptide}</p>
                 </div>
-                <p className="text-xs text-zinc-500 mb-4">{item.profile}</p>
+                <p className="text-xs text-gray-500 mb-4">{item.profile}</p>
                 <ul className="space-y-2">
                   {item.effects.map((effect) => (
-                    <li key={effect} className="flex items-start gap-2 text-sm text-zinc-400">
+                    <li key={effect} className="flex items-start gap-2 text-sm text-gray-500">
                       <span className={`mt-1.5 w-1.5 h-1.5 rounded-full shrink-0 ${item.bg}`} />
                       {effect}
                     </li>
@@ -542,9 +542,9 @@ export default function BPC157vsTB500Page() {
             className="mt-6 card p-4 border border-zinc-600/30 flex items-start gap-3"
             style={{ background: 'var(--bg)' }}
           >
-            <Shield size={16} className="text-zinc-500 shrink-0 mt-0.5" />
-            <p className="text-xs text-zinc-500 leading-relaxed">
-              <span className="text-zinc-400 font-semibold">Research disclaimer: </span>
+            <Shield size={16} className="text-gray-500 shrink-0 mt-0.5" />
+            <p className="text-xs text-gray-500 leading-relaxed">
+              <span className="text-gray-500 font-semibold">Research disclaimer: </span>
               Both peptides are for research purposes. Neither has completed Phase III clinical trials
               or received regulatory approval for human use. Consult a qualified healthcare provider
               before use.
@@ -558,8 +558,8 @@ export default function BPC157vsTB500Page() {
       {/* FAQ */}
       <section className="py-10 sm:py-20 max-w-4xl mx-auto px-4 sm:px-6">
         <div className="flex items-center gap-3 mb-8">
-          <HelpCircle size={20} className="text-violet-400" />
-          <h2 className="text-2xl sm:text-3xl font-bold text-white">Frequently Asked Questions</h2>
+          <HelpCircle size={20} className="text-yellow-600" />
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Frequently Asked Questions</h2>
         </div>
         <div className="space-y-4">
           {faqs.map((faq, i) => (
@@ -568,8 +568,8 @@ export default function BPC157vsTB500Page() {
               className="card p-6 border"
               style={{ borderColor: 'var(--border)', background: 'var(--bg-card)' }}
             >
-              <h3 className="font-bold text-white mb-3">{faq.q}</h3>
-              <p className="text-sm text-zinc-400 leading-relaxed">{faq.a}</p>
+              <h3 className="font-bold text-gray-900 mb-3">{faq.q}</h3>
+              <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
             </div>
           ))}
         </div>
@@ -578,10 +578,10 @@ export default function BPC157vsTB500Page() {
       {/* CTA */}
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
             Ready to Start the Stack?
           </h2>
-          <p className="text-zinc-400 max-w-xl mx-auto mb-8">
+          <p className="text-gray-500 max-w-xl mx-auto mb-8">
             The Ultimate Healing Stack includes both BPC-157 and TB-500 with complete protocol
             guidance — the most powerful healing combination available.
           </p>

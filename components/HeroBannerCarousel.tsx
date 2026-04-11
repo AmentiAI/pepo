@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
 
-const IMG = '/cdn';
+const IMG = '/phio'; // proxied through our domain
 
 const slides = [
   {
@@ -17,40 +17,40 @@ const slides = [
   },
   {
     type: 'product' as const,
-    image: `${IMG}/2025/09/bpc157_10mg.webp`,
+    image: `${IMG}/bpc-157-10mg.png`,
     name: 'BPC-157',
     badge: '#1 Healing Peptide',
     headline: 'Accelerate Healing — Tendon, Gut & Muscle',
     sub: 'The gold-standard tissue repair peptide. 2× faster healing from injuries that have lingered for months.',
     cta: { label: 'Full Protocol Guide', href: '/products/bpc-157' },
     ctaSecondary: { label: 'Get BPC-157', href: '/go/bpc-157' },
-    accentColor: '#7c3aed',
+    accentColor: '#eab308',
   },
   {
     type: 'product' as const,
-    image: `${IMG}/2024/10/semaglutide_10mg-1.webp`,
+    image: `${IMG}/semaglutide-6mg.png`,
     name: 'Semaglutide',
     badge: 'GLP-1 Fat Loss',
     headline: '14.9% Average Body Weight Reduction',
     sub: 'The most clinically validated fat loss peptide — STEP-1 trial proven over 68 weeks.',
     cta: { label: 'Full Protocol Guide', href: '/products/semaglutide-10mg' },
     ctaSecondary: { label: 'Get Semaglutide', href: '/go/semaglutide-10mg' },
-    accentColor: '#06b6d4',
+    accentColor: '#f59e0b',
   },
   {
     type: 'product' as const,
-    image: `${IMG}/2025/01/cjc1295_5-5mg.webp`,
+    image: `${IMG}/ipamorelin-cjc-1295-blend-10mg.png`,
     name: 'Ipamorelin / CJC-1295',
     badge: 'GH Optimization',
     headline: '3–5× Natural Growth Hormone Pulse',
     sub: 'Restore the GH profile of a healthy 25-year-old — lean mass, fat loss, deeper sleep.',
     cta: { label: 'Full Protocol Guide', href: '/products/ipamorelin-cjc' },
     ctaSecondary: { label: 'Get CJC-1295', href: '/go/ipamorelin-cjc' },
-    accentColor: '#0891b2',
+    accentColor: '#eab308',
   },
   {
     type: 'product' as const,
-    image: `${IMG}/2025/09/epithalon_50mg.webp`,
+    image: `${IMG}/epithalon-50mg.png`,
     name: 'Epithalon',
     badge: 'Longevity',
     headline: '27–36% Mortality Reduction in 15-Year Studies',
@@ -61,14 +61,14 @@ const slides = [
   },
   {
     type: 'product' as const,
-    image: `${IMG}/2024/04/tirzepatide_15mg-1.webp`,
+    image: `${IMG}/tirzepatide-15mg.png`,
     name: 'Tirzepatide',
     badge: 'Dual GIP/GLP-1',
     headline: 'Up to 22.5% Weight Loss — Highest Ever Recorded',
     sub: 'Dual agonist targeting both GIP and GLP-1 receptors for unprecedented fat loss results.',
     cta: { label: 'Full Protocol Guide', href: '/products/tirzepatide-15mg' },
     ctaSecondary: { label: 'Get Tirzepatide', href: '/go/tirzepatide-15mg' },
-    accentColor: '#06b6d4',
+    accentColor: '#eab308',
   },
 ];
 
@@ -89,8 +89,8 @@ export default function HeroBannerCarousel() {
 
   return (
     <div
-      className="relative overflow-hidden"
-      style={{ background: '#08080f', minHeight: '520px' }}
+      className="relative overflow-hidden bg-white"
+      style={{ minHeight: '520px' }}
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
@@ -99,15 +99,12 @@ export default function HeroBannerCarousel() {
         className="absolute inset-0 pointer-events-none transition-all duration-700"
         aria-hidden="true"
         style={{
-          background:
-            slide.type === 'logo'
-              ? 'radial-gradient(ellipse 70% 60% at 50% 0%, rgba(124,58,237,0.18) 0%, transparent 70%)'
-              : `radial-gradient(ellipse 70% 60% at 50% 0%, ${(slide as { accentColor?: string }).accentColor ?? '#7c3aed'}22 0%, transparent 70%)`,
+          background: 'radial-gradient(ellipse 70% 60% at 50% 0%, rgba(234,179,8,0.12) 0%, transparent 70%)',
         }}
       />
 
       {/* Grid overlay */}
-      <div className="absolute inset-0 grid-bg opacity-30 pointer-events-none" aria-hidden="true" />
+      <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" aria-hidden="true" />
 
       {/* Slide content */}
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
@@ -119,18 +116,18 @@ export default function HeroBannerCarousel() {
               alt="PeptidesClav"
               width={120}
               height={120}
-              className="rounded-2xl shadow-2xl shadow-violet-900/40"
+              className="rounded-2xl shadow-2xl shadow-yellow-200/60"
               priority
             />
             <div>
               <div className="inline-flex items-center gap-2 badge mb-5">
-                <span className="w-1.5 h-1.5 rounded-full bg-violet-400 animate-pulse" />
+                <span className="w-1.5 h-1.5 rounded-full bg-yellow-500 animate-pulse" />
                 Evidence-Based Peptide Protocols
               </div>
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-4 leading-tight">
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-4 leading-tight">
                 {slide.headline}
               </h2>
-              <p className="text-lg text-zinc-400 max-w-xl mx-auto mb-8 leading-relaxed">{slide.sub}</p>
+              <p className="text-lg text-gray-500 max-w-xl mx-auto mb-8 leading-relaxed">{slide.sub}</p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Link href={slide.cta.href} className="btn-primary text-base px-7 py-3.5">
                   {slide.cta.label} <ArrowRight size={17} />
@@ -146,13 +143,13 @@ export default function HeroBannerCarousel() {
           <div className="flex flex-col sm:flex-row items-center gap-10 sm:gap-16">
             {/* Product image */}
             <div
-              className="shrink-0 rounded-2xl overflow-hidden flex items-center justify-center shadow-2xl"
+              className="shrink-0 rounded-2xl overflow-hidden flex items-center justify-center shadow-xl"
               style={{
                 width: 220,
                 height: 280,
-                background: '#0d0d1f',
-                border: '1px solid rgba(255,255,255,0.07)',
-                boxShadow: `0 0 60px ${(slide as { accentColor?: string }).accentColor ?? '#7c3aed'}33`,
+                background: '#fafafa',
+                border: '1px solid #e5e7eb',
+                boxShadow: `0 0 60px rgba(234,179,8,0.2)`,
               }}
             >
               <img
@@ -164,17 +161,14 @@ export default function HeroBannerCarousel() {
 
             {/* Text */}
             <div className="flex-1 text-center sm:text-left">
-              <span className="badge badge-cyan mb-4 inline-block">{(slide as { badge: string }).badge}</span>
-              <h2 className="text-4xl sm:text-5xl font-extrabold text-white mb-3 leading-tight">
+              <span className="badge mb-4 inline-block">{(slide as { badge: string }).badge}</span>
+              <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-3 leading-tight">
                 {(slide as { name: string }).name}
               </h2>
-              <p
-                className="text-xl sm:text-2xl font-semibold mb-4"
-                style={{ color: (slide as { accentColor?: string }).accentColor ?? '#a78bfa' }}
-              >
+              <p className="text-xl sm:text-2xl font-semibold mb-4 text-yellow-600">
                 {slide.headline}
               </p>
-              <p className="text-zinc-400 text-lg leading-relaxed mb-8 max-w-lg">{slide.sub}</p>
+              <p className="text-gray-500 text-lg leading-relaxed mb-8 max-w-lg">{slide.sub}</p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center sm:justify-start">
                 <Link href={slide.cta.href} className="btn-primary text-base px-7 py-3.5">
                   {slide.cta.label} <ArrowRight size={17} />
@@ -194,16 +188,14 @@ export default function HeroBannerCarousel() {
       {/* Prev / Next arrows */}
       <button
         onClick={prev}
-        className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center transition-colors"
-        style={{ background: 'rgba(15,15,26,0.7)', border: '1px solid rgba(255,255,255,0.1)', color: '#a1a1b5' }}
+        className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center transition-colors bg-white border border-gray-200 text-gray-500 hover:border-yellow-400 hover:text-yellow-600 shadow-sm"
         aria-label="Previous slide"
       >
         <ChevronLeft size={20} />
       </button>
       <button
         onClick={next}
-        className="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center transition-colors"
-        style={{ background: 'rgba(15,15,26,0.7)', border: '1px solid rgba(255,255,255,0.1)', color: '#a1a1b5' }}
+        className="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center transition-colors bg-white border border-gray-200 text-gray-500 hover:border-yellow-400 hover:text-yellow-600 shadow-sm"
         aria-label="Next slide"
       >
         <ChevronRight size={20} />
@@ -219,7 +211,7 @@ export default function HeroBannerCarousel() {
             style={{
               width: i === current ? 24 : 8,
               height: 8,
-              background: i === current ? '#7c3aed' : 'rgba(124,58,237,0.25)',
+              background: i === current ? '#eab308' : 'rgba(234,179,8,0.3)',
             }}
             aria-label={`Go to slide ${i + 1}`}
           />
