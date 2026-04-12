@@ -65,10 +65,10 @@ const categoryThemes: Record<string, CategoryTheme> = {
   'Healing & Recovery': {
     glow: 'rgba(234,179,8,0.18)',
     badge: 'rgba(234,179,8,0.12)',
-    badgeText: '#c4b5fd',
+    badgeText: '#6d28d9',
     badgeBorder: 'rgba(234,179,8,0.3)',
     accent: '#7c3aed',
-    accentLight: '#a78bfa',
+    accentLight: '#7c3aed',
     icon: ShieldCheck,
     label: 'Healing & Recovery',
     heroLayout: 'default',
@@ -83,10 +83,10 @@ const categoryThemes: Record<string, CategoryTheme> = {
   'Growth Hormone': {
     glow: 'rgba(245,158,11,0.18)',
     badge: 'rgba(245,158,11,0.1)',
-    badgeText: '#67e8f9',
+    badgeText: '#0e7490',
     badgeBorder: 'rgba(245,158,11,0.3)',
     accent: '#0891b2',
-    accentLight: '#22d3ee',
+    accentLight: '#0891b2',
     icon: TrendingUp,
     label: 'Growth Hormone Optimizer',
     heroLayout: 'default',
@@ -101,10 +101,10 @@ const categoryThemes: Record<string, CategoryTheme> = {
   'Anti-Aging & Longevity': {
     glow: 'rgba(245,158,11,0.18)',
     badge: 'rgba(245,158,11,0.1)',
-    badgeText: '#fcd34d',
+    badgeText: '#92400e',
     badgeBorder: 'rgba(245,158,11,0.3)',
     accent: '#d97706',
-    accentLight: '#fbbf24',
+    accentLight: '#d97706',
     icon: Leaf,
     label: 'Longevity & Cellular Health',
     heroLayout: 'longevity',
@@ -119,10 +119,10 @@ const categoryThemes: Record<string, CategoryTheme> = {
   'Anti-Aging & Skin': {
     glow: 'rgba(236,72,153,0.18)',
     badge: 'rgba(236,72,153,0.1)',
-    badgeText: '#f9a8d4',
+    badgeText: '#9d174d',
     badgeBorder: 'rgba(236,72,153,0.3)',
     accent: '#db2777',
-    accentLight: '#f472b6',
+    accentLight: '#db2777',
     icon: Sparkles,
     label: 'Anti-Aging & Skin Rejuvenation',
     heroLayout: 'default',
@@ -137,10 +137,10 @@ const categoryThemes: Record<string, CategoryTheme> = {
   'Body Composition': {
     glow: 'rgba(16,185,129,0.18)',
     badge: 'rgba(16,185,129,0.1)',
-    badgeText: '#6ee7b7',
+    badgeText: '#065f46',
     badgeBorder: 'rgba(16,185,129,0.3)',
     accent: '#059669',
-    accentLight: '#34d399',
+    accentLight: '#059669',
     icon: Zap,
     label: 'Metabolic & Weight Loss',
     heroLayout: 'centered-weight-loss',
@@ -155,10 +155,10 @@ const categoryThemes: Record<string, CategoryTheme> = {
   Supplies: {
     glow: 'rgba(100,116,139,0.18)',
     badge: 'rgba(100,116,139,0.1)',
-    badgeText: '#94a3b8',
+    badgeText: '#334155',
     badgeBorder: 'rgba(100,116,139,0.3)',
     accent: '#64748b',
-    accentLight: '#94a3b8',
+    accentLight: '#64748b',
     icon: FlaskConical,
     label: 'Protocol Supply',
     heroLayout: 'default',
@@ -175,10 +175,10 @@ const categoryThemes: Record<string, CategoryTheme> = {
 const defaultTheme: CategoryTheme = {
   glow: 'rgba(234,179,8,0.18)',
   badge: 'rgba(234,179,8,0.12)',
-  badgeText: '#c4b5fd',
+  badgeText: '#6d28d9',
   badgeBorder: 'rgba(234,179,8,0.3)',
   accent: '#7c3aed',
-  accentLight: '#a78bfa',
+  accentLight: '#7c3aed',
   icon: Pill,
   label: 'Peptide Protocol',
   heroLayout: 'default',
@@ -199,8 +199,7 @@ function renderDescription(text: string, accentColor: string) {
       return (
         <h3
           key={idx}
-          className="text-base font-bold mt-8 mb-3"
-          style={{ color: accentColor }}
+          className="text-lg font-bold mt-8 mb-3 text-gray-900"
         >
           {block.replace(/\*\*/g, '')}
         </h3>
@@ -210,10 +209,10 @@ function renderDescription(text: string, accentColor: string) {
     if (block.startsWith('- ')) {
       const items = block.split('\n').filter((l) => l.startsWith('- '))
       return (
-        <ul key={idx} className="mb-4 space-y-1.5 pl-1">
+        <ul key={idx} className="mb-4 space-y-2 pl-1">
           {items.map((item, i) => (
-            <li key={i} className="flex items-start gap-2 text-sm" style={{ color: '#a1a1b5' }}>
-              <span className="mt-1.5 w-1.5 h-1.5 rounded-full shrink-0" style={{ background: accentColor }} />
+            <li key={i} className="flex items-start gap-2 text-base text-gray-700">
+              <span className="mt-2 w-1.5 h-1.5 rounded-full shrink-0" style={{ background: accentColor }} />
               {item.replace(/^- /, '')}
             </li>
           ))}
@@ -223,10 +222,10 @@ function renderDescription(text: string, accentColor: string) {
     // Paragraph with inline bold
     const parts = block.split(/(\*\*[^*]+\*\*)/)
     return (
-      <p key={idx} className="text-sm leading-relaxed mb-4" style={{ color: '#a1a1b5' }}>
+      <p key={idx} className="text-base leading-relaxed mb-4 text-gray-700">
         {parts.map((part, i) =>
           part.startsWith('**') && part.endsWith('**') ? (
-            <strong key={i} style={{ color: '#e4e4f0', fontWeight: 600 }}>
+            <strong key={i} className="text-gray-900 font-semibold">
               {part.replace(/\*\*/g, '')}
             </strong>
           ) : (
@@ -296,14 +295,14 @@ export default async function ProductPage({
       <div className="min-h-screen" style={{ background: '#ffffff' }}>
 
         {/* Breadcrumb */}
-        <div className="border-b" style={{ borderColor: '#1e1e35' }}>
+        <div className="border-b" style={{ borderColor: '#e5e7eb' }}>
           <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3">
             <nav className="flex items-center gap-2 text-sm" style={{ color: '#71717a' }}>
               <Link href="/" className="hover:text-yellow-600 transition-colors">Home</Link>
               <span>/</span>
               <Link href="/products" className="hover:text-yellow-600 transition-colors">Products</Link>
               <span>/</span>
-              <span style={{ color: '#a1a1b5' }}>{product.name}</span>
+              <span style={{ color: '#374151' }}>{product.name}</span>
             </nav>
           </div>
         </div>
@@ -337,7 +336,7 @@ export default async function ProductPage({
                   </span>
                   {product.researchRating === 5 && (
                     <span className="inline-flex items-center gap-1 px-2 py-1 rounded-full text-[10px] font-bold"
-                      style={{ background: 'rgba(250,204,21,0.08)', color: '#fbbf24', border: '1px solid rgba(250,204,21,0.2)' }}>
+                      style={{ background: 'rgba(250,204,21,0.08)', color: '#d97706', border: '1px solid rgba(234,179,8,0.35)' }}>
                       ★ Clinical Trial Validated
                     </span>
                   )}
@@ -364,7 +363,7 @@ export default async function ProductPage({
                   ))}
                 </div>
 
-                <p className="text-sm leading-relaxed mb-6" style={{ color: '#a1a1b5' }}>{product.shortDescription}</p>
+                <p className="text-base leading-relaxed mb-6 text-gray-700">{product.shortDescription}</p>
 
                 <div className="flex flex-wrap justify-center gap-2 mb-6">
                   {product.tags.map((tag) => <span key={tag} className="tag-chip">{tag}</span>)}
@@ -390,7 +389,7 @@ export default async function ProductPage({
                     </span>
                     {product.researchRating === 5 && (
                       <span className="inline-flex items-center gap-1 px-2 py-1 rounded-full text-[10px] font-bold"
-                        style={{ background: 'rgba(250,204,21,0.08)', color: '#fbbf24', border: '1px solid rgba(250,204,21,0.2)' }}>
+                        style={{ background: 'rgba(250,204,21,0.08)', color: '#d97706', border: '1px solid rgba(234,179,8,0.35)' }}>
                         ★ 15-Year Human Data
                       </span>
                     )}
@@ -399,12 +398,12 @@ export default async function ProductPage({
                   <p className="text-lg font-medium mb-5" style={{ color: theme.accentLight }}>{product.tagline}</p>
                   <div className="flex items-center gap-2 mb-5">
                     {Array.from({ length: 5 }).map((_, i) => (
-                      <Star key={i} size={16} style={i < product.researchRating ? { color: theme.accentLight, fill: theme.accentLight } : { color: '#3f3f46' }} />
+                      <Star key={i} size={16} style={i < product.researchRating ? { color: theme.accentLight, fill: theme.accentLight } : { color: '#d1d5db' }} />
                     ))}
                     <span className="text-sm font-semibold" style={{ color: theme.accentLight }}>{product.researchRating}/5</span>
                     <span className="text-xs" style={{ color: '#71717a' }}>Evidence Rating</span>
                   </div>
-                  <p className="text-sm leading-relaxed mb-6 max-w-lg" style={{ color: '#a1a1b5' }}>{product.shortDescription}</p>
+                  <p className="text-base leading-relaxed mb-6 max-w-lg text-gray-700">{product.shortDescription}</p>
                   <div className="flex flex-wrap gap-2">{product.tags.map((tag) => <span key={tag} className="tag-chip">{tag}</span>)}</div>
                 </div>
 
@@ -445,7 +444,7 @@ export default async function ProductPage({
                     </span>
                     {product.researchRating === 5 && (
                       <span className="inline-flex items-center gap-1 px-2 py-1 rounded-full text-[10px] font-bold"
-                        style={{ background: 'rgba(250,204,21,0.08)', color: '#fbbf24', border: '1px solid rgba(250,204,21,0.2)' }}>
+                        style={{ background: 'rgba(250,204,21,0.08)', color: '#d97706', border: '1px solid rgba(234,179,8,0.35)' }}>
                         ★ Top Evidence Rating
                       </span>
                     )}
@@ -465,13 +464,13 @@ export default async function ProductPage({
 
                   <div className="flex items-center gap-2 mb-5">
                     {Array.from({ length: 5 }).map((_, i) => (
-                      <Star key={i} size={16} style={i < product.researchRating ? { color: theme.accentLight, fill: theme.accentLight } : { color: '#3f3f46' }} />
+                      <Star key={i} size={16} style={i < product.researchRating ? { color: theme.accentLight, fill: theme.accentLight } : { color: '#d1d5db' }} />
                     ))}
                     <span className="text-sm font-semibold" style={{ color: theme.accentLight }}>{product.researchRating}/5</span>
                     <span className="text-xs" style={{ color: '#71717a' }}>Evidence Rating</span>
                   </div>
 
-                  <p className="text-sm leading-relaxed mb-6 max-w-lg" style={{ color: '#a1a1b5' }}>{product.shortDescription}</p>
+                  <p className="text-base leading-relaxed mb-6 max-w-lg text-gray-700">{product.shortDescription}</p>
                   <div className="flex flex-wrap gap-2">{product.tags.map((tag) => <span key={tag} className="tag-chip">{tag}</span>)}</div>
                 </div>
 
@@ -528,10 +527,10 @@ export default async function ProductPage({
                     {i + 1}
                   </div>
                   <div>
-                    <p className="text-sm font-bold mb-0.5" style={{ color: theme.accentLight }}>
+                    <p className="text-base font-bold mb-0.5" style={{ color: theme.accentLight }}>
                       {h.title}
                     </p>
-                    <p className="text-xs leading-relaxed" style={{ color: '#71717a' }}>
+                    <p className="text-sm leading-relaxed text-gray-500">
                       {h.body}
                     </p>
                   </div>
@@ -563,7 +562,7 @@ export default async function ProductPage({
 
                 <div
                   className="rounded-2xl border p-6 sm:p-8"
-                  style={{ background: '#ffffff', borderColor: '#1e1e35' }}
+                  style={{ background: '#ffffff', borderColor: '#e5e7eb' }}
                 >
                   {renderDescription(product.fullDescription, theme.accentLight)}
                 </div>
@@ -571,7 +570,7 @@ export default async function ProductPage({
 
               {/* Benefits */}
               <section>
-                <h2 className="text-xl font-bold text-gray-900 mb-6">
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">
                   {theme.benefitsHeading}
                 </h2>
                 <div className="grid sm:grid-cols-2 gap-3">
@@ -579,7 +578,7 @@ export default async function ProductPage({
                     <div
                       key={i}
                       className="flex items-start gap-3 rounded-xl p-4 border transition-colors"
-                      style={{ background: '#ffffff', borderColor: '#1e1e35' }}
+                      style={{ background: '#ffffff', borderColor: '#e5e7eb' }}
                     >
                       <div
                         className="mt-0.5 shrink-0 w-5 h-5 rounded-full flex items-center justify-center"
@@ -587,7 +586,7 @@ export default async function ProductPage({
                       >
                         <Check size={11} style={{ color: theme.accentLight }} />
                       </div>
-                      <p className="text-sm leading-relaxed" style={{ color: '#a1a1b5' }}>{b}</p>
+                      <p className="text-base leading-relaxed text-gray-700">{b}</p>
                     </div>
                   ))}
                 </div>
@@ -595,7 +594,7 @@ export default async function ProductPage({
 
               {/* Protocol */}
               <section>
-                <h2 className="text-xl font-bold text-gray-900 mb-6">
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">
                   {theme.protocolHeading}
                 </h2>
                 <div
@@ -625,14 +624,14 @@ export default async function ProductPage({
                       }
                       if (line.startsWith('- ')) {
                         return (
-                          <p key={i} className="text-sm pl-4 mb-1" style={{ color: '#a1a1b5' }}>
+                          <p key={i} className="text-base pl-4 mb-1 text-gray-700">
                             <span style={{ color: theme.accentLight }}>·</span> {line.replace(/^- /, '')}
                           </p>
                         )
                       }
                       if (line.trim() === '') return <div key={i} className="h-2" />
                       return (
-                        <p key={i} className="text-sm mb-1 font-mono" style={{ color: '#a1a1b5' }}>
+                        <p key={i} className="text-base mb-1 font-mono text-gray-700">
                           {line.replace(/\*\*/g, '')}
                         </p>
                       )
@@ -659,7 +658,7 @@ export default async function ProductPage({
                       <div
                         key={i}
                         className="rounded-2xl border p-5 flex flex-col gap-3"
-                        style={{ background: '#ffffff', borderColor: '#1e1e35' }}
+                        style={{ background: '#ffffff', borderColor: '#e5e7eb' }}
                       >
                         <span
                           className="inline-block self-start px-2.5 py-1 rounded-full text-[11px] font-bold"
@@ -668,7 +667,7 @@ export default async function ProductPage({
                           {entry.period}
                         </span>
                         <p className="text-sm font-bold text-gray-900 leading-snug">{entry.title}</p>
-                        <p className="text-xs leading-relaxed" style={{ color: '#a1a1aa' }}>{entry.description}</p>
+                        <p className="text-sm leading-relaxed text-gray-600">{entry.description}</p>
                       </div>
                     ))}
                   </div>
@@ -716,7 +715,7 @@ export default async function ProductPage({
               {/* Category info box */}
               <div
                 className="rounded-2xl p-5 border"
-                style={{ background: '#ffffff', borderColor: '#1e1e35' }}
+                style={{ background: '#ffffff', borderColor: '#e5e7eb' }}
               >
                 <div className="flex items-center gap-2 mb-3">
                   <CategoryIcon size={14} style={{ color: theme.accentLight }} />
@@ -724,7 +723,7 @@ export default async function ProductPage({
                     {product.category}
                   </p>
                 </div>
-                <p className="text-xs leading-relaxed" style={{ color: '#71717a' }}>
+                <p className="text-sm leading-relaxed text-gray-500">
                   {product.tagline}
                 </p>
                 <div className="mt-3 flex flex-wrap gap-1.5">
@@ -737,7 +736,7 @@ export default async function ProductPage({
               {/* Purity & Safety */}
               <div
                 className="rounded-2xl p-5 border"
-                style={{ background: '#ffffff', borderColor: '#1e1e35' }}
+                style={{ background: '#ffffff', borderColor: '#e5e7eb' }}
               >
                 <div className="flex items-center gap-2 mb-4">
                   <ShieldCheck size={14} className="text-emerald-400" />
@@ -827,7 +826,7 @@ export default async function ProductPage({
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">
                   Begin your {product.name} protocol
                 </h2>
-                <p className="text-sm max-w-md mb-6" style={{ color: '#a1a1b5' }}>
+                <p className="text-base max-w-md mb-6 text-gray-700">
                   HPLC-tested and mass-spectrometry verified, with a Certificate of Analysis for every batch.
                 </p>
                 <a
