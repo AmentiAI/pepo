@@ -178,7 +178,7 @@ export default function SemaglutideVsTirzepatidePage() {
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <span className="badge mb-4 inline-block" style={{ background: 'rgba(16,185,129,0.1)', color: '#6ee7b7', border: '1px solid rgba(16,185,129,0.3)' }}>Mechanism of Action</span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">How Each Generation Works</h2>
+          <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">How Each Generation Works</h2>
 
           <div className="space-y-6 mb-10">
             <div className="card p-6" style={{ borderColor: 'rgba(16,185,129,0.3)' }}>
@@ -250,7 +250,7 @@ export default function SemaglutideVsTirzepatidePage() {
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="max-w-4xl mx-auto">
           <span className="badge mb-4 inline-block" style={{ background: 'rgba(16,185,129,0.1)', color: '#6ee7b7', border: '1px solid rgba(16,185,129,0.3)' }}>Clinical Data</span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">Head-to-Head Clinical Comparison</h2>
+          <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-8">Head-to-Head Clinical Comparison</h2>
 
           <div className="overflow-x-auto mb-10">
             <table className="w-full text-sm">
@@ -319,7 +319,7 @@ export default function SemaglutideVsTirzepatidePage() {
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <span className="badge mb-4 inline-block" style={{ background: 'rgba(16,185,129,0.1)', color: '#6ee7b7', border: '1px solid rgba(16,185,129,0.3)' }}>Decision Guide</span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">Which Should You Choose?</h2>
+          <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-8">Which Should You Choose?</h2>
 
           <div className="space-y-4 mb-10">
             <div className="card p-5" style={{ borderColor: 'rgba(16,185,129,0.3)' }}>
@@ -388,7 +388,7 @@ export default function SemaglutideVsTirzepatidePage() {
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <span className="badge badge-cyan mb-4 inline-block">Advanced Protocol</span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">Stacking GLP Peptides with GH Support</h2>
+          <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Stacking GLP Peptides with GH Support</h2>
           <p className="text-gray-500 leading-relaxed mb-6">
             One of the most effective advanced protocols combines a GLP-class peptide for fat loss with
             <Link href="/peptides/ipamorelin-cjc" className="text-yellow-600 hover:underline"> Ipamorelin + CJC-1295</Link> for

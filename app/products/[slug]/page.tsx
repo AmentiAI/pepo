@@ -350,7 +350,7 @@ export default async function ProductPage({
                   </div>
                 )}
 
-                <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-3 leading-tight">{product.name}</h1>
+                <h1 className="text-4xl sm:text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-3 leading-tight">{product.name}</h1>
                 <p className="text-xl font-semibold mb-6" style={{ color: theme.accentLight }}>{product.tagline}</p>
 
                 {/* Clinical stats bar */}
@@ -395,7 +395,7 @@ export default async function ProductPage({
                       </span>
                     )}
                   </div>
-                  <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-3 leading-tight">{product.name}</h2>
+                  <h2 className="text-4xl sm:text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-3 leading-tight">{product.name}</h2>
                   <p className="text-lg font-medium mb-5" style={{ color: theme.accentLight }}>{product.tagline}</p>
                   <div className="flex items-center gap-2 mb-5">
                     {Array.from({ length: 5 }).map((_, i) => (
@@ -450,7 +450,7 @@ export default async function ProductPage({
                       </span>
                     )}
                   </div>
-                  <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-3 leading-tight">{product.name}</h2>
+                  <h2 className="text-4xl sm:text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-3 leading-tight">{product.name}</h2>
                   <p className="text-lg font-medium mb-4" style={{ color: theme.accentLight }}>{product.tagline}</p>
 
                   {/* Category-specific stats */}
@@ -493,7 +493,7 @@ export default async function ProductPage({
                 <div className="rounded-2xl p-6 flex-shrink-0"
                   style={{ background: '#ffffff', border: `1px solid ${theme.badgeBorder}`, boxShadow: `0 8px 40px ${theme.glow}` }}>
                   <p className="text-xs mb-1" style={{ color: '#71717a' }}>Research Grade · HPLC Tested</p>
-                  <p className="text-4xl font-extrabold text-gray-900 mb-1">${product.price.toFixed(2)}</p>
+                  <p className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-gray-900 mb-1">${product.price.toFixed(2)}</p>
                   <p className="text-xs mb-4" style={{ color: '#52525b' }}>HPLC tested · COA included</p>
                   <div className="h-px mb-4" style={{ background: `linear-gradient(90deg, transparent, ${theme.accent}, transparent)` }} />
                   <a href={`/out/${product.slug}`} target="_blank" rel="noopener noreferrer"

@@ -170,7 +170,7 @@ export default function GHKCuPage() {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="badge mb-4 inline-block" style={{ background: 'rgba(236,72,153,0.1)', color: '#f9a8d4', border: '1px solid rgba(236,72,153,0.3)' }}>Mechanism of Action</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-5">The Most Powerful Anti-Aging Peptide?</h2>
+            <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-5">The Most Powerful Anti-Aging Peptide?</h2>
             <p className="text-gray-500 leading-relaxed mb-5">
               GHK-Cu (Glycyl-L-Histidyl-L-Lysine copper complex) is a tripeptide naturally present in
               human plasma, saliva, and urine. At age 20, plasma concentrations average approximately
@@ -244,7 +244,7 @@ export default function GHKCuPage() {
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <span className="badge mb-4 inline-block" style={{ background: 'rgba(236,72,153,0.1)', color: '#f9a8d4', border: '1px solid rgba(236,72,153,0.3)' }}>Skin Rejuvenation</span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">GHK-Cu for Skin: What to Expect</h2>
+          <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">GHK-Cu for Skin: What to Expect</h2>
           <p className="text-gray-500 leading-relaxed mb-8">
             GHK-Cu is the most evidence-backed peptide available for skin rejuvenation. In human and in vitro studies,
             topical and systemic GHK-Cu demonstrates effects that go far beyond what conventional skincare actives achieve.
@@ -290,7 +290,7 @@ export default function GHKCuPage() {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="badge mb-4 inline-block" style={{ background: 'rgba(245,158,11,0.1)', color: '#fcd34d', border: '1px solid rgba(245,158,11,0.3)' }}>Hair Restoration</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-5">GHK-Cu for Hair Loss</h2>
+            <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-5">GHK-Cu for Hair Loss</h2>
             <p className="text-gray-500 leading-relaxed mb-5">
               GHK-Cu is one of the most studied peptides for hair restoration, with peer-reviewed data
               supporting follicle stem cell activation, enlarged follicle size, and hair regrowth
@@ -322,7 +322,7 @@ export default function GHKCuPage() {
 
           <div>
             <span className="badge mb-4 inline-block" style={{ background: 'rgba(236,72,153,0.1)', color: '#f9a8d4', border: '1px solid rgba(236,72,153,0.3)' }}>Full Protocol</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-5">GHK-Cu Protocol Guide</h2>
+            <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-5">GHK-Cu Protocol Guide</h2>
 
             <div className="space-y-4">
               <div className="rounded-xl p-5" style={{ background: 'rgba(236,72,153,0.08)', border: '1px solid rgba(236,72,153,0.2)' }}>
@@ -365,7 +365,7 @@ export default function GHKCuPage() {
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="max-w-3xl mx-auto text-center mb-10">
           <span className="badge mb-4 inline-block" style={{ background: 'rgba(236,72,153,0.1)', color: '#f9a8d4', border: '1px solid rgba(236,72,153,0.3)' }}>Anti-Aging Protocol</span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">GHK-Cu Within the Longevity Stack</h2>
+          <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">GHK-Cu Within the Longevity Stack</h2>
           <p className="text-gray-500 leading-relaxed">
             GHK-Cu is the foundation of any comprehensive anti-aging protocol, but its effects compound when
             combined with complementary longevity peptides. Here is how it fits into the full protocol.

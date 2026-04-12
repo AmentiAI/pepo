@@ -141,7 +141,7 @@ export default function HairGrowthPage() {
             </div>
             <div className="grid lg:grid-cols-2 gap-12 items-start">
               <div>
-                <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   {hairStack.name}
                 </h2>
                 <p className="text-gray-500 leading-relaxed mb-6">

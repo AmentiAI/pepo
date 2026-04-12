@@ -246,11 +246,17 @@ input, textarea, select { font-size: max(16px, 1rem); }
 @media (max-width: 640px) {
   html { font-size: 16px; }
 
-  .btn-primary, .btn-secondary {
-    padding: 14px 22px;
-    font-size: 0.97rem;
+  /* Full-width buttons only when stacked in a flex-col context */
+  .flex-col .btn-primary,
+  .flex-col .btn-secondary {
     width: 100%;
     justify-content: center;
+  }
+
+  /* Compact card-level buttons stay auto width */
+  .btn-primary, .btn-secondary {
+    padding: 12px 20px;
+    font-size: 0.95rem;
   }
 
   .btn-affiliate {
@@ -275,16 +281,6 @@ img { max-width: 100%; height: auto; }
 h1, h2, h3, h4 {
   overflow-wrap: break-word;
   word-break: break-word;
-}
-
-/* Smooth horizontal scroll for tables and code blocks on mobile */
-.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-pre { overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; }
-
-/* Prevent flex buttons from shrinking below readable size on mobile */
-@media (max-width: 640px) {
-  .flex-col .btn-primary,
-  .flex-col .btn-secondary { max-width: 100%; }
 }
 
 /* Blog article prose styles */

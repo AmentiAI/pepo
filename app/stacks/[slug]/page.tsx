@@ -135,7 +135,7 @@ export default async function StackPage({
                 ))}
               </div>
 
-              <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-3 leading-tight">
+              <h1 className="text-4xl sm:text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-3 leading-tight">
                 {stack.name}
               </h1>
               <p className="text-lg mb-6" style={{ color: '#a1a1b5' }}>

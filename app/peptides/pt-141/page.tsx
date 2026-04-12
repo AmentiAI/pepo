@@ -154,7 +154,7 @@ export default function PT141Page() {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="badge badge-cyan mb-4 inline-block">Mechanism of Action</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-5">
+            <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-5">
               What Is PT-141?
             </h2>
             <p className="text-gray-500 leading-relaxed mb-5">

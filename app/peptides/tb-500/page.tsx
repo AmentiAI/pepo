@@ -170,7 +170,7 @@ export default function TB500Page() {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="badge badge-violet mb-4 inline-block">Mechanism of Action</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-5">What Is TB-500?</h2>
+            <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-5">What Is TB-500?</h2>
             <p className="text-gray-500 leading-relaxed mb-5">
               TB-500 is a synthetic 17-amino-acid peptide fragment derived from Thymosin Beta-4 — a naturally
               occurring 43-amino-acid protein present in virtually every human cell at baseline. It is one of
@@ -247,7 +247,7 @@ export default function TB500Page() {
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <span className="badge badge-cyan mb-4 inline-block">Research Evidence</span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">What the Research Shows</h2>
+          <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">What the Research Shows</h2>
           <p className="text-gray-500 leading-relaxed mb-8">
             TB-500 / Thymosin Beta-4 is one of the most researched healing peptides in the literature,
             with peer-reviewed studies spanning cardiac repair, musculoskeletal recovery, corneal healing,
@@ -300,7 +300,7 @@ export default function TB500Page() {
         <div className="grid lg:grid-cols-2 gap-12">
           <div>
             <span className="badge badge-violet mb-4 inline-block">Dosing Protocol</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-5">TB-500 Protocol Guide</h2>
+            <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-5">TB-500 Protocol Guide</h2>
             <p className="text-gray-500 leading-relaxed mb-6">
               TB-500 is almost universally run as a two-phase protocol: a loading phase to rapidly
               saturate systemic receptors, followed by a lower maintenance dose through the healing period.
@@ -344,7 +344,7 @@ export default function TB500Page() {
           {/* Injury guide */}
           <div>
             <span className="badge badge-cyan mb-4 inline-block">Injury-Specific Guide</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-5">When to Use TB-500</h2>
+            <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-5">When to Use TB-500</h2>
             <div className="space-y-3">
               {[
                 {
@@ -407,7 +407,7 @@ export default function TB500Page() {
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="max-w-3xl mx-auto text-center mb-10">
           <span className="badge badge-violet mb-4 inline-block">The Gold Standard Stack</span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">TB-500 + BPC-157: Why This Stack Dominates</h2>
+          <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">TB-500 + BPC-157: Why This Stack Dominates</h2>
           <p className="text-gray-500 leading-relaxed">
             TB-500 and <Link href="/products/bpc-157" className="text-yellow-600 hover:underline">BPC-157</Link> are
             the two most studied healing peptides, and they complement each other through entirely non-overlapping

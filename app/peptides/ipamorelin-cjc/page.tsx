@@ -171,7 +171,7 @@ export default function IpamorelinCJCPage() {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="badge badge-cyan mb-4 inline-block">Mechanism of Action</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-5">How the Combination Works</h2>
+            <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-5">How the Combination Works</h2>
             <p className="text-gray-500 leading-relaxed mb-5">
               Growth hormone regulation involves two complementary hypothalamic signals: GHRH (Growth
               Hormone Releasing Hormone), which amplifies GH output, and GHRP (Growth Hormone Releasing
@@ -214,7 +214,7 @@ export default function IpamorelinCJCPage() {
 
           <div>
             <span className="badge badge-violet mb-4 inline-block">Evidence-Backed Benefits</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-5">What the Research Documents</h2>
+            <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-5">What the Research Documents</h2>
             <div className="space-y-3">
               {[
                 {
@@ -268,7 +268,7 @@ export default function IpamorelinCJCPage() {
         <div className="grid lg:grid-cols-2 gap-12">
           <div>
             <span className="badge badge-cyan mb-4 inline-block">Dosing Protocol</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-5">Complete Protocol Guide</h2>
+            <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-5">Complete Protocol Guide</h2>
             <p className="text-gray-500 leading-relaxed mb-6">
               The Ipamorelin/CJC-1295 protocol is one of the most refined in peptide research. The timing
               and fasting requirements matter more for this peptide than most — follow them closely to
@@ -311,7 +311,7 @@ export default function IpamorelinCJCPage() {
           {/* Timeline */}
           <div>
             <span className="badge badge-violet mb-4 inline-block">Results Timeline</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-5">What to Expect Week by Week</h2>
+            <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-5">What to Expect Week by Week</h2>
             <div className="space-y-3">
               {[
                 { weeks: 'Week 1–2', title: 'Sleep & Recovery Improvement', body: 'Most users notice deeper sleep and more vivid dreams within the first week. Morning recovery feels noticeably improved. This is the earliest sign of increasing nocturnal GH output.', color: 'text-yellow-600', border: 'rgba(8,145,178,0.3)' },
@@ -339,7 +339,7 @@ export default function IpamorelinCJCPage() {
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <span className="badge badge-cyan mb-4 inline-block">Comparison</span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">Ipamorelin/CJC-1295 vs MK-677</h2>
+          <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Ipamorelin/CJC-1295 vs MK-677</h2>
           <p className="text-gray-500 leading-relaxed mb-8">
             The most common question for anyone starting a GH protocol: inject (Ipamorelin/CJC) or take
             a capsule (<Link href="/peptides/mk-677" className="text-yellow-600 hover:underline">MK-677</Link>)?

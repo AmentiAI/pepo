@@ -359,7 +359,7 @@ export default function GLP1ComparisonPage() {
                 GLP-1 Agonist
               </span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Semaglutide</h2>
+            <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Semaglutide</h2>
             <p className="text-gray-500 leading-relaxed mb-6">
               Semaglutide is the proven entry point into GLP-1 therapy. Targeting the GLP-1 receptor
               exclusively, it powerfully reduces appetite and delays gastric emptying. With 68 weeks of
@@ -435,7 +435,7 @@ export default function GLP1ComparisonPage() {
                   Dual GIP+GLP-1
                 </span>
               </div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Tirzepatide</h2>
+              <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Tirzepatide</h2>
               <p className="text-gray-500 leading-relaxed mb-6">
                 Tirzepatide's dual GIP+GLP-1 mechanism is what separates it from semaglutide. The GIP
                 receptor co-agonism acts directly on fat cells and increases insulin sensitivity
@@ -470,7 +470,7 @@ export default function GLP1ComparisonPage() {
                 Triple GLP-1+GIP+GCG
               </span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Retatrutide</h2>
+            <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Retatrutide</h2>
             <p className="text-gray-500 leading-relaxed mb-6">
               Retatrutide adds a third receptor — glucagon — to the GLP-1+GIP dual mechanism of
               tirzepatide. Glucagon receptor activation drives direct fat oxidation, thermogenesis, and

@@ -63,7 +63,7 @@ export default async function ProductsPage({
           <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-4">
             Complete Peptide Catalog
           </p>
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 mb-5">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-5">
             All <span className="gradient-text">Peptides</span>
           </h1>
           <p className="text-base sm:text-xl text-gray-500 max-w-2xl mx-auto mb-6 leading-relaxed">

@@ -204,7 +204,7 @@ export default function HomePage() {
   return (
     <>
       {/* ── HERO ──────────────────────────────────────────────── */}
-      <section className="relative overflow-hidden grid-bg" style={{ minHeight: '92vh', display: 'flex', alignItems: 'center' }}>
+      <section className="relative overflow-hidden grid-bg flex items-center min-h-[auto] sm:min-h-[90vh]">
         <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
           <div className="absolute rounded-full opacity-20 blur-3xl"
             style={{ top: '-10%', left: '10%', width: 600, height: 600, background: 'radial-gradient(circle, #eab308 0%, transparent 70%)' }} />
@@ -212,8 +212,8 @@ export default function HomePage() {
             style={{ bottom: '10%', right: '5%', width: 400, height: 400, background: 'radial-gradient(circle, #f59e0b 0%, transparent 70%)' }} />
         </div>
 
-        <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 py-20 sm:py-28">
-          <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+        <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-20 lg:py-28">
+          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
 
             {/* Left: Title + Description + CTAs */}
             <div className="flex-1 text-center lg:text-left">
@@ -358,9 +358,9 @@ export default function HomePage() {
 
       {/* ── GOALS ─────────────────────────────────────────────── */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-24">
-        <div className="text-center mb-14">
+        <div className="text-center mb-8 sm:mb-12">
           <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Goal-Based Protocols</p>
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">What Are You Optimizing For?</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">What Are You Optimizing For?</h2>
           <p className="text-gray-500 max-w-2xl mx-auto text-lg">
             Every peptide protocol is engineered around a specific physiological goal.
             Select your target and we&rsquo;ll match you to the right peptides and stacks.
@@ -410,7 +410,7 @@ export default function HomePage() {
         <div className="flex items-end justify-between mb-8 sm:mb-12">
           <div>
             <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Top-Rated Peptides</p>
-            <h2 className="text-4xl font-bold text-gray-900">Most Popular Peptides</h2>
+            <h2 className="text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900">Most Popular Peptides</h2>
             <p className="text-gray-500 mt-2 max-w-lg">
               The most-used peptides in the community — ranked by clinical evidence and user popularity.
             </p>
@@ -442,7 +442,7 @@ export default function HomePage() {
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-24">
         <div className="text-center mb-10">
           <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Free Tool</p>
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Reconstitution Calculator</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Reconstitution Calculator</h2>
           <p className="text-gray-500 max-w-xl mx-auto">
             Enter your vial size and BAC water volume — get exact draw amounts instantly. No math required.
           </p>
@@ -463,9 +463,9 @@ export default function HomePage() {
       {/* ── RESEARCH HIGHLIGHTS ───────────────────────────────── */}
       <section className="py-12 sm:py-24" style={{ background: 'var(--bg-card)' }}>
         <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-14">
+          <div className="text-center mb-8 sm:mb-12">
             <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Peer-Reviewed Evidence</p>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">What the Evidence Shows</h2>
+            <h2 className="text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">What the Evidence Shows</h2>
             <p className="text-gray-500 max-w-xl mx-auto text-lg">
               Every protocol on PeptidesClav is grounded in published preclinical and clinical research.
               No broscience. No guesswork. Only evidence.
@@ -497,15 +497,15 @@ export default function HomePage() {
 
       {/* ── HOW IT WORKS ──────────────────────────────────────── */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-24">
-        <div className="text-center mb-14">
+        <div className="text-center mb-8 sm:mb-12">
           <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Simple Process</p>
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">How PeptidesClav Works</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">How PeptidesClav Works</h2>
           <p className="text-gray-500 max-w-xl mx-auto text-lg">
             From goal to protocol in three steps. Whether you&rsquo;re a first-time user or a seasoned biohacker.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-10">
+        <div className="grid md:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
           {steps.map((step) => (
             <div key={step.number} className="text-center">
               <div
@@ -529,7 +529,7 @@ export default function HomePage() {
           <div className="flex items-end justify-between mb-12">
             <div>
               <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Multi-Peptide Combinations</p>
-              <h2 className="text-4xl font-bold text-gray-900">Expert Peptide Stacks</h2>
+              <h2 className="text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900">Expert Peptide Stacks</h2>
               <p className="text-gray-500 mt-2 max-w-lg">
                 Pre-built protocols that combine synergistic peptides for maximum effect. Each stack includes complete dosing schedules, expected results, and sourcing links.
               </p>
@@ -585,10 +585,10 @@ export default function HomePage() {
 
       {/* ── TRUSTED SUPPLIER SECTION ──────────────────────────────── */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-20">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
           <div>
             <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Our Sourcing Standard</p>
-            <h2 className="text-3xl font-bold text-gray-900 mb-5">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-5">
               Why We Only Recommend<br />
               <span className="gradient-text">One Trusted Supplier</span>
             </h2>
@@ -643,9 +643,9 @@ export default function HomePage() {
 
       {/* ── FAQ ───────────────────────────────────────────────── */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-24">
-        <div className="text-center mb-14">
+        <div className="text-center mb-8 sm:mb-12">
           <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Common Questions</p>
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Peptide FAQ</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Peptide FAQ</h2>
           <p className="text-gray-500 text-lg max-w-xl mx-auto">
             Everything you need to know before starting your first peptide protocol.
           </p>
@@ -671,7 +671,7 @@ export default function HomePage() {
       {/* ── BOTTOM CTA ────────────────────────────────────────── */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 pb-12 sm:pb-24">
         <div
-          className="rounded-2xl p-12 text-center relative overflow-hidden animate-pulse-glow"
+          className="rounded-2xl p-6 sm:p-10 lg:p-12 text-center relative overflow-hidden animate-pulse-glow"
           style={{
             background: 'linear-gradient(135deg, rgba(234,179,8,0.1) 0%, rgba(245,158,11,0.08) 100%)',
             border: '1px solid rgba(234,179,8,0.3)',
@@ -681,7 +681,7 @@ export default function HomePage() {
             style={{ backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(234,179,8,0.15) 0%, transparent 60%), radial-gradient(circle at 80% 50%, rgba(245,158,11,0.12) 0%, transparent 60%)' }} />
           <div className="relative">
             <p className="text-xs font-semibold uppercase tracking-widest text-yellow-600 mb-3">Get Started Today</p>
-            <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4">
               Ready to Start Your Peptide Protocol?
             </h2>
             <p className="text-gray-600 text-lg max-w-xl mx-auto mb-8">

@@ -166,7 +166,7 @@ export default function MK677Page() {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="badge badge-cyan mb-4 inline-block">Mechanism of Action</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-5">
+            <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-5">
               What Is MK-677?
             </h2>
             <p className="text-gray-500 leading-relaxed mb-5">
@@ -381,7 +381,7 @@ export default function MK677Page() {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
               <span className="badge mb-4 inline-block">Dosing Protocol</span>
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-5">
+              <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-5">
                 How to Use MK-677
               </h2>
               <p className="text-gray-500 leading-relaxed mb-6">

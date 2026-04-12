@@ -30,7 +30,8 @@
       "Bash(wait)",
       "WebFetch(domain:phiogen.is)",
       "Bash(echo \"Exit: $?\")",
-      "Bash(echo \"EXIT:$?\")"
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(python3:*)"
     ]
   }
 }

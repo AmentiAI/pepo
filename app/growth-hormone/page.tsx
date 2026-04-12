@@ -146,7 +146,7 @@ export default function GrowthHormonePage() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
         <div className="text-center mb-12">
           <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Why GH Peptides</p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">What GH Optimization Delivers</h2>
+          <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">What GH Optimization Delivers</h2>
           <p className="text-gray-500 max-w-xl mx-auto">
             Growth hormone peptides address three of the most sought-after physiological improvements simultaneously.
           </p>
@@ -173,7 +173,7 @@ export default function GrowthHormonePage() {
           <div className="flex items-end justify-between mb-10">
             <div>
               <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">GH Peptide Catalog</p>
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Growth Hormone Peptides</h2>
+              <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900">Growth Hormone Peptides</h2>
               <p className="text-gray-500 mt-2 max-w-lg">
                 Every GH peptide available — from the gold-standard Ipamorelin/CJC combo to advanced IGF-1 LR3 for direct anabolic signaling.
               </p>
@@ -444,7 +444,7 @@ export default function GrowthHormonePage() {
           }}
         >
           <p className="text-xs font-semibold uppercase tracking-widest text-yellow-600 mb-3">Start Your GH Protocol</p>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4">
             Ready to Optimize Your Growth Hormone?
           </h2>
           <p className="text-gray-700 text-lg max-w-xl mx-auto mb-8">

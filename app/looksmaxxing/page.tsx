@@ -363,7 +363,7 @@ export default function LooksmaxxingPage() {
       {/* ─── SECTION 2: Why Peptides (light bg) ─── */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Why Peptides Are the Highest-ROI Looksmaxxing Intervention
           </h2>
           <p className="text-gray-500 leading-relaxed max-w-3xl">
@@ -401,7 +401,7 @@ export default function LooksmaxxingPage() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="mb-10">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">
+            <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
               Looksmaxxing Peptide Tier List
             </h2>
             <p className="text-gray-500 max-w-2xl">
@@ -539,7 +539,7 @@ export default function LooksmaxxingPage() {
           <div className="flex items-center gap-2 mb-3">
             <span className="badge badge-cyan">Skinmaxxing</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Skinmaxxing Peptides
           </h2>
           <p className="text-gray-500 max-w-2xl leading-relaxed">
@@ -746,7 +746,7 @@ export default function LooksmaxxingPage() {
             <div className="flex items-center gap-2 mb-3">
               <span className="badge badge-cyan">Hairmaxxing</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
               Hairmaxxing Peptides
             </h2>
             <p className="text-gray-500 max-w-2xl leading-relaxed">
@@ -879,7 +879,7 @@ export default function LooksmaxxingPage() {
           <div className="flex items-center gap-2 mb-3">
             <span className="badge">Bodymaxxing</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Bodymaxxing Peptides
           </h2>
           <p className="text-gray-500 max-w-2xl leading-relaxed">
@@ -1045,7 +1045,7 @@ export default function LooksmaxxingPage() {
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="mb-10">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">
+            <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
               Sleepmaxxing and Gutmaxxing: The Hidden Appearance Variables
             </h2>
             <p className="text-gray-500 max-w-2xl">
@@ -1130,7 +1130,7 @@ export default function LooksmaxxingPage() {
       {/* ─── SECTION 8: Stacks (light bg) ─── */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="mb-10">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">
+          <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
             Looksmaxxing Peptide Stacks
           </h2>
           <p className="text-gray-500 max-w-2xl">
@@ -1297,7 +1297,7 @@ export default function LooksmaxxingPage() {
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="mb-10">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">
+            <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
               Softmaxx vs Hardmaxx: Peptide ROI Matrix
             </h2>
             <p className="text-gray-500 max-w-2xl">
@@ -1359,7 +1359,7 @@ export default function LooksmaxxingPage() {
         <div className="mb-10">
           <div className="flex items-center gap-3 mb-4">
             <HelpCircle size={24} className="text-yellow-600" />
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
+            <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900">
               Looksmaxxing Peptide FAQ
             </h2>
           </div>
@@ -1382,7 +1382,7 @@ export default function LooksmaxxingPage() {
       {/* ─── SECTION 11: Final CTA (dark bg) ─── */}
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Start Your Looksmaxxing Protocol
           </h2>
           <p className="text-gray-500 max-w-xl mx-auto mb-10">
