@@ -76,7 +76,7 @@ export default async function StackPage({
     product: products.find((p) => p.slug === sp.slug) ?? null,
   }))
 
-  const AFFILIATE_URL = '/go/shop'
+  const AFFILIATE_URL = '/out/shop'
 
   const breadcrumbLd = {
     '@context': 'https://schema.org',

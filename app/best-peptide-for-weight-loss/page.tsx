@@ -374,7 +374,7 @@ export default function BestPeptideWeightLossPage() {
             </p>
           </div>
           <a
-            href="/go/shop"
+            href="/out/shop"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary py-2.5 px-5 text-sm hidden sm:inline-flex"

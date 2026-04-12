@@ -249,7 +249,7 @@ export default function HomePage() {
                 <Link href="/stacks" className="btn-secondary text-base px-8 py-3.5">
                   View Stacks <ChevronRight size={18} />
                 </Link>
-                <a href="/go/shop" target="_blank" rel="noopener noreferrer" className="btn-secondary text-base px-6 py-3.5">
+                <a href="/out/shop" target="_blank" rel="noopener noreferrer" className="btn-secondary text-base px-6 py-3.5">
                   Shop Now <ExternalLink size={15} />
                 </a>
               </div>
@@ -323,7 +323,7 @@ export default function HomePage() {
                             Guide
                           </Link>
                           <a
-                            href={`/go/${p.slug}`}
+                            href={`/out/${p.slug}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-xs font-semibold text-yellow-600 hover:text-yellow-700 transition-colors px-2 py-1 rounded hover:bg-yellow-50"
@@ -613,7 +613,7 @@ export default function HomePage() {
             </ul>
             <div className="mt-8">
               <a
-                href="/go/shop"
+                href="/out/shop"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary text-sm px-6 py-3"

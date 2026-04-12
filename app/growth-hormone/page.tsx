@@ -117,7 +117,7 @@ export default function GrowthHormonePage() {
               <Link href="/stacks/gh-optimization" className="btn-primary">
                 GH Optimization Stack <ArrowRight size={16} />
               </Link>
-              <a href="/go/shop" target="_blank" rel="noopener noreferrer" className="btn-secondary">
+              <a href="/out/shop" target="_blank" rel="noopener noreferrer" className="btn-secondary">
                 Shop GH Peptides <ExternalLink size={15} />
               </a>
               <Link href="/products/ipamorelin-cjc" className="btn-secondary">
@@ -179,7 +179,7 @@ export default function GrowthHormonePage() {
               </p>
             </div>
             <a
-              href="/go/shop"
+              href="/out/shop"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary py-2.5 px-5 text-sm hidden sm:inline-flex"
@@ -193,7 +193,7 @@ export default function GrowthHormonePage() {
             ))}
           </div>
           <div className="mt-8 sm:hidden text-center">
-            <a href="/go/shop" target="_blank" rel="noopener noreferrer" className="btn-primary">
+            <a href="/out/shop" target="_blank" rel="noopener noreferrer" className="btn-primary">
               Shop GH Peptides <ExternalLink size={15} />
             </a>
           </div>
@@ -451,7 +451,7 @@ export default function GrowthHormonePage() {
             HPLC-verified CJC-1295, Ipamorelin, and IGF-1 LR3 — with COA per batch and science-backed protocols.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/go/shop" target="_blank" rel="noopener noreferrer" className="btn-primary text-base px-8 py-3.5">
+            <a href="/out/shop" target="_blank" rel="noopener noreferrer" className="btn-primary text-base px-8 py-3.5">
               Shop GH Peptides <ExternalLink size={16} />
             </a>
             <Link href="/stacks/gh-optimization" className="btn-secondary text-base px-8 py-3.5">

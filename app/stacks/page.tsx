@@ -224,7 +224,7 @@ export default function StacksPage() {
               purity, consistent dosing, trusted worldwide.
             </p>
             <a
-              href="/go/shop"
+              href="/out/shop"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary text-base px-8 py-3"
