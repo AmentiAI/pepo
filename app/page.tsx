@@ -283,13 +283,13 @@ export default function HomePage() {
                     {/* Product image — click goes to protocol page */}
                     <Link
                       href={`/products/${p.slug}`}
-                      className="block relative h-48 sm:h-52 overflow-hidden shrink-0 bg-gray-50"
+                      className="block relative h-56 sm:h-64 overflow-hidden shrink-0 bg-gray-50"
                     >
                       {p.image ? (
                         <img
                           src={p.image}
                           alt={p.name}
-                          className="absolute inset-0 w-full h-full object-contain p-3 group-hover:scale-105 transition-transform duration-300"
+                          className="absolute inset-0 w-full h-full object-contain p-5 group-hover:scale-105 transition-transform duration-300"
                           loading="lazy"
                         />
                       ) : (
