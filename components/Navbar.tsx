@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X, ChevronDown } from 'lucide-react';
+import SearchModal from './SearchModal';
 
 const navLinks = [
   { label: 'Products', href: '/products' },
@@ -103,21 +104,25 @@ export default function Navbar() {
           )}
         </div>
 
-        {/* CTA */}
+        {/* Search + CTA */}
         <div className="hidden md:flex items-center gap-3">
+          <SearchModal />
           <Link href="/products" className="btn-primary py-3 px-6 text-[0.95rem]">
             Shop Peptides
           </Link>
         </div>
 
-        {/* Mobile toggle */}
-        <button
-          onClick={() => setOpen(!open)}
-          className="md:hidden p-2 text-gray-600 hover:text-gray-900 transition-colors"
-          aria-label="Toggle menu"
-        >
-          {open ? <X size={26} /> : <Menu size={26} />}
-        </button>
+        {/* Mobile: search + toggle */}
+        <div className="flex md:hidden items-center gap-2">
+          <SearchModal />
+          <button
+            onClick={() => setOpen(!open)}
+            className="p-2 text-gray-600 hover:text-gray-900 transition-colors"
+            aria-label="Toggle menu"
+          >
+            {open ? <X size={26} /> : <Menu size={26} />}
+          </button>
+        </div>
       </nav>
 
       {/* Mobile menu */}
