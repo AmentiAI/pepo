@@ -282,7 +282,7 @@ export default function GrowthHormonePage() {
             or exogenous HGH alone. The axis has four key intervention points.
           </p>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
           {[
             {
               step: '01',
@@ -381,7 +381,7 @@ export default function GrowthHormonePage() {
             <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Timeline</p>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">What to Expect — Week by Week</h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               { weeks: 'Weeks 1–2', title: 'Sleep & Recovery', outcomes: ['Deeper, more restful sleep', 'Vivid dreams (common, benign)', 'Faster recovery between training sessions', 'Slight reduction in morning soreness'] },
               { weeks: 'Weeks 3–6', title: 'Metabolic Shift', outcomes: ['Subtle improvement in vascularity', 'Reduced water retention (paradoxically)', 'Increased training motivation', 'Early signs of body composition change'] },

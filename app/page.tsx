@@ -274,7 +274,7 @@ export default function HomePage() {
               <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-4 text-center lg:text-left">
                 Top Peptides — HPLC Verified
               </p>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {heroProducts.map((p) => (
                   <div
                     key={p.slug}
@@ -420,7 +420,7 @@ export default function HomePage() {
           </Link>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {featuredProducts.map((product) => (
             <ProductCard key={product.slug} product={product} showAffiliateButton={true} />
           ))}
@@ -472,7 +472,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {researchHighlights.map((h) => (
               <Link
                 key={h.peptide}
@@ -622,7 +622,7 @@ export default function HomePage() {
               </a>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               { label: 'HPLC Tested', value: '100%', desc: 'Every batch purity verified' },
               { label: 'Mass Spec', value: '✓', desc: 'Molecular identity confirmed' },

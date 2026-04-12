@@ -191,7 +191,7 @@ export default function TendonitisPage() {
           BPC-157 works across all tendon types through the same core mechanism. Injection site
           varies by location — all other protocol parameters remain constant.
         </p>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {tendonTypes.map((t) => (
             <div
               key={t.name}

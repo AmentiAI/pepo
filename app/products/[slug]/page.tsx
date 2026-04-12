@@ -354,7 +354,7 @@ export default async function ProductPage({
                 <p className="text-xl font-semibold mb-6" style={{ color: theme.accentLight }}>{product.tagline}</p>
 
                 {/* Clinical stats bar */}
-                <div className="grid grid-cols-3 gap-4 mb-6 p-4 rounded-2xl border"
+                <div className="grid grid-cols-3 gap-2 sm:gap-4 mb-6 p-3 sm:p-4 rounded-2xl border"
                   style={{ background: 'rgba(16,185,129,0.05)', borderColor: theme.badgeBorder }}>
                   {theme.heroStats.map((s) => (
                     <div key={s.label} className="text-center">
@@ -416,7 +416,7 @@ export default async function ProductPage({
                     </div>
                   )}
                   {/* Longevity key stats */}
-                  <div className="grid grid-cols-3 gap-3">
+                  <div className="grid grid-cols-3 gap-2 sm:gap-3">
                     {theme.heroStats.map((s) => (
                       <div key={s.label} className="rounded-xl p-3 text-center border"
                         style={{ background: theme.badge, borderColor: theme.badgeBorder }}>
@@ -654,7 +654,7 @@ export default async function ProductPage({
                   <p className="text-xs uppercase tracking-widest mb-6 ml-4" style={{ color: theme.accentLight }}>
                     What to expect · Phase by phase
                   </p>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     {weeklyTimelines[product.slug].map((entry, i) => (
                       <div
                         key={i}
@@ -785,7 +785,7 @@ export default async function ProductPage({
                   All Products →
                 </Link>
               </div>
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                 {relatedProducts.map((rp) => (
                   <ProductCard key={rp.slug} product={rp} showAffiliateButton />
                 ))}

@@ -374,7 +374,7 @@ export default function WomensPeptideGuidePage() {
             Some women report better GH peptide response in the follicular phase (days 1–14). No
             strong clinical research confirms this, but user reports are consistent enough to note.
           </p>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               { peptide: 'GH Peptides (Ipamorelin, CJC)', timing: 'Neutral', desc: 'Use consistently — no phase-specific advantage confirmed in research.', color: 'text-gray-500', border: 'border-zinc-600/30' },
               { peptide: 'GLP-1 Peptides', timing: 'Neutral', desc: 'Same weekly dose regardless of cycle phase — GLP-1 receptor sensitivity is not cycle-dependent.', color: 'text-gray-500', border: 'border-zinc-600/30' },
