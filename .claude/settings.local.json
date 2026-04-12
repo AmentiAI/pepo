@@ -31,7 +31,8 @@
       "WebFetch(domain:phiogen.is)",
       "Bash(echo \"Exit: $?\")",
       "Bash(echo \"EXIT:$?\")",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(read f:*)"
     ]
   }
 }

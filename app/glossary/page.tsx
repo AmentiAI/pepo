@@ -379,7 +379,7 @@ export default function GlossaryPage() {
   return (
     <div className="grid-bg min-h-screen">
       {/* ── Hero ── */}
-      <section className="pt-14 pb-12 sm:pt-28 sm:pb-20 px-4">
+      <section className="pt-6 pb-12 sm:pt-10 sm:pb-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <span className="badge badge-cyan mb-4 inline-block">Reference</span>
           <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight mb-5">

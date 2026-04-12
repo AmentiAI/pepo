@@ -133,7 +133,7 @@ export default function GuidePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
       {/* Hero */}
-      <section className="relative pt-14 pb-12 sm:pt-28 sm:pb-20 overflow-hidden grid-bg">
+      <section className="relative pt-6 pb-12 sm:pt-10 sm:pb-20 overflow-hidden grid-bg">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-20 right-1/3 w-96 h-96 bg-gray-900/8 rounded-full blur-3xl" />
           <div className="absolute bottom-0 left-1/4 w-72 h-72 bg-cyan-500/6 rounded-full blur-3xl" />
