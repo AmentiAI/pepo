@@ -213,7 +213,7 @@ export default function HomePage() {
         </div>
 
         <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-20 lg:py-28">
-          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
+          <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-16">
 
             {/* Left: Title + Description + CTAs */}
             <div className="flex-1 text-center lg:text-left">
