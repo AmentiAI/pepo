@@ -98,12 +98,12 @@ export default function IpamorelinCJCPage() {
       {/* Breadcrumb */}
       <div className="border-b" style={{ borderColor: '#1e1e35' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3">
-          <nav className="flex items-center gap-2 text-sm" style={{ color: '#71717a' }}>
+          <nav className="flex items-center gap-2 text-sm" style={{ color: '#1f2937' }}>
             <Link href="/" className="hover:text-yellow-600 transition-colors">Home</Link>
             <span>/</span>
             <Link href="/body-composition" className="hover:text-yellow-600 transition-colors">Body Composition</Link>
             <span>/</span>
-            <span style={{ color: '#a1a1b5' }}>Ipamorelin / CJC-1295</span>
+            <span style={{ color: '#1f2937' }}>Ipamorelin / CJC-1295</span>
           </nav>
         </div>
       </div>
@@ -119,17 +119,17 @@ export default function IpamorelinCJCPage() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-2 mb-5">
               <span className="badge">Peptides</span>
-              <ChevronRight size={14} className="text-gray-400" />
+              <ChevronRight size={14} className="text-gray-800" />
               <span className="badge badge-cyan">Growth Hormone</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
               <span className="gradient-text">Ipamorelin</span>
               <span className="text-gray-900"> + CJC-1295</span>
             </h1>
-            <p className="text-gray-500 text-sm font-medium mb-4">
+            <p className="text-gray-700 text-sm font-medium mb-4">
               CJC-1295 (GHRH analog) + Ipamorelin (selective GHRP) — the gold-standard injectable GH stack
             </p>
-            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-700 leading-relaxed mb-8 max-w-2xl">
               The Ipamorelin + CJC-1295 combination is the most widely used injectable growth hormone protocol.
               CJC-1295 amplifies the pituitary's GH output while Ipamorelin provides the precise pulse trigger —
               producing 3–5× baseline GH elevation that mirrors the natural pulsatile pattern of a healthy
@@ -156,7 +156,7 @@ export default function IpamorelinCJCPage() {
                 <div className="mt-0.5">{stat.icon}</div>
                 <div>
                   <p className="text-xl font-bold text-gray-900">{stat.value}</p>
-                  <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
+                  <p className="text-xs text-gray-700 mt-0.5">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -172,7 +172,7 @@ export default function IpamorelinCJCPage() {
           <div>
             <span className="badge badge-cyan mb-4 inline-block">Mechanism of Action</span>
             <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-5">How the Combination Works</h2>
-            <p className="text-gray-500 leading-relaxed mb-5">
+            <p className="text-gray-700 leading-relaxed mb-5">
               Growth hormone regulation involves two complementary hypothalamic signals: GHRH (Growth
               Hormone Releasing Hormone), which amplifies GH output, and GHRP (Growth Hormone Releasing
               Peptide), which provides the pulse trigger. Natural GH secretion requires both signals to
@@ -182,7 +182,7 @@ export default function IpamorelinCJCPage() {
             <div className="space-y-4 mb-6">
               <div className="card p-5 border-l-2 border-cyan-500/40">
                 <h3 className="text-cyan-300 font-bold mb-2">CJC-1295 (GHRH Analog)</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">
+                <p className="text-gray-700 text-sm leading-relaxed">
                   CJC-1295 is a synthetic GHRH analog with a DAC (Drug Affinity Complex) modification that
                   extends its half-life from minutes to 6–8 days. It binds GHRH receptors in the pituitary,
                   priming the somatotroph cells for enhanced GH release and amplifying the amplitude of each
@@ -191,7 +191,7 @@ export default function IpamorelinCJCPage() {
               </div>
               <div className="card p-5 border-l-2 border-yellow-500/40">
                 <h3 className="text-yellow-500 font-bold mb-2">Ipamorelin (Selective GHRP)</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">
+                <p className="text-gray-700 text-sm leading-relaxed">
                   Ipamorelin is a pentapeptide GHRP that binds the ghrelin receptor (GHSR-1a) in the
                   pituitary, triggering a discrete GH pulse approximately 20–30 minutes post-injection.
                   Critically, Ipamorelin is highly selective — it does not significantly raise cortisol
@@ -201,7 +201,7 @@ export default function IpamorelinCJCPage() {
               </div>
               <div className="card p-5 border-l-2 border-cyan-500/40">
                 <h3 className="text-cyan-300 font-bold mb-2">Combined Effect</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">
+                <p className="text-gray-700 text-sm leading-relaxed">
                   When injected together, CJC-1295 has pre-sensitized the pituitary's GHRH receptors,
                   making each somatotroph cell ready for maximum output. Ipamorelin then fires the
                   trigger signal. The result is a GH pulse 3–5× greater than either compound alone —
@@ -252,7 +252,7 @@ export default function IpamorelinCJCPage() {
                   <div className="mt-0.5 shrink-0">{item.icon}</div>
                   <div>
                     <p className="text-gray-900 font-semibold text-sm mb-1">{item.title}</p>
-                    <p className="text-gray-500 text-xs leading-relaxed">{item.body}</p>
+                    <p className="text-gray-700 text-xs leading-relaxed">{item.body}</p>
                   </div>
                 </div>
               ))}
@@ -269,7 +269,7 @@ export default function IpamorelinCJCPage() {
           <div>
             <span className="badge badge-cyan mb-4 inline-block">Dosing Protocol</span>
             <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-5">Complete Protocol Guide</h2>
-            <p className="text-gray-500 leading-relaxed mb-6">
+            <p className="text-gray-700 leading-relaxed mb-6">
               The Ipamorelin/CJC-1295 protocol is one of the most refined in peptide research. The timing
               and fasting requirements matter more for this peptide than most — follow them closely to
               achieve the full 3–5× GH pulse the combination is capable of.
@@ -278,7 +278,7 @@ export default function IpamorelinCJCPage() {
             <div className="space-y-4 mb-8">
               <div className="rounded-xl p-5" style={{ background: 'rgba(8,145,178,0.08)', border: '1px solid rgba(8,145,178,0.2)' }}>
                 <h3 className="text-cyan-300 font-bold mb-3">Standard Protocol (Once Daily)</h3>
-                <ul className="space-y-2 text-sm text-gray-500">
+                <ul className="space-y-2 text-sm text-gray-700">
                   <li className="flex gap-2"><span className="text-yellow-600 font-bold">Dose:</span> 200mcg Ipamorelin + 200mcg CJC-1295</li>
                   <li className="flex gap-2"><span className="text-yellow-600 font-bold">Timing:</span> 30–60 min before sleep (fasted — 2h+ since last meal)</li>
                   <li className="flex gap-2"><span className="text-yellow-600 font-bold">Method:</span> Both peptides in same syringe, subcutaneous</li>
@@ -289,7 +289,7 @@ export default function IpamorelinCJCPage() {
 
               <div className="rounded-xl p-5" style={{ background: 'rgba(234,179,8,0.08)', border: '1px solid rgba(234,179,8,0.2)' }}>
                 <h3 className="text-yellow-500 font-bold mb-3">Advanced Protocol (Twice Daily)</h3>
-                <ul className="space-y-2 text-sm text-gray-500">
+                <ul className="space-y-2 text-sm text-gray-700">
                   <li className="flex gap-2"><span className="text-yellow-600 font-bold">Injection 1:</span> Pre-workout (fasted) — 200mcg each</li>
                   <li className="flex gap-2"><span className="text-yellow-600 font-bold">Injection 2:</span> Before sleep (fasted) — 200mcg each</li>
                   <li className="flex gap-2"><span className="text-yellow-600 font-bold">For:</span> Advanced body recomposition or injury recovery</li>
@@ -299,7 +299,7 @@ export default function IpamorelinCJCPage() {
 
               <div className="rounded-xl p-5" style={{ background: 'rgba(8,145,178,0.08)', border: '1px solid rgba(8,145,178,0.2)' }}>
                 <h3 className="text-cyan-300 font-bold mb-3">Critical Rules</h3>
-                <ul className="space-y-2 text-sm text-gray-500">
+                <ul className="space-y-2 text-sm text-gray-700">
                   <li className="flex gap-2"><span className="text-yellow-600 font-bold">Always fasted:</span> No food for 2+ hours before injection, no carbs for 30 min after</li>
                   <li className="flex gap-2"><span className="text-yellow-600 font-bold">No mixing with food:</span> Even a small snack reduces GH response 30–50%</li>
                   <li className="flex gap-2"><span className="text-yellow-600 font-bold">Reconstitute properly:</span> Use <Link href="/products/bacteriostatic-water" className="text-yellow-600 hover:underline">bacteriostatic water</Link>, refrigerate after</li>
@@ -325,7 +325,7 @@ export default function IpamorelinCJCPage() {
                     <span className={`text-xs font-bold ${item.color} bg-zinc-800 px-2 py-0.5 rounded`}>{item.weeks}</span>
                     <p className="text-gray-900 font-semibold text-sm">{item.title}</p>
                   </div>
-                  <p className="text-gray-500 text-xs leading-relaxed">{item.body}</p>
+                  <p className="text-gray-700 text-xs leading-relaxed">{item.body}</p>
                 </div>
               ))}
             </div>
@@ -340,7 +340,7 @@ export default function IpamorelinCJCPage() {
         <div className="max-w-3xl mx-auto">
           <span className="badge badge-cyan mb-4 inline-block">Comparison</span>
           <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Ipamorelin/CJC-1295 vs MK-677</h2>
-          <p className="text-gray-500 leading-relaxed mb-8">
+          <p className="text-gray-700 leading-relaxed mb-8">
             The most common question for anyone starting a GH protocol: inject (Ipamorelin/CJC) or take
             a capsule (<Link href="/peptides/mk-677" className="text-yellow-600 hover:underline">MK-677</Link>)?
             Both are legitimate routes to GH elevation, but they have meaningfully different tradeoff profiles.
@@ -350,7 +350,7 @@ export default function IpamorelinCJCPage() {
             <table className="w-full text-sm">
               <thead>
                 <tr style={{ borderBottom: '1px solid #2a2a3e' }}>
-                  <th className="text-left py-3 px-4 text-gray-500 font-medium">Property</th>
+                  <th className="text-left py-3 px-4 text-gray-700 font-medium">Property</th>
                   <th className="text-left py-3 px-4 text-yellow-600 font-semibold">Ipamorelin/CJC</th>
                   <th className="text-left py-3 px-4 text-yellow-600 font-semibold">MK-677</th>
                 </tr>
@@ -368,7 +368,7 @@ export default function IpamorelinCJCPage() {
                   ['Best for', 'Body recomposition, injury recovery', 'Convenience, sleep optimization, first protocol'],
                 ].map(([label, ipa, mk]) => (
                   <tr key={label} style={{ borderBottom: '1px solid #1e1e35' }}>
-                    <td className="py-3 px-4 text-gray-500 font-medium">{label}</td>
+                    <td className="py-3 px-4 text-gray-700 font-medium">{label}</td>
                     <td className="py-3 px-4 text-gray-700">{ipa}</td>
                     <td className="py-3 px-4 text-gray-700">{mk}</td>
                   </tr>
@@ -380,7 +380,7 @@ export default function IpamorelinCJCPage() {
           <div className="grid sm:grid-cols-2 gap-4">
             <div className="card p-5" style={{ borderColor: 'rgba(8,145,178,0.3)' }}>
               <p className="text-yellow-600 font-semibold mb-2">Choose Ipamorelin/CJC if:</p>
-              <ul className="space-y-1 text-sm text-gray-500">
+              <ul className="space-y-1 text-sm text-gray-700">
                 <li className="flex gap-2"><CheckCircle2 size={14} className="text-yellow-600 shrink-0 mt-0.5" /> You want maximum body recomposition results</li>
                 <li className="flex gap-2"><CheckCircle2 size={14} className="text-yellow-600 shrink-0 mt-0.5" /> You are comfortable with subcutaneous injections</li>
                 <li className="flex gap-2"><CheckCircle2 size={14} className="text-yellow-600 shrink-0 mt-0.5" /> You have insulin sensitivity concerns</li>
@@ -389,7 +389,7 @@ export default function IpamorelinCJCPage() {
             </div>
             <div className="card p-5" style={{ borderColor: 'rgba(234,179,8,0.3)' }}>
               <p className="text-yellow-600 font-semibold mb-2">Choose MK-677 if:</p>
-              <ul className="space-y-1 text-sm text-gray-500">
+              <ul className="space-y-1 text-sm text-gray-700">
                 <li className="flex gap-2"><CheckCircle2 size={14} className="text-yellow-600 shrink-0 mt-0.5" /> You want zero-injection convenience</li>
                 <li className="flex gap-2"><CheckCircle2 size={14} className="text-yellow-600 shrink-0 mt-0.5" /> Sleep and deep sleep quality is the primary goal</li>
                 <li className="flex gap-2"><CheckCircle2 size={14} className="text-yellow-600 shrink-0 mt-0.5" /> You prefer a lower-maintenance protocol</li>
@@ -405,7 +405,7 @@ export default function IpamorelinCJCPage() {
       {/* Products */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Shop GH Optimization Peptides</h2>
-        <p className="text-gray-500 text-sm mb-8">HPLC-verified purity, COA available per batch.</p>
+        <p className="text-gray-700 text-sm mb-8">HPLC-verified purity, COA available per batch.</p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[ipaCjcProduct, igf1Product].filter(Boolean).map((p) => (
             <ProductCard key={p!.slug} product={p!} showAffiliateButton />
@@ -414,7 +414,7 @@ export default function IpamorelinCJCPage() {
             <Link href="/stacks/gh-optimization" className="card p-6 hover:border-cyan-500/30 transition-colors flex flex-col">
               <div className="badge badge-cyan mb-3 self-start">GH Stack</div>
               <h3 className="text-gray-900 font-bold text-lg mb-2">{ghStack.name}</h3>
-              <p className="text-gray-500 text-sm leading-relaxed flex-1">{ghStack.shortDescription}</p>
+              <p className="text-gray-700 text-sm leading-relaxed flex-1">{ghStack.shortDescription}</p>
               <div className="flex items-center gap-1 mt-4 text-yellow-600 text-sm font-medium">
                 View stack <ArrowRight size={14} />
               </div>
@@ -436,7 +436,7 @@ export default function IpamorelinCJCPage() {
                 <HelpCircle size={18} className="text-yellow-600 shrink-0 mt-0.5" />
                 <div>
                   <h3 className="text-gray-900 font-semibold mb-2">{faq.q}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">{faq.a}</p>
+                  <p className="text-gray-700 text-sm leading-relaxed">{faq.a}</p>
                 </div>
               </div>
             </div>

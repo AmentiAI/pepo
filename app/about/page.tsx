@@ -117,7 +117,7 @@ export default function AboutPage() {
               About{' '}
               <span className="gradient-text">PeptidesClav</span>
             </h1>
-            <p className="text-lg sm:text-xl text-gray-400 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-800 leading-relaxed max-w-2xl mx-auto">
               We&apos;re an independent research team with one goal: translate the peer-reviewed peptide science
               into clear, accurate, actionable protocols — without the hype, gatekeeping, or bro-science
               that dominates most corners of this space.
@@ -167,7 +167,7 @@ export default function AboutPage() {
             <h2 className="text-2xl sm:text-3xl font-bold mb-3">
               Our Research <span className="gradient-text">Methodology</span>
             </h2>
-            <p className="text-gray-400 mb-10 max-w-2xl">
+            <p className="text-gray-800 mb-10 max-w-2xl">
               Every guide published on PeptidesClav follows the same evidence-evaluation framework.
               Here&apos;s exactly how we verify what we write.
             </p>
@@ -181,7 +181,7 @@ export default function AboutPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">{heading}</h3>
-                    <p className="text-sm text-gray-400 leading-relaxed">{body}</p>
+                    <p className="text-sm text-gray-800 leading-relaxed">{body}</p>
                   </div>
                 </div>
               ))}
@@ -207,7 +207,7 @@ export default function AboutPage() {
               Why We Recommend{' '}
               <span className="gradient-text">Our Supplier</span>
             </h2>
-            <p className="text-gray-400 mb-8 max-w-2xl">
+            <p className="text-gray-800 mb-8 max-w-2xl">
               We evaluated multiple vendors against a checklist of non-negotiable quality criteria before
               linking to any product. Our recommended supplier cleared every bar — here&apos;s the specific evidence.
             </p>
@@ -221,7 +221,7 @@ export default function AboutPage() {
                 ))}
               </ul>
               <div className="mt-6 pt-5 border-t border-[var(--border)]">
-                <p className="text-sm text-gray-400">
+                <p className="text-sm text-gray-800">
                   Purity testing methodology matters because peptide synthesis regularly produces truncated
                   sequences, oxidised residues, and racemised amino acids that are biologically inert or
                   actively harmful. HPLC + mass spec together confirm both purity percentage and molecular

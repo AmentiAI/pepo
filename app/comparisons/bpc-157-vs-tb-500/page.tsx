@@ -85,7 +85,7 @@ const injuryGuide = [
     support: 'Oral preferred — no TB-500 needed',
     recommendation: 'BPC-157 only',
     accentPrimary: 'text-yellow-600',
-    accentSupport: 'text-gray-500',
+    accentSupport: 'text-gray-700',
   },
   {
     injury: 'Muscle tear',
@@ -101,7 +101,7 @@ const injuryGuide = [
     support: 'Strongest nerve-specific evidence',
     recommendation: 'BPC-157 primary',
     accentPrimary: 'text-yellow-600',
-    accentSupport: 'text-gray-500',
+    accentSupport: 'text-gray-700',
   },
   {
     injury: 'General inflammation / whole-body recovery',
@@ -109,7 +109,7 @@ const injuryGuide = [
     support: 'Systemic action addresses whole-body burden',
     recommendation: 'TB-500 primary',
     accentPrimary: 'text-yellow-600',
-    accentSupport: 'text-gray-500',
+    accentSupport: 'text-gray-700',
   },
   {
     injury: 'Post-surgery',
@@ -211,9 +211,9 @@ export default function BPC157vsTB500Page() {
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 mb-5 flex-wrap">
             <Link href="/" className="badge hover:text-gray-900 transition-colors">Home</Link>
-            <ChevronRight size={14} className="text-gray-400" />
+            <ChevronRight size={14} className="text-gray-800" />
             <span className="badge badge-cyan">Comparisons</span>
-            <ChevronRight size={14} className="text-gray-400" />
+            <ChevronRight size={14} className="text-gray-800" />
             <span className="badge">BPC-157 vs TB-500</span>
           </div>
 
@@ -223,7 +223,7 @@ export default function BPC157vsTB500Page() {
               <span className="text-gray-900"> vs </span>
               <span className="gradient-text">TB-500</span>
             </h1>
-            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-700 leading-relaxed mb-8 max-w-2xl">
               Both are gold-standard healing peptides — but they work through entirely different
               mechanisms. This guide breaks down exactly which to use for your injury type, how they
               compare head-to-head, and why stacking them produces synergistic results.
@@ -251,7 +251,7 @@ export default function BPC157vsTB500Page() {
                 <div className="mt-0.5">{stat.icon}</div>
                 <div>
                   <p className="text-xl font-bold text-gray-900">{stat.value}</p>
-                  <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
+                  <p className="text-xs text-gray-700 mt-0.5">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -267,7 +267,7 @@ export default function BPC157vsTB500Page() {
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           Which Should You Use?
         </h2>
-        <p className="text-gray-500 mb-10 max-w-2xl">
+        <p className="text-gray-700 mb-10 max-w-2xl">
           The answer depends on your injury type and goals. Here is the short version before we
           go deep into the mechanisms.
         </p>
@@ -281,9 +281,9 @@ export default function BPC157vsTB500Page() {
               <div className={`w-10 h-10 rounded-xl ${card.bg} flex items-center justify-center mb-4`}>
                 <CheckCircle2 size={20} className={card.accent} />
               </div>
-              <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">{card.label}</p>
+              <p className="text-xs text-gray-700 uppercase tracking-wider mb-1">{card.label}</p>
               <p className={`text-2xl font-extrabold mb-3 ${card.accent}`}>{card.winner}</p>
-              <p className="text-sm text-gray-500 leading-relaxed">{card.reason}</p>
+              <p className="text-sm text-gray-700 leading-relaxed">{card.reason}</p>
             </div>
           ))}
         </div>
@@ -308,12 +308,12 @@ export default function BPC157vsTB500Page() {
                 </div>
                 <div>
                   <p className="font-bold text-gray-900">BPC-157</p>
-                  <p className="text-xs text-gray-500">Body Protection Compound</p>
+                  <p className="text-xs text-gray-700">Body Protection Compound</p>
                 </div>
               </div>
               <ul className="space-y-3">
                 {bpc157Mechanism.map((point) => (
-                  <li key={point} className="flex items-start gap-3 text-sm text-gray-500">
+                  <li key={point} className="flex items-start gap-3 text-sm text-gray-700">
                     <CheckCircle2 size={14} className="text-yellow-600 mt-0.5 shrink-0" />
                     {point}
                   </li>
@@ -331,12 +331,12 @@ export default function BPC157vsTB500Page() {
                 </div>
                 <div>
                   <p className="font-bold text-gray-900">TB-500</p>
-                  <p className="text-xs text-gray-500">Thymosin Beta-4 Fragment</p>
+                  <p className="text-xs text-gray-700">Thymosin Beta-4 Fragment</p>
                 </div>
               </div>
               <ul className="space-y-3">
                 {tb500Mechanism.map((point) => (
-                  <li key={point} className="flex items-start gap-3 text-sm text-gray-500">
+                  <li key={point} className="flex items-start gap-3 text-sm text-gray-700">
                     <CheckCircle2 size={14} className="text-yellow-600 mt-0.5 shrink-0" />
                     {point}
                   </li>
@@ -360,7 +360,7 @@ export default function BPC157vsTB500Page() {
             <table className="w-full text-sm">
               <thead>
                 <tr style={{ backgroundColor: 'var(--bg-card)', borderBottom: '1px solid var(--border)' }}>
-                  <th className="text-left p-4 text-gray-500 font-semibold w-1/3">Category</th>
+                  <th className="text-left p-4 text-gray-700 font-semibold w-1/3">Category</th>
                   <th className="text-left p-4 text-yellow-600 font-semibold">BPC-157</th>
                   <th className="text-left p-4 text-yellow-600 font-semibold">TB-500</th>
                 </tr>
@@ -374,7 +374,7 @@ export default function BPC157vsTB500Page() {
                       borderBottom: '1px solid var(--border)',
                     }}
                   >
-                    <td className="p-4 text-gray-500 font-medium">{row.label}</td>
+                    <td className="p-4 text-gray-700 font-medium">{row.label}</td>
                     <td className="p-4 text-gray-700">{row.bpc}</td>
                     <td className="p-4 text-gray-700">{row.tb}</td>
                   </tr>
@@ -392,7 +392,7 @@ export default function BPC157vsTB500Page() {
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
             Which to Use for Your Injury
           </h2>
-          <p className="text-gray-500 mb-10 max-w-2xl">
+          <p className="text-gray-700 mb-10 max-w-2xl">
             Match your injury type to the right protocol. When in doubt, stacking both is always a
             valid choice — there are no known negative interactions.
           </p>
@@ -426,7 +426,7 @@ export default function BPC157vsTB500Page() {
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           BPC-157 + TB-500 Stack Protocol
         </h2>
-        <p className="text-gray-500 mb-10 max-w-2xl">
+        <p className="text-gray-700 mb-10 max-w-2xl">
           Running both simultaneously produces synergistic results: BPC-157 handles the local tissue
           repair while TB-500 systemically reduces the inflammatory environment that slows healing.
         </p>
@@ -437,23 +437,23 @@ export default function BPC157vsTB500Page() {
           >
             <div className="flex items-center gap-2 mb-4">
               <span className="badge">BPC-157</span>
-              <span className="text-xs text-gray-500">Local healing</span>
+              <span className="text-xs text-gray-700">Local healing</span>
             </div>
             <div className="space-y-3">
               <div className="flex justify-between text-sm">
-                <span className="text-gray-500">Dose</span>
+                <span className="text-gray-700">Dose</span>
                 <span className="text-gray-900 font-semibold">250–500 mcg</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-gray-500">Frequency</span>
+                <span className="text-gray-700">Frequency</span>
                 <span className="text-gray-900 font-semibold">Twice daily</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-gray-500">Injection</span>
+                <span className="text-gray-700">Injection</span>
                 <span className="text-gray-900 font-semibold">Near injury site (subcutaneous)</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-gray-500">Cycle</span>
+                <span className="text-gray-700">Cycle</span>
                 <span className="text-gray-900 font-semibold">8 weeks on, 4 weeks off</span>
               </div>
             </div>
@@ -464,23 +464,23 @@ export default function BPC157vsTB500Page() {
           >
             <div className="flex items-center gap-2 mb-4">
               <span className="badge badge-cyan">TB-500</span>
-              <span className="text-xs text-gray-500">Systemic support</span>
+              <span className="text-xs text-gray-700">Systemic support</span>
             </div>
             <div className="space-y-3">
               <div className="flex justify-between text-sm">
-                <span className="text-gray-500">Dose</span>
+                <span className="text-gray-700">Dose</span>
                 <span className="text-gray-900 font-semibold">5 mg per injection</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-gray-500">Frequency</span>
+                <span className="text-gray-700">Frequency</span>
                 <span className="text-gray-900 font-semibold">Twice per week</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-gray-500">Injection</span>
+                <span className="text-gray-700">Injection</span>
                 <span className="text-gray-900 font-semibold">Abdomen or thigh (systemic)</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-gray-500">Cycle</span>
+                <span className="text-gray-700">Cycle</span>
                 <span className="text-gray-900 font-semibold">6–8 week loading phases</span>
               </div>
             </div>
@@ -494,7 +494,7 @@ export default function BPC157vsTB500Page() {
             <GitMerge size={20} className="text-yellow-600 shrink-0 mt-0.5" />
             <div>
               <p className="font-bold text-gray-900 mb-2">Why They Are Synergistic</p>
-              <p className="text-sm text-gray-500 leading-relaxed">
+              <p className="text-sm text-gray-700 leading-relaxed">
                 BPC-157 operates locally — it concentrates at the injection site, upregulating GH
                 receptors and promoting angiogenesis precisely where the tissue is damaged. TB-500
                 circulates systemically, suppressing the whole-body inflammatory signaling cascade
@@ -526,10 +526,10 @@ export default function BPC157vsTB500Page() {
                   <AlertTriangle size={18} className={item.color} />
                   <p className={`font-bold ${item.color}`}>{item.peptide}</p>
                 </div>
-                <p className="text-xs text-gray-500 mb-4">{item.profile}</p>
+                <p className="text-xs text-gray-700 mb-4">{item.profile}</p>
                 <ul className="space-y-2">
                   {item.effects.map((effect) => (
-                    <li key={effect} className="flex items-start gap-2 text-sm text-gray-500">
+                    <li key={effect} className="flex items-start gap-2 text-sm text-gray-700">
                       <span className={`mt-1.5 w-1.5 h-1.5 rounded-full shrink-0 ${item.bg}`} />
                       {effect}
                     </li>
@@ -542,9 +542,9 @@ export default function BPC157vsTB500Page() {
             className="mt-6 card p-4 border border-zinc-600/30 flex items-start gap-3"
             style={{ background: 'var(--bg)' }}
           >
-            <Shield size={16} className="text-gray-500 shrink-0 mt-0.5" />
-            <p className="text-xs text-gray-500 leading-relaxed">
-              <span className="text-gray-500 font-semibold">Research disclaimer: </span>
+            <Shield size={16} className="text-gray-700 shrink-0 mt-0.5" />
+            <p className="text-xs text-gray-700 leading-relaxed">
+              <span className="text-gray-700 font-semibold">Research disclaimer: </span>
               Both peptides are for research purposes. Neither has completed Phase III clinical trials
               or received regulatory approval for human use. Consult a qualified healthcare provider
               before use.
@@ -569,7 +569,7 @@ export default function BPC157vsTB500Page() {
               style={{ borderColor: 'var(--border)', background: 'var(--bg-card)' }}
             >
               <h3 className="font-bold text-gray-900 mb-3">{faq.q}</h3>
-              <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
+              <p className="text-sm text-gray-700 leading-relaxed">{faq.a}</p>
             </div>
           ))}
         </div>
@@ -581,7 +581,7 @@ export default function BPC157vsTB500Page() {
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
             Ready to Start the Stack?
           </h2>
-          <p className="text-gray-500 max-w-xl mx-auto mb-8">
+          <p className="text-gray-700 max-w-xl mx-auto mb-8">
             The Ultimate Healing Stack includes both BPC-157 and TB-500 with complete protocol
             guidance — the most powerful healing combination available.
           </p>

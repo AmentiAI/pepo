@@ -33,7 +33,7 @@ export default function ContactPage() {
               <span className="text-gray-900">Contact </span>
               <span className="gradient-text">PeptidesClav</span>
             </h1>
-            <p className="text-lg text-gray-500 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed">
               Protocol questions, business inquiries, or partnership opportunities —
               here's how to reach the right place for your needs.
             </p>
@@ -59,7 +59,7 @@ export default function ContactPage() {
             <h2 className="text-xl font-bold text-gray-900 mb-3">
               Protocol &amp; Product Questions
             </h2>
-            <p className="text-gray-500 text-sm leading-relaxed mb-6">
+            <p className="text-gray-700 text-sm leading-relaxed mb-6">
               For questions about peptide protocols, dosing, stacking, and product selection —
               use the <strong className="text-gray-900">AI chat assistant</strong> in the bottom
               right corner of any page. It's trained on our complete protocol library and can
@@ -76,7 +76,7 @@ export default function ContactPage() {
                 of every page on PeptidesClav.
               </p>
             </div>
-            <p className="text-xs text-gray-400">
+            <p className="text-xs text-gray-800">
               Questions the AI can answer: dosing, protocols, stacking, timing, storage,
               reconstitution, side effects, and product comparisons.
             </p>
@@ -91,7 +91,7 @@ export default function ContactPage() {
             <h2 className="text-xl font-bold text-gray-900 mb-3">
               Business &amp; Partnership Inquiries
             </h2>
-            <p className="text-gray-500 text-sm leading-relaxed mb-6">
+            <p className="text-gray-700 text-sm leading-relaxed mb-6">
               For business inquiries, partnership collaborations, content collaborations, or any
               other commercial communications, email us directly at:
             </p>
@@ -107,7 +107,7 @@ export default function ContactPage() {
               <Mail size={16} />
               info@peptidesclav.com
             </a>
-            <p className="text-xs text-gray-400 mt-5">
+            <p className="text-xs text-gray-800 mt-5">
               Please allow 2–3 business days for a response to business inquiries. We review
               all partnership proposals — please include relevant details in your initial email.
             </p>
@@ -116,7 +116,7 @@ export default function ContactPage() {
 
         {/* Helpful links */}
         <div className="mt-10">
-          <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-4">
+          <p className="text-xs font-semibold text-gray-700 uppercase tracking-wider mb-4">
             Self-Service Resources
           </p>
           <div className="grid sm:grid-cols-3 gap-3">
@@ -149,9 +149,9 @@ export default function ContactPage() {
                 {link.icon}
                 <div>
                   <p className="text-sm font-semibold text-gray-900">{link.label}</p>
-                  <p className="text-xs text-gray-400">{link.desc}</p>
+                  <p className="text-xs text-gray-800">{link.desc}</p>
                 </div>
-                <ArrowRight size={14} className="text-gray-400 ml-auto" />
+                <ArrowRight size={14} className="text-gray-800 ml-auto" />
               </Link>
             ))}
           </div>

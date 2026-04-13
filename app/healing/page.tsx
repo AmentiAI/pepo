@@ -78,7 +78,7 @@ export default function HealingPage() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-2 mb-5">
               <span className="badge">Category</span>
-              <ChevronRight size={14} className="text-gray-400" />
+              <ChevronRight size={14} className="text-gray-800" />
               <span className="badge badge-cyan">Healing & Recovery</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
@@ -86,7 +86,7 @@ export default function HealingPage() {
               <span className="gradient-text">Recovery</span>
               <span className="text-gray-900"> Peptides</span>
             </h1>
-            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-700 leading-relaxed mb-8 max-w-2xl">
               BPC-157 and TB-500 are the most validated peptides for musculoskeletal injury recovery.
               Together they cover every mechanism of the healing cascade — from local tissue repair and
               angiogenesis to systemic inflammation reduction and flexibility restoration.
@@ -114,7 +114,7 @@ export default function HealingPage() {
                 <div className="mt-0.5">{stat.icon}</div>
                 <div>
                   <p className="text-xl font-bold text-gray-900">{stat.value}</p>
-                  <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
+                  <p className="text-xs text-gray-700 mt-0.5">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -130,7 +130,7 @@ export default function HealingPage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
             Healing &amp; Recovery Products
           </h2>
-          <p className="text-gray-500 max-w-2xl">
+          <p className="text-gray-700 max-w-2xl">
             Every peptide in this category has been selected for its evidence base in tissue repair,
             inflammation reduction, and recovery acceleration.
           </p>
@@ -155,7 +155,7 @@ export default function HealingPage() {
                 <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   {healingStack.name}
                 </h2>
-                <p className="text-gray-500 leading-relaxed mb-6">
+                <p className="text-gray-700 leading-relaxed mb-6">
                   {healingStack.shortDescription}
                 </p>
                 <div className="flex flex-wrap gap-3 mb-8">
@@ -169,7 +169,7 @@ export default function HealingPage() {
                       className="px-4 py-2.5 rounded-xl border"
                       style={{ background: 'var(--bg)', borderColor: 'var(--border)' }}
                     >
-                      <p className="text-[11px] text-gray-500 uppercase tracking-wider">{item.label}</p>
+                      <p className="text-[11px] text-gray-700 uppercase tracking-wider">{item.label}</p>
                       <p className="text-sm font-semibold text-gray-900 mt-0.5">{item.value}</p>
                     </div>
                   ))}
@@ -181,7 +181,7 @@ export default function HealingPage() {
               </div>
 
               <div className="space-y-4">
-                <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider">
+                <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider">
                   Expected Results
                 </h3>
                 {healingStack.expectedResults.map((result, i) => (
@@ -204,7 +204,7 @@ export default function HealingPage() {
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">How These Peptides Accelerate Healing</h2>
-          <p className="text-gray-500 max-w-2xl mx-auto">
+          <p className="text-gray-700 max-w-2xl mx-auto">
             BPC-157 and TB-500 target distinct but complementary aspects of the healing cascade,
             making their combination greater than the sum of its parts.
           </p>
@@ -252,12 +252,12 @@ export default function HealingPage() {
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900">{item.name}</h3>
-                  <p className="text-xs text-gray-500">{item.subtitle}</p>
+                  <p className="text-xs text-gray-700">{item.subtitle}</p>
                 </div>
               </div>
               <ul className="space-y-3">
                 {item.points.map((point, i) => (
-                  <li key={i} className="flex items-start gap-2.5 text-sm text-gray-500">
+                  <li key={i} className="flex items-start gap-2.5 text-sm text-gray-700">
                     <CheckCircle2
                       size={14}
                       className={`mt-0.5 shrink-0 ${
@@ -279,7 +279,7 @@ export default function HealingPage() {
           <div className="text-center mb-12">
             <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Applications</p>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">What Conditions Do Healing Peptides Treat?</h2>
-            <p className="text-gray-500 max-w-2xl mx-auto">
+            <p className="text-gray-700 max-w-2xl mx-auto">
               BPC-157 and TB-500 have the broadest documented therapeutic scope of any peptide class.
               Below are the most commonly targeted conditions — each with specific evidence in the peer-reviewed literature.
             </p>
@@ -321,7 +321,7 @@ export default function HealingPage() {
                 <h3 className={`font-bold text-sm mb-3 ${group.color}`}>{group.category}</h3>
                 <ul className="space-y-1.5">
                   {group.items.map((item) => (
-                    <li key={item} className="flex items-start gap-2 text-xs text-gray-500">
+                    <li key={item} className="flex items-start gap-2 text-xs text-gray-700">
                       <CheckCircle2 size={11} className="text-yellow-600 mt-0.5 shrink-0" />
                       {item}
                     </li>
@@ -338,7 +338,7 @@ export default function HealingPage() {
         <div className="text-center mb-12">
           <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">What to Expect</p>
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Week-by-Week Healing Timeline</h2>
-          <p className="text-gray-500 max-w-xl mx-auto">
+          <p className="text-gray-700 max-w-xl mx-auto">
             Healing with BPC-157 and TB-500 follows a predictable progression. Here is what most users experience on the Ultimate Healing Stack at standard doses.
           </p>
         </div>
@@ -378,7 +378,7 @@ export default function HealingPage() {
               </div>
               <div>
                 <h3 className="font-bold text-gray-900 mb-2">{phase.title}</h3>
-                <p className="text-sm text-gray-500 leading-relaxed">{phase.body}</p>
+                <p className="text-sm text-gray-700 leading-relaxed">{phase.body}</p>
               </div>
             </div>
           ))}
@@ -397,17 +397,17 @@ export default function HealingPage() {
             <div>
               <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Science</p>
               <h2 className="text-3xl font-bold text-gray-900 mb-5">Why Peptides Outperform Conventional Injury Treatment</h2>
-              <p className="text-gray-500 leading-relaxed mb-4">
+              <p className="text-gray-700 leading-relaxed mb-4">
                 Standard-of-care injury treatment — rest, ice, NSAIDs, physiotherapy — addresses symptoms rather than mechanisms.
                 NSAIDs reduce pain and inflammation, but prostaglandins inhibited by NSAIDs are also required for tissue repair.
                 Multiple studies have shown NSAID use during acute injury phases delays healing and reduces the final structural quality of repaired tissue.
               </p>
-              <p className="text-gray-500 leading-relaxed mb-4">
+              <p className="text-gray-700 leading-relaxed mb-4">
                 BPC-157 and TB-500 address the actual bottlenecks of tissue repair: inadequate vascularity, incomplete collagen
                 remodeling, excessive fibrosis, and chronic inflammatory signaling. They do not merely block pain signals —
                 they accelerate the biological processes that produce genuine structural recovery.
               </p>
-              <p className="text-gray-500 leading-relaxed mb-6">
+              <p className="text-gray-700 leading-relaxed mb-6">
                 Perhaps most importantly, these peptides are derived from proteins that naturally exist in the human body.
                 BPC-157 is a fragment of a gastric protein produced endogenously. TB-500 is a synthetic version of Thymosin Beta-4,
                 a 43-amino-acid peptide present in every human cell. Their side effect profiles reflect this natural origin —
@@ -444,7 +444,7 @@ export default function HealingPage() {
               ].map((item) => (
                 <div key={item.title} className="card p-5">
                   <h4 className="font-bold text-gray-900 text-sm mb-2">{item.title}</h4>
-                  <p className="text-xs text-gray-500 leading-relaxed">{item.body}</p>
+                  <p className="text-xs text-gray-700 leading-relaxed">{item.body}</p>
                 </div>
               ))}
             </div>
@@ -467,7 +467,7 @@ export default function HealingPage() {
                 style={{ background: 'var(--bg)', borderColor: 'var(--border)' }}
               >
                 <p className="font-semibold text-gray-900 mb-2">{faq.q}</p>
-                <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
+                <p className="text-sm text-gray-700 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -477,7 +477,7 @@ export default function HealingPage() {
       {/* CTA */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 text-center">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">Ready to Start Your Recovery?</h2>
-        <p className="text-gray-500 mb-8 max-w-xl mx-auto">
+        <p className="text-gray-700 mb-8 max-w-xl mx-auto">
           Browse the complete healing protocol, or explore other peptide categories for your goals.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">

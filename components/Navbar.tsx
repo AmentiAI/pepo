@@ -54,7 +54,7 @@ export default function Navbar() {
           <span className="font-black text-2xl sm:text-3xl tracking-tight leading-none">
             <span className="text-gray-900">Peptides</span>
             <span className="gradient-text">Clav</span>
-            <span className="text-[10px] font-semibold text-gray-400 ml-1.5 align-middle">.com</span>
+            <span className="text-[10px] font-semibold text-gray-800 ml-1.5 align-middle">.com</span>
           </span>
         </Link>
 
@@ -132,7 +132,7 @@ export default function Navbar() {
             {navLinks.map((link) =>
               link.children ? (
                 <div key={link.label}>
-                  <p className="px-3 py-1.5 text-xs font-semibold text-gray-400 uppercase tracking-wider mt-2">{link.label}</p>
+                  <p className="px-3 py-1.5 text-xs font-semibold text-gray-800 uppercase tracking-wider mt-2">{link.label}</p>
                   {link.children.map((child) => (
                     <Link
                       key={child.href}

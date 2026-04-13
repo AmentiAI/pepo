@@ -385,7 +385,7 @@ export default function GlossaryPage() {
           <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight mb-5">
             Peptide <span className="gradient-text">Glossary</span>
           </h1>
-          <p className="text-lg sm:text-xl text-gray-400 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-800 leading-relaxed max-w-2xl mx-auto">
             Plain-language definitions for 40+ peptide science terms — from secretagogues and GHRH to
             telomerase, GLP-1 agonists, and beyond. Each definition cites the mechanism, not just the marketing.
           </p>
@@ -418,7 +418,7 @@ export default function GlossaryPage() {
               <div className="flex-1 h-px bg-[var(--border)]" />
               <a
                 href="#"
-                className="text-xs text-gray-500 hover:text-yellow-600 transition-colors shrink-0"
+                className="text-xs text-gray-700 hover:text-yellow-600 transition-colors shrink-0"
               >
                 ↑ top
               </a>
@@ -442,7 +442,7 @@ export default function GlossaryPage() {
                       </Link>
                     )}
                   </div>
-                  <p className="text-sm text-gray-400 leading-relaxed">{definition}</p>
+                  <p className="text-sm text-gray-800 leading-relaxed">{definition}</p>
                 </div>
               ))}
             </div>

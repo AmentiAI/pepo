@@ -126,7 +126,7 @@ export default function HeroBannerCarousel() {
               <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-3 leading-tight">
                 {slide.headline}
               </h2>
-              <p className="text-base sm:text-lg text-gray-500 max-w-xl mx-auto mb-6 leading-relaxed">{slide.sub}</p>
+              <p className="text-base sm:text-lg text-gray-700 max-w-xl mx-auto mb-6 leading-relaxed">{slide.sub}</p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Link href={slide.cta.href} className="btn-primary text-base px-7 py-3.5">
                   {slide.cta.label} <ArrowRight size={17} />
@@ -165,7 +165,7 @@ export default function HeroBannerCarousel() {
               <p className="text-base sm:text-xl font-semibold mb-3 text-yellow-600">
                 {slide.headline}
               </p>
-              <p className="text-gray-500 text-sm sm:text-base leading-relaxed mb-6 max-w-lg line-clamp-3 sm:line-clamp-none">{slide.sub}</p>
+              <p className="text-gray-700 text-sm sm:text-base leading-relaxed mb-6 max-w-lg line-clamp-3 sm:line-clamp-none">{slide.sub}</p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center sm:justify-start">
                 <Link href={slide.cta.href} className="btn-primary text-base px-7 py-3.5">
                   {slide.cta.label} <ArrowRight size={17} />
@@ -185,14 +185,14 @@ export default function HeroBannerCarousel() {
       {/* Prev / Next arrows */}
       <button
         onClick={prev}
-        className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center transition-colors bg-white border border-gray-200 text-gray-500 hover:border-yellow-400 hover:text-yellow-600 shadow-sm"
+        className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center transition-colors bg-white border border-gray-200 text-gray-700 hover:border-yellow-400 hover:text-yellow-600 shadow-sm"
         aria-label="Previous slide"
       >
         <ChevronLeft size={20} />
       </button>
       <button
         onClick={next}
-        className="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center transition-colors bg-white border border-gray-200 text-gray-500 hover:border-yellow-400 hover:text-yellow-600 shadow-sm"
+        className="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center transition-colors bg-white border border-gray-200 text-gray-700 hover:border-yellow-400 hover:text-yellow-600 shadow-sm"
         aria-label="Next slide"
       >
         <ChevronRight size={20} />

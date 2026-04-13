@@ -96,11 +96,11 @@ export default function FAQPage() {
               <br />
               <span className="gradient-text">Asked Questions</span>
             </h1>
-            <p className="text-lg text-gray-500 leading-relaxed mb-4">
+            <p className="text-lg text-gray-700 leading-relaxed mb-4">
               {totalFAQCount} questions covering safety, dosing, injection, storage, stacking,
               sourcing, and everything else you need to use peptides confidently.
             </p>
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-gray-800">
               {"Can't find your answer? "}
               <Link
                 href="/contact"

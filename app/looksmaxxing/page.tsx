@@ -319,7 +319,7 @@ export default function LooksmaxxingPage() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-2 mb-5">
               <span className="badge">Looksmaxxing</span>
-              <ChevronRight size={14} className="text-gray-400" />
+              <ChevronRight size={14} className="text-gray-800" />
               <span className="badge badge-cyan">Peptide Guide</span>
             </div>
 
@@ -328,7 +328,7 @@ export default function LooksmaxxingPage() {
               <span className="text-gray-900"> for Looksmaxxing</span>
             </h1>
 
-            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-700 leading-relaxed mb-8 max-w-2xl">
               The complete tier-ranked guide to using peptides for skinmaxxing, hairmaxxing,
               bodymaxxing, and sleepmaxxing — with exact protocols, doses, and clinical evidence.
             </p>
@@ -350,7 +350,7 @@ export default function LooksmaxxingPage() {
                 <div className="mt-0.5">{stat.icon}</div>
                 <div>
                   <p className="text-xl font-bold text-gray-900">{stat.value}</p>
-                  <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
+                  <p className="text-xs text-gray-700 mt-0.5">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -366,7 +366,7 @@ export default function LooksmaxxingPage() {
           <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Why Peptides Are the Highest-ROI Looksmaxxing Intervention
           </h2>
-          <p className="text-gray-500 leading-relaxed max-w-3xl">
+          <p className="text-gray-700 leading-relaxed max-w-3xl">
             Most looksmaxxing interventions work at the surface — topicals affect the stratum
             corneum, mewing affects bone positioning over years, diet affects fat distribution
             gradually. Peptides operate at the cellular and genetic level: upregulating collagen
@@ -386,7 +386,7 @@ export default function LooksmaxxingPage() {
               </div>
               <div>
                 <h3 className="text-base font-bold text-gray-900 mb-2">{card.title}</h3>
-                <p className="text-sm text-gray-500 leading-relaxed">{card.description}</p>
+                <p className="text-sm text-gray-700 leading-relaxed">{card.description}</p>
               </div>
             </div>
           ))}
@@ -404,7 +404,7 @@ export default function LooksmaxxingPage() {
             <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
               Looksmaxxing Peptide Tier List
             </h2>
-            <p className="text-gray-500 max-w-2xl">
+            <p className="text-gray-700 max-w-2xl">
               Ranked by visual ROI — how much appearance improvement per unit of effort and cost
               invested.
             </p>
@@ -414,12 +414,12 @@ export default function LooksmaxxingPage() {
             {/* S Tier */}
             <div
               className="rounded-2xl border-l-4 border-yellow-500 p-1"
-              style={{ borderColor: 'rgb(139 92 246)', backgroundColor: 'rgba(139,92,246,0.06)' }}
+              style={{ borderColor: 'rgb(234 179 8)', backgroundColor: 'rgba(234,179,8,0.06)' }}
             >
               <div className="flex flex-col sm:flex-row sm:items-center gap-4 p-5">
                 <div className="shrink-0 w-28">
                   <p className="text-2xl font-black text-yellow-600">S</p>
-                  <p className="text-xs text-gray-500 font-semibold uppercase tracking-wider mt-0.5">
+                  <p className="text-xs text-gray-700 font-semibold uppercase tracking-wider mt-0.5">
                     Game Changing
                   </p>
                 </div>
@@ -431,7 +431,7 @@ export default function LooksmaxxingPage() {
                       className="card px-4 py-3 flex flex-col gap-1 hover:border-yellow-500/50 transition-colors min-w-[160px]"
                     >
                       <span className="text-sm font-bold text-gray-900">{p.name}</span>
-                      <span className="text-xs text-gray-500">{p.subtitle}</span>
+                      <span className="text-xs text-gray-700">{p.subtitle}</span>
                     </Link>
                   ))}
                 </div>
@@ -446,7 +446,7 @@ export default function LooksmaxxingPage() {
               <div className="flex flex-col sm:flex-row sm:items-center gap-4 p-5">
                 <div className="shrink-0 w-28">
                   <p className="text-2xl font-black text-yellow-600">A</p>
-                  <p className="text-xs text-gray-500 font-semibold uppercase tracking-wider mt-0.5">
+                  <p className="text-xs text-gray-700 font-semibold uppercase tracking-wider mt-0.5">
                     High Impact
                   </p>
                 </div>
@@ -458,7 +458,7 @@ export default function LooksmaxxingPage() {
                       className="card px-4 py-3 flex flex-col gap-1 hover:border-cyan-500/50 transition-colors min-w-[160px]"
                     >
                       <span className="text-sm font-bold text-gray-900">{p.name}</span>
-                      <span className="text-xs text-gray-500">{p.subtitle}</span>
+                      <span className="text-xs text-gray-700">{p.subtitle}</span>
                     </Link>
                   ))}
                 </div>
@@ -472,8 +472,8 @@ export default function LooksmaxxingPage() {
             >
               <div className="flex flex-col sm:flex-row sm:items-center gap-4 p-5">
                 <div className="shrink-0 w-28">
-                  <p className="text-2xl font-black text-gray-500">B</p>
-                  <p className="text-xs text-gray-500 font-semibold uppercase tracking-wider mt-0.5">
+                  <p className="text-2xl font-black text-gray-700">B</p>
+                  <p className="text-xs text-gray-700 font-semibold uppercase tracking-wider mt-0.5">
                     Strong Support
                   </p>
                 </div>
@@ -485,7 +485,7 @@ export default function LooksmaxxingPage() {
                       className="card px-4 py-3 flex flex-col gap-1 hover:border-zinc-500/50 transition-colors min-w-[140px]"
                     >
                       <span className="text-sm font-bold text-gray-900">{p.name}</span>
-                      <span className="text-xs text-gray-500">{p.subtitle}</span>
+                      <span className="text-xs text-gray-700">{p.subtitle}</span>
                     </Link>
                   ))}
                 </div>
@@ -498,7 +498,7 @@ export default function LooksmaxxingPage() {
             <div className="card p-5">
               <div className="flex items-center gap-2 mb-3">
                 <span className="badge badge-cyan">Softmaxx</span>
-                <span className="text-xs text-gray-500">Low effort — topical or oral</span>
+                <span className="text-xs text-gray-700">Low effort — topical or oral</span>
               </div>
               <div className="flex flex-wrap gap-2">
                 {['GHK-Cu topical', 'SNAP-8 topical', 'NAD+'].map((item) => (
@@ -515,14 +515,14 @@ export default function LooksmaxxingPage() {
             <div className="card p-5">
               <div className="flex items-center gap-2 mb-3">
                 <span className="badge">Hardmaxx</span>
-                <span className="text-xs text-gray-500">Injectable — cycle required</span>
+                <span className="text-xs text-gray-700">Injectable — cycle required</span>
               </div>
               <div className="flex flex-wrap gap-2">
                 {['Ipamorelin/CJC', 'IGF-1 LR3', 'Epithalon', 'BPC-157'].map((item) => (
                   <span
                     key={item}
                     className="text-xs px-3 py-1.5 rounded-full font-medium text-yellow-500"
-                    style={{ background: 'rgba(139,92,246,0.1)', border: '1px solid rgba(139,92,246,0.2)' }}
+                    style={{ background: 'rgba(234,179,8,0.10)', border: '1px solid rgba(234,179,8,0.20)' }}
                   >
                     {item}
                   </span>
@@ -542,7 +542,7 @@ export default function LooksmaxxingPage() {
           <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Skinmaxxing Peptides
           </h2>
-          <p className="text-gray-500 max-w-2xl leading-relaxed">
+          <p className="text-gray-700 max-w-2xl leading-relaxed">
             Skin quality — texture, collagen density, clarity, and luminosity — is the
             highest-leverage looksmaxxing variable. Unlike bone structure, skin quality is fully
             within your control and responds to peptides within weeks.
@@ -558,12 +558,12 @@ export default function LooksmaxxingPage() {
                   <h3 className="text-xl font-bold text-gray-900">GHK-Cu (Copper Peptide)</h3>
                   <span
                     className="text-xs px-2.5 py-1 rounded-full font-bold text-yellow-500"
-                    style={{ background: 'rgba(139,92,246,0.15)', border: '1px solid rgba(139,92,246,0.3)' }}
+                    style={{ background: 'rgba(234,179,8,0.15)', border: '1px solid rgba(234,179,8,0.30)' }}
                   >
                     S Tier
                   </span>
                 </div>
-                <p className="text-sm text-gray-500">Copper tripeptide — the flagship skinmaxxing compound</p>
+                <p className="text-sm text-gray-700">Copper tripeptide — the flagship skinmaxxing compound</p>
               </div>
               <Link href="/products/ghk-cu" className="btn-primary text-sm">
                 Shop GHK-Cu <ArrowRight size={16} />
@@ -573,32 +573,32 @@ export default function LooksmaxxingPage() {
             <div className="grid sm:grid-cols-2 gap-6">
               <div className="space-y-4">
                 <div>
-                  <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">Mechanism</p>
+                  <p className="text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1">Mechanism</p>
                   <p className="text-sm text-gray-700 leading-relaxed">
                     Glycine-histidine-lysine tripeptide bound to copper. Naturally found in human
                     plasma — declines from ~200ng/mL at age 20 to ~80ng/mL at 60.
                   </p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">
+                  <p className="text-xs font-semibold text-gray-700 uppercase tracking-wider mb-2">
                     What it does for looks
                   </p>
                   <div className="space-y-1.5">
                     <div className="flex items-start gap-2">
                       <CheckCircle2 size={14} className="text-yellow-600 mt-0.5 shrink-0" />
-                      <span className="text-xs text-gray-500">Upregulates collagen I, III, and elastin synthesis (70% increase in research)</span>
+                      <span className="text-xs text-gray-700">Upregulates collagen I, III, and elastin synthesis (70% increase in research)</span>
                     </div>
                     <div className="flex items-start gap-2">
                       <CheckCircle2 size={14} className="text-yellow-600 mt-0.5 shrink-0" />
-                      <span className="text-xs text-gray-500">Resets 4,000+ genes toward younger expression profile<sup className="text-yellow-600 text-xs ml-0.5">[1]</sup></span>
+                      <span className="text-xs text-gray-700">Resets 4,000+ genes toward younger expression profile<sup className="text-yellow-600 text-xs ml-0.5">[1]</sup></span>
                     </div>
                     <div className="flex items-start gap-2">
                       <CheckCircle2 size={14} className="text-yellow-600 mt-0.5 shrink-0" />
-                      <span className="text-xs text-gray-500">Accelerates wound/scar healing</span>
+                      <span className="text-xs text-gray-700">Accelerates wound/scar healing</span>
                     </div>
                     <div className="flex items-start gap-2">
                       <CheckCircle2 size={14} className="text-yellow-600 mt-0.5 shrink-0" />
-                      <span className="text-xs text-gray-500">Reduces skin inflammation and redness</span>
+                      <span className="text-xs text-gray-700">Reduces skin inflammation and redness</span>
                     </div>
                   </div>
                 </div>
@@ -625,7 +625,7 @@ export default function LooksmaxxingPage() {
                   className="rounded-xl p-4"
                   style={{ background: 'var(--bg)', border: '1px solid var(--border)' }}
                 >
-                  <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">
+                  <p className="text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1">
                     Protocol
                   </p>
                   <p className="text-sm text-gray-700">
@@ -649,7 +649,7 @@ export default function LooksmaxxingPage() {
                     B Tier
                   </span>
                 </div>
-                <p className="text-sm text-gray-500">Topical Botox alternative — zero needles</p>
+                <p className="text-sm text-gray-700">Topical Botox alternative — zero needles</p>
               </div>
               <Link href="/products/snap-8" className="btn-secondary text-sm">
                 Shop SNAP-8
@@ -658,14 +658,14 @@ export default function LooksmaxxingPage() {
 
             <div className="space-y-4">
               <div>
-                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">Mechanism</p>
+                <p className="text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1">Mechanism</p>
                 <p className="text-sm text-gray-700 leading-relaxed">
                   Decapeptide that partially inhibits acetylcholine release at neuromuscular
                   junctions — the Botox mechanism, far milder and without any systemic effects.
                 </p>
               </div>
               <div>
-                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">
+                <p className="text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1">
                   What it does for looks
                 </p>
                 <p className="text-sm text-gray-700 leading-relaxed">
@@ -701,7 +701,7 @@ export default function LooksmaxxingPage() {
                     B Tier
                   </span>
                 </div>
-                <p className="text-sm text-gray-500">Telomerase activator — anti-aging at the chromosomal level</p>
+                <p className="text-sm text-gray-700">Telomerase activator — anti-aging at the chromosomal level</p>
               </div>
               <Link href="/products/epithalon" className="btn-secondary text-sm">
                 Shop Epithalon
@@ -710,14 +710,14 @@ export default function LooksmaxxingPage() {
 
             <div className="space-y-4">
               <div>
-                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">Mechanism</p>
+                <p className="text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1">Mechanism</p>
                 <p className="text-sm text-gray-700 leading-relaxed">
                   Tetrapeptide that activates telomerase — the enzyme that extends telomere length.
                   Slows the cellular aging clock at the genetic level.
                 </p>
               </div>
               <div>
-                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">
+                <p className="text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1">
                   What it does for looks
                 </p>
                 <p className="text-sm text-gray-700 leading-relaxed">
@@ -729,7 +729,7 @@ export default function LooksmaxxingPage() {
                 className="rounded-xl p-4"
                 style={{ background: 'var(--bg)', border: '1px solid var(--border)' }}
               >
-                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">Protocol</p>
+                <p className="text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1">Protocol</p>
                 <p className="text-sm text-gray-700">
                   5–10mg subcutaneous for 10–20 consecutive days, 2x per year.
                 </p>
@@ -749,7 +749,7 @@ export default function LooksmaxxingPage() {
             <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
               Hairmaxxing Peptides
             </h2>
-            <p className="text-gray-500 max-w-2xl leading-relaxed">
+            <p className="text-gray-700 max-w-2xl leading-relaxed">
               Hair density, thickness, and regrowth are downstream of two variables: follicle stem
               cell activity and scalp blood flow. Peptides address both directly without the sexual
               side effects associated with finasteride.
@@ -763,23 +763,23 @@ export default function LooksmaxxingPage() {
                 <h3 className="text-lg font-bold text-gray-900">GHK-Cu</h3>
                 <span
                   className="text-xs px-2.5 py-1 rounded-full font-bold text-yellow-500"
-                  style={{ background: 'rgba(139,92,246,0.15)', border: '1px solid rgba(139,92,246,0.3)' }}
+                  style={{ background: 'rgba(234,179,8,0.15)', border: '1px solid rgba(234,179,8,0.30)' }}
                 >
                   S Tier for Hair
                 </span>
               </div>
               <div className="space-y-4">
                 <div>
-                  <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">Hair Mechanism</p>
-                  <p className="text-sm text-gray-500 leading-relaxed">
+                  <p className="text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1">Hair Mechanism</p>
+                  <p className="text-sm text-gray-700 leading-relaxed">
                     GHK-Cu promotes follicle stem cell survival, extends the anagen (growth) phase,
                     and reverses follicle miniaturization. Applies to both topical scalp application
                     and subcutaneous.
                   </p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">Research</p>
-                  <p className="text-sm text-gray-500">
+                  <p className="text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1">Research</p>
+                  <p className="text-sm text-gray-700">
                     Promotes hair follicle growth in vitro and animal models. Synergistic with
                     minoxidil without systemic sides.
                   </p>
@@ -788,7 +788,7 @@ export default function LooksmaxxingPage() {
                   className="rounded-xl p-3"
                   style={{ background: 'var(--bg)', border: '1px solid var(--border)' }}
                 >
-                  <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">Protocol</p>
+                  <p className="text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1">Protocol</p>
                   <p className="text-xs text-gray-700">
                     Topical to scalp daily + 1mg subcutaneous 2x/week for maximum effect.
                   </p>
@@ -812,8 +812,8 @@ export default function LooksmaxxingPage() {
               </div>
               <div className="space-y-4">
                 <div>
-                  <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">Hair Mechanism</p>
-                  <p className="text-sm text-gray-500 leading-relaxed">
+                  <p className="text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1">Hair Mechanism</p>
+                  <p className="text-sm text-gray-700 leading-relaxed">
                     Angiogenesis (new blood vessel formation) at the follicle level. Scalp blood
                     flow is the rate-limiting step for follicle recovery in miniaturization.
                     BPC-157 drives VEGF-mediated angiogenesis that feeds recovering follicles.
@@ -823,7 +823,7 @@ export default function LooksmaxxingPage() {
                   className="rounded-xl p-3"
                   style={{ background: 'var(--bg)', border: '1px solid var(--border)' }}
                 >
-                  <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">Protocol</p>
+                  <p className="text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1">Protocol</p>
                   <p className="text-xs text-gray-700">
                     250–500mcg subcutaneous near the scalp (temporal/crown area) or systemically,
                     twice daily.
@@ -848,8 +848,8 @@ export default function LooksmaxxingPage() {
               </div>
               <div className="space-y-4">
                 <div>
-                  <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">Hair Mechanism</p>
-                  <p className="text-sm text-gray-500 leading-relaxed">
+                  <p className="text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1">Hair Mechanism</p>
+                  <p className="text-sm text-gray-700 leading-relaxed">
                     Thymosin Beta-4 binds G-actin and promotes stem cell migration to follicles.
                     Research shows promotion of hair follicle cycling and potential anagen phase
                     extension.
@@ -859,7 +859,7 @@ export default function LooksmaxxingPage() {
                   className="rounded-xl p-3"
                   style={{ background: 'var(--bg)', border: '1px solid var(--border)' }}
                 >
-                  <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">Protocol</p>
+                  <p className="text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1">Protocol</p>
                   <p className="text-xs text-gray-700">
                     5mg subcutaneous twice weekly, 6-week loading phase.
                   </p>
@@ -882,7 +882,7 @@ export default function LooksmaxxingPage() {
           <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Bodymaxxing Peptides
           </h2>
-          <p className="text-gray-500 max-w-2xl leading-relaxed">
+          <p className="text-gray-700 max-w-2xl leading-relaxed">
             Muscle:fat ratio is the single most controllable looksmaxxing variable. Face leanness,
             jawline definition, shoulder-to-waist ratio, and vascular aesthetics all improve
             directly with body recomposition.
@@ -898,12 +898,12 @@ export default function LooksmaxxingPage() {
                   <h3 className="text-xl font-bold text-gray-900">Semaglutide / Tirzepatide</h3>
                   <span
                     className="text-xs px-2.5 py-1 rounded-full font-bold text-yellow-500"
-                    style={{ background: 'rgba(139,92,246,0.15)', border: '1px solid rgba(139,92,246,0.3)' }}
+                    style={{ background: 'rgba(234,179,8,0.15)', border: '1px solid rgba(234,179,8,0.30)' }}
                   >
                     S Tier — Face Leanness
                   </span>
                 </div>
-                <p className="text-sm text-gray-500">GLP-1 agonists — the most dramatic visual transformation available</p>
+                <p className="text-sm text-gray-700">GLP-1 agonists — the most dramatic visual transformation available</p>
               </div>
               <div className="flex flex-wrap gap-2">
                 <Link href="/products/semaglutide-10mg" className="btn-primary text-sm">
@@ -929,7 +929,7 @@ export default function LooksmaxxingPage() {
                     <TrendingUp size={15} className="text-yellow-600 shrink-0" />
                     <div>
                       <p className="text-xs font-semibold text-gray-700">Semaglutide (STEP-1)</p>
-                      <p className="text-xs text-gray-500">14.9% mean weight loss<sup className="text-yellow-600 text-xs ml-0.5">[3]</sup></p>
+                      <p className="text-xs text-gray-700">14.9% mean weight loss<sup className="text-yellow-600 text-xs ml-0.5">[3]</sup></p>
                     </div>
                   </div>
                   <div className="flex items-center gap-3 p-3 rounded-xl"
@@ -937,7 +937,7 @@ export default function LooksmaxxingPage() {
                     <TrendingUp size={15} className="text-yellow-600 shrink-0" />
                     <div>
                       <p className="text-xs font-semibold text-gray-700">Tirzepatide (SURMOUNT-1)</p>
-                      <p className="text-xs text-gray-500">22.5% mean weight loss<sup className="text-yellow-600 text-xs ml-0.5">[2]</sup></p>
+                      <p className="text-xs text-gray-700">22.5% mean weight loss<sup className="text-yellow-600 text-xs ml-0.5">[2]</sup></p>
                     </div>
                   </div>
                 </div>
@@ -974,7 +974,7 @@ export default function LooksmaxxingPage() {
                     A Tier
                   </span>
                 </div>
-                <p className="text-sm text-gray-500">
+                <p className="text-sm text-gray-700">
                   Triple-threat: bodymaxxing + skinmaxxing + sleepmaxxing
                 </p>
               </div>
@@ -994,7 +994,7 @@ export default function LooksmaxxingPage() {
                 className="rounded-xl p-4"
                 style={{ background: 'var(--bg)', border: '1px solid var(--border)' }}
               >
-                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Protocol</p>
+                <p className="text-xs font-semibold text-gray-700 uppercase tracking-wider mb-2">Protocol</p>
                 <div className="space-y-1">
                   <p className="text-xs text-gray-700">Women: 100mcg before bed</p>
                   <p className="text-xs text-gray-700">Men: 200mcg before bed</p>
@@ -1017,7 +1017,7 @@ export default function LooksmaxxingPage() {
                     B Tier — Hardmaxx
                   </span>
                 </div>
-                <p className="text-sm text-gray-500">Downstream GH mediator — advanced users only</p>
+                <p className="text-sm text-gray-700">Downstream GH mediator — advanced users only</p>
               </div>
               <Link href="/products/igf-1-lr3" className="btn-secondary text-sm">
                 Shop IGF-1 LR3
@@ -1033,7 +1033,7 @@ export default function LooksmaxxingPage() {
                 className="rounded-xl p-4"
                 style={{ background: 'var(--bg)', border: '1px solid var(--border)' }}
               >
-                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Protocol</p>
+                <p className="text-xs font-semibold text-gray-700 uppercase tracking-wider mb-2">Protocol</p>
                 <p className="text-xs text-gray-700">20–50mcg daily for 4–6 weeks. Advanced users only.</p>
               </div>
             </div>
@@ -1048,7 +1048,7 @@ export default function LooksmaxxingPage() {
             <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
               Sleepmaxxing and Gutmaxxing: The Hidden Appearance Variables
             </h2>
-            <p className="text-gray-500 max-w-2xl">
+            <p className="text-gray-700 max-w-2xl">
               Two appearance levers that most looksmaxxers ignore — yet they determine your
               baseline inflammation, skin clarity, and the quality of every night's recovery.
             </p>
@@ -1068,7 +1068,7 @@ export default function LooksmaxxingPage() {
                 before sleep amplifies this pulse 3–5x without suppressing the natural axis.
               </p>
               <div className="mb-5">
-                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Visual Effects</p>
+                <p className="text-xs font-semibold text-gray-700 uppercase tracking-wider mb-2">Visual Effects</p>
                 <div className="space-y-1.5">
                   {[
                     'Reduced undereye circles',
@@ -1078,7 +1078,7 @@ export default function LooksmaxxingPage() {
                   ].map((effect) => (
                     <div key={effect} className="flex items-center gap-2">
                       <CheckCircle2 size={13} className="text-yellow-600 shrink-0" />
-                      <span className="text-xs text-gray-500">{effect}</span>
+                      <span className="text-xs text-gray-700">{effect}</span>
                     </div>
                   ))}
                 </div>
@@ -1087,7 +1087,7 @@ export default function LooksmaxxingPage() {
                 className="rounded-xl p-4"
                 style={{ background: 'var(--bg)', border: '1px solid var(--border)' }}
               >
-                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">Protocol</p>
+                <p className="text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1">Protocol</p>
                 <p className="text-xs text-gray-700">
                   100–200mcg subcutaneous 30 min before bed. Women use 100mcg, men 200mcg.
                 </p>
@@ -1116,7 +1116,7 @@ export default function LooksmaxxingPage() {
                 className="rounded-xl p-4"
                 style={{ background: 'var(--bg)', border: '1px solid var(--border)' }}
               >
-                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">Protocol</p>
+                <p className="text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1">Protocol</p>
                 <p className="text-xs text-gray-700">
                   250mcg oral (dissolved in water, empty stomach) + 250mcg subcutaneous, twice
                   daily. Run 8 weeks on, 4 weeks off.
@@ -1133,7 +1133,7 @@ export default function LooksmaxxingPage() {
           <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
             Looksmaxxing Peptide Stacks
           </h2>
-          <p className="text-gray-500 max-w-2xl">
+          <p className="text-gray-700 max-w-2xl">
             Individual peptides work. Stacks work synergistically. These three combinations
             represent the highest-ROI protocols for each looksmaxxing goal.
           </p>
@@ -1148,7 +1148,7 @@ export default function LooksmaxxingPage() {
                 <span className="badge badge-cyan">Softmaxx Friendly</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mt-3 mb-1">The Skinmaxx Stack</h3>
-              <p className="text-sm text-gray-500">Pure skinmaxxing — no needles required</p>
+              <p className="text-sm text-gray-700">Pure skinmaxxing — no needles required</p>
             </div>
 
             <div className="space-y-2 mb-5 flex-1">
@@ -1162,7 +1162,7 @@ export default function LooksmaxxingPage() {
                   <span className="text-xs text-gray-700">{item}</span>
                 </div>
               ))}
-              <p className="text-xs text-gray-500 mt-3 italic">
+              <p className="text-xs text-gray-700 mt-3 italic">
                 Upgrade: Add GHK-Cu 1mg subcutaneous 2x/week for deeper collagen reset.
               </p>
             </div>
@@ -1178,7 +1178,7 @@ export default function LooksmaxxingPage() {
                   className="rounded-lg p-2 text-center"
                   style={{ background: 'var(--bg)', border: '1px solid var(--border)' }}
                 >
-                  <p className="text-[10px] text-gray-500 uppercase tracking-wide">{item.label}</p>
+                  <p className="text-[10px] text-gray-700 uppercase tracking-wide">{item.label}</p>
                   <p className="text-xs font-bold text-gray-900 mt-0.5">{item.value}</p>
                 </div>
               ))}
@@ -1190,14 +1190,14 @@ export default function LooksmaxxingPage() {
           </div>
 
           {/* Full Looksmaxx Stack */}
-          <div className="card p-7 flex flex-col" style={{ borderColor: 'rgba(139,92,246,0.4)' }}>
+          <div className="card p-7 flex flex-col" style={{ borderColor: 'rgba(234,179,8,0.40)' }}>
             <div className="mb-5">
               <div className="flex items-center gap-2 mb-1">
                 <Star size={18} className="text-yellow-600" />
                 <span className="badge">Most Comprehensive</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mt-3 mb-1">The Full Looksmaxx Stack</h3>
-              <p className="text-sm text-gray-500">Hardmaxx — every appearance vector simultaneously</p>
+              <p className="text-sm text-gray-700">Hardmaxx — every appearance vector simultaneously</p>
             </div>
 
             <div className="space-y-2 mb-5 flex-1">
@@ -1226,7 +1226,7 @@ export default function LooksmaxxingPage() {
                   className="rounded-lg p-2 text-center"
                   style={{ background: 'var(--bg)', border: '1px solid var(--border)' }}
                 >
-                  <p className="text-[10px] text-gray-500 uppercase tracking-wide">{item.label}</p>
+                  <p className="text-[10px] text-gray-700 uppercase tracking-wide">{item.label}</p>
                   <p className="text-xs font-bold text-gray-900 mt-0.5">{item.value}</p>
                 </div>
               ))}
@@ -1245,7 +1245,7 @@ export default function LooksmaxxingPage() {
                 <span className="badge badge-cyan">35+ Recommended</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mt-3 mb-1">The Anti-Aging Looksmaxx Stack</h3>
-              <p className="text-sm text-gray-500">Long-term appearance trajectory optimization</p>
+              <p className="text-sm text-gray-700">Long-term appearance trajectory optimization</p>
             </div>
 
             <div className="space-y-2 mb-5 flex-1">
@@ -1259,7 +1259,7 @@ export default function LooksmaxxingPage() {
                   <span className="text-xs text-gray-700">{item}</span>
                 </div>
               ))}
-              <p className="text-xs text-gray-500 mt-3 italic">
+              <p className="text-xs text-gray-700 mt-3 italic">
                 Best for: Over 35s optimizing long-term appearance trajectory.
               </p>
             </div>
@@ -1275,7 +1275,7 @@ export default function LooksmaxxingPage() {
                   className="rounded-lg p-2 text-center"
                   style={{ background: 'var(--bg)', border: '1px solid var(--border)' }}
                 >
-                  <p className="text-[10px] text-gray-500 uppercase tracking-wide">{item.label}</p>
+                  <p className="text-[10px] text-gray-700 uppercase tracking-wide">{item.label}</p>
                   <p className="text-xs font-bold text-gray-900 mt-0.5">{item.value}</p>
                 </div>
               ))}
@@ -1300,7 +1300,7 @@ export default function LooksmaxxingPage() {
             <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
               Softmaxx vs Hardmaxx: Peptide ROI Matrix
             </h2>
-            <p className="text-gray-500 max-w-2xl">
+            <p className="text-gray-700 max-w-2xl">
               Every looksmaxxing peptide ranked by route, difficulty, timeline, and visual impact.
             </p>
           </div>
@@ -1309,22 +1309,22 @@ export default function LooksmaxxingPage() {
             <table className="w-full text-sm">
               <thead>
                 <tr style={{ backgroundColor: 'var(--bg)', borderBottom: '1px solid var(--border)' }}>
-                  <th className="text-left px-5 py-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">
+                  <th className="text-left px-5 py-4 text-xs font-semibold text-gray-700 uppercase tracking-wider">
                     Peptide
                   </th>
-                  <th className="text-left px-5 py-4 text-xs font-semibold text-gray-500 uppercase tracking-wider hidden sm:table-cell">
+                  <th className="text-left px-5 py-4 text-xs font-semibold text-gray-700 uppercase tracking-wider hidden sm:table-cell">
                     Route
                   </th>
-                  <th className="text-left px-5 py-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">
+                  <th className="text-left px-5 py-4 text-xs font-semibold text-gray-700 uppercase tracking-wider">
                     Difficulty
                   </th>
-                  <th className="text-left px-5 py-4 text-xs font-semibold text-gray-500 uppercase tracking-wider hidden md:table-cell">
+                  <th className="text-left px-5 py-4 text-xs font-semibold text-gray-700 uppercase tracking-wider hidden md:table-cell">
                     Timeline
                   </th>
-                  <th className="text-left px-5 py-4 text-xs font-semibold text-gray-500 uppercase tracking-wider hidden lg:table-cell">
+                  <th className="text-left px-5 py-4 text-xs font-semibold text-gray-700 uppercase tracking-wider hidden lg:table-cell">
                     Visual Impact
                   </th>
-                  <th className="text-left px-5 py-4 text-xs font-semibold text-gray-500 uppercase tracking-wider hidden xl:table-cell">
+                  <th className="text-left px-5 py-4 text-xs font-semibold text-gray-700 uppercase tracking-wider hidden xl:table-cell">
                     Best For
                   </th>
                 </tr>
@@ -1339,13 +1339,13 @@ export default function LooksmaxxingPage() {
                     }}
                   >
                     <td className="px-5 py-4 font-semibold text-gray-900">{row.peptide}</td>
-                    <td className="px-5 py-4 text-gray-500 hidden sm:table-cell">{row.route}</td>
+                    <td className="px-5 py-4 text-gray-700 hidden sm:table-cell">{row.route}</td>
                     <td className={`px-5 py-4 font-semibold ${row.difficultyColor}`}>
                       {row.difficulty}
                     </td>
-                    <td className="px-5 py-4 text-gray-500 hidden md:table-cell">{row.timeline}</td>
-                    <td className="px-5 py-4 text-gray-500 hidden lg:table-cell">{row.impact}</td>
-                    <td className="px-5 py-4 text-gray-500 hidden xl:table-cell">{row.bestFor}</td>
+                    <td className="px-5 py-4 text-gray-700 hidden md:table-cell">{row.timeline}</td>
+                    <td className="px-5 py-4 text-gray-700 hidden lg:table-cell">{row.impact}</td>
+                    <td className="px-5 py-4 text-gray-700 hidden xl:table-cell">{row.bestFor}</td>
                   </tr>
                 ))}
               </tbody>
@@ -1363,7 +1363,7 @@ export default function LooksmaxxingPage() {
               Looksmaxxing Peptide FAQ
             </h2>
           </div>
-          <p className="text-gray-500 max-w-2xl">
+          <p className="text-gray-700 max-w-2xl">
             The most common questions about using peptides for looksmaxxing — answered with
             evidence-based protocols.
           </p>
@@ -1373,7 +1373,7 @@ export default function LooksmaxxingPage() {
           {faqs.map((faq) => (
             <div key={faq.q} className="card p-6">
               <p className="text-base font-bold text-gray-900 mb-3">{faq.q}</p>
-              <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
+              <p className="text-sm text-gray-700 leading-relaxed">{faq.a}</p>
             </div>
           ))}
         </div>
@@ -1385,7 +1385,7 @@ export default function LooksmaxxingPage() {
           <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Start Your Looksmaxxing Protocol
           </h2>
-          <p className="text-gray-500 max-w-xl mx-auto mb-10">
+          <p className="text-gray-700 max-w-xl mx-auto mb-10">
             Browse the complete product library or go straight to the highest-ROI compounds.
           </p>
 

@@ -66,22 +66,22 @@ export default async function ProductsPage({
           <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-5">
             All <span className="gradient-text">Peptides</span>
           </h1>
-          <p className="text-base sm:text-xl text-gray-500 max-w-2xl mx-auto mb-6 leading-relaxed">
+          <p className="text-base sm:text-xl text-gray-700 max-w-2xl mx-auto mb-6 leading-relaxed">
             Full protocol guides for every major peptide — dosing, timing,
             synergies, and expected results.
           </p>
 
           {/* Breadcrumb */}
-          <div className="flex items-center justify-center gap-2 text-sm text-gray-400">
+          <div className="flex items-center justify-center gap-2 text-sm text-gray-800">
             <Link href="/" className="hover:text-yellow-600 transition-colors">
               Home
             </Link>
             <span>/</span>
-            <span className="text-gray-500">Products</span>
+            <span className="text-gray-700">Products</span>
             {category && (
               <>
                 <span>/</span>
-                <span className="text-gray-500">{category}</span>
+                <span className="text-gray-700">{category}</span>
               </>
             )}
           </div>
@@ -102,7 +102,7 @@ export default async function ProductsPage({
             className="flex items-center gap-2 overflow-x-auto"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
-            <span className="text-xs text-gray-500 font-medium mr-1 shrink-0">Filter:</span>
+            <span className="text-xs text-gray-700 font-medium mr-1 shrink-0">Filter:</span>
             {categories.map((cat) => {
               const isActive = cat.value === null ? !category : category === cat.value;
               const href =
@@ -125,7 +125,7 @@ export default async function ProductsPage({
                         }
                       : {
                           background: 'transparent',
-                          color: '#6b7280',
+                          color: '#374151',
                           borderColor: 'var(--border-bright)',
                         }
                   }
@@ -145,7 +145,7 @@ export default async function ProductsPage({
           <div>
             <p className="text-gray-800 font-semibold text-lg">
               {filtered.length}{' '}
-              <span className="text-gray-500 font-normal">
+              <span className="text-gray-700 font-normal">
                 {filtered.length === 1 ? 'peptide' : 'peptides'}
                 {category ? ` in ${category}` : ' total'}
               </span>
@@ -155,7 +155,7 @@ export default async function ProductsPage({
           {category && (
             <Link
               href="/products"
-              className="text-sm text-gray-400 hover:text-yellow-600 transition-colors flex items-center gap-1"
+              className="text-sm text-gray-800 hover:text-yellow-600 transition-colors flex items-center gap-1"
             >
               Clear filter ×
             </Link>
@@ -185,7 +185,7 @@ export default async function ProductsPage({
               🔬
             </div>
             <h2 className="text-2xl font-bold text-gray-900 mb-3">No peptides found</h2>
-            <p className="text-gray-500 mb-6 max-w-sm mx-auto">
+            <p className="text-gray-700 mb-6 max-w-sm mx-auto">
               No peptides match the selected category. Try a different filter or browse
               the full catalog.
             </p>
@@ -209,7 +209,7 @@ export default async function ProductsPage({
             <h3 className="text-2xl font-bold text-gray-900 mb-3">
               Not sure where to start?
             </h3>
-            <p className="text-gray-500 mb-6 max-w-lg mx-auto">
+            <p className="text-gray-700 mb-6 max-w-lg mx-auto">
               Our expert stacks combine multiple peptides for synergistic effects.
               Browse pre-built protocols for healing, body composition, longevity, and more.
             </p>

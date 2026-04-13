@@ -157,7 +157,7 @@ export default function FAQAccordion() {
                         </span>
                         <ChevronDown
                           size={18}
-                          className={`shrink-0 text-gray-500 transition-transform duration-200 ${
+                          className={`shrink-0 text-gray-700 transition-transform duration-200 ${
                             isOpen ? 'rotate-180 text-yellow-600' : ''
                           }`}
                         />
@@ -168,7 +168,7 @@ export default function FAQAccordion() {
                             className="pt-4 border-t"
                             style={{ borderColor: 'var(--border)' }}
                           >
-                            <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
+                            <p className="text-sm text-gray-700 leading-relaxed">{faq.a}</p>
                           </div>
                         </div>
                       )}
@@ -192,7 +192,7 @@ export default function FAQAccordion() {
             >
               <MessageSquare size={22} className="text-yellow-600 mb-4" />
               <h3 className="font-bold text-gray-900 mb-2">Still have questions?</h3>
-              <p className="text-sm text-gray-500 mb-4 leading-relaxed">
+              <p className="text-sm text-gray-700 mb-4 leading-relaxed">
                 Use the AI chat assistant (bottom right) for instant answers about protocols,
                 dosing, and stacking. It is trained on our complete product library.
               </p>
@@ -207,7 +207,7 @@ export default function FAQAccordion() {
             >
               <HelpCircle size={22} className="text-yellow-600 mb-4" />
               <h3 className="font-bold text-gray-900 mb-2">New to peptides?</h3>
-              <p className="text-sm text-gray-500 mb-4 leading-relaxed">
+              <p className="text-sm text-gray-700 mb-4 leading-relaxed">
                 Read the complete beginner guide — everything from what peptides are to
                 your first injection and choosing the right starting protocol.
               </p>

@@ -98,12 +98,12 @@ export default function GHKCuPage() {
       {/* Breadcrumb */}
       <div className="border-b" style={{ borderColor: '#1e1e35' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3">
-          <nav className="flex items-center gap-2 text-sm" style={{ color: '#71717a' }}>
+          <nav className="flex items-center gap-2 text-sm" style={{ color: '#1f2937' }}>
             <Link href="/" className="hover:text-yellow-600 transition-colors">Home</Link>
             <span>/</span>
             <Link href="/anti-aging" className="hover:text-yellow-600 transition-colors">Anti-Aging</Link>
             <span>/</span>
-            <span style={{ color: '#a1a1b5' }}>GHK-Cu</span>
+            <span style={{ color: '#1f2937' }}>GHK-Cu</span>
           </nav>
         </div>
       </div>
@@ -119,16 +119,16 @@ export default function GHKCuPage() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-2 mb-5">
               <span className="badge">Peptides</span>
-              <ChevronRight size={14} className="text-gray-400" />
+              <ChevronRight size={14} className="text-gray-800" />
               <span className="badge" style={{ background: 'rgba(236,72,153,0.1)', color: '#f9a8d4', border: '1px solid rgba(236,72,153,0.3)' }}>Anti-Aging & Skin</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
               <span style={{ background: 'linear-gradient(135deg, #f9a8d4, #fbbf24)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>GHK-Cu</span>
               <span className="text-gray-900"> (Copper Peptide)</span>
             </h1>
-            <p className="text-gray-500 text-sm font-medium mb-3">Chemical name: Glycyl-L-Histidyl-L-Lysine : Copper(II)</p>
-            <p className="text-gray-500 text-sm font-medium mb-4" style={{ color: '#94a3b8' }}>CAS: 49557-75-7</p>
-            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-gray-700 text-sm font-medium mb-3">Chemical name: Glycyl-L-Histidyl-L-Lysine : Copper(II)</p>
+            <p className="text-gray-700 text-sm font-medium mb-4" style={{ color: '#94a3b8' }}>CAS: 49557-75-7</p>
+            <p className="text-lg text-gray-700 leading-relaxed mb-8 max-w-2xl">
               GHK-Cu is the most scientifically validated anti-aging peptide for skin, collagen, and gene
               expression. A naturally occurring copper-binding tripeptide that declines with age, it has been
               shown to reset approximately 30% of age-related gene dysregulation — reversing aging at the
@@ -155,7 +155,7 @@ export default function GHKCuPage() {
                 <div className="mt-0.5">{stat.icon}</div>
                 <div>
                   <p className="text-xl font-bold text-gray-900">{stat.value}</p>
-                  <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
+                  <p className="text-xs text-gray-700 mt-0.5">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -171,19 +171,19 @@ export default function GHKCuPage() {
           <div>
             <span className="badge mb-4 inline-block" style={{ background: 'rgba(236,72,153,0.1)', color: '#f9a8d4', border: '1px solid rgba(236,72,153,0.3)' }}>Mechanism of Action</span>
             <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-5">The Most Powerful Anti-Aging Peptide?</h2>
-            <p className="text-gray-500 leading-relaxed mb-5">
+            <p className="text-gray-700 leading-relaxed mb-5">
               GHK-Cu (Glycyl-L-Histidyl-L-Lysine copper complex) is a tripeptide naturally present in
               human plasma, saliva, and urine. At age 20, plasma concentrations average approximately
               200 ng/mL. By age 60, this drops to roughly 80 ng/mL — a 60% decline that correlates
               strongly with the visible and cellular manifestations of aging.
             </p>
-            <p className="text-gray-500 leading-relaxed mb-5">
+            <p className="text-gray-700 leading-relaxed mb-5">
               The copper component is not incidental — GHK's biological activity depends on copper coordination.
               The GHK-Cu complex activates copper-dependent enzymes involved in collagen cross-linking, antioxidant
               defense, and tissue remodeling. It is the copper that gives reconstituted GHK-Cu its characteristic
               blue color and that drives many of its most potent effects.
             </p>
-            <p className="text-gray-500 leading-relaxed mb-5">
+            <p className="text-gray-700 leading-relaxed mb-5">
               Unlike most anti-aging compounds that address single pathways, GHK-Cu works at the genetic
               level. Research by Dr. Loren Pickart demonstrated that GHK-Cu can access cell nuclei and
               modulate the activity of over 4,000 human genes — including genes governing collagen synthesis,
@@ -231,7 +231,7 @@ export default function GHKCuPage() {
                   {item.icon}
                   <h3 className="text-gray-900 font-semibold">{item.title}</h3>
                 </div>
-                <p className="text-gray-500 text-sm leading-relaxed">{item.body}</p>
+                <p className="text-gray-700 text-sm leading-relaxed">{item.body}</p>
               </div>
             ))}
           </div>
@@ -245,7 +245,7 @@ export default function GHKCuPage() {
         <div className="max-w-3xl mx-auto">
           <span className="badge mb-4 inline-block" style={{ background: 'rgba(236,72,153,0.1)', color: '#f9a8d4', border: '1px solid rgba(236,72,153,0.3)' }}>Skin Rejuvenation</span>
           <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">GHK-Cu for Skin: What to Expect</h2>
-          <p className="text-gray-500 leading-relaxed mb-8">
+          <p className="text-gray-700 leading-relaxed mb-8">
             GHK-Cu is the most evidence-backed peptide available for skin rejuvenation. In human and in vitro studies,
             topical and systemic GHK-Cu demonstrates effects that go far beyond what conventional skincare actives achieve.
             Here is what the research documents and what users consistently report:
@@ -261,19 +261,19 @@ export default function GHKCuPage() {
               <div key={item.stat} className="card p-5 text-center">
                 <p className="text-3xl font-extrabold mb-1" style={{ color: '#f472b6' }}>{item.stat}</p>
                 <p className="text-gray-900 font-semibold text-sm mb-1">{item.label}</p>
-                <p className="text-gray-500 text-xs leading-relaxed">{item.detail}</p>
+                <p className="text-gray-700 text-xs leading-relaxed">{item.detail}</p>
               </div>
             ))}
           </div>
 
-          <p className="text-gray-500 leading-relaxed mb-5">
+          <p className="text-gray-700 leading-relaxed mb-5">
             GHK-Cu also activates matrix metalloproteinases (MMPs) — enzymes that break down damaged,
             disorganized collagen and make way for newly synthesized collagen fibers. This remodeling
             cycle is what produces the long-term structural improvements visible at 8–12 weeks.
             It explains why GHK-Cu users often see continued improvement months after starting —
             the collagen remodeling cycle takes time to complete.
           </p>
-          <p className="text-gray-500 leading-relaxed mb-5">
+          <p className="text-gray-700 leading-relaxed mb-5">
             For the <Link href="/looksmaxxing" className="text-yellow-600 hover:underline">looksmaxxing protocol</Link>,
             GHK-Cu is a cornerstone compound. Applied topically to the face, neck, and under-eye area twice daily,
             it addresses the four main visual aging markers: collagen loss, elastin degradation, inflammatory
@@ -291,28 +291,28 @@ export default function GHKCuPage() {
           <div>
             <span className="badge mb-4 inline-block" style={{ background: 'rgba(245,158,11,0.1)', color: '#fcd34d', border: '1px solid rgba(245,158,11,0.3)' }}>Hair Restoration</span>
             <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-5">GHK-Cu for Hair Loss</h2>
-            <p className="text-gray-500 leading-relaxed mb-5">
+            <p className="text-gray-700 leading-relaxed mb-5">
               GHK-Cu is one of the most studied peptides for hair restoration, with peer-reviewed data
               supporting follicle stem cell activation, enlarged follicle size, and hair regrowth
               comparable to minoxidil. The mechanism works through two complementary pathways:
             </p>
-            <p className="text-gray-500 leading-relaxed mb-5">
+            <p className="text-gray-700 leading-relaxed mb-5">
               <strong className="text-gray-900">Follicle stem cell activation:</strong> GHK-Cu activates
               resting hair follicle stem cells and promotes their entry into the anagen (growth) phase.
               Many thinning hair conditions involve dormant — not dead — follicles that can be reactivated
               with appropriate signaling.
             </p>
-            <p className="text-gray-500 leading-relaxed mb-5">
+            <p className="text-gray-700 leading-relaxed mb-5">
               <strong className="text-gray-900">Anti-inflammatory scalp environment:</strong> Scalp inflammation
               is a primary driver of follicle miniaturization and hair loss. GHK-Cu's anti-inflammatory
               gene modulation creates a less hostile environment for follicle function.
             </p>
-            <p className="text-gray-500 leading-relaxed mb-5">
+            <p className="text-gray-700 leading-relaxed mb-5">
               <strong className="text-gray-900">Follicle enlargement:</strong> Studies show GHK-Cu
               enlarges follicle diameter — not just preserving existing follicles but improving the
               caliber of hair produced. This translates to visibly thicker, denser hair over time.
             </p>
-            <p className="text-gray-500 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed">
               For best results, apply GHK-Cu topically to the scalp at 0.1–0.5% concentration daily.
               Many users combine scalp application with subcutaneous injection for both systemic and local
               coverage. See our <Link href="/hair-growth" className="text-yellow-600 hover:underline">hair growth peptide guide</Link> for
@@ -327,7 +327,7 @@ export default function GHKCuPage() {
             <div className="space-y-4">
               <div className="rounded-xl p-5" style={{ background: 'rgba(236,72,153,0.08)', border: '1px solid rgba(236,72,153,0.2)' }}>
                 <h3 className="font-bold mb-3" style={{ color: '#f9a8d4' }}>Systemic Anti-Aging (Subcutaneous)</h3>
-                <ul className="space-y-2 text-sm text-gray-500">
+                <ul className="space-y-2 text-sm text-gray-700">
                   <li className="flex gap-2"><span className="font-bold" style={{ color: '#f472b6' }}>Dose:</span> 1–2mg per day</li>
                   <li className="flex gap-2"><span className="font-bold" style={{ color: '#f472b6' }}>Timing:</span> Morning injection preferred</li>
                   <li className="flex gap-2"><span className="font-bold" style={{ color: '#f472b6' }}>Cycling:</span> Year-round — no cycling required</li>
@@ -337,7 +337,7 @@ export default function GHKCuPage() {
 
               <div className="rounded-xl p-5" style={{ background: 'rgba(245,158,11,0.08)', border: '1px solid rgba(245,158,11,0.2)' }}>
                 <h3 className="font-bold mb-3 text-amber-300">Topical Skin Application</h3>
-                <ul className="space-y-2 text-sm text-gray-500">
+                <ul className="space-y-2 text-sm text-gray-700">
                   <li className="flex gap-2"><span className="font-bold text-yellow-600">Concentration:</span> 0.1–0.5% in serum or saline base</li>
                   <li className="flex gap-2"><span className="font-bold text-yellow-600">Frequency:</span> 1–2× daily (morning and evening)</li>
                   <li className="flex gap-2"><span className="font-bold text-yellow-600">Area:</span> Face, neck, décolletage</li>
@@ -347,7 +347,7 @@ export default function GHKCuPage() {
 
               <div className="rounded-xl p-5" style={{ background: 'rgba(236,72,153,0.08)', border: '1px solid rgba(236,72,153,0.2)' }}>
                 <h3 className="font-bold mb-3" style={{ color: '#f9a8d4' }}>Scalp Application (Hair Restoration)</h3>
-                <ul className="space-y-2 text-sm text-gray-500">
+                <ul className="space-y-2 text-sm text-gray-700">
                   <li className="flex gap-2"><span className="font-bold" style={{ color: '#f472b6' }}>Concentration:</span> 0.1–1% in saline or carrier</li>
                   <li className="flex gap-2"><span className="font-bold" style={{ color: '#f472b6' }}>Frequency:</span> Once daily to scalp</li>
                   <li className="flex gap-2"><span className="font-bold" style={{ color: '#f472b6' }}>Method:</span> Apply, massage for 2 minutes, do not rinse</li>
@@ -366,7 +366,7 @@ export default function GHKCuPage() {
         <div className="max-w-3xl mx-auto text-center mb-10">
           <span className="badge mb-4 inline-block" style={{ background: 'rgba(236,72,153,0.1)', color: '#f9a8d4', border: '1px solid rgba(236,72,153,0.3)' }}>Anti-Aging Protocol</span>
           <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">GHK-Cu Within the Longevity Stack</h2>
-          <p className="text-gray-500 leading-relaxed">
+          <p className="text-gray-700 leading-relaxed">
             GHK-Cu is the foundation of any comprehensive anti-aging protocol, but its effects compound when
             combined with complementary longevity peptides. Here is how it fits into the full protocol.
           </p>
@@ -376,7 +376,7 @@ export default function GHKCuPage() {
           <div className="card p-6">
             <div className="badge mb-3 inline-block" style={{ background: 'rgba(236,72,153,0.1)', color: '#f9a8d4', border: '1px solid rgba(236,72,153,0.3)' }}>Daily Base</div>
             <h3 className="text-gray-900 font-bold mb-2">GHK-Cu</h3>
-            <p className="text-gray-500 text-sm leading-relaxed mb-3">
+            <p className="text-gray-700 text-sm leading-relaxed mb-3">
               Daily subcutaneous + topical. Provides continuous gene expression modulation, collagen synthesis,
               and antioxidant defense. The always-on foundation of the anti-aging protocol.
             </p>
@@ -389,7 +389,7 @@ export default function GHKCuPage() {
             <h3 className="text-gray-900 font-bold mb-2">
               <Link href="/products/epithalon" className="hover:text-yellow-600 transition-colors">Epithalon</Link>
             </h3>
-            <p className="text-gray-500 text-sm leading-relaxed mb-3">
+            <p className="text-gray-700 text-sm leading-relaxed mb-3">
               10–20 day burst cycles, 1–2× per year. Activates telomerase for telomere extension —
               addressing the deepest level of cellular aging that GHK-Cu cannot reach alone.
             </p>
@@ -402,7 +402,7 @@ export default function GHKCuPage() {
             <h3 className="text-gray-900 font-bold mb-2">
               <Link href="/products/nad-plus" className="hover:text-yellow-600 transition-colors">NAD+ 500mg</Link>
             </h3>
-            <p className="text-gray-500 text-sm leading-relaxed mb-3">
+            <p className="text-gray-700 text-sm leading-relaxed mb-3">
               2–3× per week ongoing. Restores mitochondrial energy production and activates sirtuin
               longevity enzymes — addressing cellular aging from the energy and DNA repair angles.
             </p>
@@ -415,12 +415,12 @@ export default function GHKCuPage() {
         <div className="grid sm:grid-cols-2 gap-4">
           <Link href="/anti-aging" className="card p-5 hover:border-pink-500/40 transition-colors block">
             <p className="font-semibold mb-2" style={{ color: '#f472b6' }}>Anti-Aging Peptide Hub</p>
-            <p className="text-gray-500 text-sm">Full anti-aging protocol guide with Epithalon, GHK-Cu, NAD+, and SNAP-8 — including evidence summaries and stack protocols.</p>
+            <p className="text-gray-700 text-sm">Full anti-aging protocol guide with Epithalon, GHK-Cu, NAD+, and SNAP-8 — including evidence summaries and stack protocols.</p>
             <div className="flex items-center gap-1 mt-3 text-xs font-medium" style={{ color: '#f472b6' }}>View guide <ArrowRight size={12} /></div>
           </Link>
           <Link href="/best-peptide-for-anti-aging" className="card p-5 hover:border-amber-500/40 transition-colors block">
             <p className="text-yellow-600 font-semibold mb-2">Best Peptides for Anti-Aging 2026</p>
-            <p className="text-gray-500 text-sm">Ranked comparison of every anti-aging peptide with evidence grades, mechanisms, and protocol recommendations.</p>
+            <p className="text-gray-700 text-sm">Ranked comparison of every anti-aging peptide with evidence grades, mechanisms, and protocol recommendations.</p>
             <div className="flex items-center gap-1 mt-3 text-yellow-600 text-xs font-medium">Read ranking <ArrowRight size={12} /></div>
           </Link>
         </div>
@@ -431,7 +431,7 @@ export default function GHKCuPage() {
       {/* Products */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Shop Anti-Aging Peptides</h2>
-        <p className="text-gray-500 text-sm mb-8">HPLC-verified purity, COA available per batch.</p>
+        <p className="text-gray-700 text-sm mb-8">HPLC-verified purity, COA available per batch.</p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[ghkProduct, epithalonProduct, nadProduct].filter(Boolean).map((p) => (
             <ProductCard key={p!.slug} product={p!} showAffiliateButton />
@@ -452,7 +452,7 @@ export default function GHKCuPage() {
                 <HelpCircle size={18} style={{ color: '#f472b6' }} className="shrink-0 mt-0.5" />
                 <div>
                   <h3 className="text-gray-900 font-semibold mb-2">{faq.q}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">{faq.a}</p>
+                  <p className="text-gray-700 text-sm leading-relaxed">{faq.a}</p>
                 </div>
               </div>
             </div>

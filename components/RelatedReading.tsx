@@ -19,7 +19,7 @@ export default function RelatedReading({ pageKey }: RelatedReadingProps) {
         {links.map((link) => {
           const isExternal = link.href.startsWith('http');
           const className =
-            'flex items-center gap-2 text-sm text-gray-500 hover:text-yellow-600 transition-colors group';
+            'flex items-center gap-2 text-sm text-gray-700 hover:text-yellow-600 transition-colors group';
           const icon = (
             <ArrowRight
               size={13}

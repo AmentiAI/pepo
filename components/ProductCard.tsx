@@ -50,7 +50,7 @@ export default function ProductCard({ product, showAffiliateButton = false }: Pr
                 <FlaskConical size={22} className="text-gray-600" />
               </div>
               <p className="text-gray-800 font-black text-xl tracking-tight text-center leading-tight">{product.name}</p>
-              <p className="text-gray-500 text-[10px] font-bold uppercase tracking-widest">{symbol}</p>
+              <p className="text-gray-700 text-[10px] font-bold uppercase tracking-widest">{symbol}</p>
             </div>
           </>
         )}
@@ -76,12 +76,12 @@ export default function ProductCard({ product, showAffiliateButton = false }: Pr
                 className={i < product.researchRating ? 'text-yellow-500 fill-yellow-500' : 'text-gray-200'}
               />
             ))}
-            <span className="text-[10px] text-gray-400 ml-1">Evidence</span>
+            <span className="text-[10px] text-gray-800 ml-1">Evidence</span>
           </div>
         </div>
 
         {/* Description */}
-        <p className="text-sm text-gray-500 leading-relaxed mb-3 flex-1 line-clamp-3">
+        <p className="text-sm text-gray-700 leading-relaxed mb-3 flex-1 line-clamp-3">
           {product.shortDescription}
         </p>
 
@@ -95,8 +95,11 @@ export default function ProductCard({ product, showAffiliateButton = false }: Pr
         {/* Price + actions */}
         <div className="flex items-center justify-between gap-2 mt-auto">
           <div>
-            <p className="text-xs text-gray-400">HPLC Verified</p>
-            <p className="font-bold text-gray-900">${product.price.toFixed(2)}</p>
+            <p className="text-xs text-gray-800">HPLC Verified</p>
+            <div className="flex items-baseline gap-1.5">
+              <p className="font-bold text-gray-900">${product.salePrice.toFixed(2)}</p>
+              <p className="text-xs line-through" style={{ color: '#a1a1b5' }}>${product.price.toFixed(2)}</p>
+            </div>
           </div>
           <div className="flex gap-2">
             <Link href={`/products/${product.slug}`} className="btn-secondary py-2 px-3 text-xs">

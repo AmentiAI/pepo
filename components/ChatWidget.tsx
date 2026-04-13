@@ -115,7 +115,7 @@ export default function ChatWidget() {
             </div>
             <div className="min-w-0">
               <p className="text-sm font-semibold text-gray-900 leading-tight">Peak AI Advisor</p>
-              <p className="text-xs text-gray-500 truncate">PeptidesClav protocol specialist</p>
+              <p className="text-xs text-gray-700 truncate">PeptidesClav protocol specialist</p>
             </div>
             <div className="ml-auto flex items-center gap-1.5 shrink-0">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
@@ -171,12 +171,12 @@ export default function ChatWidget() {
                           <p className="text-xs font-bold text-gray-900 truncate group-hover:text-yellow-700 transition-colors">
                             {product.name}
                           </p>
-                          <p className="text-[10px] text-gray-500 truncate mt-0.5">{product.category}</p>
+                          <p className="text-[10px] text-gray-700 truncate mt-0.5">{product.category}</p>
                           <p className="text-xs font-semibold text-amber-600 mt-1">${product.price}</p>
                         </div>
 
                         {/* Arrow */}
-                        <ExternalLink size={12} className="text-gray-400 group-hover:text-yellow-600 transition-colors shrink-0" />
+                        <ExternalLink size={12} className="text-gray-800 group-hover:text-yellow-600 transition-colors shrink-0" />
                       </Link>
                     ))}
                   </div>
@@ -221,7 +221,7 @@ export default function ChatWidget() {
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKey}
               placeholder="Ask about peptides, dosing, stacks..."
-              className="flex-1 bg-gray-50 border border-gray-200 rounded-xl px-3.5 py-2.5 text-sm text-gray-900 placeholder:text-gray-400 outline-none focus:border-yellow-400 transition-colors min-w-0"
+              className="flex-1 bg-gray-50 border border-gray-200 rounded-xl px-3.5 py-2.5 text-sm text-gray-900 placeholder:text-gray-800 outline-none focus:border-yellow-400 transition-colors min-w-0"
             />
             <button
               onClick={send}

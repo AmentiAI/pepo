@@ -162,7 +162,7 @@ const storageGuide = [
     temp: 'Room temperature',
     duration: '12–24 months (sealed)',
     note: 'Keep sealed and away from light and moisture',
-    icon: <Package size={18} className="text-gray-500" />,
+    icon: <Package size={18} className="text-gray-700" />,
     bg: 'bg-zinc-500/10',
     border: 'border-zinc-600/30',
   },
@@ -219,9 +219,9 @@ export default function ReconstitutePeptidesPage() {
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 mb-5 flex-wrap">
             <Link href="/" className="badge hover:text-gray-900 transition-colors">Home</Link>
-            <ChevronRight size={14} className="text-gray-400" />
+            <ChevronRight size={14} className="text-gray-800" />
             <span className="badge badge-cyan">How-To</span>
-            <ChevronRight size={14} className="text-gray-400" />
+            <ChevronRight size={14} className="text-gray-800" />
             <span className="badge">Reconstitute Peptides</span>
           </div>
 
@@ -230,7 +230,7 @@ export default function ReconstitutePeptidesPage() {
               <span className="text-gray-900">How to </span>
               <span className="gradient-text">Reconstitute Peptides</span>
             </h1>
-            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-700 leading-relaxed mb-8 max-w-2xl">
               Peptides arrive as lyophilized (freeze-dried) powder and must be reconstituted with
               bacteriostatic water before use. Done correctly, it takes under 2 minutes. Done
               wrong, you waste the vial. This guide covers every step with dosing math included.
@@ -258,7 +258,7 @@ export default function ReconstitutePeptidesPage() {
                 <div className="mt-0.5">{stat.icon}</div>
                 <div>
                   <p className="text-xl font-bold text-gray-900">{stat.value}</p>
-                  <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
+                  <p className="text-xs text-gray-700 mt-0.5">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -274,7 +274,7 @@ export default function ReconstitutePeptidesPage() {
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           What You Need
         </h2>
-        <p className="text-gray-500 mb-10 max-w-2xl">
+        <p className="text-gray-700 mb-10 max-w-2xl">
           Gather everything before you start. Working with all supplies at hand prevents
           contamination from unnecessary movement during the process.
         </p>
@@ -290,7 +290,7 @@ export default function ReconstitutePeptidesPage() {
               </div>
               <div>
                 <p className="font-semibold text-gray-900 text-sm mb-1">{s.item}</p>
-                <p className="text-xs text-gray-500 leading-relaxed">{s.detail}</p>
+                <p className="text-xs text-gray-700 leading-relaxed">{s.detail}</p>
               </div>
             </div>
           ))}
@@ -304,7 +304,7 @@ export default function ReconstitutePeptidesPage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
             Reconstitution Process
           </h2>
-          <p className="text-gray-500 mb-10 max-w-2xl">
+          <p className="text-gray-700 mb-10 max-w-2xl">
             Follow these steps in order. Do not skip the swabbing step — it is the most commonly
             skipped and the most critical for preventing contamination.
           </p>
@@ -330,7 +330,7 @@ export default function ReconstitutePeptidesPage() {
                       <div className={`w-2 h-2 rounded-full ${step.bg}`} />
                       <h3 className={`font-bold text-sm ${step.color}`}>{step.title}</h3>
                     </div>
-                    <p className="text-sm text-gray-500 leading-relaxed">{step.detail}</p>
+                    <p className="text-sm text-gray-700 leading-relaxed">{step.detail}</p>
                   </div>
                 </div>
               ))}
@@ -347,7 +347,7 @@ export default function ReconstitutePeptidesPage() {
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           Reconstitution Calculator
         </h2>
-        <p className="text-gray-500 mb-8 max-w-2xl">
+        <p className="text-gray-700 mb-8 max-w-2xl">
           Enter your vial size, BAC water volume, and desired dose to get exact draw amounts for
           your insulin syringe — no math required.
         </p>
@@ -375,7 +375,7 @@ export default function ReconstitutePeptidesPage() {
                   <p className="text-xs text-yellow-600">Recommended</p>
                 </div>
               </div>
-              <ul className="space-y-3 text-sm text-gray-500">
+              <ul className="space-y-3 text-sm text-gray-700">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 size={14} className="text-yellow-600 mt-0.5 shrink-0" />
                   Contains 0.9% benzyl alcohol — prevents bacterial growth
@@ -407,7 +407,7 @@ export default function ReconstitutePeptidesPage() {
                   <p className="text-xs text-red-400">Single-use only</p>
                 </div>
               </div>
-              <ul className="space-y-3 text-sm text-gray-500">
+              <ul className="space-y-3 text-sm text-gray-700">
                 <li className="flex items-start gap-2">
                   <AlertTriangle size={14} className="text-red-400 mt-0.5 shrink-0" />
                   No preservative — bacterial growth can begin within hours
@@ -438,7 +438,7 @@ export default function ReconstitutePeptidesPage() {
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           Common Reconstitution Mistakes
         </h2>
-        <p className="text-gray-500 mb-10 max-w-2xl">
+        <p className="text-gray-700 mb-10 max-w-2xl">
           These are the mistakes that waste expensive peptide vials or create safety risks. Review
           them before your first reconstitution.
         </p>
@@ -456,10 +456,10 @@ export default function ReconstitutePeptidesPage() {
                 </div>
               </div>
               <div>
-                <p className="text-xs text-gray-500 leading-relaxed">{m.consequence}</p>
+                <p className="text-xs text-gray-700 leading-relaxed">{m.consequence}</p>
               </div>
               <div>
-                <p className="text-xs text-gray-500 leading-relaxed">
+                <p className="text-xs text-gray-700 leading-relaxed">
                   <span className="text-yellow-600 font-semibold">Fix: </span>{m.fix}
                 </p>
               </div>
@@ -485,10 +485,10 @@ export default function ReconstitutePeptidesPage() {
                 <div className={`w-10 h-10 rounded-xl ${s.bg} flex items-center justify-center mb-4`}>
                   {s.icon}
                 </div>
-                <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">{s.condition}</p>
+                <p className="text-xs text-gray-700 uppercase tracking-wider mb-1">{s.condition}</p>
                 <p className="text-2xl font-extrabold text-gray-900 mb-1">{s.duration}</p>
-                <p className="text-sm text-gray-500 mb-3">{s.temp}</p>
-                <p className="text-xs text-gray-400 leading-relaxed">{s.note}</p>
+                <p className="text-sm text-gray-700 mb-3">{s.temp}</p>
+                <p className="text-xs text-gray-800 leading-relaxed">{s.note}</p>
               </div>
             ))}
           </div>
@@ -499,7 +499,7 @@ export default function ReconstitutePeptidesPage() {
             <Shield size={18} className="text-yellow-600 shrink-0 mt-0.5" />
             <div>
               <p className="font-semibold text-gray-900 text-sm mb-1">Freeze-thaw cycles</p>
-              <p className="text-sm text-gray-500 leading-relaxed">
+              <p className="text-sm text-gray-700 leading-relaxed">
                 If freezing reconstituted peptides, avoid repeated freeze-thaw cycles. Each cycle of
                 freezing and thawing can cause minor peptide bond stress. Best practice: divide your
                 reconstituted vial into smaller aliquots (using sterile vials) before freezing, then
@@ -518,7 +518,7 @@ export default function ReconstitutePeptidesPage() {
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           Syringe and Needle Guide
         </h2>
-        <p className="text-gray-500 mb-8 max-w-2xl">
+        <p className="text-gray-700 mb-8 max-w-2xl">
           The right syringe makes reconstitution and injection accurate and comfortable. Using the
           wrong gauge increases pain and imprecision.
         </p>
@@ -575,9 +575,9 @@ export default function ReconstitutePeptidesPage() {
               <div className={`w-8 h-8 rounded-lg ${item.bg} flex items-center justify-center mb-3`}>
                 <Syringe size={15} className={item.color} />
               </div>
-              <p className="text-xs text-gray-500 mb-1">{item.label}</p>
+              <p className="text-xs text-gray-700 mb-1">{item.label}</p>
               <p className={`font-bold text-sm mb-2 ${item.color}`}>{item.value}</p>
-              <p className="text-xs text-gray-500 leading-relaxed">{item.detail}</p>
+              <p className="text-xs text-gray-700 leading-relaxed">{item.detail}</p>
             </div>
           ))}
         </div>
@@ -598,7 +598,7 @@ export default function ReconstitutePeptidesPage() {
                 style={{ borderColor: 'var(--border)', background: 'var(--bg)' }}
               >
                 <h3 className="font-bold text-gray-900 mb-3">{faq.q}</h3>
-                <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
+                <p className="text-sm text-gray-700 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -611,7 +611,7 @@ export default function ReconstitutePeptidesPage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
             Ready to Mix Your Peptides?
           </h2>
-          <p className="text-gray-500 max-w-xl mx-auto">
+          <p className="text-gray-700 max-w-xl mx-auto">
             Get pharmaceutical-grade bacteriostatic water for safe, reliable reconstitution — or
             read the injection guide for the next step after mixing.
           </p>

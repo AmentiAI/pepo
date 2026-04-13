@@ -68,14 +68,14 @@ export default function SleepPage() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-2 mb-5">
               <span className="badge">Category</span>
-              <ChevronRight size={14} className="text-gray-400" />
+              <ChevronRight size={14} className="text-gray-800" />
               <span className="badge badge-cyan">Sleep</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
               <span className="text-gray-900">Peptides for </span>
               <span className="gradient-text">Sleep</span>
             </h1>
-            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-700 leading-relaxed mb-8 max-w-2xl">
               Ipamorelin and CJC-1295 are the most effective peptides for deep sleep enhancement.
               By amplifying the natural nocturnal growth hormone surge, they dramatically improve
               Stage 3 slow-wave sleep — the phase responsible for true physical and cognitive
@@ -104,7 +104,7 @@ export default function SleepPage() {
                 <div className="mt-0.5">{stat.icon}</div>
                 <div>
                   <p className="text-xl font-bold text-gray-900">{stat.value}</p>
-                  <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
+                  <p className="text-xs text-gray-700 mt-0.5">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -120,7 +120,7 @@ export default function SleepPage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
             Sleep Optimization Products
           </h2>
-          <p className="text-gray-500 max-w-2xl">
+          <p className="text-gray-700 max-w-2xl">
             Every peptide in this category has been selected for its evidence base in sleep quality
             enhancement, GH pulsatility, and circadian rhythm restoration.
           </p>
@@ -145,7 +145,7 @@ export default function SleepPage() {
                 <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   {sleepStack.name}
                 </h2>
-                <p className="text-gray-500 leading-relaxed mb-6">
+                <p className="text-gray-700 leading-relaxed mb-6">
                   {sleepStack.shortDescription}
                 </p>
                 <div className="flex flex-wrap gap-3 mb-8">
@@ -159,7 +159,7 @@ export default function SleepPage() {
                       className="px-4 py-2.5 rounded-xl border"
                       style={{ background: 'var(--bg)', borderColor: 'var(--border)' }}
                     >
-                      <p className="text-[11px] text-gray-500 uppercase tracking-wider">{item.label}</p>
+                      <p className="text-[11px] text-gray-700 uppercase tracking-wider">{item.label}</p>
                       <p className="text-sm font-semibold text-gray-900 mt-0.5">{item.value}</p>
                     </div>
                   ))}
@@ -171,7 +171,7 @@ export default function SleepPage() {
               </div>
 
               <div className="space-y-4">
-                <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider">
+                <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider">
                   Expected Results
                 </h3>
                 {sleepStack.expectedResults.map((result, i) => (
@@ -194,7 +194,7 @@ export default function SleepPage() {
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">How These Peptides Enhance Sleep</h2>
-          <p className="text-gray-500 max-w-2xl mx-auto">
+          <p className="text-gray-700 max-w-2xl mx-auto">
             Ipamorelin/CJC-1295 and NAD+ target distinct but complementary aspects of sleep
             architecture — GH pulsatility and circadian rhythm restoration.
           </p>
@@ -241,12 +241,12 @@ export default function SleepPage() {
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900">{item.name}</h3>
-                  <p className="text-xs text-gray-500">{item.subtitle}</p>
+                  <p className="text-xs text-gray-700">{item.subtitle}</p>
                 </div>
               </div>
               <ul className="space-y-3">
                 {item.points.map((point, i) => (
-                  <li key={i} className="flex items-start gap-2.5 text-sm text-gray-500">
+                  <li key={i} className="flex items-start gap-2.5 text-sm text-gray-700">
                     <CheckCircle2
                       size={14}
                       className={`mt-0.5 shrink-0 ${
@@ -277,7 +277,7 @@ export default function SleepPage() {
                 style={{ background: 'var(--bg)', borderColor: 'var(--border)' }}
               >
                 <p className="font-semibold text-gray-900 mb-2">{faq.q}</p>
-                <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
+                <p className="text-sm text-gray-700 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -287,7 +287,7 @@ export default function SleepPage() {
       {/* CTA */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 text-center">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">Ready to Transform Your Sleep?</h2>
-        <p className="text-gray-500 mb-8 max-w-xl mx-auto">
+        <p className="text-gray-700 mb-8 max-w-xl mx-auto">
           Browse the complete GH optimization protocol, or go directly to Ipamorelin/CJC-1295
           — the gold standard for deep sleep enhancement.
         </p>

@@ -44,7 +44,7 @@ export default function BlogPage() {
             <span className="text-gray-900">Peptide </span>
             <span className="gradient-text">Blog</span>
           </h1>
-          <p className="text-lg text-gray-500 max-w-2xl leading-relaxed">
+          <p className="text-lg text-gray-700 max-w-2xl leading-relaxed">
             Evidence-based articles on peptide research, looksmaxxing protocols, clinical trial data, and beginner guides. Updated as new science drops.
           </p>
         </div>
@@ -60,18 +60,18 @@ export default function BlogPage() {
             <div className="absolute top-0 right-0 w-64 h-64 bg-gray-900/5 rounded-full blur-3xl" />
             <div className="relative">
               <div className="flex items-center gap-3 mb-4">
-                <span className={`inline-flex items-center px-2.5 py-1 rounded-lg text-xs font-semibold border ${categoryColors[featured.category] ?? 'bg-zinc-800 border-zinc-700 text-gray-500'}`}>
+                <span className={`inline-flex items-center px-2.5 py-1 rounded-lg text-xs font-semibold border ${categoryColors[featured.category] ?? 'bg-zinc-800 border-zinc-700 text-gray-700'}`}>
                   {featured.category}
                 </span>
-                <span className="flex items-center gap-1.5 text-xs text-gray-500">
+                <span className="flex items-center gap-1.5 text-xs text-gray-700">
                   <Clock size={12} /> {featured.readTime}
                 </span>
-                <span className="text-xs text-gray-400">{featured.date}</span>
+                <span className="text-xs text-gray-800">{featured.date}</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 group-hover:text-yellow-500 transition-colors leading-tight">
                 {featured.title}
               </h2>
-              <p className="text-gray-500 mb-6 max-w-3xl leading-relaxed">{featured.description}</p>
+              <p className="text-gray-700 mb-6 max-w-3xl leading-relaxed">{featured.description}</p>
               <div className="flex items-center gap-2 text-yellow-600 font-medium">
                 Read article <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
               </div>
@@ -82,29 +82,29 @@ export default function BlogPage() {
 
       {/* Article grid */}
       <section className="pb-10 sm:pb-20 max-w-7xl mx-auto px-4 sm:px-6">
-        <p className="text-xs font-semibold tracking-widest text-gray-500 uppercase mb-6">All Articles</p>
+        <p className="text-xs font-semibold tracking-widest text-gray-700 uppercase mb-6">All Articles</p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {rest.map((article) => (
             <Link key={article.slug} href={`/blog/${article.slug}`} className="group card p-6 flex flex-col hover:border-yellow-400/40 transition-colors">
               <div className="flex items-center gap-2 mb-4">
-                <span className={`inline-flex items-center px-2 py-0.5 rounded-md text-xs font-semibold border ${categoryColors[article.category] ?? 'bg-zinc-800 border-zinc-700 text-gray-500'}`}>
+                <span className={`inline-flex items-center px-2 py-0.5 rounded-md text-xs font-semibold border ${categoryColors[article.category] ?? 'bg-zinc-800 border-zinc-700 text-gray-700'}`}>
                   {article.category}
                 </span>
-                <span className="flex items-center gap-1 text-xs text-gray-400">
+                <span className="flex items-center gap-1 text-xs text-gray-800">
                   <Clock size={11} /> {article.readTime}
                 </span>
               </div>
               <h3 className="font-bold text-gray-900 mb-2 leading-snug group-hover:text-yellow-500 transition-colors flex-1">
                 {article.title}
               </h3>
-              <p className="text-sm text-gray-500 mb-4 leading-relaxed line-clamp-2">{article.description}</p>
+              <p className="text-sm text-gray-700 mb-4 leading-relaxed line-clamp-2">{article.description}</p>
               <div className="flex flex-wrap gap-1.5 mb-4">
                 {article.tags.slice(0, 3).map((tag) => (
                   <span key={tag} className="tag-chip text-xs">{tag}</span>
                 ))}
               </div>
               <div className="flex items-center justify-between mt-auto pt-4 border-t" style={{ borderColor: 'var(--border)' }}>
-                <span className="text-xs text-gray-400">{article.date}</span>
+                <span className="text-xs text-gray-800">{article.date}</span>
                 <span className="flex items-center gap-1 text-yellow-600 text-xs font-medium group-hover:gap-2 transition-all">
                   Read <ArrowRight size={12} />
                 </span>

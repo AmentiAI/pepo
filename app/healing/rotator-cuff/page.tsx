@@ -97,9 +97,9 @@ export default function RotatorCuffPage() {
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 mb-5 flex-wrap">
             <Link href="/" className="badge hover:text-gray-900 transition-colors">Home</Link>
-            <ChevronRight size={14} className="text-gray-400" />
+            <ChevronRight size={14} className="text-gray-800" />
             <Link href="/healing" className="badge hover:text-gray-900 transition-colors">Healing</Link>
-            <ChevronRight size={14} className="text-gray-400" />
+            <ChevronRight size={14} className="text-gray-800" />
             <span className="badge badge-cyan">Rotator Cuff</span>
           </div>
 
@@ -109,7 +109,7 @@ export default function RotatorCuffPage() {
               <span className="gradient-text">Rotator Cuff</span>
               <span className="text-gray-900"> Recovery</span>
             </h1>
-            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-700 leading-relaxed mb-8 max-w-2xl">
               Rotator cuff injuries — tears, tendinopathy, and impingement — are among the most
               stubborn musculoskeletal injuries to heal. BPC-157 and TB-500 address the exact
               biological bottlenecks that stall shoulder recovery.
@@ -137,7 +137,7 @@ export default function RotatorCuffPage() {
                 <div className="mt-0.5">{stat.icon}</div>
                 <div>
                   <p className="text-xl font-bold text-gray-900">{stat.value}</p>
-                  <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
+                  <p className="text-xs text-gray-700 mt-0.5">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -154,7 +154,7 @@ export default function RotatorCuffPage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
             Rotator Cuff Peptide Protocol
           </h2>
-          <p className="text-gray-500 max-w-2xl">
+          <p className="text-gray-700 max-w-2xl">
             This protocol is designed for rotator cuff tears (partial and full), supraspinatus
             tendinopathy, impingement syndrome, and labrum injuries.
           </p>
@@ -172,24 +172,24 @@ export default function RotatorCuffPage() {
               </div>
               <div>
                 <p className="font-bold text-gray-900">BPC-157</p>
-                <p className="text-xs text-gray-500">Body Protective Compound</p>
+                <p className="text-xs text-gray-700">Body Protective Compound</p>
               </div>
             </div>
             <div className="space-y-3">
               <div className="flex justify-between text-sm">
-                <span className="text-gray-500">Dose</span>
+                <span className="text-gray-700">Dose</span>
                 <span className="text-gray-900 font-semibold">500 mcg per injection</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-gray-500">Frequency</span>
+                <span className="text-gray-700">Frequency</span>
                 <span className="text-gray-900 font-semibold">2× per day</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-gray-500">Injection site</span>
+                <span className="text-gray-700">Injection site</span>
                 <span className="text-gray-900 font-semibold">Near shoulder / subacromial</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-gray-500">Route</span>
+                <span className="text-gray-700">Route</span>
                 <span className="text-gray-900 font-semibold">Subcutaneous</span>
               </div>
             </div>
@@ -206,24 +206,24 @@ export default function RotatorCuffPage() {
               </div>
               <div>
                 <p className="font-bold text-gray-900">TB-500</p>
-                <p className="text-xs text-gray-500">Thymosin Beta-4</p>
+                <p className="text-xs text-gray-700">Thymosin Beta-4</p>
               </div>
             </div>
             <div className="space-y-3">
               <div className="flex justify-between text-sm">
-                <span className="text-gray-500">Dose</span>
+                <span className="text-gray-700">Dose</span>
                 <span className="text-gray-900 font-semibold">5 mg per injection</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-gray-500">Frequency</span>
+                <span className="text-gray-700">Frequency</span>
                 <span className="text-gray-900 font-semibold">2× per week</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-gray-500">Injection site</span>
+                <span className="text-gray-700">Injection site</span>
                 <span className="text-gray-900 font-semibold">Abdomen (systemic)</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-gray-500">Route</span>
+                <span className="text-gray-700">Route</span>
                 <span className="text-gray-900 font-semibold">Subcutaneous</span>
               </div>
             </div>
@@ -238,7 +238,7 @@ export default function RotatorCuffPage() {
               <Clock size={18} className="text-yellow-600" />
               <p className="font-bold text-gray-900">Protocol Duration</p>
             </div>
-            <p className="text-gray-500 text-sm">
+            <p className="text-gray-700 text-sm">
               <span className="text-gray-900 font-semibold">8–12 weeks</span> for most rotator cuff
               injuries. Partial tears typically resolve by week 8. Full-thickness tears and
               post-surgical cases benefit from the full 12-week course. Follow with a 4-week break
@@ -303,7 +303,7 @@ export default function RotatorCuffPage() {
                   <CheckCircle2 size={16} className={item.accent} />
                 </div>
                 <h3 className="font-bold text-gray-900 text-sm mb-2">{item.title}</h3>
-                <p className="text-xs text-gray-500 leading-relaxed">{item.desc}</p>
+                <p className="text-xs text-gray-700 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -318,7 +318,7 @@ export default function RotatorCuffPage() {
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           Week-by-Week Recovery Timeline
         </h2>
-        <p className="text-gray-500 mb-10 max-w-2xl">
+        <p className="text-gray-700 mb-10 max-w-2xl">
           Individual results vary based on injury severity, age, and baseline health. These
           milestones reflect typical progression for a partial rotator cuff tear or tendinopathy.
         </p>
@@ -335,7 +335,7 @@ export default function RotatorCuffPage() {
                   className="w-10 h-10 rounded-full border-2 flex items-center justify-center shrink-0 z-10"
                   style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
                 >
-                  <span className="text-xs font-bold text-gray-500">{i + 1}</span>
+                  <span className="text-xs font-bold text-gray-700">{i + 1}</span>
                 </div>
                 <div
                   className={`card flex-1 p-5 border ${item.border}`}
@@ -347,7 +347,7 @@ export default function RotatorCuffPage() {
                     </span>
                   </div>
                   <h3 className="font-bold text-gray-900 mb-1">{item.title}</h3>
-                  <p className="text-sm text-gray-500 leading-relaxed">{item.description}</p>
+                  <p className="text-sm text-gray-700 leading-relaxed">{item.description}</p>
                 </div>
               </div>
             ))}
@@ -372,7 +372,7 @@ export default function RotatorCuffPage() {
                 style={{ borderColor: 'var(--border)', background: 'var(--bg)' }}
               >
                 <h3 className="font-bold text-gray-900 mb-3">{faq.q}</h3>
-                <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
+                <p className="text-sm text-gray-700 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -387,7 +387,7 @@ export default function RotatorCuffPage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
             Ready to Start Your Recovery?
           </h2>
-          <p className="text-gray-500 max-w-xl mx-auto">
+          <p className="text-gray-700 max-w-xl mx-auto">
             The Ultimate Healing Stack includes both BPC-157 and TB-500 with full protocol
             guidance — everything you need for rotator cuff recovery.
           </p>
@@ -401,7 +401,7 @@ export default function RotatorCuffPage() {
             BPC-157 Product Page
           </Link>
         </div>
-        <div className="mt-8 flex flex-wrap justify-center gap-4 text-sm text-gray-500">
+        <div className="mt-8 flex flex-wrap justify-center gap-4 text-sm text-gray-700">
           <Link href="/healing" className="hover:text-gray-700 transition-colors">
             ← Back to All Healing Protocols
           </Link>

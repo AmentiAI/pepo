@@ -207,7 +207,7 @@ export default function GLP1ComparisonPage() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-2 mb-5">
               <span className="badge">GLP-1 Peptides</span>
-              <ChevronRight size={14} className="text-gray-400" />
+              <ChevronRight size={14} className="text-gray-800" />
               <span className="badge badge-cyan">Clinical Comparison</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
@@ -217,7 +217,7 @@ export default function GLP1ComparisonPage() {
               <span className="text-gray-900"> vs </span>
               <span className="gradient-text">Retatrutide</span>
             </h1>
-            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-700 leading-relaxed mb-8 max-w-2xl">
               A head-to-head comparison based on clinical trial data — weight loss percentages, receptor
               mechanisms, dosing protocols, and which compound is the right fit for your goals in 2026.
             </p>
@@ -238,13 +238,13 @@ export default function GLP1ComparisonPage() {
               { icon: <Zap size={18} className="text-yellow-600" />, value: '14.9%', label: 'Semaglutide (STEP-1)' },
               { icon: <TrendingUp size={18} className="text-yellow-600" />, value: '22.5%', label: 'Tirzepatide (SURMOUNT-1)' },
               { icon: <Flame size={18} className="text-yellow-600" />, value: '24.2%', label: 'Retatrutide (Phase 2)' },
-              { icon: <Scale size={18} className="text-gray-500" />, value: '3', label: 'Compounds compared' },
+              { icon: <Scale size={18} className="text-gray-700" />, value: '3', label: 'Compounds compared' },
             ].map((stat) => (
               <div key={stat.label} className="card p-4 flex items-start gap-3">
                 <div className="mt-0.5">{stat.icon}</div>
                 <div>
                   <p className="text-xl font-bold text-gray-900">{stat.value}</p>
-                  <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
+                  <p className="text-xs text-gray-700 mt-0.5">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -258,7 +258,7 @@ export default function GLP1ComparisonPage() {
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="mb-10">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">Quick Summary</h2>
-          <p className="text-gray-500 max-w-2xl">
+          <p className="text-gray-700 max-w-2xl">
             Not sure which compound to choose? Here's the short answer based on your primary goal.
           </p>
         </div>
@@ -274,11 +274,11 @@ export default function GLP1ComparisonPage() {
                 <div className={`w-10 h-10 rounded-xl flex items-center justify-center mb-4 ${c.badge}`}>
                   <span className={c.icon}>{card.icon}</span>
                 </div>
-                <p className="text-xs font-semibold tracking-widest uppercase text-gray-500 mb-1">
+                <p className="text-xs font-semibold tracking-widest uppercase text-gray-700 mb-1">
                   {card.label}
                 </p>
                 <p className={`text-2xl font-bold mb-2 ${c.tag}`}>{card.compound}</p>
-                <p className="text-sm text-gray-500">{card.reason}</p>
+                <p className="text-sm text-gray-700">{card.reason}</p>
               </div>
             );
           })}
@@ -292,7 +292,7 @@ export default function GLP1ComparisonPage() {
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
               Side-by-Side Comparison
             </h2>
-            <p className="text-gray-500 max-w-2xl">
+            <p className="text-gray-700 max-w-2xl">
               Clinical data, receptor targets, dosing ranges, and product links for each compound.
             </p>
           </div>
@@ -316,7 +316,7 @@ export default function GLP1ComparisonPage() {
                     </div>
                     <div className="text-right">
                       <p className={`text-3xl font-extrabold ${colors.tag}`}>{c.weightLoss}</p>
-                      <p className="text-xs text-gray-500">weight loss</p>
+                      <p className="text-xs text-gray-700">weight loss</p>
                     </div>
                   </div>
 
@@ -333,12 +333,12 @@ export default function GLP1ComparisonPage() {
                         className="flex items-center justify-between py-2 border-b"
                         style={{ borderColor: 'var(--border)' }}
                       >
-                        <span className="text-xs text-gray-500 uppercase tracking-wider">{row.label}</span>
+                        <span className="text-xs text-gray-700 uppercase tracking-wider">{row.label}</span>
                         <span className="text-sm font-medium text-gray-700">{row.value}</span>
                       </div>
                     ))}
                     <div className="pt-1">
-                      <p className="text-xs text-gray-500 uppercase tracking-wider mb-1.5">Best for</p>
+                      <p className="text-xs text-gray-700 uppercase tracking-wider mb-1.5">Best for</p>
                       <p className="text-sm text-gray-700">{c.bestFor}</p>
                     </div>
                   </div>
@@ -370,7 +370,7 @@ export default function GLP1ComparisonPage() {
               </span>
             </div>
             <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Semaglutide</h2>
-            <p className="text-gray-500 leading-relaxed mb-6">
+            <p className="text-gray-700 leading-relaxed mb-6">
               Semaglutide is the proven entry point into GLP-1 therapy. Targeting the GLP-1 receptor
               exclusively, it powerfully reduces appetite and delays gastric emptying. With 68 weeks of
               STEP-1 data behind it and FDA approval for both T2D (Ozempic) and obesity (Wegovy), it
@@ -378,7 +378,7 @@ export default function GLP1ComparisonPage() {
             </p>
             <ul className="space-y-3 mb-8">
               {compounds[0].highlights.map((h, i) => (
-                <li key={i} className="flex items-start gap-2.5 text-sm text-gray-500">
+                <li key={i} className="flex items-start gap-2.5 text-sm text-gray-700">
                   <CheckCircle2 size={14} className="mt-0.5 shrink-0 text-yellow-600" />
                   {h}
                 </li>
@@ -393,7 +393,7 @@ export default function GLP1ComparisonPage() {
           </div>
           <div className="card p-6 border border-yellow-600/20">
             <h3 className="font-semibold text-gray-900 mb-4">STEP-1 Trial Results</h3>
-            <div className="space-y-4 text-sm text-gray-500">
+            <div className="space-y-4 text-sm text-gray-700">
               <div className="flex justify-between items-center">
                 <span>Trial name</span><span className="text-gray-900 font-medium">STEP-1</span>
               </div>
@@ -420,7 +420,7 @@ export default function GLP1ComparisonPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="card p-6 border border-cyan-500/20 order-2 lg:order-1">
               <h3 className="font-semibold text-gray-900 mb-4">SURMOUNT-1 Trial Results</h3>
-              <div className="space-y-4 text-sm text-gray-500">
+              <div className="space-y-4 text-sm text-gray-700">
                 <div className="flex justify-between items-center">
                   <span>Trial name</span><span className="text-gray-900 font-medium">SURMOUNT-1</span>
                 </div>
@@ -446,7 +446,7 @@ export default function GLP1ComparisonPage() {
                 </span>
               </div>
               <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Tirzepatide</h2>
-              <p className="text-gray-500 leading-relaxed mb-6">
+              <p className="text-gray-700 leading-relaxed mb-6">
                 Tirzepatide's dual GIP+GLP-1 mechanism is what separates it from semaglutide. The GIP
                 receptor co-agonism acts directly on fat cells and increases insulin sensitivity
                 independently of appetite — explaining the 7-percentage-point superiority over semaglutide
@@ -455,7 +455,7 @@ export default function GLP1ComparisonPage() {
               </p>
               <ul className="space-y-3 mb-8">
                 {compounds[1].highlights.map((h, i) => (
-                  <li key={i} className="flex items-start gap-2.5 text-sm text-gray-500">
+                  <li key={i} className="flex items-start gap-2.5 text-sm text-gray-700">
                     <CheckCircle2 size={14} className="mt-0.5 shrink-0 text-yellow-600" />
                     {h}
                   </li>
@@ -481,7 +481,7 @@ export default function GLP1ComparisonPage() {
               </span>
             </div>
             <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Retatrutide</h2>
-            <p className="text-gray-500 leading-relaxed mb-6">
+            <p className="text-gray-700 leading-relaxed mb-6">
               Retatrutide adds a third receptor — glucagon — to the GLP-1+GIP dual mechanism of
               tirzepatide. Glucagon receptor activation drives direct fat oxidation, thermogenesis, and
               liver fat burning, adding a metabolic layer absent in the other two compounds. At 24.2% mean
@@ -490,7 +490,7 @@ export default function GLP1ComparisonPage() {
             </p>
             <ul className="space-y-3 mb-8">
               {compounds[2].highlights.map((h, i) => (
-                <li key={i} className="flex items-start gap-2.5 text-sm text-gray-500">
+                <li key={i} className="flex items-start gap-2.5 text-sm text-gray-700">
                   <CheckCircle2 size={14} className="mt-0.5 shrink-0 text-yellow-600" />
                   {h}
                 </li>
@@ -503,7 +503,7 @@ export default function GLP1ComparisonPage() {
           </div>
           <div className="card p-6 border border-fuchsia-600/20">
             <h3 className="font-semibold text-gray-900 mb-4">Phase 2 Trial Results</h3>
-            <div className="space-y-4 text-sm text-gray-500">
+            <div className="space-y-4 text-sm text-gray-700">
               <div className="flex justify-between items-center">
                 <span>Phase</span><span className="text-gray-900 font-medium">Phase 2 (Eli Lilly)</span>
               </div>
@@ -531,7 +531,7 @@ export default function GLP1ComparisonPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">How to Choose</h2>
-            <p className="text-gray-500 max-w-2xl">
+            <p className="text-gray-700 max-w-2xl">
               Match your situation to the right compound. These recommendations are based on clinical trial
               data, compound maturity, and user goals.
             </p>
@@ -546,14 +546,14 @@ export default function GLP1ComparisonPage() {
                   style={{ background: 'var(--bg)', borderColor: 'var(--border)' }}
                 >
                   <div className="sm:w-1/2">
-                    <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">If you…</p>
+                    <p className="text-xs text-gray-700 uppercase tracking-wider mb-1">If you…</p>
                     <p className="font-semibold text-gray-900">{item.condition}</p>
                   </div>
                   <div className="sm:w-1/2 flex items-start gap-3">
                     <div className={`w-2 h-2 rounded-full mt-1.5 shrink-0 ${c.dot}`} />
                     <div>
                       <span className={`text-sm font-bold ${c.tag}`}>{item.recommendation}</span>
-                      <p className="text-xs text-gray-500 mt-0.5">{item.detail}</p>
+                      <p className="text-xs text-gray-700 mt-0.5">{item.detail}</p>
                     </div>
                   </div>
                 </div>
@@ -573,13 +573,13 @@ export default function GLP1ComparisonPage() {
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
               Combining GLP-1 with GH Peptides
             </h2>
-            <p className="text-gray-500 leading-relaxed mb-5">
+            <p className="text-gray-700 leading-relaxed mb-5">
               One of the most common protocols for experienced users is pairing any GLP-1 compound with
               Ipamorelin/CJC-1295. The reason is straightforward: aggressive fat loss from GLP-1 agents
               creates a significant caloric deficit, and without anabolic support, lean muscle mass is
               lost alongside fat.
             </p>
-            <p className="text-gray-500 leading-relaxed mb-6">
+            <p className="text-gray-700 leading-relaxed mb-6">
               Ipamorelin stimulates growth hormone release in a pulsatile, ghrelin-independent manner,
               preserving lean tissue during aggressive cuts. CJC-1295 extends GH half-life, making the
               combination significantly more effective than either alone. Together they act as an
@@ -610,7 +610,7 @@ export default function GLP1ComparisonPage() {
                     <div className={`w-1.5 h-1.5 rounded-full mt-1.5 shrink-0 ${c.dot}`} />
                     <div>
                       <p className="text-sm font-semibold text-gray-900">{item.title}</p>
-                      <p className="text-xs text-gray-500 mt-0.5">{item.desc}</p>
+                      <p className="text-xs text-gray-700 mt-0.5">{item.desc}</p>
                     </div>
                   </div>
                 );
@@ -624,7 +624,7 @@ export default function GLP1ComparisonPage() {
       <section className="py-10 sm:py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Ready to Start?</h2>
-          <p className="text-gray-500 mb-10 max-w-xl mx-auto">
+          <p className="text-gray-700 mb-10 max-w-xl mx-auto">
             Browse individual compounds or go straight to the GLP-1 fat loss stack that combines the
             best peptides for maximum results.
           </p>

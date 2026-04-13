@@ -99,14 +99,14 @@ export default function MK677Page() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-2 mb-5">
               <span className="badge">Peptides</span>
-              <ChevronRight size={14} className="text-gray-400" />
+              <ChevronRight size={14} className="text-gray-800" />
               <span className="badge badge-cyan">GH Secretagogue</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
               <span className="gradient-text">MK-677</span>
               <span className="text-gray-900"> (Ibutamoren)</span>
             </h1>
-            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-700 leading-relaxed mb-8 max-w-2xl">
               MK-677 is a ghrelin receptor agonist that stimulates the pituitary gland to release
               growth hormone — orally, with a 24-hour half-life, and no injections required.
               It&apos;s the only GH secretagogue that works as a daily capsule, making it the
@@ -151,7 +151,7 @@ export default function MK677Page() {
                 <div className="mt-0.5">{stat.icon}</div>
                 <div>
                   <p className="text-xl font-bold text-gray-900">{stat.value}</p>
-                  <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
+                  <p className="text-xs text-gray-700 mt-0.5">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -169,19 +169,19 @@ export default function MK677Page() {
             <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-5">
               What Is MK-677?
             </h2>
-            <p className="text-gray-500 leading-relaxed mb-5">
+            <p className="text-gray-700 leading-relaxed mb-5">
               MK-677 (also known as Ibutamoren or Nutrobal) is a non-peptide ghrelin receptor
               agonist. It binds to the growth hormone secretagogue receptor (GHSR-1a) — the same
               receptor activated by the hunger hormone ghrelin — and signals the pituitary gland
               to release growth hormone in large, sustained pulses.
             </p>
-            <p className="text-gray-500 leading-relaxed mb-5">
+            <p className="text-gray-700 leading-relaxed mb-5">
               Unlike synthetic GH injections, MK-677 works through your body&apos;s own feedback
               systems, meaning it stimulates endogenous GH production rather than replacing it.
               This preserves the natural pulsatile rhythm of GH secretion and avoids many of the
               risks associated with exogenous GH.
             </p>
-            <p className="text-gray-500 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed">
               <strong className="text-gray-800">Important distinction:</strong> MK-677 is
               technically a small molecule, not a peptide. However, it is grouped alongside
               peptides like Ipamorelin and CJC-1295 because it accomplishes the same physiological
@@ -223,7 +223,7 @@ export default function MK677Page() {
                 />
                 <div>
                   <p className="text-sm font-semibold text-gray-900 mb-1">{item.title}</p>
-                  <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
+                  <p className="text-sm text-gray-700 leading-relaxed">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -239,7 +239,7 @@ export default function MK677Page() {
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               MK-677 vs Injectable GH Peptides
             </h2>
-            <p className="text-gray-500 max-w-2xl mx-auto">
+            <p className="text-gray-700 max-w-2xl mx-auto">
               Choosing between MK-677 and injectable peptides like Ipamorelin/CJC-1295 depends
               on your goals, lifestyle, and experience level.
             </p>
@@ -249,7 +249,7 @@ export default function MK677Page() {
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b" style={{ borderColor: 'var(--border)' }}>
-                  <th className="text-left py-3 px-4 text-gray-500 font-medium w-1/3">Factor</th>
+                  <th className="text-left py-3 px-4 text-gray-700 font-medium w-1/3">Factor</th>
                   <th className="text-left py-3 px-4 text-yellow-600 font-semibold">
                     MK-677 (Ibutamoren)
                   </th>
@@ -302,7 +302,7 @@ export default function MK677Page() {
                   },
                 ].map((row) => (
                   <tr key={row.factor} className="hover:bg-white/2 transition-colors">
-                    <td className="py-3 px-4 text-gray-500 font-medium">{row.factor}</td>
+                    <td className="py-3 px-4 text-gray-700 font-medium">{row.factor}</td>
                     <td className="py-3 px-4 text-gray-700">{row.mk}</td>
                     <td className="py-3 px-4 text-gray-700">{row.inj}</td>
                   </tr>
@@ -318,7 +318,7 @@ export default function MK677Page() {
         <div className="text-center mb-12">
           <span className="badge badge-cyan mb-4 inline-block">Evidence-Backed Benefits</span>
           <h2 className="text-3xl font-bold text-gray-900 mb-4">What MK-677 Does for Your Body</h2>
-          <p className="text-gray-500 max-w-2xl mx-auto">
+          <p className="text-gray-700 max-w-2xl mx-auto">
             By elevating GH and IGF-1, MK-677 triggers a cascade of regenerative and anabolic
             effects across multiple body systems.
           </p>
@@ -369,7 +369,7 @@ export default function MK677Page() {
                 {item.icon}
               </div>
               <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
-              <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
+              <p className="text-sm text-gray-700 leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -384,7 +384,7 @@ export default function MK677Page() {
               <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-5">
                 How to Use MK-677
               </h2>
-              <p className="text-gray-500 leading-relaxed mb-6">
+              <p className="text-gray-700 leading-relaxed mb-6">
                 MK-677 is one of the simplest GH compounds to use — one oral dose per day, no
                 needles, no reconstitution. The key variables are dose, timing, and cycle length.
               </p>
@@ -431,7 +431,7 @@ export default function MK677Page() {
                     </div>
                     <div>
                       <p className="text-gray-900 font-semibold text-sm">{item.value}</p>
-                      <p className="text-xs text-gray-500 mt-0.5">{item.note}</p>
+                      <p className="text-xs text-gray-700 mt-0.5">{item.note}</p>
                     </div>
                   </div>
                 ))}
@@ -446,7 +446,7 @@ export default function MK677Page() {
                   <AlertTriangle size={16} className="text-yellow-600" />
                   <p className="text-sm font-semibold text-yellow-600">Hunger Warning</p>
                 </div>
-                <p className="text-sm text-gray-500 leading-relaxed">
+                <p className="text-sm text-gray-700 leading-relaxed">
                   MK-677 activates ghrelin receptors — the same receptors that drive hunger. Expect
                   a significant increase in appetite, particularly in the first 2–4 weeks. This is
                   expected and normal. To manage: dose at bedtime so hunger peaks overnight, eat
@@ -466,7 +466,7 @@ export default function MK677Page() {
                     'Sleep quality — this is often your best feedback signal',
                     'Body weight trend (lean vs fluid gains)',
                   ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-2.5 text-sm text-gray-500">
+                    <li key={i} className="flex items-start gap-2.5 text-sm text-gray-700">
                       <CheckCircle2 size={14} className="text-yellow-600 mt-0.5 shrink-0" />
                       {item}
                     </li>
@@ -485,7 +485,7 @@ export default function MK677Page() {
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Known Side Effects of MK-677
           </h2>
-          <p className="text-gray-500 max-w-2xl mx-auto">
+          <p className="text-gray-700 max-w-2xl mx-auto">
             MK-677 has a well-characterized side effect profile. Most are manageable and
             dose-dependent — lower doses significantly reduce their frequency and severity.
           </p>
@@ -530,7 +530,7 @@ export default function MK677Page() {
                   {item.severity}
                 </span>
               </div>
-              <p className="text-xs text-gray-500 leading-relaxed">{item.desc}</p>
+              <p className="text-xs text-gray-700 leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -544,7 +544,7 @@ export default function MK677Page() {
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               MK-677 vs Injectables: Which Is Right for You?
             </h2>
-            <p className="text-gray-500 max-w-xl mx-auto">
+            <p className="text-gray-700 max-w-xl mx-auto">
               Both paths raise GH. Your lifestyle, goals, and risk tolerance determine which fits better.
             </p>
           </div>
@@ -583,7 +583,7 @@ export default function MK677Page() {
                 </h3>
                 <ul className="space-y-3">
                   {item.points.map((point, i) => (
-                    <li key={i} className="flex items-start gap-2.5 text-sm text-gray-500">
+                    <li key={i} className="flex items-start gap-2.5 text-sm text-gray-700">
                       <CheckCircle2
                         size={14}
                         className={`mt-0.5 shrink-0 ${
@@ -619,9 +619,9 @@ export default function MK677Page() {
               style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
             >
               <div>
-                <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Featured Stack</p>
+                <p className="text-xs text-gray-700 uppercase tracking-wider mb-1">Featured Stack</p>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{ghStack.name}</h3>
-                <p className="text-sm text-gray-500 max-w-lg">{ghStack.shortDescription}</p>
+                <p className="text-sm text-gray-700 max-w-lg">{ghStack.shortDescription}</p>
               </div>
               <Link href="/stacks/gh-optimization" className="btn-primary shrink-0">
                 View Full Protocol
@@ -647,7 +647,7 @@ export default function MK677Page() {
                 style={{ background: 'var(--bg)', borderColor: 'var(--border)' }}
               >
                 <p className="font-semibold text-gray-900 mb-2">{faq.q}</p>
-                <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
+                <p className="text-sm text-gray-700 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -659,7 +659,7 @@ export default function MK677Page() {
         <h2 className="text-3xl font-bold text-gray-900 mb-4">
           Ready to Start Your GH Optimization Protocol?
         </h2>
-        <p className="text-gray-500 mb-8 max-w-xl mx-auto">
+        <p className="text-gray-700 mb-8 max-w-xl mx-auto">
           Whether you choose MK-677 or injectable peptides, the GH Optimization Stack gives you
           the full protocol — dosing schedules, timing guidance, and the right compounds for
           your goals.

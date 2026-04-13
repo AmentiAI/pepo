@@ -297,7 +297,7 @@ export default async function ProductPage({
         {/* Breadcrumb */}
         <div className="border-b" style={{ borderColor: '#e5e7eb' }}>
           <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3">
-            <nav className="flex items-center gap-2 text-sm" style={{ color: '#71717a' }}>
+            <nav className="flex items-center gap-2 text-sm" style={{ color: '#1f2937' }}>
               <Link href="/" className="hover:text-yellow-600 transition-colors">Home</Link>
               <span>/</span>
               <Link href="/products" className="hover:text-yellow-600 transition-colors">Products</Link>
@@ -358,7 +358,7 @@ export default async function ProductPage({
                   {theme.heroStats.map((s) => (
                     <div key={s.label} className="text-center">
                       <p className="text-2xl font-black" style={{ color: theme.accentLight }}>{s.value}</p>
-                      <p className="text-xs" style={{ color: '#71717a' }}>{s.label}</p>
+                      <p className="text-xs" style={{ color: '#1f2937' }}>{s.label}</p>
                     </div>
                   ))}
                 </div>
@@ -398,10 +398,10 @@ export default async function ProductPage({
                   <p className="text-lg font-medium mb-5" style={{ color: theme.accentLight }}>{product.tagline}</p>
                   <div className="flex items-center gap-2 mb-5">
                     {Array.from({ length: 5 }).map((_, i) => (
-                      <Star key={i} size={16} style={i < product.researchRating ? { color: theme.accentLight, fill: theme.accentLight } : { color: '#d1d5db' }} />
+                      <Star key={i} size={16} style={i < product.researchRating ? { color: theme.accentLight, fill: theme.accentLight } : { color: '#374151' }} />
                     ))}
                     <span className="text-sm font-semibold" style={{ color: theme.accentLight }}>{product.researchRating}/5</span>
-                    <span className="text-xs" style={{ color: '#71717a' }}>Evidence Rating</span>
+                    <span className="text-xs" style={{ color: '#1f2937' }}>Evidence Rating</span>
                   </div>
                   <p className="text-base leading-relaxed mb-6 max-w-lg text-gray-700">{product.shortDescription}</p>
                   <div className="flex flex-wrap gap-2">{product.tags.map((tag) => <span key={tag} className="tag-chip">{tag}</span>)}</div>
@@ -420,7 +420,7 @@ export default async function ProductPage({
                       <div key={s.label} className="rounded-xl p-3 text-center border"
                         style={{ background: theme.badge, borderColor: theme.badgeBorder }}>
                         <p className="text-lg font-black leading-none mb-1" style={{ color: theme.accentLight }}>{s.value}</p>
-                        <p className="text-[10px] leading-tight" style={{ color: '#71717a' }}>{s.label}</p>
+                        <p className="text-[10px] leading-tight" style={{ color: '#1f2937' }}>{s.label}</p>
                       </div>
                     ))}
                   </div>
@@ -457,17 +457,17 @@ export default async function ProductPage({
                     {theme.heroStats.map((s) => (
                       <div key={s.label}>
                         <p className="text-xl font-black" style={{ color: theme.accentLight }}>{s.value}</p>
-                        <p className="text-xs" style={{ color: '#71717a' }}>{s.label}</p>
+                        <p className="text-xs" style={{ color: '#1f2937' }}>{s.label}</p>
                       </div>
                     ))}
                   </div>
 
                   <div className="flex items-center gap-2 mb-5">
                     {Array.from({ length: 5 }).map((_, i) => (
-                      <Star key={i} size={16} style={i < product.researchRating ? { color: theme.accentLight, fill: theme.accentLight } : { color: '#d1d5db' }} />
+                      <Star key={i} size={16} style={i < product.researchRating ? { color: theme.accentLight, fill: theme.accentLight } : { color: '#374151' }} />
                     ))}
                     <span className="text-sm font-semibold" style={{ color: theme.accentLight }}>{product.researchRating}/5</span>
-                    <span className="text-xs" style={{ color: '#71717a' }}>Evidence Rating</span>
+                    <span className="text-xs" style={{ color: '#1f2937' }}>Evidence Rating</span>
                   </div>
 
                   <p className="text-base leading-relaxed mb-6 max-w-lg text-gray-700">{product.shortDescription}</p>
@@ -491,13 +491,13 @@ export default async function ProductPage({
                 {/* Col 3: price & CTA */}
                 <div className="rounded-2xl p-6 flex-shrink-0"
                   style={{ background: '#ffffff', border: `1px solid ${theme.badgeBorder}`, boxShadow: `0 8px 40px ${theme.glow}` }}>
-                  <p className="text-xs mb-1" style={{ color: '#71717a' }}>Research Grade · HPLC Tested</p>
+                  <p className="text-xs mb-1" style={{ color: '#1f2937' }}>Research Grade · HPLC Tested</p>
                   <div className="flex items-baseline gap-2 mb-1">
                     <p className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-gray-900">${product.salePrice.toFixed(2)}</p>
-                    <p className="text-base font-medium line-through" style={{ color: '#a1a1b5' }}>${product.price.toFixed(2)}</p>
+                    <p className="text-base font-medium line-through" style={{ color: '#1f2937' }}>${product.price.toFixed(2)}</p>
                     <span className="text-xs font-bold px-1.5 py-0.5 rounded-md" style={{ background: 'rgba(234,179,8,0.15)', color: '#92400e' }}>10% OFF</span>
                   </div>
-                  <p className="text-xs mb-4" style={{ color: '#52525b' }}>HPLC tested · COA included</p>
+                  <p className="text-xs mb-4" style={{ color: '#374151' }}>HPLC tested · COA included</p>
                   <div className="h-px mb-4" style={{ background: `linear-gradient(90deg, transparent, ${theme.accent}, transparent)` }} />
                   <a href={`/out/${product.slug}`} target="_blank" rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl font-bold text-sm text-gray-900 mb-3 transition-all hover:opacity-90 hover:-translate-y-0.5"
@@ -506,7 +506,7 @@ export default async function ProductPage({
                   </a>
                   <div className="mt-4 space-y-2">
                     {['3rd-party HPLC tested', 'Certificate of Analysis', 'US-based supplier'].map((item) => (
-                      <div key={item} className="flex items-center gap-2 text-xs" style={{ color: '#71717a' }}>
+                      <div key={item} className="flex items-center gap-2 text-xs" style={{ color: '#1f2937' }}>
                         <Check size={11} style={{ color: theme.accentLight }} />
                         {item}
                       </div>
@@ -534,7 +534,7 @@ export default async function ProductPage({
                     <p className="text-base font-bold mb-0.5" style={{ color: theme.accentLight }}>
                       {h.title}
                     </p>
-                    <p className="text-sm leading-relaxed text-gray-500">
+                    <p className="text-sm leading-relaxed text-gray-700">
                       {h.body}
                     </p>
                   </div>
@@ -700,12 +700,12 @@ export default async function ProductPage({
                   )}
                   <div>
                     <p className="text-sm font-bold text-gray-900">{product.name}</p>
-                    <p className="text-xs" style={{ color: '#71717a' }}>HPLC Tested · COA Verified</p>
+                    <p className="text-xs" style={{ color: '#1f2937' }}>HPLC Tested · COA Verified</p>
                   </div>
                 </div>
                 <div className="flex items-baseline gap-2 mb-3">
                   <p className="text-2xl font-extrabold text-gray-900">${product.salePrice.toFixed(2)}</p>
-                  <p className="text-sm font-medium line-through" style={{ color: '#a1a1b5' }}>${product.price.toFixed(2)}</p>
+                  <p className="text-sm font-medium line-through" style={{ color: '#1f2937' }}>${product.price.toFixed(2)}</p>
                   <span className="text-xs font-bold px-1.5 py-0.5 rounded-md" style={{ background: 'rgba(234,179,8,0.15)', color: '#92400e' }}>10% OFF</span>
                 </div>
                 <a
@@ -717,7 +717,7 @@ export default async function ProductPage({
                 >
                   <ExternalLink size={13} /> Order Now
                 </a>
-                <p className="text-center text-[10px]" style={{ color: '#52525b' }}>HPLC tested · COA verified</p>
+                <p className="text-center text-[10px]" style={{ color: '#374151' }}>HPLC tested · COA verified</p>
               </div>
 
               {/* Category info box */}
@@ -731,7 +731,7 @@ export default async function ProductPage({
                     {product.category}
                   </p>
                 </div>
-                <p className="text-sm leading-relaxed text-gray-500">
+                <p className="text-sm leading-relaxed text-gray-700">
                   {product.tagline}
                 </p>
                 <div className="mt-3 flex flex-wrap gap-1.5">
@@ -763,7 +763,7 @@ export default async function ProductPage({
                       <Check size={11} className="text-emerald-400 mt-1 shrink-0" />
                       <div>
                         <p className="text-xs font-semibold text-gray-900">{item.label}</p>
-                        <p className="text-[10px]" style={{ color: '#52525b' }}>{item.note}</p>
+                        <p className="text-[10px]" style={{ color: '#374151' }}>{item.note}</p>
                       </div>
                     </div>
                   ))}

@@ -158,7 +158,7 @@ export default function RetatrutidePage() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-2 mb-5">
               <span className="badge">GLP-1 Peptides</span>
-              <ChevronRight size={14} className="text-gray-400" />
+              <ChevronRight size={14} className="text-gray-800" />
               <span className="inline-flex items-center px-2.5 py-1 rounded-lg text-xs font-semibold bg-fuchsia-600/15 border border-fuchsia-600/25 text-yellow-600">
                 Triple Agonist
               </span>
@@ -167,7 +167,7 @@ export default function RetatrutidePage() {
               <span className="text-gray-900">Retatrutide: </span>
               <span className="gradient-text">The Triple Agonist</span>
             </h1>
-            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-700 leading-relaxed mb-8 max-w-2xl">
               The most effective weight loss peptide ever studied — 24.2% body weight reduction in Phase 2
               trials via simultaneous GLP-1, GIP, and glucagon receptor activation.
             </p>
@@ -194,7 +194,7 @@ export default function RetatrutidePage() {
                 <div className="mt-0.5">{stat.icon}</div>
                 <div>
                   <p className="text-lg font-bold text-gray-900 leading-tight">{stat.value}</p>
-                  <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
+                  <p className="text-xs text-gray-700 mt-0.5">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -210,7 +210,7 @@ export default function RetatrutidePage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
             What Makes Retatrutide Different
           </h2>
-          <p className="text-gray-500 max-w-2xl">
+          <p className="text-gray-700 max-w-2xl">
             Every receptor adds a distinct, complementary mechanism. The three-receptor combination
             produces effects impossible with single or dual agonists.
           </p>
@@ -225,7 +225,7 @@ export default function RetatrutidePage() {
                   {item.receptor} Receptor
                 </div>
                 <h3 className="font-bold text-gray-900 mb-3">{item.title}</h3>
-                <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
+                <p className="text-sm text-gray-700 leading-relaxed">{item.desc}</p>
               </div>
             );
           })}
@@ -242,7 +242,7 @@ export default function RetatrutidePage() {
                 <span className="badge badge-cyan">Eli Lilly TRIUMPH Trial</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Phase 2 Trial Results</h2>
-              <div className="space-y-4 text-sm text-gray-500 mb-6">
+              <div className="space-y-4 text-sm text-gray-700 mb-6">
                 {[
                   { label: 'Sponsor', value: 'Eli Lilly' },
                   { label: 'Participants', value: '338' },
@@ -255,12 +255,12 @@ export default function RetatrutidePage() {
                     className="flex items-center justify-between py-2.5 border-b"
                     style={{ borderColor: 'var(--border)' }}
                   >
-                    <span className="text-gray-500">{row.label}</span>
+                    <span className="text-gray-700">{row.label}</span>
                     <span className="font-medium text-gray-900">{row.value}</span>
                   </div>
                 ))}
               </div>
-              <p className="text-sm text-gray-500">
+              <p className="text-sm text-gray-700">
                 Phase 3 (TRIUMPH-3) ongoing. Results anticipated 2026–2027.
               </p>
             </div>
@@ -289,7 +289,7 @@ export default function RetatrutidePage() {
                   </div>
                 ))}
               </div>
-              <p className="text-xs text-gray-400 mt-6">
+              <p className="text-xs text-gray-800 mt-6">
                 Sema: STEP-1 (68 wks) · Tirz: SURMOUNT-1 (72 wks) · Reta: Phase 2 (48 wks)
               </p>
             </div>
@@ -307,7 +307,7 @@ export default function RetatrutidePage() {
               <span className="badge">Protocol</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Dosing Protocol</h2>
-            <p className="text-gray-500 leading-relaxed mb-6">
+            <p className="text-gray-700 leading-relaxed mb-6">
               Retatrutide follows the same slow titration approach as other GLP-1 agents — starting low
               to minimize GI side effects before stepping up. Most users report excellent results at the
               4–8mg range without needing to reach the maximum 12mg dose.
@@ -324,7 +324,7 @@ export default function RetatrutidePage() {
                   className="flex items-center justify-between py-2.5 border-b"
                   style={{ borderColor: 'var(--border)' }}
                 >
-                  <span className="text-sm text-gray-500">{row.label}</span>
+                  <span className="text-sm text-gray-700">{row.label}</span>
                   <span className="text-sm font-medium text-gray-900">{row.value}</span>
                 </div>
               ))}
@@ -333,7 +333,7 @@ export default function RetatrutidePage() {
 
           {/* Titration ladder */}
           <div className="space-y-3">
-            <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">
+            <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-4">
               Standard Titration Schedule
             </h3>
             {titrationSteps.map((step, i) => (
@@ -349,7 +349,7 @@ export default function RetatrutidePage() {
                   <div className="absolute top-0 right-0 w-24 h-24 bg-fuchsia-600/8 rounded-full blur-2xl" />
                 )}
                 <div className="flex items-center justify-between mb-1">
-                  <span className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
+                  <span className="text-xs font-semibold text-gray-700 uppercase tracking-wider">
                     {step.weeks}
                   </span>
                   <span
@@ -360,10 +360,10 @@ export default function RetatrutidePage() {
                     {step.dose}
                   </span>
                 </div>
-                <p className="text-xs text-gray-500">{step.note}</p>
+                <p className="text-xs text-gray-700">{step.note}</p>
               </div>
             ))}
-            <p className="text-xs text-gray-400 pt-2">
+            <p className="text-xs text-gray-800 pt-2">
               Most users find their sweet spot at 4–8mg. Escalate only if needed.
             </p>
           </div>
@@ -377,7 +377,7 @@ export default function RetatrutidePage() {
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
               Who Should Choose Retatrutide
             </h2>
-            <p className="text-gray-500 max-w-2xl">
+            <p className="text-gray-700 max-w-2xl">
               Retatrutide is not the default starting point — it's the escalation for those who need
               more than semaglutide or tirzepatide can deliver.
             </p>
@@ -401,7 +401,7 @@ export default function RetatrutidePage() {
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="mb-10">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">Retatrutide Products</h2>
-          <p className="text-gray-500">Choose the vial size that fits your protocol.</p>
+          <p className="text-gray-700">Choose the vial size that fits your protocol.</p>
         </div>
         <div className="grid sm:grid-cols-2 gap-6 max-w-2xl">
           {[
@@ -428,14 +428,14 @@ export default function RetatrutidePage() {
                   <p className="font-bold text-gray-900 group-hover:text-fuchsia-300 transition-colors">
                     {item.label}
                   </p>
-                  <p className="text-xs text-gray-500 mt-0.5">{item.sub}</p>
+                  <p className="text-xs text-gray-700 mt-0.5">{item.sub}</p>
                 </div>
                 <ArrowRight
                   size={16}
                   className="text-fuchsia-600 group-hover:text-yellow-600 transition-colors shrink-0 mt-1"
                 />
               </div>
-              <p className="text-sm text-gray-500">{item.detail}</p>
+              <p className="text-sm text-gray-700">{item.detail}</p>
             </Link>
           ))}
         </div>
@@ -448,7 +448,7 @@ export default function RetatrutidePage() {
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
               How Retatrutide Compares
             </h2>
-            <p className="text-gray-500 max-w-2xl">
+            <p className="text-gray-700 max-w-2xl">
               A quick snapshot of where retatrutide sits in the GLP-1 class.
             </p>
           </div>
@@ -476,9 +476,9 @@ export default function RetatrutidePage() {
               const c = colorMap[item.color];
               return (
                 <div key={item.label} className={`card p-5 border ${c.border}`}>
-                  <p className="text-xs text-gray-500 uppercase tracking-wider mb-2">{item.label}</p>
+                  <p className="text-xs text-gray-700 uppercase tracking-wider mb-2">{item.label}</p>
                   <p className={`text-2xl font-bold mb-2 ${c.tag}`}>{item.delta}</p>
-                  <p className="text-sm text-gray-500">{item.detail}</p>
+                  <p className="text-sm text-gray-700">{item.detail}</p>
                 </div>
               );
             })}
@@ -508,7 +508,7 @@ export default function RetatrutidePage() {
                 style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
               >
                 <p className="font-semibold text-gray-900 mb-2">{faq.q}</p>
-                <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
+                <p className="text-sm text-gray-700 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>

@@ -75,14 +75,14 @@ export default function AntiAgingPage() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-2 mb-5">
               <span className="badge">Category</span>
-              <ChevronRight size={14} className="text-gray-400" />
+              <ChevronRight size={14} className="text-gray-800" />
               <span className="badge badge-cyan">Anti-Aging &amp; Longevity</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
               <span className="text-gray-900">Anti-Aging </span>
               <span className="gradient-text">Peptides</span>
             </h1>
-            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-700 leading-relaxed mb-8 max-w-2xl">
               The most rigorously studied longevity compounds in peptide science. From Epithalon's
               telomere extension to GHK-Cu's cellular gene reset — these peptides address the
               root mechanisms of biological aging rather than masking its symptoms.
@@ -121,7 +121,7 @@ export default function AntiAgingPage() {
                 <div className="mt-0.5">{m.icon}</div>
                 <div>
                   <h3 className="font-semibold text-gray-900 text-sm mb-1">{m.title}</h3>
-                  <p className="text-xs text-gray-500 leading-relaxed">{m.desc}</p>
+                  <p className="text-xs text-gray-700 leading-relaxed">{m.desc}</p>
                 </div>
               </div>
             ))}
@@ -137,7 +137,7 @@ export default function AntiAgingPage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
             Anti-Aging &amp; Longevity Products
           </h2>
-          <p className="text-gray-500 max-w-2xl">
+          <p className="text-gray-700 max-w-2xl">
             Rigorously selected for their evidence base in biological aging mechanisms — from
             telomere length and gene expression to skin quality and hormonal restoration.
           </p>
@@ -158,13 +158,13 @@ export default function AntiAgingPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
                 GHK-Cu: The Skin Regeneration Peptide
               </h2>
-              <p className="text-gray-500 leading-relaxed mb-4">
+              <p className="text-gray-700 leading-relaxed mb-4">
                 GHK-Cu (copper peptide GHK) was first isolated in 1973 and has since accumulated
                 over 3,000 published studies. What makes it truly exceptional is its ability to
                 reset gene expression in aging skin cells — not just stimulate collagen, but
                 fundamentally reprogram cellular behavior toward a younger state.
               </p>
-              <p className="text-gray-500 leading-relaxed mb-6">
+              <p className="text-gray-700 leading-relaxed mb-6">
                 Research by Dr. Loren Pickart found that GHK-Cu reverses approximately 30% of
                 age-related gene dysregulation in human skin fibroblasts. It stimulates synthesis
                 of collagen I, III, and IV, elastin, fibronectin, and glycosaminoglycans — the
@@ -177,7 +177,7 @@ export default function AntiAgingPage() {
                   'Dual route: subcutaneous for systemic + topical for local skin/hair',
                   'One of the most studied regenerative peptides (3,000+ papers)',
                 ].map((point, i) => (
-                  <li key={i} className="flex items-start gap-2.5 text-sm text-gray-500">
+                  <li key={i} className="flex items-start gap-2.5 text-sm text-gray-700">
                     <CheckCircle2 size={14} className="text-yellow-600 mt-0.5 shrink-0" />
                     {point}
                   </li>
@@ -197,7 +197,7 @@ export default function AntiAgingPage() {
                   style={{ background: 'var(--bg)', borderColor: 'var(--border)' }}
                 >
                   <p className="text-2xl font-extrabold gradient-text shrink-0 w-24">{stat.label}</p>
-                  <p className="text-sm text-gray-500">{stat.desc}</p>
+                  <p className="text-sm text-gray-700">{stat.desc}</p>
                 </div>
               ))}
             </div>
@@ -238,7 +238,7 @@ export default function AntiAgingPage() {
                 >
                   {item.title}
                 </h4>
-                <p className="text-sm text-gray-500 leading-relaxed">{item.body}</p>
+                <p className="text-sm text-gray-700 leading-relaxed">{item.body}</p>
               </div>
             ))}
           </div>
@@ -247,13 +247,13 @@ export default function AntiAgingPage() {
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               Epithalon: The Telomere Peptide
             </h2>
-            <p className="text-gray-500 leading-relaxed mb-4">
+            <p className="text-gray-700 leading-relaxed mb-4">
               Epithalon (Ala-Glu-Asp-Gly) is a synthetic tetrapeptide developed by Dr. Vladimir
               Khavinson at the St. Petersburg Institute of Bioregulation and Gerontology. With over
               40 years of research and the most remarkable human longevity data of any peptide
               compound, Epithalon stands in a category of its own.
             </p>
-            <p className="text-gray-500 leading-relaxed mb-6">
+            <p className="text-gray-700 leading-relaxed mb-6">
               Its primary mechanism is activation of telomerase in somatic cells — the enzyme that
               rebuilds telomere caps on chromosomes. This directly addresses one of the fundamental
               molecular clocks of aging. Beyond telomere biology, Epithalon normalizes pineal gland
@@ -276,7 +276,7 @@ export default function AntiAgingPage() {
               <span className="badge badge-cyan">Intermediate</span>
             </div>
             <h2 className="text-3xl font-bold text-gray-900 mb-2">{longevityStack.name}</h2>
-            <p className="text-gray-500 mb-8 max-w-2xl">{longevityStack.shortDescription}</p>
+            <p className="text-gray-700 mb-8 max-w-2xl">{longevityStack.shortDescription}</p>
 
             <div className="grid sm:grid-cols-3 gap-4 mb-8">
               {longevityStack.products.map((sp) => {
@@ -289,9 +289,9 @@ export default function AntiAgingPage() {
                   >
                     <p className="font-bold text-gray-900 text-sm mb-1">{product.name}</p>
                     <p className="text-xs text-yellow-600 mb-1">{sp.dose}</p>
-                    <p className="text-xs text-gray-500">{sp.timing}</p>
+                    <p className="text-xs text-gray-700">{sp.timing}</p>
                     {sp.notes && (
-                      <p className="text-xs text-gray-400 mt-2 italic">{sp.notes}</p>
+                      <p className="text-xs text-gray-800 mt-2 italic">{sp.notes}</p>
                     )}
                   </div>
                 ) : null;
@@ -316,7 +316,7 @@ export default function AntiAgingPage() {
         <div className="text-center mb-12">
           <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">The Science</p>
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Hallmarks of Aging — Addressed by Peptides</h2>
-          <p className="text-gray-500 max-w-2xl mx-auto">
+          <p className="text-gray-700 max-w-2xl mx-auto">
             The hallmarks of aging framework (López-Otín et al., Cell 2013) identifies 9 primary causes of biological aging.
             Anti-aging peptides address multiple hallmarks simultaneously — no supplement category comes close in breadth of mechanism.
           </p>
@@ -363,7 +363,7 @@ export default function AntiAgingPage() {
             <div key={item.hallmark} className="card p-5">
               <p className={`text-xs font-bold uppercase tracking-wider mb-2 ${item.color}`}>{item.peptide}</p>
               <h3 className="font-bold text-gray-900 text-sm mb-2">{item.hallmark}</h3>
-              <p className="text-xs text-gray-500 leading-relaxed">{item.mechanism}</p>
+              <p className="text-xs text-gray-700 leading-relaxed">{item.mechanism}</p>
             </div>
           ))}
         </div>
@@ -376,12 +376,12 @@ export default function AntiAgingPage() {
             <div>
               <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Protocol Design</p>
               <h2 className="text-3xl font-bold text-gray-900 mb-5">Building a Year-Round Anti-Aging Protocol</h2>
-              <p className="text-gray-500 leading-relaxed mb-4">
+              <p className="text-gray-700 leading-relaxed mb-4">
                 The most effective longevity protocols use multiple peptides on different schedules — combining continuous use
                 compounds with periodic burst cycles. This approach covers more aging mechanisms, avoids receptor desensitization,
                 and provides the sustained biological signal needed for meaningful cellular rejuvenation.
               </p>
-              <p className="text-gray-500 leading-relaxed mb-6">
+              <p className="text-gray-700 leading-relaxed mb-6">
                 GHK-Cu and NAD+ are well-suited to continuous daily use — no receptor downregulation has been documented, and their
                 benefits are cumulative over months of consistent use. Epithalon, by contrast, is used in 10–20 day burst protocols
                 1–2 times per year — mirroring the original Khavinson research protocols that produced the 27–36% mortality reduction data.
@@ -402,7 +402,7 @@ export default function AntiAgingPage() {
                     </div>
                     <div>
                       <p className="text-gray-900 font-semibold text-sm">{row.compound}</p>
-                      <p className="text-gray-500 text-xs mt-0.5">{row.note}</p>
+                      <p className="text-gray-700 text-xs mt-0.5">{row.note}</p>
                     </div>
                   </div>
                 ))}
@@ -443,7 +443,7 @@ export default function AntiAgingPage() {
                     </p>
                     <ul className="space-y-1">
                       {phase.outcomes.map((o) => (
-                        <li key={o} className="flex items-start gap-2 text-xs text-gray-500">
+                        <li key={o} className="flex items-start gap-2 text-xs text-gray-700">
                           <CheckCircle2 size={10} className="shrink-0 mt-0.5" style={{ color: phase.color }} />
                           {o}
                         </li>
@@ -472,7 +472,7 @@ export default function AntiAgingPage() {
                 style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
               >
                 <p className="font-semibold text-gray-900 mb-2">{faq.q}</p>
-                <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
+                <p className="text-sm text-gray-700 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -488,7 +488,7 @@ export default function AntiAgingPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Begin Your Longevity Protocol
           </h2>
-          <p className="text-gray-500 mb-8">
+          <p className="text-gray-700 mb-8">
             The Longevity Elite stack covers the three primary mechanisms of biological aging
             in a single comprehensive protocol.
           </p>

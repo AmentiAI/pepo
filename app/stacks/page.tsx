@@ -67,7 +67,7 @@ export default function StacksPage() {
             Peptide Stacks &{' '}
             <span className="gradient-text">Protocols</span>
           </h1>
-          <p className="text-lg max-w-2xl mx-auto" style={{ color: '#a1a1b5' }}>
+          <p className="text-lg max-w-2xl mx-auto" style={{ color: '#1f2937' }}>
             Evidence-backed combinations engineered for specific goals. Each stack
             pairs complementary peptides with precise dosing schedules for
             synergistic results.
@@ -146,7 +146,7 @@ export default function StacksPage() {
                   <div className="absolute bottom-3 left-3">
                     <DifficultyBadge difficulty={stack.difficulty} />
                   </div>
-                  <div className="absolute bottom-3 right-3 text-xs font-medium" style={{ color: '#52525b' }}>
+                  <div className="absolute bottom-3 right-3 text-xs font-medium" style={{ color: '#374151' }}>
                     {stack.products.length} peptide{stack.products.length !== 1 ? 's' : ''}
                   </div>
                 </Link>
@@ -156,21 +156,21 @@ export default function StacksPage() {
                   <h2 className="text-lg font-bold text-gray-900 mb-2 leading-snug">
                     {stack.name}
                   </h2>
-                  <p className="text-sm leading-relaxed mb-4 flex-1" style={{ color: '#71717a' }}>
+                  <p className="text-sm leading-relaxed mb-4 flex-1" style={{ color: '#1f2937' }}>
                     {stack.tagline}
                   </p>
 
                   {/* Meta info */}
                   <div className="space-y-2 mb-4">
-                    <div className="flex items-center gap-2 text-sm" style={{ color: '#a1a1b5' }}>
+                    <div className="flex items-center gap-2 text-sm" style={{ color: '#1f2937' }}>
                       <Target size={13} className="text-yellow-600 flex-shrink-0" />
                       <span>{stack.goal}</span>
                     </div>
-                    <div className="flex items-center gap-2 text-sm" style={{ color: '#a1a1b5' }}>
+                    <div className="flex items-center gap-2 text-sm" style={{ color: '#1f2937' }}>
                       <Clock size={13} className="text-yellow-600 flex-shrink-0" />
                       <span>{stack.duration}</span>
                     </div>
-                    <div className="flex items-center gap-2 text-sm" style={{ color: '#a1a1b5' }}>
+                    <div className="flex items-center gap-2 text-sm" style={{ color: '#1f2937' }}>
                       <DollarSign size={13} className="text-yellow-600 flex-shrink-0" />
                       <span>{stack.cost}</span>
                     </div>
@@ -219,7 +219,7 @@ export default function StacksPage() {
             <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">
               Ready to stack?
             </h2>
-            <p className="text-sm max-w-md mx-auto mb-8" style={{ color: '#a1a1b5' }}>
+            <p className="text-sm max-w-md mx-auto mb-8" style={{ color: '#1f2937' }}>
               Research-grade peptides, HPLC-tested and verified
               purity, consistent dosing, trusted worldwide.
             </p>

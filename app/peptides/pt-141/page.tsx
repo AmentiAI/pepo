@@ -87,14 +87,14 @@ export default function PT141Page() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-2 mb-5">
               <span className="badge">Peptides</span>
-              <ChevronRight size={14} className="text-gray-400" />
+              <ChevronRight size={14} className="text-gray-800" />
               <span className="badge badge-cyan">Sexual Health</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
               <span className="gradient-text">PT-141</span>
               <span className="text-gray-900"> Bremelanotide</span>
             </h1>
-            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-700 leading-relaxed mb-8 max-w-2xl">
               PT-141 (Bremelanotide) is the only peptide that addresses libido and sexual desire
               at the neurological level — activating melanocortin receptors in the brain rather
               than manipulating hormones or blood flow. It works for both men and women, and is
@@ -139,7 +139,7 @@ export default function PT141Page() {
                 <div className="mt-0.5">{stat.icon}</div>
                 <div>
                   <p className="text-xl font-bold text-gray-900">{stat.value}</p>
-                  <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
+                  <p className="text-xs text-gray-700 mt-0.5">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -157,20 +157,20 @@ export default function PT141Page() {
             <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-5">
               What Is PT-141?
             </h2>
-            <p className="text-gray-500 leading-relaxed mb-5">
+            <p className="text-gray-700 leading-relaxed mb-5">
               PT-141 (Bremelanotide) is a synthetic cyclic heptapeptide derived from Melanotan-II,
               a research compound originally developed for skin tanning. During clinical trials,
               researchers noticed unexpected — and significant — effects on sexual arousal and
               desire, leading to PT-141&apos;s development as a dedicated sexual health peptide.
             </p>
-            <p className="text-gray-500 leading-relaxed mb-5">
+            <p className="text-gray-700 leading-relaxed mb-5">
               The compound acts as a melanocortin-4 receptor (MC4R) agonist in the central
               nervous system. The MC4R pathway, located in the hypothalamus, directly regulates
               sexual function, appetite, and energy expenditure. By activating these receptors,
               PT-141 stimulates neural circuits responsible for desire and arousal — without
               touching hormones like testosterone or estrogen.
             </p>
-            <p className="text-gray-500 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed">
               This mechanism is fundamentally different from every other libido treatment on the
               market. Rather than correcting a deficiency or enhancing blood flow, it directly
               activates the brain&apos;s natural desire pathway.
@@ -211,7 +211,7 @@ export default function PT141Page() {
                 />
                 <div>
                   <p className="text-sm font-semibold text-gray-900 mb-1">{item.title}</p>
-                  <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
+                  <p className="text-sm text-gray-700 leading-relaxed">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -227,7 +227,7 @@ export default function PT141Page() {
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               PT-141 vs Viagra / Cialis
             </h2>
-            <p className="text-gray-500 max-w-2xl mx-auto">
+            <p className="text-gray-700 max-w-2xl mx-auto">
               PT-141 and PDE5 inhibitors address completely different aspects of sexual health.
               Understanding the distinction helps determine which is appropriate for your situation.
             </p>
@@ -237,7 +237,7 @@ export default function PT141Page() {
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b" style={{ borderColor: 'var(--border)' }}>
-                  <th className="text-left py-3 px-4 text-gray-500 font-medium w-1/3">Factor</th>
+                  <th className="text-left py-3 px-4 text-gray-700 font-medium w-1/3">Factor</th>
                   <th className="text-left py-3 px-4 text-yellow-600 font-semibold">
                     PT-141 (Bremelanotide)
                   </th>
@@ -290,7 +290,7 @@ export default function PT141Page() {
                   },
                 ].map((row) => (
                   <tr key={row.factor} className="hover:bg-white/2 transition-colors">
-                    <td className="py-3 px-4 text-gray-500 font-medium">{row.factor}</td>
+                    <td className="py-3 px-4 text-gray-700 font-medium">{row.factor}</td>
                     <td className="py-3 px-4 text-gray-700">{row.pt}</td>
                     <td className="py-3 px-4 text-gray-700">{row.pde}</td>
                   </tr>
@@ -312,7 +312,7 @@ export default function PT141Page() {
               </div>
               <div>
                 <h2 className="text-xl font-bold text-gray-900">Male Protocol</h2>
-                <p className="text-xs text-gray-500">Dosing for men</p>
+                <p className="text-xs text-gray-700">Dosing for men</p>
               </div>
             </div>
             <div className="space-y-4 mb-6">
@@ -348,12 +348,12 @@ export default function PT141Page() {
                   </div>
                   <div>
                     <p className="text-gray-900 font-semibold text-sm">{item.value}</p>
-                    <p className="text-xs text-gray-500 mt-0.5">{item.note}</p>
+                    <p className="text-xs text-gray-700 mt-0.5">{item.note}</p>
                   </div>
                 </div>
               ))}
             </div>
-            <p className="text-xs text-gray-500 leading-relaxed">
+            <p className="text-xs text-gray-700 leading-relaxed">
               Men with erectile dysfunction may benefit from combining PT-141 with a low-dose PDE5
               inhibitor — PT-141 addresses desire, while the PDE5i addresses vascular response.
               Consult a healthcare provider before combining compounds.
@@ -368,7 +368,7 @@ export default function PT141Page() {
               </div>
               <div>
                 <h2 className="text-xl font-bold text-gray-900">Female Protocol</h2>
-                <p className="text-xs text-gray-500">Dosing for women (including FDA-approved Vyleesi)</p>
+                <p className="text-xs text-gray-700">Dosing for women (including FDA-approved Vyleesi)</p>
               </div>
             </div>
             <div className="space-y-4 mb-6">
@@ -404,12 +404,12 @@ export default function PT141Page() {
                   </div>
                   <div>
                     <p className="text-gray-900 font-semibold text-sm">{item.value}</p>
-                    <p className="text-xs text-gray-500 mt-0.5">{item.note}</p>
+                    <p className="text-xs text-gray-700 mt-0.5">{item.note}</p>
                   </div>
                 </div>
               ))}
             </div>
-            <p className="text-xs text-gray-500 leading-relaxed">
+            <p className="text-xs text-gray-700 leading-relaxed">
               PT-141 is clinically validated for premenopausal women with HSDD and has shown
               effectiveness in perimenopausal and postmenopausal contexts as well. Unlike
               testosterone therapy or flibanserin (Addyi), onset is rapid and on-demand.
@@ -426,7 +426,7 @@ export default function PT141Page() {
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               PT-141 Side Effects
             </h2>
-            <p className="text-gray-500 max-w-2xl mx-auto">
+            <p className="text-gray-700 max-w-2xl mx-auto">
               PT-141 has a well-studied side effect profile from both research trials and
               post-marketing data from its FDA approval as Vyleesi. Most effects are transient
               and manageable.
@@ -474,7 +474,7 @@ export default function PT141Page() {
                     {item.severity}
                   </span>
                 </div>
-                <p className="text-xs text-gray-500 leading-relaxed">{item.desc}</p>
+                <p className="text-xs text-gray-700 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -487,7 +487,7 @@ export default function PT141Page() {
               <AlertTriangle size={18} className="text-yellow-600 shrink-0 mt-0.5" />
               <div>
                 <p className="text-sm font-semibold text-yellow-600 mb-2">Nausea Management Protocol</p>
-                <p className="text-sm text-gray-500 leading-relaxed">
+                <p className="text-sm text-gray-700 leading-relaxed">
                   To significantly reduce PT-141 nausea: (1) Eat nothing for at least 2 hours before
                   dosing — food in the stomach increases nausea frequency. (2) Take 0.5–1mg ondansetron
                   (OTC anti-nausea) 30 minutes before injection. (3) Start with a lower test dose
@@ -507,7 +507,7 @@ export default function PT141Page() {
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Who Benefits Most from PT-141?
           </h2>
-          <p className="text-gray-500 max-w-xl mx-auto">
+          <p className="text-gray-700 max-w-xl mx-auto">
             PT-141 is uniquely positioned for conditions where desire and motivation are the
             primary concern — not physical performance or hormonal imbalance.
           </p>
@@ -558,7 +558,7 @@ export default function PT141Page() {
                 {item.icon}
               </div>
               <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
-              <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
+              <p className="text-sm text-gray-700 leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -576,7 +576,7 @@ export default function PT141Page() {
               <h3 className="text-xl font-bold text-gray-900 mb-3">
                 Explore All Peptide Protocols
               </h3>
-              <p className="text-sm text-gray-500 leading-relaxed mb-6 flex-1">
+              <p className="text-sm text-gray-700 leading-relaxed mb-6 flex-1">
                 PT-141 is one piece of the broader peptide landscape. Explore our comprehensive
                 healing and optimization protocols to understand how peptides work synergistically
                 for full-body health.
@@ -594,7 +594,7 @@ export default function PT141Page() {
               <h3 className="text-xl font-bold text-gray-900 mb-3">
                 New to Peptides?
               </h3>
-              <p className="text-sm text-gray-500 leading-relaxed mb-6 flex-1">
+              <p className="text-sm text-gray-700 leading-relaxed mb-6 flex-1">
                 Our beginner&apos;s guide covers everything — reconstitution, injection technique,
                 sourcing, cycling, and which peptides to start with based on your goals. No
                 prior experience required.
@@ -622,7 +622,7 @@ export default function PT141Page() {
                 style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
               >
                 <p className="font-semibold text-gray-900 mb-2">{faq.q}</p>
-                <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
+                <p className="text-sm text-gray-700 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -638,7 +638,7 @@ export default function PT141Page() {
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Ready to Learn More About Peptide Therapy?
           </h2>
-          <p className="text-gray-500 mb-8 max-w-xl mx-auto">
+          <p className="text-gray-700 mb-8 max-w-xl mx-auto">
             From sexual health to healing, sleep, and body composition — explore our complete
             peptide education library and find the right protocol for your goals.
           </p>

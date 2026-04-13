@@ -20,8 +20,8 @@ export default function StudyCitation({ number, authors, title, journal, year, u
           rel="noopener noreferrer"
           className="text-sm text-gray-700 hover:text-yellow-600 transition-colors leading-relaxed inline-flex items-start gap-1.5 group"
         >
-          <span>{authors} ({year}). <em>{title}</em>. <span className="text-gray-500">{journal}</span></span>
-          <ExternalLink size={12} className="mt-1 shrink-0 text-gray-400 group-hover:text-yellow-600 transition-colors" />
+          <span>{authors} ({year}). <em>{title}</em>. <span className="text-gray-700">{journal}</span></span>
+          <ExternalLink size={12} className="mt-1 shrink-0 text-gray-800 group-hover:text-yellow-600 transition-colors" />
         </a>
       </div>
     </div>

@@ -38,7 +38,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-2 mb-4">
               <Image src="/logo.png" alt="PeptidesClav" width={52} height={52} className="rounded-xl object-contain" />
             </Link>
-            <p className="text-sm text-gray-500 leading-relaxed max-w-xs">
+            <p className="text-sm text-gray-700 leading-relaxed max-w-xs">
               Evidence-based peptide protocols for healing, performance, body composition, and longevity. Science-backed guides, PubMed-cited research.
             </p>
           </div>
@@ -55,7 +55,7 @@ export default function Footer() {
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-1.5 text-sm text-gray-500 hover:text-yellow-600 transition-colors"
+                        className="flex items-center gap-1.5 text-sm text-gray-700 hover:text-yellow-600 transition-colors"
                       >
                         {link.label}
                         <ExternalLink size={11} />
@@ -63,7 +63,7 @@ export default function Footer() {
                     ) : (
                       <Link
                         href={link.href}
-                        className="text-sm text-gray-500 hover:text-gray-900 transition-colors"
+                        className="text-sm text-gray-700 hover:text-gray-900 transition-colors"
                       >
                         {link.label}
                       </Link>
@@ -78,15 +78,15 @@ export default function Footer() {
         <div className="glow-divider mt-12 mb-8" />
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-gray-400">
+          <p className="text-xs text-gray-800">
             © {new Date().getFullYear()} PeptidesClav. All rights reserved.
           </p>
-          <p className="text-xs text-gray-400">
+          <p className="text-xs text-gray-800">
             For research and educational purposes only. Not medical advice.
           </p>
         </div>
 
-        <p className="text-center text-[11px] text-gray-400 mt-4 leading-relaxed">
+        <p className="text-center text-[11px] text-gray-800 mt-4 leading-relaxed">
           PeptidesClav is an independent educational resource and is not affiliated with, endorsed by,
           or associated in any way with the content creator known as &ldquo;Clavicular.&rdquo;
         </p>

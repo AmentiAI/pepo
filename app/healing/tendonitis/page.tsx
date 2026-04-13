@@ -132,9 +132,9 @@ export default function TendonitisPage() {
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 mb-5 flex-wrap">
             <Link href="/" className="badge hover:text-gray-900 transition-colors">Home</Link>
-            <ChevronRight size={14} className="text-gray-400" />
+            <ChevronRight size={14} className="text-gray-800" />
             <Link href="/healing" className="badge hover:text-gray-900 transition-colors">Healing</Link>
-            <ChevronRight size={14} className="text-gray-400" />
+            <ChevronRight size={14} className="text-gray-800" />
             <span className="badge badge-cyan">Tendonitis</span>
           </div>
 
@@ -143,7 +143,7 @@ export default function TendonitisPage() {
               <span className="text-gray-900">BPC-157 for </span>
               <span className="gradient-text">Tendonitis</span>
             </h1>
-            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-700 leading-relaxed mb-8 max-w-2xl">
               Tendon injuries are the most common sports injury — and among the most frustrating to
               heal. BPC-157 targets the exact biological failures that cause tendons to stall in
               chronic pain: poor vascularity, disordered collagen, and persistent inflammation.
@@ -171,7 +171,7 @@ export default function TendonitisPage() {
                 <div className="mt-0.5">{stat.icon}</div>
                 <div>
                   <p className="text-xl font-bold text-gray-900">{stat.value}</p>
-                  <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
+                  <p className="text-xs text-gray-700 mt-0.5">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -187,7 +187,7 @@ export default function TendonitisPage() {
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           Tendonitis Types This Protocol Addresses
         </h2>
-        <p className="text-gray-500 mb-10 max-w-2xl">
+        <p className="text-gray-700 mb-10 max-w-2xl">
           BPC-157 works across all tendon types through the same core mechanism. Injection site
           varies by location — all other protocol parameters remain constant.
         </p>
@@ -206,11 +206,11 @@ export default function TendonitisPage() {
               </div>
               <span className="tag-chip mb-3 inline-block">{t.tag}</span>
               <div className="space-y-1.5 mt-2">
-                <p className="text-xs text-gray-500">
-                  <span className="text-gray-500 font-medium">Location:</span> {t.location}
+                <p className="text-xs text-gray-700">
+                  <span className="text-gray-700 font-medium">Location:</span> {t.location}
                 </p>
-                <p className="text-xs text-gray-500">
-                  <span className="text-gray-500 font-medium">Inject near:</span> {t.inject}
+                <p className="text-xs text-gray-700">
+                  <span className="text-gray-700 font-medium">Inject near:</span> {t.inject}
                 </p>
               </div>
             </div>
@@ -236,24 +236,24 @@ export default function TendonitisPage() {
                 </div>
                 <div>
                   <p className="font-bold text-gray-900">BPC-157</p>
-                  <p className="text-xs text-gray-500">Local tendon healing</p>
+                  <p className="text-xs text-gray-700">Local tendon healing</p>
                 </div>
               </div>
               <div className="space-y-3">
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">Dose</span>
+                  <span className="text-gray-700">Dose</span>
                   <span className="text-gray-900 font-semibold">250–500 mcg</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">Frequency</span>
+                  <span className="text-gray-700">Frequency</span>
                   <span className="text-gray-900 font-semibold">2× per day</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">Injection site</span>
+                  <span className="text-gray-700">Injection site</span>
                   <span className="text-gray-900 font-semibold">Near affected tendon</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">Route</span>
+                  <span className="text-gray-700">Route</span>
                   <span className="text-gray-900 font-semibold">Subcutaneous</span>
                 </div>
               </div>
@@ -269,24 +269,24 @@ export default function TendonitisPage() {
                 </div>
                 <div>
                   <p className="font-bold text-gray-900">TB-500</p>
-                  <p className="text-xs text-gray-500">Systemic anti-fibrotic</p>
+                  <p className="text-xs text-gray-700">Systemic anti-fibrotic</p>
                 </div>
               </div>
               <div className="space-y-3">
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">Dose</span>
+                  <span className="text-gray-700">Dose</span>
                   <span className="text-gray-900 font-semibold">5 mg per injection</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">Frequency</span>
+                  <span className="text-gray-700">Frequency</span>
                   <span className="text-gray-900 font-semibold">2× per week</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">Injection site</span>
+                  <span className="text-gray-700">Injection site</span>
                   <span className="text-gray-900 font-semibold">Abdomen (systemic)</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">Duration</span>
+                  <span className="text-gray-700">Duration</span>
                   <span className="text-gray-900 font-semibold">6–10 weeks</span>
                 </div>
               </div>
@@ -303,7 +303,7 @@ export default function TendonitisPage() {
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           Week-by-Week Recovery Timeline
         </h2>
-        <p className="text-gray-500 mb-10 max-w-2xl">
+        <p className="text-gray-700 mb-10 max-w-2xl">
           Timelines apply to most tendon types. Chronic tendinosis (12+ months) may take 2–4 weeks
           longer. Acute tendonitis (&lt;3 months) often resolves faster.
         </p>
@@ -319,7 +319,7 @@ export default function TendonitisPage() {
                   className="w-10 h-10 rounded-full border-2 flex items-center justify-center shrink-0 z-10"
                   style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
                 >
-                  <span className="text-xs font-bold text-gray-500">{i + 1}</span>
+                  <span className="text-xs font-bold text-gray-700">{i + 1}</span>
                 </div>
                 <div
                   className={`card flex-1 p-5 border ${item.border}`}
@@ -329,7 +329,7 @@ export default function TendonitisPage() {
                     {item.weeks}
                   </span>
                   <h3 className="font-bold text-gray-900 mt-1 mb-2">{item.title}</h3>
-                  <p className="text-sm text-gray-500 leading-relaxed">{item.description}</p>
+                  <p className="text-sm text-gray-700 leading-relaxed">{item.description}</p>
                 </div>
               </div>
             ))}
@@ -352,7 +352,7 @@ export default function TendonitisPage() {
                 style={{ borderColor: 'var(--border)', background: 'var(--bg)' }}
               >
                 <h3 className="font-bold text-gray-900 mb-3">{faq.q}</h3>
-                <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
+                <p className="text-sm text-gray-700 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -367,7 +367,7 @@ export default function TendonitisPage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
             Start Your Tendon Recovery Protocol
           </h2>
-          <p className="text-gray-500 max-w-xl mx-auto">
+          <p className="text-gray-700 max-w-xl mx-auto">
             The Ultimate Healing Stack has everything you need — BPC-157, TB-500, and complete
             protocol guidance for any tendon injury.
           </p>
@@ -382,7 +382,7 @@ export default function TendonitisPage() {
           </Link>
         </div>
         <div className="mt-8 text-center">
-          <Link href="/healing" className="text-sm text-gray-500 hover:text-gray-700 transition-colors">
+          <Link href="/healing" className="text-sm text-gray-700 hover:text-gray-700 transition-colors">
             ← Back to All Healing Protocols
           </Link>
         </div>

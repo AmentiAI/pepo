@@ -89,7 +89,7 @@ export default function BodyCompositionPage() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-2 mb-5">
               <span className="badge">Category</span>
-              <ChevronRight size={14} className="text-gray-400" />
+              <ChevronRight size={14} className="text-gray-800" />
               <span className="badge badge-cyan">Body Composition</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
@@ -97,7 +97,7 @@ export default function BodyCompositionPage() {
               <span className="gradient-text">Composition</span>
               <span className="text-gray-900"> Peptides</span>
             </h1>
-            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-700 leading-relaxed mb-8 max-w-2xl">
               GH secretagogues, targeted fat loss fragments, and anabolic peptides — individually
               powerful, devastating in combination. These protocols are designed for simultaneous
               fat loss and muscle preservation, not one at the expense of the other.
@@ -125,7 +125,7 @@ export default function BodyCompositionPage() {
                 <div className="mt-0.5">{stat.icon}</div>
                 <div>
                   <p className="text-xl font-bold text-gray-900">{stat.value}</p>
-                  <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
+                  <p className="text-xs text-gray-700 mt-0.5">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -141,7 +141,7 @@ export default function BodyCompositionPage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
             Body Composition Peptides
           </h2>
-          <p className="text-gray-500 max-w-2xl">
+          <p className="text-gray-700 max-w-2xl">
             Covering every angle of body recomposition — from GH axis optimization and visceral
             fat targeting to direct anabolic muscle signaling.
           </p>
@@ -160,7 +160,7 @@ export default function BodyCompositionPage() {
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               How GH Peptides Transform Body Composition
             </h2>
-            <p className="text-gray-500 max-w-2xl mx-auto">
+            <p className="text-gray-700 max-w-2xl mx-auto">
               Growth hormone is the master regulator of body composition. GH peptides restore the
               youthful GH pulses that drive simultaneous fat loss and muscle maintenance.
             </p>
@@ -191,10 +191,10 @@ export default function BodyCompositionPage() {
                   {item.icon}
                 </div>
                 <h3 className="font-bold text-gray-900 mb-3">{item.title}</h3>
-                <p className="text-sm text-gray-500 leading-relaxed mb-4">{item.body}</p>
+                <p className="text-sm text-gray-700 leading-relaxed mb-4">{item.body}</p>
                 <ul className="space-y-2">
                   {item.points.map((p, i) => (
-                    <li key={i} className="flex items-start gap-2 text-xs text-gray-500">
+                    <li key={i} className="flex items-start gap-2 text-xs text-gray-700">
                       <CheckCircle2 size={12} className="text-yellow-600 mt-0.5 shrink-0" />
                       {p}
                     </li>
@@ -210,7 +210,7 @@ export default function BodyCompositionPage() {
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="mb-10">
           <h2 className="text-2xl font-bold text-gray-900 mb-2">Featured Body Composition Stacks</h2>
-          <p className="text-gray-500">
+          <p className="text-gray-700">
             Two purpose-built protocols covering different primary goals — one optimized for
             GH restoration and recomposition, one targeting maximal fat loss.
           </p>
@@ -224,14 +224,14 @@ export default function BodyCompositionPage() {
                   <span className="badge badge-cyan">{stack.duration}</span>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{stack.name}</h3>
-                <p className="text-sm text-gray-500 mb-4 leading-relaxed">{stack.shortDescription}</p>
+                <p className="text-sm text-gray-700 mb-4 leading-relaxed">{stack.shortDescription}</p>
                 <div className="flex flex-wrap gap-1.5 mb-5">
                   {stack.tags.slice(0, 4).map((tag) => (
                     <span key={tag} className="tag-chip">{tag}</span>
                   ))}
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-sm text-gray-500">{stack.cost}/month</span>
+                  <span className="text-sm text-gray-700">{stack.cost}/month</span>
                   <Link href={`/stacks/${stack.id}`} className="btn-primary py-2 px-4 text-sm">
                     View Protocol
                     <ArrowRight size={14} />
@@ -249,19 +249,19 @@ export default function BodyCompositionPage() {
           <div>
             <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Root Cause</p>
             <h2 className="text-3xl font-bold text-gray-900 mb-5">The GH Decline Problem</h2>
-            <p className="text-gray-500 leading-relaxed mb-4">
+            <p className="text-gray-700 leading-relaxed mb-4">
               After age 30, growth hormone declines at approximately 14–15% per decade. By age 60, most adults have GH levels
               that are 60–70% lower than their peak. This progressive GH deficiency is not merely a cosmetic concern — it is
               a central driver of the body composition changes that people associate with "normal aging": accumulating visceral fat,
               losing lean muscle mass, declining bone density, and deteriorating skin quality.
             </p>
-            <p className="text-gray-500 leading-relaxed mb-4">
+            <p className="text-gray-700 leading-relaxed mb-4">
               The conventional medical response — synthetic growth hormone injections — is expensive, suppresses the body's own
               GH axis through negative feedback, and carries risks of insulin resistance and acromegaly with chronic use.
               GH secretagogues (peptides that stimulate the pituitary to produce more of its own GH) solve these problems by
               working with, not against, the body's endocrine architecture.
             </p>
-            <p className="text-gray-500 leading-relaxed mb-6">
+            <p className="text-gray-700 leading-relaxed mb-6">
               Unlike exogenous HGH, CJC-1295 and Ipamorelin amplify natural pulsatile GH secretion without suppressing the
               hypothalamic-pituitary-GH axis. The body continues regulating its own GH production — the peptides simply
               amplify the magnitude of natural pulses. This means no post-cycle therapy is required, no axis suppression,
@@ -269,7 +269,7 @@ export default function BodyCompositionPage() {
             </p>
           </div>
           <div className="space-y-4">
-            <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">GH Decline by Decade</h3>
+            <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-2">GH Decline by Decade</h3>
             {[
               { age: 'Age 20s', level: '100%', desc: 'Peak GH levels. Body composition is naturally maintained with minimal effort.', pct: 100 },
               { age: 'Age 30s', level: '~85%', desc: 'First signs of body composition change. Muscle maintenance requires more effort.', pct: 85 },
@@ -288,7 +288,7 @@ export default function BodyCompositionPage() {
                     style={{ width: `${row.pct}%`, background: 'linear-gradient(90deg, #d97706, #06b6d4)' }}
                   />
                 </div>
-                <p className="text-xs text-gray-500">{row.desc}</p>
+                <p className="text-xs text-gray-700">{row.desc}</p>
               </div>
             ))}
           </div>
@@ -301,7 +301,7 @@ export default function BodyCompositionPage() {
           <div className="text-center mb-12">
             <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Comparison</p>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Peptides vs. Traditional Body Composition Approaches</h2>
-            <p className="text-gray-500 max-w-2xl mx-auto">
+            <p className="text-gray-700 max-w-2xl mx-auto">
               Understanding how peptides compare to other interventions helps set realistic expectations and protocol design.
             </p>
           </div>
@@ -309,11 +309,11 @@ export default function BodyCompositionPage() {
             <table className="w-full text-sm min-w-[560px]">
               <thead>
                 <tr className="border-b" style={{ borderColor: 'var(--border)' }}>
-                  <th className="text-left py-3 pr-6 text-gray-500 font-medium">Approach</th>
-                  <th className="text-left py-3 pr-6 text-gray-500 font-medium">Fat Loss</th>
-                  <th className="text-left py-3 pr-6 text-gray-500 font-medium">Lean Mass</th>
-                  <th className="text-left py-3 pr-6 text-gray-500 font-medium">Side Effects</th>
-                  <th className="text-left py-3 text-gray-500 font-medium">Axis Suppression</th>
+                  <th className="text-left py-3 pr-6 text-gray-700 font-medium">Approach</th>
+                  <th className="text-left py-3 pr-6 text-gray-700 font-medium">Fat Loss</th>
+                  <th className="text-left py-3 pr-6 text-gray-700 font-medium">Lean Mass</th>
+                  <th className="text-left py-3 pr-6 text-gray-700 font-medium">Side Effects</th>
+                  <th className="text-left py-3 text-gray-700 font-medium">Axis Suppression</th>
                 </tr>
               </thead>
               <tbody className="divide-y" style={{ borderColor: 'var(--border)' }}>
@@ -327,16 +327,16 @@ export default function BodyCompositionPage() {
                 ].map((row) => (
                   <tr key={row.name}>
                     <td className="py-3 pr-6 text-gray-800 font-medium">{row.name}</td>
-                    <td className="py-3 pr-6 text-gray-500">{row.fat}</td>
-                    <td className="py-3 pr-6 text-gray-500">{row.lean}</td>
-                    <td className="py-3 pr-6 text-gray-500">{row.effects}</td>
-                    <td className="py-3 text-gray-500">{row.axis}</td>
+                    <td className="py-3 pr-6 text-gray-700">{row.fat}</td>
+                    <td className="py-3 pr-6 text-gray-700">{row.lean}</td>
+                    <td className="py-3 pr-6 text-gray-700">{row.effects}</td>
+                    <td className="py-3 text-gray-700">{row.axis}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-gray-400 mt-4">*Based on available clinical and preclinical data. Individual results vary.</p>
+          <p className="text-xs text-gray-800 mt-4">*Based on available clinical and preclinical data. Individual results vary.</p>
         </div>
       </section>
 
@@ -345,7 +345,7 @@ export default function BodyCompositionPage() {
         <div className="text-center mb-12">
           <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Maximize Results</p>
           <h2 className="text-3xl font-bold text-gray-900 mb-4">How to Stack Your Protocol for Maximum Results</h2>
-          <p className="text-gray-500 max-w-xl mx-auto">
+          <p className="text-gray-700 max-w-xl mx-auto">
             Peptides amplify the results of good lifestyle habits. These strategies significantly compound peptide efficacy.
           </p>
         </div>
@@ -377,7 +377,7 @@ export default function BodyCompositionPage() {
                 <TrendingUp size={16} className="text-gray-900" />
               </div>
               <h3 className="font-bold text-gray-900 text-sm mb-2">{tip.title}</h3>
-              <p className="text-xs text-gray-500 leading-relaxed">{tip.desc}</p>
+              <p className="text-xs text-gray-700 leading-relaxed">{tip.desc}</p>
             </div>
           ))}
         </div>
@@ -398,7 +398,7 @@ export default function BodyCompositionPage() {
                 style={{ background: 'var(--bg)', borderColor: 'var(--border)' }}
               >
                 <p className="font-semibold text-gray-900 mb-2">{faq.q}</p>
-                <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
+                <p className="text-sm text-gray-700 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -410,7 +410,7 @@ export default function BodyCompositionPage() {
         <h2 className="text-3xl font-bold text-gray-900 mb-4">
           Start Your Body Recomposition Protocol
         </h2>
-        <p className="text-gray-500 mb-8">
+        <p className="text-gray-700 mb-8">
           Whether your primary goal is fat loss, muscle gain, or true body recomposition —
           there's a peptide stack designed for your objective.
         </p>

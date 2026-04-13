@@ -95,12 +95,12 @@ export default async function StackPage({
       {/* Breadcrumb */}
       <div className="border-b" style={{ borderColor: '#1e1e35' }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3">
-          <nav className="flex items-center gap-2 text-sm" style={{ color: '#71717a' }}>
+          <nav className="flex items-center gap-2 text-sm" style={{ color: '#1f2937' }}>
             <Link href="/" className="hover:text-yellow-600 transition-colors">Home</Link>
             <span>/</span>
             <Link href="/stacks" className="hover:text-yellow-600 transition-colors">Stacks</Link>
             <span>/</span>
-            <span style={{ color: '#a1a1b5' }}>{stack.name}</span>
+            <span style={{ color: '#1f2937' }}>{stack.name}</span>
           </nav>
         </div>
       </div>
@@ -138,23 +138,23 @@ export default async function StackPage({
               <h1 className="text-4xl sm:text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-3 leading-tight">
                 {stack.name}
               </h1>
-              <p className="text-lg mb-6" style={{ color: '#a1a1b5' }}>
+              <p className="text-lg mb-6" style={{ color: '#1f2937' }}>
                 {stack.tagline}
               </p>
 
               {/* Meta row */}
               <div className="flex flex-wrap gap-6">
-                <div className="flex items-center gap-2 text-sm" style={{ color: '#a1a1b5' }}>
+                <div className="flex items-center gap-2 text-sm" style={{ color: '#1f2937' }}>
                   <Target size={14} className="text-yellow-600" />
                   <span className="font-medium text-gray-900">Goal:</span>
                   <span>{stack.goal}</span>
                 </div>
-                <div className="flex items-center gap-2 text-sm" style={{ color: '#a1a1b5' }}>
+                <div className="flex items-center gap-2 text-sm" style={{ color: '#1f2937' }}>
                   <Clock size={14} className="text-yellow-600" />
                   <span className="font-medium text-gray-900">Duration:</span>
                   <span>{stack.duration}</span>
                 </div>
-                <div className="flex items-center gap-2 text-sm" style={{ color: '#a1a1b5' }}>
+                <div className="flex items-center gap-2 text-sm" style={{ color: '#1f2937' }}>
                   <DollarSign size={14} className="text-yellow-600" />
                   <span className="font-medium text-gray-900">Cost:</span>
                   <span>{stack.cost}</span>
@@ -204,7 +204,7 @@ export default async function StackPage({
               <p className="text-sm font-semibold text-gray-900 mb-1">
                 {stack.products.length} peptide{stack.products.length !== 1 ? 's' : ''} in this stack
               </p>
-              <p className="text-xs mb-4" style={{ color: '#71717a' }}>
+              <p className="text-xs mb-4" style={{ color: '#1f2937' }}>
                 {stack.cost} / month
               </p>
               <div className="glow-divider mb-4" />
@@ -217,7 +217,7 @@ export default async function StackPage({
                 <ExternalLink size={14} />
                 Shop These Peptides
               </a>
-              <p className="text-center text-xs mt-3" style={{ color: '#52525b' }}>
+              <p className="text-center text-xs mt-3" style={{ color: '#374151' }}>
                 Pharmaceutical-grade purity
               </p>
             </div>
@@ -240,7 +240,7 @@ export default async function StackPage({
               <p
                 key={idx}
                 className="text-sm leading-relaxed mb-4 last:mb-0"
-                style={{ color: '#a1a1b5' }}
+                style={{ color: '#1f2937' }}
               >
                 {para}
               </p>
@@ -292,7 +292,7 @@ export default async function StackPage({
                         {product ? product.name : stackProduct.slug.toUpperCase()}
                       </h3>
                       {product && (
-                        <p className="text-sm mb-4" style={{ color: '#71717a' }}>
+                        <p className="text-sm mb-4" style={{ color: '#1f2937' }}>
                           {product.shortDescription}
                         </p>
                       )}
@@ -318,8 +318,8 @@ export default async function StackPage({
                             className="rounded-xl p-3 border"
                             style={{ background: 'rgba(255,255,255,0.03)', borderColor: '#2d2d50' }}
                           >
-                            <p className="text-[10px] font-semibold uppercase tracking-wider mb-1" style={{ color: '#71717a' }}>Notes</p>
-                            <p className="text-sm" style={{ color: '#a1a1b5' }}>{stackProduct.notes}</p>
+                            <p className="text-[10px] font-semibold uppercase tracking-wider mb-1" style={{ color: '#1f2937' }}>Notes</p>
+                            <p className="text-sm" style={{ color: '#1f2937' }}>{stackProduct.notes}</p>
                           </div>
                         )}
                       </div>
@@ -361,7 +361,7 @@ export default async function StackPage({
             <div className="p-6" style={{ background: '#ffffff' }}>
               <pre
                 className="whitespace-pre-wrap text-sm leading-relaxed font-mono"
-                style={{ color: '#a1a1b5' }}
+                style={{ color: '#1f2937' }}
               >
                 {stack.schedule}
               </pre>
@@ -392,7 +392,7 @@ export default async function StackPage({
                   >
                     <Check size={11} className="text-yellow-600" />
                   </div>
-                  <p className="text-sm leading-relaxed" style={{ color: '#a1a1b5' }}>
+                  <p className="text-sm leading-relaxed" style={{ color: '#1f2937' }}>
                     {result}
                   </p>
                 </div>
@@ -422,7 +422,7 @@ export default async function StackPage({
               <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">
                 Shop These Peptides
               </h2>
-              <p className="text-sm max-w-md mx-auto mb-8" style={{ color: '#a1a1b5' }}>
+              <p className="text-sm max-w-md mx-auto mb-8" style={{ color: '#1f2937' }}>
                 Source every peptide in the {stack.name} from our recommended supplier —
                 research-grade purity, consistent dosing, trusted worldwide.
               </p>

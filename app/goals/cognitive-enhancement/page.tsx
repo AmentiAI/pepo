@@ -247,9 +247,9 @@ export default function CognitiveEnhancementPage() {
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 mb-5 flex-wrap">
             <Link href="/" className="badge hover:text-gray-900 transition-colors">Home</Link>
-            <ChevronRight size={14} className="text-gray-400" />
+            <ChevronRight size={14} className="text-gray-800" />
             <Link href="/goals" className="badge hover:text-gray-900 transition-colors">Goals</Link>
-            <ChevronRight size={14} className="text-gray-400" />
+            <ChevronRight size={14} className="text-gray-800" />
             <span className="badge badge-cyan">Cognitive Enhancement</span>
           </div>
 
@@ -258,7 +258,7 @@ export default function CognitiveEnhancementPage() {
               <span className="gradient-text">Cognitive Enhancement</span>
               <span className="text-gray-900"> Peptides</span>
             </h1>
-            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-700 leading-relaxed mb-8 max-w-2xl">
               Semax, Selank, and BPC-157 represent a new class of cognitive compounds — neuropeptides
               that enhance BDNF, modulate neurotransmitter systems, and reduce neuroinflammation through
               receptors the brain already has. More targeted than synthetic nootropics. Better tolerated
@@ -287,7 +287,7 @@ export default function CognitiveEnhancementPage() {
                 <div className="mt-0.5">{stat.icon}</div>
                 <div>
                   <p className="text-xl font-bold text-gray-900">{stat.value}</p>
-                  <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
+                  <p className="text-xs text-gray-700 mt-0.5">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -303,7 +303,7 @@ export default function CognitiveEnhancementPage() {
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           Why Peptides for Cognitive Enhancement
         </h2>
-        <p className="text-gray-500 mb-10 max-w-2xl">
+        <p className="text-gray-700 mb-10 max-w-2xl">
           Most nootropics work by forcing neurotransmitter changes. Neuropeptides work by activating
           the brain's own growth and optimization pathways.
         </p>
@@ -314,12 +314,12 @@ export default function CognitiveEnhancementPage() {
               <Brain size={20} className="text-yellow-600" />
             </div>
             <h3 className="font-bold text-gray-900 text-lg mb-3">BDNF: The Central Target</h3>
-            <p className="text-sm text-gray-500 leading-relaxed mb-4">
+            <p className="text-sm text-gray-700 leading-relaxed mb-4">
               Brain-Derived Neurotrophic Factor (BDNF) is the primary target of cognitive peptides.
               BDNF governs neuronal survival, synaptic plasticity, long-term potentiation (the biological
               basis of memory formation), and the growth of new neurons in the hippocampus.
             </p>
-            <p className="text-sm text-gray-500 leading-relaxed">
+            <p className="text-sm text-gray-700 leading-relaxed">
               Most synthetic nootropics — racetams, modafinil — work downstream of BDNF by modulating
               neurotransmitter levels. Cognitive peptides like Semax work upstream by directly upregulating
               BDNF expression, which then improves the entire system rather than a single pathway.
@@ -359,7 +359,7 @@ export default function CognitiveEnhancementPage() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 text-sm mb-1">{item.title}</h4>
-                  <p className="text-xs text-gray-500 leading-relaxed">{item.desc}</p>
+                  <p className="text-xs text-gray-700 leading-relaxed">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -374,7 +374,7 @@ export default function CognitiveEnhancementPage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
             The Three Cognitive Peptides
           </h2>
-          <p className="text-gray-500 mb-10 max-w-2xl">
+          <p className="text-gray-700 mb-10 max-w-2xl">
             Semax, Selank, and BPC-157 each target different cognitive bottlenecks — and work synergistically
             when combined.
           </p>
@@ -395,20 +395,20 @@ export default function CognitiveEnhancementPage() {
                       <h3 className="text-xl font-bold text-gray-900">{peptide.name}</h3>
                       <span className={`badge ${peptide.badgeColor}`}>{peptide.badge}</span>
                     </div>
-                    <p className="text-xs text-gray-400 font-mono mb-1">{peptide.subtitle}</p>
+                    <p className="text-xs text-gray-800 font-mono mb-1">{peptide.subtitle}</p>
                     <p className={`text-sm font-semibold ${peptide.accentText}`}>{peptide.tagline}</p>
                   </div>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Mechanism</h4>
-                    <p className="text-sm text-gray-500 leading-relaxed mb-5">{peptide.mechanism}</p>
+                    <h4 className="text-xs font-semibold text-gray-700 uppercase tracking-wider mb-3">Mechanism</h4>
+                    <p className="text-sm text-gray-700 leading-relaxed mb-5">{peptide.mechanism}</p>
 
-                    <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Effects</h4>
+                    <h4 className="text-xs font-semibold text-gray-700 uppercase tracking-wider mb-3">Effects</h4>
                     <ul className="space-y-2">
                       {peptide.effects.map((effect) => (
-                        <li key={effect} className="flex items-start gap-2 text-sm text-gray-500">
+                        <li key={effect} className="flex items-start gap-2 text-sm text-gray-700">
                           <CheckCircle2 size={13} className={`${peptide.accentText} mt-0.5 shrink-0`} />
                           {effect}
                         </li>
@@ -420,15 +420,15 @@ export default function CognitiveEnhancementPage() {
                     <div className="card p-4" style={{ background: 'var(--bg-card)' }}>
                       <div className="space-y-3">
                         <div className="flex justify-between text-sm gap-2">
-                          <span className="text-gray-500 shrink-0">Administration</span>
+                          <span className="text-gray-700 shrink-0">Administration</span>
                           <span className="text-gray-900 font-medium text-right">{peptide.administration}</span>
                         </div>
                         <div className="flex justify-between text-sm gap-2">
-                          <span className="text-gray-500 shrink-0">Best For</span>
+                          <span className="text-gray-700 shrink-0">Best For</span>
                           <span className="text-gray-900 font-medium text-right">{peptide.bestFor}</span>
                         </div>
                         <div className="flex justify-between text-sm gap-2">
-                          <span className="text-gray-500 shrink-0">Onset</span>
+                          <span className="text-gray-700 shrink-0">Onset</span>
                           <span className={`${peptide.accentText} font-semibold text-right`}>{peptide.onset}</span>
                         </div>
                       </div>
@@ -454,7 +454,7 @@ export default function CognitiveEnhancementPage() {
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           Semax vs Selank: Which to Choose
         </h2>
-        <p className="text-gray-500 mb-10 max-w-2xl">
+        <p className="text-gray-700 mb-10 max-w-2xl">
           Semax and Selank are complementary, not competing. They target different aspects of cognitive
           performance and can be combined for comprehensive coverage.
         </p>
@@ -463,7 +463,7 @@ export default function CognitiveEnhancementPage() {
         <div className="card overflow-hidden min-w-[480px]" style={{ background: 'var(--bg-card)' }}>
           {/* Header */}
           <div className="grid grid-cols-3 border-b" style={{ borderColor: 'var(--border)' }}>
-            <div className="p-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">Aspect</div>
+            <div className="p-4 text-xs font-semibold text-gray-700 uppercase tracking-wider">Aspect</div>
             <div className="p-4 border-l border-cyan-500/30">
               <div className="flex items-center gap-2">
                 <Brain size={14} className="text-yellow-600" />
@@ -484,7 +484,7 @@ export default function CognitiveEnhancementPage() {
               className="grid grid-cols-3 border-b last:border-b-0"
               style={{ borderColor: 'var(--border)', backgroundColor: i % 2 === 0 ? 'transparent' : 'rgba(255,255,255,0.01)' }}
             >
-              <div className="p-4 text-xs text-gray-500">{row.aspect}</div>
+              <div className="p-4 text-xs text-gray-700">{row.aspect}</div>
               <div className="p-4 border-l border-cyan-500/20">
                 <p className="text-sm text-gray-900">{row.semax}</p>
               </div>
@@ -506,7 +506,7 @@ export default function CognitiveEnhancementPage() {
                 'You are recovering from TBI, stroke, or cognitive decline',
                 'Motivation and drive are the bottleneck',
               ].map((point) => (
-                <li key={point} className="text-xs text-gray-500 flex items-start gap-2">
+                <li key={point} className="text-xs text-gray-700 flex items-start gap-2">
                   <ArrowRight size={11} className="text-yellow-600 mt-0.5 shrink-0" />
                   {point}
                 </li>
@@ -522,7 +522,7 @@ export default function CognitiveEnhancementPage() {
                 'You are experiencing burnout or chronic stress',
                 'Social anxiety is limiting performance',
               ].map((point) => (
-                <li key={point} className="text-xs text-gray-500 flex items-start gap-2">
+                <li key={point} className="text-xs text-gray-700 flex items-start gap-2">
                   <ArrowRight size={11} className="text-yellow-600 mt-0.5 shrink-0" />
                   {point}
                 </li>
@@ -539,7 +539,7 @@ export default function CognitiveEnhancementPage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
             Cognitive Peptide Protocols
           </h2>
-          <p className="text-gray-500 mb-10 max-w-2xl">
+          <p className="text-gray-700 mb-10 max-w-2xl">
             Protocol selection depends on your primary bottleneck — focus, anxiety, or comprehensive
             cognitive optimization.
           </p>
@@ -556,7 +556,7 @@ export default function CognitiveEnhancementPage() {
                 <div className="space-y-4">
                   {protocol.steps.map((step) => (
                     <div key={step.label} className="flex justify-between text-sm gap-2">
-                      <span className="text-gray-500 shrink-0">{step.label}</span>
+                      <span className="text-gray-700 shrink-0">{step.label}</span>
                       <span className="text-gray-900 font-medium text-right">{step.value}</span>
                     </div>
                   ))}
@@ -575,7 +575,7 @@ export default function CognitiveEnhancementPage() {
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           What to Realistically Expect
         </h2>
-        <p className="text-gray-500 mb-10 max-w-2xl">
+        <p className="text-gray-700 mb-10 max-w-2xl">
           Cognitive peptides produce real, measurable effects — but on different timelines for each compound.
         </p>
 
@@ -614,12 +614,12 @@ export default function CognitiveEnhancementPage() {
               <h3 className={`font-bold ${item.accent} text-base mb-4`}>{item.peptide}</h3>
               <div className="space-y-4">
                 <div>
-                  <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Immediate</p>
-                  <p className="text-xs text-gray-500 leading-relaxed">{item.immediate}</p>
+                  <p className="text-xs font-semibold text-gray-700 uppercase tracking-wider mb-2">Immediate</p>
+                  <p className="text-xs text-gray-700 leading-relaxed">{item.immediate}</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Build-up</p>
-                  <p className="text-xs text-gray-500 leading-relaxed">{item.buildup}</p>
+                  <p className="text-xs font-semibold text-gray-700 uppercase tracking-wider mb-2">Build-up</p>
+                  <p className="text-xs text-gray-700 leading-relaxed">{item.buildup}</p>
                 </div>
                 <div className={`rounded-md ${item.accent.replace('text-', 'bg-').replace('400', '500/10')} p-3`}>
                   <p className={`text-xs ${item.accent} leading-relaxed`}>{item.note}</p>
@@ -637,7 +637,7 @@ export default function CognitiveEnhancementPage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
             Safety and Side Effects
           </h2>
-          <p className="text-gray-500 mb-8 max-w-2xl">
+          <p className="text-gray-700 mb-8 max-w-2xl">
             Cognitive peptides have favorable safety profiles — but understanding what is and is not known
             is important for informed use.
           </p>
@@ -650,10 +650,10 @@ export default function CognitiveEnhancementPage() {
                 style={{ borderColor: 'var(--border)', background: 'var(--bg)' }}
               >
                 <h3 className="font-bold text-gray-900 text-base mb-2">{item.peptide}</h3>
-                <p className="text-sm text-gray-500 mb-4">{item.profile}</p>
+                <p className="text-sm text-gray-700 mb-4">{item.profile}</p>
                 <ul className="space-y-2 mb-4">
                   {item.sideEffects.map((se) => (
-                    <li key={se} className="flex items-start gap-2 text-sm text-gray-500">
+                    <li key={se} className="flex items-start gap-2 text-sm text-gray-700">
                       <CheckCircle2 size={13} className="text-yellow-600 mt-0.5 shrink-0" />
                       {se}
                     </li>
@@ -668,10 +668,10 @@ export default function CognitiveEnhancementPage() {
 
           <div className="card p-5 border border-zinc-600/30" style={{ background: 'var(--bg)' }}>
             <div className="flex items-start gap-3">
-              <Shield size={16} className="text-gray-500 mt-0.5 shrink-0" />
+              <Shield size={16} className="text-gray-700 mt-0.5 shrink-0" />
               <div>
-                <h4 className="font-semibold text-gray-500 text-sm mb-2">Important Disclaimer</h4>
-                <p className="text-xs text-gray-500 leading-relaxed">
+                <h4 className="font-semibold text-gray-700 text-sm mb-2">Important Disclaimer</h4>
+                <p className="text-xs text-gray-700 leading-relaxed">
                   Semax and Selank are not FDA-approved compounds. They are research peptides with
                   significant safety data from Russian clinical use and preclinical research, but formal
                   long-term human safety trials under FDA standards are not available. Use at your own
@@ -700,7 +700,7 @@ export default function CognitiveEnhancementPage() {
               style={{ borderColor: 'var(--border)', background: 'var(--bg-card)' }}
             >
               <h3 className="font-bold text-gray-900 mb-3">{faq.q}</h3>
-              <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
+              <p className="text-sm text-gray-700 leading-relaxed">{faq.a}</p>
             </div>
           ))}
         </div>
@@ -713,7 +713,7 @@ export default function CognitiveEnhancementPage() {
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
               Start Your Cognitive Enhancement Protocol
             </h2>
-            <p className="text-gray-500 max-w-xl mx-auto">
+            <p className="text-gray-700 max-w-xl mx-auto">
               NAD+ provides mitochondrial support that complements every cognitive peptide protocol.
               Explore the complete guide for a full overview of peptide applications.
             </p>
@@ -728,7 +728,7 @@ export default function CognitiveEnhancementPage() {
             </Link>
           </div>
           <div className="mt-8 text-center">
-            <Link href="/goals" className="text-sm text-gray-500 hover:text-gray-700 transition-colors">
+            <Link href="/goals" className="text-sm text-gray-700 hover:text-gray-700 transition-colors">
               ← Back to All Goals
             </Link>
           </div>

@@ -106,9 +106,9 @@ export default function PeptideStorageGuidePage() {
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 mb-5 flex-wrap">
             <Link href="/" className="badge hover:text-gray-900 transition-colors">Home</Link>
-            <ChevronRight size={14} className="text-gray-400" />
+            <ChevronRight size={14} className="text-gray-800" />
             <Link href="/guide" className="badge hover:text-gray-900 transition-colors">How-To Guides</Link>
-            <ChevronRight size={14} className="text-gray-400" />
+            <ChevronRight size={14} className="text-gray-800" />
             <span className="badge badge-cyan">Peptide Storage Guide</span>
           </div>
 
@@ -121,7 +121,7 @@ export default function PeptideStorageGuidePage() {
               <span className="text-gray-900">Peptide </span>
               <span className="gradient-text">Storage Guide</span>
             </h1>
-            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-700 leading-relaxed mb-8 max-w-2xl">
               Improper storage is one of the most common causes of reduced peptide potency. This
               guide covers temperature requirements, shelf life for both lyophilized and reconstituted
               peptides, freeze-thaw rules, and how to identify degradation.
@@ -149,7 +149,7 @@ export default function PeptideStorageGuidePage() {
                 <div className="mt-0.5">{stat.icon}</div>
                 <div>
                   <p className="text-xl font-bold text-gray-900">{stat.value}</p>
-                  <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
+                  <p className="text-xs text-gray-700 mt-0.5">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -165,7 +165,7 @@ export default function PeptideStorageGuidePage() {
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           Lyophilized vs Reconstituted: Different Storage Rules
         </h2>
-        <p className="text-gray-500 mb-10 max-w-2xl">
+        <p className="text-gray-700 mb-10 max-w-2xl">
           The state of your peptide — powder or liquid — determines its storage requirements,
           shelf life, and vulnerability to degradation.
         </p>
@@ -177,10 +177,10 @@ export default function PeptideStorageGuidePage() {
           >
             <div className="flex items-center gap-2 mb-4">
               <span className="badge badge-cyan">Lyophilized</span>
-              <span className="text-xs text-gray-500">Powder Form</span>
+              <span className="text-xs text-gray-700">Powder Form</span>
             </div>
             <h3 className="font-bold text-gray-900 mb-3">Far More Stable</h3>
-            <p className="text-sm text-gray-500 leading-relaxed mb-4">
+            <p className="text-sm text-gray-700 leading-relaxed mb-4">
               Lyophilized (freeze-dried) peptides have had water removed, dramatically reducing
               degradation. They tolerate room temperature during shipping (30–90 days) and have
               multi-year shelf lives when properly stored.
@@ -192,7 +192,7 @@ export default function PeptideStorageGuidePage() {
                 { label: 'Freezer (−20°C)', value: '2+ years' },
               ].map((row) => (
                 <div key={row.label} className="flex justify-between text-sm border-b pb-2" style={{ borderColor: 'var(--border)' }}>
-                  <span className="text-gray-500">{row.label}</span>
+                  <span className="text-gray-700">{row.label}</span>
                   <span className="text-yellow-600 font-semibold text-xs">{row.value}</span>
                 </div>
               ))}
@@ -206,10 +206,10 @@ export default function PeptideStorageGuidePage() {
           >
             <div className="flex items-center gap-2 mb-4">
               <span className="badge">Reconstituted</span>
-              <span className="text-xs text-gray-500">Liquid Form</span>
+              <span className="text-xs text-gray-700">Liquid Form</span>
             </div>
             <h3 className="font-bold text-gray-900 mb-3">Much Less Stable</h3>
-            <p className="text-sm text-gray-500 leading-relaxed mb-4">
+            <p className="text-sm text-gray-700 leading-relaxed mb-4">
               Once mixed with bacteriostatic water, peptides are in solution and become vulnerable
               to heat, light, bacterial growth, and freeze-thaw damage. Immediate refrigeration is
               required, and shelf life is measured in days to weeks — not months.
@@ -221,7 +221,7 @@ export default function PeptideStorageGuidePage() {
                 { label: 'Freezer (−20°C)', value: 'Possible — aliquots only, ≤3 cycles' },
               ].map((row) => (
                 <div key={row.label} className="flex justify-between text-sm border-b pb-2" style={{ borderColor: 'var(--border)' }}>
-                  <span className="text-gray-500">{row.label}</span>
+                  <span className="text-gray-700">{row.label}</span>
                   <span className="text-yellow-600 font-semibold text-xs">{row.value}</span>
                 </div>
               ))}
@@ -237,7 +237,7 @@ export default function PeptideStorageGuidePage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
             Reconstituted Peptide Stability by Type
           </h2>
-          <p className="text-gray-500 mb-8 max-w-2xl">
+          <p className="text-gray-700 mb-8 max-w-2xl">
             Once reconstituted, each peptide class has different stability windows. Always use
             freshest possible solution for maximum potency.
           </p>
@@ -246,10 +246,10 @@ export default function PeptideStorageGuidePage() {
               <table className="w-full text-sm">
                 <thead>
                   <tr style={{ backgroundColor: 'var(--bg)', borderBottom: '1px solid var(--border)' }}>
-                    <th className="text-left px-5 py-3 text-xs font-bold text-gray-500 uppercase tracking-wider">Peptide</th>
+                    <th className="text-left px-5 py-3 text-xs font-bold text-gray-700 uppercase tracking-wider">Peptide</th>
                     <th className="text-left px-5 py-3 text-xs font-bold text-yellow-600 uppercase tracking-wider">Fridge Stability</th>
-                    <th className="text-left px-5 py-3 text-xs font-bold text-gray-500 uppercase tracking-wider">Temperature</th>
-                    <th className="text-left px-5 py-3 text-xs font-bold text-gray-500 uppercase tracking-wider hidden sm:table-cell">Notes</th>
+                    <th className="text-left px-5 py-3 text-xs font-bold text-gray-700 uppercase tracking-wider">Temperature</th>
+                    <th className="text-left px-5 py-3 text-xs font-bold text-gray-700 uppercase tracking-wider hidden sm:table-cell">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -263,8 +263,8 @@ export default function PeptideStorageGuidePage() {
                     >
                       <td className="px-5 py-3 font-semibold text-gray-900 text-xs">{row.peptide}</td>
                       <td className="px-5 py-3 text-yellow-600 font-semibold text-xs">{row.stability}</td>
-                      <td className="px-5 py-3 text-gray-500 text-xs">{row.temp}</td>
-                      <td className="px-5 py-3 text-gray-500 text-xs hidden sm:table-cell">{row.notes}</td>
+                      <td className="px-5 py-3 text-gray-700 text-xs">{row.temp}</td>
+                      <td className="px-5 py-3 text-gray-700 text-xs hidden sm:table-cell">{row.notes}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -282,7 +282,7 @@ export default function PeptideStorageGuidePage() {
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           Freeze-Thaw Rules for Reconstituted Peptides
         </h2>
-        <p className="text-gray-500 mb-8 max-w-2xl">
+        <p className="text-gray-700 mb-8 max-w-2xl">
           Freezing reconstituted peptides is possible but requires careful aliquoting to preserve
           potency across thaw cycles.
         </p>
@@ -322,7 +322,7 @@ export default function PeptideStorageGuidePage() {
                 <span className={`text-sm font-bold ${item.color}`}>{item.step}</span>
               </div>
               <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
-              <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
+              <p className="text-sm text-gray-700 leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -335,7 +335,7 @@ export default function PeptideStorageGuidePage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
             What Degrades Peptides
           </h2>
-          <p className="text-gray-500 mb-8 max-w-2xl">
+          <p className="text-gray-700 mb-8 max-w-2xl">
             Understanding the enemies of peptide stability helps you build a storage routine that
             protects potency.
           </p>
@@ -357,7 +357,7 @@ export default function PeptideStorageGuidePage() {
                   <AlertTriangle size={16} className={item.accent} />
                 </div>
                 <h3 className={`font-bold text-sm mb-2 ${item.accent}`}>{item.factor}</h3>
-                <p className="text-xs text-gray-500 leading-relaxed">{item.desc}</p>
+                <p className="text-xs text-gray-700 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -372,7 +372,7 @@ export default function PeptideStorageGuidePage() {
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           Signs of Peptide Degradation
         </h2>
-        <p className="text-gray-500 mb-8 max-w-2xl">
+        <p className="text-gray-700 mb-8 max-w-2xl">
           Inspect your peptide solution before every dose. When in doubt, discard.
         </p>
         <div className="space-y-4">
@@ -392,7 +392,7 @@ export default function PeptideStorageGuidePage() {
                     {item.severity}
                   </span>
                 </div>
-                <p className="text-xs text-gray-500 leading-relaxed">{item.detail}</p>
+                <p className="text-xs text-gray-700 leading-relaxed">{item.detail}</p>
               </div>
             </div>
           ))}
@@ -423,7 +423,7 @@ export default function PeptideStorageGuidePage() {
                 ].map((point) => (
                   <li key={point} className="flex items-start gap-2">
                     <ArrowRight size={12} className="text-cyan-500 mt-0.5 shrink-0" />
-                    <p className="text-xs text-gray-500 leading-relaxed">{point}</p>
+                    <p className="text-xs text-gray-700 leading-relaxed">{point}</p>
                   </li>
                 ))}
               </ul>
@@ -445,7 +445,7 @@ export default function PeptideStorageGuidePage() {
                 ].map((point) => (
                   <li key={point} className="flex items-start gap-2">
                     <ArrowRight size={12} className="text-yellow-500 mt-0.5 shrink-0" />
-                    <p className="text-xs text-gray-500 leading-relaxed">{point}</p>
+                    <p className="text-xs text-gray-700 leading-relaxed">{point}</p>
                   </li>
                 ))}
               </ul>
@@ -495,7 +495,7 @@ export default function PeptideStorageGuidePage() {
               style={{ background: 'var(--bg-card)' }}
             >
               <h3 className={`font-bold text-sm mb-2 ${item.color}`}>{item.title}</h3>
-              <p className="text-xs text-gray-500 leading-relaxed">{item.desc}</p>
+              <p className="text-xs text-gray-700 leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -516,7 +516,7 @@ export default function PeptideStorageGuidePage() {
                 style={{ borderColor: 'var(--border)', background: 'var(--bg)' }}
               >
                 <h3 className="font-bold text-gray-900 mb-3">{faq.q}</h3>
-                <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
+                <p className="text-sm text-gray-700 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -530,7 +530,7 @@ export default function PeptideStorageGuidePage() {
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
           Next Steps: Reconstitution &amp; Injection
         </h2>
-        <p className="text-gray-500 max-w-xl mx-auto mb-8">
+        <p className="text-gray-700 max-w-xl mx-auto mb-8">
           Now that you understand storage, learn how to properly reconstitute peptides with
           bacteriostatic water and how to inject subcutaneously.
         </p>

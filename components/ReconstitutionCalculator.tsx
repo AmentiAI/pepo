@@ -32,7 +32,7 @@ export default function ReconstitutionCalculator() {
         </div>
         <h3 className="text-xl font-bold text-gray-900">Reconstitution Calculator</h3>
       </div>
-      <p className="text-sm text-gray-500 mb-8 ml-0">
+      <p className="text-sm text-gray-700 mb-8 ml-0">
         Enter your vial size and BAC water volume to get exact draw amounts
       </p>
 
@@ -40,7 +40,7 @@ export default function ReconstitutionCalculator() {
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-8">
         {/* Vial Size */}
         <div>
-          <label className="block text-xs text-gray-500 uppercase tracking-wider mb-1">
+          <label className="block text-xs text-gray-700 uppercase tracking-wider mb-1">
             Vial Size
           </label>
           <select
@@ -59,7 +59,7 @@ export default function ReconstitutionCalculator() {
 
         {/* BAC Water */}
         <div>
-          <label className="block text-xs text-gray-500 uppercase tracking-wider mb-1">
+          <label className="block text-xs text-gray-700 uppercase tracking-wider mb-1">
             BAC Water Volume
           </label>
           <select
@@ -78,7 +78,7 @@ export default function ReconstitutionCalculator() {
 
         {/* Desired Dose */}
         <div>
-          <label className="block text-xs text-gray-500 uppercase tracking-wider mb-1">
+          <label className="block text-xs text-gray-700 uppercase tracking-wider mb-1">
             Desired Dose (mcg)
           </label>
           <input
@@ -100,27 +100,27 @@ export default function ReconstitutionCalculator() {
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-6">
         {/* Draw Volume */}
         <div>
-          <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Draw Volume</p>
+          <p className="text-xs text-gray-700 uppercase tracking-wider mb-1">Draw Volume</p>
           <p className="text-2xl font-bold text-gray-900">
             {drawMl.toFixed(3)}
             <span className="text-sm font-normal text-yellow-600 ml-1">mL</span>
           </p>
-          <p className="text-xs text-gray-500 mt-1">milliliters to draw</p>
+          <p className="text-xs text-gray-700 mt-1">milliliters to draw</p>
         </div>
 
         {/* Syringe Units */}
         <div>
-          <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Syringe Units</p>
+          <p className="text-xs text-gray-700 uppercase tracking-wider mb-1">Syringe Units</p>
           <p className="text-2xl font-bold text-gray-900">
             {drawUnits.toFixed(1)}
             <span className="text-sm font-normal text-yellow-600 ml-1">units</span>
           </p>
-          <p className="text-xs text-gray-500 mt-1">(on a 100-unit insulin syringe)</p>
+          <p className="text-xs text-gray-700 mt-1">(on a 100-unit insulin syringe)</p>
         </div>
 
         {/* Doses Per Vial */}
         <div>
-          <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Doses Per Vial</p>
+          <p className="text-xs text-gray-700 uppercase tracking-wider mb-1">Doses Per Vial</p>
           {isInvalidDose ? (
             <p className="text-sm font-semibold text-red-400 mt-1">
               &lt; 1 dose — reduce dose or use larger vial
@@ -129,9 +129,9 @@ export default function ReconstitutionCalculator() {
             <>
               <p className="text-2xl font-bold text-gray-900">
                 {dosesPerVial}
-                <span className="text-sm font-normal text-gray-400 ml-1">doses</span>
+                <span className="text-sm font-normal text-gray-800 ml-1">doses</span>
               </p>
-              <p className="text-xs text-gray-500 mt-1">total doses from this vial</p>
+              <p className="text-xs text-gray-700 mt-1">total doses from this vial</p>
             </>
           )}
         </div>
@@ -139,7 +139,7 @@ export default function ReconstitutionCalculator() {
 
       {/* Info box */}
       <div
-        className="rounded-lg p-3 text-xs text-gray-500"
+        className="rounded-lg p-3 text-xs text-gray-700"
         style={{ background: 'var(--bg)' }}
       >
         Each insulin syringe unit = 0.01mL. A 31g &times; &frac12;&quot; syringe is recommended.

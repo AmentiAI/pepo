@@ -95,20 +95,20 @@ export default async function ArticlePage({ params }: Props) {
           <div className="absolute top-20 left-1/4 w-96 h-96 bg-gray-900/8 rounded-full blur-3xl" />
         </div>
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6">
-          <Link href="/blog" className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-yellow-600 transition-colors mb-8">
+          <Link href="/blog" className="inline-flex items-center gap-2 text-sm text-gray-700 hover:text-yellow-600 transition-colors mb-8">
             <ArrowLeft size={15} /> Back to Blog
           </Link>
           <div className="flex items-center gap-3 mb-5">
             <span className="badge badge-cyan">{article.category}</span>
-            <span className="flex items-center gap-1.5 text-xs text-gray-500">
+            <span className="flex items-center gap-1.5 text-xs text-gray-700">
               <Clock size={12} /> {article.readTime}
             </span>
-            <span className="text-xs text-gray-400">{article.date}</span>
+            <span className="text-xs text-gray-800">{article.date}</span>
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight text-gray-900 mb-6">
             {article.title}
           </h1>
-          <p className="text-lg text-gray-500 leading-relaxed max-w-3xl">{article.description}</p>
+          <p className="text-lg text-gray-700 leading-relaxed max-w-3xl">{article.description}</p>
           <div className="flex flex-wrap gap-2 mt-6">
             {article.tags.map((tag) => (
               <span key={tag} className="tag-chip text-xs">{tag}</span>

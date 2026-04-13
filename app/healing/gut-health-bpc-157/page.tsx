@@ -124,7 +124,7 @@ const timeline = [
     title: 'Early Inflammation Relief',
     description:
       'Most users report reduced bloating and initial relief from gut pain and discomfort within the first week. BPC-157 begins modulating the acute inflammatory response in the intestinal wall almost immediately upon administration, with oral dosing delivering therapeutic concentrations directly to the mucosal surface.',
-    color: 'text-gray-500',
+    color: 'text-gray-700',
     border: 'border-zinc-600/30',
   },
   {
@@ -197,9 +197,9 @@ export default function GutHealthBPC157Page() {
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 mb-5 flex-wrap">
             <Link href="/" className="badge hover:text-gray-900 transition-colors">Home</Link>
-            <ChevronRight size={14} className="text-gray-400" />
+            <ChevronRight size={14} className="text-gray-800" />
             <Link href="/healing" className="badge hover:text-gray-900 transition-colors">Healing</Link>
-            <ChevronRight size={14} className="text-gray-400" />
+            <ChevronRight size={14} className="text-gray-800" />
             <span className="badge badge-cyan">Gut Health</span>
           </div>
 
@@ -208,7 +208,7 @@ export default function GutHealthBPC157Page() {
               <span className="gradient-text">BPC-157</span>
               <span className="text-gray-900"> for Gut Health</span>
             </h1>
-            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-700 leading-relaxed mb-8 max-w-2xl">
               BPC-157 is the only peptide derived from a protein naturally found in human gastric juice —
               evolved specifically to protect the GI tract. It heals leaky gut, SIBO, IBD, and GERD
               through direct mucosal repair and enteric nervous system restoration.
@@ -236,7 +236,7 @@ export default function GutHealthBPC157Page() {
                 <div className="mt-0.5">{stat.icon}</div>
                 <div>
                   <p className="text-xl font-bold text-gray-900">{stat.value}</p>
-                  <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
+                  <p className="text-xs text-gray-700 mt-0.5">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -252,7 +252,7 @@ export default function GutHealthBPC157Page() {
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           Why BPC-157 Is Uniquely Suited to Gut Healing
         </h2>
-        <p className="text-gray-500 mb-10 max-w-2xl">
+        <p className="text-gray-700 mb-10 max-w-2xl">
           Unlike peptides repurposed from other physiological contexts, BPC-157 evolved for exactly this purpose.
         </p>
 
@@ -262,12 +262,12 @@ export default function GutHealthBPC157Page() {
               <FlaskConical size={20} className="text-yellow-600" />
             </div>
             <h3 className="font-bold text-gray-900 text-lg mb-3">The Body Protection Compound</h3>
-            <p className="text-sm text-gray-500 leading-relaxed mb-4">
+            <p className="text-sm text-gray-700 leading-relaxed mb-4">
               BPC-157 (Body Protection Compound-157) is a pentadecapeptide — a 15 amino acid chain — isolated
               as a fragment from a larger protein found in human gastric juice. The parent protein exists in the
               stomach specifically to protect the GI tract from acid damage and ulceration.
             </p>
-            <p className="text-sm text-gray-500 leading-relaxed">
+            <p className="text-sm text-gray-700 leading-relaxed">
               This is why BPC-157 has the most extensive gut healing research of any peptide: it is being
               studied for exactly what it evolved to do. Over 30 years of gastric research have demonstrated
               its ability to heal ulcers, restore intestinal integrity, and modulate the enteric nervous system.
@@ -307,7 +307,7 @@ export default function GutHealthBPC157Page() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 text-sm mb-1">{item.title}</h4>
-                  <p className="text-xs text-gray-500 leading-relaxed">{item.desc}</p>
+                  <p className="text-xs text-gray-700 leading-relaxed">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -322,7 +322,7 @@ export default function GutHealthBPC157Page() {
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
             Gut Conditions BPC-157 Addresses
           </h2>
-          <p className="text-gray-500 mb-10 max-w-2xl">
+          <p className="text-gray-700 mb-10 max-w-2xl">
             BPC-157 targets multiple gut conditions through distinct mechanisms, not a single general
             anti-inflammatory effect.
           </p>
@@ -341,7 +341,7 @@ export default function GutHealthBPC157Page() {
                 <span className={`text-xs font-semibold ${cond.accent} mb-3 inline-block`}>
                   {cond.mechanism}
                 </span>
-                <p className="text-xs text-gray-500 leading-relaxed">{cond.detail}</p>
+                <p className="text-xs text-gray-700 leading-relaxed">{cond.detail}</p>
               </div>
             ))}
           </div>
@@ -356,7 +356,7 @@ export default function GutHealthBPC157Page() {
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           Oral vs Injectable — The Key Distinction
         </h2>
-        <p className="text-gray-500 mb-10 max-w-2xl">
+        <p className="text-gray-700 mb-10 max-w-2xl">
           For gut conditions, this is the most important decision in BPC-157 protocol design.
           Route of administration determines where in the body the peptide achieves its highest concentration.
         </p>
@@ -370,19 +370,19 @@ export default function GutHealthBPC157Page() {
             </div>
             <div className="space-y-3 mb-5">
               <div>
-                <p className="text-xs text-gray-500 mb-1">Route</p>
+                <p className="text-xs text-gray-700 mb-1">Route</p>
                 <p className="text-sm text-gray-900 font-medium">Dissolved in water, taken on empty stomach</p>
               </div>
               <div>
-                <p className="text-xs text-gray-500 mb-1">Concentration Zone</p>
+                <p className="text-xs text-gray-700 mb-1">Concentration Zone</p>
                 <p className="text-sm text-gray-900 font-medium">Stomach + entire small intestine</p>
               </div>
               <div>
-                <p className="text-xs text-gray-500 mb-1">Best For</p>
+                <p className="text-xs text-gray-700 mb-1">Best For</p>
                 <p className="text-sm text-gray-900 font-medium">Leaky gut, SIBO, IBS, GERD, IBD</p>
               </div>
               <div>
-                <p className="text-xs text-gray-500 mb-1">Mechanism Advantage</p>
+                <p className="text-xs text-gray-700 mb-1">Mechanism Advantage</p>
                 <p className="text-sm text-gray-900 font-medium">Direct mucosal contact during transit</p>
               </div>
             </div>
@@ -402,19 +402,19 @@ export default function GutHealthBPC157Page() {
             </div>
             <div className="space-y-3 mb-5">
               <div>
-                <p className="text-xs text-gray-500 mb-1">Route</p>
+                <p className="text-xs text-gray-700 mb-1">Route</p>
                 <p className="text-sm text-gray-900 font-medium">Injected near abdomen subcutaneously</p>
               </div>
               <div>
-                <p className="text-xs text-gray-500 mb-1">Concentration Zone</p>
+                <p className="text-xs text-gray-700 mb-1">Concentration Zone</p>
                 <p className="text-sm text-gray-900 font-medium">Systemic bloodstream distribution</p>
               </div>
               <div>
-                <p className="text-xs text-gray-500 mb-1">Best For</p>
+                <p className="text-xs text-gray-700 mb-1">Best For</p>
                 <p className="text-sm text-gray-900 font-medium">Systemic gut inflammation, IBD flares</p>
               </div>
               <div>
-                <p className="text-xs text-gray-500 mb-1">Mechanism Advantage</p>
+                <p className="text-xs text-gray-700 mb-1">Mechanism Advantage</p>
                 <p className="text-sm text-gray-900 font-medium">Reaches tissue via bloodstream</p>
               </div>
             </div>
@@ -434,19 +434,19 @@ export default function GutHealthBPC157Page() {
             </div>
             <div className="space-y-3 mb-5">
               <div>
-                <p className="text-xs text-gray-500 mb-1">Route</p>
+                <p className="text-xs text-gray-700 mb-1">Route</p>
                 <p className="text-sm text-gray-900 font-medium">Oral AM + Subcutaneous PM</p>
               </div>
               <div>
-                <p className="text-xs text-gray-500 mb-1">Concentration Zone</p>
+                <p className="text-xs text-gray-700 mb-1">Concentration Zone</p>
                 <p className="text-sm text-gray-900 font-medium">Local mucosal + systemic</p>
               </div>
               <div>
-                <p className="text-xs text-gray-500 mb-1">Best For</p>
+                <p className="text-xs text-gray-700 mb-1">Best For</p>
                 <p className="text-sm text-gray-900 font-medium">Severe IBD, Crohn's, chronic leaky gut</p>
               </div>
               <div>
-                <p className="text-xs text-gray-500 mb-1">Mechanism Advantage</p>
+                <p className="text-xs text-gray-700 mb-1">Mechanism Advantage</p>
                 <p className="text-sm text-gray-900 font-medium">Maximum gut coverage</p>
               </div>
             </div>
@@ -467,7 +467,7 @@ export default function GutHealthBPC157Page() {
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
             Dosing Protocols for Gut Conditions
           </h2>
-          <p className="text-gray-500 mb-10 max-w-2xl">
+          <p className="text-gray-700 mb-10 max-w-2xl">
             Gut-specific dosing optimizes BPC-157 delivery to intestinal tissue and accounts for the unique
             pharmacokinetics of oral versus injectable administration.
           </p>
@@ -477,23 +477,23 @@ export default function GutHealthBPC157Page() {
               <span className="badge mb-3 inline-block">Oral Protocol</span>
               <div className="space-y-4">
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">Dose</span>
+                  <span className="text-gray-700">Dose</span>
                   <span className="text-gray-900 font-semibold">250–500 mcg</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">Frequency</span>
+                  <span className="text-gray-700">Frequency</span>
                   <span className="text-gray-900 font-semibold">Twice daily</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">Timing</span>
+                  <span className="text-gray-700">Timing</span>
                   <span className="text-gray-900 font-semibold">30 min before meals</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">Medium</span>
+                  <span className="text-gray-700">Medium</span>
                   <span className="text-gray-900 font-semibold">2–4 oz room temp water</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">Cycle</span>
+                  <span className="text-gray-700">Cycle</span>
                   <span className="text-gray-900 font-semibold">8 weeks on, 4 weeks off</span>
                 </div>
               </div>
@@ -503,23 +503,23 @@ export default function GutHealthBPC157Page() {
               <span className="badge badge-cyan mb-3 inline-block">Subcutaneous Protocol</span>
               <div className="space-y-4">
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">Dose</span>
+                  <span className="text-gray-700">Dose</span>
                   <span className="text-gray-900 font-semibold">250–500 mcg</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">Frequency</span>
+                  <span className="text-gray-700">Frequency</span>
                   <span className="text-gray-900 font-semibold">Twice daily</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">Injection Site</span>
+                  <span className="text-gray-700">Injection Site</span>
                   <span className="text-gray-900 font-semibold">Abdomen (close to gut)</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">Needle</span>
+                  <span className="text-gray-700">Needle</span>
                   <span className="text-gray-900 font-semibold">29–31 gauge insulin syringe</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">Cycle</span>
+                  <span className="text-gray-700">Cycle</span>
                   <span className="text-gray-900 font-semibold">8 weeks on, 4 weeks off</span>
                 </div>
               </div>
@@ -529,23 +529,23 @@ export default function GutHealthBPC157Page() {
               <span className="badge mb-3 inline-block">Combination Protocol</span>
               <div className="space-y-4">
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">Morning</span>
+                  <span className="text-gray-700">Morning</span>
                   <span className="text-gray-900 font-semibold">250–500 mcg oral</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">Evening</span>
+                  <span className="text-gray-700">Evening</span>
                   <span className="text-gray-900 font-semibold">250–500 mcg subQ</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">Total daily</span>
+                  <span className="text-gray-700">Total daily</span>
                   <span className="text-gray-900 font-semibold">500 mcg – 1 mg</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">Best for</span>
+                  <span className="text-gray-700">Best for</span>
                   <span className="text-gray-900 font-semibold">IBD, Crohn's, severe leaky gut</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">Cycle</span>
+                  <span className="text-gray-700">Cycle</span>
                   <span className="text-gray-900 font-semibold">8 weeks on, 4 weeks off</span>
                 </div>
               </div>
@@ -562,7 +562,7 @@ export default function GutHealthBPC157Page() {
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
           Timeline of Expected Results
         </h2>
-        <p className="text-gray-500 mb-10 max-w-2xl">
+        <p className="text-gray-700 mb-10 max-w-2xl">
           Gut healing with BPC-157 follows a predictable progression from acute inflammation relief
           to deep structural repair and gut-brain axis restoration.
         </p>
@@ -578,7 +578,7 @@ export default function GutHealthBPC157Page() {
                   className="w-10 h-10 rounded-full border-2 flex items-center justify-center shrink-0 z-10"
                   style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
                 >
-                  <span className="text-xs font-bold text-gray-500">{i + 1}</span>
+                  <span className="text-xs font-bold text-gray-700">{i + 1}</span>
                 </div>
                 <div
                   className={`card flex-1 p-5 border ${item.border}`}
@@ -590,7 +590,7 @@ export default function GutHealthBPC157Page() {
                     </span>
                   </div>
                   <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
-                  <p className="text-sm text-gray-500 leading-relaxed">{item.description}</p>
+                  <p className="text-sm text-gray-700 leading-relaxed">{item.description}</p>
                 </div>
               </div>
             ))}
@@ -605,7 +605,7 @@ export default function GutHealthBPC157Page() {
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
             Stacking BPC-157 with NAD+ for Gut Cell Energy
           </h2>
-          <p className="text-gray-500 mb-8 max-w-2xl">
+          <p className="text-gray-700 mb-8 max-w-2xl">
             BPC-157 repairs gut structure. NAD+ powers the cellular machinery doing the repairing.
             Together, they form a complementary gut restoration stack.
           </p>
@@ -623,7 +623,7 @@ export default function GutHealthBPC157Page() {
                   'Modulates enteric nervous system and gut motility',
                   'Reduces mucosal inflammation via TNF-α suppression',
                 ].map((point) => (
-                  <li key={point} className="flex items-start gap-2 text-sm text-gray-500">
+                  <li key={point} className="flex items-start gap-2 text-sm text-gray-700">
                     <CheckCircle2 size={14} className="text-yellow-600 mt-0.5 shrink-0" />
                     {point}
                   </li>
@@ -643,7 +643,7 @@ export default function GutHealthBPC157Page() {
                   'Powers cellular repair processes that BPC-157 initiates',
                   'Reduces oxidative stress in inflamed gut tissue',
                 ].map((point) => (
-                  <li key={point} className="flex items-start gap-2 text-sm text-gray-500">
+                  <li key={point} className="flex items-start gap-2 text-sm text-gray-700">
                     <CheckCircle2 size={14} className="text-yellow-600 mt-0.5 shrink-0" />
                     {point}
                   </li>
@@ -653,7 +653,7 @@ export default function GutHealthBPC157Page() {
           </div>
 
           <div className="mt-6 card p-5 border" style={{ borderColor: 'var(--border-bright)', background: 'var(--bg)' }}>
-            <p className="text-sm text-gray-500 leading-relaxed">
+            <p className="text-sm text-gray-700 leading-relaxed">
               <span className="text-gray-900 font-semibold">Why they work together: </span>
               BPC-157 signals intestinal cells to initiate repair — but cellular repair requires ATP, which
               depends on mitochondrial NAD+ levels. In chronically inflamed gut tissue, NAD+ is depleted by
@@ -690,7 +690,7 @@ export default function GutHealthBPC157Page() {
               style={{ borderColor: 'var(--border)', background: 'var(--bg-card)' }}
             >
               <h3 className="font-bold text-gray-900 mb-3">{faq.q}</h3>
-              <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
+              <p className="text-sm text-gray-700 leading-relaxed">{faq.a}</p>
             </div>
           ))}
         </div>
@@ -703,7 +703,7 @@ export default function GutHealthBPC157Page() {
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
               Start Your Gut Healing Protocol
             </h2>
-            <p className="text-gray-500 max-w-xl mx-auto">
+            <p className="text-gray-700 max-w-xl mx-auto">
               BPC-157 is available individually or as part of the Ultimate Healing Stack, which includes
               complete gut protocol guidance for oral and injectable administration.
             </p>
@@ -718,7 +718,7 @@ export default function GutHealthBPC157Page() {
             </Link>
           </div>
           <div className="mt-8 text-center">
-            <Link href="/healing" className="text-sm text-gray-500 hover:text-gray-700 transition-colors">
+            <Link href="/healing" className="text-sm text-gray-700 hover:text-gray-700 transition-colors">
               ← Back to All Healing Protocols
             </Link>
           </div>

@@ -43,7 +43,7 @@ const peptides = [
     pros: ['Proven Phase 3 data', 'Weekly injection', 'Most clinical experience', 'Lowest side effect profile'],
     cons: ['Lowest weight loss ceiling', 'Single mechanism', 'Requires slow titration'],
     best: 'GLP-1 newcomers, tolerability concerns',
-    color: 'text-gray-500',
+    color: 'text-gray-700',
     border: 'border-zinc-600/40',
     glow: '',
   },
@@ -88,7 +88,7 @@ const peptides = [
     pros: ['Amylin pathway (novel mechanism)', 'Additive to GLP-1', 'Strong appetite suppression'],
     cons: ['Phase 3 still completing', 'Complex sourcing', 'Requires two peptides'],
     best: 'Plateau breakers and those who want next-generation approach',
-    color: 'text-gray-500',
+    color: 'text-gray-700',
     border: 'border-zinc-600/40',
     glow: '',
   },
@@ -152,7 +152,7 @@ export default function BestPeptideWeightLossPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex items-center gap-2 mb-5 flex-wrap">
             <Link href="/" className="badge hover:text-gray-900 transition-colors">Home</Link>
-            <ChevronRight size={14} className="text-gray-400" />
+            <ChevronRight size={14} className="text-gray-800" />
             <span className="badge badge-cyan">Best Peptide for Weight Loss</span>
           </div>
 
@@ -165,7 +165,7 @@ export default function BestPeptideWeightLossPage() {
               <span className="text-gray-900">Best Peptide for </span>
               <span className="gradient-text">Weight Loss</span>
             </h1>
-            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg text-gray-700 leading-relaxed mb-8 max-w-2xl">
               GLP-1 class peptides have redefined what weight loss medicine can achieve. We compare
               the top four options — from the proven Semaglutide to the triple-agonist Retatrutide
               — with clinical data, dosing protocols, and a decision guide to find your best fit.
@@ -193,7 +193,7 @@ export default function BestPeptideWeightLossPage() {
                 <div className="mt-0.5">{stat.icon}</div>
                 <div>
                   <p className="text-xl font-bold text-gray-900">{stat.value}</p>
-                  <p className="text-xs text-gray-500 mt-0.5">{stat.label}</p>
+                  <p className="text-xs text-gray-700 mt-0.5">{stat.label}</p>
                 </div>
               </div>
             ))}
@@ -219,7 +219,7 @@ export default function BestPeptideWeightLossPage() {
                 <h3 className="text-2xl font-bold text-gray-900">Tirzepatide</h3>
                 <span className="badge badge-cyan">Best Overall</span>
               </div>
-              <p className="text-gray-500 text-sm max-w-xl">
+              <p className="text-gray-700 text-sm max-w-xl">
                 The only dual GLP-1 + GIP agonist with Phase 3 data showing 22.5% average weight
                 loss — superior to Semaglutide in head-to-head trials. The best balance of efficacy,
                 evidence quality, and tolerability.
@@ -227,7 +227,7 @@ export default function BestPeptideWeightLossPage() {
             </div>
             <div className="text-right">
               <p className="text-4xl font-extrabold text-yellow-600">22.5%</p>
-              <p className="text-xs text-gray-500 mt-1">avg. body weight lost (SURMOUNT-1)</p>
+              <p className="text-xs text-gray-700 mt-1">avg. body weight lost (SURMOUNT-1)</p>
             </div>
           </div>
           <div className="grid sm:grid-cols-3 gap-4">
@@ -241,7 +241,7 @@ export default function BestPeptideWeightLossPage() {
                 className="px-4 py-3 rounded-xl border"
                 style={{ background: 'var(--bg)', borderColor: 'var(--border)' }}
               >
-                <p className="text-[11px] text-gray-500 uppercase tracking-wider">{item.label}</p>
+                <p className="text-[11px] text-gray-700 uppercase tracking-wider">{item.label}</p>
                 <p className="text-sm font-semibold text-gray-900 mt-0.5">{item.value}</p>
               </div>
             ))}
@@ -268,15 +268,15 @@ export default function BestPeptideWeightLossPage() {
                   <span className={p.badgeClass}>{p.badge}</span>
                 </div>
                 <p className={`text-3xl font-extrabold ${p.color} mb-1`}>{p.weightLoss}</p>
-                <p className="text-xs text-gray-500 mb-4">avg. weight loss ({p.trial})</p>
+                <p className="text-xs text-gray-700 mb-4">avg. weight loss ({p.trial})</p>
 
                 <div className="space-y-2 text-xs mb-4">
                   <div>
-                    <span className="text-gray-500">Mechanism: </span>
+                    <span className="text-gray-700">Mechanism: </span>
                     <span className="text-gray-700">{p.mechanism}</span>
                   </div>
                   <div>
-                    <span className="text-gray-500">Dosing: </span>
+                    <span className="text-gray-700">Dosing: </span>
                     <span className="text-gray-700">{p.dosing}</span>
                   </div>
                 </div>
@@ -285,13 +285,13 @@ export default function BestPeptideWeightLossPage() {
                   {p.pros.map((pro) => (
                     <div key={pro} className="flex items-start gap-1.5">
                       <CheckCircle2 size={12} className="text-yellow-600 mt-0.5 shrink-0" />
-                      <p className="text-xs text-gray-500">{pro}</p>
+                      <p className="text-xs text-gray-700">{pro}</p>
                     </div>
                   ))}
                 </div>
 
                 <div className="mt-auto pt-3 border-t" style={{ borderColor: 'var(--border)' }}>
-                  <p className="text-[10px] text-gray-500 uppercase tracking-wider mb-1">Best for</p>
+                  <p className="text-[10px] text-gray-700 uppercase tracking-wider mb-1">Best for</p>
                   <p className="text-xs text-gray-700">{p.best}</p>
                 </div>
               </div>
@@ -354,7 +354,7 @@ export default function BestPeptideWeightLossPage() {
                 {item.points.map((pt) => (
                   <li key={pt} className="flex items-start gap-2">
                     <ArrowRight size={13} className="text-yellow-500 mt-0.5 shrink-0" />
-                    <p className="text-xs text-gray-500">{pt}</p>
+                    <p className="text-xs text-gray-700">{pt}</p>
                   </li>
                 ))}
               </ul>
@@ -369,7 +369,7 @@ export default function BestPeptideWeightLossPage() {
           <div>
             <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Shop Weight Loss Peptides</p>
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">All GLP-1 & Fat Loss Peptides</h2>
-            <p className="text-gray-500 mt-2 max-w-lg">
+            <p className="text-gray-700 mt-2 max-w-lg">
               HPLC-verified compounds with certificates of analysis per batch. The full GLP-1 range — Semaglutide, Tirzepatide, Retatrutide, and Cagrilintide combinations.
             </p>
           </div>
@@ -395,7 +395,7 @@ export default function BestPeptideWeightLossPage() {
           <div className="text-center mb-12">
             <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Mechanism of Action</p>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">How GLP-1 Peptides Produce Weight Loss</h2>
-            <p className="text-gray-500 max-w-2xl mx-auto">
+            <p className="text-gray-700 max-w-2xl mx-auto">
               GLP-1 receptor agonists work through multiple simultaneous mechanisms — not just appetite suppression. Understanding these pathways explains both the efficacy and the side effect profile.
             </p>
           </div>
@@ -434,7 +434,7 @@ export default function BestPeptideWeightLossPage() {
             ].map((item) => (
               <div key={item.title} className="card p-5">
                 <h3 className={`font-bold text-sm mb-2 ${item.color}`}>{item.title}</h3>
-                <p className="text-xs text-gray-500 leading-relaxed">{item.desc}</p>
+                <p className="text-xs text-gray-700 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -443,7 +443,7 @@ export default function BestPeptideWeightLossPage() {
           <div className="grid lg:grid-cols-2 gap-10">
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Managing GLP-1 Side Effects</h3>
-              <p className="text-gray-500 leading-relaxed mb-5">
+              <p className="text-gray-700 leading-relaxed mb-5">
                 The primary side effects of GLP-1 peptides are gastrointestinal — nausea, vomiting, and diarrhea — and are
                 directly related to the gastric emptying delay mechanism. They are dose-dependent and almost universally manageable
                 with appropriate titration. Most users find side effects resolve within 2–4 weeks at any given dose.
@@ -457,7 +457,7 @@ export default function BestPeptideWeightLossPage() {
                   'BPC-157: adding BPC-157 to the protocol provides direct gut lining protection and mucosal repair',
                   'Timing: inject the evening or morning — experiment to find which timing reduces peak nausea for you',
                 ].map((tip) => (
-                  <li key={tip} className="flex items-start gap-3 text-sm text-gray-500">
+                  <li key={tip} className="flex items-start gap-3 text-sm text-gray-700">
                     <CheckCircle2 size={15} className="text-yellow-600 mt-0.5 shrink-0" />
                     {tip}
                   </li>
@@ -466,7 +466,7 @@ export default function BestPeptideWeightLossPage() {
             </div>
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Lean Mass Preservation Protocol</h3>
-              <p className="text-gray-500 leading-relaxed mb-5">
+              <p className="text-gray-700 leading-relaxed mb-5">
                 The single biggest risk of GLP-1 protocols is significant lean muscle loss alongside fat loss. Studies show
                 25–40% of weight lost can be lean tissue without deliberate countermeasures. This compromises metabolic rate,
                 reduces long-term weight maintenance, and produces suboptimal body composition outcomes.
@@ -487,7 +487,7 @@ export default function BestPeptideWeightLossPage() {
                     </div>
                     <div>
                       <p className="font-bold text-gray-900 text-sm">{item.title}</p>
-                      <p className="text-gray-500 text-xs mt-0.5 leading-relaxed">{item.desc}</p>
+                      <p className="text-gray-700 text-xs mt-0.5 leading-relaxed">{item.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -512,7 +512,7 @@ export default function BestPeptideWeightLossPage() {
                 style={{ borderColor: 'var(--border)', background: 'var(--bg)' }}
               >
                 <h3 className="font-bold text-gray-900 mb-3">{faq.q}</h3>
-                <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
+                <p className="text-sm text-gray-700 leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -526,7 +526,7 @@ export default function BestPeptideWeightLossPage() {
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
           Ready to Start Your Protocol?
         </h2>
-        <p className="text-gray-500 max-w-xl mx-auto mb-8">
+        <p className="text-gray-700 max-w-xl mx-auto mb-8">
           Browse our full GLP-1 comparison for deep-dive dosing protocols, side effect management,
           and compound sourcing.
         </p>
