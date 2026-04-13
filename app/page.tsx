@@ -60,7 +60,7 @@ const goals = [
     ],
     href: '/body-composition',
     color: 'from-cyan-600 to-cyan-400',
-    border: 'hover:border-cyan-500/60',
+    border: 'hover:border-yellow-500/60',
   },
   {
     icon: Activity,

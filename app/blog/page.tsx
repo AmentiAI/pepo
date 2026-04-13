@@ -19,12 +19,12 @@ export const metadata: Metadata = {
 
 const categoryColors: Record<string, string> = {
   'Weight Loss': 'bg-gray-900/15 border-yellow-600/25 text-yellow-600',
-  'Research': 'bg-cyan-500/15 border-cyan-500/25 text-yellow-600',
+  'Research': 'bg-yellow-500/15 border-cyan-500/25 text-yellow-600',
   'Protocols': 'bg-fuchsia-600/15 border-fuchsia-600/25 text-yellow-600',
-  'Skinmaxxing': 'bg-pink-600/15 border-pink-600/25 text-pink-400',
+  'Skinmaxxing': 'bg-yellow-500/15 border-yellow-500/25 text-yellow-500',
   'Looksmaxxing': 'bg-amber-600/15 border-amber-600/25 text-yellow-600',
-  'Safety': 'bg-emerald-600/15 border-emerald-600/25 text-emerald-400',
-  'Beginners': 'bg-blue-600/15 border-blue-600/25 text-blue-400',
+  'Safety': 'bg-yellow-500/15 border-yellow-500/25 text-yellow-600',
+  'Beginners': 'bg-yellow-500/15 border-yellow-500/25 text-yellow-600',
 };
 
 export default function BlogPage() {

@@ -82,7 +82,7 @@ const steps = [
     detail:
       'Pull back the syringe plunger to draw air equal to your target BAC water volume (standard: 1–2 mL for a 5mg peptide vial). Insert needle into BAC water vial, push air in, then draw out your target volume. Most users start with 2 mL for 5mg vials — this gives 250 mcg per 0.1 mL, which is the most convenient concentration for standard dosing.',
     color: 'text-yellow-600',
-    border: 'border-cyan-500/30',
+    border: 'border-yellow-500/30',
     bg: 'bg-cyan-500/10',
   },
   {
@@ -100,7 +100,7 @@ const steps = [
     detail:
       'Remove the syringe. Hold the vial between your fingers and gently swirl in a circular motion. The powder should dissolve into a clear solution within 30–60 seconds for most peptides. Never shake — vigorous agitation creates air bubbles and can break peptide bonds, degrading the product. If the solution appears cloudy after 2 minutes of gentle swirling, see the FAQ section below.',
     color: 'text-yellow-600',
-    border: 'border-cyan-500/30',
+    border: 'border-yellow-500/30',
     bg: 'bg-cyan-500/10',
   },
   {
@@ -118,7 +118,7 @@ const steps = [
     detail:
       'Place the reconstituted vial in your refrigerator. Keep away from the freezer compartment edge where temperature fluctuates. Do not store at room temperature. For long-term storage (beyond 28 days), freeze at −20°C but minimize freeze-thaw cycles — each cycle degrades potency slightly.',
     color: 'text-yellow-600',
-    border: 'border-cyan-500/30',
+    border: 'border-yellow-500/30',
     bg: 'bg-cyan-500/10',
   },
 ];
@@ -173,7 +173,7 @@ const storageGuide = [
     note: 'Standard use storage — label with date',
     icon: <Thermometer size={18} className="text-yellow-600" />,
     bg: 'bg-cyan-500/10',
-    border: 'border-cyan-500/30',
+    border: 'border-yellow-500/30',
   },
   {
     condition: 'Reconstituted — Freezer',
@@ -363,11 +363,11 @@ export default function ReconstitutePeptidesPage() {
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div
-              className="card p-6 border border-cyan-500/30"
+              className="card p-6 border border-yellow-500/30"
               style={{ background: 'var(--bg)' }}
             >
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-xl bg-cyan-500/15 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-xl bg-yellow-500/15 flex items-center justify-center">
                   <CheckCircle2 size={20} className="text-yellow-600" />
                 </div>
                 <div>

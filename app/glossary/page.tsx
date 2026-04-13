@@ -395,7 +395,7 @@ export default function GlossaryPage() {
               <a
                 key={id}
                 href={`#${id}`}
-                className="tag-chip text-xs sm:text-sm hover:border-cyan-500/60 transition-colors"
+                className="tag-chip text-xs sm:text-sm hover:border-yellow-500/60 transition-colors"
               >
                 {label}
               </a>
@@ -436,7 +436,7 @@ export default function GlossaryPage() {
                     {link && (
                       <Link
                         href={link.href}
-                        className="shrink-0 text-xs text-yellow-600 hover:text-cyan-300 border border-cyan-900/60 hover:border-cyan-500/60 rounded px-2 py-0.5 transition-colors whitespace-nowrap"
+                        className="shrink-0 text-xs text-yellow-600 hover:text-yellow-500 border border-yellow-600/60 hover:border-yellow-500/60 rounded px-2 py-0.5 transition-colors whitespace-nowrap"
                       >
                         {link.label} →
                       </Link>

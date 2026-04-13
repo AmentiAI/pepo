@@ -363,7 +363,7 @@ export default function PT141Page() {
           {/* Female */}
           <div className="card p-6 sm:p-8">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-cyan-500/15 border border-cyan-500/25 flex items-center justify-center">
+              <div className="w-10 h-10 rounded-xl bg-yellow-500/15 border border-cyan-500/25 flex items-center justify-center">
                 <Heart size={18} className="text-yellow-600" />
               </div>
               <div>
@@ -399,7 +399,7 @@ export default function PT141Page() {
                   className="flex items-start gap-4 p-4 rounded-xl border"
                   style={{ background: 'var(--bg)', borderColor: 'var(--border)' }}
                 >
-                  <div className="px-3 py-1 rounded-lg text-xs font-semibold shrink-0 bg-cyan-500/20 text-cyan-300">
+                  <div className="px-3 py-1 rounded-lg text-xs font-semibold shrink-0 bg-yellow-500/20 text-yellow-500">
                     {item.label}
                   </div>
                   <div>
@@ -468,7 +468,7 @@ export default function PT141Page() {
                         ? 'bg-red-500/15 text-red-400'
                         : item.severityColor === 'amber'
                         ? 'bg-amber-500/15 text-yellow-600'
-                        : 'bg-blue-500/15 text-blue-400'
+                        : 'bg-blue-500/15 text-yellow-600'
                     }`}
                   >
                     {item.severity}
@@ -522,7 +522,7 @@ export default function PT141Page() {
             },
             {
               icon: <Heart size={20} className="text-yellow-600" />,
-              iconBg: 'bg-cyan-500/15 border-cyan-500/25',
+              iconBg: 'bg-yellow-500/15 border-cyan-500/25',
               title: 'HSDD in Women',
               desc: 'Hypoactive sexual desire disorder affects an estimated 10% of premenopausal women. PT-141 is the only FDA-approved on-demand treatment for HSDD, with clinical trials showing significant improvements in desire and distress scores.',
             },
@@ -534,7 +534,7 @@ export default function PT141Page() {
             },
             {
               icon: <ShieldCheck size={20} className="text-yellow-600" />,
-              iconBg: 'bg-cyan-500/15 border-cyan-500/25',
+              iconBg: 'bg-yellow-500/15 border-cyan-500/25',
               title: 'Stress-Related Desire Loss',
               desc: 'Chronic stress suppresses libido through cortisol pathways that down-regulate hypothalamic sexual circuits. PT-141 bypasses these suppressive signals by directly activating MC4R, restoring desire independent of stress hormone levels.',
             },
@@ -546,7 +546,7 @@ export default function PT141Page() {
             },
             {
               icon: <CheckCircle2 size={20} className="text-yellow-600" />,
-              iconBg: 'bg-cyan-500/15 border-cyan-500/25',
+              iconBg: 'bg-yellow-500/15 border-cyan-500/25',
               title: 'Psychogenic Erectile Dysfunction',
               desc: 'For men whose erectile dysfunction has a psychological or central nervous system component (performance anxiety, desire deficit) rather than purely vascular causes, PT-141 addresses the upstream driver that PDE5 inhibitors miss.',
             },

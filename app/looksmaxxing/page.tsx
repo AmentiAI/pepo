@@ -504,7 +504,7 @@ export default function LooksmaxxingPage() {
                 {['GHK-Cu topical', 'SNAP-8 topical', 'NAD+'].map((item) => (
                   <span
                     key={item}
-                    className="text-xs px-3 py-1.5 rounded-full font-medium text-cyan-300"
+                    className="text-xs px-3 py-1.5 rounded-full font-medium text-yellow-500"
                     style={{ background: 'rgba(245,158,11,0.1)', border: '1px solid rgba(245,158,11,0.2)' }}
                   >
                     {item}
@@ -605,7 +605,7 @@ export default function LooksmaxxingPage() {
               </div>
               <div className="space-y-4">
                 <div>
-                  <p className="text-xs font-semibold text-cyan-500 uppercase tracking-wider mb-1">
+                  <p className="text-xs font-semibold text-yellow-600 uppercase tracking-wider mb-1">
                     Softmaxx Option
                   </p>
                   <p className="text-sm text-gray-700">
@@ -677,7 +677,7 @@ export default function LooksmaxxingPage() {
                 className="rounded-xl p-4"
                 style={{ background: 'var(--bg)', border: '1px solid var(--border)' }}
               >
-                <p className="text-xs font-semibold text-cyan-500 uppercase tracking-wider mb-1">
+                <p className="text-xs font-semibold text-yellow-600 uppercase tracking-wider mb-1">
                   Softmaxx Protocol
                 </p>
                 <p className="text-sm text-gray-700">
@@ -804,7 +804,7 @@ export default function LooksmaxxingPage() {
               <div className="flex items-center gap-2 mb-4">
                 <h3 className="text-lg font-bold text-gray-900">BPC-157</h3>
                 <span
-                  className="text-xs px-2.5 py-1 rounded-full font-bold text-cyan-300"
+                  className="text-xs px-2.5 py-1 rounded-full font-bold text-yellow-500"
                   style={{ background: 'rgba(245,158,11,0.1)', border: '1px solid rgba(245,158,11,0.25)' }}
                 >
                   A Tier for Hair
@@ -968,7 +968,7 @@ export default function LooksmaxxingPage() {
                 <div className="flex items-center gap-2 mb-1">
                   <h3 className="text-xl font-bold text-gray-900">Ipamorelin / CJC-1295</h3>
                   <span
-                    className="text-xs px-2.5 py-1 rounded-full font-bold text-cyan-300"
+                    className="text-xs px-2.5 py-1 rounded-full font-bold text-yellow-500"
                     style={{ background: 'rgba(245,158,11,0.1)', border: '1px solid rgba(245,158,11,0.25)' }}
                   >
                     A Tier

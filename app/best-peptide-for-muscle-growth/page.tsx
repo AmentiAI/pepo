@@ -122,7 +122,7 @@ const peptides = [
     ],
     best: 'Advanced athletes wanting maximum performance and physique results',
     color: 'text-yellow-600',
-    border: 'border-cyan-500/30',
+    border: 'border-yellow-500/30',
     glow: '',
   },
 ];
@@ -218,7 +218,7 @@ export default function BestPeptideMuscleGrowthPage() {
         </h2>
         <div className="grid md:grid-cols-2 gap-5">
           <div
-            className="card p-6 border border-cyan-500/30 ring-1 ring-cyan-500/10"
+            className="card p-6 border border-yellow-500/30 ring-1 ring-cyan-500/10"
             style={{ background: 'var(--bg-card)' }}
           >
             <span className="badge badge-cyan mb-3 inline-block">Direct Muscle Growth</span>
@@ -315,8 +315,8 @@ export default function BestPeptideMuscleGrowthPage() {
                 'Run 4–6 week cycles, 20–100mcg post-workout',
                 'Best for advanced trainees with solid training base',
               ],
-              color: 'text-cyan-300',
-              border: 'border-cyan-500/30',
+              color: 'text-yellow-500',
+              border: 'border-yellow-500/30',
             },
             {
               condition: 'I want whole-body recomposition',

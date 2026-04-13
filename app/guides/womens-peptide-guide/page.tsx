@@ -36,7 +36,7 @@ const protocols = [
     badge: 'GLP-1 + GH Peptides',
     badgeClass: 'badge badge-cyan',
     color: 'text-yellow-600',
-    border: 'border-cyan-500/30',
+    border: 'border-yellow-500/30',
     bg: 'bg-cyan-500/10',
     items: [
       { role: 'Primary', detail: 'Semaglutide 0.25mg/week titrating to 1mg (women often respond at lower doses than the 2.4mg male max)' },
@@ -80,7 +80,7 @@ const protocols = [
     badge: 'GHK-Cu + SNAP-8 + BPC-157',
     badgeClass: 'badge',
     color: 'text-yellow-600',
-    border: 'border-cyan-500/30',
+    border: 'border-yellow-500/30',
     bg: 'bg-cyan-500/10',
     items: [
       { role: 'Collagen', detail: 'GHK-Cu topical + injectable: collagen synthesis, wrinkle reversal, skin thickness' },
@@ -378,7 +378,7 @@ export default function WomensPeptideGuidePage() {
             {[
               { peptide: 'GH Peptides (Ipamorelin, CJC)', timing: 'Neutral', desc: 'Use consistently — no phase-specific advantage confirmed in research.', color: 'text-gray-700', border: 'border-zinc-600/30' },
               { peptide: 'GLP-1 Peptides', timing: 'Neutral', desc: 'Same weekly dose regardless of cycle phase — GLP-1 receptor sensitivity is not cycle-dependent.', color: 'text-gray-700', border: 'border-zinc-600/30' },
-              { peptide: 'BPC-157', timing: 'Use Consistently', desc: 'BPC-157 works through tissue-level mechanisms, not hormonal axes — use daily without cycle adjustment.', color: 'text-yellow-600', border: 'border-cyan-500/30' },
+              { peptide: 'BPC-157', timing: 'Use Consistently', desc: 'BPC-157 works through tissue-level mechanisms, not hormonal axes — use daily without cycle adjustment.', color: 'text-yellow-600', border: 'border-yellow-500/30' },
               { peptide: 'PT-141', timing: 'Any Time', desc: 'Can be used at any point in the cycle as needed. FDA approval was not cycle-phase specific.', color: 'text-yellow-600', border: 'border-yellow-400/40' },
             ].map((item) => (
               <div

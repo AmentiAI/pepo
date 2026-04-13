@@ -172,7 +172,7 @@ export default function PeptideStorageGuidePage() {
         <div className="grid md:grid-cols-2 gap-6">
           {/* Lyophilized */}
           <div
-            className="card p-6 border border-cyan-500/30"
+            className="card p-6 border border-yellow-500/30"
             style={{ background: 'var(--bg-card)' }}
           >
             <div className="flex items-center gap-2 mb-4">
@@ -300,7 +300,7 @@ export default function PeptideStorageGuidePage() {
               title: 'Aliquot Before Freezing',
               desc: 'Divide a large reconstituted vial into individual dose-sized aliquots (using amber glass vials or pre-drawn syringes) before freezing. This way each aliquot is only thawed once, not the entire supply.',
               color: 'text-yellow-600',
-              border: 'border-cyan-500/30',
+              border: 'border-yellow-500/30',
             },
             {
               step: '3',
@@ -422,7 +422,7 @@ export default function PeptideStorageGuidePage() {
                   'Ideal form for travel — reconstitute on arrival',
                 ].map((point) => (
                   <li key={point} className="flex items-start gap-2">
-                    <ArrowRight size={12} className="text-cyan-500 mt-0.5 shrink-0" />
+                    <ArrowRight size={12} className="text-yellow-600 mt-0.5 shrink-0" />
                     <p className="text-xs text-gray-700 leading-relaxed">{point}</p>
                   </li>
                 ))}
@@ -474,7 +474,7 @@ export default function PeptideStorageGuidePage() {
               title: 'Amber Glass Vials',
               desc: 'Use amber (brown) glass vials for aliquoting — they block UV light. Pre-cleaned 2mL vials with rubber stoppers are ideal for freeze-thaw aliquots.',
               color: 'text-yellow-600',
-              border: 'border-cyan-500/30',
+              border: 'border-yellow-500/30',
             },
             {
               title: 'Silica Gel Packets',
@@ -486,7 +486,7 @@ export default function PeptideStorageGuidePage() {
               title: 'Dark Storage Location',
               desc: 'Store your fridge away from windows or use an opaque box inside the fridge. Light exposure — even from the fridge door opening — accumulates over time.',
               color: 'text-yellow-600',
-              border: 'border-cyan-500/30',
+              border: 'border-yellow-500/30',
             },
           ].map((item) => (
             <div

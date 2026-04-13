@@ -141,7 +141,7 @@ export default function SemaglutideVsTirzepatidePage() {
                 label: 'Most Clinical Data',
                 winner: 'Semaglutide',
                 reason: 'STEP + SUSTAIN + SELECT trials — broadest evidence base',
-                accent: 'text-emerald-400',
+                accent: 'text-yellow-600',
                 bg: 'rgba(16,185,129,0.08)',
                 border: 'rgba(16,185,129,0.25)',
               },
@@ -157,7 +157,7 @@ export default function SemaglutideVsTirzepatidePage() {
                 label: 'Best Balance',
                 winner: 'Tirzepatide',
                 reason: 'Superior to semaglutide, more studied than retatrutide',
-                accent: 'text-blue-400',
+                accent: 'text-yellow-600',
                 bg: 'rgba(96,165,250,0.08)',
                 border: 'rgba(96,165,250,0.25)',
               },
@@ -257,8 +257,8 @@ export default function SemaglutideVsTirzepatidePage() {
               <thead>
                 <tr style={{ borderBottom: '1px solid #2a2a3e' }}>
                   <th className="text-left py-3 px-4 text-gray-700 font-medium">Metric</th>
-                  <th className="text-left py-3 px-4 text-emerald-400 font-semibold">Semaglutide</th>
-                  <th className="text-left py-3 px-4 text-blue-400 font-semibold">Tirzepatide</th>
+                  <th className="text-left py-3 px-4 text-yellow-600 font-semibold">Semaglutide</th>
+                  <th className="text-left py-3 px-4 text-yellow-600 font-semibold">Tirzepatide</th>
                   <th className="text-left py-3 px-4 text-yellow-600 font-semibold">Retatrutide</th>
                 </tr>
               </thead>
@@ -323,22 +323,22 @@ export default function SemaglutideVsTirzepatidePage() {
 
           <div className="space-y-4 mb-10">
             <div className="card p-5" style={{ borderColor: 'rgba(16,185,129,0.3)' }}>
-              <p className="text-emerald-400 font-bold mb-2">Choose Semaglutide if:</p>
+              <p className="text-yellow-600 font-bold mb-2">Choose Semaglutide if:</p>
               <ul className="space-y-1 text-sm text-gray-700">
-                <li className="flex gap-2"><CheckCircle2 size={14} className="text-emerald-400 shrink-0 mt-0.5" />Cardiovascular disease history — SELECT trial data provides specific CV benefit evidence</li>
-                <li className="flex gap-2"><CheckCircle2 size={14} className="text-emerald-400 shrink-0 mt-0.5" />Type 2 diabetes — strongest glucose management data in the SUSTAIN trial series</li>
-                <li className="flex gap-2"><CheckCircle2 size={14} className="text-emerald-400 shrink-0 mt-0.5" />Conservative approach — most years of clinical data and post-market safety record</li>
-                <li className="flex gap-2"><CheckCircle2 size={14} className="text-emerald-400 shrink-0 mt-0.5" />Budget considerations — generally lower cost per mg than tirzepatide</li>
+                <li className="flex gap-2"><CheckCircle2 size={14} className="text-yellow-600 shrink-0 mt-0.5" />Cardiovascular disease history — SELECT trial data provides specific CV benefit evidence</li>
+                <li className="flex gap-2"><CheckCircle2 size={14} className="text-yellow-600 shrink-0 mt-0.5" />Type 2 diabetes — strongest glucose management data in the SUSTAIN trial series</li>
+                <li className="flex gap-2"><CheckCircle2 size={14} className="text-yellow-600 shrink-0 mt-0.5" />Conservative approach — most years of clinical data and post-market safety record</li>
+                <li className="flex gap-2"><CheckCircle2 size={14} className="text-yellow-600 shrink-0 mt-0.5" />Budget considerations — generally lower cost per mg than tirzepatide</li>
               </ul>
             </div>
 
             <div className="card p-5" style={{ borderColor: 'rgba(96,165,250,0.3)' }}>
-              <p className="text-blue-400 font-bold mb-2">Choose Tirzepatide if:</p>
+              <p className="text-yellow-600 font-bold mb-2">Choose Tirzepatide if:</p>
               <ul className="space-y-1 text-sm text-gray-700">
-                <li className="flex gap-2"><CheckCircle2 size={14} className="text-blue-400 shrink-0 mt-0.5" />Maximum weight loss is the primary goal and you want proven Phase 3 data</li>
-                <li className="flex gap-2"><CheckCircle2 size={14} className="text-blue-400 shrink-0 mt-0.5" />Insulin resistance or metabolic syndrome — GIP co-agonism adds insulin sensitivity benefits</li>
-                <li className="flex gap-2"><CheckCircle2 size={14} className="text-blue-400 shrink-0 mt-0.5" />You tried semaglutide and want to step up to a more effective agent</li>
-                <li className="flex gap-2"><CheckCircle2 size={14} className="text-blue-400 shrink-0 mt-0.5" />GI side effects were problematic on semaglutide — tirzepatide is generally better tolerated</li>
+                <li className="flex gap-2"><CheckCircle2 size={14} className="text-yellow-600 shrink-0 mt-0.5" />Maximum weight loss is the primary goal and you want proven Phase 3 data</li>
+                <li className="flex gap-2"><CheckCircle2 size={14} className="text-yellow-600 shrink-0 mt-0.5" />Insulin resistance or metabolic syndrome — GIP co-agonism adds insulin sensitivity benefits</li>
+                <li className="flex gap-2"><CheckCircle2 size={14} className="text-yellow-600 shrink-0 mt-0.5" />You tried semaglutide and want to step up to a more effective agent</li>
+                <li className="flex gap-2"><CheckCircle2 size={14} className="text-yellow-600 shrink-0 mt-0.5" />GI side effects were problematic on semaglutide — tirzepatide is generally better tolerated</li>
               </ul>
             </div>
 
@@ -369,14 +369,14 @@ export default function SemaglutideVsTirzepatidePage() {
 
           <div className="grid sm:grid-cols-2 gap-4">
             <Link href="/glp1-comparison" className="card p-5 hover:border-emerald-500/40 transition-colors block">
-              <p className="text-emerald-400 font-semibold mb-2">GLP-1 Comparison Hub</p>
+              <p className="text-yellow-600 font-semibold mb-2">GLP-1 Comparison Hub</p>
               <p className="text-gray-700 text-sm">Full GLP-class guide including Cagrilintide (CAGRI-SEMA) and extended protocol guides.</p>
-              <div className="flex items-center gap-1 mt-3 text-emerald-400 text-xs font-medium">Read guide <ArrowRight size={12} /></div>
+              <div className="flex items-center gap-1 mt-3 text-yellow-600 text-xs font-medium">Read guide <ArrowRight size={12} /></div>
             </Link>
             <Link href="/best-peptide-for-weight-loss" className="card p-5 hover:border-blue-500/40 transition-colors block">
-              <p className="text-blue-400 font-semibold mb-2">Best Peptides for Weight Loss 2026</p>
+              <p className="text-yellow-600 font-semibold mb-2">Best Peptides for Weight Loss 2026</p>
               <p className="text-gray-700 text-sm">Ranked guide covering all weight loss peptides — GLP-class, GH peptides, and metabolic supports.</p>
-              <div className="flex items-center gap-1 mt-3 text-blue-400 text-xs font-medium">View ranking <ArrowRight size={12} /></div>
+              <div className="flex items-center gap-1 mt-3 text-yellow-600 text-xs font-medium">View ranking <ArrowRight size={12} /></div>
             </Link>
           </div>
         </div>
@@ -411,14 +411,14 @@ export default function SemaglutideVsTirzepatidePage() {
 
           <div className="grid sm:grid-cols-2 gap-4">
             <Link href="/stacks/glp1-fat-loss" className="card p-5 hover:border-emerald-500/40 transition-colors block">
-              <p className="text-emerald-400 font-semibold mb-2">GLP-1 Fat Loss Stack</p>
+              <p className="text-yellow-600 font-semibold mb-2">GLP-1 Fat Loss Stack</p>
               <p className="text-gray-700 text-sm">Pre-built GLP + GH support protocol with week-by-week guidance.</p>
-              <div className="flex items-center gap-1 mt-3 text-emerald-400 text-xs font-medium">View stack <ArrowRight size={12} /></div>
+              <div className="flex items-center gap-1 mt-3 text-yellow-600 text-xs font-medium">View stack <ArrowRight size={12} /></div>
             </Link>
             <Link href="/body-composition" className="card p-5 hover:border-blue-500/40 transition-colors block">
-              <p className="text-blue-400 font-semibold mb-2">Body Composition Hub</p>
+              <p className="text-yellow-600 font-semibold mb-2">Body Composition Hub</p>
               <p className="text-gray-700 text-sm">Complete guide to all body recomposition peptides and stacking strategies.</p>
-              <div className="flex items-center gap-1 mt-3 text-blue-400 text-xs font-medium">Read guide <ArrowRight size={12} /></div>
+              <div className="flex items-center gap-1 mt-3 text-yellow-600 text-xs font-medium">Read guide <ArrowRight size={12} /></div>
             </Link>
           </div>
         </div>
@@ -447,7 +447,7 @@ export default function SemaglutideVsTirzepatidePage() {
           {glpFaqs.map((faq) => (
             <div key={faq.q} className="card p-5">
               <div className="flex items-start gap-3">
-                <HelpCircle size={18} className="text-emerald-400 shrink-0 mt-0.5" />
+                <HelpCircle size={18} className="text-yellow-600 shrink-0 mt-0.5" />
                 <div>
                   <h3 className="text-gray-900 font-semibold mb-2">{faq.q}</h3>
                   <p className="text-gray-700 text-sm leading-relaxed">{faq.a}</p>

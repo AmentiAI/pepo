@@ -230,7 +230,7 @@ export default function GutHealthPage() {
                   className={`w-10 h-10 rounded-xl flex items-center justify-center ${
                     item.color === 'violet'
                       ? 'bg-gray-900/15 border border-yellow-600/25'
-                      : 'bg-cyan-500/15 border border-cyan-500/25'
+                      : 'bg-yellow-500/15 border border-cyan-500/25'
                   }`}
                 >
                   <Zap

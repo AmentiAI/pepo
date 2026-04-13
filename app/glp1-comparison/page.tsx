@@ -114,14 +114,14 @@ const colorMap = {
     tag: 'text-yellow-500',
   },
   cyan: {
-    badge: 'bg-cyan-500/15 border border-cyan-500/25 text-yellow-600',
+    badge: 'bg-yellow-500/15 border border-cyan-500/25 text-yellow-600',
     glow: 'bg-cyan-500/8',
     border: 'border-cyan-500/20',
     icon: 'text-yellow-600',
     check: 'text-yellow-600',
     bar: 'bg-cyan-500',
     dot: 'bg-cyan-500',
-    tag: 'text-cyan-300',
+    tag: 'text-yellow-500',
   },
   fuchsia: {
     badge: 'bg-fuchsia-600/15 border border-fuchsia-600/25 text-yellow-600',
@@ -131,7 +131,7 @@ const colorMap = {
     check: 'text-yellow-600',
     bar: 'bg-fuchsia-500',
     dot: 'bg-fuchsia-500',
-    tag: 'text-fuchsia-300',
+    tag: 'text-yellow-500',
   },
 } as const;
 
@@ -441,7 +441,7 @@ export default function GLP1ComparisonPage() {
             <div className="order-1 lg:order-2">
               <div className="flex items-center gap-2 mb-4">
                 <span className="badge">Deep Dive</span>
-                <span className="inline-flex items-center px-2.5 py-1 rounded-lg text-xs font-semibold bg-cyan-500/15 border border-cyan-500/25 text-yellow-600">
+                <span className="inline-flex items-center px-2.5 py-1 rounded-lg text-xs font-semibold bg-yellow-500/15 border border-cyan-500/25 text-yellow-600">
                   Dual GIP+GLP-1
                 </span>
               </div>

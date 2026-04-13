@@ -44,7 +44,7 @@ const timeline = [
     description:
       'Stiffness reduces as TB-500 begins breaking down accumulated fibrosis. Active range of motion improves — overhead reaching becomes less painful. Sleep quality on the affected side may improve.',
     color: 'text-yellow-600',
-    border: 'border-cyan-500/30',
+    border: 'border-yellow-500/30',
   },
   {
     weeks: 'Week 5–8',
@@ -60,7 +60,7 @@ const timeline = [
     description:
       'Repaired tissue matures and integrates with surrounding muscle and bone. Reinforcement of the healed area reduces re-injury risk. Most users achieve near-full or full functional recovery.',
     color: 'text-yellow-600',
-    border: 'border-cyan-500/30',
+    border: 'border-yellow-500/30',
   },
 ];
 
@@ -201,7 +201,7 @@ export default function RotatorCuffPage() {
             style={{ borderColor: 'var(--border)', background: 'var(--bg-card)' }}
           >
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-cyan-500/15 flex items-center justify-center">
+              <div className="w-10 h-10 rounded-xl bg-yellow-500/15 flex items-center justify-center">
                 <Shield size={20} className="text-yellow-600" />
               </div>
               <div>

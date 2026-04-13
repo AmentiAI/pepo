@@ -70,7 +70,7 @@ const conditions = [
     name: 'SIBO (Small Intestinal Bacterial Overgrowth)',
     icon: <FlaskConical size={18} className="text-yellow-600" />,
     bg: 'bg-cyan-500/10',
-    border: 'border-cyan-500/30',
+    border: 'border-yellow-500/30',
     accent: 'text-yellow-600',
     mechanism: 'Motility restoration',
     detail:
@@ -90,7 +90,7 @@ const conditions = [
     name: 'IBD / Crohn\'s / Ulcerative Colitis',
     icon: <CheckCircle2 size={18} className="text-yellow-600" />,
     bg: 'bg-cyan-500/10',
-    border: 'border-cyan-500/30',
+    border: 'border-yellow-500/30',
     accent: 'text-yellow-600',
     mechanism: 'Mucosal healing + TNF-α suppression',
     detail:
@@ -110,7 +110,7 @@ const conditions = [
     name: 'Gut-Brain Axis Dysregulation',
     icon: <Brain size={18} className="text-yellow-600" />,
     bg: 'bg-cyan-500/10',
-    border: 'border-cyan-500/30',
+    border: 'border-yellow-500/30',
     accent: 'text-yellow-600',
     mechanism: 'Vagus nerve signaling',
     detail:
@@ -141,7 +141,7 @@ const timeline = [
     description:
       'The structural phase of healing. Mucosal ulcerations heal, tight junction protein expression (occludin, ZO-1) reaches therapeutic levels, and gut motility normalizes. In IBD and Crohn\'s, this is when inflammation markers typically show the most significant reduction. SIBO patients often see the greatest improvement during this window as the gut environment normalizes.',
     color: 'text-yellow-600',
-    border: 'border-cyan-500/30',
+    border: 'border-yellow-500/30',
   },
   {
     period: 'Weeks 8+',
@@ -395,7 +395,7 @@ export default function GutHealthBPC157Page() {
           </div>
 
           {/* Injectable */}
-          <div className="card p-6 border border-cyan-500/30" style={{ background: 'var(--bg-card)' }}>
+          <div className="card p-6 border border-yellow-500/30" style={{ background: 'var(--bg-card)' }}>
             <div className="flex items-center gap-2 mb-4">
               <Syringe size={18} className="text-yellow-600" />
               <h3 className="font-bold text-gray-900">Subcutaneous Injection</h3>
@@ -419,7 +419,7 @@ export default function GutHealthBPC157Page() {
               </div>
             </div>
             <div className="rounded-md bg-cyan-500/10 border border-cyan-500/20 p-3">
-              <p className="text-xs text-cyan-300 leading-relaxed">
+              <p className="text-xs text-yellow-500 leading-relaxed">
                 Better for conditions beyond the direct oral contact reach, and for systemic inflammatory
                 states that originate beyond the intestinal lumen.
               </p>
@@ -499,7 +499,7 @@ export default function GutHealthBPC157Page() {
               </div>
             </div>
 
-            <div className="card p-6 border border-cyan-500/30" style={{ background: 'var(--bg)' }}>
+            <div className="card p-6 border border-yellow-500/30" style={{ background: 'var(--bg)' }}>
               <span className="badge badge-cyan mb-3 inline-block">Subcutaneous Protocol</span>
               <div className="space-y-4">
                 <div className="flex justify-between text-sm">
@@ -631,9 +631,9 @@ export default function GutHealthBPC157Page() {
               </ul>
             </div>
 
-            <div className="card p-6 border border-cyan-500/30" style={{ background: 'var(--bg)' }}>
+            <div className="card p-6 border border-yellow-500/30" style={{ background: 'var(--bg)' }}>
               <h3 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
-                <span className="w-6 h-6 rounded bg-cyan-500/20 flex items-center justify-center text-xs text-yellow-600 font-bold">N</span>
+                <span className="w-6 h-6 rounded bg-yellow-500/20 flex items-center justify-center text-xs text-yellow-600 font-bold">N</span>
                 NAD+ Role in the Stack
               </h3>
               <ul className="space-y-2">

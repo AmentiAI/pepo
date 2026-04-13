@@ -380,7 +380,7 @@ export default function GHKCuPage() {
               Daily subcutaneous + topical. Provides continuous gene expression modulation, collagen synthesis,
               and antioxidant defense. The always-on foundation of the anti-aging protocol.
             </p>
-            <Link href="/products/ghk-cu" className="text-pink-400 text-xs font-medium hover:underline flex items-center gap-1">
+            <Link href="/products/ghk-cu" className="text-yellow-500 text-xs font-medium hover:underline flex items-center gap-1">
               Shop GHK-Cu <ArrowRight size={11} />
             </Link>
           </div>

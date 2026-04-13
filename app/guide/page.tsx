@@ -243,7 +243,7 @@ export default function GuidePage() {
         {/* Section 2: Why use peptides */}
         <section id="why-peptides" className="scroll-mt-24">
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 rounded-xl bg-cyan-500/15 border border-cyan-500/25 flex items-center justify-center">
+            <div className="w-10 h-10 rounded-xl bg-yellow-500/15 border border-cyan-500/25 flex items-center justify-center">
               <BookOpen size={18} className="text-yellow-600" />
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Why Use Peptides?</h2>
@@ -394,7 +394,7 @@ export default function GuidePage() {
         {/* Section 4: Common mistakes */}
         <section id="common-mistakes" className="scroll-mt-24">
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 rounded-xl bg-cyan-500/15 border border-cyan-500/25 flex items-center justify-center">
+            <div className="w-10 h-10 rounded-xl bg-yellow-500/15 border border-cyan-500/25 flex items-center justify-center">
               <AlertTriangle size={18} className="text-yellow-600" />
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Common Mistakes to Avoid</h2>
@@ -549,7 +549,7 @@ export default function GuidePage() {
         {/* Section 6: Safety */}
         <section id="safety" className="scroll-mt-24">
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 rounded-xl bg-cyan-500/15 border border-cyan-500/25 flex items-center justify-center">
+            <div className="w-10 h-10 rounded-xl bg-yellow-500/15 border border-cyan-500/25 flex items-center justify-center">
               <ShieldAlert size={18} className="text-yellow-600" />
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Safety Considerations</h2>

@@ -319,7 +319,7 @@ export default function TB500Page() {
               </div>
 
               <div className="rounded-xl p-5" style={{ background: 'rgba(8,145,178,0.08)', border: '1px solid rgba(8,145,178,0.2)' }}>
-                <h3 className="text-cyan-300 font-bold mb-3">Maintenance Phase (Weeks 3–12)</h3>
+                <h3 className="text-yellow-500 font-bold mb-3">Maintenance Phase (Weeks 3–12)</h3>
                 <ul className="space-y-2 text-sm text-gray-700">
                   <li className="flex gap-2"><span className="text-yellow-600 font-bold">Dose:</span> 5–7.5mg total per week</li>
                   <li className="flex gap-2"><span className="text-yellow-600 font-bold">Split:</span> 2× per week (e.g., Monday/Thursday)</li>

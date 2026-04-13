@@ -46,7 +46,7 @@ const quickAnswerCards = [
     reason: 'Whole-body inflammation, flexibility, stamina',
     accent: 'text-yellow-600',
     bg: 'bg-cyan-500/10',
-    border: 'border-cyan-500/30',
+    border: 'border-yellow-500/30',
   },
   {
     label: 'Best Overall',
@@ -170,7 +170,7 @@ const sideEffects = [
     ],
     color: 'text-yellow-600',
     bg: 'bg-cyan-500/10',
-    border: 'border-cyan-500/30',
+    border: 'border-yellow-500/30',
   },
 ];
 
@@ -322,11 +322,11 @@ export default function BPC157vsTB500Page() {
             </div>
             {/* TB-500 */}
             <div
-              className="card p-6 border border-cyan-500/30"
+              className="card p-6 border border-yellow-500/30"
               style={{ background: 'var(--bg)' }}
             >
               <div className="flex items-center gap-3 mb-5">
-                <div className="w-10 h-10 rounded-xl bg-cyan-500/15 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-xl bg-yellow-500/15 flex items-center justify-center">
                   <Shield size={20} className="text-yellow-600" />
                 </div>
                 <div>
@@ -459,7 +459,7 @@ export default function BPC157vsTB500Page() {
             </div>
           </div>
           <div
-            className="card p-6 border border-cyan-500/30"
+            className="card p-6 border border-yellow-500/30"
             style={{ background: 'var(--bg-card)' }}
           >
             <div className="flex items-center gap-2 mb-4">

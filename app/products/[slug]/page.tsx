@@ -747,8 +747,8 @@ export default async function ProductPage({
                 style={{ background: '#ffffff', borderColor: '#e5e7eb' }}
               >
                 <div className="flex items-center gap-2 mb-4">
-                  <ShieldCheck size={14} className="text-emerald-400" />
-                  <p className="text-xs font-bold uppercase tracking-wider text-emerald-400">
+                  <ShieldCheck size={14} className="text-yellow-600" />
+                  <p className="text-xs font-bold uppercase tracking-wider text-yellow-600">
                     Quality Assurance
                   </p>
                 </div>
@@ -760,7 +760,7 @@ export default async function ProductPage({
                     { label: 'US-Based Supplier', note: 'HPLC + Mass Spec Verified' },
                   ].map((item) => (
                     <div key={item.label} className="flex items-start gap-2">
-                      <Check size={11} className="text-emerald-400 mt-1 shrink-0" />
+                      <Check size={11} className="text-yellow-600 mt-1 shrink-0" />
                       <div>
                         <p className="text-xs font-semibold text-gray-900">{item.label}</p>
                         <p className="text-[10px]" style={{ color: '#374151' }}>{item.note}</p>

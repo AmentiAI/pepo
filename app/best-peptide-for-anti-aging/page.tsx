@@ -222,7 +222,7 @@ export default function BestPeptideAntiAgingPage() {
           Gold Standard: Longevity Elite Stack
         </h2>
         <div
-          className="card p-6 sm:p-8 border border-cyan-500/30 ring-1 ring-cyan-500/10 mb-6"
+          className="card p-6 sm:p-8 border border-yellow-500/30 ring-1 ring-cyan-500/10 mb-6"
           style={{ background: 'var(--bg-card)' }}
         >
           <div className="flex flex-wrap items-start justify-between gap-4 mb-6">
@@ -346,8 +346,8 @@ export default function BestPeptideAntiAgingPage() {
                 'Most unique mechanism in anti-aging',
                 'Proven human mortality reduction data',
               ],
-              color: 'text-cyan-300',
-              border: 'border-cyan-500/30',
+              color: 'text-yellow-500',
+              border: 'border-yellow-500/30',
             },
             {
               condition: 'I want visible skin & aesthetic results',
@@ -385,8 +385,8 @@ export default function BestPeptideAntiAgingPage() {
                 'Epithalon + GHK-Cu + NAD+ + GH stack',
                 'Gold standard anti-aging protocol',
               ],
-              color: 'text-cyan-300',
-              border: 'border-cyan-500/30',
+              color: 'text-yellow-500',
+              border: 'border-yellow-500/30',
             },
           ].map((item) => (
             <div

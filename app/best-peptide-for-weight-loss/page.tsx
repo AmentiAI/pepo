@@ -210,7 +210,7 @@ export default function BestPeptideWeightLossPage() {
           Our Pick: Tirzepatide
         </h2>
         <div
-          className="card p-6 sm:p-8 border border-cyan-500/30 ring-1 ring-cyan-500/10"
+          className="card p-6 sm:p-8 border border-yellow-500/30 ring-1 ring-cyan-500/10"
           style={{ background: 'var(--bg-card)' }}
         >
           <div className="flex flex-wrap items-start justify-between gap-4 mb-6">
@@ -329,8 +329,8 @@ export default function BestPeptideWeightLossPage() {
                 'You want dual-mechanism superiority',
                 'You want Phase 3-backed results',
               ],
-              color: 'text-cyan-300',
-              border: 'border-cyan-500/30',
+              color: 'text-yellow-500',
+              border: 'border-yellow-500/30',
             },
             {
               condition: 'Choose Retatrutide if...',

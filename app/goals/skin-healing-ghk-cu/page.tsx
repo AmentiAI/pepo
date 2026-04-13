@@ -316,7 +316,7 @@ export default function SkinHealingGhkCuPage() {
           {/* Injectable */}
           <div className="card p-6 border" style={{ borderColor: 'var(--border-bright)', background: 'var(--bg-card)' }}>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-9 h-9 rounded-xl bg-cyan-500/15 border border-cyan-500/25 flex items-center justify-center">
+              <div className="w-9 h-9 rounded-xl bg-yellow-500/15 border border-cyan-500/25 flex items-center justify-center">
                 <Zap size={16} className="text-yellow-600" />
               </div>
               <h3 className="font-bold text-gray-900">Injectable (SubQ)</h3>
@@ -404,7 +404,7 @@ export default function SkinHealingGhkCuPage() {
             {/* Injectable protocol */}
             <div className="card p-6 border" style={{ borderColor: 'var(--border)', background: 'var(--bg)' }}>
               <div className="flex items-center gap-3 mb-5">
-                <div className="w-10 h-10 rounded-xl bg-cyan-500/15 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-xl bg-yellow-500/15 flex items-center justify-center">
                   <Zap size={20} className="text-yellow-600" />
                 </div>
                 <div>

@@ -79,7 +79,7 @@ const timeline = [
     description:
       'Morning stiffness decreases. TB-500 begins dissolving accumulated fibrous adhesions. Eccentric loading (e.g., heel drops for Achilles) becomes more tolerable and productive.',
     color: 'text-yellow-600',
-    border: 'border-cyan-500/30',
+    border: 'border-yellow-500/30',
   },
   {
     weeks: 'Week 5–8',
@@ -95,7 +95,7 @@ const timeline = [
     description:
       'Healed tendon tissue matures and aligns with mechanical load. Eccentric and plyometric training can resume. The risk of re-injury is significantly reduced versus untreated healing.',
     color: 'text-yellow-600',
-    border: 'border-cyan-500/30',
+    border: 'border-yellow-500/30',
   },
 ];
 
@@ -264,7 +264,7 @@ export default function TendonitisPage() {
               style={{ borderColor: 'var(--border)', background: 'var(--bg)' }}
             >
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-xl bg-cyan-500/15 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-xl bg-yellow-500/15 flex items-center justify-center">
                   <Shield size={20} className="text-yellow-600" />
                 </div>
                 <div>

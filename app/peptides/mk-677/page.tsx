@@ -333,7 +333,7 @@ export default function MK677Page() {
             },
             {
               icon: <Dumbbell size={20} className="text-yellow-600" />,
-              iconBg: 'bg-cyan-500/15 border-cyan-500/25',
+              iconBg: 'bg-yellow-500/15 border-cyan-500/25',
               title: 'Lean Muscle Support',
               desc: 'Elevated IGF-1 drives nitrogen retention and muscle protein synthesis. Clinical studies show meaningful increases in lean mass over 8–12 week cycles, particularly when combined with resistance training. Gains are generally lean rather than fluid-driven.',
             },
@@ -345,7 +345,7 @@ export default function MK677Page() {
             },
             {
               icon: <Sparkles size={20} className="text-yellow-600" />,
-              iconBg: 'bg-cyan-500/15 border-cyan-500/25',
+              iconBg: 'bg-yellow-500/15 border-cyan-500/25',
               title: 'Skin & Hair Quality',
               desc: 'GH and IGF-1 stimulate collagen synthesis, improve skin elasticity, and support hair follicle activity. Many users notice improvements in skin texture and thickness within 6–8 weeks, which is among the earliest visible benefits.',
             },
@@ -357,7 +357,7 @@ export default function MK677Page() {
             },
             {
               icon: <Zap size={20} className="text-yellow-600" />,
-              iconBg: 'bg-cyan-500/15 border-cyan-500/25',
+              iconBg: 'bg-yellow-500/15 border-cyan-500/25',
               title: 'Injury Repair',
               desc: 'GH and IGF-1 accelerate collagen turnover in tendons and ligaments. Users recovering from soft-tissue injuries often stack MK-677 with BPC-157 for a comprehensive repair protocol that addresses both structural healing and GH-driven regeneration.',
             },
@@ -424,7 +424,7 @@ export default function MK677Page() {
                       className={`px-3 py-1 rounded-lg text-xs font-semibold shrink-0 ${
                         item.color === 'violet'
                           ? 'bg-gray-900/20 text-yellow-500'
-                          : 'bg-cyan-500/20 text-cyan-300'
+                          : 'bg-yellow-500/20 text-yellow-500'
                       }`}
                     >
                       {item.label}
@@ -576,7 +576,7 @@ export default function MK677Page() {
               <div key={item.title} className="card p-6">
                 <h3
                   className={`font-bold mb-5 ${
-                    item.color === 'violet' ? 'text-yellow-500' : 'text-cyan-300'
+                    item.color === 'violet' ? 'text-yellow-500' : 'text-yellow-500'
                   }`}
                 >
                   {item.title}

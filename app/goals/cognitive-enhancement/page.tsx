@@ -71,7 +71,7 @@ const peptideProfiles = [
     badgeColor: 'badge-cyan',
     accentText: 'text-yellow-600',
     accentBg: 'bg-cyan-500/10',
-    border: 'border-cyan-500/30',
+    border: 'border-yellow-500/30',
     icon: <Brain size={20} className="text-yellow-600" />,
     mechanism:
       'Semax is an analogue of ACTH 4-10, a fragment of adrenocorticotropic hormone. Its primary cognitive mechanism is upregulation of BDNF (Brain-Derived Neurotrophic Factor) — the key neurotrophin governing neuronal growth, survival, and synaptic plasticity. Semax also modulates dopamine and serotonin neurotransmission, increasing dopamine receptor sensitivity in prefrontal pathways critical for working memory and executive function.',
@@ -152,7 +152,7 @@ const protocols = [
   {
     title: 'Focus & Performance',
     badge: 'Productivity',
-    border: 'border-cyan-500/30',
+    border: 'border-yellow-500/30',
     steps: [
       { label: 'Primary', value: 'Semax 300–600 mcg intranasal AM' },
       { label: 'Cycle', value: '2 weeks on / 2 weeks off' },
@@ -464,7 +464,7 @@ export default function CognitiveEnhancementPage() {
           {/* Header */}
           <div className="grid grid-cols-3 border-b" style={{ borderColor: 'var(--border)' }}>
             <div className="p-4 text-xs font-semibold text-gray-700 uppercase tracking-wider">Aspect</div>
-            <div className="p-4 border-l border-cyan-500/30">
+            <div className="p-4 border-l border-yellow-500/30">
               <div className="flex items-center gap-2">
                 <Brain size={14} className="text-yellow-600" />
                 <span className="text-sm font-bold text-yellow-600">Semax</span>
@@ -497,7 +497,7 @@ export default function CognitiveEnhancementPage() {
         </div>
 
         <div className="mt-6 grid sm:grid-cols-2 gap-4">
-          <div className="card p-5 border border-cyan-500/30" style={{ background: 'var(--bg-card)' }}>
+          <div className="card p-5 border border-yellow-500/30" style={{ background: 'var(--bg-card)' }}>
             <h4 className="font-bold text-yellow-600 mb-2">Choose Semax when:</h4>
             <ul className="space-y-1">
               {[
@@ -583,7 +583,7 @@ export default function CognitiveEnhancementPage() {
           {[
             {
               peptide: 'Semax',
-              border: 'border-cyan-500/30',
+              border: 'border-yellow-500/30',
               accent: 'text-yellow-600',
               immediate: 'Noticeable focus improvement same day — 15–30 min after intranasal dosing. Users typically report sharper attention, faster processing speed, and improved task engagement.',
               buildup: 'BDNF upregulation builds over 1–2 weeks of consistent use. Memory consolidation, executive function, and neuroprotective effects accumulate and persist beyond the dosing cycle.',

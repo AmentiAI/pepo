@@ -181,7 +181,7 @@ export default function IpamorelinCJCPage() {
 
             <div className="space-y-4 mb-6">
               <div className="card p-5 border-l-2 border-cyan-500/40">
-                <h3 className="text-cyan-300 font-bold mb-2">CJC-1295 (GHRH Analog)</h3>
+                <h3 className="text-yellow-500 font-bold mb-2">CJC-1295 (GHRH Analog)</h3>
                 <p className="text-gray-700 text-sm leading-relaxed">
                   CJC-1295 is a synthetic GHRH analog with a DAC (Drug Affinity Complex) modification that
                   extends its half-life from minutes to 6–8 days. It binds GHRH receptors in the pituitary,
@@ -200,7 +200,7 @@ export default function IpamorelinCJCPage() {
                 </p>
               </div>
               <div className="card p-5 border-l-2 border-cyan-500/40">
-                <h3 className="text-cyan-300 font-bold mb-2">Combined Effect</h3>
+                <h3 className="text-yellow-500 font-bold mb-2">Combined Effect</h3>
                 <p className="text-gray-700 text-sm leading-relaxed">
                   When injected together, CJC-1295 has pre-sensitized the pituitary's GHRH receptors,
                   making each somatotroph cell ready for maximum output. Ipamorelin then fires the
@@ -277,7 +277,7 @@ export default function IpamorelinCJCPage() {
 
             <div className="space-y-4 mb-8">
               <div className="rounded-xl p-5" style={{ background: 'rgba(8,145,178,0.08)', border: '1px solid rgba(8,145,178,0.2)' }}>
-                <h3 className="text-cyan-300 font-bold mb-3">Standard Protocol (Once Daily)</h3>
+                <h3 className="text-yellow-500 font-bold mb-3">Standard Protocol (Once Daily)</h3>
                 <ul className="space-y-2 text-sm text-gray-700">
                   <li className="flex gap-2"><span className="text-yellow-600 font-bold">Dose:</span> 200mcg Ipamorelin + 200mcg CJC-1295</li>
                   <li className="flex gap-2"><span className="text-yellow-600 font-bold">Timing:</span> 30–60 min before sleep (fasted — 2h+ since last meal)</li>
@@ -298,7 +298,7 @@ export default function IpamorelinCJCPage() {
               </div>
 
               <div className="rounded-xl p-5" style={{ background: 'rgba(8,145,178,0.08)', border: '1px solid rgba(8,145,178,0.2)' }}>
-                <h3 className="text-cyan-300 font-bold mb-3">Critical Rules</h3>
+                <h3 className="text-yellow-500 font-bold mb-3">Critical Rules</h3>
                 <ul className="space-y-2 text-sm text-gray-700">
                   <li className="flex gap-2"><span className="text-yellow-600 font-bold">Always fasted:</span> No food for 2+ hours before injection, no carbs for 30 min after</li>
                   <li className="flex gap-2"><span className="text-yellow-600 font-bold">No mixing with food:</span> Even a small snack reduces GH response 30–50%</li>
@@ -411,7 +411,7 @@ export default function IpamorelinCJCPage() {
             <ProductCard key={p!.slug} product={p!} showAffiliateButton />
           ))}
           {ghStack && (
-            <Link href="/stacks/gh-optimization" className="card p-6 hover:border-cyan-500/30 transition-colors flex flex-col">
+            <Link href="/stacks/gh-optimization" className="card p-6 hover:border-yellow-500/30 transition-colors flex flex-col">
               <div className="badge badge-cyan mb-3 self-start">GH Stack</div>
               <h3 className="text-gray-900 font-bold text-lg mb-2">{ghStack.name}</h3>
               <p className="text-gray-700 text-sm leading-relaxed flex-1">{ghStack.shortDescription}</p>

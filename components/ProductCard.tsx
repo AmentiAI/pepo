@@ -93,16 +93,16 @@ export default function ProductCard({ product, showAffiliateButton = false }: Pr
         </div>
 
         {/* Price + actions */}
-        <div className="flex items-center justify-between gap-2 mt-auto">
-          <div>
+        <div className="mt-auto space-y-3">
+          <div className="flex items-center justify-between">
             <p className="text-xs text-gray-800">HPLC Verified</p>
             <div className="flex items-baseline gap-1.5">
               <p className="font-bold text-gray-900">${product.salePrice.toFixed(2)}</p>
-              <p className="text-xs line-through" style={{ color: '#a1a1b5' }}>${product.price.toFixed(2)}</p>
+              <p className="text-xs line-through text-gray-400">${product.price.toFixed(2)}</p>
             </div>
           </div>
           <div className="flex gap-2">
-            <Link href={`/products/${product.slug}`} className="btn-secondary py-2 px-3 text-xs">
+            <Link href={`/products/${product.slug}`} className="btn-secondary py-2 px-3 text-xs flex-1 justify-center">
               Protocol <ArrowRight size={13} />
             </Link>
             {showAffiliateButton && (
@@ -110,7 +110,7 @@ export default function ProductCard({ product, showAffiliateButton = false }: Pr
                 href={`/out/${product.slug}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary py-2 px-3 text-xs"
+                className="btn-primary py-2 px-3 text-xs flex-1 justify-center"
               >
                 Buy <ExternalLink size={12} />
               </a>

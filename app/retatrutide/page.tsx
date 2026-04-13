@@ -112,11 +112,11 @@ const colorMap = {
     dot: 'bg-yellow-500',
   },
   cyan: {
-    badge: 'bg-cyan-500/15 border border-cyan-500/25 text-yellow-600',
+    badge: 'bg-yellow-500/15 border border-cyan-500/25 text-yellow-600',
     border: 'border-cyan-500/20',
     glow: 'bg-cyan-500/8',
     check: 'text-yellow-600',
-    tag: 'text-cyan-300',
+    tag: 'text-yellow-500',
     dot: 'bg-cyan-500',
   },
   fuchsia: {
@@ -124,7 +124,7 @@ const colorMap = {
     border: 'border-fuchsia-600/20',
     glow: 'bg-fuchsia-600/8',
     check: 'text-yellow-600',
-    tag: 'text-fuchsia-300',
+    tag: 'text-yellow-500',
     dot: 'bg-fuchsia-500',
   },
 } as const;
@@ -425,14 +425,14 @@ export default function RetatrutidePage() {
             >
               <div className="flex items-start justify-between mb-3">
                 <div>
-                  <p className="font-bold text-gray-900 group-hover:text-fuchsia-300 transition-colors">
+                  <p className="font-bold text-gray-900 group-hover:text-yellow-500 transition-colors">
                     {item.label}
                   </p>
                   <p className="text-xs text-gray-700 mt-0.5">{item.sub}</p>
                 </div>
                 <ArrowRight
                   size={16}
-                  className="text-fuchsia-600 group-hover:text-yellow-600 transition-colors shrink-0 mt-1"
+                  className="text-yellow-600 group-hover:text-yellow-600 transition-colors shrink-0 mt-1"
                 />
               </div>
               <p className="text-sm text-gray-700">{item.detail}</p>
@@ -485,7 +485,7 @@ export default function RetatrutidePage() {
           </div>
           <Link
             href="/glp1-comparison"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-yellow-600 hover:text-fuchsia-300 transition-colors"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-yellow-600 hover:text-yellow-500 transition-colors"
           >
             Full GLP-1 comparison table
             <ArrowRight size={14} />

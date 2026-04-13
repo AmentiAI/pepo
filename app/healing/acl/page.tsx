@@ -57,7 +57,7 @@ const timeline = [
     description:
       'Shift TB-500 to 5mg/week maintenance. BPC-157 continues driving collagen synthesis and angiogenesis. The graft (patellar tendon or hamstring) begins remodeling into ligament tissue — a process called "ligamentization" that BPC-157 directly accelerates. Range of motion and early strength training resumes.',
     color: 'text-yellow-600',
-    border: 'border-cyan-500/30',
+    border: 'border-yellow-500/30',
     bg: 'bg-cyan-500/10',
   },
   {
@@ -228,7 +228,7 @@ export default function ACLPage() {
 
           {/* Post-op Maintenance */}
           <div
-            className="card p-6 border border-cyan-500/30 md:col-span-2"
+            className="card p-6 border border-yellow-500/30 md:col-span-2"
             style={{ background: 'var(--bg-card)' }}
           >
             <div className="flex items-center gap-2 mb-4">

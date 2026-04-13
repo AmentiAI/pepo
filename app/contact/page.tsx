@@ -84,7 +84,7 @@ export default function ContactPage() {
 
           {/* Business email */}
           <div className="card p-7">
-            <div className="w-12 h-12 rounded-xl bg-cyan-500/15 border border-cyan-500/25 flex items-center justify-center mb-5">
+            <div className="w-12 h-12 rounded-xl bg-yellow-500/15 border border-cyan-500/25 flex items-center justify-center mb-5">
               <Mail size={22} className="text-yellow-600" />
             </div>
             <span className="badge mb-3 inline-block text-xs">Business Only</span>
