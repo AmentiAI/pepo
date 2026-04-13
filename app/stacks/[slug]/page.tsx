@@ -261,7 +261,7 @@ export default async function StackPage({
                 style={{ background: '#ffffff', borderColor: '#1e1e35' }}
               >
                 {/* Card top accent */}
-                <div className="h-1 bg-gradient-to-r from-violet-600 to-cyan-500 opacity-60" />
+                <div className="h-1 bg-gradient-to-r from-yellow-500 to-amber-400 opacity-60" />
 
                 <div className="p-5 sm:p-6">
                   <div className="flex flex-col sm:flex-row sm:items-start gap-5">
@@ -381,7 +381,7 @@ export default async function StackPage({
               >
                 <div
                   className="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold"
-                  style={{ background: 'rgba(234,179,8,0.15)', color: '#a78bfa' }}
+                  style={{ background: 'rgba(234,179,8,0.15)', color: '#d97706' }}
                 >
                   {idx + 1}
                 </div>

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 };
 
 const categoryColors: Record<string, string> = {
-  'Weight Loss': 'bg-gray-900/15 border-violet-600/25 text-yellow-600',
+  'Weight Loss': 'bg-gray-900/15 border-yellow-600/25 text-yellow-600',
   'Research': 'bg-cyan-500/15 border-cyan-500/25 text-yellow-600',
   'Protocols': 'bg-fuchsia-600/15 border-fuchsia-600/25 text-yellow-600',
   'Skinmaxxing': 'bg-pink-600/15 border-pink-600/25 text-pink-400',
@@ -56,7 +56,7 @@ export default function BlogPage() {
       <section className="py-10 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6">
         <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-6">Latest Article</p>
         <Link href={`/blog/${featured.slug}`} className="group block">
-          <div className="card p-8 border border-violet-600/20 relative overflow-hidden hover:border-violet-500/40 transition-colors">
+          <div className="card p-8 border border-yellow-600/20 relative overflow-hidden hover:border-yellow-500/40 transition-colors">
             <div className="absolute top-0 right-0 w-64 h-64 bg-gray-900/5 rounded-full blur-3xl" />
             <div className="relative">
               <div className="flex items-center gap-3 mb-4">

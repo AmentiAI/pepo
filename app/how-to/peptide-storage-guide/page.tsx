@@ -429,7 +429,7 @@ export default function PeptideStorageGuidePage() {
               </ul>
             </div>
             <div
-              className="card p-6 border border-violet-500/20"
+              className="card p-6 border border-yellow-500/20"
               style={{ background: 'var(--bg)' }}
             >
               <h3 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
@@ -444,7 +444,7 @@ export default function PeptideStorageGuidePage() {
                   'Keep in original labeled vials with intact septa',
                 ].map((point) => (
                   <li key={point} className="flex items-start gap-2">
-                    <ArrowRight size={12} className="text-violet-500 mt-0.5 shrink-0" />
+                    <ArrowRight size={12} className="text-yellow-500 mt-0.5 shrink-0" />
                     <p className="text-xs text-gray-500 leading-relaxed">{point}</p>
                   </li>
                 ))}

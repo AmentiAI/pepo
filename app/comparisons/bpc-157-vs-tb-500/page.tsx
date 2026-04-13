@@ -303,7 +303,7 @@ export default function BPC157vsTB500Page() {
               style={{ background: 'var(--bg)' }}
             >
               <div className="flex items-center gap-3 mb-5">
-                <div className="w-10 h-10 rounded-xl bg-violet-500/15 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-xl bg-yellow-500/15 flex items-center justify-center">
                   <Syringe size={20} className="text-yellow-600" />
                 </div>
                 <div>
@@ -487,7 +487,7 @@ export default function BPC157vsTB500Page() {
           </div>
         </div>
         <div
-          className="card p-6 border border-violet-500/20"
+          className="card p-6 border border-yellow-500/20"
           style={{ background: 'var(--bg-card)' }}
         >
           <div className="flex items-start gap-3">

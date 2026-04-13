@@ -181,7 +181,7 @@ export default function PT141Page() {
               {
                 title: 'MC4R Agonism',
                 desc: 'Binds melanocortin-4 receptors in the hypothalamus, activating the central neural circuits that initiate sexual desire and arousal responses.',
-                color: 'violet',
+                color: 'yellow',
               },
               {
                 title: 'Hormone-Independent',
@@ -191,7 +191,7 @@ export default function PT141Page() {
               {
                 title: 'Derived from Melanotan-II',
                 desc: 'A cyclic peptide analog of alpha-MSH (melanocyte-stimulating hormone), structurally refined from Melanotan-II to eliminate tanning effects while preserving sexual function benefits.',
-                color: 'violet',
+                color: 'yellow',
               },
               {
                 title: 'Central vs Peripheral Action',
@@ -206,7 +206,7 @@ export default function PT141Page() {
               >
                 <div
                   className={`w-2 h-2 rounded-full mt-2 shrink-0 ${
-                    item.color === 'violet' ? 'bg-violet-400' : 'bg-cyan-400'
+                    item.color === 'violet' ? 'bg-yellow-400' : 'bg-cyan-400'
                   }`}
                 />
                 <div>
@@ -307,7 +307,7 @@ export default function PT141Page() {
           {/* Male */}
           <div className="card p-6 sm:p-8">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-gray-900/15 border border-violet-600/25 flex items-center justify-center">
+              <div className="w-10 h-10 rounded-xl bg-gray-900/15 border border-yellow-600/25 flex items-center justify-center">
                 <Users size={18} className="text-yellow-600" />
               </div>
               <div>
@@ -516,7 +516,7 @@ export default function PT141Page() {
           {[
             {
               icon: <Brain size={20} className="text-yellow-600" />,
-              iconBg: 'bg-gray-900/15 border-violet-600/25',
+              iconBg: 'bg-gray-900/15 border-yellow-600/25',
               title: 'Low Libido (Both Sexes)',
               desc: 'For men and women experiencing reduced sexual desire without a clear hormonal cause, PT-141 directly activates the brain pathways responsible for desire. Often effective when standard interventions have failed.',
             },
@@ -528,7 +528,7 @@ export default function PT141Page() {
             },
             {
               icon: <Zap size={20} className="text-yellow-600" />,
-              iconBg: 'bg-gray-900/15 border-violet-600/25',
+              iconBg: 'bg-gray-900/15 border-yellow-600/25',
               title: 'Antidepressant-Induced Dysfunction',
               desc: 'SSRIs and SNRIs commonly cause sexual side effects by suppressing dopamine and other neurotransmitters. PT-141 operates through a separate pathway (melanocortin system), making it effective even in the presence of antidepressant use.',
             },
@@ -540,7 +540,7 @@ export default function PT141Page() {
             },
             {
               icon: <Users size={20} className="text-yellow-600" />,
-              iconBg: 'bg-gray-900/15 border-violet-600/25',
+              iconBg: 'bg-gray-900/15 border-yellow-600/25',
               title: 'Hormonal Transitions',
               desc: 'Perimenopause, post-partum, and post-surgical hormonal changes often involve libido loss that is only partially addressed by hormone replacement. PT-141 provides a complementary, non-hormonal option that works alongside HRT.',
             },

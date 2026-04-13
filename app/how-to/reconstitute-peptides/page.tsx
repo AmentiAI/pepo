@@ -493,7 +493,7 @@ export default function ReconstitutePeptidesPage() {
             ))}
           </div>
           <div
-            className="card p-5 border border-violet-500/20 flex items-start gap-3"
+            className="card p-5 border border-yellow-500/20 flex items-start gap-3"
             style={{ background: 'var(--bg)' }}
           >
             <Shield size={18} className="text-yellow-600 shrink-0 mt-0.5" />

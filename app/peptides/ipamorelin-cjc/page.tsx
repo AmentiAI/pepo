@@ -112,7 +112,7 @@ export default function IpamorelinCJCPage() {
       <section className="relative pt-6 pb-12 sm:pt-10 sm:pb-20 overflow-hidden grid-bg">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-20 left-1/4 w-96 h-96 bg-cyan-600/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-violet-500/8 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-yellow-500/8 rounded-full blur-3xl" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
@@ -189,7 +189,7 @@ export default function IpamorelinCJCPage() {
                   pulse by 2–4×. Without a GHRP partner, it produces modest tonic GH elevation.
                 </p>
               </div>
-              <div className="card p-5 border-l-2 border-violet-500/40">
+              <div className="card p-5 border-l-2 border-yellow-500/40">
                 <h3 className="text-yellow-500 font-bold mb-2">Ipamorelin (Selective GHRP)</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">
                   Ipamorelin is a pentapeptide GHRP that binds the ghrelin receptor (GHSR-1a) in the
@@ -213,7 +213,7 @@ export default function IpamorelinCJCPage() {
           </div>
 
           <div>
-            <span className="badge badge-violet mb-4 inline-block">Evidence-Backed Benefits</span>
+            <span className="badge badge-yellow mb-4 inline-block">Evidence-Backed Benefits</span>
             <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-5">What the Research Documents</h2>
             <div className="space-y-3">
               {[
@@ -310,7 +310,7 @@ export default function IpamorelinCJCPage() {
 
           {/* Timeline */}
           <div>
-            <span className="badge badge-violet mb-4 inline-block">Results Timeline</span>
+            <span className="badge badge-yellow mb-4 inline-block">Results Timeline</span>
             <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-5">What to Expect Week by Week</h2>
             <div className="space-y-3">
               {[

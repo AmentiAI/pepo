@@ -386,7 +386,7 @@ export default function GutHealthBPC157Page() {
                 <p className="text-sm text-gray-900 font-medium">Direct mucosal contact during transit</p>
               </div>
             </div>
-            <div className="rounded-md bg-yellow-50 border border-violet-500/20 p-3">
+            <div className="rounded-md bg-yellow-50 border border-yellow-500/20 p-3">
               <p className="text-xs text-yellow-500 leading-relaxed">
                 BPC-157 stays concentrated in the GI tract as it travels through the stomach and intestines,
                 making direct contact with the tissue it needs to heal.
@@ -427,7 +427,7 @@ export default function GutHealthBPC157Page() {
           </div>
 
           {/* Combination */}
-          <div className="card p-6 border border-violet-400/20" style={{ background: 'var(--bg-card)' }}>
+          <div className="card p-6 border border-yellow-400/20" style={{ background: 'var(--bg-card)' }}>
             <div className="flex items-center gap-2 mb-4">
               <Zap size={18} className="text-yellow-600" />
               <h3 className="font-bold text-gray-900">Combination Protocol</h3>
@@ -450,7 +450,7 @@ export default function GutHealthBPC157Page() {
                 <p className="text-sm text-gray-900 font-medium">Maximum gut coverage</p>
               </div>
             </div>
-            <div className="rounded-md bg-yellow-50 border border-violet-500/20 p-3">
+            <div className="rounded-md bg-yellow-50 border border-yellow-500/20 p-3">
               <p className="text-xs text-yellow-500 leading-relaxed">
                 Many practitioners use both simultaneously — oral for direct GI tract contact, subcutaneous for
                 systemic effects — achieving maximum gut coverage from both directions.
@@ -613,7 +613,7 @@ export default function GutHealthBPC157Page() {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="card p-6 border border-yellow-400/40" style={{ background: 'var(--bg)' }}>
               <h3 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
-                <span className="w-6 h-6 rounded bg-violet-500/20 flex items-center justify-center text-xs text-yellow-600 font-bold">B</span>
+                <span className="w-6 h-6 rounded bg-yellow-500/20 flex items-center justify-center text-xs text-yellow-600 font-bold">B</span>
                 BPC-157 Role in the Stack
               </h3>
               <ul className="space-y-2">

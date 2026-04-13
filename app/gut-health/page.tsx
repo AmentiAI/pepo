@@ -203,7 +203,7 @@ export default function GutHealthPage() {
             {
               name: 'BPC-157',
               subtitle: 'Gut Lining Repair Engine',
-              color: 'violet',
+              color: 'yellow',
               points: [
                 'Upregulates growth hormone receptors in gut mucosa',
                 'Promotes angiogenesis in intestinal walls',
@@ -229,7 +229,7 @@ export default function GutHealthPage() {
                 <div
                   className={`w-10 h-10 rounded-xl flex items-center justify-center ${
                     item.color === 'violet'
-                      ? 'bg-gray-900/15 border border-violet-600/25'
+                      ? 'bg-gray-900/15 border border-yellow-600/25'
                       : 'bg-cyan-500/15 border border-cyan-500/25'
                   }`}
                 >

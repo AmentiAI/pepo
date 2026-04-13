@@ -140,7 +140,7 @@ export default function StacksPage() {
                   )}
 
                   {/* Accent bar at top */}
-                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-violet-600 to-cyan-500 opacity-70 group-hover:opacity-100 transition-opacity" />
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-yellow-500 to-amber-400 opacity-70 group-hover:opacity-100 transition-opacity" />
 
                   {/* Difficulty badge overlay */}
                   <div className="absolute bottom-3 left-3">

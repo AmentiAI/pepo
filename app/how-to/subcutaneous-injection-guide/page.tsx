@@ -85,7 +85,7 @@ const injectionSites = [
     tagColor: 'badge-cyan',
     color: 'text-yellow-600',
     bg: 'bg-yellow-50',
-    border: 'border-violet-500/20',
+    border: 'border-yellow-500/20',
     details: [
       '2 inches away from the navel in any direction',
       'Largest accessible fat depot on most people',
@@ -114,7 +114,7 @@ const injectionSites = [
     tagColor: '',
     color: 'text-yellow-600',
     bg: 'bg-yellow-50',
-    border: 'border-violet-500/20',
+    border: 'border-yellow-500/20',
     details: [
       'Posterior-lateral waist area',
       'Useful for lean individuals with limited abdominal fat',
@@ -583,7 +583,7 @@ export default function SubcutaneousInjectionGuidePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-5">
-              <div className="w-10 h-10 rounded-xl bg-violet-500/15 border border-violet-500/25 flex items-center justify-center">
+              <div className="w-10 h-10 rounded-xl bg-yellow-500/15 border border-yellow-500/25 flex items-center justify-center">
                 <Trash2 size={18} className="text-yellow-600" />
               </div>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Needle Disposal</h2>

@@ -45,8 +45,8 @@ const goals = [
       { value: '6–10wk', label: 'Protocol Duration' },
     ],
     href: '/healing',
-    color: 'from-violet-600 to-violet-400',
-    border: 'hover:border-violet-500/60',
+    color: 'from-yellow-500 to-amber-400',
+    border: 'hover:border-yellow-500/60',
   },
   {
     icon: TrendingUp,
@@ -73,7 +73,7 @@ const goals = [
       { value: '33%', label: 'Telomere Lengthening' },
     ],
     href: '/anti-aging',
-    color: 'from-fuchsia-600 to-violet-500',
+    color: 'from-yellow-500 to-amber-400',
     border: 'hover:border-fuchsia-500/60',
   },
 ];
@@ -192,7 +192,7 @@ export default function HomePage() {
   };
 
   const categoryGradient: Record<string, string> = {
-    'Healing & Recovery':       'from-violet-700 via-purple-600 to-violet-500',
+    'Healing & Recovery':       'from-yellow-600 via-amber-500 to-yellow-500',
     'Anti-Aging & Skin':        'from-rose-700 via-pink-600 to-fuchsia-500',
     'Anti-Aging & Longevity':   'from-amber-600 via-orange-500 to-yellow-400',
     'Body Composition':         'from-cyan-700 via-sky-600 to-cyan-500',
@@ -314,7 +314,10 @@ export default function HomePage() {
                         className="flex items-center justify-between pt-2 mt-auto border-t"
                         style={{ borderColor: 'var(--border)' }}
                       >
-                        <span className="font-bold text-gray-900 text-sm">${p.price.toFixed(2)}</span>
+                        <div className="flex items-baseline gap-1.5">
+                          <span className="font-bold text-gray-900 text-sm">${p.salePrice.toFixed(2)}</span>
+                          <span className="text-xs line-through" style={{ color: '#a1a1b5' }}>${p.price.toFixed(2)}</span>
+                        </div>
                         <div className="flex gap-1.5">
                           <Link
                             href={`/products/${p.slug}`}

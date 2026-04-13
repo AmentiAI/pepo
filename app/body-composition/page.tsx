@@ -187,7 +187,7 @@ export default function BodyCompositionPage() {
               },
             ].map((item) => (
               <div key={item.title} className="card p-6">
-                <div className="w-11 h-11 rounded-xl bg-gray-900/10 border border-violet-600/20 flex items-center justify-center mb-5">
+                <div className="w-11 h-11 rounded-xl bg-gray-900/10 border border-yellow-600/20 flex items-center justify-center mb-5">
                   {item.icon}
                 </div>
                 <h3 className="font-bold text-gray-900 mb-3">{item.title}</h3>
@@ -285,7 +285,7 @@ export default function BodyCompositionPage() {
                 <div className="h-1.5 rounded-full mb-2" style={{ background: 'var(--border)' }}>
                   <div
                     className="h-full rounded-full"
-                    style={{ width: `${row.pct}%`, background: 'linear-gradient(90deg, #7c3aed, #06b6d4)' }}
+                    style={{ width: `${row.pct}%`, background: 'linear-gradient(90deg, #d97706, #06b6d4)' }}
                   />
                 </div>
                 <p className="text-xs text-gray-500">{row.desc}</p>
@@ -354,7 +354,7 @@ export default function BodyCompositionPage() {
             {
               title: 'Fasted Injections',
               desc: 'Inject GH peptides 2+ hours after your last meal. Elevated insulin blunts GH release by up to 70%. Late-evening injection before sleep in a fasted state maximizes the GH pulse amplitude and synchronizes with natural overnight GH secretion.',
-              color: 'from-violet-700 to-violet-500',
+              color: 'from-yellow-600 to-amber-500',
             },
             {
               title: 'Resistance Training',
@@ -364,7 +364,7 @@ export default function BodyCompositionPage() {
             {
               title: 'Protein Intake',
               desc: 'GH peptides drive muscle protein synthesis. Without adequate amino acid supply (1.6–2.2g/kg bodyweight daily), the anabolic signal has no substrate to work with. Prioritize leucine-rich proteins (whey, red meat, eggs) to maximize the peptide-driven anabolic window.',
-              color: 'from-violet-700 to-violet-500',
+              color: 'from-yellow-600 to-amber-500',
             },
             {
               title: 'Sleep Quality',

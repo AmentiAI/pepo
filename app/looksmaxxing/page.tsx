@@ -413,7 +413,7 @@ export default function LooksmaxxingPage() {
           <div className="space-y-4">
             {/* S Tier */}
             <div
-              className="rounded-2xl border-l-4 border-violet-500 p-1"
+              className="rounded-2xl border-l-4 border-yellow-500 p-1"
               style={{ borderColor: 'rgb(139 92 246)', backgroundColor: 'rgba(139,92,246,0.06)' }}
             >
               <div className="flex flex-col sm:flex-row sm:items-center gap-4 p-5">
@@ -428,7 +428,7 @@ export default function LooksmaxxingPage() {
                     <Link
                       key={p.slug}
                       href={`/products/${p.slug}`}
-                      className="card px-4 py-3 flex flex-col gap-1 hover:border-violet-500/50 transition-colors min-w-[160px]"
+                      className="card px-4 py-3 flex flex-col gap-1 hover:border-yellow-500/50 transition-colors min-w-[160px]"
                     >
                       <span className="text-sm font-bold text-gray-900">{p.name}</span>
                       <span className="text-xs text-gray-500">{p.subtitle}</span>

@@ -122,7 +122,7 @@ export default function TB500Page() {
             <div className="flex items-center gap-2 mb-5">
               <span className="badge">Peptides</span>
               <ChevronRight size={14} className="text-gray-400" />
-              <span className="badge badge-violet">Healing & Recovery</span>
+              <span className="badge badge-yellow">Healing & Recovery</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
               <span className="gradient-text">TB-500</span>
@@ -169,7 +169,7 @@ export default function TB500Page() {
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
-            <span className="badge badge-violet mb-4 inline-block">Mechanism of Action</span>
+            <span className="badge badge-yellow mb-4 inline-block">Mechanism of Action</span>
             <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-5">What Is TB-500?</h2>
             <p className="text-gray-500 leading-relaxed mb-5">
               TB-500 is a synthetic 17-amino-acid peptide fragment derived from Thymosin Beta-4 — a naturally
@@ -193,7 +193,7 @@ export default function TB500Page() {
           </div>
 
           <div className="space-y-4">
-            <div className="card p-5 border-l-2" style={{ borderLeftColor: '#7c3aed' }}>
+            <div className="card p-5 border-l-2" style={{ borderLeftColor: '#d97706' }}>
               <div className="flex items-center gap-2 mb-2">
                 <Activity size={16} className="text-yellow-600" />
                 <h3 className="text-gray-900 font-semibold">Actin Sequestration</h3>
@@ -215,7 +215,7 @@ export default function TB500Page() {
                 than chronic inflammation — the state many overuse injuries are stuck in.
               </p>
             </div>
-            <div className="card p-5 border-l-2" style={{ borderLeftColor: '#7c3aed' }}>
+            <div className="card p-5 border-l-2" style={{ borderLeftColor: '#d97706' }}>
               <div className="flex items-center gap-2 mb-2">
                 <TrendingUp size={16} className="text-yellow-600" />
                 <h3 className="text-gray-900 font-semibold">Angiogenesis & Myogenesis</h3>
@@ -299,7 +299,7 @@ export default function TB500Page() {
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-12">
           <div>
-            <span className="badge badge-violet mb-4 inline-block">Dosing Protocol</span>
+            <span className="badge badge-yellow mb-4 inline-block">Dosing Protocol</span>
             <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-5">TB-500 Protocol Guide</h2>
             <p className="text-gray-500 leading-relaxed mb-6">
               TB-500 is almost universally run as a two-phase protocol: a loading phase to rapidly
@@ -406,7 +406,7 @@ export default function TB500Page() {
       {/* BPC-157 Synergy */}
       <section className="py-10 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="max-w-3xl mx-auto text-center mb-10">
-          <span className="badge badge-violet mb-4 inline-block">The Gold Standard Stack</span>
+          <span className="badge badge-yellow mb-4 inline-block">The Gold Standard Stack</span>
           <h2 className="text-3xl sm:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">TB-500 + BPC-157: Why This Stack Dominates</h2>
           <p className="text-gray-500 leading-relaxed">
             TB-500 and <Link href="/products/bpc-157" className="text-yellow-600 hover:underline">BPC-157</Link> are
@@ -446,7 +446,7 @@ export default function TB500Page() {
         </div>
 
         <div className="grid sm:grid-cols-3 gap-4 mb-10">
-          <Link href="/comparisons/bpc-157-vs-tb-500" className="card p-5 hover:border-violet-500/40 transition-colors block">
+          <Link href="/comparisons/bpc-157-vs-tb-500" className="card p-5 hover:border-yellow-500/40 transition-colors block">
             <p className="text-yellow-600 font-semibold mb-2">Full Comparison Guide</p>
             <p className="text-gray-500 text-sm">BPC-157 vs TB-500 head-to-head — which injury types need which peptide, and when to combine.</p>
             <div className="flex items-center gap-1 mt-3 text-yellow-600 text-xs font-medium">
@@ -460,7 +460,7 @@ export default function TB500Page() {
               View protocols <ArrowRight size={12} />
             </div>
           </Link>
-          <Link href="/stacks/ultimate-healing" className="card p-5 hover:border-violet-500/40 transition-colors block">
+          <Link href="/stacks/ultimate-healing" className="card p-5 hover:border-yellow-500/40 transition-colors block">
             <p className="text-yellow-600 font-semibold mb-2">Ultimate Healing Stack</p>
             <p className="text-gray-500 text-sm">Pre-built BPC-157 + TB-500 protocol with week-by-week dosing guide and injury timelines.</p>
             <div className="flex items-center gap-1 mt-3 text-yellow-600 text-xs font-medium">
@@ -482,7 +482,7 @@ export default function TB500Page() {
           ))}
           {wolverineStack && (
             <Link href={`/stacks/wolverine-healing`} className="card p-6 hover:border-yellow-400/40 transition-colors flex flex-col">
-              <div className="badge badge-violet mb-3 self-start">Healing Stack</div>
+              <div className="badge badge-yellow mb-3 self-start">Healing Stack</div>
               <h3 className="text-gray-900 font-bold text-lg mb-2">{wolverineStack.name}</h3>
               <p className="text-gray-500 text-sm leading-relaxed flex-1">{wolverineStack.shortDescription}</p>
               <div className="flex items-center gap-1 mt-4 text-yellow-600 text-sm font-medium">
@@ -497,7 +497,7 @@ export default function TB500Page() {
 
       {/* FAQ */}
       <section className="py-10 sm:py-20 max-w-3xl mx-auto px-4 sm:px-6">
-        <span className="badge badge-violet mb-4 inline-block">FAQ</span>
+        <span className="badge badge-yellow mb-4 inline-block">FAQ</span>
         <h2 className="text-3xl font-bold text-gray-900 mb-8">TB-500 Questions Answered</h2>
         <div className="space-y-4">
           {tb500Faqs.map((faq) => (

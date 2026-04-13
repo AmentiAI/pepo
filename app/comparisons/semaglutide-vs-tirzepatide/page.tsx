@@ -110,7 +110,7 @@ export default function SemaglutideVsTirzepatidePage() {
       <section className="relative pt-6 pb-12 sm:pt-10 sm:pb-20 overflow-hidden grid-bg">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-20 left-1/4 w-96 h-96 bg-emerald-600/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-violet-500/8 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-yellow-500/8 rounded-full blur-3xl" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
@@ -123,9 +123,9 @@ export default function SemaglutideVsTirzepatidePage() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
               <span style={{ background: 'linear-gradient(135deg, #34d399, #60a5fa)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Semaglutide</span>
               <span className="text-gray-900"> vs </span>
-              <span style={{ background: 'linear-gradient(135deg, #60a5fa, #a78bfa)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Tirzepatide</span>
+              <span style={{ background: 'linear-gradient(135deg, #60a5fa, #d97706)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Tirzepatide</span>
               <span className="text-gray-900"> vs </span>
-              <span style={{ background: 'linear-gradient(135deg, #a78bfa, #f472b6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Retatrutide</span>
+              <span style={{ background: 'linear-gradient(135deg, #d97706, #f472b6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Retatrutide</span>
             </h1>
             <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
               Three generations of GLP-class peptides. One question: which achieves the results you need?
@@ -223,7 +223,7 @@ export default function SemaglutideVsTirzepatidePage() {
 
             <div className="card p-6" style={{ borderColor: 'rgba(167,139,250,0.3)' }}>
               <div className="flex items-center gap-3 mb-3">
-                <span className="text-xs font-bold px-2 py-1 rounded" style={{ background: 'rgba(167,139,250,0.15)', color: '#a78bfa' }}>GEN 3</span>
+                <span className="text-xs font-bold px-2 py-1 rounded" style={{ background: 'rgba(167,139,250,0.15)', color: '#d97706' }}>GEN 3</span>
                 <h3 className="text-gray-900 font-bold text-lg">Retatrutide — Triple GIP + GLP-1 + Glucagon Agonist</h3>
               </div>
               <p className="text-gray-500 leading-relaxed mb-3">
@@ -292,7 +292,7 @@ export default function SemaglutideVsTirzepatidePage() {
           <h3 className="text-gray-900 font-bold text-xl mb-4">Average Weight Loss Comparison</h3>
           <div className="space-y-3 mb-10">
             {[
-              { name: 'Retatrutide (24 wk)', pct: 24.2, color: '#a78bfa', bg: 'rgba(167,139,250,0.15)' },
+              { name: 'Retatrutide (24 wk)', pct: 24.2, color: '#d97706', bg: 'rgba(167,139,250,0.15)' },
               { name: 'Tirzepatide (72 wk)', pct: 20.9, color: '#60a5fa', bg: 'rgba(96,165,250,0.15)' },
               { name: 'Semaglutide (68 wk)', pct: 14.9, color: '#34d399', bg: 'rgba(52,211,153,0.15)' },
               { name: 'Placebo', pct: 2.4, color: '#71717a', bg: 'rgba(113,113,122,0.1)' },

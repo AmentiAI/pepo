@@ -74,7 +74,7 @@ const peptides = [
     cons: ['Phase 2 data only (smaller trial)', 'Less long-term safety data', 'Harder to source'],
     best: 'Maximum results, comfortable with cutting-edge compounds',
     color: 'text-yellow-600',
-    border: 'border-violet-500/40',
+    border: 'border-yellow-500/40',
     glow: '',
   },
   {
@@ -146,7 +146,7 @@ export default function BestPeptideWeightLossPage() {
       <section className="relative pt-6 pb-12 sm:pt-10 sm:pb-20 overflow-hidden grid-bg">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-20 left-1/4 w-96 h-96 bg-cyan-600/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-violet-500/8 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-yellow-500/8 rounded-full blur-3xl" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
@@ -353,7 +353,7 @@ export default function BestPeptideWeightLossPage() {
               <ul className="space-y-2.5">
                 {item.points.map((pt) => (
                   <li key={pt} className="flex items-start gap-2">
-                    <ArrowRight size={13} className="text-violet-500 mt-0.5 shrink-0" />
+                    <ArrowRight size={13} className="text-yellow-500 mt-0.5 shrink-0" />
                     <p className="text-xs text-gray-500">{pt}</p>
                   </li>
                 ))}
@@ -481,7 +481,7 @@ export default function BestPeptideWeightLossPage() {
                   <div key={item.step} className="card p-4 flex gap-4">
                     <div
                       className="w-8 h-8 rounded-full flex items-center justify-center text-sm font-black shrink-0"
-                      style={{ background: 'rgba(234,179,8,0.15)', color: '#a78bfa', border: '1px solid rgba(234,179,8,0.25)' }}
+                      style={{ background: 'rgba(234,179,8,0.15)', color: '#d97706', border: '1px solid rgba(234,179,8,0.25)' }}
                     >
                       {item.step}
                     </div>

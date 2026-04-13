@@ -52,7 +52,7 @@ export default function ContactPage() {
             className="card p-7"
             style={{ borderColor: 'rgba(234,179,8,0.35)' }}
           >
-            <div className="w-12 h-12 rounded-xl bg-gray-900/15 border border-violet-600/25 flex items-center justify-center mb-5">
+            <div className="w-12 h-12 rounded-xl bg-gray-900/15 border border-yellow-600/25 flex items-center justify-center mb-5">
               <MessageSquare size={22} className="text-yellow-600" />
             </div>
             <div className="badge badge-cyan mb-3 inline-block text-xs">Fastest Response</div>
@@ -143,7 +143,7 @@ export default function ContactPage() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="flex items-center gap-3 p-4 rounded-xl border transition-colors hover:border-violet-600/40 hover:bg-gray-900/5"
+                className="flex items-center gap-3 p-4 rounded-xl border transition-colors hover:border-yellow-600/40 hover:bg-gray-900/5"
                 style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
               >
                 {link.icon}

@@ -36,7 +36,7 @@ const sections = [
     id: 'what-are-peptides',
     icon: <FlaskConical size={20} className="text-yellow-600" />,
     title: 'What Are Peptides?',
-    color: 'violet',
+    color: 'yellow',
   },
   {
     id: 'why-peptides',
@@ -48,7 +48,7 @@ const sections = [
     id: 'how-to-inject',
     icon: <Syringe size={20} className="text-yellow-600" />,
     title: 'How to Inject (Subcutaneous)',
-    color: 'violet',
+    color: 'yellow',
   },
   {
     id: 'common-mistakes',
@@ -60,7 +60,7 @@ const sections = [
     id: 'starting-protocols',
     icon: <ListChecks size={20} className="text-yellow-600" />,
     title: 'Starting Protocols for Beginners',
-    color: 'violet',
+    color: 'yellow',
   },
   {
     id: 'safety',
@@ -176,7 +176,7 @@ export default function GuidePage() {
                 <a
                   key={s.id}
                   href={`#${s.id}`}
-                  className="flex items-center gap-3 p-3 rounded-xl border transition-colors hover:border-violet-600/40 hover:bg-gray-900/5"
+                  className="flex items-center gap-3 p-3 rounded-xl border transition-colors hover:border-yellow-600/40 hover:bg-gray-900/5"
                   style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
                 >
                   <span className="text-gray-400 text-xs font-mono w-5">{String(i + 1).padStart(2, '0')}</span>
@@ -197,7 +197,7 @@ export default function GuidePage() {
         {/* Section 1: What are peptides */}
         <section id="what-are-peptides" className="scroll-mt-24">
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 rounded-xl bg-gray-900/15 border border-violet-600/25 flex items-center justify-center">
+            <div className="w-10 h-10 rounded-xl bg-gray-900/15 border border-yellow-600/25 flex items-center justify-center">
               <FlaskConical size={18} className="text-yellow-600" />
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">What Are Peptides?</h2>
@@ -218,7 +218,7 @@ export default function GuidePage() {
             engineered for stability, specificity, or enhanced potency.
           </p>
           <div
-            className="p-5 rounded-xl border-l-4 border-violet-600 mb-5"
+            className="p-5 rounded-xl border-l-4 border-yellow-600 mb-5"
             style={{ background: 'var(--bg-card)', borderTop: '1px solid var(--border)', borderRight: '1px solid var(--border)', borderBottom: '1px solid var(--border)' }}
           >
             <p className="text-sm text-gray-700 leading-relaxed">
@@ -299,7 +299,7 @@ export default function GuidePage() {
         {/* Section 3: How to inject */}
         <section id="how-to-inject" className="scroll-mt-24">
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 rounded-xl bg-gray-900/15 border border-violet-600/25 flex items-center justify-center">
+            <div className="w-10 h-10 rounded-xl bg-gray-900/15 border border-yellow-600/25 flex items-center justify-center">
               <Syringe size={18} className="text-yellow-600" />
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
@@ -377,7 +377,7 @@ export default function GuidePage() {
                 className="flex gap-4 p-4 rounded-xl border"
                 style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
               >
-                <span className="text-violet-600 font-mono font-bold text-sm shrink-0 mt-0.5">
+                <span className="text-yellow-600 font-mono font-bold text-sm shrink-0 mt-0.5">
                   {step.step}
                 </span>
                 <div>
@@ -452,7 +452,7 @@ export default function GuidePage() {
         {/* Section 5: Starting protocols */}
         <section id="starting-protocols" className="scroll-mt-24">
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 rounded-xl bg-gray-900/15 border border-violet-600/25 flex items-center justify-center">
+            <div className="w-10 h-10 rounded-xl bg-gray-900/15 border border-yellow-600/25 flex items-center justify-center">
               <ListChecks size={18} className="text-yellow-600" />
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
@@ -471,7 +471,7 @@ export default function GuidePage() {
               {
                 goal: 'Injury Recovery',
                 badge: 'Most Popular',
-                badgeColor: 'violet',
+                badgeColor: 'yellow',
                 peptides: 'BPC-157 + TB-500',
                 dose: 'BPC-157: 250mcg 2× daily | TB-500: 5mg 2× per week',
                 timing: 'BPC-157: Morning + Evening | TB-500: Monday + Thursday',
@@ -491,7 +491,7 @@ export default function GuidePage() {
               {
                 goal: 'Cognitive Enhancement',
                 badge: 'Intranasal',
-                badgeColor: 'violet',
+                badgeColor: 'yellow',
                 peptides: 'Semax + Selank',
                 dose: 'Semax: 400–600mcg | Selank: 250–400mcg (both intranasal)',
                 timing: 'Morning upon waking',

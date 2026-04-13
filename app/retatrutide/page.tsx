@@ -68,7 +68,7 @@ const titrationSteps = [
 ];
 
 const trialData = [
-  { label: 'Semaglutide', pct: 14.9, color: 'bg-violet-500', widthPct: '62' },
+  { label: 'Semaglutide', pct: 14.9, color: 'bg-yellow-500', widthPct: '62' },
   { label: 'Tirzepatide', pct: 22.5, color: 'bg-cyan-500', widthPct: '93' },
   { label: 'Retatrutide', pct: 24.2, color: 'bg-fuchsia-500', widthPct: '100' },
 ];
@@ -76,7 +76,7 @@ const trialData = [
 const receptorAdvantages = [
   {
     receptor: 'GLP-1',
-    color: 'violet' as const,
+    color: 'yellow' as const,
     title: 'Appetite reduction',
     desc: 'GLP-1 receptor activation suppresses hunger signals in the hypothalamus, slows gastric emptying, and reduces caloric intake — the mechanism shared by semaglutide and tirzepatide.',
   },
@@ -96,12 +96,20 @@ const receptorAdvantages = [
 
 const colorMap = {
   violet: {
-    badge: 'bg-gray-900/15 border border-violet-600/25 text-yellow-600',
-    border: 'border-violet-600/20',
+    badge: 'bg-gray-900/15 border border-yellow-600/25 text-yellow-600',
+    border: 'border-yellow-600/20',
     glow: 'bg-gray-900/8',
     check: 'text-yellow-600',
     tag: 'text-yellow-500',
-    dot: 'bg-violet-500',
+    dot: 'bg-yellow-500',
+  },
+  yellow: {
+    badge: 'bg-gray-900/15 border border-yellow-600/25 text-yellow-600',
+    border: 'border-yellow-600/20',
+    glow: 'bg-gray-900/8',
+    check: 'text-yellow-600',
+    tag: 'text-yellow-500',
+    dot: 'bg-yellow-500',
   },
   cyan: {
     badge: 'bg-cyan-500/15 border border-cyan-500/25 text-yellow-600',
@@ -450,7 +458,7 @@ export default function RetatrutidePage() {
                 label: 'vs Semaglutide',
                 delta: '+9.3%',
                 detail: 'More weight loss. Adds GIP and glucagon receptor mechanisms.',
-                color: 'violet' as const,
+                color: 'yellow' as const,
               },
               {
                 label: 'vs Tirzepatide',

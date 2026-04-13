@@ -174,7 +174,7 @@ const protocols = [
   {
     title: 'Comprehensive Cognitive',
     badge: 'Full Stack',
-    border: 'border-violet-400/20',
+    border: 'border-yellow-400/20',
     steps: [
       { label: 'AM', value: 'Semax 300 mcg intranasal' },
       { label: 'As Needed', value: 'Selank 250 mcg intranasal' },
@@ -659,7 +659,7 @@ export default function CognitiveEnhancementPage() {
                     </li>
                   ))}
                 </ul>
-                <div className="rounded-md bg-yellow-50 border border-violet-500/20 p-3">
+                <div className="rounded-md bg-yellow-50 border border-yellow-500/20 p-3">
                   <p className="text-xs text-yellow-500 leading-relaxed">{item.note}</p>
                 </div>
               </div>

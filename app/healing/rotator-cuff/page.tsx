@@ -167,7 +167,7 @@ export default function RotatorCuffPage() {
             style={{ borderColor: 'var(--border)', background: 'var(--bg-card)' }}
           >
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-violet-500/15 flex items-center justify-center">
+              <div className="w-10 h-10 rounded-xl bg-yellow-500/15 flex items-center justify-center">
                 <Syringe size={20} className="text-yellow-600" />
               </div>
               <div>

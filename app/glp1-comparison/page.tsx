@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 const compounds = [
   {
     name: 'Semaglutide',
-    color: 'violet',
+    color: 'yellow',
     mechanism: 'GLP-1 Agonist',
     weightLoss: '14.9%',
     trial: 'STEP-1 (68 wks)',
@@ -94,13 +94,23 @@ const compounds = [
 
 const colorMap = {
   violet: {
-    badge: 'bg-gray-900/15 border border-violet-600/25 text-yellow-600',
+    badge: 'bg-gray-900/15 border border-yellow-600/25 text-yellow-600',
     glow: 'bg-gray-900/8',
-    border: 'border-violet-600/20',
+    border: 'border-yellow-600/20',
     icon: 'text-yellow-600',
     check: 'text-yellow-600',
-    bar: 'bg-violet-500',
-    dot: 'bg-violet-500',
+    bar: 'bg-yellow-500',
+    dot: 'bg-yellow-500',
+    tag: 'text-yellow-500',
+  },
+  yellow: {
+    badge: 'bg-gray-900/15 border border-yellow-600/25 text-yellow-600',
+    glow: 'bg-gray-900/8',
+    border: 'border-yellow-600/20',
+    icon: 'text-yellow-600',
+    check: 'text-yellow-600',
+    bar: 'bg-yellow-500',
+    dot: 'bg-yellow-500',
     tag: 'text-yellow-500',
   },
   cyan: {
@@ -130,7 +140,7 @@ const summaryCards = [
     label: 'Best First GLP-1',
     compound: 'Semaglutide',
     reason: 'Proven, well-tolerated, easiest titration',
-    color: 'violet' as const,
+    color: 'yellow' as const,
     icon: <CheckCircle2 size={20} />,
   },
   {
@@ -154,7 +164,7 @@ const decisionGuide = [
     condition: 'New to GLP-1 peptides',
     recommendation: 'Semaglutide',
     detail: 'Proven, well-understood, easiest titration. The logical starting point.',
-    color: 'violet' as const,
+    color: 'yellow' as const,
   },
   {
     condition: 'Want maximum weight loss with Phase 3 data',
@@ -355,7 +365,7 @@ export default function GLP1ComparisonPage() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <span className="badge">Deep Dive</span>
-              <span className="inline-flex items-center px-2.5 py-1 rounded-lg text-xs font-semibold bg-gray-900/15 border border-violet-600/25 text-yellow-600">
+              <span className="inline-flex items-center px-2.5 py-1 rounded-lg text-xs font-semibold bg-gray-900/15 border border-yellow-600/25 text-yellow-600">
                 GLP-1 Agonist
               </span>
             </div>
@@ -381,7 +391,7 @@ export default function GLP1ComparisonPage() {
               </Link>
             </div>
           </div>
-          <div className="card p-6 border border-violet-600/20">
+          <div className="card p-6 border border-yellow-600/20">
             <h3 className="font-semibold text-gray-900 mb-4">STEP-1 Trial Results</h3>
             <div className="space-y-4 text-sm text-gray-500">
               <div className="flex justify-between items-center">
@@ -589,10 +599,10 @@ export default function GLP1ComparisonPage() {
             <h3 className="font-semibold text-gray-900 mb-5">Why Add GH Peptides?</h3>
             <div className="space-y-4">
               {[
-                { title: 'Muscle preservation', desc: 'GLP-1 creates a caloric deficit; Ipamorelin/CJC preserves lean mass during aggressive fat loss.', color: 'violet' as const },
+                { title: 'Muscle preservation', desc: 'GLP-1 creates a caloric deficit; Ipamorelin/CJC preserves lean mass during aggressive fat loss.', color: 'yellow' as const },
                 { title: 'GH pulse optimization', desc: 'Ipamorelin triggers natural GH pulses — no blunting of the natural axis, no cortisol spike.', color: 'cyan' as const },
                 { title: 'Body composition', desc: 'Users report improved fat-to-muscle ratio vs GLP-1 alone, even at identical weight loss.', color: 'fuchsia' as const },
-                { title: 'Recovery support', desc: 'CJC-1295 keeps GH elevated between pulses, supporting connective tissue and sleep quality.', color: 'violet' as const },
+                { title: 'Recovery support', desc: 'CJC-1295 keeps GH elevated between pulses, supporting connective tissue and sleep quality.', color: 'yellow' as const },
               ].map((item) => {
                 const c = colorMap[item.color];
                 return (
@@ -626,7 +636,7 @@ export default function GLP1ComparisonPage() {
           </div>
           <div className="flex flex-wrap gap-4 justify-center">
             {[
-              { href: '/products/semaglutide-10mg', label: 'Semaglutide 10mg', color: 'violet' as const },
+              { href: '/products/semaglutide-10mg', label: 'Semaglutide 10mg', color: 'yellow' as const },
               { href: '/products/tirzepatide-15mg', label: 'Tirzepatide 15mg', color: 'cyan' as const },
               { href: '/products/retatrutide-10mg', label: 'Retatrutide 10mg', color: 'fuchsia' as const },
             ].map((item) => {

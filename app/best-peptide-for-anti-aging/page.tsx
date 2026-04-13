@@ -77,7 +77,7 @@ const peptides = [
     ],
     best: 'Visible aesthetic results: skin, hair, and collagen regeneration',
     color: 'text-yellow-600',
-    border: 'border-violet-500/40',
+    border: 'border-yellow-500/40',
     glow: '',
   },
   {
@@ -399,7 +399,7 @@ export default function BestPeptideAntiAgingPage() {
               <ul className="space-y-2 flex-1">
                 {item.points.map((pt) => (
                   <li key={pt} className="flex items-start gap-2">
-                    <ArrowRight size={12} className="text-violet-500 mt-0.5 shrink-0" />
+                    <ArrowRight size={12} className="text-yellow-500 mt-0.5 shrink-0" />
                     <p className="text-xs text-gray-500">{pt}</p>
                   </li>
                 ))}

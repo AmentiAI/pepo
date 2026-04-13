@@ -173,6 +173,16 @@ input, textarea, select { font-size: max(16px, 1rem); }
   border-color: rgba(249,115,22,0.25);
   color: #9a3412;
 }
+.badge-yellow {
+  background: rgba(234,179,8,0.10);
+  border-color: rgba(234,179,8,0.30);
+  color: #92400e;
+}
+.badge-violet {
+  background: rgba(234,179,8,0.10);
+  border-color: rgba(234,179,8,0.30);
+  color: #92400e;
+}
 
 .tag-chip {
   display: inline-flex;

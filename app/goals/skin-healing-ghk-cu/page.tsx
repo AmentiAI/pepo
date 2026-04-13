@@ -33,7 +33,7 @@ const mechanismCards = [
   {
     icon: <Layers size={18} className="text-yellow-600" />,
     bg: 'bg-yellow-50',
-    border: 'border-violet-500/20',
+    border: 'border-yellow-500/20',
     title: 'Collagen & Elastin Synthesis',
     body:
       'GHK-Cu directly upregulates genes encoding collagen type I, type III, and elastin. This is not surface-level moisturisation — it is gene-level signalling that drives the structural proteins responsible for skin firmness and elasticity.',
@@ -49,7 +49,7 @@ const mechanismCards = [
   {
     icon: <Zap size={18} className="text-yellow-600" />,
     bg: 'bg-yellow-50',
-    border: 'border-violet-500/20',
+    border: 'border-yellow-500/20',
     title: 'Wound Healing & Angiogenesis',
     body:
       'GHK-Cu promotes keratinocyte proliferation, fibroblast migration, and new blood vessel formation (angiogenesis). These are the core steps in every wound healing cascade — making it effective for post-surgical recovery, burns, and chronic wounds.',
@@ -65,7 +65,7 @@ const mechanismCards = [
   {
     icon: <CheckCircle2 size={18} className="text-yellow-600" />,
     bg: 'bg-yellow-50',
-    border: 'border-violet-500/20',
+    border: 'border-yellow-500/20',
     title: 'Anti-Inflammatory',
     body:
       'GHK-Cu blocks TNF-α and other pro-inflammatory cytokines. This makes it valuable for inflammatory skin conditions such as eczema and psoriasis, and explains why it heals without the irritation associated with retinol.',
@@ -208,8 +208,8 @@ export default function SkinHealingGhkCuPage() {
               </h3>
               <div className="space-y-3">
                 {[
-                  { age: 'Age 20', level: '~200 ng/mL', pct: 100, color: 'bg-violet-500' },
-                  { age: 'Age 40', level: '~140 ng/mL', pct: 70, color: 'bg-violet-400' },
+                  { age: 'Age 20', level: '~200 ng/mL', pct: 100, color: 'bg-yellow-500' },
+                  { age: 'Age 40', level: '~140 ng/mL', pct: 70, color: 'bg-yellow-400' },
                   { age: 'Age 60', level: '~80 ng/mL', pct: 40, color: 'bg-cyan-500' },
                 ].map((row) => (
                   <div key={row.age}>
@@ -291,7 +291,7 @@ export default function SkinHealingGhkCuPage() {
           {/* Topical */}
           <div className="card p-6 border" style={{ borderColor: 'var(--border)', background: 'var(--bg-card)' }}>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-9 h-9 rounded-xl bg-violet-500/15 border border-violet-500/25 flex items-center justify-center">
+              <div className="w-9 h-9 rounded-xl bg-yellow-500/15 border border-yellow-500/25 flex items-center justify-center">
                 <Sparkles size={16} className="text-yellow-600" />
               </div>
               <h3 className="font-bold text-gray-900">Topical</h3>
@@ -342,7 +342,7 @@ export default function SkinHealingGhkCuPage() {
           {/* Both */}
           <div className="card p-6 border" style={{ borderColor: 'var(--border)', background: 'var(--bg-card)' }}>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-9 h-9 rounded-xl bg-yellow-50 border border-violet-500/20 flex items-center justify-center">
+              <div className="w-9 h-9 rounded-xl bg-yellow-50 border border-yellow-500/20 flex items-center justify-center">
                 <Layers size={16} className="text-yellow-600" />
               </div>
               <h3 className="font-bold text-gray-900">Combined</h3>
@@ -369,7 +369,7 @@ export default function SkinHealingGhkCuPage() {
             {/* Topical protocol */}
             <div className="card p-6 border" style={{ borderColor: 'var(--border)', background: 'var(--bg)' }}>
               <div className="flex items-center gap-3 mb-5">
-                <div className="w-10 h-10 rounded-xl bg-violet-500/15 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-xl bg-yellow-500/15 flex items-center justify-center">
                   <Sparkles size={20} className="text-yellow-600" />
                 </div>
                 <div>

@@ -204,7 +204,7 @@ export default function SleepPage() {
             {
               name: 'Ipamorelin/CJC-1295',
               subtitle: 'GH Pulse Amplifier',
-              color: 'violet',
+              color: 'yellow',
               points: [
                 'Stimulates pituitary GH release timed to natural sleep pulses',
                 'Dramatically enhances Stage 3 (deep/slow-wave) sleep architecture',
@@ -230,7 +230,7 @@ export default function SleepPage() {
                 <div
                   className={`w-10 h-10 rounded-xl flex items-center justify-center ${
                     item.color === 'violet'
-                      ? 'bg-gray-900/15 border border-violet-600/25'
+                      ? 'bg-gray-900/15 border border-yellow-600/25'
                       : 'bg-cyan-500/15 border border-cyan-500/25'
                   }`}
                 >

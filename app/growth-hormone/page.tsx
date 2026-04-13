@@ -73,7 +73,7 @@ const ghBenefits = [
     icon: Zap,
     title: 'Visceral Fat Loss',
     description: 'Growth hormone directly stimulates lipolysis in adipose tissue — particularly visceral fat, which is the most metabolically dangerous fat depot.',
-    color: 'from-violet-600 to-violet-400',
+    color: 'from-yellow-500 to-amber-400',
   },
   {
     icon: Moon,
@@ -245,7 +245,7 @@ export default function GrowthHormonePage() {
                 href={`/stacks/${stack.id}`}
                 className="card p-6 flex flex-col group block"
               >
-                <div className="h-1 rounded-full bg-gradient-to-r from-cyan-500 to-violet-500 mb-4 opacity-60 group-hover:opacity-100 transition-opacity" />
+                <div className="h-1 rounded-full bg-gradient-to-r from-cyan-500 to-amber-400 mb-4 opacity-60 group-hover:opacity-100 transition-opacity" />
                 <div className="flex items-start justify-between gap-3 mb-3">
                   <h3 className="font-bold text-gray-900 text-base leading-tight">{stack.name}</h3>
                   <span
@@ -288,7 +288,7 @@ export default function GrowthHormonePage() {
               step: '01',
               title: 'Hypothalamic GHRH',
               desc: 'The hypothalamus releases Growth Hormone Releasing Hormone (GHRH), which signals the pituitary to produce GH. CJC-1295 mimics GHRH — amplifying this initial signal.',
-              color: '#a78bfa',
+              color: '#d97706',
             },
             {
               step: '02',
@@ -300,7 +300,7 @@ export default function GrowthHormonePage() {
               step: '03',
               title: 'Liver IGF-1 Production',
               desc: 'GH circulates to the liver and peripheral tissues, stimulating IGF-1 production. IGF-1 is the primary downstream anabolic effector — driving muscle protein synthesis, fat oxidation, and connective tissue repair.',
-              color: '#a78bfa',
+              color: '#d97706',
             },
             {
               step: '04',
@@ -351,7 +351,7 @@ export default function GrowthHormonePage() {
                 {
                   phase: 'Foundation (Months 1–3)',
                   desc: 'Run CJC-1295 / Ipamorelin 200mcg each nightly before sleep, 5 days on / 2 days off. This establishes the baseline GH amplification and allows the body to adapt to elevated IGF-1. Most users see sleep improvement within 1–2 weeks and body composition shifts by week 6–8.',
-                  color: '#a78bfa',
+                  color: '#d97706',
                 },
                 {
                   phase: 'Intensification (Months 4–6)',
@@ -361,7 +361,7 @@ export default function GrowthHormonePage() {
                 {
                   phase: 'Maintenance (Month 7+)',
                   desc: 'Drop to 5 days on / 2 days off at slightly reduced dose (150mcg each). Maintain benefits while preserving receptor sensitivity for future cycles. Run Epithalon burst cycle during a break from GH peptides for comprehensive anti-aging coverage.',
-                  color: '#a78bfa',
+                  color: '#d97706',
                 },
               ].map((phase) => (
                 <div key={phase.phase} className="card p-5">

@@ -65,10 +65,10 @@ const categoryThemes: Record<string, CategoryTheme> = {
   'Healing & Recovery': {
     glow: 'rgba(234,179,8,0.18)',
     badge: 'rgba(234,179,8,0.12)',
-    badgeText: '#6d28d9',
+    badgeText: '#92400e',
     badgeBorder: 'rgba(234,179,8,0.3)',
-    accent: '#7c3aed',
-    accentLight: '#7c3aed',
+    accent: '#d97706',
+    accentLight: '#d97706',
     icon: ShieldCheck,
     label: 'Healing & Recovery',
     heroLayout: 'default',
@@ -175,10 +175,10 @@ const categoryThemes: Record<string, CategoryTheme> = {
 const defaultTheme: CategoryTheme = {
   glow: 'rgba(234,179,8,0.18)',
   badge: 'rgba(234,179,8,0.12)',
-  badgeText: '#6d28d9',
+  badgeText: '#92400e',
   badgeBorder: 'rgba(234,179,8,0.3)',
-  accent: '#7c3aed',
-  accentLight: '#7c3aed',
+  accent: '#d97706',
+  accentLight: '#d97706',
   icon: Pill,
   label: 'Peptide Protocol',
   heroLayout: 'default',
@@ -263,7 +263,7 @@ export default async function ProductPage({
     brand: { '@type': 'Brand', name: 'PeptidesClav' },
     offers: {
       '@type': 'Offer',
-      price: product.price.toFixed(2),
+      price: product.salePrice.toFixed(2),
       priceCurrency: 'USD',
       availability: 'https://schema.org/InStock',
       url: `https://www.peptidesclav.com/products/${product.slug}`,
@@ -373,7 +373,7 @@ export default async function ProductPage({
                   <a href={`/out/${product.slug}`} target="_blank" rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 py-3 px-8 rounded-xl font-bold text-gray-900 text-base transition-all hover:opacity-90"
                     style={{ background: `linear-gradient(135deg, ${theme.accent}, ${theme.accentLight})`, boxShadow: `0 4px 20px ${theme.glow}` }}>
-                    <ExternalLink size={15} /> Get {product.name} — ${product.price.toFixed(2)}
+                    <ExternalLink size={15} /> Get {product.name} — ${product.salePrice.toFixed(2)}
                   </a>
                 </div>
               </div>
@@ -427,7 +427,7 @@ export default async function ProductPage({
                   <a href={`/out/${product.slug}`} target="_blank" rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl font-bold text-sm text-gray-900 transition-all hover:opacity-90"
                     style={{ background: `linear-gradient(135deg, ${theme.accent}, ${theme.accentLight})` }}>
-                    <ExternalLink size={14} /> Get {product.name} — ${product.price.toFixed(2)}
+                    <ExternalLink size={14} /> Get {product.name} — ${product.salePrice.toFixed(2)}
                   </a>
                 </div>
               </div>
@@ -492,7 +492,11 @@ export default async function ProductPage({
                 <div className="rounded-2xl p-6 flex-shrink-0"
                   style={{ background: '#ffffff', border: `1px solid ${theme.badgeBorder}`, boxShadow: `0 8px 40px ${theme.glow}` }}>
                   <p className="text-xs mb-1" style={{ color: '#71717a' }}>Research Grade · HPLC Tested</p>
-                  <p className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-gray-900 mb-1">${product.price.toFixed(2)}</p>
+                  <div className="flex items-baseline gap-2 mb-1">
+                    <p className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-gray-900">${product.salePrice.toFixed(2)}</p>
+                    <p className="text-base font-medium line-through" style={{ color: '#a1a1b5' }}>${product.price.toFixed(2)}</p>
+                    <span className="text-xs font-bold px-1.5 py-0.5 rounded-md" style={{ background: 'rgba(234,179,8,0.15)', color: '#92400e' }}>10% OFF</span>
+                  </div>
                   <p className="text-xs mb-4" style={{ color: '#52525b' }}>HPLC tested · COA included</p>
                   <div className="h-px mb-4" style={{ background: `linear-gradient(90deg, transparent, ${theme.accent}, transparent)` }} />
                   <a href={`/out/${product.slug}`} target="_blank" rel="noopener noreferrer"
@@ -699,7 +703,11 @@ export default async function ProductPage({
                     <p className="text-xs" style={{ color: '#71717a' }}>HPLC Tested · COA Verified</p>
                   </div>
                 </div>
-                <p className="text-2xl font-extrabold text-gray-900 mb-3">${product.price.toFixed(2)}</p>
+                <div className="flex items-baseline gap-2 mb-3">
+                  <p className="text-2xl font-extrabold text-gray-900">${product.salePrice.toFixed(2)}</p>
+                  <p className="text-sm font-medium line-through" style={{ color: '#a1a1b5' }}>${product.price.toFixed(2)}</p>
+                  <span className="text-xs font-bold px-1.5 py-0.5 rounded-md" style={{ background: 'rgba(234,179,8,0.15)', color: '#92400e' }}>10% OFF</span>
+                </div>
                 <a
                   href={`/out/${product.slug}`}
                   target="_blank"

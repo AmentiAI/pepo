@@ -213,7 +213,7 @@ export default function AntiAgingPage() {
               {
                 title: 'Telomere Extension',
                 body: '33% increase in telomere length demonstrated in human fetal fibroblast studies — the only peptide with this direct telomere extension data.',
-                color: 'violet',
+                color: 'yellow',
               },
               {
                 title: 'Mortality Reduction',
@@ -223,7 +223,7 @@ export default function AntiAgingPage() {
               {
                 title: 'Pineal Gland Restoration',
                 body: 'Normalizes the age-related dysfunction of the pineal gland, restoring melatonin rhythmicity and dramatically improving sleep quality.',
-                color: 'violet',
+                color: 'yellow',
               },
             ].map((item) => (
               <div
@@ -396,7 +396,7 @@ export default function AntiAgingPage() {
                   <div key={row.compound} className="card p-4 flex gap-4 items-center">
                     <div
                       className="shrink-0 text-[10px] font-bold px-2 py-1 rounded text-center w-20"
-                      style={{ background: 'rgba(234,179,8,0.15)', color: '#a78bfa', border: '1px solid rgba(234,179,8,0.2)' }}
+                      style={{ background: 'rgba(234,179,8,0.15)', color: '#d97706', border: '1px solid rgba(234,179,8,0.2)' }}
                     >
                       {row.timing}
                     </div>
@@ -416,7 +416,7 @@ export default function AntiAgingPage() {
                   {
                     period: 'Weeks 1–4',
                     outcomes: ['Improved sleep quality (GHK-Cu + NAD+ effect on melatonin and cellular energy)', 'Subtle improvements in skin hydration and texture', 'Increased energy levels and mental clarity from NAD+ restoration'],
-                    color: '#a78bfa',
+                    color: '#d97706',
                   },
                   {
                     period: 'Weeks 4–12',
@@ -426,7 +426,7 @@ export default function AntiAgingPage() {
                   {
                     period: 'Months 3–6',
                     outcomes: ['Sustained skin quality improvements accumulating', 'If running Epithalon: telomerase activation and immune function improvement', 'Measurable mitochondrial function improvement with NAD+', 'Progressive cellular rejuvenation at the gene expression level'],
-                    color: '#a78bfa',
+                    color: '#d97706',
                   },
                   {
                     period: '6+ Months',

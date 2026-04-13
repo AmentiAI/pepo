@@ -203,7 +203,7 @@ export default function HairGrowthPage() {
             {
               name: 'GHK-Cu',
               subtitle: 'Follicle Activation Signal',
-              color: 'violet',
+              color: 'yellow',
               points: [
                 'Directly stimulates hair follicle cells and increases follicle size',
                 'Upregulates genes responsible for hair growth including VEGF and KGF',
@@ -230,7 +230,7 @@ export default function HairGrowthPage() {
                 <div
                   className={`w-10 h-10 rounded-xl flex items-center justify-center ${
                     item.color === 'violet'
-                      ? 'bg-gray-900/15 border border-violet-600/25'
+                      ? 'bg-gray-900/15 border border-yellow-600/25'
                       : 'bg-cyan-500/15 border border-cyan-500/25'
                   }`}
                 >

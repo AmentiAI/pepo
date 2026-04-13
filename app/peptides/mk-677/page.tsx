@@ -193,7 +193,7 @@ export default function MK677Page() {
               {
                 title: 'Ghrelin Receptor Agonism',
                 desc: 'Binds GHSR-1a in the hypothalamus and pituitary, mimicking ghrelin to trigger GH release without the peptide injection requirement.',
-                color: 'violet',
+                color: 'yellow',
               },
               {
                 title: 'Sustained GH Elevation',
@@ -203,7 +203,7 @@ export default function MK677Page() {
               {
                 title: 'IGF-1 Amplification',
                 desc: 'Elevated GH drives the liver to produce more IGF-1, the primary anabolic and regenerative downstream effector responsible for most of the body composition benefits.',
-                color: 'violet',
+                color: 'yellow',
               },
               {
                 title: 'No Pituitary Suppression',
@@ -218,7 +218,7 @@ export default function MK677Page() {
               >
                 <div
                   className={`w-2 h-2 rounded-full mt-2 shrink-0 ${
-                    item.color === 'violet' ? 'bg-violet-400' : 'bg-cyan-400'
+                    item.color === 'violet' ? 'bg-yellow-400' : 'bg-cyan-400'
                   }`}
                 />
                 <div>
@@ -327,7 +327,7 @@ export default function MK677Page() {
           {[
             {
               icon: <Moon size={20} className="text-yellow-600" />,
-              iconBg: 'bg-gray-900/15 border-violet-600/25',
+              iconBg: 'bg-gray-900/15 border-yellow-600/25',
               title: 'Deep Sleep & Recovery',
               desc: 'GH is predominantly released during slow-wave sleep. MK-677 amplifies this nocturnal surge, increasing time in deep sleep stages. Users consistently report more vivid dreams, faster recovery between training sessions, and waking feeling significantly more rested.',
             },
@@ -339,7 +339,7 @@ export default function MK677Page() {
             },
             {
               icon: <Flame size={20} className="text-yellow-600" />,
-              iconBg: 'bg-gray-900/15 border-violet-600/25',
+              iconBg: 'bg-gray-900/15 border-yellow-600/25',
               title: 'Modest Fat Loss',
               desc: 'Elevated GH increases lipolysis (fat breakdown) and shifts the body toward using fat as a fuel source. However, the significant increase in appetite from ghrelin receptor activation can offset this benefit if caloric intake is not managed carefully.',
             },
@@ -351,7 +351,7 @@ export default function MK677Page() {
             },
             {
               icon: <Bone size={20} className="text-yellow-600" />,
-              iconBg: 'bg-gray-900/15 border-violet-600/25',
+              iconBg: 'bg-gray-900/15 border-yellow-600/25',
               title: 'Bone Density',
               desc: 'IGF-1 promotes osteoblast activity and bone mineralization. Research in elderly populations shows MK-677 can increase bone mineral density over 12+ months, making it particularly relevant for those concerned with age-related bone loss.',
             },
@@ -394,7 +394,7 @@ export default function MK677Page() {
                     label: 'Starting Dose',
                     value: '10 mg/day',
                     note: 'Assess tolerance — sleep effects and appetite changes occur within days',
-                    color: 'violet',
+                    color: 'yellow',
                   },
                   {
                     label: 'Standard Dose',
@@ -406,7 +406,7 @@ export default function MK677Page() {
                     label: 'Timing',
                     value: 'Before bed',
                     note: 'Maximizes the nocturnal GH pulse and minimizes daytime hunger spikes',
-                    color: 'violet',
+                    color: 'yellow',
                   },
                   {
                     label: 'Cycle Length',
@@ -552,7 +552,7 @@ export default function MK677Page() {
             {[
               {
                 title: 'Choose MK-677 if you…',
-                color: 'violet',
+                color: 'yellow',
                 points: [
                   "Are new to GH optimization and want a lower barrier to entry",
                   'Prefer oral dosing over subcutaneous injections',

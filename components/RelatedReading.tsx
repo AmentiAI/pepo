@@ -23,7 +23,7 @@ export default function RelatedReading({ pageKey }: RelatedReadingProps) {
           const icon = (
             <ArrowRight
               size={13}
-              className="shrink-0 text-violet-600 group-hover:text-yellow-600 transition-colors"
+              className="shrink-0 text-yellow-500 group-hover:text-yellow-600 transition-colors"
             />
           );
           return (

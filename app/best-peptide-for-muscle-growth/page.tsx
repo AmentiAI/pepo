@@ -75,7 +75,7 @@ const peptides = [
     ],
     best: 'Whole-body recomposition, sleep improvement, long-term GH optimization',
     color: 'text-yellow-600',
-    border: 'border-violet-500/40',
+    border: 'border-yellow-500/40',
     glow: '',
   },
   {
@@ -230,7 +230,7 @@ export default function BestPeptideMuscleGrowthPage() {
             </p>
           </div>
           <div
-            className="card p-6 border border-yellow-400/40 ring-1 ring-violet-500/10"
+            className="card p-6 border border-yellow-400/40 ring-1 ring-yellow-500/10"
             style={{ background: 'var(--bg-card)' }}
           >
             <span className="badge mb-3 inline-block">Whole-Body Recomposition</span>
@@ -355,7 +355,7 @@ export default function BestPeptideMuscleGrowthPage() {
               <ul className="space-y-2.5 flex-1">
                 {item.points.map((pt) => (
                   <li key={pt} className="flex items-start gap-2">
-                    <ArrowRight size={13} className="text-violet-500 mt-0.5 shrink-0" />
+                    <ArrowRight size={13} className="text-yellow-500 mt-0.5 shrink-0" />
                     <p className="text-xs text-gray-500">{pt}</p>
                   </li>
                 ))}

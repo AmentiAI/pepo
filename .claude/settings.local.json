@@ -32,7 +32,8 @@
       "Bash(echo \"Exit: $?\")",
       "Bash(echo \"EXIT:$?\")",
       "Bash(python3:*)",
-      "Bash(read f:*)"
+      "Bash(read f:*)",
+      "Bash(awk -F: '{print NR, $1, substr\\($0, index\\($0,$3\\), 80\\)}')"
     ]
   }
 }

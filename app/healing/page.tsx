@@ -214,7 +214,7 @@ export default function HealingPage() {
             {
               name: 'BPC-157',
               subtitle: 'Local Repair Engine',
-              color: 'violet',
+              color: 'yellow',
               points: [
                 'Upregulates growth hormone receptors at injury site',
                 'Stimulates VEGF for new blood vessel formation (angiogenesis)',
@@ -241,7 +241,7 @@ export default function HealingPage() {
                 <div
                   className={`w-10 h-10 rounded-xl flex items-center justify-center ${
                     item.color === 'violet'
-                      ? 'bg-gray-900/15 border border-violet-600/25'
+                      ? 'bg-gray-900/15 border border-yellow-600/25'
                       : 'bg-cyan-500/15 border border-cyan-500/25'
                   }`}
                 >
@@ -346,7 +346,7 @@ export default function HealingPage() {
           {[
             {
               week: 'Days 1–7',
-              color: '#a78bfa',
+              color: '#d97706',
               title: 'Anti-Inflammatory Phase',
               body: 'Most users notice a meaningful reduction in pain and swelling within the first 3–7 days. BPC-157\'s immediate anti-inflammatory action reduces cytokine signaling at the injury site. This is not masking pain — it is genuine reduction in inflammatory cascade activity. TB-500 begins its systemic circulation, priming the body for full-scale repair.',
             },
@@ -358,7 +358,7 @@ export default function HealingPage() {
             },
             {
               week: 'Weeks 5–8',
-              color: '#a78bfa',
+              color: '#d97706',
               title: 'Structural Remodeling',
               body: 'Collagen synthesis peaks during this phase. BPC-157 upregulates collagen cross-linking and tenocyte proliferation, building new structural tissue. TB-500 simultaneously reduces fibrosis — scar tissue — so the new tissue forms with correct architecture rather than disorganized scar. Most users report returning to normal activity in this window for moderate injuries.',
             },
