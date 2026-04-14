@@ -34,7 +34,8 @@
       "Bash(python3:*)",
       "Bash(read f:*)",
       "Bash(awk -F: '{print NR, $1, substr\\($0, index\\($0,$3\\), 80\\)}')",
-      "Bash(awk '{print $NF}')"
+      "Bash(awk '{print $NF}')",
+      "Bash(wc:*)"
     ]
   }
 }

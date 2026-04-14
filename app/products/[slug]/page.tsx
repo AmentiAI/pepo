@@ -7,6 +7,9 @@ import { weeklyTimelines } from '@/lib/weeklyTimelines'
 import ProductCard from '@/components/ProductCard'
 import RelatedReading from '@/components/RelatedReading'
 
+export const dynamic = 'force-static'
+export const revalidate = 86400
+
 export function generateStaticParams() {
   return products.map((p) => ({ slug: p.slug }))
 }

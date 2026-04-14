@@ -5,6 +5,8 @@ import { products } from '@/lib/products';
 import ProductCard from '@/components/ProductCard';
 import RelatedReading from '@/components/RelatedReading';
 
+export const revalidate = 86400;
+
 export const metadata: Metadata = {
   title: 'Buy Peptides Online | BPC-157, Semaglutide & More',
   description:
