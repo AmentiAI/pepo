@@ -6,6 +6,8 @@ import { products } from '@/lib/products'
 import { weeklyTimelines } from '@/lib/weeklyTimelines'
 import ProductCard from '@/components/ProductCard'
 import RelatedReading from '@/components/RelatedReading'
+import CategorySection from '@/components/product/CategorySection'
+import { getVariants, type SectionKey } from '@/lib/productVariants'
 
 export const dynamic = 'force-static'
 export const revalidate = 86400
@@ -251,6 +253,7 @@ export default async function ProductPage({
 
   const theme = categoryThemes[product.category] ?? defaultTheme
   const CategoryIcon = theme.icon
+  const variants = getVariants(product.slug)
 
   const relatedProducts = product.synergies
     .map((s) => products.find((p) => p.slug === s))
@@ -524,26 +527,51 @@ export default async function ProductPage({
         {/* ── HIGHLIGHTS BAR ─────────────────────────────────── */}
         <div style={{ background: '#ffffff', borderTop: '1px solid #1e1e35', borderBottom: '1px solid #1e1e35' }}>
           <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6">
-            <div className="grid sm:grid-cols-3 gap-6">
-              {product.highlights.map((h, i) => (
-                <div key={i} className="flex gap-4 items-start">
+            {variants.highlightsLayout === 'framed' ? (
+              <div className="grid sm:grid-cols-3 gap-4">
+                {product.highlights.map((h, i) => (
                   <div
-                    className="w-8 h-8 rounded-lg shrink-0 flex items-center justify-center text-sm font-black"
-                    style={{ background: theme.badge, color: theme.accentLight, border: `1px solid ${theme.badgeBorder}` }}
+                    key={i}
+                    className="rounded-xl p-5 border"
+                    style={{ background: theme.badge, borderColor: theme.badgeBorder }}
                   >
-                    {i + 1}
-                  </div>
-                  <div>
-                    <p className="text-base font-bold mb-0.5" style={{ color: theme.accentLight }}>
-                      {h.title}
+                    <p className="text-[10px] font-bold uppercase tracking-widest mb-2" style={{ color: theme.accentLight }}>
+                      {String(i + 1).padStart(2, '0')} · {h.title}
                     </p>
-                    <p className="text-sm leading-relaxed text-gray-700">
-                      {h.body}
-                    </p>
+                    <p className="text-sm leading-relaxed text-gray-700">{h.body}</p>
                   </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            ) : variants.highlightsLayout === 'iconed' ? (
+              <div className="grid sm:grid-cols-3 gap-6">
+                {product.highlights.map((h, i) => (
+                  <div key={i} className="flex gap-3 items-start">
+                    <CategoryIcon size={22} style={{ color: theme.accentLight }} className="mt-1 shrink-0" />
+                    <div>
+                      <p className="text-base font-bold mb-0.5" style={{ color: theme.accentLight }}>{h.title}</p>
+                      <p className="text-sm leading-relaxed text-gray-700">{h.body}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div className="grid sm:grid-cols-3 gap-6">
+                {product.highlights.map((h, i) => (
+                  <div key={i} className="flex gap-4 items-start">
+                    <div
+                      className="w-8 h-8 rounded-lg shrink-0 flex items-center justify-center text-sm font-black"
+                      style={{ background: theme.badge, color: theme.accentLight, border: `1px solid ${theme.badgeBorder}` }}
+                    >
+                      {i + 1}
+                    </div>
+                    <div>
+                      <p className="text-base font-bold mb-0.5" style={{ color: theme.accentLight }}>{h.title}</p>
+                      <p className="text-sm leading-relaxed text-gray-700">{h.body}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </div>
 
@@ -551,114 +579,104 @@ export default async function ProductPage({
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14">
           <div className="grid lg:grid-cols-[1fr_320px] gap-12">
 
-            {/* ── Main column ── */}
-            <div className="space-y-14">
-
-              {/* Deep-dive writeup */}
-              <section>
-                <div className="flex items-center gap-3 mb-2">
-                  <div
-                    className="w-1 h-8 rounded-full"
-                    style={{ background: `linear-gradient(to bottom, ${theme.accent}, ${theme.accentLight})` }}
-                  />
-                  <h2 className="text-2xl font-bold text-gray-900">{product.deepDiveTitle}</h2>
-                </div>
-                <p className="text-xs uppercase tracking-widest mb-6 ml-4" style={{ color: theme.accentLight }}>
-                  Mechanism · Evidence · Application
-                </p>
-
-                <div
-                  className="rounded-2xl border p-6 sm:p-8"
-                  style={{ background: '#ffffff', borderColor: '#e5e7eb' }}
-                >
-                  {renderDescription(product.fullDescription, theme.accentLight)}
-                </div>
-              </section>
-
-              {/* Benefits */}
-              <section>
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                  {theme.benefitsHeading}
-                </h2>
-                <div className="grid sm:grid-cols-2 gap-3">
-                  {product.benefits.map((b, i) => (
-                    <div
-                      key={i}
-                      className="flex items-start gap-3 rounded-xl p-4 border transition-colors"
-                      style={{ background: '#ffffff', borderColor: '#e5e7eb' }}
-                    >
-                      <div
-                        className="mt-0.5 shrink-0 w-5 h-5 rounded-full flex items-center justify-center"
-                        style={{ background: theme.badge }}
-                      >
-                        <Check size={11} style={{ color: theme.accentLight }} />
-                      </div>
-                      <p className="text-base leading-relaxed text-gray-700">{b}</p>
-                    </div>
-                  ))}
-                </div>
-              </section>
-
-              {/* Protocol */}
-              <section>
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                  {theme.protocolHeading}
-                </h2>
-                <div
-                  className="rounded-2xl border overflow-hidden"
-                  style={{ borderColor: theme.badgeBorder }}
-                >
-                  <div
-                    className="px-5 py-3 flex items-center gap-2 border-b"
-                    style={{
-                      background: theme.badge,
-                      borderColor: theme.badgeBorder,
-                    }}
-                  >
-                    <CategoryIcon size={14} style={{ color: theme.accentLight }} />
-                    <p className="text-xs font-semibold uppercase tracking-wider" style={{ color: theme.accentLight }}>
-                      {product.name} Protocol Guide
-                    </p>
-                  </div>
-                  <div className="p-6" style={{ background: '#ffffff' }}>
-                    {product.protocol.split('\n').map((line, i) => {
-                      if (line.startsWith('**') && line.endsWith('**')) {
-                        return (
-                          <p key={i} className="text-sm font-bold mt-4 mb-1 first:mt-0" style={{ color: theme.accentLight }}>
-                            {line.replace(/\*\*/g, '')}
-                          </p>
-                        )
-                      }
-                      if (line.startsWith('- ')) {
-                        return (
-                          <p key={i} className="text-base pl-4 mb-1 text-gray-700">
-                            <span style={{ color: theme.accentLight }}>·</span> {line.replace(/^- /, '')}
-                          </p>
-                        )
-                      }
-                      if (line.trim() === '') return <div key={i} className="h-2" />
-                      return (
-                        <p key={i} className="text-base mb-1 font-mono text-gray-700">
-                          {line.replace(/\*\*/g, '')}
-                        </p>
-                      )
-                    })}
-                  </div>
-                </div>
-              </section>
-
-              {/* Week-by-Week Results Timeline */}
-              {weeklyTimelines[product.slug] && (
-                <section>
+            {(() => {
+              const deepDiveNode = (
+                <section key="deepDive">
                   <div className="flex items-center gap-3 mb-2">
                     <div
                       className="w-1 h-8 rounded-full"
                       style={{ background: `linear-gradient(to bottom, ${theme.accent}, ${theme.accentLight})` }}
                     />
-                    <h2 className="text-2xl font-bold text-gray-900">Week-by-Week Results Timeline</h2>
+                    <h2 className="text-2xl font-bold text-gray-900">{product.deepDiveTitle}</h2>
                   </div>
                   <p className="text-xs uppercase tracking-widest mb-6 ml-4" style={{ color: theme.accentLight }}>
-                    What to expect · Phase by phase
+                    {variants.deepDiveEyebrow}
+                  </p>
+                  <div className="rounded-2xl border p-6 sm:p-8" style={{ background: '#ffffff', borderColor: '#e5e7eb' }}>
+                    {renderDescription(product.fullDescription, theme.accentLight)}
+                  </div>
+                </section>
+              )
+
+              const benefitsNode = (
+                <section key="benefits">
+                  <h2 className="text-2xl font-bold text-gray-900 mb-6">
+                    {product.name}: {theme.benefitsHeading}
+                  </h2>
+                  <div className="grid sm:grid-cols-2 gap-3">
+                    {product.benefits.map((b, i) => (
+                      <div
+                        key={i}
+                        className="flex items-start gap-3 rounded-xl p-4 border transition-colors"
+                        style={{ background: '#ffffff', borderColor: '#e5e7eb' }}
+                      >
+                        <div
+                          className="mt-0.5 shrink-0 w-5 h-5 rounded-full flex items-center justify-center"
+                          style={{ background: theme.badge }}
+                        >
+                          <Check size={11} style={{ color: theme.accentLight }} />
+                        </div>
+                        <p className="text-base leading-relaxed text-gray-700">{b}</p>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              )
+
+              const protocolNode = (
+                <section key="protocol">
+                  <h2 className="text-2xl font-bold text-gray-900 mb-6">
+                    {product.name} {theme.protocolHeading}
+                  </h2>
+                  <div className="rounded-2xl border overflow-hidden" style={{ borderColor: theme.badgeBorder }}>
+                    <div
+                      className="px-5 py-3 flex items-center gap-2 border-b"
+                      style={{ background: theme.badge, borderColor: theme.badgeBorder }}
+                    >
+                      <CategoryIcon size={14} style={{ color: theme.accentLight }} />
+                      <p className="text-xs font-semibold uppercase tracking-wider" style={{ color: theme.accentLight }}>
+                        {product.name} Protocol Guide
+                      </p>
+                    </div>
+                    <div className="p-6" style={{ background: '#ffffff' }}>
+                      {product.protocol.split('\n').map((line, i) => {
+                        if (line.startsWith('**') && line.endsWith('**')) {
+                          return (
+                            <p key={i} className="text-sm font-bold mt-4 mb-1 first:mt-0" style={{ color: theme.accentLight }}>
+                              {line.replace(/\*\*/g, '')}
+                            </p>
+                          )
+                        }
+                        if (line.startsWith('- ')) {
+                          return (
+                            <p key={i} className="text-base pl-4 mb-1 text-gray-700">
+                              <span style={{ color: theme.accentLight }}>·</span> {line.replace(/^- /, '')}
+                            </p>
+                          )
+                        }
+                        if (line.trim() === '') return <div key={i} className="h-2" />
+                        return (
+                          <p key={i} className="text-base mb-1 font-mono text-gray-700">
+                            {line.replace(/\*\*/g, '')}
+                          </p>
+                        )
+                      })}
+                    </div>
+                  </div>
+                </section>
+              )
+
+              const timelineNode = weeklyTimelines[product.slug] ? (
+                <section key="timeline">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div
+                      className="w-1 h-8 rounded-full"
+                      style={{ background: `linear-gradient(to bottom, ${theme.accent}, ${theme.accentLight})` }}
+                    />
+                    <h2 className="text-2xl font-bold text-gray-900">{product.name} Week-by-Week Results Timeline</h2>
+                  </div>
+                  <p className="text-xs uppercase tracking-widest mb-6 ml-4" style={{ color: theme.accentLight }}>
+                    {variants.timelineEyebrow}
                   </p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     {weeklyTimelines[product.slug].map((entry, i) => (
@@ -679,102 +697,109 @@ export default async function ProductPage({
                     ))}
                   </div>
                 </section>
-              )}
+              ) : null
 
-            </div>
+              const categoryNode = <CategorySection key="categorySection" product={product} theme={theme} />
 
-            {/* ── Sidebar ── */}
-            <div className="space-y-6">
+              const sectionMap: Record<SectionKey, React.ReactNode> = {
+                deepDive: deepDiveNode,
+                benefits: benefitsNode,
+                protocol: protocolNode,
+                timeline: timelineNode,
+                categorySection: categoryNode,
+              }
 
-              {/* Sticky CTA repeat */}
-              <div
-                className="rounded-2xl p-5 border"
-                style={{ background: '#ffffff', borderColor: theme.badgeBorder }}
-              >
-                <div className="flex items-center gap-3 mb-4">
-                  {product.image !== '' && (
-                    <img
-                      src={product.image}
-                      alt={product.name}
-                      className="w-16 h-16 object-contain rounded-xl"
-                      style={{ background: '#ffffff', padding: '4px' }}
-                      loading="lazy"
-                    />
-                  )}
-                  <div>
-                    <p className="text-sm font-bold text-gray-900">{product.name}</p>
-                    <p className="text-xs" style={{ color: '#1f2937' }}>HPLC Tested · COA Verified</p>
+              const stickyCta = (
+                <div key="cta" className="rounded-2xl p-5 border" style={{ background: '#ffffff', borderColor: theme.badgeBorder }}>
+                  <div className="flex items-center gap-3 mb-4">
+                    {product.image !== '' && (
+                      <img
+                        src={product.image}
+                        alt={product.name}
+                        className="w-16 h-16 object-contain rounded-xl"
+                        style={{ background: '#ffffff', padding: '4px' }}
+                        loading="lazy"
+                      />
+                    )}
+                    <div>
+                      <p className="text-sm font-bold text-gray-900">{product.name}</p>
+                      <p className="text-xs" style={{ color: '#1f2937' }}>HPLC Tested · COA Verified</p>
+                    </div>
+                  </div>
+                  <div className="flex items-baseline gap-2 mb-3">
+                    <p className="text-2xl font-extrabold text-gray-900">${product.salePrice.toFixed(2)}</p>
+                    <p className="text-sm font-medium line-through" style={{ color: '#1f2937' }}>${product.price.toFixed(2)}</p>
+                    <span className="text-xs font-bold px-1.5 py-0.5 rounded-md" style={{ background: 'rgba(234,179,8,0.15)', color: '#92400e' }}>10% OFF</span>
+                  </div>
+                  <a
+                    href={`/out/${product.slug}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl font-bold text-sm text-gray-900 mb-2 transition-all hover:opacity-90"
+                    style={{ background: `linear-gradient(135deg, ${theme.accent}, ${theme.accentLight})` }}
+                  >
+                    <ExternalLink size={13} /> Order Now
+                  </a>
+                  <p className="text-center text-[10px]" style={{ color: '#374151' }}>HPLC tested · COA verified</p>
+                </div>
+              )
+
+              const categoryInfo = (
+                <div key="cat" className="rounded-2xl p-5 border" style={{ background: '#ffffff', borderColor: '#e5e7eb' }}>
+                  <div className="flex items-center gap-2 mb-3">
+                    <CategoryIcon size={14} style={{ color: theme.accentLight }} />
+                    <p className="text-xs font-bold uppercase tracking-wider" style={{ color: theme.accentLight }}>
+                      {product.category}
+                    </p>
+                  </div>
+                  <p className="text-sm leading-relaxed text-gray-700">{product.tagline}</p>
+                  <div className="mt-3 flex flex-wrap gap-1.5">
+                    {product.tags.slice(0, 4).map((t) => (
+                      <span key={t} className="tag-chip">{t}</span>
+                    ))}
                   </div>
                 </div>
-                <div className="flex items-baseline gap-2 mb-3">
-                  <p className="text-2xl font-extrabold text-gray-900">${product.salePrice.toFixed(2)}</p>
-                  <p className="text-sm font-medium line-through" style={{ color: '#1f2937' }}>${product.price.toFixed(2)}</p>
-                  <span className="text-xs font-bold px-1.5 py-0.5 rounded-md" style={{ background: 'rgba(234,179,8,0.15)', color: '#92400e' }}>10% OFF</span>
-                </div>
-                <a
-                  href={`/out/${product.slug}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl font-bold text-sm text-gray-900 mb-2 transition-all hover:opacity-90"
-                  style={{ background: `linear-gradient(135deg, ${theme.accent}, ${theme.accentLight})` }}
-                >
-                  <ExternalLink size={13} /> Order Now
-                </a>
-                <p className="text-center text-[10px]" style={{ color: '#374151' }}>HPLC tested · COA verified</p>
-              </div>
+              )
 
-              {/* Category info box */}
-              <div
-                className="rounded-2xl p-5 border"
-                style={{ background: '#ffffff', borderColor: '#e5e7eb' }}
-              >
-                <div className="flex items-center gap-2 mb-3">
-                  <CategoryIcon size={14} style={{ color: theme.accentLight }} />
-                  <p className="text-xs font-bold uppercase tracking-wider" style={{ color: theme.accentLight }}>
-                    {product.category}
-                  </p>
-                </div>
-                <p className="text-sm leading-relaxed text-gray-700">
-                  {product.tagline}
-                </p>
-                <div className="mt-3 flex flex-wrap gap-1.5">
-                  {product.tags.slice(0, 4).map((t) => (
-                    <span key={t} className="tag-chip">{t}</span>
-                  ))}
-                </div>
-              </div>
-
-              {/* Purity & Safety */}
-              <div
-                className="rounded-2xl p-5 border"
-                style={{ background: '#ffffff', borderColor: '#e5e7eb' }}
-              >
-                <div className="flex items-center gap-2 mb-4">
-                  <ShieldCheck size={14} className="text-yellow-600" />
-                  <p className="text-xs font-bold uppercase tracking-wider text-yellow-600">
-                    Quality Assurance
-                  </p>
-                </div>
-                <div className="space-y-3">
-                  {[
-                    { label: 'HPLC Testing', note: 'Purity verified per batch' },
-                    { label: 'Mass Spectrometry', note: 'Molecular identity confirmed' },
-                    { label: 'Certificate of Analysis', note: 'Publicly available' },
-                    { label: 'US-Based Supplier', note: 'HPLC + Mass Spec Verified' },
-                  ].map((item) => (
-                    <div key={item.label} className="flex items-start gap-2">
-                      <Check size={11} className="text-yellow-600 mt-1 shrink-0" />
-                      <div>
-                        <p className="text-xs font-semibold text-gray-900">{item.label}</p>
-                        <p className="text-[10px]" style={{ color: '#374151' }}>{item.note}</p>
+              const qualityAssurance = (
+                <div key="qa" className="rounded-2xl p-5 border" style={{ background: '#ffffff', borderColor: '#e5e7eb' }}>
+                  <div className="flex items-center gap-2 mb-4">
+                    <ShieldCheck size={14} className="text-yellow-600" />
+                    <p className="text-xs font-bold uppercase tracking-wider text-yellow-600">Quality Assurance</p>
+                  </div>
+                  <div className="space-y-3">
+                    {[
+                      { label: 'HPLC Testing', note: 'Purity verified per batch' },
+                      { label: 'Mass Spectrometry', note: 'Molecular identity confirmed' },
+                      { label: 'Certificate of Analysis', note: 'Publicly available' },
+                      { label: 'US-Based Supplier', note: 'HPLC + Mass Spec Verified' },
+                    ].map((item) => (
+                      <div key={item.label} className="flex items-start gap-2">
+                        <Check size={11} className="text-yellow-600 mt-1 shrink-0" />
+                        <div>
+                          <p className="text-xs font-semibold text-gray-900">{item.label}</p>
+                          <p className="text-[10px]" style={{ color: '#374151' }}>{item.note}</p>
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
-              </div>
+              )
 
+              const sidebarMap = { cta: stickyCta, cat: categoryInfo, qa: qualityAssurance }
+              const sidebarKeys = variants.sidebarOrder.split('-') as Array<keyof typeof sidebarMap>
 
-            </div>
+              return (
+                <>
+                  <div className="space-y-14">
+                    {variants.sectionOrder.map((key) => sectionMap[key]).filter(Boolean)}
+                  </div>
+                  <div className="space-y-6">
+                    {sidebarKeys.map((k) => sidebarMap[k])}
+                  </div>
+                </>
+              )
+            })()}
           </div>
         </div>
 
@@ -785,7 +810,7 @@ export default async function ProductPage({
               <div className="flex items-center justify-between mb-8">
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: theme.accentLight }}>
-                    Synergistic Combinations
+                    {variants.stackKicker}
                   </p>
                   <h2 className="text-2xl font-bold text-gray-900">
                     Stack {product.name} With
@@ -832,7 +857,7 @@ export default async function ProductPage({
               )}
               <div className="text-center sm:text-left flex-1">
                 <p className="text-xs font-semibold uppercase tracking-widest mb-2" style={{ color: theme.accentLight }}>
-                  Ready to Start?
+                  {variants.ctaKicker}
                 </p>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">
                   Begin your {product.name} protocol
