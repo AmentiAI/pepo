@@ -3,6 +3,12 @@ export interface ProductHighlight {
   body: string;
 }
 
+export interface ProductAuthor {
+  name: string;
+  url?: string;
+  jobTitle?: string;
+}
+
 export interface Product {
   slug: string;
   name: string;
@@ -23,6 +29,8 @@ export interface Product {
   highlights: ProductHighlight[];
   researchRating: number; // 1-5
   popularityRank: number;
+  updatedAt?: string; // ISO date — only set when content is genuinely revised; drives sitemap lastmod
+  author?: ProductAuthor;
 }
 
 const BASE = 'https://phiogen.is/products';
@@ -1861,11 +1869,11 @@ The 20mg vial (10mg BPC-157 + 10mg TB-500) at standard research doses (250mcg ea
     deepDiveTitle: 'GLOW Blend 50mg: Skin Rejuvenation Protocol',
     researchRating: 4,
     popularityRank: 31,
-    fullDescription: `Phiogen's GLOW Blend is a targeted skin and hair peptide combination formulated to address the multiple molecular mechanisms underlying skin aging, hair miniaturization, and dermal matrix degradation simultaneously. Rather than delivering a single peptide with a single mechanism, GLOW combines peptides with complementary and synergistic activities across the key biological pathways that govern skin quality and hair follicle health — collagen synthesis, elastin production, melanin regulation, follicular growth signaling, and antioxidant defense at the dermal level.
+    fullDescription: `GLOW Blend is a targeted skin and hair peptide combination formulated to address the multiple molecular mechanisms underlying skin aging, hair miniaturization, and dermal matrix degradation simultaneously. Rather than delivering a single peptide with a single mechanism, GLOW combines peptides with complementary and synergistic activities across the key biological pathways that govern skin quality and hair follicle health — collagen synthesis, elastin production, melanin regulation, follicular growth signaling, and antioxidant defense at the dermal level.
 
 The skin aging process involves multiple converging pathways: progressive loss of type I and III collagen (the structural matrix proteins providing firmness and elasticity), fragmentation and cross-linking of elastin fibers (reducing skin's resilience and bounce), thinning of the dermal-epidermal junction, reduced hyaluronic acid production (loss of hydration and plumpness), accumulation of oxidative damage in dermal fibroblasts (reducing synthetic capacity), and shortening of telomeres in skin cells (limiting replicative capacity for self-renewal). No single peptide addresses all of these — but a targeted multi-peptide blend can simultaneously activate collagen synthesis, stimulate fibroblast activity, provide antioxidant protection, and support the cellular renewal pathways that maintain skin quality.
 
-GLOW's formulation typically includes copper peptide (GHK-Cu) for its dual collagen synthesis stimulation and SPARC gene expression effects that are foundational to dermal matrix quality; SNAP-8 or related acetyl hexapeptides for expression-line smoothing through neuromuscular junction modulation at the dermal level; hair growth peptides that activate Wnt/β-catenin signaling in follicular dermal papilla cells (the master pathway governing anagen initiation and hair growth); and antioxidant peptides that protect dermal fibroblasts from the oxidative damage that accelerates synthetic decline. The specific formula reflects Phiogen's optimization of these complementary targets in a stable, injectable formulation.
+GLOW's formulation typically includes copper peptide (GHK-Cu) for its dual collagen synthesis stimulation and SPARC gene expression effects that are foundational to dermal matrix quality; SNAP-8 or related acetyl hexapeptides for expression-line smoothing through neuromuscular junction modulation at the dermal level; hair growth peptides that activate Wnt/β-catenin signaling in follicular dermal papilla cells (the master pathway governing anagen initiation and hair growth); and antioxidant peptides that protect dermal fibroblasts from the oxidative damage that accelerates synthetic decline. The specific formula reflects careful optimization of these complementary targets in a stable, injectable formulation.
 
 Hair follicle health requires dedicated support: follicular dermal papilla (DP) cells produce the signaling molecules that direct hair shaft production, and their functional decline through DHT sensitivity, inflammatory signals, and oxidative stress is the common final pathway in both androgenetic and telogen effluvium hair loss. Peptides that activate Wnt/β-catenin in DP cells can restart the anagen phase in resting follicles, while peptides reducing oxidative stress in follicular tissue protect the DP cells that orchestrate hair growth. GLOW addresses both aspects.
 
@@ -1950,9 +1958,9 @@ The 50mg vial provides approximately 50 daily doses at 1mg/day — a standard 50
     deepDiveTitle: 'KLOW Blend 80mg: Metabolic Protocol',
     researchRating: 4,
     popularityRank: 33,
-    fullDescription: `Phiogen's KLOW Blend combines metabolic and fat-loss peptides in an 80mg vial — a multi-mechanism approach to body composition optimization.`,
+    fullDescription: `KLOW Blend combines metabolic and fat-loss peptides in an 80mg vial — a multi-mechanism approach to body composition optimization.`,
     benefits: ['Multi-peptide fat loss mechanism', 'Metabolic optimization through complementary pathways', '80mg extended supply'],
-    protocol: `Consult Phiogen COA for component breakdown and dosing protocol.`,
+    protocol: `Consult the product COA for component breakdown and dosing protocol.`,
     synergies: ['tirzepatide-15mg', 'ipamorelin-cjc'],
     highlights: [{ title: 'Multi-Mechanism', body: 'Combines fat-loss peptides targeting different metabolic pathways.' }],
   },

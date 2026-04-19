@@ -260,7 +260,7 @@ export default async function ProductPage({
     .filter(Boolean)
     .slice(0, 3) as typeof products
 
-  const jsonLd = {
+  const jsonLd: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'Product',
     name: product.name,
@@ -275,12 +275,14 @@ export default async function ProductPage({
       url: `https://www.peptidesclav.com/products/${product.slug}`,
       seller: { '@type': 'Organization', name: 'PeptidesClav' },
     },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: product.researchRating,
-      bestRating: 5,
-      ratingCount: 1,
-    },
+  }
+  if (product.author) {
+    jsonLd.author = {
+      '@type': 'Person',
+      name: product.author.name,
+      ...(product.author.url ? { url: product.author.url } : {}),
+      ...(product.author.jobTitle ? { jobTitle: product.author.jobTitle } : {}),
+    }
   }
 
   const breadcrumbLd = {

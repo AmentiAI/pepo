@@ -50,11 +50,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/contact`,                lastModified: new Date('2026-03-10'), priority: 0.4, changeFrequency: 'yearly' as const },
   ];
 
+  const SITE_LAUNCH = new Date('2026-04-05');
   const productPages: MetadataRoute.Sitemap = products.map((p) => ({
     url: `${BASE_URL}/products/${p.slug}`,
-    lastModified: new Date('2026-04-05'),
-    priority: 0.8,
-    changeFrequency: 'weekly' as const,
+    lastModified: p.updatedAt ? new Date(p.updatedAt) : SITE_LAUNCH,
   }));
 
   const stackPages: MetadataRoute.Sitemap = stacks.map((s) => ({
