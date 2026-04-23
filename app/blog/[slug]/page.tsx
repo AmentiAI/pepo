@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { ArrowLeft, Clock, Tag } from 'lucide-react';
 import { articles, getArticleBySlug } from '@/lib/articles';
 import RelatedReading from '@/components/RelatedReading';
+import TableOfContents from '@/components/TableOfContents';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -121,7 +122,8 @@ export default async function ArticlePage({ params }: Props) {
 
       {/* Article body */}
       <article className="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
-        <div className="prose-peptides">
+        <TableOfContents containerSelector="#article-body" />
+        <div id="article-body" className="prose-peptides">
           <ArticleContent />
         </div>
       </article>

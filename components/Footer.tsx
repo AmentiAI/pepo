@@ -14,7 +14,6 @@ const footerLinks = {
   Protocols: [
     { label: 'Peptide Stacks', href: '/stacks' },
     { label: 'Beginner Guide', href: '/guide' },
-    { label: 'Dosing FAQ', href: '/faq' },
     { label: 'Blog', href: '/blog' },
   ],
   Resources: [

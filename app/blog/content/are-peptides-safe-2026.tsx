@@ -177,8 +177,7 @@ export default function ArePeptidesSafe2026() {
       </ul>
 
       <p>
-        For additional guidance on sourcing and verifying peptide quality, see our{' '}
-        <Link href="/faq">FAQ</Link> and the{' '}
+        For additional guidance on sourcing and verifying peptide quality, see the{' '}
         <Link href="/guide">main peptide guide</Link>. For step-by-step reconstitution instructions that
         minimize contamination risk during preparation, see the{' '}
         <Link href="/how-to/reconstitute-peptides">reconstitution guide</Link>.

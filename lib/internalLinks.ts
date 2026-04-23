@@ -45,13 +45,6 @@ export const internalLinks: Record<string, InternalLink[]> = {
     { anchor: 'expert peptide protocol stacks', href: '/stacks' },
   ],
 
-  '/faq': [
-    { anchor: 'BPC-157 complete dosing & injection guide', href: '/products/bpc-157' },
-    { anchor: 'healing & recovery peptide protocols', href: '/healing' },
-    { anchor: 'beginner peptide protocol guide', href: '/guide' },
-    { anchor: 'expert peptide stacks for every goal', href: '/stacks' },
-  ],
-
   '/products': [
     { anchor: 'healing & recovery peptide protocols', href: '/healing' },
     { anchor: 'body composition peptide stacks', href: '/body-composition' },
@@ -287,7 +280,6 @@ export const internalLinks: Record<string, InternalLink[]> = {
     { anchor: 'peptide protocol beginner guide', href: '/guide' },
     { anchor: 'healing & recovery peptide protocols', href: '/healing' },
     { anchor: 'all peptide products catalog', href: '/products' },
-    { anchor: 'frequently asked peptide questions', href: '/faq' },
   ],
 
   '/glossary': [
@@ -329,7 +321,6 @@ export const internalLinks: Record<string, InternalLink[]> = {
     { anchor: 'complete peptide beginner guide', href: '/guide' },
     { anchor: 'how to reconstitute and inject peptides', href: '/how-to/reconstitute-peptides' },
     { anchor: 'women\'s peptide protocol guide', href: '/guides/womens-peptide-guide' },
-    { anchor: 'peptide FAQ: safety and dosing', href: '/faq' },
   ],
 
   '/peptides/tb-500': [
@@ -389,7 +380,6 @@ export const internalLinks: Record<string, InternalLink[]> = {
     { anchor: 'how to reconstitute peptides with BAC water', href: '/how-to/reconstitute-peptides' },
     { anchor: 'peptide storage and refrigeration guide', href: '/how-to/peptide-storage-guide' },
     { anchor: 'complete peptide beginner guide', href: '/guide' },
-    { anchor: 'peptide FAQ: safety and dosing questions', href: '/faq' },
   ],
 
   '/healing/gut-health-bpc-157': [
@@ -403,7 +393,6 @@ export const internalLinks: Record<string, InternalLink[]> = {
     { anchor: 'NAD+ for mitochondrial and brain health', href: '/products/nad-plus' },
     { anchor: 'complete peptide guide for beginners', href: '/guide' },
     { anchor: 'BPC-157 gut-brain axis healing', href: '/healing/gut-health-bpc-157' },
-    { anchor: 'peptide FAQ and safety questions', href: '/faq' },
   ],
 
   '/guides/womens-peptide-guide': [

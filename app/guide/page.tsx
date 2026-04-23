@@ -160,9 +160,6 @@ export default function GuidePage() {
                 Start Reading
                 <ArrowRight size={16} />
               </a>
-              <Link href="/faq" className="btn-secondary">
-                View FAQ
-              </Link>
             </div>
           </div>
 
@@ -638,9 +635,6 @@ export default function GuidePage() {
             </Link>
             <Link href="/products" className="btn-secondary">
               All Products
-            </Link>
-            <Link href="/faq" className="btn-secondary">
-              Read FAQ
             </Link>
           </div>
         </div>

@@ -36,7 +36,9 @@
       "Bash(awk -F: '{print NR, $1, substr\\($0, index\\($0,$3\\), 80\\)}')",
       "Bash(awk '{print $NF}')",
       "Bash(wc:*)",
-      "Bash(echo \"exit=$?\")"
+      "Bash(echo \"exit=$?\")",
+      "Bash(git stash *)",
+      "WebFetch(domain:www.arnoldpublishers.com)"
     ]
   }
 }

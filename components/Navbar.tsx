@@ -23,7 +23,6 @@ const navLinks = [
     ],
   },
   { label: 'Guide', href: '/guide' },
-  { label: 'FAQ', href: '/faq' },
 ];
 
 export default function Navbar() {

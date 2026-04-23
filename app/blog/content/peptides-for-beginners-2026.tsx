@@ -276,8 +276,7 @@ export default function PeptidesForBeginners2026() {
 
       <p>
         FDA-approved peptides (Semaglutide, Tirzepatide) require a prescription through standard medical
-        channels or a licensed telehealth provider. For questions about the legal and regulatory landscape, see
-        the <Link href="/faq">FAQ</Link>.
+        channels or a licensed telehealth provider.
       </p>
 
       <h2>Common Beginner Mistakes</h2>
@@ -326,8 +325,7 @@ export default function PeptidesForBeginners2026() {
 
       <p>
         For everything else you need to know before starting, the <Link href="/guide">main peptide guide</Link>{' '}
-        covers sourcing, cycling, stacking, and goal-specific protocol design. The{' '}
-        <Link href="/faq">FAQ</Link> answers the questions that come up most often once people are mid-cycle.
+        covers sourcing, cycling, stacking, and goal-specific protocol design.
       </p>
     </article>
   );

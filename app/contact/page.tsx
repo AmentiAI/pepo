@@ -122,12 +122,6 @@ export default function ContactPage() {
           <div className="grid sm:grid-cols-3 gap-3">
             {[
               {
-                icon: <HelpCircle size={16} className="text-yellow-600" />,
-                label: 'FAQ',
-                desc: '15+ questions answered',
-                href: '/faq',
-              },
-              {
                 icon: <BookOpen size={16} className="text-yellow-600" />,
                 label: "Beginner's Guide",
                 desc: 'Start here if new to peptides',
