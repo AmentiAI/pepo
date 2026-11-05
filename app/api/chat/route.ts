@@ -2,7 +2,11 @@ import { NextRequest, NextResponse } from 'next/server';
 import OpenAI from 'openai';
 import { products } from '@/lib/products';
 
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+function getOpenAI() {
+  const apiKey = process.env.OPENAI_API_KEY;
+  if (!apiKey) return null;
+  return new OpenAI({ apiKey });
+}
 
 const PRODUCT_CATALOG = products
   .map((p) => `- ${p.name} (slug: ${p.slug}): ${p.shortDescription} | Price: $${p.price} | Category: ${p.category}`)
@@ -31,6 +35,11 @@ export async function POST(req: NextRequest) {
 
     if (!messages || !Array.isArray(messages)) {
       return NextResponse.json({ error: 'Invalid messages' }, { status: 400 });
+    }
+
+    const openai = getOpenAI();
+    if (!openai) {
+      return NextResponse.json({ error: 'Chat is unavailable' }, { status: 503 });
     }
 
     const completion = await openai.chat.completions.create({
