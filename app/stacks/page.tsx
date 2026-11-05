@@ -5,12 +5,12 @@ import { stacks } from '@/lib/stacks'
 export const metadata: Metadata = {
   title: 'Buy Peptide Stacks | Healing, Fat Loss & Anti-Aging',
   description: 'Buy peptide stacks for healing, fat loss, anti-aging and body composition.',
-  alternates: { canonical: 'https://www.peptidesclav.com/stacks' },
+  alternates: { canonical: 'https://sharktides.com/stacks' },
   openGraph: {
     title: 'Buy Peptide Stacks | Healing, Fat Loss & Anti-Aging',
     description: 'Buy peptide stacks for healing, fat loss, anti-aging and body composition.',
     type: 'website',
-    url: 'https://www.peptidesclav.com/stacks',
+    url: 'https://sharktides.com/stacks',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Buy Peptide Stacks' }],
   },
 }

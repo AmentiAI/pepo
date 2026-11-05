@@ -5,12 +5,12 @@ import { products } from '@/lib/products';
 export const metadata: Metadata = {
   title: 'Buy GHK-Cu for Skin Healing',
   description: 'Buy GHK-Cu for skin healing and regeneration.',
-  alternates: { canonical: 'https://www.peptidesclav.com/goals/skin-healing-ghk-cu' },
+  alternates: { canonical: 'https://sharktides.com/goals/skin-healing-ghk-cu' },
   openGraph: {
     title: 'Buy GHK-Cu for Skin Healing',
     description: 'Buy GHK-Cu for skin healing and regeneration.',
     type: 'website',
-    url: 'https://www.peptidesclav.com/goals/skin-healing-ghk-cu',
+    url: 'https://sharktides.com/goals/skin-healing-ghk-cu',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Buy GHK-Cu for Skin Healing' }],
   },
 };

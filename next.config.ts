@@ -9,11 +9,12 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  async rewrites() {
+  async redirects() {
     return [
       {
         source: '/phio/:path*',
-        destination: 'https://phiogen.is/images/products/:path*',
+        destination: '/products',
+        permanent: true,
       },
     ];
   },

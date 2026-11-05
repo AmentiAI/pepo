@@ -5,12 +5,12 @@ import { products } from '@/lib/products';
 export const metadata: Metadata = {
   title: 'Buy Growth Hormone Peptides | CJC-1295, Ipamorelin, IGF-1 LR3',
   description: 'Buy GH peptides — CJC-1295, Ipamorelin, IGF-1 LR3, MK-677 and more.',
-  alternates: { canonical: 'https://www.peptidesclav.com/growth-hormone' },
+  alternates: { canonical: 'https://sharktides.com/growth-hormone' },
   openGraph: {
     title: 'Buy Growth Hormone Peptides | CJC-1295, Ipamorelin, IGF-1 LR3',
     description: 'Buy GH peptides — CJC-1295, Ipamorelin, IGF-1 LR3, MK-677 and more.',
     type: 'website',
-    url: 'https://www.peptidesclav.com/growth-hormone',
+    url: 'https://sharktides.com/growth-hormone',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Buy Growth Hormone Peptides' }],
   },
 };

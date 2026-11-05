@@ -5,12 +5,12 @@ import { products } from '@/lib/products';
 export const metadata: Metadata = {
   title: 'Buy Peptides for Sleep | Ipamorelin & CJC-1295',
   description: 'Buy peptides for sleep — Ipamorelin, CJC-1295, Epithalon and NAD+.',
-  alternates: { canonical: 'https://www.peptidesclav.com/sleep' },
+  alternates: { canonical: 'https://sharktides.com/sleep' },
   openGraph: {
     title: 'Buy Peptides for Sleep | Ipamorelin & CJC-1295',
     description: 'Buy peptides for sleep — Ipamorelin, CJC-1295, Epithalon and NAD+.',
     type: 'website',
-    url: 'https://www.peptidesclav.com/sleep',
+    url: 'https://sharktides.com/sleep',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Buy Peptides for Sleep' }],
   },
 };

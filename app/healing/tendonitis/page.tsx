@@ -5,12 +5,12 @@ import { products } from '@/lib/products';
 export const metadata: Metadata = {
   title: 'Buy BPC-157 for Tendonitis',
   description: 'Buy BPC-157 and TB-500 for tendonitis and tendon healing.',
-  alternates: { canonical: 'https://www.peptidesclav.com/healing/tendonitis' },
+  alternates: { canonical: 'https://sharktides.com/healing/tendonitis' },
   openGraph: {
     title: 'Buy BPC-157 for Tendonitis',
     description: 'Buy BPC-157 and TB-500 for tendonitis and tendon healing.',
     type: 'website',
-    url: 'https://www.peptidesclav.com/healing/tendonitis',
+    url: 'https://sharktides.com/healing/tendonitis',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Buy BPC-157 for Tendonitis' }],
   },
 };

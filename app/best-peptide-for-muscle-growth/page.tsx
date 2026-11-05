@@ -5,12 +5,12 @@ import { products } from '@/lib/products';
 export const metadata: Metadata = {
   title: 'Buy the Best Peptide for Muscle Growth',
   description: 'Buy the best peptides for muscle growth — IGF-1 LR3, Ipamorelin, CJC-1295 and more.',
-  alternates: { canonical: 'https://www.peptidesclav.com/best-peptide-for-muscle-growth' },
+  alternates: { canonical: 'https://sharktides.com/best-peptide-for-muscle-growth' },
   openGraph: {
     title: 'Buy the Best Peptide for Muscle Growth',
     description: 'Buy the best peptides for muscle growth — IGF-1 LR3, Ipamorelin, CJC-1295 and more.',
     type: 'website',
-    url: 'https://www.peptidesclav.com/best-peptide-for-muscle-growth',
+    url: 'https://sharktides.com/best-peptide-for-muscle-growth',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Buy the Best Peptide for Muscle Growth' }],
   },
 };

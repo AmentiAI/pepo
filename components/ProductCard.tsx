@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight, Star, ExternalLink, FlaskConical } from 'lucide-react';
 import { Product } from '@/lib/products';
+import { hasListedPrice } from '@/lib/site';
 
 interface ProductCardProps {
   product: Product;
@@ -97,8 +98,14 @@ export default function ProductCard({ product, showAffiliateButton = false }: Pr
           <div className="flex items-center justify-between">
             <p className="text-xs text-gray-800">HPLC Verified</p>
             <div className="flex items-baseline gap-1.5">
-              <p className="font-bold text-gray-900">${product.salePrice.toFixed(2)}</p>
-              <p className="text-xs line-through text-gray-400">${product.price.toFixed(2)}</p>
+              {hasListedPrice(product.salePrice) ? (
+                <>
+                  <p className="font-bold text-gray-900">${product.salePrice.toFixed(2)}</p>
+                  <p className="text-xs line-through text-gray-400">${product.price.toFixed(2)}</p>
+                </>
+              ) : (
+                <p className="font-bold text-sky-700 text-sm">See live price</p>
+              )}
             </div>
           </div>
           <div className="flex gap-2">
@@ -107,9 +114,10 @@ export default function ProductCard({ product, showAffiliateButton = false }: Pr
             </Link>
             {showAffiliateButton && (
               <a
-                href={`/out/${product.slug}`}
+                href={product.shopUrl}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="sponsored nofollow noopener noreferrer"
+                title="Opens this Apollo vial right after you sign in"
                 className="btn-primary py-2 px-3 text-xs flex-1 justify-center"
               >
                 Buy <ExternalLink size={12} />

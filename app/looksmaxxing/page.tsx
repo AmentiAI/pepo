@@ -5,12 +5,12 @@ import { products } from '@/lib/products';
 export const metadata: Metadata = {
   title: 'Buy Peptides for Looksmaxxing',
   description: 'Buy looksmaxxing peptides — GHK-Cu, GLP-1s, GH peptides, BPC-157, Epithalon and more.',
-  alternates: { canonical: 'https://www.peptidesclav.com/looksmaxxing' },
+  alternates: { canonical: 'https://sharktides.com/looksmaxxing' },
   openGraph: {
     title: 'Buy Peptides for Looksmaxxing',
     description: 'Buy looksmaxxing peptides — GHK-Cu, GLP-1s, GH peptides, BPC-157, Epithalon and more.',
     type: 'website',
-    url: 'https://www.peptidesclav.com/looksmaxxing',
+    url: 'https://sharktides.com/looksmaxxing',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Buy Peptides for Looksmaxxing' }],
   },
 };

@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
-import Script from 'next/script';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -13,15 +12,15 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.peptidesclav.com'),
+  metadataBase: new URL('https://sharktides.com'),
   title: {
-    default: '#1 Peptide Protocols for Healing, Fat Loss & Anti-Aging | PeptidesClav',
-    template: '%s | PeptidesClav',
+    default: '#1 Peptide Protocols for Healing, Fat Loss & Anti-Aging | Shark Tides',
+    template: '%s | Shark Tides',
   },
   description:
     'Expert peptide protocols for BPC-157, TB-500, Semaglutide & more. Science-backed guides for healing, fat loss, anti-aging, and muscle growth.',
   keywords: [
-    'peptidesclav', 'peptide protocols 2026', 'BPC-157 protocol', 'peptide healing stack',
+    'sharktides', 'peptide protocols 2026', 'BPC-157 protocol', 'peptide healing stack',
     'semaglutide peptide guide', 'GHK-Cu anti-aging', 'CJC-1295 ipamorelin', 'TB-500 recovery',
     'looksmaxxing peptides', 'retatrutide protocol',
   ],
@@ -30,14 +29,14 @@ export const metadata: Metadata = {
     description:
       'Expert peptide protocols for BPC-157, Semaglutide, Tirzepatide, GHK-Cu & more. Science-backed guides for healing, fat loss, muscle growth, and anti-aging.',
     type: 'website',
-    url: 'https://www.peptidesclav.com',
-    siteName: 'PeptidesClav',
+    url: 'https://sharktides.com',
+    siteName: 'Shark Tides',
     images: [
       {
-        url: 'https://www.peptidesclav.com/og-image.png',
+        url: 'https://sharktides.com/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'PeptidesClav — Expert Peptide Protocols',
+        alt: 'Shark Tides — Expert Peptide Protocols',
       },
     ],
   },
@@ -45,7 +44,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '#1 Peptide Protocols for Healing, Fat Loss & Anti-Aging',
     description: 'Science-backed peptide guides and protocols for peak performance — healing, body composition, and longevity.',
-    images: ['https://www.peptidesclav.com/og-image.png'],
+    images: ['https://sharktides.com/og-image.png'],
   },
   robots: {
     index: true,
@@ -58,7 +57,7 @@ export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,
-  themeColor: '#08080f',
+  themeColor: '#04111f',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -71,12 +70,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Organization',
-              name: 'PeptidesClav',
-              url: 'https://www.peptidesclav.com',
-              logo: 'https://www.peptidesclav.com/logo.png',
+              name: 'Shark Tides',
+              url: 'https://sharktides.com',
+              logo: 'https://sharktides.com/logo.png',
               description:
                 'Science-backed peptide protocols for healing, performance, and longevity.',
-              sameAs: ['https://www.peptidesclav.com'],
+              sameAs: ['https://sharktides.com'],
             }),
           }}
         />
@@ -86,14 +85,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'WebSite',
-              name: 'PeptidesClav',
-              url: 'https://www.peptidesclav.com',
+              name: 'Shark Tides',
+              url: 'https://sharktides.com',
               description: 'Evidence-based peptide protocols for looksmaxxing, healing, fat loss, and anti-aging.',
               potentialAction: {
                 '@type': 'SearchAction',
                 target: {
                   '@type': 'EntryPoint',
-                  urlTemplate: 'https://www.peptidesclav.com/products?search={search_term_string}',
+                  urlTemplate: 'https://sharktides.com/products?search={search_term_string}',
                 },
                 'query-input': 'required name=search_term_string',
               },
@@ -102,18 +101,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="min-h-full flex flex-col">
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-ZHH30DE344"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-ZHH30DE344');
-          `}
-        </Script>
         <Navbar />
         <main className="flex-1 pt-20 sm:pt-24">{children}</main>
         <Footer />

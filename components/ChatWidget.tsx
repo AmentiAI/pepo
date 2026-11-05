@@ -115,7 +115,7 @@ export default function ChatWidget() {
             </div>
             <div className="min-w-0">
               <p className="text-sm font-semibold text-gray-900 leading-tight">Peak AI Advisor</p>
-              <p className="text-xs text-gray-700 truncate">PeptidesClav protocol specialist</p>
+              <p className="text-xs text-gray-700 truncate">Shark Tides protocol specialist</p>
             </div>
             <div className="ml-auto flex items-center gap-1.5 shrink-0">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
@@ -172,7 +172,7 @@ export default function ChatWidget() {
                             {product.name}
                           </p>
                           <p className="text-[10px] text-gray-700 truncate mt-0.5">{product.category}</p>
-                          <p className="text-xs font-semibold text-amber-600 mt-1">${product.price}</p>
+                          <p className="text-xs font-semibold text-sky-700 mt-1">See live price</p>
                         </div>
 
                         {/* Arrow */}

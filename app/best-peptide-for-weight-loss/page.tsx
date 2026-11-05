@@ -5,12 +5,12 @@ import { products } from '@/lib/products';
 export const metadata: Metadata = {
   title: 'Buy the Best Peptide for Weight Loss',
   description: 'Buy the best peptides for weight loss — Semaglutide, Tirzepatide, Retatrutide and more.',
-  alternates: { canonical: 'https://www.peptidesclav.com/best-peptide-for-weight-loss' },
+  alternates: { canonical: 'https://sharktides.com/best-peptide-for-weight-loss' },
   openGraph: {
     title: 'Buy the Best Peptide for Weight Loss',
     description: 'Buy the best peptides for weight loss — Semaglutide, Tirzepatide, Retatrutide and more.',
     type: 'website',
-    url: 'https://www.peptidesclav.com/best-peptide-for-weight-loss',
+    url: 'https://sharktides.com/best-peptide-for-weight-loss',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Buy the Best Peptide for Weight Loss' }],
   },
 };

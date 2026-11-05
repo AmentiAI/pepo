@@ -5,30 +5,30 @@ import RelatedReading from '@/components/RelatedReading';
 import CitationsSection from '@/components/CitationsSection';
 
 export const metadata: Metadata = {
-  title: 'About PeptidesClav | Evidence-Based Peptide Research',
+  title: 'About Shark Tides | Evidence-Based Peptide Research',
   description:
-    'PeptidesClav is an independent research publication producing evidence-based peptide protocols. Learn our methodology, research standards, and editorial independence.',
-  alternates: { canonical: 'https://www.peptidesclav.com/about' },
+    'Shark Tides is an independent research publication producing evidence-based peptide protocols. Learn our methodology, research standards, and editorial independence.',
+  alternates: { canonical: 'https://sharktides.com/about' },
   openGraph: {
-    title: 'About PeptidesClav | Evidence-Based Peptide Research',
+    title: 'About Shark Tides | Evidence-Based Peptide Research',
     description:
-      'PeptidesClav is an independent research publication producing evidence-based peptide protocols. Learn our methodology, research standards, and editorial independence.',
+      'Shark Tides is an independent research publication producing evidence-based peptide protocols. Learn our methodology, research standards, and editorial independence.',
     type: 'website',
-    url: 'https://www.peptidesclav.com/about',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'About PeptidesClav' }],
+    url: 'https://sharktides.com/about',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'About Shark Tides' }],
   },
 };
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'PeptidesClav',
-  url: 'https://www.peptidesclav.com',
+  name: 'Shark Tides',
+  url: 'https://sharktides.com',
   description:
     'Evidence-based peptide protocol research covering BPC-157, TB-500, GLP-1 agonists, longevity peptides, and more.',
   potentialAction: {
     '@type': 'SearchAction',
-    target: 'https://www.peptidesclav.com/products?q={search_term_string}',
+    target: 'https://sharktides.com/products?q={search_term_string}',
     'query-input': 'required name=search_term_string',
   },
 };
@@ -115,7 +115,7 @@ export default function AboutPage() {
             <span className="badge badge-cyan mb-4 inline-block">Independent Research</span>
             <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight mb-5">
               About{' '}
-              <span className="gradient-text">PeptidesClav</span>
+              <span className="gradient-text">Shark Tides</span>
             </h1>
             <p className="text-lg sm:text-xl text-gray-800 leading-relaxed max-w-2xl mx-auto">
               We&apos;re an independent research team with one goal: translate the peer-reviewed peptide science
@@ -144,7 +144,7 @@ export default function AboutPage() {
                 threads, and vendor marketing copy that confuses rather than informs.
               </p>
               <p>
-                PeptidesClav exists to close that gap. We read the studies, extract the clinically relevant
+                Shark Tides exists to close that gap. We read the studies, extract the clinically relevant
                 details, and write guides that a motivated non-specialist can actually use: accurate dosing
                 windows, mechanistic explanations, stacking rationale, and honest uncertainty disclosures
                 where the evidence is thin.
@@ -168,7 +168,7 @@ export default function AboutPage() {
               Our Research <span className="gradient-text">Methodology</span>
             </h2>
             <p className="text-gray-800 mb-10 max-w-2xl">
-              Every guide published on PeptidesClav follows the same evidence-evaluation framework.
+              Every guide published on Shark Tides follows the same evidence-evaluation framework.
               Here&apos;s exactly how we verify what we write.
             </p>
             <div className="grid sm:grid-cols-2 gap-5">
@@ -244,7 +244,7 @@ export default function AboutPage() {
             </h2>
             <div className="card p-6 sm:p-8 space-y-4 text-gray-300 leading-relaxed prose-dark border-yellow-900/40">
               <p>
-                PeptidesClav is an independent research publication. Every protocol, dosing guide, and
+                Shark Tides is an independent research publication. Every protocol, dosing guide, and
                 compound analysis on this site is produced from primary literature — PubMed studies,
                 clinical trial data, and pharmacological research. No vendor pays for coverage or placement.
               </p>
@@ -255,7 +255,7 @@ export default function AboutPage() {
                 regardless of any commercial relationship.
               </p>
               <p>
-                The research and guides on PeptidesClav are free and always will be. Our editorial
+                The research and guides on Shark Tides are free and always will be. Our editorial
                 positions are formed independently of any commercial relationship — if quality standards
                 change, our recommendations change with them.
               </p>
@@ -275,7 +275,7 @@ export default function AboutPage() {
             </h2>
             <div className="card p-6 sm:p-8 space-y-4 text-gray-300 leading-relaxed prose-dark">
               <p>
-                The content published on PeptidesClav is for <strong className="text-gray-900">informational
+                The content published on Shark Tides is for <strong className="text-gray-900">informational
                 and educational purposes only</strong>. It does not constitute medical advice, diagnosis, or
                 treatment. Always consult a qualified healthcare provider before starting any peptide
                 protocol, especially if you have existing health conditions, take prescription medications,

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import {
   ArrowRight, ChevronRight, CheckCircle, Shield, Zap, Brain,
-  FlaskConical, Activity, Star, TrendingUp, Clock, Users, Award, ExternalLink,
+  FlaskConical, Activity, Star, TrendingUp, Clock, Users, Award,
 } from 'lucide-react';
 import { products } from '@/lib/products';
 import { stacks } from '@/lib/stacks';
@@ -11,9 +11,9 @@ import RelatedReading from '@/components/RelatedReading';
 import ReconstitutionCalculator from '@/components/ReconstitutionCalculator';
 
 export const metadata: Metadata = {
-  title: 'Peptides for Looksmaxxing, Healing & Fat Loss',
+  title: 'Shark Tides Research Catalog | Healing, Fat Loss & Anti-Aging',
   description:
-    'The complete looksmaxxing peptide guide — GHK-Cu for skinmaxxing, Ipamorelin for bodymaxxing, BPC-157 for gut-skin axis, and GLP-1s for face leanness. Tier-ranked protocols.',
+    'Shark Tides research catalog on sharktides.com. Retatrutide, tirzepatide, semaglutide, BPC-157, TB-500, GHK-Cu, and every vial in the current supplier catalog, with photos hosted on this domain.',
   keywords:
     'looksmaxxing peptides, peptides for looksmaxxing, skinmaxxing peptides, GHK-Cu looksmaxxing, BPC-157, Semaglutide, Ipamorelin, Epithalon, peptide protocols, best peptides for looksmaxxing, hairmaxxing peptides, bodymaxxing peptides',
   openGraph: {
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
     description:
       'The complete looksmaxxing peptide guide — GHK-Cu for skinmaxxing, Ipamorelin for bodymaxxing, BPC-157 for gut-skin axis, and GLP-1s for face leanness.',
     type: 'website',
-    url: 'https://www.peptidesclav.com',
-    siteName: 'PeptidesClav',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Peptides for Looksmaxxing — PeptidesClav' }],
+    url: 'https://sharktides.com',
+    siteName: 'Shark Tides',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Peptides for Looksmaxxing — Shark Tides' }],
   },
 };
 
@@ -217,15 +217,16 @@ export default function HomePage() {
 
             {/* Left: Title + Description + CTAs */}
             <div className="flex-1 text-center lg:text-left">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-yellow-400/40 bg-yellow-50 mb-7">
-                <span className="w-2 h-2 rounded-full bg-yellow-500 animate-pulse" />
-                <span className="text-sm text-yellow-700 font-medium tracking-wide">
-                  Looksmaxxing • Healing • Fat Loss • Anti-Aging
+              <img src="/logo.png" alt="Shark Tides" className="mx-auto lg:mx-0 mb-5 h-28 w-28 object-contain" />
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-sky-400/40 bg-sky-50 mb-7">
+                <span className="w-2 h-2 rounded-full bg-sky-500 animate-pulse" />
+                <span className="text-sm text-sky-800 font-medium tracking-wide">
+                  Shark Tides · sharktides.com
                 </span>
               </div>
 
               <h1 className="font-extrabold leading-tight tracking-tight mb-6" style={{ fontSize: 'clamp(2rem, 6vw, 4rem)' }}>
-                <span className="gradient-text">Peptides for Looksmaxxing</span>
+                <span className="gradient-text">Shark Tides Research Catalog</span>
                 <br />
                 <span className="text-gray-900">Healing &amp; Fat Loss</span>
               </h1>
@@ -249,9 +250,9 @@ export default function HomePage() {
                 <Link href="/stacks" className="btn-secondary text-base px-8 py-3.5">
                   View Stacks <ChevronRight size={18} />
                 </Link>
-                <a href="/out/shop" target="_blank" rel="noopener noreferrer" className="btn-secondary text-base px-6 py-3.5">
-                  Shop Now <ExternalLink size={15} />
-                </a>
+                <Link href="/products" className="btn-secondary text-base px-6 py-3.5">
+                  Shop the catalog <ArrowRight size={15} />
+                </Link>
               </div>
 
               {/* Stats row */}
@@ -315,8 +316,7 @@ export default function HomePage() {
                         style={{ borderColor: 'var(--border)' }}
                       >
                         <div className="flex items-baseline gap-1.5">
-                          <span className="font-bold text-gray-900 text-sm">${p.salePrice.toFixed(2)}</span>
-                          <span className="text-xs line-through" style={{ color: '#1f2937' }}>${p.price.toFixed(2)}</span>
+                          <span className="font-bold text-sky-700 text-sm">See live price</span>
                         </div>
                         <div className="flex gap-1.5">
                           <Link
@@ -326,9 +326,9 @@ export default function HomePage() {
                             Guide
                           </Link>
                           <a
-                            href={`/out/${p.slug}`}
+                            href={p.shopUrl}
                             target="_blank"
-                            rel="noopener noreferrer"
+                            rel="sponsored nofollow noopener noreferrer"
                             className="text-xs font-semibold text-yellow-600 hover:text-yellow-700 transition-colors px-2 py-1 rounded hover:bg-yellow-50"
                           >
                             Buy →
@@ -341,7 +341,7 @@ export default function HomePage() {
               </div>
               <div className="mt-4 text-center lg:text-left">
                 <Link href="/products" className="btn-secondary text-xs px-5 py-2">
-                  View All 22+ Peptides <ArrowRight size={13} />
+                  View the full catalog <ArrowRight size={13} />
                 </Link>
               </div>
             </div>
@@ -470,7 +470,7 @@ export default function HomePage() {
             <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Peer-Reviewed Evidence</p>
             <h2 className="text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">What the Evidence Shows</h2>
             <p className="text-gray-700 max-w-xl mx-auto text-lg">
-              Every protocol on PeptidesClav is grounded in published preclinical and clinical research.
+              Every protocol on Shark Tides is grounded in published preclinical and clinical research.
               No broscience. No guesswork. Only evidence.
             </p>
           </div>
@@ -502,7 +502,7 @@ export default function HomePage() {
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-24">
         <div className="text-center mb-8 sm:mb-12">
           <p className="text-xs font-semibold tracking-widest text-yellow-600 uppercase mb-3">Simple Process</p>
-          <h2 className="text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">How PeptidesClav Works</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">How Shark Tides Works</h2>
           <p className="text-gray-700 max-w-xl mx-auto text-lg">
             From goal to protocol in three steps. Whether you&rsquo;re a first-time user or a seasoned biohacker.
           </p>
@@ -615,14 +615,9 @@ export default function HomePage() {
               ))}
             </ul>
             <div className="mt-8">
-              <a
-                href="/out/shop"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary text-sm px-6 py-3"
-              >
-                Shop Research Peptides <ArrowRight size={15} />
-              </a>
+              <Link href="/products" className="btn-primary text-sm px-6 py-3">
+                Shop the catalog <ArrowRight size={15} />
+              </Link>
             </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

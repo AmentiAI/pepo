@@ -5,12 +5,12 @@ import { products } from '@/lib/products';
 export const metadata: Metadata = {
   title: 'Buy BPC-157 and TB-500',
   description: 'Buy BPC-157 and TB-500 healing peptides.',
-  alternates: { canonical: 'https://www.peptidesclav.com/comparisons/bpc-157-vs-tb-500' },
+  alternates: { canonical: 'https://sharktides.com/comparisons/bpc-157-vs-tb-500' },
   openGraph: {
     title: 'Buy BPC-157 and TB-500',
     description: 'Buy BPC-157 and TB-500 healing peptides.',
     type: 'website',
-    url: 'https://www.peptidesclav.com/comparisons/bpc-157-vs-tb-500',
+    url: 'https://sharktides.com/comparisons/bpc-157-vs-tb-500',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Buy BPC-157 and TB-500' }],
   },
 };

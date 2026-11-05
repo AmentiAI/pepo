@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import SearchModal from './SearchModal';
@@ -48,12 +49,17 @@ export default function Navbar() {
       }`}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-20 sm:h-24">
-        {/* Brand text logo */}
-        <Link href="/" className="flex items-center gap-0 group shrink-0">
-          <span className="font-black text-2xl sm:text-3xl tracking-tight leading-none">
-            <span className="text-gray-900">Peptides</span>
-            <span className="gradient-text">Clav</span>
-            <span className="text-[10px] font-semibold text-gray-800 ml-1.5 align-middle">.com</span>
+        <Link href="/" className="flex items-center gap-2 group shrink-0">
+          <Image
+            src="/logo.png"
+            alt="Shark Tides"
+            width={72}
+            height={72}
+            priority
+            className="h-14 w-14 sm:h-16 sm:w-16 object-contain"
+          />
+          <span className="font-black text-lg sm:text-xl tracking-tight leading-none text-gray-900">
+            Shark Tides
           </span>
         </Link>
 

@@ -5,13 +5,13 @@ import { products } from '@/lib/products';
 export const metadata: Metadata = {
   title: { absolute: 'Buy Ipamorelin + CJC-1295' },
   description: 'Buy Ipamorelin and CJC-1295 — HPLC tested, COA verified.',
-  alternates: { canonical: 'https://www.peptidesclav.com/peptides/ipamorelin-cjc' },
+  alternates: { canonical: 'https://sharktides.com/peptides/ipamorelin-cjc' },
   openGraph: {
     title: 'Buy Ipamorelin + CJC-1295',
     description: 'Buy Ipamorelin and CJC-1295 — HPLC tested, COA verified.',
     type: 'website',
-    url: 'https://www.peptidesclav.com/peptides/ipamorelin-cjc',
-    siteName: 'PeptidesClav',
+    url: 'https://sharktides.com/peptides/ipamorelin-cjc',
+    siteName: 'Shark Tides',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Buy Ipamorelin + CJC-1295' }],
   },
 };

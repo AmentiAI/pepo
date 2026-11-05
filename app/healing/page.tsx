@@ -5,12 +5,12 @@ import { products } from '@/lib/products';
 export const metadata: Metadata = {
   title: 'Buy Healing & Recovery Peptides | BPC-157, TB-500',
   description: 'Buy healing and recovery peptides — BPC-157, TB-500 and related repair compounds.',
-  alternates: { canonical: 'https://www.peptidesclav.com/healing' },
+  alternates: { canonical: 'https://sharktides.com/healing' },
   openGraph: {
     title: 'Buy Healing & Recovery Peptides | BPC-157, TB-500',
     description: 'Buy healing and recovery peptides — BPC-157, TB-500 and related repair compounds.',
     type: 'website',
-    url: 'https://www.peptidesclav.com/healing',
+    url: 'https://sharktides.com/healing',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Buy Healing & Recovery Peptides' }],
   },
 };

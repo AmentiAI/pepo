@@ -5,12 +5,12 @@ import { products } from '@/lib/products';
 export const metadata: Metadata = {
   title: 'Buy Retatrutide',
   description: 'Buy Retatrutide — triple-agonist GLP-1 peptide.',
-  alternates: { canonical: 'https://www.peptidesclav.com/retatrutide' },
+  alternates: { canonical: 'https://sharktides.com/retatrutide' },
   openGraph: {
     title: 'Buy Retatrutide',
     description: 'Buy Retatrutide — triple-agonist GLP-1 peptide.',
     type: 'website',
-    url: 'https://www.peptidesclav.com/retatrutide',
+    url: 'https://sharktides.com/retatrutide',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Buy Retatrutide' }],
   },
 };

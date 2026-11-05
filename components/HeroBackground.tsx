@@ -3,15 +3,13 @@
 import { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 
-const IMG = '/cdn';
-
 const slides = [
   { type: 'logo' as const },
-  { type: 'product' as const, src: `${IMG}/2025/09/bpc157_10mg.webp`,       label: 'BPC-157' },
-  { type: 'product' as const, src: `${IMG}/2024/10/semaglutide_10mg-1.webp`, label: 'Semaglutide' },
-  { type: 'product' as const, src: `${IMG}/2025/01/cjc1295_5-5mg.webp`,      label: 'Ipamorelin / CJC-1295' },
-  { type: 'product' as const, src: `${IMG}/2025/09/epithalon_50mg.webp`,     label: 'Epithalon' },
-  { type: 'product' as const, src: `${IMG}/2024/04/tirzepatide_15mg-1.webp`, label: 'Tirzepatide' },
+  { type: 'product' as const, src: '/catalog/bpc-157.webp', label: 'BPC-157' },
+  { type: 'product' as const, src: '/catalog/semaglutide-10mg.webp', label: 'Semaglutide' },
+  { type: 'product' as const, src: '/catalog/ipamorelin-cjc.webp', label: 'CJC-1295 / Ipamorelin' },
+  { type: 'product' as const, src: '/catalog/epithalon.webp', label: 'Epithalon' },
+  { type: 'product' as const, src: '/catalog/tirzepatide-15mg.webp', label: 'Tirzepatide' },
 ];
 
 export default function HeroBackground() {

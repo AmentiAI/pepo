@@ -3,72 +3,72 @@
 import { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
+import { apolloProductUrl } from '@/lib/site';
 
-const IMG = '/phio'; // proxied through our domain
+const IMG = '/catalog';
 
 const slides = [
   {
     type: 'logo' as const,
-    headline: 'Expert Peptide Protocols',
-    sub: 'BPC-157, Semaglutide, Ipamorelin & 18 more — evidence-based guides for healing, fat loss & anti-aging.',
+    headline: 'Shark Tides Research Catalog',
+    sub: 'Retatrutide, tirzepatide, semaglutide, BPC-157, and every other vial currently sold by our research supplier.',
     cta: { label: 'Browse All Peptides', href: '/products' },
     ctaSecondary: { label: 'View Stacks', href: '/stacks' },
   },
   {
     type: 'product' as const,
-    image: `${IMG}/bpc-157-10mg.png`,
+    image: `${IMG}/bpc-157.webp`,
     name: 'BPC-157',
-    badge: '#1 Healing Peptide',
-    headline: 'Accelerate Healing — Tendon, Gut & Muscle',
-    sub: 'The gold-standard tissue repair peptide. 2× faster healing from injuries that have lingered for months.',
-    cta: { label: 'Full Protocol Guide', href: '/products/bpc-157' },
-    ctaSecondary: { label: 'Get BPC-157', href: '/out/bpc-157' },
-    accentColor: '#eab308',
+    badge: 'Healing research',
+    headline: 'BPC-157 10mg',
+    sub: 'Supplier vial photo, hosted on sharktides.com, with checkout on the matching listing.',
+    cta: { label: 'View listing', href: '/products/bpc-157' },
+    ctaSecondary: { label: 'Order BPC-157', href: apolloProductUrl('bpc157-10mg') },
+    accentColor: '#0284c7',
   },
   {
     type: 'product' as const,
-    image: `${IMG}/semaglutide-6mg.png`,
+    image: `${IMG}/semaglutide-10mg.webp`,
     name: 'Semaglutide',
-    badge: 'GLP-1 Fat Loss',
-    headline: '14.9% Average Body Weight Reduction',
-    sub: 'The most clinically validated fat loss peptide — STEP-1 trial proven over 68 weeks.',
-    cta: { label: 'Full Protocol Guide', href: '/products/semaglutide-10mg' },
-    ctaSecondary: { label: 'Get Semaglutide', href: '/out/semaglutide-10mg' },
-    accentColor: '#f59e0b',
+    badge: 'GLP-1 S 10mg',
+    headline: 'Semaglutide 10mg',
+    sub: 'Single research vial. The box of ten is a separate listing.',
+    cta: { label: 'View listing', href: '/products/semaglutide-10mg' },
+    ctaSecondary: { label: 'Order Semaglutide', href: apolloProductUrl('glp-1s-10mg') },
+    accentColor: '#0ea5e9',
   },
   {
     type: 'product' as const,
-    image: `${IMG}/ipamorelin-cjc-1295-blend-10mg.png`,
-    name: 'Ipamorelin / CJC-1295',
-    badge: 'GH Optimization',
-    headline: '3–5× Natural Growth Hormone Pulse',
-    sub: 'Restore the GH profile of a healthy 25-year-old — lean mass, fat loss, deeper sleep.',
-    cta: { label: 'Full Protocol Guide', href: '/products/ipamorelin-cjc' },
-    ctaSecondary: { label: 'Get CJC-1295', href: '/out/ipamorelin-cjc' },
-    accentColor: '#eab308',
+    image: `${IMG}/ipamorelin-cjc.webp`,
+    name: 'CJC-1295 / Ipamorelin',
+    badge: 'GH research',
+    headline: 'CJC-1295 / Ipamorelin blend',
+    sub: 'The supplier’s 5mg/5mg blend vial.',
+    cta: { label: 'View listing', href: '/products/ipamorelin-cjc' },
+    ctaSecondary: { label: 'Order blend', href: apolloProductUrl('cjc1295-ipamorelin') },
+    accentColor: '#0284c7',
   },
   {
     type: 'product' as const,
-    image: `${IMG}/epithalon-50mg.png`,
+    image: `${IMG}/epithalon.webp`,
     name: 'Epithalon',
     badge: 'Longevity',
-    headline: '27–36% Mortality Reduction in 15-Year Studies',
-    sub: 'Activates telomerase, extends telomere length, and resets the aging clock at the cellular level.',
-    cta: { label: 'Full Protocol Guide', href: '/products/epithalon' },
-    ctaSecondary: { label: 'Get Epithalon', href: '/out/epithalon' },
-    accentColor: '#f59e0b',
+    headline: 'Epithalon 50mg',
+    sub: 'Tetrapeptide research vial. The 40mg fill is listed separately.',
+    cta: { label: 'View listing', href: '/products/epithalon' },
+    ctaSecondary: { label: 'Order Epithalon', href: apolloProductUrl('epithalon-50mg') },
+    accentColor: '#0ea5e9',
   },
   {
     type: 'product' as const,
-    image: `${IMG}/tirzepatide-15mg.png`,
+    image: `${IMG}/tirzepatide-15mg.webp`,
     name: 'Tirzepatide',
-    badge: 'Dual GIP/GLP-1',
-    headline: 'Up to 22.5% Weight Loss — Highest Ever Recorded',
-    sub: 'Dual agonist targeting both GIP and GLP-1 receptors for unprecedented fat loss results.',
-    cta: { label: 'Full Protocol Guide', href: '/products/tirzepatide-15mg' },
-    ctaSecondary: { label: 'Get Tirzepatide', href: '/out/tirzepatide-15mg' },
-    accentColor: '#eab308',
+    badge: 'GLP-2 T 15mg',
+    headline: 'Tirzepatide 15mg',
+    sub: 'Single vial. Packs are separate catalog pages.',
+    cta: { label: 'View listing', href: '/products/tirzepatide-15mg' },
+    ctaSecondary: { label: 'Order Tirzepatide', href: apolloProductUrl('glp-2t-15m') },
+    accentColor: '#0284c7',
   },
 ];
 
@@ -112,7 +112,7 @@ export default function HeroBannerCarousel() {
           <div className="flex flex-col items-center text-center gap-5">
             <Image
               src="/logo.png"
-              alt="PeptidesClav"
+              alt="Shark Tides"
               width={90}
               height={90}
               className="rounded-2xl shadow-xl shadow-yellow-200/60 sm:w-[120px] sm:h-[120px]"
@@ -170,12 +170,14 @@ export default function HeroBannerCarousel() {
                 <Link href={slide.cta.href} className="btn-primary text-base px-7 py-3.5">
                   {slide.cta.label} <ArrowRight size={17} />
                 </Link>
-                <Link
+                <a
                   href={(slide as { ctaSecondary: { href: string; label: string } }).ctaSecondary.href}
+                  target="_blank"
+                  rel="sponsored nofollow noopener noreferrer"
                   className="btn-secondary text-base px-7 py-3.5"
                 >
                   {slide.ctaSecondary.label}
-                </Link>
+                </a>
               </div>
             </div>
           </div>

@@ -22,13 +22,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: { absolute: article.title },
     description: article.description,
     keywords: article.tags.join(', '),
-    alternates: { canonical: `https://www.peptidesclav.com/blog/${article.slug}` },
+    alternates: { canonical: `https://sharktides.com/blog/${article.slug}` },
     openGraph: {
       title: article.title,
       description: article.description,
       type: 'article',
-      url: `https://www.peptidesclav.com/blog/${article.slug}`,
-      siteName: 'PeptidesClav',
+      url: `https://sharktides.com/blog/${article.slug}`,
+      siteName: 'Shark Tides',
       images: [{ url: '/og-image.png', width: 1200, height: 630, alt: article.title }],
     },
     twitter: {
@@ -56,20 +56,20 @@ export default async function ArticlePage({ params }: Props) {
     dateModified: article.date,
     author: {
       '@type': 'Organization',
-      name: 'PeptidesClav',
-      url: 'https://www.peptidesclav.com',
+      name: 'Shark Tides',
+      url: 'https://sharktides.com',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'PeptidesClav',
+      name: 'Shark Tides',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://www.peptidesclav.com/logo.png',
+        url: 'https://sharktides.com/logo.png',
       },
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://www.peptidesclav.com/blog/${article.slug}`,
+      '@id': `https://sharktides.com/blog/${article.slug}`,
     },
     keywords: article.tags.join(', '),
     articleSection: article.category,

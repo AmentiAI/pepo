@@ -3,7 +3,7 @@ import { products } from '@/lib/products';
 import { stacks } from '@/lib/stacks';
 import { articles } from '@/lib/articles';
 
-const BASE_URL = 'https://www.peptidesclav.com';
+const BASE_URL = 'https://sharktides.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
@@ -23,8 +23,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/hair-growth`,            lastModified: new Date('2026-03-30'), priority: 0.7, changeFrequency: 'monthly' as const },
     { url: `${BASE_URL}/best-peptide-for-muscle-growth`, lastModified: new Date('2026-03-29'), priority: 0.7, changeFrequency: 'monthly' as const },
     { url: `${BASE_URL}/best-peptide-for-anti-aging`,    lastModified: new Date('2026-03-29'), priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: `${BASE_URL}/peptides/mk-677`,        lastModified: new Date('2026-03-28'), priority: 0.8, changeFrequency: 'monthly' as const },
-    { url: `${BASE_URL}/peptides/pt-141`,                        lastModified: new Date('2026-03-28'), priority: 0.8, changeFrequency: 'monthly' as const },
     { url: `${BASE_URL}/peptides/tb-500`,                        lastModified: new Date('2026-04-06'), priority: 0.8, changeFrequency: 'monthly' as const },
     { url: `${BASE_URL}/peptides/ghk-cu`,                        lastModified: new Date('2026-04-06'), priority: 0.8, changeFrequency: 'monthly' as const },
     { url: `${BASE_URL}/peptides/ipamorelin-cjc`,                lastModified: new Date('2026-04-06'), priority: 0.8, changeFrequency: 'monthly' as const },

@@ -5,12 +5,12 @@ import { products } from '@/lib/products';
 export const metadata: Metadata = {
   title: 'Buy BPC-157 for ACL Recovery',
   description: 'Buy BPC-157 and TB-500 for ACL and knee ligament recovery.',
-  alternates: { canonical: 'https://www.peptidesclav.com/healing/acl' },
+  alternates: { canonical: 'https://sharktides.com/healing/acl' },
   openGraph: {
     title: 'Buy BPC-157 for ACL Recovery',
     description: 'Buy BPC-157 and TB-500 for ACL and knee ligament recovery.',
     type: 'website',
-    url: 'https://www.peptidesclav.com/healing/acl',
+    url: 'https://sharktides.com/healing/acl',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Buy BPC-157 for ACL Recovery' }],
   },
 };

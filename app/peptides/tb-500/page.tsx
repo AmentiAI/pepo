@@ -5,13 +5,13 @@ import { products } from '@/lib/products';
 export const metadata: Metadata = {
   title: { absolute: 'Buy TB-500 (Thymosin Beta-4)' },
   description: 'Buy TB-500 (Thymosin Beta-4) — HPLC tested, COA verified.',
-  alternates: { canonical: 'https://www.peptidesclav.com/peptides/tb-500' },
+  alternates: { canonical: 'https://sharktides.com/peptides/tb-500' },
   openGraph: {
     title: 'Buy TB-500 (Thymosin Beta-4)',
     description: 'Buy TB-500 (Thymosin Beta-4) — HPLC tested, COA verified.',
     type: 'website',
-    url: 'https://www.peptidesclav.com/peptides/tb-500',
-    siteName: 'PeptidesClav',
+    url: 'https://sharktides.com/peptides/tb-500',
+    siteName: 'Shark Tides',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Buy TB-500' }],
   },
 };

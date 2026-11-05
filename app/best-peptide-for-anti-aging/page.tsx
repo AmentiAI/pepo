@@ -5,12 +5,12 @@ import { products } from '@/lib/products';
 export const metadata: Metadata = {
   title: 'Buy the Best Peptide for Anti-Aging',
   description: 'Buy the best anti-aging peptides — Epithalon, GHK-Cu, NAD+ and more.',
-  alternates: { canonical: 'https://www.peptidesclav.com/best-peptide-for-anti-aging' },
+  alternates: { canonical: 'https://sharktides.com/best-peptide-for-anti-aging' },
   openGraph: {
     title: 'Buy the Best Peptide for Anti-Aging',
     description: 'Buy the best anti-aging peptides — Epithalon, GHK-Cu, NAD+ and more.',
     type: 'website',
-    url: 'https://www.peptidesclav.com/best-peptide-for-anti-aging',
+    url: 'https://sharktides.com/best-peptide-for-anti-aging',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Buy the Best Peptide for Anti-Aging' }],
   },
 };

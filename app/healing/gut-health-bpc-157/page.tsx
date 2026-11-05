@@ -5,12 +5,12 @@ import { products } from '@/lib/products';
 export const metadata: Metadata = {
   title: 'Buy BPC-157 for Gut Health',
   description: 'Buy BPC-157 for gut health and GI repair.',
-  alternates: { canonical: 'https://www.peptidesclav.com/healing/gut-health-bpc-157' },
+  alternates: { canonical: 'https://sharktides.com/healing/gut-health-bpc-157' },
   openGraph: {
     title: 'Buy BPC-157 for Gut Health',
     description: 'Buy BPC-157 for gut health and GI repair.',
     type: 'website',
-    url: 'https://www.peptidesclav.com/healing/gut-health-bpc-157',
+    url: 'https://sharktides.com/healing/gut-health-bpc-157',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Buy BPC-157 for Gut Health' }],
   },
 };

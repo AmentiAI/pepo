@@ -5,15 +5,15 @@ import { MessageSquare, Mail, ArrowRight, HelpCircle, BookOpen, Layers } from 'l
 export const metadata: Metadata = {
   title: 'Peptide Protocol Help & Business Inquiries | Contact',
   description:
-    'Contact PeptidesClav for protocol questions, business inquiries, or partnerships. Use the AI chat for instant peptide protocol help — available 24/7.',
-  keywords: 'contact peptidesclav, peptide protocol help, peptide questions, peptide business inquiry',
-  alternates: { canonical: 'https://www.peptidesclav.com/contact' },
+    'Contact Shark Tides for protocol questions, business inquiries, or partnerships. Use the AI chat for instant peptide protocol help — available 24/7.',
+  keywords: 'contact sharktides, peptide protocol help, peptide questions, peptide business inquiry',
+  alternates: { canonical: 'https://sharktides.com/contact' },
   openGraph: {
     title: 'Peptide Protocol Help & Business Inquiries | Contact',
-    description: 'Get in touch with PeptidesClav for protocol questions and business inquiries.',
+    description: 'Get in touch with Shark Tides for protocol questions and business inquiries.',
     type: 'website',
-    url: 'https://www.peptidesclav.com/contact',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Contact PeptidesClav' }],
+    url: 'https://sharktides.com/contact',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Contact Shark Tides' }],
   },
 };
 
@@ -31,7 +31,7 @@ export default function ContactPage() {
             <span className="badge mb-5 inline-block">Get in Touch</span>
             <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-6">
               <span className="text-gray-900">Contact </span>
-              <span className="gradient-text">PeptidesClav</span>
+              <span className="gradient-text">Shark Tides</span>
             </h1>
             <p className="text-lg text-gray-700 leading-relaxed">
               Protocol questions, business inquiries, or partnership opportunities —
@@ -73,7 +73,7 @@ export default function ContactPage() {
               <MessageSquare size={16} className="text-yellow-600 shrink-0 mt-0.5" />
               <p className="text-sm text-gray-700">
                 Look for the chat bubble in the <strong className="text-gray-900">bottom right</strong> corner
-                of every page on PeptidesClav.
+                of every page on Shark Tides.
               </p>
             </div>
             <p className="text-xs text-gray-800">
@@ -96,7 +96,7 @@ export default function ContactPage() {
               other commercial communications, email us directly at:
             </p>
             <a
-              href="mailto:info@peptidesclav.com"
+              href="mailto:info@sharktides.com"
               className="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-semibold text-sm transition-colors"
               style={{
                 background: 'rgba(245,158,11,0.08)',
@@ -105,7 +105,7 @@ export default function ContactPage() {
               }}
             >
               <Mail size={16} />
-              info@peptidesclav.com
+              info@sharktides.com
             </a>
             <p className="text-xs text-gray-800 mt-5">
               Please allow 2–3 business days for a response to business inquiries. We review

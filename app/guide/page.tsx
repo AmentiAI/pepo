@@ -20,13 +20,13 @@ export const metadata: Metadata = {
     "Complete beginner's guide to peptides — what they are, how to inject subcutaneously, starting doses, protocols, and how to get results fast.",
   keywords:
     'how to use peptides, peptide guide, how to inject peptides, peptide protocols, subcutaneous injection guide, beginner peptide protocol',
-  alternates: { canonical: 'https://www.peptidesclav.com/guide' },
+  alternates: { canonical: 'https://sharktides.com/guide' },
   openGraph: {
     title: "How to Use Peptides: Complete Beginner's Guide",
     description:
       'Everything you need to know to start using peptides — from first principles to your first injection and the right protocol.',
     type: 'article',
-    url: 'https://www.peptidesclav.com/guide',
+    url: 'https://sharktides.com/guide',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: "Peptide Beginner's Guide — Dosing & Injection" }],
   },
 };
@@ -75,11 +75,11 @@ const articleSchema = {
   '@type': 'Article',
   headline: "How to Use Peptides: Complete Beginner's Guide to Dosing & Injection",
   description: "Complete beginner's guide to peptides — what they are, how to inject subcutaneously, starting doses, protocols, and how to get results fast.",
-  url: 'https://www.peptidesclav.com/guide',
-  image: 'https://www.peptidesclav.com/og-image.png',
-  author: { '@type': 'Organization', name: 'PeptidesClav', url: 'https://www.peptidesclav.com' },
-  publisher: { '@type': 'Organization', name: 'PeptidesClav', logo: { '@type': 'ImageObject', url: 'https://www.peptidesclav.com/logo.png' } },
-  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.peptidesclav.com/guide' },
+  url: 'https://sharktides.com/guide',
+  image: 'https://sharktides.com/og-image.png',
+  author: { '@type': 'Organization', name: 'Shark Tides', url: 'https://sharktides.com' },
+  publisher: { '@type': 'Organization', name: 'Shark Tides', logo: { '@type': 'ImageObject', url: 'https://sharktides.com/logo.png' } },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://sharktides.com/guide' },
 };
 
 const guideCitations = [

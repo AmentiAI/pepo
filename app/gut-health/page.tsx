@@ -5,12 +5,12 @@ import { products } from '@/lib/products';
 export const metadata: Metadata = {
   title: 'Buy BPC-157 for Gut Health | Leaky Gut, IBS & GERD',
   description: 'Buy BPC-157 and gut-health peptides — systemic healing and GI repair compounds.',
-  alternates: { canonical: 'https://www.peptidesclav.com/gut-health' },
+  alternates: { canonical: 'https://sharktides.com/gut-health' },
   openGraph: {
     title: 'Buy BPC-157 for Gut Health | Leaky Gut, IBS & GERD',
     description: 'Buy BPC-157 and gut-health peptides — systemic healing and GI repair compounds.',
     type: 'website',
-    url: 'https://www.peptidesclav.com/gut-health',
+    url: 'https://sharktides.com/gut-health',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Buy BPC-157 for Gut Health' }],
   },
 };

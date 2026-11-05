@@ -5,12 +5,12 @@ import { products } from '@/lib/products';
 export const metadata: Metadata = {
   title: { absolute: 'Buy Semaglutide, Tirzepatide & Retatrutide' },
   description: 'Buy GLP-1 peptides — Semaglutide, Tirzepatide and Retatrutide.',
-  alternates: { canonical: 'https://www.peptidesclav.com/comparisons/semaglutide-vs-tirzepatide' },
+  alternates: { canonical: 'https://sharktides.com/comparisons/semaglutide-vs-tirzepatide' },
   openGraph: {
     title: 'Buy Semaglutide, Tirzepatide & Retatrutide',
     description: 'Buy GLP-1 peptides — Semaglutide, Tirzepatide and Retatrutide.',
     type: 'website',
-    url: 'https://www.peptidesclav.com/comparisons/semaglutide-vs-tirzepatide',
+    url: 'https://sharktides.com/comparisons/semaglutide-vs-tirzepatide',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Buy Semaglutide, Tirzepatide & Retatrutide' }],
   },
 };

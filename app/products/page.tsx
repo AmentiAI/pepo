@@ -8,12 +8,12 @@ export const revalidate = 86400;
 export const metadata: Metadata = {
   title: 'Buy Peptides Online | BPC-157, Semaglutide & More',
   description: 'Buy peptides online — BPC-157, Semaglutide, Tirzepatide, Epithalon, GHK-Cu and more.',
-  alternates: { canonical: 'https://www.peptidesclav.com/products' },
+  alternates: { canonical: 'https://sharktides.com/products' },
   openGraph: {
     title: 'Buy Peptides Online | BPC-157, Semaglutide & More',
     description: 'Buy peptides online — BPC-157, Semaglutide, Tirzepatide, Epithalon, GHK-Cu and more.',
     type: 'website',
-    url: 'https://www.peptidesclav.com/products',
+    url: 'https://sharktides.com/products',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Buy Peptides Online' }],
   },
 };
@@ -54,7 +54,7 @@ export default async function ProductsPage({
                 className="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-medium border shrink-0"
                 style={
                   isActive
-                    ? { background: '#eab308', color: '#0a0a0a', borderColor: 'transparent' }
+                    ? { background: '#0284c7', color: '#ffffff', borderColor: 'transparent' }
                     : { background: 'transparent', color: '#374151', borderColor: 'var(--border-bright)' }
                 }
               >

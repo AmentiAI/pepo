@@ -18,13 +18,13 @@ export const metadata: Metadata = {
     'Complete peptide storage guide — temperature requirements, shelf life for lyophilized vs reconstituted peptides, freeze-thaw rules, and signs of degradation.',
   keywords:
     'how to store peptides, peptide storage, peptide refrigeration, lyophilized peptide shelf life, reconstituted peptide stability, peptide freeze thaw, peptide degradation',
-  alternates: { canonical: 'https://www.peptidesclav.com/how-to/peptide-storage-guide' },
+  alternates: { canonical: 'https://sharktides.com/how-to/peptide-storage-guide' },
   openGraph: {
     title: 'Peptide Storage Guide: Refrigerate, Freeze & Preserve',
     description:
       'Complete peptide storage guide — temperature requirements, shelf life for lyophilized vs reconstituted peptides, freeze-thaw rules, and signs of degradation.',
     type: 'website',
-    url: 'https://www.peptidesclav.com/how-to/peptide-storage-guide',
+    url: 'https://sharktides.com/how-to/peptide-storage-guide',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Peptide Storage Guide' }],
   },
 };

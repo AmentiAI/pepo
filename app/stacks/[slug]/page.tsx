@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { ExternalLink, ArrowLeft } from 'lucide-react'
+import { ArrowLeft } from 'lucide-react'
 import { stacks } from '@/lib/stacks'
 import { products } from '@/lib/products'
 import ProductCard from '@/components/ProductCard'
@@ -18,7 +18,7 @@ export async function generateMetadata({
   const { slug } = await params
   const stack = stacks.find((s) => s.id === slug)
   if (!stack) return { title: 'Stack Not Found' }
-  const canonical = `https://www.peptidesclav.com/stacks/${stack.id}`
+  const canonical = `https://sharktides.com/stacks/${stack.id}`
   const title = `Buy ${stack.name}`
   return {
     title: { absolute: title },
@@ -29,7 +29,7 @@ export async function generateMetadata({
       description: stack.shortDescription,
       type: 'website',
       url: canonical,
-      siteName: 'PeptidesClav',
+      siteName: 'Shark Tides',
       images: [{ url: '/og-image.png', width: 1200, height: 630, alt: title }],
     },
     twitter: {
@@ -53,8 +53,6 @@ export default async function StackPage({
     .map((sp) => products.find((p) => p.slug === sp.slug))
     .filter((p): p is NonNullable<typeof p> => Boolean(p))
 
-  const totalPrice = stackProducts.reduce((sum, p) => sum + p.salePrice, 0)
-
   return (
     <div className="min-h-screen" style={{ background: '#ffffff' }}>
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
@@ -67,7 +65,7 @@ export default async function StackPage({
         </h1>
 
         <p className="text-2xl font-bold text-gray-900 mb-8">
-          Total: ${totalPrice.toFixed(2)}
+          Live supplier pricing on each listing
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">

@@ -17,9 +17,9 @@ const footerLinks = {
     { label: 'Blog', href: '/blog' },
   ],
   Resources: [
-    { label: 'PeptidesMuscle — Looks Maxing', href: 'https://www.peptidesmuscle.com/', external: true },
-    { label: 'PeptidesMuscle — Stacks', href: 'https://www.peptidesmuscle.com/', external: true },
-    { label: 'PeptidesMuscle — Blog', href: 'https://www.peptidesmuscle.com/blog', external: true },
+    { label: 'Full research catalog', href: '/products' },
+    { label: 'Retatrutide', href: '/retatrutide' },
+    { label: 'Healing guides', href: '/healing' },
   ],
   Company: [
     { label: 'Contact', href: '/contact' },
@@ -35,7 +35,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <Image src="/logo.png" alt="PeptidesClav" width={52} height={52} className="rounded-xl object-contain" />
+              <Image src="/logo.png" alt="Shark Tides" width={96} height={96} className="h-24 w-24 object-contain" />
             </Link>
             <p className="text-sm text-gray-700 leading-relaxed max-w-xs">
               Evidence-based peptide protocols for healing, performance, body composition, and longevity. Science-backed guides, PubMed-cited research.
@@ -78,7 +78,7 @@ export default function Footer() {
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-gray-800">
-            © {new Date().getFullYear()} PeptidesClav. All rights reserved.
+            © {new Date().getFullYear()} Shark Tides. All rights reserved.
           </p>
           <p className="text-xs text-gray-800">
             For research and educational purposes only. Not medical advice.
@@ -86,8 +86,9 @@ export default function Footer() {
         </div>
 
         <p className="text-center text-[11px] text-gray-800 mt-4 leading-relaxed">
-          PeptidesClav is an independent educational resource and is not affiliated with, endorsed by,
-          or associated in any way with the content creator known as &ldquo;Clavicular.&rdquo;
+          Shark Tides is an independent research catalog at sharktides.com. Product photos are stored on this
+          domain. Orders are completed with the research supplier, and Shark Tides may earn a commission.
+          Compounds are for laboratory research only and are not for human consumption.
         </p>
       </div>
     </footer>

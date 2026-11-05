@@ -5,13 +5,13 @@ import { products } from '@/lib/products';
 export const metadata: Metadata = {
   title: { absolute: 'Buy GHK-Cu (Copper Peptide)' },
   description: 'Buy GHK-Cu copper peptide — HPLC tested, COA verified.',
-  alternates: { canonical: 'https://www.peptidesclav.com/peptides/ghk-cu' },
+  alternates: { canonical: 'https://sharktides.com/peptides/ghk-cu' },
   openGraph: {
     title: 'Buy GHK-Cu (Copper Peptide)',
     description: 'Buy GHK-Cu copper peptide — HPLC tested, COA verified.',
     type: 'website',
-    url: 'https://www.peptidesclav.com/peptides/ghk-cu',
-    siteName: 'PeptidesClav',
+    url: 'https://sharktides.com/peptides/ghk-cu',
+    siteName: 'Shark Tides',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Buy GHK-Cu' }],
   },
 };

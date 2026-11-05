@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   title: 'Peptide Blog: Research, Protocols & Looksmaxxing Guides 2026',
   description: 'Evidence-based peptide articles — retatrutide Phase 3 data, BPC-157 research, looksmaxxing stacks, and beginner protocols. Updated March 2026.',
   keywords: 'peptide blog, peptide articles, looksmaxxing guide 2026, BPC-157 research 2026, retatrutide phase 3, peptide protocols blog',
-  alternates: { canonical: 'https://www.peptidesclav.com/blog' },
+  alternates: { canonical: 'https://sharktides.com/blog' },
   openGraph: {
     title: 'Peptide Blog: Research, Protocols & Looksmaxxing Guides 2026',
     description: 'Evidence-based peptide articles — retatrutide Phase 3 data, BPC-157 research, looksmaxxing stacks, and beginner protocols.',
     type: 'website',
-    url: 'https://www.peptidesclav.com/blog',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'PeptidesClav Blog' }],
+    url: 'https://sharktides.com/blog',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Shark Tides Blog' }],
   },
 };
 

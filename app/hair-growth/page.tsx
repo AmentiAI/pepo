@@ -5,12 +5,12 @@ import { products } from '@/lib/products';
 export const metadata: Metadata = {
   title: 'Buy Peptides for Hair Growth | GHK-Cu & TB-500',
   description: 'Buy peptides for hair growth — GHK-Cu, TB-500 and related follicle-support compounds.',
-  alternates: { canonical: 'https://www.peptidesclav.com/hair-growth' },
+  alternates: { canonical: 'https://sharktides.com/hair-growth' },
   openGraph: {
     title: 'Buy Peptides for Hair Growth | GHK-Cu & TB-500',
     description: 'Buy peptides for hair growth — GHK-Cu, TB-500 and related follicle-support compounds.',
     type: 'website',
-    url: 'https://www.peptidesclav.com/hair-growth',
+    url: 'https://sharktides.com/hair-growth',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Buy Peptides for Hair Growth' }],
   },
 };

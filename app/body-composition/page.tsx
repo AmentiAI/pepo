@@ -5,12 +5,12 @@ import { products } from '@/lib/products';
 export const metadata: Metadata = {
   title: 'Buy Body Composition Peptides | GH, Fat Loss & Muscle',
   description: 'Buy body composition peptides — GH peptides, GLP-1s and muscle-building compounds.',
-  alternates: { canonical: 'https://www.peptidesclav.com/body-composition' },
+  alternates: { canonical: 'https://sharktides.com/body-composition' },
   openGraph: {
     title: 'Buy Body Composition Peptides | GH, Fat Loss & Muscle',
     description: 'Buy body composition peptides — GH peptides, GLP-1s and muscle-building compounds.',
     type: 'website',
-    url: 'https://www.peptidesclav.com/body-composition',
+    url: 'https://sharktides.com/body-composition',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Buy Body Composition Peptides' }],
   },
 };

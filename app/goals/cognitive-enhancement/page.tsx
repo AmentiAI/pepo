@@ -4,12 +4,12 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Buy Peptides for Cognitive Enhancement',
   description: 'Buy peptides for cognitive enhancement.',
-  alternates: { canonical: 'https://www.peptidesclav.com/goals/cognitive-enhancement' },
+  alternates: { canonical: 'https://sharktides.com/goals/cognitive-enhancement' },
   openGraph: {
     title: 'Buy Peptides for Cognitive Enhancement',
     description: 'Buy peptides for cognitive enhancement.',
     type: 'website',
-    url: 'https://www.peptidesclav.com/goals/cognitive-enhancement',
+    url: 'https://sharktides.com/goals/cognitive-enhancement',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Buy Peptides for Cognitive Enhancement' }],
   },
 };

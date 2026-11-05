@@ -5,12 +5,12 @@ import { products } from '@/lib/products';
 export const metadata: Metadata = {
   title: 'Buy BPC-157 for Rotator Cuff Recovery',
   description: 'Buy BPC-157 and TB-500 for rotator cuff and shoulder recovery.',
-  alternates: { canonical: 'https://www.peptidesclav.com/healing/rotator-cuff' },
+  alternates: { canonical: 'https://sharktides.com/healing/rotator-cuff' },
   openGraph: {
     title: 'Buy BPC-157 for Rotator Cuff Recovery',
     description: 'Buy BPC-157 and TB-500 for rotator cuff and shoulder recovery.',
     type: 'website',
-    url: 'https://www.peptidesclav.com/healing/rotator-cuff',
+    url: 'https://sharktides.com/healing/rotator-cuff',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Buy BPC-157 for Rotator Cuff Recovery' }],
   },
 };
