@@ -2,25 +2,21 @@ export const SITE_URL = 'https://sharktides.com';
 export const SITE_NAME = 'Shark Tides';
 export const SITE_DOMAIN = 'sharktides.com';
 
-/** Refersion affiliate id. Must travel on the final supplier URL. */
-export const AFFILIATE_ID = '9016964.3f1b1e';
+/** American Peptides affiliate code. Must travel on the product URL. */
+export const AFFILIATE_ID = '01xjeP7mUu';
 
-export const SUPPLIER_HOME = `https://apollopeptidesciences.com/?rfsn=${AFFILIATE_ID}`;
+export const SUPPLIER_HOME = `https://www.americanpeptides.us/?ref=${AFFILIATE_ID}`;
 
-export function apolloProductUrl(apolloSlug: string) {
-  const slug = apolloSlug.replace(/^\/+|\/+$/g, '');
-  const product = `https://apollopeptidesciences.com/product/${slug}/?rfsn=${AFFILIATE_ID}`;
-  // Apollo redirects every logged-out product URL to /my-account/ and throws away
-  // the original address. Their login form only returns to the vial when this
-  // redirect_to value is present.
-  const gate = new URL('https://apollopeptidesciences.com/my-account/');
-  gate.searchParams.set('redirect_to', product);
-  return gate.toString();
+export function supplierProductUrl(supplierSlug: string) {
+  const slug = supplierSlug.replace(/^\/+|\/+$/g, '');
+  const url = new URL(`https://www.americanpeptides.us/products/${slug}`);
+  url.searchParams.set('ref', AFFILIATE_ID);
+  return url.toString();
 }
 
 export function withAffiliate(url: string) {
   const next = new URL(url);
-  if (!next.searchParams.get('rfsn')) next.searchParams.set('rfsn', AFFILIATE_ID);
+  if (!next.searchParams.get('ref')) next.searchParams.set('ref', AFFILIATE_ID);
   return next.toString();
 }
 

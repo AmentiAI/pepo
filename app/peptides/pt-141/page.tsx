@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation';
 
 export default function Pt141Page() {
-  redirect('/products');
+  redirect('/products/pt-141');
 }

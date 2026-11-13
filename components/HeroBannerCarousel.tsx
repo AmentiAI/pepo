@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
-import { apolloProductUrl } from '@/lib/site';
+import { supplierProductUrl } from '@/lib/site';
 
 const IMG = '/catalog';
 
@@ -12,7 +12,7 @@ const slides = [
   {
     type: 'logo' as const,
     headline: 'Shark Tides Research Catalog',
-    sub: 'Retatrutide, tirzepatide, semaglutide, BPC-157, and every other vial currently sold by our research supplier.',
+    sub: 'AP-RTA-3, AP-TRZ-2, AP-SEM-1, BPC-157, and every other research product currently sold by American Peptides.',
     cta: { label: 'Browse All Peptides', href: '/products' },
     ctaSecondary: { label: 'View Stacks', href: '/stacks' },
   },
@@ -21,21 +21,21 @@ const slides = [
     image: `${IMG}/bpc-157.webp`,
     name: 'BPC-157',
     badge: 'Healing research',
-    headline: 'BPC-157 10mg',
-    sub: 'Supplier vial photo, hosted on sharktides.com, with checkout on the matching listing.',
+    headline: 'BPC-157',
+    sub: 'American Peptides vial photo, hosted on sharktides.com, with checkout on the matching listing.',
     cta: { label: 'View listing', href: '/products/bpc-157' },
-    ctaSecondary: { label: 'Order BPC-157', href: apolloProductUrl('bpc157-10mg') },
+    ctaSecondary: { label: 'Order BPC-157', href: supplierProductUrl('bpc-157') },
     accentColor: '#0284c7',
   },
   {
     type: 'product' as const,
     image: `${IMG}/semaglutide-10mg.webp`,
-    name: 'Semaglutide',
-    badge: 'GLP-1 S 10mg',
-    headline: 'Semaglutide 10mg',
-    sub: 'Single research vial. The box of ten is a separate listing.',
+    name: 'AP-SEM-1',
+    badge: 'Research peptide',
+    headline: 'AP-SEM-1™',
+    sub: 'American Peptides listing with several fill weights. Choose the size at checkout.',
     cta: { label: 'View listing', href: '/products/semaglutide-10mg' },
-    ctaSecondary: { label: 'Order Semaglutide', href: apolloProductUrl('glp-1s-10mg') },
+    ctaSecondary: { label: 'Order AP-SEM-1', href: supplierProductUrl('ap-sem-1') },
     accentColor: '#0ea5e9',
   },
   {
@@ -43,10 +43,10 @@ const slides = [
     image: `${IMG}/ipamorelin-cjc.webp`,
     name: 'CJC-1295 / Ipamorelin',
     badge: 'GH research',
-    headline: 'CJC-1295 / Ipamorelin blend',
-    sub: 'The supplier’s 5mg/5mg blend vial.',
+    headline: 'CJC-1295 (no DAC) + Ipamorelin',
+    sub: '5/5 mg and 10/10 mg sizes on the American Peptides listing.',
     cta: { label: 'View listing', href: '/products/ipamorelin-cjc' },
-    ctaSecondary: { label: 'Order blend', href: apolloProductUrl('cjc1295-ipamorelin') },
+    ctaSecondary: { label: 'Order blend', href: supplierProductUrl('cjc-1295-no-dac-ipamorelin') },
     accentColor: '#0284c7',
   },
   {
@@ -54,21 +54,21 @@ const slides = [
     image: `${IMG}/epithalon.webp`,
     name: 'Epithalon',
     badge: 'Longevity',
-    headline: 'Epithalon 50mg',
-    sub: 'Tetrapeptide research vial. The 40mg fill is listed separately.',
+    headline: 'Epithalon 10 mg',
+    sub: 'American Peptides research vial. Tablets are a separate listing.',
     cta: { label: 'View listing', href: '/products/epithalon' },
-    ctaSecondary: { label: 'Order Epithalon', href: apolloProductUrl('epithalon-50mg') },
+    ctaSecondary: { label: 'Order Epithalon', href: supplierProductUrl('epi') },
     accentColor: '#0ea5e9',
   },
   {
     type: 'product' as const,
     image: `${IMG}/tirzepatide-15mg.webp`,
-    name: 'Tirzepatide',
-    badge: 'GLP-2 T 15mg',
-    headline: 'Tirzepatide 15mg',
-    sub: 'Single vial. Packs are separate catalog pages.',
+    name: 'AP-TRZ-2',
+    badge: 'Research peptide',
+    headline: 'AP-TRZ-2™',
+    sub: 'Several fill weights on one American Peptides listing.',
     cta: { label: 'View listing', href: '/products/tirzepatide-15mg' },
-    ctaSecondary: { label: 'Order Tirzepatide', href: apolloProductUrl('glp-2t-15m') },
+    ctaSecondary: { label: 'Order AP-TRZ-2', href: supplierProductUrl('ap-trz-2') },
     accentColor: '#0284c7',
   },
 ];

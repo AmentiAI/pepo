@@ -5,6 +5,7 @@ import {
   FlaskConical, Activity, Star, TrendingUp, Clock, Users, Award,
 } from 'lucide-react';
 import { products } from '@/lib/products';
+import { formatPrice } from '@/lib/site';
 import { stacks } from '@/lib/stacks';
 import ProductCard from '@/components/ProductCard';
 import RelatedReading from '@/components/RelatedReading';
@@ -189,6 +190,11 @@ export default function HomePage() {
     'Body Composition':       'Fat Loss',
     'Cognitive Enhancement':  'Cognitive',
     'Sexual Health':          'Performance',
+    'Sprays':                 'Sprays',
+    'Tablets':                'Tablets',
+    'Bundles':                'Bundles',
+    'Bioregulators':          'Bioregulator',
+    'Supplies':               'Supplies',
   };
 
   const categoryGradient: Record<string, string> = {
@@ -316,7 +322,10 @@ export default function HomePage() {
                         style={{ borderColor: 'var(--border)' }}
                       >
                         <div className="flex items-baseline gap-1.5">
-                          <span className="font-bold text-sky-700 text-sm">See live price</span>
+                          <span className="font-bold text-sky-700 text-sm">
+                            {p.highPrice && p.highPrice > p.price ? 'From ' : ''}
+                            {formatPrice(p.price)}
+                          </span>
                         </div>
                         <div className="flex gap-1.5">
                           <Link

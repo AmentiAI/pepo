@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { X, Send, Loader2, ExternalLink } from 'lucide-react';
+import { formatPrice } from '@/lib/site';
 
 interface SuggestedProduct {
   slug: string;
@@ -172,7 +173,7 @@ export default function ChatWidget() {
                             {product.name}
                           </p>
                           <p className="text-[10px] text-gray-700 truncate mt-0.5">{product.category}</p>
-                          <p className="text-xs font-semibold text-sky-700 mt-1">See live price</p>
+                          <p className="text-xs font-semibold text-sky-700 mt-1">{formatPrice(product.price)}</p>
                         </div>
 
                         {/* Arrow */}

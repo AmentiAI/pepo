@@ -6,10 +6,10 @@ import Image from 'next/image';
 const slides = [
   { type: 'logo' as const },
   { type: 'product' as const, src: '/catalog/bpc-157.webp', label: 'BPC-157' },
-  { type: 'product' as const, src: '/catalog/semaglutide-10mg.webp', label: 'Semaglutide' },
+  { type: 'product' as const, src: '/catalog/semaglutide-10mg.webp', label: 'AP-SEM-1' },
   { type: 'product' as const, src: '/catalog/ipamorelin-cjc.webp', label: 'CJC-1295 / Ipamorelin' },
   { type: 'product' as const, src: '/catalog/epithalon.webp', label: 'Epithalon' },
-  { type: 'product' as const, src: '/catalog/tirzepatide-15mg.webp', label: 'Tirzepatide' },
+  { type: 'product' as const, src: '/catalog/tirzepatide-15mg.webp', label: 'AP-TRZ-2' },
 ];
 
 export default function HeroBackground() {

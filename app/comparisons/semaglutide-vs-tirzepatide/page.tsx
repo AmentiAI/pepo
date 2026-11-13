@@ -20,7 +20,8 @@ export default function GlpComparisonPage() {
     (p) =>
       p.slug.includes('semaglutide') ||
       p.slug.includes('tirzepatide') ||
-      p.slug.includes('retatrutide'),
+      p.slug.includes('retatrutide') ||
+      p.tags.includes('GLP-1'),
   );
   return (
     <div className="min-h-screen" style={{ backgroundColor: 'var(--bg)' }}>

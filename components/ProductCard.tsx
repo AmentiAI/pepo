@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight, Star, ExternalLink, FlaskConical } from 'lucide-react';
 import { Product } from '@/lib/products';
-import { hasListedPrice } from '@/lib/site';
+import { hasListedPrice, formatPrice } from '@/lib/site';
 
 interface ProductCardProps {
   product: Product;
@@ -16,6 +16,11 @@ const categoryGradient: Record<string, string> = {
   'Cognitive Enhancement':    'from-indigo-100 via-blue-100 to-indigo-50',
   'Sexual Health':            'from-red-100 via-rose-100 to-red-50',
   'Growth Hormone':           'from-emerald-100 via-teal-100 to-green-50',
+  'Sprays':                   'from-sky-100 via-blue-50 to-cyan-50',
+  'Tablets':                  'from-amber-100 via-yellow-100 to-amber-50',
+  'Bundles':                  'from-indigo-100 via-blue-100 to-indigo-50',
+  'Bioregulators':            'from-rose-100 via-pink-50 to-amber-50',
+  'Supplies':                 'from-slate-100 via-gray-50 to-slate-50',
 };
 
 const categorySymbol: Record<string, string> = {
@@ -98,11 +103,16 @@ export default function ProductCard({ product, showAffiliateButton = false }: Pr
           <div className="flex items-center justify-between">
             <p className="text-xs text-gray-800">HPLC Verified</p>
             <div className="flex items-baseline gap-1.5">
-              {hasListedPrice(product.salePrice) ? (
+              {hasListedPrice(product.salePrice) && product.salePrice < product.price ? (
                 <>
                   <p className="font-bold text-gray-900">${product.salePrice.toFixed(2)}</p>
                   <p className="text-xs line-through text-gray-400">${product.price.toFixed(2)}</p>
                 </>
+              ) : hasListedPrice(product.price) ? (
+                <p className="font-bold text-sky-700 text-sm">
+                  {product.highPrice && product.highPrice > product.price ? 'From ' : ''}
+                  {formatPrice(product.price)}
+                </p>
               ) : (
                 <p className="font-bold text-sky-700 text-sm">See live price</p>
               )}
@@ -117,7 +127,7 @@ export default function ProductCard({ product, showAffiliateButton = false }: Pr
                 href={product.shopUrl}
                 target="_blank"
                 rel="sponsored nofollow noopener noreferrer"
-                title="Opens this Apollo vial right after you sign in"
+                title="Opens this product on American Peptides"
                 className="btn-primary py-2 px-3 text-xs flex-1 justify-center"
               >
                 Buy <ExternalLink size={12} />

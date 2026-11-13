@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { ExternalLink, ArrowLeft } from 'lucide-react'
 import { products } from '@/lib/products'
-import { SITE_URL } from '@/lib/site'
+import { SITE_URL, formatPrice } from '@/lib/site'
 import ProductCard from '@/components/ProductCard'
 
 export const dynamic = 'force-static'
@@ -68,6 +68,20 @@ export default async function ProductPage({
     url: pageUrl,
     brand: { '@type': 'Brand', name: 'Shark Tides' },
     category: product.category,
+    offers: product.highPrice && product.highPrice > product.price
+      ? {
+          '@type': 'AggregateOffer',
+          lowPrice: product.price,
+          highPrice: product.highPrice,
+          priceCurrency: 'USD',
+          availability: 'https://schema.org/InStock',
+        }
+      : {
+          '@type': 'Offer',
+          price: product.price,
+          priceCurrency: 'USD',
+          availability: 'https://schema.org/InStock',
+        },
   }
 
   const breadcrumbLd = {
@@ -99,7 +113,7 @@ export default async function ProductPage({
         </div>
 
         <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-14 grid lg:grid-cols-2 gap-10 items-start">
-          <div className="rounded-3xl border border-gray-200 bg-black p-6 sm:p-10">
+          <div className="rounded-3xl border border-gray-200 bg-white p-6 sm:p-10">
             <img
               src={product.image}
               alt={`${product.name} research vial from the Shark Tides catalog`}
@@ -114,18 +128,26 @@ export default async function ProductPage({
             <p className="text-sm font-semibold uppercase tracking-wide text-sky-700 mb-2">{product.category}</p>
             <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">{product.name}</h1>
             <p className="text-lg text-gray-700 mb-6">{product.tagline}</p>
-            <p className="text-sm text-gray-600 mb-6">Live supplier price. Shown at checkout, not guessed on this page.</p>
+            <p className="text-3xl font-extrabold text-gray-900 mb-2">
+              {product.highPrice && product.highPrice > product.price ? 'From ' : ''}
+              {formatPrice(product.price)}
+            </p>
+            <p className="text-sm text-gray-600 mb-6">
+              {product.highPrice && product.highPrice > product.price
+                ? `Sizes run up to ${formatPrice(product.highPrice)} on the supplier listing.`
+                : 'Price shown is the American Peptides listing price.'}
+            </p>
             <a
               href={product.shopUrl}
               target="_blank"
               rel="sponsored nofollow noopener noreferrer"
-              title="Opens this Apollo vial right after you sign in"
+              title="Opens this product on American Peptides"
               className="inline-flex items-center justify-center gap-2 py-4 px-8 rounded-xl font-bold text-white text-base bg-sky-700 hover:bg-sky-800"
             >
               <ExternalLink size={16} /> Order {product.name}
             </a>
             <p className="mt-4 text-sm text-gray-600 max-w-xl">
-              Research use only. Not for human consumption. Apollo shows this vial only after you sign in. This button keeps that exact product attached, so the listing opens as soon as you log in, with the Shark Tides referral on it. This page stays the indexed URL.
+              Research use only. Not for human consumption. This button opens the matching American Peptides product with the Shark Tides referral attached. This page stays the indexed URL.
             </p>
           </div>
         </section>

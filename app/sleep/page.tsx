@@ -21,7 +21,9 @@ export default function SleepPage() {
       p.tags?.includes('GH Peptide') ||
       p.slug === 'ipamorelin-cjc' ||
       p.slug === 'nad-plus' ||
-      p.slug === 'epithalon',
+      p.slug === 'epithalon' ||
+      p.slug === 'dsip' ||
+      p.slug === 'sleep-research-blend-liquid-spray',
   );
 
   return (

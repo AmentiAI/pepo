@@ -25,6 +25,11 @@ const categories = [
   { label: 'Anti-Aging & Longevity', value: 'Anti-Aging & Longevity' },
   { label: 'Anti-Aging & Skin', value: 'Anti-Aging & Skin' },
   { label: 'Body Composition', value: 'Body Composition' },
+  { label: 'Cognitive', value: 'Cognitive Enhancement' },
+  { label: 'Sprays', value: 'Sprays' },
+  { label: 'Tablets', value: 'Tablets' },
+  { label: 'Bioregulators', value: 'Bioregulators' },
+  { label: 'Bundles', value: 'Bundles' },
   { label: 'Supplies', value: 'Supplies' },
 ];
 
