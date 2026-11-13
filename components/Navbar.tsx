@@ -109,20 +109,14 @@ export default function Navbar() {
           )}
         </div>
 
-        {/* Search + CTA */}
-        <div className="hidden md:flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3">
           <SearchModal />
-          <Link href="/products" className="btn-primary py-3 px-6 text-[0.95rem]">
+          <Link href="/products" className="btn-primary hidden md:inline-flex py-3 px-6 text-[0.95rem]">
             Shop Peptides
           </Link>
-        </div>
-
-        {/* Mobile: search + toggle */}
-        <div className="flex md:hidden items-center gap-2">
-          <SearchModal />
           <button
             onClick={() => setOpen(!open)}
-            className="p-2 text-gray-600 hover:text-gray-900 transition-colors"
+            className="md:hidden p-2 text-gray-600 hover:text-gray-900 transition-colors"
             aria-label="Toggle menu"
           >
             {open ? <X size={26} /> : <Menu size={26} />}

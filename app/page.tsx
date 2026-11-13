@@ -223,7 +223,6 @@ export default function HomePage() {
 
             {/* Left: Title + Description + CTAs */}
             <div className="flex-1 text-center lg:text-left">
-              <img src="/logo.png" alt="Shark Tides" className="mx-auto lg:mx-0 mb-5 h-28 w-28 object-contain" />
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-sky-400/40 bg-sky-50 mb-7">
                 <span className="w-2 h-2 rounded-full bg-sky-500 animate-pulse" />
                 <span className="text-sm text-sky-800 font-medium tracking-wide">

@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import { Search, X, ArrowRight, FlaskConical } from 'lucide-react';
 import { products } from '@/lib/products';
+import { stacks } from '@/lib/stacks';
 
 const goalPages = [
   { label: 'Healing & Recovery', href: '/healing', desc: 'BPC-157, TB-500 protocols' },
@@ -20,7 +21,7 @@ const goalPages = [
 ];
 
 interface Result {
-  type: 'product' | 'goal';
+  type: 'product' | 'goal' | 'stack';
   label: string;
   sub: string;
   href: string;
@@ -28,33 +29,56 @@ interface Result {
   category?: string;
 }
 
+function compact(value: string) {
+  return value.toLowerCase().replace(/[^a-z0-9]+/g, '');
+}
+
+function matches(query: string, ...fields: string[]) {
+  const q = query.toLowerCase().trim();
+  const folded = compact(q);
+  return fields.some((field) => {
+    const text = field.toLowerCase();
+    return text.includes(q) || (folded.length >= 2 && compact(field).includes(folded));
+  });
+}
+
 function search(query: string): Result[] {
   if (!query.trim()) return [];
-  const q = query.toLowerCase();
 
   const productResults: Result[] = products
     .filter((p) =>
-      p.name.toLowerCase().includes(q) ||
-      p.category.toLowerCase().includes(q) ||
-      p.tagline.toLowerCase().includes(q) ||
-      p.tags.some((t) => t.toLowerCase().includes(q)) ||
-      p.shortDescription.toLowerCase().includes(q)
+      matches(
+        query,
+        p.name,
+        p.slug,
+        p.category,
+        p.tagline,
+        p.shortDescription,
+        p.tags.join(' '),
+      )
     )
     .slice(0, 6)
     .map((p) => ({
       type: 'product',
       label: p.name,
-      sub: p.tagline,
+      sub: p.category,
       href: `/products/${p.slug}`,
       image: p.image || '',
       category: p.category,
     }));
 
+  const stackResults: Result[] = stacks
+    .filter((stack) => matches(query, stack.name, stack.tagline, stack.goal, stack.tags.join(' ')))
+    .slice(0, 3)
+    .map((stack) => ({
+      type: 'stack',
+      label: stack.name,
+      sub: stack.goal,
+      href: `/stacks/${stack.id}`,
+    }));
+
   const goalResults: Result[] = goalPages
-    .filter((g) =>
-      g.label.toLowerCase().includes(q) ||
-      g.desc.toLowerCase().includes(q)
-    )
+    .filter((g) => matches(query, g.label, g.desc))
     .slice(0, 3)
     .map((g) => ({
       type: 'goal',
@@ -63,13 +87,23 @@ function search(query: string): Result[] {
       href: g.href,
     }));
 
-  return [...productResults, ...goalResults].slice(0, 8);
+  return [...productResults, ...stackResults, ...goalResults].slice(0, 8);
 }
+
+const suggestions = [
+  { label: 'Semaglutide', hint: 'AP-SEM-1' },
+  { label: 'Tirzepatide', hint: 'AP-TRZ-2' },
+  { label: 'Retatrutide', hint: 'AP-RTA-3' },
+  { label: 'BPC-157', hint: 'Healing' },
+  { label: 'Ipamorelin', hint: 'Growth hormone' },
+  { label: 'GHK-Cu', hint: 'Skin' },
+];
 
 export default function SearchModal() {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState('');
   const [activeIdx, setActiveIdx] = useState(-1);
+  const [shortcut, setShortcut] = useState('Ctrl K');
   const inputRef = useRef<HTMLInputElement>(null);
   const listRef = useRef<HTMLDivElement>(null);
 
@@ -94,6 +128,11 @@ export default function SearchModal() {
     return () => window.removeEventListener('keydown', handler);
   }, [close]);
 
+  useEffect(() => {
+    const mac = /Mac|iPhone|iPad/.test(navigator.platform);
+    setShortcut(mac ? '⌘K' : 'Ctrl K');
+  }, []);
+
   // Focus input when opened
   useEffect(() => {
     if (open) setTimeout(() => inputRef.current?.focus(), 50);
@@ -114,112 +153,140 @@ export default function SearchModal() {
 
   return (
     <>
-      {/* Trigger button */}
       <button
         onClick={() => setOpen(true)}
-        className="flex items-center gap-2 px-3 py-2 rounded-lg border border-gray-200 text-gray-800 hover:border-yellow-400 hover:text-gray-600 transition-colors bg-white text-sm"
-        aria-label="Search"
+        className="hidden md:flex items-center gap-2 h-10 w-[220px] lg:w-[248px] pl-3 pr-2 rounded-md border border-gray-200 bg-gray-50 text-gray-500 hover:bg-white hover:border-gray-300 transition-colors"
+        aria-label="Search catalog"
       >
-        <Search size={15} />
-        <span className="hidden sm:inline text-sm text-gray-800 w-28 text-left">Search peptides…</span>
-        <span className="hidden md:inline text-[11px] font-medium text-gray-300 border border-gray-200 rounded px-1.5 py-0.5 ml-1">⌘K</span>
+        <Search size={15} className="text-gray-400 shrink-0" />
+        <span className="flex-1 text-left text-sm text-gray-500">Search catalog</span>
+        <kbd className="text-[10px] font-medium tracking-wide text-gray-400 bg-white border border-gray-200 rounded px-1.5 py-0.5">
+          {shortcut}
+        </kbd>
+      </button>
+      <button
+        onClick={() => setOpen(true)}
+        className="md:hidden flex items-center justify-center h-10 w-10 rounded-md border border-gray-200 text-gray-600 hover:bg-gray-50 transition-colors"
+        aria-label="Search catalog"
+      >
+        <Search size={16} />
       </button>
 
-      {/* Modal overlay */}
       {open && (
         <div
-          className="fixed inset-0 z-[200] flex items-start justify-center pt-[10vh] px-4"
+          className="fixed inset-0 z-[200] flex items-start justify-center pt-[12vh] px-4 bg-slate-900/40"
           onClick={(e) => { if (e.target === e.currentTarget) close(); }}
-          style={{ background: 'rgba(0,0,0,0.35)', backdropFilter: 'blur(4px)' }}
         >
           <div
-            className="w-full max-w-xl bg-white rounded-2xl shadow-2xl overflow-hidden"
-            style={{ border: '1px solid #e5e7eb' }}
+            className="w-full max-w-xl bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-200"
+            role="dialog"
+            aria-label="Search catalog"
           >
-            {/* Search input row */}
-            <div className="flex items-center gap-3 px-4 py-3.5 border-b border-gray-100">
-              <Search size={18} className="text-gray-800 shrink-0" />
+            <div className="flex items-center gap-3 h-14 px-4 border-b border-gray-200">
+              <Search size={16} className="text-gray-400 shrink-0" />
               <input
                 ref={inputRef}
                 type="text"
                 value={query}
                 onChange={(e) => { setQuery(e.target.value); setActiveIdx(-1); }}
                 onKeyDown={handleKey}
-                placeholder="Search peptides, goals, stacks…"
-                className="flex-1 bg-transparent outline-none text-gray-900 text-base placeholder:text-gray-800"
+                placeholder="Search peptides, stacks, and guides"
+                className="flex-1 bg-transparent outline-none text-gray-900 text-[15px] placeholder:text-gray-400"
+                aria-label="Search peptides, stacks, and guides"
               />
               {query && (
-                <button onClick={() => setQuery('')} className="text-gray-800 hover:text-gray-600 p-0.5">
-                  <X size={16} />
+                <button onClick={() => setQuery('')} className="text-gray-400 hover:text-gray-700 p-1" aria-label="Clear search">
+                  <X size={15} />
                 </button>
               )}
-              <button onClick={close} className="text-xs text-gray-800 border border-gray-200 rounded px-1.5 py-0.5 hover:border-gray-400">
+              <button onClick={close} className="text-[11px] font-medium text-gray-500 border border-gray-200 rounded px-1.5 py-0.5 hover:bg-gray-50" aria-label="Close search">
                 Esc
               </button>
             </div>
 
-            {/* Results */}
-            <div ref={listRef} className="max-h-[60vh] overflow-y-auto">
+            <div ref={listRef} className="max-h-[60vh] overflow-y-auto py-2">
               {query && results.length === 0 && (
-                <div className="px-5 py-8 text-center text-gray-800 text-sm">
-                  No results for "<span className="font-medium text-gray-600">{query}</span>"
+                <div className="px-5 py-10 text-center text-sm text-gray-500">
+                  No matches for <span className="font-medium text-gray-900">{query}</span>
                 </div>
               )}
 
               {results.length > 0 && (
-                <div className="py-2">
-                  {/* Product results */}
+                <div>
                   {results.filter((r) => r.type === 'product').length > 0 && (
                     <div>
-                      <p className="px-4 pt-2 pb-1 text-[10px] font-semibold uppercase tracking-widest text-gray-800">Products</p>
+                      <p className="px-4 pt-2 pb-1 text-[11px] font-medium uppercase tracking-[0.14em] text-gray-400">Products</p>
                       {results.filter((r) => r.type === 'product').map((r, i) => (
                         <Link
                           key={r.href}
                           href={r.href}
                           onClick={close}
-                          className={`flex items-center gap-3 px-4 py-2.5 transition-colors ${activeIdx === i ? 'bg-yellow-50' : 'hover:bg-gray-50'}`}
+                          className={`mx-2 flex items-center gap-3 rounded-md px-2 py-2 transition-colors ${activeIdx === i ? 'bg-slate-100' : 'hover:bg-slate-50'}`}
                         >
                           {r.image ? (
                             <img
                               src={r.image}
-                              alt={r.label}
-                              className="w-9 h-9 object-contain rounded-lg shrink-0 bg-gray-50"
-                              style={{ border: '1px solid #e5e7eb', padding: '3px' }}
+                              alt=""
+                              className="h-10 w-10 shrink-0 rounded-md border border-gray-200 bg-white object-contain p-1"
                             />
                           ) : (
-                            <div className="w-9 h-9 rounded-lg bg-gray-100 flex items-center justify-center shrink-0">
-                              <FlaskConical size={16} className="text-gray-800" />
+                            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md border border-gray-200 bg-white">
+                              <FlaskConical size={15} className="text-gray-400" />
                             </div>
                           )}
-                          <div className="flex-1 min-w-0">
-                            <p className="font-semibold text-gray-900 text-sm truncate">{r.label}</p>
-                            <p className="text-xs text-gray-800 truncate">{r.sub}</p>
+                          <div className="min-w-0 flex-1">
+                            <p className="truncate text-sm font-medium text-gray-900">{r.label}</p>
+                            <p className="truncate text-xs text-gray-500">{r.sub}</p>
                           </div>
-                          <ArrowRight size={13} className="text-gray-300 shrink-0" />
+                          <ArrowRight size={14} className="shrink-0 text-gray-300" />
                         </Link>
                       ))}
                     </div>
                   )}
 
-                  {/* Goal/page results */}
-                  {results.filter((r) => r.type === 'goal').length > 0 && (
+                  {results.some((r) => r.type === 'stack') && (
                     <div>
-                      <p className="px-4 pt-3 pb-1 text-[10px] font-semibold uppercase tracking-widest text-gray-800">Pages</p>
-                      {results.filter((r) => r.type === 'goal').map((r, i) => {
-                        const idx = results.filter((x) => x.type === 'product').length + i;
+                      <p className="px-4 pt-3 pb-1 text-[11px] font-medium uppercase tracking-[0.14em] text-gray-400">Stacks</p>
+                      {results.filter((r) => r.type === 'stack').map((r) => {
+                        const idx = results.findIndex((item) => item.href === r.href);
                         return (
                           <Link
                             key={r.href}
                             href={r.href}
                             onClick={close}
-                            className={`flex items-center gap-3 px-4 py-2.5 transition-colors ${activeIdx === idx ? 'bg-yellow-50' : 'hover:bg-gray-50'}`}
+                            className={`mx-2 flex items-center gap-3 rounded-md px-2 py-2 transition-colors ${activeIdx === idx ? 'bg-slate-100' : 'hover:bg-slate-50'}`}
                           >
-                            <div className="w-9 h-9 rounded-lg bg-yellow-50 flex items-center justify-center shrink-0" style={{ border: '1px solid #e5e7eb' }}>
-                              <ArrowRight size={14} className="text-yellow-600" />
+                            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md border border-gray-200 bg-white">
+                              <FlaskConical size={15} className="text-gray-500" />
                             </div>
-                            <div className="flex-1 min-w-0">
-                              <p className="font-semibold text-gray-900 text-sm truncate">{r.label}</p>
-                              <p className="text-xs text-gray-800 truncate">{r.sub}</p>
+                            <div className="min-w-0 flex-1">
+                              <p className="truncate text-sm font-medium text-gray-900">{r.label}</p>
+                              <p className="truncate text-xs text-gray-500">{r.sub}</p>
+                            </div>
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  )}
+
+                  {results.filter((r) => r.type === 'goal').length > 0 && (
+                    <div>
+                      <p className="px-4 pt-3 pb-1 text-[11px] font-medium uppercase tracking-[0.14em] text-gray-400">Guides</p>
+                      {results.filter((r) => r.type === 'goal').map((r) => {
+                        const idx = results.findIndex((item) => item.href === r.href);
+                        return (
+                          <Link
+                            key={r.href}
+                            href={r.href}
+                            onClick={close}
+                            className={`mx-2 flex items-center gap-3 rounded-md px-2 py-2 transition-colors ${activeIdx === idx ? 'bg-slate-100' : 'hover:bg-slate-50'}`}
+                          >
+                            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md border border-gray-200 bg-white">
+                              <ArrowRight size={14} className="text-gray-500" />
+                            </div>
+                            <div className="min-w-0 flex-1">
+                              <p className="truncate text-sm font-medium text-gray-900">{r.label}</p>
+                              <p className="truncate text-xs text-gray-500">{r.sub}</p>
                             </div>
                           </Link>
                         );
@@ -229,18 +296,18 @@ export default function SearchModal() {
                 </div>
               )}
 
-              {/* Empty state / quick links */}
               {!query && (
-                <div className="px-4 py-4">
-                  <p className="text-[10px] font-semibold uppercase tracking-widest text-gray-800 mb-2">Quick Links</p>
-                  <div className="flex flex-wrap gap-2">
-                    {['BPC-157', 'Semaglutide', 'Ipamorelin', 'GHK-Cu', 'Tirzepatide', 'Epithalon', 'Healing', 'Weight Loss'].map((term) => (
+                <div className="px-2 pb-1">
+                  <p className="px-2 pt-2 pb-1 text-[11px] font-medium uppercase tracking-[0.14em] text-gray-400">Popular searches</p>
+                  <div className="grid grid-cols-2">
+                    {suggestions.map((term) => (
                       <button
-                        key={term}
-                        onClick={() => setQuery(term)}
-                        className="px-3 py-1.5 rounded-lg text-xs font-medium text-gray-600 bg-gray-100 hover:bg-yellow-100 hover:text-yellow-700 transition-colors"
+                        key={term.label}
+                        onClick={() => setQuery(term.label)}
+                        className="flex items-center justify-between gap-3 rounded-md px-2 py-2.5 text-left hover:bg-slate-50"
                       >
-                        {term}
+                        <span className="text-sm text-gray-800">{term.label}</span>
+                        <span className="text-xs text-gray-400">{term.hint}</span>
                       </button>
                     ))}
                   </div>
@@ -248,13 +315,11 @@ export default function SearchModal() {
               )}
             </div>
 
-            {/* Footer hint */}
-            <div className="px-4 py-2.5 border-t border-gray-100 flex items-center gap-4 text-[11px] text-gray-800">
-              <span><kbd className="font-medium">↑↓</kbd> navigate</span>
-              <span><kbd className="font-medium">↵</kbd> open</span>
-              <span><kbd className="font-medium">Esc</kbd> close</span>
-              <Link href="/products" onClick={close} className="ml-auto text-yellow-600 hover:text-yellow-700 font-medium">
-                Browse all products →
+            <div className="flex items-center gap-4 border-t border-gray-200 bg-gray-50 px-4 py-2.5 text-[11px] text-gray-500">
+              <span className="hidden sm:inline"><kbd className="rounded border border-gray-200 bg-white px-1 font-medium text-gray-500">↑↓</kbd> navigate</span>
+              <span className="hidden sm:inline"><kbd className="rounded border border-gray-200 bg-white px-1 font-medium text-gray-500">Enter</kbd> open</span>
+              <Link href="/products" onClick={close} className="ml-auto font-medium text-gray-700 hover:text-gray-900">
+                View catalog
               </Link>
             </div>
           </div>
