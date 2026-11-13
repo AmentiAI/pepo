@@ -159,8 +159,8 @@ export default function SearchModal() {
 
   return (
     <div ref={boxRef} className="relative">
-      <label className="hidden h-10 w-[240px] items-center gap-2 rounded-md border border-gray-200 bg-gray-50 pl-3 pr-2 text-gray-500 transition-colors focus-within:border-gray-300 focus-within:bg-white md:flex lg:w-[280px]">
-        <Search size={15} className="shrink-0 text-gray-400" />
+      <label className="hidden h-10 w-[240px] items-center gap-2 rounded-md border border-white/15 bg-white/10 pl-3 pr-2 text-white/70 transition-colors focus-within:border-white/30 focus-within:bg-white/15 md:flex lg:w-[280px]">
+        <Search size={15} className="shrink-0 text-white/50" />
         <input
           ref={desktopRef}
           value={query}
@@ -168,18 +168,18 @@ export default function SearchModal() {
           onFocus={() => setOpen(true)}
           onKeyDown={onKey}
           placeholder="Search peptides"
-          className="min-w-0 flex-1 bg-transparent text-sm text-gray-900 outline-none placeholder:text-gray-400"
+          className="min-w-0 flex-1 bg-transparent text-sm text-white outline-none placeholder:text-white/45"
           aria-label="Search catalog"
           aria-expanded={open}
           role="combobox"
           aria-autocomplete="list"
         />
         {query ? (
-          <button type="button" onClick={() => { setQuery(''); desktopRef.current?.focus(); }} className="text-gray-400 hover:text-gray-700" aria-label="Clear search">
+          <button type="button" onClick={() => { setQuery(''); desktopRef.current?.focus(); }} className="text-white/50 hover:text-white" aria-label="Clear search">
             <X size={14} />
           </button>
         ) : (
-          <kbd className="rounded border border-gray-200 bg-white px-1.5 py-0.5 text-[10px] font-medium tracking-wide text-gray-400">{shortcut}</kbd>
+          <kbd className="rounded border border-white/20 bg-white/10 px-1.5 py-0.5 text-[10px] font-medium tracking-wide text-white/60">{shortcut}</kbd>
         )}
       </label>
 
@@ -189,7 +189,7 @@ export default function SearchModal() {
           setOpen(true);
           setTimeout(() => mobileRef.current?.focus(), 30);
         }}
-        className="flex h-10 w-10 items-center justify-center rounded-md border border-gray-200 text-gray-600 transition-colors hover:bg-gray-50 md:hidden"
+        className="flex h-10 w-10 items-center justify-center rounded-md border border-white/15 text-white transition-colors hover:bg-white/10 md:hidden"
         aria-label="Search catalog"
       >
         <Search size={16} />
