@@ -289,13 +289,13 @@ export default function HomePage() {
                     {/* Product image — click goes to protocol page */}
                     <Link
                       href={`/products/${p.slug}`}
-                      className="block relative h-56 sm:h-64 overflow-hidden shrink-0 bg-gray-50"
+                      className="relative flex h-64 shrink-0 items-center justify-center bg-[#f3f4f6] px-4 py-5 sm:h-72"
                     >
                       {p.image ? (
                         <img
                           src={p.image}
                           alt={p.name}
-                          className="absolute inset-0 w-full h-full object-contain p-5 group-hover:scale-105 transition-transform duration-300"
+                          className="max-h-full w-auto object-contain"
                           loading="lazy"
                         />
                       ) : (

@@ -150,14 +150,12 @@ export default function ChatWidget() {
                         className="flex items-center gap-3 p-2.5 rounded-xl border border-gray-200 bg-white hover:border-yellow-400 transition-colors group shadow-sm"
                       >
                         {/* Product image */}
-                        <div
-                          className="w-14 h-14 rounded-lg overflow-hidden shrink-0 flex items-center justify-center bg-gray-50"
-                        >
+                        <div className="flex h-16 w-12 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-gray-100 bg-[#f3f4f6]">
                           {product.image !== '' ? (
                             <img
                               src={product.image}
                               alt={product.name}
-                              className="w-full h-full object-contain p-1"
+                              className="max-h-full max-w-full object-contain"
                               loading="lazy"
                             />
                           ) : (

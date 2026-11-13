@@ -113,11 +113,11 @@ export default async function ProductPage({
         </div>
 
         <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-14 grid lg:grid-cols-2 gap-10 items-start">
-          <div className="rounded-3xl border border-gray-200 bg-white p-6 sm:p-10">
+          <div className="flex min-h-[420px] items-center justify-center rounded-3xl border border-gray-200 bg-[#f3f4f6] p-6 sm:min-h-[520px] sm:p-8">
             <img
               src={product.image}
               alt={`${product.name} research vial from the Shark Tides catalog`}
-              className="w-full max-h-[520px] object-contain"
+              className="max-h-[520px] w-full object-contain"
             />
           </div>
 
